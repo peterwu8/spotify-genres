@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gypsy: (4 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+<strong>Updated:</strong> 2025-07-02 05:44 AM<br>
+<strong>Name:</strong> Gypsy: (4 genres)<br>
+<strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
+<br>
+</p>
+
+
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>1</td>
+  <td><a href="https://everynoise.com/engenremap-gypsyfusion.html" title="gypsy fusion">gypsy fusion</a></td>
+  <td>Gypsy<br>Psy.Goa</td>
+  <td>C.Mexico.Latino:5<br>Psy.Goa:2<br>Gypsy:2<br>Indie:2<br>Funk:2<br>Reggae:2<br>Electronica:1<br>Viral:1<br>Pop:1<br>C.Japan:1<br>Jazz:1<br>Dance:1</td>
+  <td>Mahala Rai Banda &quot;Mahalageasca&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5966239deb94a6c29671f58214eb8dea5de406c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://open.spotify.com/playlist/2p6sVxmP69Qd9ysNCuMb7Y" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5lAKclP7pyIuRK1vet8Fyi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Aydv6DI0xcJBMZ2oTtJeY" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td><a href="https://everynoise.com/engenremap-gypsypunk.html" title="gypsy punk">gypsy punk</a></td>
+  <td>Gypsy<br>Psy.Goa<br>Punk</td>
+  <td>Rock:14<br>Psy.Goa:2<br>Gypsy:2<br>Punk:2<br>Indie:2<br>C.Italy:1<br>Folk:1<br>Blues.Soul:1</td>
+  <td>Gogol Bordello &quot;Start Wearing Purple&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ab3a7673c7673ece9950b3a51309c52f91a29860" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://open.spotify.com/playlist/5OddLZaXByhRjd6UbnaB2s" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7GwkH8HB44J2d1pcY8IH5F" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0mMiExBYsYAUBThaChjhsT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3r5vgxByznuxvW8mj25tHV" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td><a href="https://everynoise.com/engenremap-gypsy.html" title="gypsy">gypsy</a></td>
+  <td>Gypsy<br>Psy.Goa</td>
+  <td>Folk:3<br>Psy.Goa:2<br>Gypsy:2<br>Jazz:2<br>Classical:2<br>Pop:1<br>C.India:1<br>Instrumental:1</td>
+  <td>Kanizsa Csillagai &quot;Ahuz, mama (Listen, mother)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/036e3ab6e29610782e68d861106e1243e6eb95f6" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://open.spotify.com/playlist/7lqKESEBuOaNuquLaHdKrO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/385dSQpFxi4XY0otPYBvVk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ClPALLiacXtC4VXkujxYx" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td><a href="https://everynoise.com/engenremap-gypsyjazz.html" title="gypsy jazz">gypsy jazz</a></td>
+  <td>Gypsy<br>Jazz<br>Psy.Goa</td>
+  <td>Jazz:8<br>Psy.Goa:2<br>Gypsy:2<br>Folk:2<br>Instrumental:2<br>House:1<br>C.France:1</td>
+  <td>Stochelo Rosenberg &quot;Chega De Saudade&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f71cbb1c66ca5dd78a12530fedbb07685964928a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://open.spotify.com/playlist/6ye4xUHWNCBV1GNFQ4yNaj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/40Ce4ATTaGdkU4PwXD8Bnm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5jLKGN5WilhUlxQHhJYrWk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5O2vQmKT36qd6rprrLIfEZ" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+</body>
+</html>
