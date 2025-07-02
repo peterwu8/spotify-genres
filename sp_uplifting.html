@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Uplifting: (4 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>1</td>
-  <td>cosmic uplifting trance</td>
+  <td><a href="https://everynoise.com/engenremap-cosmicupliftingtrance.html" title="cosmic uplifting trance">cosmic uplifting trance</a></td>
   <td>Trance<br>Uplifting</td>
-  <td><b>Trance:</b> 13<br>Uplifting:5<br>Psy.Rave:2<br>Progressive:2<br>Synth.Electronic:2<br>Industrial:2<br>Hardstyle:1<br>C.Italy:1<br>C.Germany:1</td>
-  <td>Type 41 &quot;Night Is Calling - Alatheia Radio Edit&quot;<br><audio title="Type 41 &quot;Night Is Calling - Alatheia Radio Edit&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0df19dfb83a1ff7a14b3dbf1026e52ac6a9baff7" type="audio/mpeg">
-</audio></td>
+  <td>Trance:13<br>Uplifting:5<br>Psy.Rave:2<br>Progressive:2<br>Synth.Electronic:2<br>Industrial:2<br>Hardstyle:1<br>C.Italy:1<br>C.Germany:1</td>
+  <td>Type 41 &quot;Night Is Calling - Alatheia Radio Edit&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0df19dfb83a1ff7a14b3dbf1026e52ac6a9baff7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4if8aqDg8kCV1ReeSGvILy" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6p7uREL2dImSxWbPESq9WL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1gF7XLLW9AHF5HwM6ThLJQ" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>2</td>
-  <td>progressive uplifting trance</td>
+  <td><a href="https://everynoise.com/engenremap-progressiveupliftingtrance.html" title="progressive uplifting trance">progressive uplifting trance</a></td>
   <td>Progressive<br>Trance<br>Uplifting</td>
-  <td><b>Trance:</b> 9<br>Uplifting:5<br>Progressive:3<br>Synth.Electronic:1<br>Industrial:1<br>Rock:1</td>
-  <td>A.r.d.i. &quot;Lost In The Dark&quot;<br><audio title="A.r.d.i. &quot;Lost In The Dark&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b5b63d8848e4a21ec4a969ab28c13ba76f0809a6" type="audio/mpeg">
-</audio></td>
+  <td>Trance:9<br>Uplifting:5<br>Progressive:3<br>Synth.Electronic:1<br>Industrial:1<br>Rock:1</td>
+  <td>A.r.d.i. &quot;Lost In The Dark&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b5b63d8848e4a21ec4a969ab28c13ba76f0809a6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7u6WmGIdrl2LFd73vZhBJQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0DATKc0DmcY7EPIis3f48e" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7tJjBdOAso48RvqAVe789k" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>3</td>
-  <td>uplifting trance</td>
+  <td><a href="https://everynoise.com/engenremap-upliftingtrance.html" title="uplifting trance">uplifting trance</a></td>
   <td>Trance<br>Uplifting</td>
-  <td><b>Trance:</b> 10<br>Uplifting:5<br>Synth.Electronic:4<br>Progressive:3<br>House:1<br>Punk:1<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Industrial:1<br>Dubstep:1</td>
-  <td>Ferry Tayle &quot;Smile&quot;<br><audio title="Ferry Tayle &quot;Smile&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0b627027506f76e5098cc8003e1dee0e4840ab39" type="audio/mpeg">
-</audio></td>
+  <td>Trance:10<br>Uplifting:5<br>Synth.Electronic:4<br>Progressive:3<br>House:1<br>Punk:1<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Industrial:1<br>Dubstep:1</td>
+  <td>Ferry Tayle &quot;Smile&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0b627027506f76e5098cc8003e1dee0e4840ab39" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2bV5j3UH5k9rMxJywzTYKu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3U043Q7qWwkkSrkXNsDuLH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6xH3vUFwvee7s0csyv6E2p" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>4</td>
-  <td>deep uplifting trance</td>
+  <td><a href="https://everynoise.com/engenremap-deepupliftingtrance.html" title="deep uplifting trance">deep uplifting trance</a></td>
   <td>Trance<br>Uplifting</td>
-  <td><b>Trance:</b> 8<br>Progressive:5<br>Uplifting:4<br>House:3<br>Dance:3<br>Dubstep:2<br>Synth.Electronic:1<br>C.Japan:1<br>C.Germany:1<br>Gospel:1<br>Hip hop:1</td>
-  <td>Luke Bond &quot;Deep End&quot;<br><audio title="Luke Bond &quot;Deep End&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a007e90da976481971b58b6f692fe6bae8a71eb6" type="audio/mpeg">
-</audio></td>
+  <td>Trance:8<br>Progressive:5<br>Uplifting:4<br>House:3<br>Dance:3<br>Dubstep:2<br>Synth.Electronic:1<br>C.Japan:1<br>C.Germany:1<br>Gospel:1<br>Hip hop:1</td>
+  <td>Luke Bond &quot;Deep End&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a007e90da976481971b58b6f692fe6bae8a71eb6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6RjtOHtdpwfcdepnu8RxLp" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4PVrSVmGHu6jtDNI2An7ZC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZCIkVSQ1CcoWS6WjG3P5i" title="pulse">pulse</a></td>

@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Breaks: (19 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>progressive breaks</td>
+  <td><a href="https://everynoise.com/engenremap-progressivebreaks.html" title="progressive breaks">progressive breaks</a></td>
   <td>Breaks<br>Progressive</td>
-  <td><b>Synth.Electronic:</b> 6<br>Progressive:5<br>Techno:4<br>House:4<br>Trance:4<br>Breaks:3<br>Psy.Rave:2<br>C.Mexico.Latino:1<br>C.Japan:1</td>
-  <td>Rick Tedesco &quot;Inner Light&quot;<br><audio title="Rick Tedesco &quot;Inner Light&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e52786e40dfabcf096a22dc103d91f2c434ab628" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:6<br>Progressive:5<br>Techno:4<br>House:4<br>Trance:4<br>Breaks:3<br>Psy.Rave:2<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Irish:1</td>
+  <td>Rick Tedesco &quot;Inner Light&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e52786e40dfabcf096a22dc103d91f2c434ab628" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7HLEjm2fEZsErggSthuFmZ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5BrlbyZksPldeaxiEzObjL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/528Yi3qpG9tlJTtAD7SCj9" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>psybreaks</td>
+  <td><a href="https://everynoise.com/engenremap-psybreaks.html" title="psybreaks">psybreaks</a></td>
   <td>Breaks<br>Psy.Rave</td>
-  <td><b>House:</b> 7<br>Breaks:5<br>Psy.Rave:2<br>Dance:2<br>Dubstep:2<br>Progressive:1<br>Trance:1<br>Synth.Electronic:1<br>Experimental:1<br>Disco:1</td>
-  <td>Quadrat Beat &quot;The Blob - Original Mix&quot;<br><audio title="Quadrat Beat &quot;The Blob - Original Mix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0edb892edb9b16a355738744b1e391830c4b5b49" type="audio/mpeg">
-</audio></td>
+  <td>House:7<br>Breaks:5<br>Psy.Rave:2<br>Dance:2<br>Dubstep:2<br>Progressive:1<br>Trance:1<br>Synth.Electronic:1<br>Experimental:1<br>Disco:1</td>
+  <td>Quadrat Beat &quot;The Blob - Original Mix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0edb892edb9b16a355738744b1e391830c4b5b49" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5S5M72txHB2OjrBop5AYC4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6clcXYPQP8OiWAixBXCAMm" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6RRNu1cxv2jrOwRzQjTfwT" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>hardcore breaks</td>
+  <td><a href="https://everynoise.com/engenremap-hardcorebreaks.html" title="hardcore breaks">hardcore breaks</a></td>
   <td>Breaks<br>Hardstyle</td>
-  <td><b>Breaks:</b> 4<br>Hardstyle:3<br>House:2<br>Psy.Rave:1<br>Techno:1<br>Trance:1<br>Synth.Electronic:1<br>Drum and bass:1<br>Dance:1</td>
-  <td>UFO Project &quot;New Dawn - Hidden Face Remix&quot;<br><audio title="UFO Project &quot;New Dawn - Hidden Face Remix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5e854183279be45ddb02630a096fc854b94a0496" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:4<br>Hardstyle:3<br>House:2<br>Psy.Rave:1<br>Techno:1<br>Trance:1<br>Synth.Electronic:1<br>Drum and bass:1<br>Dance:1</td>
+  <td>UFO Project &quot;New Dawn - Hidden Face Remix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5e854183279be45ddb02630a096fc854b94a0496" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3Xf5DQq60Gssc5ccah89wW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/558cKdG29kqwYwJAjJtoZA" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ge9TdssswGrP0LwYZi6LJ" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>suomisaundi</td>
+  <td><a href="https://everynoise.com/engenremap-suomisaundi.html" title="suomisaundi">suomisaundi</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 4<br>Trance:3<br>Synth.Electronic:3<br>House:2<br>Techno:1<br>Hardstyle:1<br>Dance:1</td>
-  <td>Lemon Slide &quot;Magic&quot;<br><audio title="Lemon Slide &quot;Magic&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f3572977a2bd1ac6a95ce73505a6812d3a2cc210" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:4<br>Trance:3<br>Synth.Electronic:3<br>House:2<br>Techno:1<br>Hardstyle:1<br>Dance:1</td>
+  <td>Lemon Slide &quot;Magic&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f3572977a2bd1ac6a95ce73505a6812d3a2cc210" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2oDlfDr6DS4hmKtIkLjdTf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/62JQVp790oALiDdVuMFtqL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5lq6QRi7FpGiVprBErpDJc" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>jumpstyle</td>
+  <td><a href="https://everynoise.com/engenremap-jumpstyle.html" title="jumpstyle">jumpstyle</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 3<br>Drum and bass:3<br>Synth.Electronic:2<br>House:1<br>Trance:1<br>Hardstyle:1<br>Dance:1<br>Hip hop:1</td>
-  <td>Lethal MG &quot;You Eternal - Ronald V Remix&quot;<br><audio title="Lethal MG &quot;You Eternal - Ronald V Remix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7edf1689e979afbc77efc73157a233bc14496b1e" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:3<br>Drum and bass:3<br>Synth.Electronic:2<br>House:1<br>Trance:1<br>Hardstyle:1<br>Dance:1<br>Hip hop:1</td>
+  <td>Lethal MG &quot;You Eternal - Ronald V Remix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7edf1689e979afbc77efc73157a233bc14496b1e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0YLPrzWklBgy152fwVL0iT" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5eb1Ye7rEf53LowZ13VsyK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4vLGEUolmH7ws2gBF561uW" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>hard bass</td>
+  <td><a href="https://everynoise.com/engenremap-hardbass.html" title="hard bass">hard bass</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 3<br>House:2<br>Psy.Rave:1<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Drum and bass:1</td>
-  <td>Hard Liner &quot;Fuck My Brain&quot;<br><audio title="Hard Liner &quot;Fuck My Brain&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/54466a7111e26152d2717d50d7434279aef8b8b0" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:3<br>House:2<br>Psy.Rave:1<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Drum and bass:1</td>
+  <td>Hard Liner &quot;Fuck My Brain&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/54466a7111e26152d2717d50d7434279aef8b8b0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4IDhGicVEt669oWrlCWNUu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1OoALWuOMTfw2xkOKl3a3o" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0C6rlGzY30813XzAjYqMO0" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>makina</td>
+  <td><a href="https://everynoise.com/engenremap-makina.html" title="makina">makina</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 4<br>House:2<br>Trance:2<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Drum and bass:1<br>Dance:1</td>
-  <td>Bolo &amp; Uri &quot;Krma Remix&quot;<br><audio title="Bolo &amp; Uri &quot;Krma Remix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8a6cf043563fd511514ea9b9a78f7a6f7edba79f" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:4<br>House:2<br>Trance:2<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Drum and bass:1<br>Dance:1</td>
+  <td>Bolo &amp; Uri &quot;Krma Remix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8a6cf043563fd511514ea9b9a78f7a6f7edba79f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0SIod8gUiCyiC8HzToRf2c" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0g6lSVpuECFdgjHTUQ5h6a" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4OoRuGh9h8OVW2IDHRVqeO" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>nu skool breaks</td>
+  <td><a href="https://everynoise.com/engenremap-nuskoolbreaks.html" title="nu skool breaks">nu skool breaks</a></td>
   <td>Breaks</td>
-  <td><b>House:</b> 4<br>Breaks:4<br>Synth.Electronic:4<br>Techno:2<br>Trance:2<br>Dubstep:2<br>Psy.Rave:1<br>Progressive:1<br>Industrial.Punk.EBM:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Dance:1<br>Experimental:1</td>
-  <td>Freq Nasty &quot;Fresh&quot;<br><audio title="Freq Nasty &quot;Fresh&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/49f2b61c782d6d3113e924ae6f39d2856cca6af9" type="audio/mpeg">
-</audio></td>
+  <td>House:4<br>Breaks:4<br>Synth.Electronic:4<br>Techno:2<br>Trance:2<br>Dubstep:2<br>Psy.Rave:1<br>Progressive:1<br>Industrial.Punk.EBM:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Dance:1<br>Experimental:1</td>
+  <td>Freq Nasty &quot;Fresh&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/49f2b61c782d6d3113e924ae6f39d2856cca6af9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6BfYBqrSm30CXrqFwecv5d" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3ak4W4tpmr4qttoleo8Q1Y" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/20ysmkAqiBGQjwAg3kCpmu" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>funky breaks</td>
+  <td><a href="https://everynoise.com/engenremap-funkybreaks.html" title="funky breaks">funky breaks</a></td>
   <td>Breaks<br>Funk</td>
-  <td><b>House:</b> 9<br>Breaks:2<br>Dubstep:2<br>Funk:2<br>Vocal:1<br>Jazz:1<br>Instrumental:1<br>Disco:1</td>
-  <td>Quincy Jointz &quot;Blast - Valique Ghetto Disco Acid mix&<br><audio title="Quincy Jointz &quot;Blast - Valique Ghetto Disco Acid mix&" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b8ad02290df847241f047de86239e4a853b88c3e" type="audio/mpeg">
-</audio></td>
+  <td>House:9<br>Breaks:2<br>Dubstep:2<br>Funk:2<br>Vocal:1<br>Jazz:1<br>Instrumental:1<br>Disco:1</td>
+  <td>Quincy Jointz &quot;Blast - Valique Ghetto Disco Acid mix&<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b8ad02290df847241f047de86239e4a853b88c3e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4r7k2gHiV5NG8ErBhXySbS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3FgHaDRJQvrh2hhpZpovNd" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0tED0zw9ALVAtr5kOn1gJS" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>breakbeat</td>
+  <td><a href="https://everynoise.com/engenremap-breakbeat.html" title="breakbeat">breakbeat</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 4<br>Synth.Electronic:4<br>House:2<br>Industrial.Punk.EBM:2<br>Psy.Rave:1<br>Trance:1<br>Dance:1<br>Dubstep:1</td>
-  <td>Drumattic Twins &quot;Feelin Kinda Strange&quot;<br><audio title="Drumattic Twins &quot;Feelin Kinda Strange&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f5cde90aa22b17438153b658220847dc9c85fddd" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:4<br>Synth.Electronic:4<br>House:2<br>Industrial.Punk.EBM:2<br>Psy.Rave:1<br>Trance:1<br>Dance:1<br>Dubstep:1</td>
+  <td>Drumattic Twins &quot;Feelin Kinda Strange&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f5cde90aa22b17438153b658220847dc9c85fddd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1yckyfEZtFkkq7UPXHbLwi" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5jU8k9UsaPPgWyxFjB2f1L" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/39uFDwxUXi34C4CXzhyuBI" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>breaks</td>
+  <td><a href="https://everynoise.com/engenremap-breaks.html" title="breaks">breaks</a></td>
   <td>Breaks</td>
-  <td><b>Trance:</b> 4<br>Breaks:3<br>Synth.Electronic:3<br>Dubstep:2<br>Psy.Rave:1<br>Techno:1<br>House:1<br>C.Mexico.Latino:1<br>Funk:1</td>
-  <td>LMajor &quot;Raving Cru&quot;<br><audio title="LMajor &quot;Raving Cru&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/72a30a1e868c7e28011f7829b1b7fbe68d23ba27" type="audio/mpeg">
-</audio></td>
+  <td>Trance:4<br>Breaks:3<br>Synth.Electronic:3<br>Dubstep:2<br>Psy.Rave:1<br>Techno:1<br>House:1<br>C.Mexico.Latino:1<br>Funk:1</td>
+  <td>LMajor &quot;Raving Cru&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/72a30a1e868c7e28011f7829b1b7fbe68d23ba27" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3sY5WhiXGA6c0l7TCOETnJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3XttbaEJatWtPmp6dQ4Jgk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2FccMlKs8eJ3osuaIy3jPz" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>power noise</td>
+  <td><a href="https://everynoise.com/engenremap-powernoise.html" title="power noise">power noise</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 4<br>Industrial:4<br>Trance:2<br>Synth.Electronic:2<br>Progressive:1<br>Punk:1<br>Industrial.Punk.EBM:1<br>Drum and bass:1<br>Rock:1<br>Pop:1<br>Chill:1</td>
-  <td>Synapscape &quot;Rhythm&quot;<br><audio title="Synapscape &quot;Rhythm&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6509fb87813a8ba52ee828cab9204dff17d05e7c" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:4<br>Industrial:4<br>Trance:2<br>Synth.Electronic:2<br>Progressive:1<br>Punk:1<br>Industrial.Punk.EBM:1<br>Drum and bass:1<br>Rock:1<br>Pop:1<br>Chill:1</td>
+  <td>Synapscape &quot;Rhythm&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6509fb87813a8ba52ee828cab9204dff17d05e7c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/23j3NLoqFN0Z7z3rsCZH7Q" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0FLRWDs1HA5hxxOWkuhqNf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4LpBKDl493rdfsBSPZRcZQ" title="pulse">pulse</a></td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>mashcore</td>
+  <td><a href="https://everynoise.com/engenremap-mashcore.html" title="mashcore">mashcore</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 4<br>Hardstyle:3<br>Dubstep:2<br>Industrial:1<br>Rock:1<br>Pop:1<br>Chill:1<br>Dance:1<br>Gospel:1</td>
-  <td>Shoebill &quot;improvised mashcore&quot;<br><audio title="Shoebill &quot;improvised mashcore&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c3547dec1f0964a59135d280e2a028ad3a4c5e13" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:4<br>Hardstyle:3<br>Dubstep:2<br>Industrial:1<br>Rock:1<br>Pop:1<br>Chill:1<br>Dance:1<br>Gospel:1</td>
+  <td>Shoebill &quot;improvised mashcore&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c3547dec1f0964a59135d280e2a028ad3a4c5e13" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/79VSRm21dxwN2QYdRkPU21" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/01mc4f76diS5xG1ktZ2Euw" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3FohohSrYzcPyi9K3psjuZ" title="pulse">pulse</a></td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>glitchbreak</td>
+  <td><a href="https://everynoise.com/engenremap-glitchbreak.html" title="glitchbreak">glitchbreak</a></td>
   <td>Breaks</td>
-  <td><b>Punk:</b> 4<br>Breaks:3<br>Hardstyle:2<br>Gaming:2<br>Industrial:1<br>Rock:1<br>Pop:1<br>Chill:1</td>
-  <td>Harmful Logic &quot;100PERCENTFEELINGS&quot;<br><audio title="Harmful Logic &quot;100PERCENTFEELINGS&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4f91393173d530eb4d347f7c281c50ee25a3d68f" type="audio/mpeg">
-</audio></td>
+  <td>Punk:4<br>Breaks:3<br>Hardstyle:2<br>Gaming:2<br>Industrial:1<br>Rock:1<br>Pop:1<br>Chill:1</td>
+  <td>Harmful Logic &quot;100PERCENTFEELINGS&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4f91393173d530eb4d347f7c281c50ee25a3d68f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5aPKPDrqsxBQSST33NOsFw" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1zgW40O0m8rtZI3TU2u8lr" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4a0a7QNf4ytPMOzQeWur9B" title="pulse">pulse</a></td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>breakcore</td>
+  <td><a href="https://everynoise.com/engenremap-breakcore.html" title="breakcore">breakcore</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 3<br>Dance:3<br>Synth.Electronic:1<br>Hardstyle:1<br>Drum and bass:1<br>Pop:1<br>Experimental:1<br>Hip hop:1</td>
-  <td>Ladyscraper &quot;My Gums Bleed For This Type Of Shit&quot<br><audio title="Ladyscraper &quot;My Gums Bleed For This Type Of Shit&quot" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c8cf98befeca6f8584324f5ad74bf9fa2286de9b" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:3<br>Dance:3<br>Synth.Electronic:1<br>Hardstyle:1<br>Drum and bass:1<br>Pop:1<br>Experimental:1<br>Hip hop:1</td>
+  <td>Ladyscraper &quot;My Gums Bleed For This Type Of Shit&quot<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c8cf98befeca6f8584324f5ad74bf9fa2286de9b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3OBvO6hmsS5BsYbciDddW7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5YhEhRKlKHKa0yHE1qmAly" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/26zp5smksDu0ZbOhPGxyRR" title="pulse">pulse</a></td>
@@ -248,12 +241,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>hexd</td>
+  <td><a href="https://everynoise.com/engenremap-hexd.html" title="hexd">hexd</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 4<br>Punk:2<br>Synth.Electronic:2<br>Hardstyle:1<br>Drum and bass:1<br>Industrial:1<br>Rock:1<br>Pop:1<br>Gaming:1<br>Chill:1</td>
-  <td>Purity Filter &quot;Chrysalis&quot;<br><audio title="Purity Filter &quot;Chrysalis&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6f7c7d261881ffe4608f174c3bab60dc70e69766" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:4<br>Punk:2<br>Synth.Electronic:2<br>Hardstyle:1<br>Drum and bass:1<br>Industrial:1<br>Rock:1<br>Pop:1<br>Gaming:1<br>Chill:1</td>
+  <td>Purity Filter &quot;Chrysalis&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6f7c7d261881ffe4608f174c3bab60dc70e69766" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/13tIMuzJRaqONuJGUlJUt4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5lwx2K3PhOegUWANyf1xEs" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4OdPLellkMbaXPgaPJ0zyC" title="pulse">pulse</a></td>
@@ -261,12 +252,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>deep breakcore</td>
+  <td><a href="https://everynoise.com/engenremap-deepbreakcore.html" title="deep breakcore">deep breakcore</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 3<br>Rock:2<br>Dance:2<br>Hip hop:2<br>Hardstyle:1<br>Drum and bass:1<br>Industrial:1<br>Indie:1<br>Trap:1<br>Gaming:1<br>Experimental:1</td>
-  <td>Autonon &quot;Cisplatin&quot;<br><audio title="Autonon &quot;Cisplatin&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/760c8b368e9060b974bbf5c65c4f5679f48ab802" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:3<br>Rock:2<br>Dance:2<br>Hip hop:2<br>Hardstyle:1<br>Drum and bass:1<br>Industrial:1<br>Indie:1<br>Trap:1<br>Gaming:1<br>Experimental:1</td>
+  <td>Autonon &quot;Cisplatin&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/760c8b368e9060b974bbf5c65c4f5679f48ab802" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/58ienfUL0jy1I5EeZootxl" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -274,12 +263,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>chill breakcore</td>
+  <td><a href="https://everynoise.com/engenremap-chillbreakcore.html" title="chill breakcore">chill breakcore</a></td>
   <td>Breaks<br>Chill</td>
-  <td><b>Punk:</b> 6<br>Breaks:3<br>Chill:2<br>C.Mexico.Latino:2<br>Trance:1<br>Gaming:1<br>Ambient.General:1</td>
-  <td>llwll &quot;blues&quot;<br><audio title="llwll &quot;blues&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/533229a0320fc008b3f8353dd0812a6be62874f1" type="audio/mpeg">
-</audio></td>
+  <td>Punk:6<br>Breaks:3<br>Chill:2<br>C.Mexico.Latino:2<br>Trance:1<br>Gaming:1<br>Ambient.General:1</td>
+  <td>llwll &quot;blues&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/533229a0320fc008b3f8353dd0812a6be62874f1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6wnosjv0zXay7wCgWAa3TG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7sACIthHL6SJs1xESCpxWu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1zA6fuw5IUREMyTJa3tSQ3" title="pulse">pulse</a></td>
@@ -287,12 +274,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>flashcore</td>
+  <td><a href="https://everynoise.com/engenremap-flashcore.html" title="flashcore">flashcore</a></td>
   <td>Breaks</td>
-  <td><b>Breaks:</b> 4<br>Industrial:3<br>Punk:2<br>Hardstyle:2<br>Rock:2<br>Metal:1<br>Chill:1<br>C.Korea:1<br>C.Japan:1<br>Dubstep:1<br>Instrumental:1<br>Hip hop:1</td>
-  <td>Datach\'i &quot;Rockledge 3A&quot;<br><audio title="Datach\'i &quot;Rockledge 3A&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/57b5143342969c1fe7beb9d02fcc42b2596e027c" type="audio/mpeg">
-</audio></td>
+  <td>Breaks:4<br>Industrial:3<br>Punk:2<br>Hardstyle:2<br>Rock:2<br>Metal:1<br>Chill:1<br>C.Korea:1<br>C.Japan:1<br>Dubstep:1<br>Instrumental:1<br>Hip hop:1</td>
+  <td>Datach\'i &quot;Rockledge 3A&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/57b5143342969c1fe7beb9d02fcc42b2596e027c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6qovw3cxQkd56G3MWoAThC" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>

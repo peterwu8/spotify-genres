@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Comedy: (24 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>comedy rap</td>
+  <td><a href="https://everynoise.com/engenremap-comedyrap.html" title="comedy rap">comedy rap</a></td>
   <td>Comedy<br>Rap</td>
-  <td><b>Rap:</b> 10<br>Hip hop:7<br>C.Mexico.Latino:2<br>Comedy:2<br>Jazz:1</td>
-  <td>Jon Lajoie &quot;Everyday Normal Guy 2&quot;<br><audio title="Jon Lajoie &quot;Everyday Normal Guy 2&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f81d737dc34409653a189478eedc09138b0a62e8" type="audio/mpeg">
-</audio></td>
+  <td>Rap:10<br>Hip hop:7<br>C.Mexico.Latino:2<br>Comedy:2<br>Jazz:1</td>
+  <td>Jon Lajoie &quot;Everyday Normal Guy 2&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f81d737dc34409653a189478eedc09138b0a62e8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/53dW6Z6TQYQElWRkcI0Bsh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1wkrVnTW3SY7SszzBrf2Wy" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4sy3ZAPeNad70bb4ocNYuV" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>magyar kabare</td>
+  <td><a href="https://everynoise.com/engenremap-magyarkabare.html" title="magyar kabare">magyar kabare</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 3<br>Blues.Soul:2<br>Pop:1<br>C.Mexico.Latino:1</td>
-  <td>Bodrogi Gyula &quot;Kacor kir&quot;<br><audio title="Bodrogi Gyula &quot;Kacor kir&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/691ab0eb066f8d1fcead0b13ce96502503c35747" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:3<br>Blues.Soul:2<br>Pop:1<br>C.Mexico.Latino:1</td>
+  <td>Bodrogi Gyula &quot;Kacor kir&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/691ab0eb066f8d1fcead0b13ce96502503c35747" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1dDJAUMo7nJlS3NWZbRIUo" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5eHGXGPbQmplrU5Uk1QJfJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4FH50Tntsyfy5QMdeKKAlK" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>vlaamse cabaret</td>
+  <td><a href="https://everynoise.com/engenremap-vlaamsecabaret.html" title="vlaamse cabaret">vlaamse cabaret</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 2<br>Pop:1<br>Children:1<br>Country:1<br>Blues.Soul:1</td>
-  <td>Gunter Lamoot &quot;Imitaties&quot;<br><audio title="Gunter Lamoot &quot;Imitaties&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/9b3d8e5139f4164b492d4152136ba3368479d51f" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:2<br>Pop:1<br>Children:1<br>Country:1<br>Blues.Soul:1</td>
+  <td>Gunter Lamoot &quot;Imitaties&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/9b3d8e5139f4164b492d4152136ba3368479d51f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5NcfYoFq5Vdz2ESRcEfm0K" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2gkHye7jfaprAUnJv3nC8r" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2rm3czMwxfHQyWwAtXvcpF" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>comedy rock</td>
+  <td><a href="https://everynoise.com/engenremap-comedyrock.html" title="comedy rock">comedy rock</a></td>
   <td>Comedy<br>Rock</td>
-  <td><b>Folk:</b> 4<br>Rock:2<br>Children:2<br>Comedy:2<br>C.Mexico.Latino:1</td>
-  <td>The Very Nice Interesting Singer Man &quot;The Butt Cheeks<br><audio title="The Very Nice Interesting Singer Man &quot;The Butt Cheeks" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/81798230c38131654a6a110cac530b08336d1247" type="audio/mpeg">
-</audio></td>
+  <td>Folk:4<br>Rock:2<br>Children:2<br>Comedy:2<br>C.Mexico.Latino:1</td>
+  <td>The Very Nice Interesting Singer Man &quot;The Butt Cheeks<br><audio class="playback" src="https://p.scdn.co/mp3-preview/81798230c38131654a6a110cac530b08336d1247" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/72L14B7jz0mAKlF8jdxPlW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1cyET6kr4lRDt4vGNuzItQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/63lv9mwk1VmODe2ZYCQ1uP" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>slam poetry</td>
+  <td><a href="https://everynoise.com/engenremap-slampoetry.html" title="slam poetry">slam poetry</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 2<br>Folk:1<br>Country:1<br>Blues.Soul:1</td>
-  <td>Phil Kaye &quot;Succulent&quot;<br><audio title="Phil Kaye &quot;Succulent&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0461f47ed2c43f81808f683d6170bb3c9c5261f5" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:2<br>Folk:1<br>Country:1<br>Blues.Soul:1</td>
+  <td>Phil Kaye &quot;Succulent&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0461f47ed2c43f81808f683d6170bb3c9c5261f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/02OGpAADCHQbMhxilfo320" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0VZWdAevfS3W0wBG8PQEaR" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5TiPjFerQ5oQAZ46bIfCll" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>australian comedy</td>
+  <td><a href="https://everynoise.com/engenremap-australiancomedy.html" title="australian comedy">australian comedy</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 6<br>Blues.Soul:4<br>Rock:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.India:1</td>
-  <td>Carl Barron &quot;Burps and Farts (Jfl 2000)&quot;<br><audio title="Carl Barron &quot;Burps and Farts (Jfl 2000)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c746f212eb1bdc676e376f07d69339048455081b" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:6<br>Blues.Soul:4<br>Rock:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.India:1</td>
+  <td>Carl Barron &quot;Burps and Farts (Jfl 2000)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c746f212eb1bdc676e376f07d69339048455081b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1pPP4qxa52IibyFV6oTfJ1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7yw70MbTQHNRxVLDjpn2xF" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3BUGdP8DYQBciY14JaApM4" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>latino comedy</td>
+  <td><a href="https://everynoise.com/engenremap-latinocomedy.html" title="latino comedy">latino comedy</a></td>
   <td>C.Mexico.Latino<br>Comedy</td>
-  <td><b>Comedy:</b> 9<br>C.Mexico.Latino:2</td>
-  <td>Pablo Francisco &quot;Movie Previews&quot;<br><audio title="Pablo Francisco &quot;Movie Previews&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/39c33fef80cb7d01911ebd7fb26801be6fc09bd3" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:9<br>C.Mexico.Latino:2</td>
+  <td>Pablo Francisco &quot;Movie Previews&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/39c33fef80cb7d01911ebd7fb26801be6fc09bd3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2CKj3hTGepAg0wJJ3N2q0a" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Xc65T47EW4C2xEJz3xgnW" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3iGEQwbW38kRtv67MDdLoh" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>histoire pour enfants</td>
+  <td><a href="https://everynoise.com/engenremap-histoirepourenfants.html" title="histoire pour enfants">histoire pour enfants</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 2<br>Rock:1</td>
-  <td>Isabelle Rouzier &quot;L et son papa&quot;<br><audio title="Isabelle Rouzier &quot;L et son papa&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2a28759a8bd65fbd46b5e75a7f809fc80b78d050" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:2<br>Rock:1</td>
+  <td>Isabelle Rouzier &quot;L et son papa&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2a28759a8bd65fbd46b5e75a7f809fc80b78d050" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6BMz3GRTJ0ykYZzCtyFrcV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5WGHmFsRk6dfKyGF4fzD7n" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3qxGGAdbqWSphniHWhD3hE" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>dansk comedy</td>
+  <td><a href="https://everynoise.com/engenremap-danskcomedy.html" title="dansk comedy">dansk comedy</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 7<br>C.Mexico.Latino:1</td>
-  <td>Hva Snakker Du Om? &quot;Ismand&quot;<br><audio title="Hva Snakker Du Om? &quot;Ismand&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6893c720a6f2ea1993b8e950ade6e0d79434769e" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:7<br>C.Mexico.Latino:1</td>
+  <td>Hva Snakker Du Om? &quot;Ismand&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6893c720a6f2ea1993b8e950ade6e0d79434769e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7aMTZp4Gq1sLx0dhz4Vi32" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1PfZPUYGmwn3y23aXdn5sZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2foc4q8ubCceaaaqsTUUqd" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>barnasogur</td>
+  <td><a href="https://everynoise.com/engenremap-barnasogur.html" title="barnasogur">barnasogur</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 2<br>Blues.Soul:2<br>Rock:1<br>Children:1<br>Folk:1</td>
-  <td>Leikh Kar &quot;Fyrsti : Jens burstar aldrei tennurnar&quo<br><audio title="Leikh Kar &quot;Fyrsti : Jens burstar aldrei tennurnar&quo" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/804c4ee213fbeac5ef15e6464cda7438653f7b01" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:2<br>Blues.Soul:2<br>Rock:1<br>Children:1<br>Folk:1</td>
+  <td>Leikh Kar &quot;Fyrsti : Jens burstar aldrei tennurnar&quo<br><audio class="playback" src="https://p.scdn.co/mp3-preview/804c4ee213fbeac5ef15e6464cda7438653f7b01" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6R3LwBUTmiLahlJGUAHHVI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/380JU2Mq8qPYJPqWOxZwZZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/40PqPGSHMVs6ZDMMhmKJq9" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>bornehistorier</td>
+  <td><a href="https://everynoise.com/engenremap-bornehistorier.html" title="bornehistorier">bornehistorier</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 2<br>Blues.Soul:2<br>Rock:1<br>Folk:1</td>
-  <td>Maria Stenz &quot;Den Best Kat&quot;<br><audio title="Maria Stenz &quot;Den Best Kat&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/01a3956fcccb23639230afad6319d5fbe1d321e2" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:2<br>Blues.Soul:2<br>Rock:1<br>Folk:1</td>
+  <td>Maria Stenz &quot;Den Best Kat&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/01a3956fcccb23639230afad6319d5fbe1d321e2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1dGDueP3SFulSK9torTpli" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Ct61QqXmJZXRu3Uca8Dqv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3QgI4qawcySFLvPvCyvI7i" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>kabarett</td>
+  <td><a href="https://everynoise.com/engenremap-kabarett.html" title="kabarett">kabarett</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 2</td>
-  <td>Claus von Wagner &quot;Claus von Wagner Korr#1&quot;<br><audio title="Claus von Wagner &quot;Claus von Wagner Korr#1&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e328249507d78c18e07e9f01869bac33151c648a" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:2</td>
+  <td>Claus von Wagner &quot;Claus von Wagner Korr#1&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e328249507d78c18e07e9f01869bac33151c648a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7ptDZTQFdaqA519GUfff8k" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3HjgPKYcbRf6ohldMtgBOH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/53JWd5NMgQDrzgcYm2fjoa" title="pulse">pulse</a></td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>cuento infantile</td>
+  <td><a href="https://everynoise.com/engenremap-cuentoinfantile.html" title="cuento infantile">cuento infantile</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 2<br>Blues.Soul:2<br>Rock:1<br>Folk:1</td>
-  <td>Cuentos Infantiles (Popular Songs) &quot;Pinocho&quot;<br><audio title="Cuentos Infantiles (Popular Songs) &quot;Pinocho&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2af66e8047dc3688553326cd29f543faf3dd8dfc" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:2<br>Blues.Soul:2<br>Rock:1<br>Folk:1</td>
+  <td>Cuentos Infantiles (Popular Songs) &quot;Pinocho&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2af66e8047dc3688553326cd29f543faf3dd8dfc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1TufwPOsgXigZyIUoh1GHj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5M5fEdXfMJto71Ln38VIsq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Zk0Ix632eA72QUiU2Wrov" title="pulse">pulse</a></td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>british comedy</td>
+  <td><a href="https://everynoise.com/engenremap-britishcomedy.html" title="british comedy">british comedy</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 4<br>Blues.Soul:4<br>Folk:1</td>
-  <td>Andy Parsons &quot;Bus Whisperer&quot;<br><audio title="Andy Parsons &quot;Bus Whisperer&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/28961fc2c64785a32c30e7787798e1397d34815e" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:4<br>Blues.Soul:4<br>Folk:1</td>
+  <td>Andy Parsons &quot;Bus Whisperer&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/28961fc2c64785a32c30e7787798e1397d34815e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6N4OIZFag86xkAX8mtAdgs" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1h41uBuEyVe1kEvz1RSEfV" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ObD24JsxGhi2fLHIXGoL4" title="pulse">pulse</a></td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>clean comedy</td>
+  <td><a href="https://everynoise.com/engenremap-cleancomedy.html" title="clean comedy">clean comedy</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 9<br>C.Mexico.Latino:1</td>
-  <td>Steve Soelberg &quot;Eating Ice Cream&quot;<br><audio title="Steve Soelberg &quot;Eating Ice Cream&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/970a720f9a1e760789fd281391a3a53ed856d0cb" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:9<br>C.Mexico.Latino:1</td>
+  <td>Steve Soelberg &quot;Eating Ice Cream&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/970a720f9a1e760789fd281391a3a53ed856d0cb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6nyFJksfTucl1yODVstEcL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5nqurz2BMbNHSSSEH0TRXx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5KJuQF4cy299PvVNVNpygX" title="pulse">pulse</a></td>
@@ -248,12 +241,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>black comedy</td>
+  <td><a href="https://everynoise.com/engenremap-blackcomedy.html" title="black comedy">black comedy</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 10<br>C.Mexico.Latino:1</td>
-  <td>Michael Colyar &quot;Cracker Barrel&quot;<br><audio title="Michael Colyar &quot;Cracker Barrel&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/40c715ebf9e82b23fdfe8fdb6f96f1f051199093" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:10<br>C.Mexico.Latino:1</td>
+  <td>Michael Colyar &quot;Cracker Barrel&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/40c715ebf9e82b23fdfe8fdb6f96f1f051199093" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3JPfdKelScEwS01JZaiH8X" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Cb0jhx2ZqQWpMGTiLF3Mv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4zcMJIISWD8QSFLMGKSdU6" title="pulse">pulse</a></td>
@@ -261,12 +252,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>comedia</td>
+  <td><a href="https://everynoise.com/engenremap-comedia.html" title="comedia">comedia</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 3</td>
-  <td>Horacio Almada &quot;Licenciatura&quot;<br><audio title="Horacio Almada &quot;Licenciatura&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/bed2e0d7074b8f432a4367ddca64ebe861773e5a" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:3</td>
+  <td>Horacio Almada &quot;Licenciatura&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/bed2e0d7074b8f432a4367ddca64ebe861773e5a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3oXNPFl1SakoBnaFnGKbZC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1SZWvQsg83tpIAviRhqo1C" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/26YEgYQhrldS8UK7LVAu9x" title="pulse">pulse</a></td>
@@ -274,12 +263,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>canadian comedy</td>
+  <td><a href="https://everynoise.com/engenremap-canadiancomedy.html" title="canadian comedy">canadian comedy</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 10<br>C.Mexico.Latino:1</td>
-  <td>Ryan Belleville &quot;BONUS TRACK - Covid 19 I\'m Starting <br><audio title="Ryan Belleville &quot;BONUS TRACK - Covid 19 I\'m Starting " controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6aaf94a4b18c0b709a66c2ed2db254dcef532472" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:10<br>C.Mexico.Latino:1</td>
+  <td>Ryan Belleville &quot;BONUS TRACK - Covid 19 I\'m Starting <br><audio class="playback" src="https://p.scdn.co/mp3-preview/6aaf94a4b18c0b709a66c2ed2db254dcef532472" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7JncFH6GAjyAobbWbIF2Qh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/44krdzVgytwmlnUUnxKN4O" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1mOMI2t7Bs2r1sZOobIWYE" title="pulse">pulse</a></td>
@@ -287,12 +274,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>deep comedy</td>
+  <td><a href="https://everynoise.com/engenremap-deepcomedy.html" title="deep comedy">deep comedy</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 8<br>C.Mexico.Latino:1</td>
-  <td>Eddie Ifft &quot;Parachuting&quot;<br><audio title="Eddie Ifft &quot;Parachuting&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3e960721191daee67a15d80f1f7f3912b62b5c18" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:8<br>C.Mexico.Latino:1</td>
+  <td>Eddie Ifft &quot;Parachuting&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3e960721191daee67a15d80f1f7f3912b62b5c18" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6A74Q1YeY82b4l3zwYFFfm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0BWsHvBTHztdUIeBDIIa7E" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/62xseiRpM072lpdLi0W8UO" title="pulse">pulse</a></td>
@@ -300,12 +285,10 @@
 </tr>
 <tr>
   <td>20</td>
-  <td>comedy</td>
+  <td><a href="https://everynoise.com/engenremap-comedy.html" title="comedy">comedy</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 8<br>C.Mexico.Latino:1</td>
-  <td>Patton Oswalt &quot;The Parking Ticket&quot;<br><audio title="Patton Oswalt &quot;The Parking Ticket&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/12efa223973566a01345d3b8159082d5cfb0978a" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:8<br>C.Mexico.Latino:1</td>
+  <td>Patton Oswalt &quot;The Parking Ticket&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/12efa223973566a01345d3b8159082d5cfb0978a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4PDKZIGNpydaoI7pZuxyh7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4KdUgy0EsJxwrXJBeBkgK8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ic1hQuSljbjR0Uc619Kbl" title="pulse">pulse</a></td>
@@ -313,12 +296,10 @@
 </tr>
 <tr>
   <td>21</td>
-  <td>new comedy</td>
+  <td><a href="https://everynoise.com/engenremap-newcomedy.html" title="new comedy">new comedy</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 7</td>
-  <td>Mike Sheer &quot;Gentrification&quot;<br><audio title="Mike Sheer &quot;Gentrification&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/50a46d0e59d8cac7b99279f21224409e237ab3bb" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:7</td>
+  <td>Mike Sheer &quot;Gentrification&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/50a46d0e59d8cac7b99279f21224409e237ab3bb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7y6c38VZYmqMEFcLflCxy1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4S6mlSzbfpvUXcXJla9XjL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ugHLU4r0U8Kewt1AqKjQN" title="pulse">pulse</a></td>
@@ -326,12 +307,10 @@
 </tr>
 <tr>
   <td>22</td>
-  <td>comedienne</td>
+  <td><a href="https://everynoise.com/engenremap-comedienne.html" title="comedienne">comedienne</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 8</td>
-  <td>Becky Donohue &quot;Phat Ass&quot;<br><audio title="Becky Donohue &quot;Phat Ass&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/22efd17683a8aac5447c281a5b76941dd23dfdc7" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:8</td>
+  <td>Becky Donohue &quot;Phat Ass&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/22efd17683a8aac5447c281a5b76941dd23dfdc7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1CruiEBwsHZTp8VYJppXPx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4pDin6O1uar9tAbwWQ6O0p" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1xlqyBF4fgqPoQFlQmldrv" title="pulse">pulse</a></td>
@@ -339,12 +318,10 @@
 </tr>
 <tr>
   <td>23</td>
-  <td>prank</td>
+  <td><a href="https://everynoise.com/engenremap-prank.html" title="prank">prank</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 1</td>
-  <td>Jim Florentine &quot;Shotgun&quot;<br><audio title="Jim Florentine &quot;Shotgun&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a1bda9619f32365176059482f8708caef3f03ba7" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:1</td>
+  <td>Jim Florentine &quot;Shotgun&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a1bda9619f32365176059482f8708caef3f03ba7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7gMN44gKyJeABIt5tc34tA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7g5DDOWJjKww4vuXKaOI2c" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Dp3fX2Fwm3rUyJCWqErST" title="pulse">pulse</a></td>
@@ -352,12 +329,10 @@
 </tr>
 <tr>
   <td>24</td>
-  <td>humour francais</td>
+  <td><a href="https://everynoise.com/engenremap-humourfrancais.html" title="humour francais">humour francais</a></td>
   <td>Comedy</td>
-  <td><b>Comedy:</b> 5</td>
-  <td>Raymond Devos &quot;Parler pour ne rien dire - Live au Th <br><audio title="Raymond Devos &quot;Parler pour ne rien dire - Live au Th " controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6d3c84941f80d7c4c07e3f15f151743e35f4740a" type="audio/mpeg">
-</audio></td>
+  <td>Comedy:5</td>
+  <td>Raymond Devos &quot;Parler pour ne rien dire - Live au Th <br><audio class="playback" src="https://p.scdn.co/mp3-preview/6d3c84941f80d7c4c07e3f15f151743e35f4740a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2LcJiLWvG8jBx0HTyMfLXY" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>

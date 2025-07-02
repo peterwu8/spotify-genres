@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Indie 02: (27 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>comptine</td>
+  <td><a href="https://everynoise.com/engenremap-comptine.html" title="comptine">comptine</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 2<br>Pop:1<br>Chill:1<br>C.Mexico.Latino:1<br>C.China:1<br>Folk:1<br>Dance:1</td>
-  <td>Laurent Lahaye &quot;Le petit cheval&quot;<br><audio title="Laurent Lahaye &quot;Le petit cheval&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/345c3e636c75bc23d2382ea3c77c040912a4fea9" type="audio/mpeg">
-</audio></td>
+  <td>Indie:2<br>Pop:1<br>Chill:1<br>C.Mexico.Latino:1<br>C.China:1<br>C.Irish:1<br>Folk:1<br>Dance:1</td>
+  <td>Laurent Lahaye &quot;Le petit cheval&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/345c3e636c75bc23d2382ea3c77c040912a4fea9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1PJcHjQejGViKFWUhkEaGi" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3qaMLKvEu26cSlUTyMfoib" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5xJSxrsSWgpbKKCE9PQFVy" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>melancholia</td>
+  <td><a href="https://everynoise.com/engenremap-melancholia.html" title="melancholia">melancholia</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 4<br>Pop:4<br>Rock:2<br>Folk:1<br>Country:1</td>
-  <td>Low &quot;Lullaby&quot;<br><audio title="Low &quot;Lullaby&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/48a0c49f1b9535c993aa10f214ebff14a3ceaef9" type="audio/mpeg">
-</audio></td>
+  <td>Indie:4<br>Pop:4<br>Rock:2<br>Folk:1<br>Country:1</td>
+  <td>Low &quot;Lullaby&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/48a0c49f1b9535c993aa10f214ebff14a3ceaef9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6gB4lvhZqPfknvnw2iNwL6" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1yYcmOJGMSYmuMMzuSTMdE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5S75luj7emQ1rQ9aWh512q" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>neo-singer-songwriter</td>
+  <td><a href="https://everynoise.com/engenremap-neosingersongwriter.html" title="neo-singer-songwriter">neo-singer-songwriter</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 3<br>Pop:3<br>Folk:2<br>C.Korea:1<br>C.India:1<br>Gospel:1<br>Country:1</td>
-  <td>Gabrielle Aplin &quot;Losing Me&quot;<br><audio title="Gabrielle Aplin &quot;Losing Me&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ac3206cce8d660a8927d16f9247cf3a90c4a3f98" type="audio/mpeg">
-</audio></td>
+  <td>Indie:3<br>Pop:3<br>Folk:2<br>C.Korea:1<br>C.India:1<br>Gospel:1<br>Country:1</td>
+  <td>Gabrielle Aplin &quot;Losing Me&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ac3206cce8d660a8927d16f9247cf3a90c4a3f98" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0BhYpMRb8Y8Qu76nu7gFmh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0mBI8anDtQWscXe2EZiFPl" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6F7D9dLvPNFlksTpvPswnJ" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>indie anthem-folk</td>
+  <td><a href="https://everynoise.com/engenremap-indieanthemfolk.html" title="indie anthem-folk">indie anthem-folk</a></td>
   <td>Folk<br>Indie</td>
-  <td><b>Indie:</b> 6<br>Folk:5<br>Pop:3<br>C.Korea:1<br>C.China:1</td>
-  <td>Harrison Storm &quot;Be Slow&quot;<br><audio title="Harrison Storm &quot;Be Slow&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e8fa13df443d5d8dcbcef790ad22aa4be99c54fe" type="audio/mpeg">
-</audio></td>
+  <td>Indie:6<br>Folk:5<br>Pop:3<br>C.Korea:1<br>C.China:1<br>C.Irish:1</td>
+  <td>Harrison Storm &quot;Be Slow&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e8fa13df443d5d8dcbcef790ad22aa4be99c54fe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4Ub3q1CU9YGXR2bkJ4wKwe" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/51ogJdyUbZ36Rdep9FHIce" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/15lo9JTZwKfGubE65tk5hX" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>lo-fi indie</td>
+  <td><a href="https://everynoise.com/engenremap-lofiindie.html" title="lo-fi indie">lo-fi indie</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 5<br>Folk:5<br>Rock:4<br>Psy.Rave:2<br>C.France:2<br>Experimental:2<br>Synth.Electronic:1<br>Pop:1<br>Emo:1<br>C.Taiwan:1<br>C.China:1<br>Instrumental:1</td>
-  <td>The Loners With Parentheses &quot;#2&quot;<br><audio title="The Loners With Parentheses &quot;#2&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/dd8f04fca96a2c2d748776f5c96eb48e09a5ff2f" type="audio/mpeg">
-</audio></td>
+  <td>Indie:5<br>Folk:5<br>Rock:4<br>Psy.Rave:2<br>C.France:2<br>Experimental:2<br>Synth.Electronic:1<br>Pop:1<br>Emo:1<br>C.Taiwan:1<br>C.China:1<br>Instrumental:1</td>
+  <td>The Loners With Parentheses &quot;#2&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/dd8f04fca96a2c2d748776f5c96eb48e09a5ff2f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6bLWoiHrkb8pP82YGCqCHi" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/58Reyc8Pf1U3laPkQCkSVw" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0hMq9SPRCHsSJueVDle0T7" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>vietnamese singer-songwriter</td>
+  <td><a href="https://everynoise.com/engenremap-vietnamesesingersongwriter.html" title="vietnamese singer-songwriter">vietnamese singer-songwriter</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 4<br>Pop:4<br>Folk:3<br>C.Korea:1<br>C.Germany:1<br>C.India:1<br>Gospel:1</td>
-  <td>Th  &quot;Ph Kh Em&quot;<br><audio title="Th  &quot;Ph Kh Em&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a7118b4b5c321f27054793a22c88cf190a60d073" type="audio/mpeg">
-</audio></td>
+  <td>Indie:4<br>Pop:4<br>Folk:3<br>C.Korea:1<br>C.Germany:1<br>C.India:1<br>Gospel:1</td>
+  <td>Th  &quot;Ph Kh Em&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a7118b4b5c321f27054793a22c88cf190a60d073" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2W8qlNiQFfQJTE6Tj2EIdU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0rDBsBwnoMyN4v6qfjk0VJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ckE0bZBdLhlyBOv1QxflI" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>small room</td>
+  <td><a href="https://everynoise.com/engenremap-smallroom.html" title="small room">small room</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 9<br>Pop:2<br>Emo:1<br>Folk:1<br>Country:1</td>
-  <td>Lomelda &quot;Hannah Sun&quot;<br><audio title="Lomelda &quot;Hannah Sun&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/16f5d0546acc875031de5aec2a77b0e7f525311f" type="audio/mpeg">
-</audio></td>
+  <td>Indie:9<br>Pop:2<br>Emo:1<br>Folk:1<br>Country:1</td>
+  <td>Lomelda &quot;Hannah Sun&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/16f5d0546acc875031de5aec2a77b0e7f525311f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2rPwi4IFhoc2r1MMvY0ZI5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4PaNeu1tSPAG6PiSwFQ05v" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6bKXFJqys3w4b0pGhkRW4k" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>swiss indie folk</td>
+  <td><a href="https://everynoise.com/engenremap-swissindiefolk.html" title="swiss indie folk">swiss indie folk</a></td>
   <td>Folk<br>Indie</td>
-  <td><b>Indie:</b> 8<br>Folk:7<br>Pop:2<br>Americana:1<br>C.Spain:1<br>C.Mexico.Latino:1</td>
-  <td>The Gardener &amp; The Tree &quot;Postcards&quot;<br><audio title="The Gardener &amp; The Tree &quot;Postcards&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/66fad6aa8995ca641f15574062a92538b9c1b040" type="audio/mpeg">
-</audio></td>
+  <td>Indie:8<br>Folk:7<br>Pop:2<br>Americana:1<br>C.Spain:1<br>C.Mexico.Latino:1</td>
+  <td>The Gardener &amp; The Tree &quot;Postcards&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/66fad6aa8995ca641f15574062a92538b9c1b040" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0hm17FJIGZ2AzX3QCExv9R" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5yx1sOj8wG3mpZUJUkfmJ0" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/18ix0wwjvAsfexZMCLZ5WQ" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>north dakota indie</td>
+  <td><a href="https://everynoise.com/engenremap-northdakotaindie.html" title="north dakota indie">north dakota indie</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 13<br>Rock:1<br>Pop:1<br>Americana:1<br>Goth:1<br>Folk:1<br>Country:1</td>
-  <td>Swing Low &quot;Back and to the Left&quot;<br><audio title="Swing Low &quot;Back and to the Left&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/33d7811f0da0794cf3dac26923648b097f2a56d8" type="audio/mpeg">
-</audio></td>
+  <td>Indie:13<br>Rock:1<br>Pop:1<br>Americana:1<br>Goth:1<br>Folk:1<br>Country:1</td>
+  <td>Swing Low &quot;Back and to the Left&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/33d7811f0da0794cf3dac26923648b097f2a56d8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/05dDF5E8vI9iPsPp2wBELq" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>eau claire indie</td>
+  <td><a href="https://everynoise.com/engenremap-eauclaireindie.html" title="eau claire indie">eau claire indie</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 8<br>Folk:4<br>Pop:3<br>Psy.Rave:1<br>C.China:1<br>Gospel:1<br>Country:1</td>
-  <td>Big Red Machine &quot;Renegade&quot;<br><audio title="Big Red Machine &quot;Renegade&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ee9cbf9a897422e067427f901aa027b19cb22863" type="audio/mpeg">
-</audio></td>
+  <td>Indie:8<br>Folk:4<br>Pop:3<br>Psy.Rave:1<br>C.China:1<br>Gospel:1<br>Country:1</td>
+  <td>Big Red Machine &quot;Renegade&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ee9cbf9a897422e067427f901aa027b19cb22863" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4GaHDvZWlZ7NtcGdIz7jvT" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0k9IkJfkcnsD8WjSCT2qwn" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/75y1dxKjKvOinmm1cX2CFX" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>football</td>
+  <td><a href="https://everynoise.com/engenremap-football.html" title="football">football</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 7<br>Blues.Soul:5<br>Rock:4<br>Pop:1<br>C.Mexico.Latino:1<br>Baroque:1</td>
-  <td>CTID &quot;Haaland (Ha Ha Ha)&quot;<br><audio title="CTID &quot;Haaland (Ha Ha Ha)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d9c98ee938c2ed4e6b5aa1d3043d1136bdfd15ec" type="audio/mpeg">
-</audio></td>
+  <td>Indie:7<br>Blues.Soul:5<br>Rock:4<br>Pop:1<br>C.Mexico.Latino:1<br>Baroque:1</td>
+  <td>CTID &quot;Haaland (Ha Ha Ha)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d9c98ee938c2ed4e6b5aa1d3043d1136bdfd15ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3kNWVqxt0cR2phbffWW78v" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5m4MMoGtRoan4ZAbhwdrjq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/34ELlraBv4ErZX0G2aYCZU" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>duluth indie</td>
+  <td><a href="https://everynoise.com/engenremap-duluthindie.html" title="duluth indie">duluth indie</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 8<br>Folk:3<br>Pop:2<br>Country:2<br>Americana:1</td>
-  <td>Trampled by Turtles &quot;Ain\'t No Use in Tryin\'&quot;<br><audio title="Trampled by Turtles &quot;Ain\'t No Use in Tryin\'&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d5618ab1ad5b24767b1b9fb6178255555ddd8026" type="audio/mpeg">
-</audio></td>
+  <td>Indie:8<br>Folk:3<br>Pop:2<br>Country:2<br>Americana:1</td>
+  <td>Trampled by Turtles &quot;Ain\'t No Use in Tryin\'&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d5618ab1ad5b24767b1b9fb6178255555ddd8026" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4uDweLoheknOlzPXJDEoh1" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>canberra indie</td>
+  <td><a href="https://everynoise.com/engenremap-canberraindie.html" title="canberra indie">canberra indie</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 2<br>C.Mexico.Latino:2</td>
-  <td>Teen Jesus and the Jean Teasers &quot;Salt&quot;<br><audio title="Teen Jesus and the Jean Teasers &quot;Salt&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8ef5d27c0f153256991eda3d4511701ae123bedf" type="audio/mpeg">
-</audio></td>
+  <td>Indie:2<br>C.Mexico.Latino:2</td>
+  <td>Teen Jesus and the Jean Teasers &quot;Salt&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8ef5d27c0f153256991eda3d4511701ae123bedf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6NtolKQzqsuJxnDi5NgBkH" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>indie singer-songwriter</td>
+  <td><a href="https://everynoise.com/engenremap-indiesingersongwriter.html" title="indie singer-songwriter">indie singer-songwriter</a></td>
   <td>Indie</td>
-  <td><b>Folk:</b> 5<br>Indie:3<br>C.China:2<br>Gospel:2<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.India:1</td>
-  <td>Caitlin Canty &quot;Motel&quot;<br><audio title="Caitlin Canty &quot;Motel&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/61fabe20178f6f9daf7dc0eeb81faa97c1e4e736" type="audio/mpeg">
-</audio></td>
+  <td>Folk:5<br>Indie:3<br>C.China:2<br>Gospel:2<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Irish:1<br>C.Portugal:1<br>C.India:1</td>
+  <td>Caitlin Canty &quot;Motel&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/61fabe20178f6f9daf7dc0eeb81faa97c1e4e736" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2bufHEzNYhC6tl3zpvXG7l" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>modern indie folk</td>
+  <td><a href="https://everynoise.com/engenremap-modernindiefolk.html" title="modern indie folk">modern indie folk</a></td>
   <td>Folk<br>Indie</td>
-  <td><b>Folk:</b> 10<br>Indie:7<br>Gospel:2<br>Pop:1<br>C.Taiwan:1<br>C.Korea:1<br>C.China:1</td>
-  <td>Freyr &quot;I\'m Here&quot;<br><audio title="Freyr &quot;I\'m Here&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/de247d6a288e409fff316cee6decbaf365e59d8d" type="audio/mpeg">
-</audio></td>
+  <td>Folk:10<br>Indie:7<br>Gospel:2<br>Pop:1<br>C.Taiwan:1<br>C.Korea:1<br>C.China:1<br>C.Irish:1</td>
+  <td>Freyr &quot;I\'m Here&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/de247d6a288e409fff316cee6decbaf365e59d8d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7yUfdsaiRYRGK8H2uMRkBv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7HkwjVtQZlZW8YqDkeLcbZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2kAYGyWWkR4WcJBxQfReIK" title="pulse">pulse</a></td>
@@ -248,12 +241,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>canadian indie folk</td>
+  <td><a href="https://everynoise.com/engenremap-canadianindiefolk.html" title="canadian indie folk">canadian indie folk</a></td>
   <td>Folk<br>Indie</td>
-  <td><b>Folk:</b> 9<br>Indie:6<br>Gospel:3<br>Pop:2<br>C.Korea:2<br>C.China:1</td>
-  <td>Andy Shauf &quot;The Magician&quot;<br><audio title="Andy Shauf &quot;The Magician&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3fac91472b22c2b2ffdddb3ec63b448ff9b48d8b" type="audio/mpeg">
-</audio></td>
+  <td>Folk:9<br>Indie:6<br>Gospel:3<br>Pop:2<br>C.Korea:2<br>C.China:1<br>C.Irish:1<br>C.Portugal:1</td>
+  <td>Andy Shauf &quot;The Magician&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3fac91472b22c2b2ffdddb3ec63b448ff9b48d8b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5cJZSH78SbIbw5vdPia24j" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5zaYNXOnHe0c3HGLCE5rSk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6xWoLnS5gVak5hSo1fic2i" title="pulse">pulse</a></td>
@@ -261,12 +252,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>gotlandsk musik</td>
+  <td><a href="https://everynoise.com/engenremap-gotlandskmusik.html" title="gotlandsk musik">gotlandsk musik</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 5<br>Folk:3<br>Pop:2<br>Americana:2<br>C.Mexico.Latino:2<br>Country:1</td>
-  <td>Clara Klingenstr &quot;Kan n fint f h sen&quot;<br><audio title="Clara Klingenstr &quot;Kan n fint f h sen&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0b23cc0d4d4f26de1f4ef4681c1c26563b14a6f8" type="audio/mpeg">
-</audio></td>
+  <td>Indie:5<br>Folk:3<br>Pop:2<br>Americana:2<br>C.Mexico.Latino:2<br>Country:1</td>
+  <td>Clara Klingenstr &quot;Kan n fint f h sen&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0b23cc0d4d4f26de1f4ef4681c1c26563b14a6f8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/35me371XCaMkaF5kBfqoZv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6hupn8WhDI5v2LAuxF8Rss" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2cLXdVFPH9HY8aQYrRCMZZ" title="pulse">pulse</a></td>
@@ -274,12 +263,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>indie folk</td>
+  <td><a href="https://everynoise.com/engenremap-indiefolk.html" title="indie folk">indie folk</a></td>
   <td>Folk<br>Indie</td>
-  <td><b>Folk:</b> 10<br>Indie:5<br>Pop:2<br>Progressive:1<br>Rock:1<br>Americana:1<br>C.Taiwan:1<br>C.Japan:1<br>Bluegrass:1</td>
-  <td>Gregory Alan Isakov &quot;Big Black Car&quot;<br><audio title="Gregory Alan Isakov &quot;Big Black Car&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3d04dae43ab370eb9042255a155e7a84381a3f8a" type="audio/mpeg">
-</audio></td>
+  <td>Folk:10<br>Indie:5<br>Pop:2<br>Progressive:1<br>Rock:1<br>Americana:1<br>C.Taiwan:1<br>C.Japan:1<br>C.Irish:1<br>C.Portugal:1<br>Bluegrass:1</td>
+  <td>Gregory Alan Isakov &quot;Big Black Car&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3d04dae43ab370eb9042255a155e7a84381a3f8a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5Z5KHMrb3bNWGOZJ6y8gsL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6wyr0ff3bVny3eHG0UmzJy" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/57W4CwDZR26a5cIngXakdK" title="pulse">pulse</a></td>
@@ -287,12 +274,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>scottish indie folk</td>
+  <td><a href="https://everynoise.com/engenremap-scottishindiefolk.html" title="scottish indie folk">scottish indie folk</a></td>
   <td>Folk<br>Indie</td>
-  <td><b>Folk:</b> 6<br>Indie:5<br>Gospel:4<br>C.Korea:2<br>Pop:1<br>Americana:1<br>C.China:1</td>
-  <td>Kris Drever &quot;The Call and the Answer - Remastered&quo<br><audio title="Kris Drever &quot;The Call and the Answer - Remastered&quo" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c195eeea35459ef1b3eb0e3b73ebe7bab28794f8" type="audio/mpeg">
-</audio></td>
+  <td>Folk:6<br>Indie:5<br>Gospel:4<br>C.Korea:2<br>Pop:1<br>Americana:1<br>C.China:1</td>
+  <td>Kris Drever &quot;The Call and the Answer - Remastered&quo<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c195eeea35459ef1b3eb0e3b73ebe7bab28794f8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1bhivX7hCIUM7hiYlkn6Fp" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3GiOBcjk36PaLALPKBeHmk" title="pulse">pulse</a></td>
@@ -300,12 +285,10 @@
 </tr>
 <tr>
   <td>20</td>
-  <td>native american spiritual</td>
+  <td><a href="https://everynoise.com/engenremap-nativeamericanspiritual.html" title="native american spiritual">native american spiritual</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 1<br>Pop:1</td>
-  <td>Lance Crowe &amp; Edmond Poochay &quot;Straight Song 5&quo<br><audio title="Lance Crowe &amp; Edmond Poochay &quot;Straight Song 5&quo" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ef2606a06a17e041decd88da3b0ac3cd69387fc5" type="audio/mpeg">
-</audio></td>
+  <td>Indie:1<br>Pop:1</td>
+  <td>Lance Crowe &amp; Edmond Poochay &quot;Straight Song 5&quo<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ef2606a06a17e041decd88da3b0ac3cd69387fc5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0q8tZkSf7dCPWPyrGsDsNt" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1uv6d8hnBxbF4HaodyYEW6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6Gx4NAvMGiiyEwSpnU5HZH" title="pulse">pulse</a></td>
@@ -313,12 +296,10 @@
 </tr>
 <tr>
   <td>21</td>
-  <td>japanese indie folk</td>
+  <td><a href="https://everynoise.com/engenremap-japaneseindiefolk.html" title="japanese indie folk">japanese indie folk</a></td>
   <td>C.Japan<br>Folk<br>Indie</td>
-  <td><b>Folk:</b> 10<br>Indie:4<br>C.Mexico.Latino:3<br>Pop:2<br>C.Japan:2<br>C.France:1<br>C.Taiwan:1<br>Jazz:1<br>Gospel:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f7679035a7dfb61713c8a939d1ed4ce596e02cd1" type="audio/mpeg">
-</audio></td>
+  <td>Folk:10<br>Indie:4<br>C.Mexico.Latino:3<br>Pop:2<br>C.Japan:2<br>C.Portugal:2<br>C.France:1<br>C.Taiwan:1<br>Jazz:1<br>Gospel:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/f7679035a7dfb61713c8a939d1ed4ce596e02cd1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4tENVTwOGCWu16Q7TtWbFp" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5C1IFY1tZHnP0q9BCmVhUE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2L8DagAjj6D1E8saxEiFEf" title="pulse">pulse</a></td>
@@ -326,12 +307,10 @@
 </tr>
 <tr>
   <td>22</td>
-  <td>swedish indie folk</td>
+  <td><a href="https://everynoise.com/engenremap-swedishindiefolk.html" title="swedish indie folk">swedish indie folk</a></td>
   <td>Folk<br>Indie</td>
-  <td><b>Folk:</b> 11<br>Indie:6<br>Gospel:2<br>Pop:1<br>Americana:1<br>C.Korea:1<br>C.Japan:1</td>
-  <td>Jos Gonz &quot;Heartbeats&quot;<br><audio title="Jos Gonz &quot;Heartbeats&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/608e7ed762960e7af6714a2411203f26487ce4b9" type="audio/mpeg">
-</audio></td>
+  <td>Folk:11<br>Indie:6<br>Gospel:2<br>Pop:1<br>Americana:1<br>C.Korea:1<br>C.Japan:1<br>C.Portugal:1</td>
+  <td>Jos Gonz &quot;Heartbeats&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/608e7ed762960e7af6714a2411203f26487ce4b9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4RAPHABokGFKIujJvYgPkS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5mZ9LmTDg7vBSGHVzePkm4" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0gBWXPn0MoGACyb0FEaWG1" title="pulse">pulse</a></td>
@@ -339,12 +318,10 @@
 </tr>
 <tr>
   <td>23</td>
-  <td>indie viet</td>
+  <td><a href="https://everynoise.com/engenremap-indieviet.html" title="indie viet">indie viet</a></td>
   <td>Indie</td>
-  <td><b>Jazz:</b> 8<br>Indie:2<br>Chill:2<br>Rock:1<br>Pop:1<br>C.China:1</td>
-  <td>Minh  &quot;7711(b b m m) - Acoustic&quot;<br><audio title="Minh  &quot;7711(b b m m) - Acoustic&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c8d4f6c310cc73cf184f73df11aabeb2e856cef9" type="audio/mpeg">
-</audio></td>
+  <td>Jazz:8<br>Indie:2<br>Chill:2<br>Rock:1<br>Pop:1<br>C.China:1</td>
+  <td>Minh  &quot;7711(b b m m) - Acoustic&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c8d4f6c310cc73cf184f73df11aabeb2e856cef9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2mKeOh3TSHzA5XioOb0D2C" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Kbgy8WxvwyY1GQcAmoVJR" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2DoUq9QWtMaJxbrEOuCkDJ" title="pulse">pulse</a></td>
@@ -352,11 +329,11 @@
 </tr>
 <tr>
   <td>24</td>
-  <td>korean indie folk</td>
+  <td><a href="https://everynoise.com/engenremap-koreanindiefolk.html" title="korean indie folk">korean indie folk</a></td>
   <td>C.Korea<br>Folk<br>Indie</td>
-  <td><b>Indie:</b> 7<br>Folk:7<br>Pop:5<br>C.Korea:5<br>Jazz:2<br>Chill:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1</td>
-  <td>Siwa &quot;   Gently, By Your Side&quot;<br><audio title="Siwa &quot;   Gently, By Your Side&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7466f0e1f434900775cd44b337fedc7a45c15fb2" type="audio/mpeg">
+  <td>Indie:7<br>Folk:7<br>Pop:5<br>C.Korea:5<br>Jazz:2<br>Chill:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Portugal:1</td>
+  <td>Siwa &quot;   Gently, By Your Side&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7466f0e1f434900775cd44b337fedc7a45c15fb2" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/0AOmr6B5BlVubtXNOM5JfO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1TeP3zTyiVa9fWC4EzXkZA" title="intro">intro</a></td>
@@ -365,12 +342,10 @@
 </tr>
 <tr>
   <td>25</td>
-  <td>indie triste</td>
+  <td><a href="https://everynoise.com/engenremap-indietriste.html" title="indie triste">indie triste</a></td>
   <td>Indie</td>
-  <td><b>Pop:</b> 5<br>Indie:4<br>Folk:4<br>Jazz:3<br>Vocal:2<br>Chill:1<br>C.Korea:1<br>C.Japan:1</td>
-  <td>Jordano &quot;Se que te iras&quot;<br><audio title="Jordano &quot;Se que te iras&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/610942b24d59de4244eff5e7204a80ca0a19e96a" type="audio/mpeg">
-</audio></td>
+  <td>Pop:5<br>Indie:4<br>Folk:4<br>Jazz:3<br>Vocal:2<br>Chill:1<br>C.Korea:1<br>C.Japan:1</td>
+  <td>Jordano &quot;Se que te iras&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/610942b24d59de4244eff5e7204a80ca0a19e96a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1euhr12icBWvWTkNcQIvnY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6CqFiakke6uMtQA5Njoul6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/09kPweWtaqS6uUit61f2hq" title="pulse">pulse</a></td>
@@ -378,12 +353,10 @@
 </tr>
 <tr>
   <td>26</td>
-  <td>ukulele cover</td>
+  <td><a href="https://everynoise.com/engenremap-ukulelecover.html" title="ukulele cover">ukulele cover</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 1</td>
-  <td>Agalipe &quot;Wild World&quot;<br><audio title="Agalipe &quot;Wild World&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/327c4bad9c8a076b8d36eaad7c2d8993eace1d45" type="audio/mpeg">
-</audio></td>
+  <td>Indie:1</td>
+  <td>Agalipe &quot;Wild World&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/327c4bad9c8a076b8d36eaad7c2d8993eace1d45" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5DYnlrlFQR9IecczHvfzaj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4CQqwgvDmjUTkcQzZaM0N7" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/79SPch3WMPju1uWEywjPS2" title="pulse">pulse</a></td>
@@ -391,12 +364,10 @@
 </tr>
 <tr>
   <td>27</td>
-  <td>pune indie</td>
+  <td><a href="https://everynoise.com/engenremap-puneindie.html" title="pune indie">pune indie</a></td>
   <td>Indie</td>
-  <td><b>Indie:</b> 4<br>C.India:3</td>
-  <td>Kamakshi Khanna &quot;Naya&quot;<br><audio title="Kamakshi Khanna &quot;Naya&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/eaa702168df1456d9485c2b08306807e0fa5cd31" type="audio/mpeg">
-</audio></td>
+  <td>Indie:4<br>C.India:3</td>
+  <td>Kamakshi Khanna &quot;Naya&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/eaa702168df1456d9485c2b08306807e0fa5cd31" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2VTqYOL0UbNT0lMwi8vTNH" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Ml89ACy7O9VCwBfP0lI4B" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0aicj8PIKW79BmtDfvU2JX" title="pulse">pulse</a></td>

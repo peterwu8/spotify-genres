@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Vocal: (15 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>vocal house</td>
+  <td><a href="https://everynoise.com/engenremap-vocalhouse.html" title="vocal house">vocal house</a></td>
   <td>House<br>Vocal</td>
-  <td><b>House:</b> 16<br>Vocal:2<br>Dubstep:2<br>Breaks:1<br>Dance:1<br>Experimental:1<br>Instrumental:1<br>Disco:1</td>
-  <td>David Morales &quot;Needin\' U (I Needed U) - Radio Mix&quo<br><audio title="David Morales &quot;Needin\' U (I Needed U) - Radio Mix&quo" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/154e5416c913491a1fbb6f5ba1573253da1764ed" type="audio/mpeg">
-</audio></td>
+  <td>House:16<br>Vocal:2<br>Dubstep:2<br>Breaks:1<br>Dance:1<br>Experimental:1<br>Instrumental:1<br>Disco:1</td>
+  <td>David Morales &quot;Needin\' U (I Needed U) - Radio Mix&quo<br><audio class="playback" src="https://p.scdn.co/mp3-preview/154e5416c913491a1fbb6f5ba1573253da1764ed" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5r4gdnighI2ujQqfCwtHlU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/03dlXSGtFQwY4T1DWvHI5o" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/42N06XAFfk5TlfAnL7P3Yr" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>deep vocal house</td>
+  <td><a href="https://everynoise.com/engenremap-deepvocalhouse.html" title="deep vocal house">deep vocal house</a></td>
   <td>House<br>Vocal</td>
-  <td><b>Dance:</b> 9<br>House:5<br>Synth.Electronic:3<br>Pop:2<br>Vocal:2<br>C.Spain:2<br>C.Germany:1</td>
-  <td>Jenna Drey &quot;All Out Of Love - Giuseppe D. &amp; Kevin<br><audio title="Jenna Drey &quot;All Out Of Love - Giuseppe D. &amp; Kevin" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ff9a539dbe9a96310333115860eee5a0e0c1ac4c" type="audio/mpeg">
-</audio></td>
+  <td>Dance:9<br>House:5<br>Synth.Electronic:3<br>Pop:2<br>Vocal:2<br>C.Spain:2<br>C.Germany:1</td>
+  <td>Jenna Drey &quot;All Out Of Love - Giuseppe D. &amp; Kevin<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ff9a539dbe9a96310333115860eee5a0e0c1ac4c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7iPFuDAoW20OY5LNTDtK1h" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1I9RjUtnV45NJqt7es7CHv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5UNMRWmdZO28GhKPN56EZP" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>vocal trance</td>
+  <td><a href="https://everynoise.com/engenremap-vocaltrance.html" title="vocal trance">vocal trance</a></td>
   <td>Trance<br>Vocal</td>
-  <td><b>Trance:</b> 5<br>Dance:3<br>Progressive:2<br>Synth.Electronic:2<br>Pop:2<br>Vocal:2<br>House:1<br>Punk:1<br>Industrial:1<br>Rock:1<br>Trap:1<br>Gaming:1<br>Gospel:1<br>Dubstep:1</td>
-  <td>Neev Kennedy &quot;One Step Behind - Gal Abutbul Radio Edi<br><audio title="Neev Kennedy &quot;One Step Behind - Gal Abutbul Radio Edi" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8dc711edb2d97702b53eb6bbda6dd7036c5c4732" type="audio/mpeg">
-</audio></td>
+  <td>Trance:5<br>Dance:3<br>Progressive:2<br>Synth.Electronic:2<br>Pop:2<br>Vocal:2<br>House:1<br>Punk:1<br>Industrial:1<br>Rock:1<br>Trap:1<br>Gaming:1<br>Gospel:1<br>Dubstep:1</td>
+  <td>Neev Kennedy &quot;One Step Behind - Gal Abutbul Radio Edi<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8dc711edb2d97702b53eb6bbda6dd7036c5c4732" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4pkYvU2Gr39rQZ8JWzbdyc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3FsMFzrSjq223SeZ9YHLE8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/09GnCV7DoxxGZgLP5bevhG" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>vocaloid metal</td>
+  <td><a href="https://everynoise.com/engenremap-vocaloidmetal.html" title="vocaloid metal">vocaloid metal</a></td>
   <td>Metal<br>Vocal</td>
-  <td><b>Rock:</b> 6<br>Punk:5<br>Metal:4<br>Pop:2<br>Vocal:2<br>Gospel:2<br>Goth:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Japan:1</td>
-  <td>&quot;Hot Milk&quot;<br><audio title="&quot;Hot Milk&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4a60567079a5e4a56d0db5cfd9280ef058f9832d" type="audio/mpeg">
-</audio></td>
+  <td>Rock:6<br>Punk:5<br>Metal:4<br>Pop:2<br>Vocal:2<br>Gospel:2<br>Goth:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Japan:1</td>
+  <td>&quot;Hot Milk&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4a60567079a5e4a56d0db5cfd9280ef058f9832d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7HoucTIMv5vuyQDKHVUlBT" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5FEuYjqzYgQ9aXPHUlS9IW" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7hNj9zO4mZs6wluDOFUdDq" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>vocaloid</td>
+  <td><a href="https://everynoise.com/engenremap-vocaloid.html" title="vocaloid">vocaloid</a></td>
   <td>Vocal</td>
-  <td><b>C.Japan:</b> 7<br>Pop:6<br>Rock:2<br>Vocal:2<br>Synth.Electronic:1<br>C.Mexico.Latino:1</td>
-  <td>UtataP<br><audio title="UtataP" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6a64fa22f4b15d17fea53c0e1e931e43ea3302fe" type="audio/mpeg">
-</audio></td>
+  <td>C.Japan:7<br>Pop:6<br>Rock:2<br>Vocal:2<br>Synth.Electronic:1<br>C.Mexico.Latino:1</td>
+  <td>UtataP<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6a64fa22f4b15d17fea53c0e1e931e43ea3302fe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3gL0B5dJ4WPM0PmhRjqcQU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3wMS0sf8QIFZJFVvVSyOIq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6Ez9cAhFwPUOPgCLdxt2sQ" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>experimental vocal</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalvocal.html" title="experimental vocal">experimental vocal</a></td>
   <td>Experimental<br>Vocal</td>
-  <td><b>Folk:</b> 4<br>Experimental:3<br>Vocal:2<br>Ambient.General:2<br>Pop:1<br>Gospel:1</td>
-  <td>Meredith Monk &quot;Ellis Island&quot;<br><audio title="Meredith Monk &quot;Ellis Island&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/27c410639bb34b7734c9e225be96520515303057" type="audio/mpeg">
-</audio></td>
+  <td>Folk:4<br>Experimental:3<br>Vocal:2<br>Ambient.General:2<br>Pop:1<br>Gospel:1</td>
+  <td>Meredith Monk &quot;Ellis Island&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/27c410639bb34b7734c9e225be96520515303057" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0nN0oPt34YcHQoqkfHHubG" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>japanese vocal jazz</td>
+  <td><a href="https://everynoise.com/engenremap-japanesevocaljazz.html" title="japanese vocal jazz">japanese vocal jazz</a></td>
   <td>C.Japan<br>Jazz<br>Vocal</td>
-  <td><b>Folk:</b> 8<br>Vocal:4<br>Jazz:4<br>Pop:2<br>C.Mexico.Latino:2<br>C.Japan:2<br>Chill:1<br>C.France:1</td>
-  <td>Keiko Lee<br><audio title="Keiko Lee" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c35e6eb36ea81212c258145a7af3f0206586b53d" type="audio/mpeg">
-</audio></td>
+  <td>Folk:8<br>Vocal:4<br>Jazz:4<br>Pop:2<br>C.Mexico.Latino:2<br>C.Japan:2<br>Chill:1<br>C.France:1<br>C.Irish:1<br>C.Portugal:1</td>
+  <td>Keiko Lee<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c35e6eb36ea81212c258145a7af3f0206586b53d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/04QZ4QK3XPrApbiFOIXJJG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7EiEPJqhAHhBOLclwdQOc4" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/65WFHkwssV60WhqSwK42nV" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>contemporary vocal jazz</td>
+  <td><a href="https://everynoise.com/engenremap-contemporaryvocaljazz.html" title="contemporary vocal jazz">contemporary vocal jazz</a></td>
   <td>Jazz<br>Vocal</td>
-  <td><b>Folk:</b> 8<br>Vocal:6<br>Jazz:6<br>Pop:2<br>Chill:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.Japan:1</td>
-  <td>Ann Hampton Callaway &quot;A Kiss To Build A Dream On&quot<br><audio title="Ann Hampton Callaway &quot;A Kiss To Build A Dream On&quot" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f30b99ff2faf120fd42cf61be6014f3fc94ad754" type="audio/mpeg">
-</audio></td>
+  <td>Folk:8<br>Vocal:6<br>Jazz:6<br>Pop:2<br>Chill:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Portugal:1</td>
+  <td>Ann Hampton Callaway &quot;A Kiss To Build A Dream On&quot<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f30b99ff2faf120fd42cf61be6014f3fc94ad754" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3JvgYk6ZM1mwWViJpxphml" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6vzEdFum1mTkUD7dzKPDDI" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7beuWmKAVA14yu8dpgofrf" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>audiophile vocal</td>
+  <td><a href="https://everynoise.com/engenremap-audiophilevocal.html" title="audiophile vocal">audiophile vocal</a></td>
   <td>Vocal</td>
-  <td><b>Folk:</b> 8<br>Vocal:5<br>Jazz:4<br>C.Japan:2<br>Pop:1<br>Chill:1<br>Choir:1</td>
-  <td>Christy Baron &quot;Ain\'t No Sunshine&quot;<br><audio title="Christy Baron &quot;Ain\'t No Sunshine&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d8c58a30c600d313ffdc6b93c1ec7dec0fdd16b2" type="audio/mpeg">
-</audio></td>
+  <td>Folk:8<br>Vocal:5<br>Jazz:4<br>C.Japan:2<br>Pop:1<br>Chill:1<br>Choir:1</td>
+  <td>Christy Baron &quot;Ain\'t No Sunshine&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d8c58a30c600d313ffdc6b93c1ec7dec0fdd16b2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2b3npHUEdwZfeLXj8JR1dh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0NlZPsr7g1L3dGVPzGLq3G" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/571HK6IHAB7SJ7xXc4gMCa" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>hindustani vocal</td>
+  <td><a href="https://everynoise.com/engenremap-hindustanivocal.html" title="hindustani vocal">hindustani vocal</a></td>
   <td>Vocal</td>
-  <td><b>Folk:</b> 4<br>Vocal:2<br>C.India:2<br>Classical:2</td>
-  <td>Rashid Khan &quot;Aaoge Jab Tum&quot;<br><audio title="Rashid Khan &quot;Aaoge Jab Tum&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e80968f533e438c6c8247dc46709199a5b3e6793" type="audio/mpeg">
-</audio></td>
+  <td>Folk:4<br>Vocal:2<br>C.India:2<br>Classical:2</td>
+  <td>Rashid Khan &quot;Aaoge Jab Tum&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e80968f533e438c6c8247dc46709199a5b3e6793" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0dI6Br6YSVopWFFeFiyaoC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4TloE6eM64ieVvw7VdRETN" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Y18m2XAI4HSU6xHp9FP44" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>deep vocal jazz</td>
+  <td><a href="https://everynoise.com/engenremap-deepvocaljazz.html" title="deep vocal jazz">deep vocal jazz</a></td>
   <td>Jazz<br>Vocal</td>
-  <td><b>Folk:</b> 7<br>Vocal:4<br>Jazz:4<br>Pop:1<br>Chill:1</td>
-  <td>Amanda Carr &quot;Scotch and Soda&quot;<br><audio title="Amanda Carr &quot;Scotch and Soda&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d1bbb6ac613bd21f9edc2bcb4213c4aef428ee52" type="audio/mpeg">
-</audio></td>
+  <td>Folk:7<br>Vocal:4<br>Jazz:4<br>C.Portugal:2<br>Pop:1<br>Chill:1</td>
+  <td>Amanda Carr &quot;Scotch and Soda&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d1bbb6ac613bd21f9edc2bcb4213c4aef428ee52" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2Dsz5JxEeRz0nAC0plSEMF" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2YrLuJQ8AmInbu2duBVol8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0bfgclxSBtywCNpNFng1dh" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>vocal harmony group</td>
+  <td><a href="https://everynoise.com/engenremap-vocalharmonygroup.html" title="vocal harmony group">vocal harmony group</a></td>
   <td>Vocal</td>
-  <td><b>Folk:</b> 7<br>Vocal:3<br>Gospel:3<br>Jazz:2<br>Blues.Soul:2<br>Pop:1<br>C.Mexico.Latino:1</td>
-  <td>The McGuire Sisters &quot;Sincerely&quot;<br><audio title="The McGuire Sisters &quot;Sincerely&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/715762aa5aa3586249c37400ef6e83002b9861a5" type="audio/mpeg">
-</audio></td>
+  <td>Folk:7<br>Vocal:3<br>Gospel:3<br>Jazz:2<br>Blues.Soul:2<br>Pop:1<br>C.Mexico.Latino:1</td>
+  <td>The McGuire Sisters &quot;Sincerely&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/715762aa5aa3586249c37400ef6e83002b9861a5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6IywiOKAoppQqNyugHBSMW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1uKi9tlYqtHj5jhOJC4GVQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4zGKAjnFuFdNhLUQRqzuOA" title="pulse">pulse</a></td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>vocal jazz</td>
+  <td><a href="https://everynoise.com/engenremap-vocaljazz.html" title="vocal jazz">vocal jazz</a></td>
   <td>Jazz<br>Vocal</td>
-  <td><b>Jazz:</b> 7<br>Vocal:3<br>Folk:3<br>Pop:2<br>Blues.Soul:2<br>C.Italy:1</td>
-  <td>Dinah Washington &quot;What A Diff\'rence A Day Made&quot;<br><audio title="Dinah Washington &quot;What A Diff\'rence A Day Made&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7a59310caa3447875d61882e5d5eda6ce150018c" type="audio/mpeg">
-</audio></td>
+  <td>Jazz:7<br>Vocal:3<br>Folk:3<br>Pop:2<br>Blues.Soul:2<br>C.Italy:1</td>
+  <td>Dinah Washington &quot;What A Diff\'rence A Day Made&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7a59310caa3447875d61882e5d5eda6ce150018c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2ZazIXecBCVmTlbyKJHxOc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5dBrHBw5DjllZMSPcfrH8J" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/69q4CsgRntbIg5WWdOn0DK" title="pulse">pulse</a></td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>carnatic vocal</td>
+  <td><a href="https://everynoise.com/engenremap-carnaticvocal.html" title="carnatic vocal">carnatic vocal</a></td>
   <td>Vocal</td>
-  <td><b>C.India:</b> 4<br>Pop:2<br>Vocal:2<br>Folk:2<br>Classical:1</td>
-  <td>Sanjay Subrahmanyan &quot;Marukelara&quot;<br><audio title="Sanjay Subrahmanyan &quot;Marukelara&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a683c121834bdcbc37c95c2c50d7570bcdbda46c" type="audio/mpeg">
-</audio></td>
+  <td>C.India:4<br>Pop:2<br>Vocal:2<br>Folk:2<br>Classical:1</td>
+  <td>Sanjay Subrahmanyan &quot;Marukelara&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a683c121834bdcbc37c95c2c50d7570bcdbda46c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4c0FH7ppMiVUJ8DB5zbfZg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0qBnxt18npg42LzJXmnf5G" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1PJUEOkAOPFI9ZjYyln9Au" title="pulse">pulse</a></td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>vocal ensemble</td>
+  <td><a href="https://everynoise.com/engenremap-vocalensemble.html" title="vocal ensemble">vocal ensemble</a></td>
   <td>Classical<br>Vocal</td>
-  <td><b>Choir:</b> 7<br>Classical:3<br>Vocal:2<br>C.Italy:1<br>C.Germany:1</td>
-  <td>A Sei Voci &quot;Missa l\'homme arm super voces musicales: <br><audio title="A Sei Voci &quot;Missa l\'homme arm super voces musicales: " controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3920768b3fc2ef880953d22e325709d2683aad47" type="audio/mpeg">
-</audio></td>
+  <td>Choir:7<br>Classical:3<br>Vocal:2<br>C.Italy:1<br>C.Germany:1</td>
+  <td>A Sei Voci &quot;Missa l\'homme arm super voces musicales: <br><audio class="playback" src="https://p.scdn.co/mp3-preview/3920768b3fc2ef880953d22e325709d2683aad47" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/06lR5Yw2iNduDqRouzJgJK" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/451M08OY9oTROq5hsCBpad" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7fm3y7UZF3lJiRuY41SDX4" title="pulse">pulse</a></td>

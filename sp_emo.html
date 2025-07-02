@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Emo: (37 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>pop emo</td>
+  <td><a href="https://everynoise.com/engenremap-popemo.html" title="pop emo">pop emo</a></td>
   <td>Emo<br>Pop</td>
-  <td><b>Pop:</b> 8<br>Punk:7<br>Rock:4<br>Emo:3<br>Goth:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Gospel:1</td>
-  <td>We Are The In Crowd &quot;The Best Thing (That Never Happe<br><audio title="We Are The In Crowd &quot;The Best Thing (That Never Happe" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/118cb13c2f198282acc8b52ce475fbb739d1c5c9" type="audio/mpeg">
-</audio></td>
+  <td>Pop:8<br>Punk:7<br>Rock:4<br>Emo:3<br>Goth:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Gospel:1</td>
+  <td>We Are The In Crowd &quot;The Best Thing (That Never Happe<br><audio class="playback" src="https://p.scdn.co/mp3-preview/118cb13c2f198282acc8b52ce475fbb739d1c5c9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3Gf8bbUuqd7zLFt4LrSLej" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6lv9yKVtzpCtlblXi9FK6m" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6WGbGU1QCoXBqDN6KN1nNO" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>demoscene</td>
+  <td><a href="https://everynoise.com/engenremap-demoscene.html" title="demoscene">demoscene</a></td>
   <td>Emo</td>
-  <td><b>Synth.Electronic:</b> 8<br>Experimental:3<br>House:2<br>Electronica:2<br>Emo:2<br>Indie:1<br>Gaming:1<br>C.Italy:1<br>C.Taiwan:1<br>C.China:1<br>Dance:1</td>
-  <td>Jogeir Liljedahl &quot;Guitar Slinger&quot;<br><audio title="Jogeir Liljedahl &quot;Guitar Slinger&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/39e50b74585e576371c5d640a6941692d567778f" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:8<br>Experimental:3<br>House:2<br>Electronica:2<br>Emo:2<br>Indie:1<br>Gaming:1<br>C.Italy:1<br>C.Taiwan:1<br>C.China:1<br>C.Irish:1<br>Dance:1</td>
+  <td>Jogeir Liljedahl &quot;Guitar Slinger&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/39e50b74585e576371c5d640a6941692d567778f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/41x6s1VU0XUKV4TlvB7dEn" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/31LwqlZBarQvUXGdhRAlFq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5U3MT9V6pVkIwlKzrPsapF" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>anthem emo</td>
+  <td><a href="https://everynoise.com/engenremap-anthememo.html" title="anthem emo">anthem emo</a></td>
   <td>Emo</td>
-  <td><b>Punk:</b> 5<br>Pop:5<br>Emo:5<br>Rock:4<br>Gospel:2<br>Metal:1<br>Goth:1<br>C.Taiwan:1<br>C.Mexico.Latino:1</td>
-  <td>Homesafe &quot;Permanent Resolution&quot;<br><audio title="Homesafe &quot;Permanent Resolution&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/77b3b2be8104d6fae4fdb0767a8a2a127841b8c1" type="audio/mpeg">
-</audio></td>
+  <td>Punk:5<br>Pop:5<br>Emo:5<br>Rock:4<br>Gospel:2<br>Metal:1<br>Goth:1<br>C.Taiwan:1<br>C.Mexico.Latino:1</td>
+  <td>Homesafe &quot;Permanent Resolution&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/77b3b2be8104d6fae4fdb0767a8a2a127841b8c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1dHm6fhlORhY2O1v6aO4fc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1DS1QV5xomvw9tYxBXbB52" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7blLWm5BDxRevYAUgBAAck" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>russian emo rap</td>
+  <td><a href="https://everynoise.com/engenremap-russianemorap.html" title="russian emo rap">russian emo rap</a></td>
   <td>Emo<br>Rap</td>
-  <td><b>Pop:</b> 8<br>Trap:4<br>Emo:4<br>Hyperpop:4<br>Rap:3<br>Synth.Electronic:2<br>C.En.Espanol:2<br>House:1<br>Metal:1<br>Gaming:1<br>C.Korea:1<br>C.China:1</td>
-  <td>Katanacss<br><audio title="Katanacss" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/bafae5571bad877161a26a1ee35f7f94b699e1a6" type="audio/mpeg">
-</audio></td>
+  <td>Pop:8<br>Trap:4<br>Emo:4<br>Hyperpop:4<br>Rap:3<br>Synth.Electronic:2<br>C.En.Espanol:2<br>House:1<br>Metal:1<br>Gaming:1<br>C.Korea:1<br>C.China:1</td>
+  <td>Katanacss<br><audio class="playback" src="https://p.scdn.co/mp3-preview/bafae5571bad877161a26a1ee35f7f94b699e1a6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1Of03fMRcavbNFOuElUEYm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4P06em5X27l38eJBYFAKMw" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2v4bvAPy4CltxfMZwn1Y6E" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>emoplugg</td>
+  <td><a href="https://everynoise.com/engenremap-emoplugg.html" title="emoplugg">emoplugg</a></td>
   <td>Emo</td>
-  <td><b>Pop:</b> 11<br>Hyperpop:6<br>Emo:4<br>Indie:3<br>C.En.Espanol:2<br>Synth.Electronic:1<br>Trap:1<br>Rap:1<br>C.China:1<br>C.Germany:1<br>Gospel:1</td>
-  <td>Eric2k &quot;lay with me&quot;<br><audio title="Eric2k &quot;lay with me&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/827a570352222a928189595f3517897154bfd4d6" type="audio/mpeg">
-</audio></td>
+  <td>Pop:11<br>Hyperpop:6<br>Emo:4<br>Indie:3<br>C.En.Espanol:2<br>Synth.Electronic:1<br>Trap:1<br>Rap:1<br>C.China:1<br>C.Germany:1<br>Gospel:1</td>
+  <td>Eric2k &quot;lay with me&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/827a570352222a928189595f3517897154bfd4d6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0assY927mdLXpwVVgnRAPQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/21tQNQp7eKXcRVE2UVF089" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0977o6alZzgicTEWRfsgZY" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>indonesian emo rap</td>
+  <td><a href="https://everynoise.com/engenremap-indonesianemorap.html" title="indonesian emo rap">indonesian emo rap</a></td>
   <td>Emo<br>Rap</td>
-  <td><b>Pop:</b> 8<br>Hyperpop:6<br>Emo:5<br>Rap:4<br>Trap:3<br>Synth.Electronic:2<br>C.En.Espanol:2<br>Indie:1<br>C.China:1<br>C.Germany:1<br>Blues.Soul:1</td>
-  <td>Ramandhika &quot;We Both Sad AF&quot;<br><audio title="Ramandhika &quot;We Both Sad AF&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2de909daebecf4a07cf287b339876c818c1c9429" type="audio/mpeg">
-</audio></td>
+  <td>Pop:8<br>Hyperpop:6<br>Emo:5<br>Rap:4<br>Trap:3<br>Synth.Electronic:2<br>C.En.Espanol:2<br>Indie:1<br>C.China:1<br>C.Germany:1<br>C.Irish:1<br>Blues.Soul:1</td>
+  <td>Ramandhika &quot;We Both Sad AF&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2de909daebecf4a07cf287b339876c818c1c9429" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/63VNJboa7qyn6gMcDMuU77" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5KzllKwXnmZIe1b6KwyPQv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0O2CJotmqoFJqjTadXBB84" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>deep pop emo</td>
+  <td><a href="https://everynoise.com/engenremap-deeppopemo.html" title="deep pop emo">deep pop emo</a></td>
   <td>Emo<br>Pop</td>
-  <td><b>Punk:</b> 10<br>Pop:7<br>Rock:5<br>Emo:3<br>C.Mexico.Latino:2<br>Indie:1<br>Metal:1<br>C.Spain:1<br>C.Taiwan:1</td>
-  <td>Hometown Anthem &quot;Picture Perfect Pieces&quot;<br><audio title="Hometown Anthem &quot;Picture Perfect Pieces&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c8777febb595b7759c5bb8113922e3852357cde8" type="audio/mpeg">
-</audio></td>
+  <td>Punk:10<br>Pop:7<br>Rock:5<br>Emo:3<br>C.Mexico.Latino:2<br>Indie:1<br>Metal:1<br>C.Spain:1<br>C.Taiwan:1</td>
+  <td>Hometown Anthem &quot;Picture Perfect Pieces&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c8777febb595b7759c5bb8113922e3852357cde8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6O0YqAnrB1YHt2SbwD28fD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6BmB8mhoGCgRmu4RErqrQF" title="intro">intro</a></td>
   <td>--</td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>emo trap en espanol</td>
+  <td><a href="https://everynoise.com/engenremap-emotrapenespanol.html" title="emo trap en espanol">emo trap en espanol</a></td>
   <td>C.En.Espanol<br>Emo<br>Trap</td>
-  <td><b>Pop:</b> 11<br>Hyperpop:8<br>Emo:6<br>Trap:4<br>Rap:3<br>C.En.Espanol:3<br>C.Italy:3<br>Synth.Electronic:2<br>Indie:1<br>C.China:1<br>C.Germany:1</td>
-  <td>Gremlin Shawty &quot;PALLMALLPOPSTAR&quot;<br><audio title="Gremlin Shawty &quot;PALLMALLPOPSTAR&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e50eb660fa2a366d566e8ffde2efef8a32b73c66" type="audio/mpeg">
-</audio></td>
+  <td>Pop:11<br>Hyperpop:8<br>Emo:6<br>Trap:4<br>Rap:3<br>C.En.Espanol:3<br>C.Italy:3<br>Synth.Electronic:2<br>Indie:1<br>C.China:1<br>C.Germany:1</td>
+  <td>Gremlin Shawty &quot;PALLMALLPOPSTAR&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e50eb660fa2a366d566e8ffde2efef8a32b73c66" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4vHFUc9Gak6omVxBYkDLRv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6xk9kuRH69d4XggI6ShUgb" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6rz0vmTdryqdpEgPuNkmwQ" title="pulse">pulse</a></td>
@@ -157,11 +164,11 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>emo mexicano</td>
+  <td><a href="https://everynoise.com/engenremap-emomexicano.html" title="emo mexicano">emo mexicano</a></td>
   <td>C.Mexico.Latino<br>Emo</td>
-  <td><b>Rock:</b> 10<br>Emo:5<br>C.Mexico.Latino:5<br>Indie:3<br>Punk:2<br>Pop:2</td>
-  <td>Sureste &quot;Empezar, Pt. 2&quot;<br><audio title="Sureste &quot;Empezar, Pt. 2&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4928cd5a81b73d7f7942525b8a70cc26b15168f9" type="audio/mpeg">
+  <td>Rock:10<br>Emo:5<br>C.Mexico.Latino:5<br>Indie:3<br>Punk:2<br>Pop:2</td>
+  <td>Sureste &quot;Empezar, Pt. 2&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4928cd5a81b73d7f7942525b8a70cc26b15168f9" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/4yn120cVWRqpXwovvl3gGQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5j8S99hdpHQEbxT1t2uLYH" title="intro">intro</a></td>
@@ -170,12 +177,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>russian emo</td>
+  <td><a href="https://everynoise.com/engenremap-russianemo.html" title="russian emo">russian emo</a></td>
   <td>Emo</td>
-  <td><b>Rock:</b> 12<br>Emo:4<br>Indie:2<br>Progressive:1<br>Hardstyle:1<br>Metal:1<br>Pop:1<br>C.Spain:1<br>C.Mexico.Latino:1</td>
-  <td>&quot; &quot;<br><audio title="&quot; &quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ebc4d169c65b689d7e46308533a1536fb1731ff9" type="audio/mpeg">
-</audio></td>
+  <td>Rock:12<br>Emo:4<br>Indie:2<br>Progressive:1<br>Hardstyle:1<br>Metal:1<br>Pop:1<br>C.Spain:1<br>C.Mexico.Latino:1</td>
+  <td>&quot; &quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ebc4d169c65b689d7e46308533a1536fb1731ff9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/56MKvHNKAAYAVB3s24AyZz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/39d3Wz3FbKyJGmbodM4MjL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6YUfZySRmkSqAdoA7zBYJT" title="pulse">pulse</a></td>
@@ -183,12 +188,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>indonesian emo</td>
+  <td><a href="https://everynoise.com/engenremap-indonesianemo.html" title="indonesian emo">indonesian emo</a></td>
   <td>Emo</td>
-  <td><b>Metal:</b> 7<br>Rock:4<br>Emo:4<br>Indie:3<br>C.Spain:3<br>Progressive:2<br>Punk:2<br>Hardstyle:2<br>Pop:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1<br>Folk:1</td>
-  <td>Shewn &quot;Sun / Shine&quot;<br><audio title="Shewn &quot;Sun / Shine&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8ff5155c906f614f1d0d79d3854a121de6cd3c2a" type="audio/mpeg">
-</audio></td>
+  <td>Metal:7<br>Rock:4<br>Emo:4<br>Indie:3<br>C.Spain:3<br>Progressive:2<br>Punk:2<br>Hardstyle:2<br>Pop:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1<br>Folk:1</td>
+  <td>Shewn &quot;Sun / Shine&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8ff5155c906f614f1d0d79d3854a121de6cd3c2a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4umpvMoqfoNM3DbdkMA8SB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Li15wZ2ayg57VINlYckPE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4IbDdukCsJ0t9MEhIZ8akN" title="pulse">pulse</a></td>
@@ -196,12 +199,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>north carolina emo</td>
+  <td><a href="https://everynoise.com/engenremap-northcarolinaemo.html" title="north carolina emo">north carolina emo</a></td>
   <td>Emo</td>
-  <td><b>Emo:</b> 8<br>Rock:6<br>Indie:3<br>Metal:3<br>C.Spain:2<br>C.Mexico.Latino:2<br>Progressive:1<br>Hardstyle:1<br>C.Japan:1<br>C.Germany:1</td>
-  <td>Condado &quot;CHERRY GOJO&quot;<br><audio title="Condado &quot;CHERRY GOJO&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4aee48c4f736cd237bc86c4b46d0c0fc08b18e8f" type="audio/mpeg">
-</audio></td>
+  <td>Emo:8<br>Rock:6<br>Indie:3<br>Metal:3<br>C.Spain:2<br>C.Mexico.Latino:2<br>Progressive:1<br>Hardstyle:1<br>C.Japan:1<br>C.Germany:1</td>
+  <td>Condado &quot;CHERRY GOJO&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4aee48c4f736cd237bc86c4b46d0c0fc08b18e8f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6UhiAgqwwUoXo4JOrV104r" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/46CdNneXC11kF7SA6JgS3k" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0GeuOcl4H2JFhdx6gHZch3" title="pulse">pulse</a></td>
@@ -209,12 +210,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>czsk emo rap</td>
+  <td><a href="https://everynoise.com/engenremap-czskemorap.html" title="czsk emo rap">czsk emo rap</a></td>
   <td>Emo<br>Rap</td>
-  <td><b>Rap:</b> 9<br>Hip hop:7<br>Trap:4<br>Pop:2<br>Emo:2<br>C.India:2<br>Viral:1<br>Hyperpop:1</td>
-  <td>Totally Nothin &quot;10mg freestyle&quot;<br><audio title="Totally Nothin &quot;10mg freestyle&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c59b33d8c72cac9ea12ae4a108c88f4cd1893a96" type="audio/mpeg">
-</audio></td>
+  <td>Rap:9<br>Hip hop:7<br>Trap:4<br>Pop:2<br>Emo:2<br>C.India:2<br>Viral:1<br>C.Irish:1<br>Hyperpop:1</td>
+  <td>Totally Nothin &quot;10mg freestyle&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c59b33d8c72cac9ea12ae4a108c88f4cd1893a96" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4izm3QhYxFaqBOrYVf0YAJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/58RayEYEjkpq8ESToI72om" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1LXLCQbTsbUvAEIPGSMPZz" title="pulse">pulse</a></td>
@@ -222,12 +221,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>emo rap</td>
+  <td><a href="https://everynoise.com/engenremap-emorap.html" title="emo rap">emo rap</a></td>
   <td>Emo<br>Rap</td>
-  <td><b>Pop:</b> 10<br>Rap:5<br>Emo:4<br>Hyperpop:3<br>Blues.Soul:3<br>Synth.Electronic:1<br>Indie:1<br>Trap:1<br>Chill:1<br>C.En.Espanol:1<br>C.Germany:1</td>
-  <td>93FEETOFSMOKE &quot;TOOTHPASTE - DEDLINE PHONK REMIX&quot;<br><audio title="93FEETOFSMOKE &quot;TOOTHPASTE - DEDLINE PHONK REMIX&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7dfde7160ac2845663372b1da8fbf744326ef2fb" type="audio/mpeg">
-</audio></td>
+  <td>Pop:10<br>Rap:5<br>Emo:4<br>Hyperpop:3<br>Blues.Soul:3<br>Synth.Electronic:1<br>Indie:1<br>Trap:1<br>Chill:1<br>C.En.Espanol:1<br>C.Germany:1</td>
+  <td>93FEETOFSMOKE &quot;TOOTHPASTE - DEDLINE PHONK REMIX&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7dfde7160ac2845663372b1da8fbf744326ef2fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0Fz9zaKbug4gw1xTvmTUWI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1T3noICTvP5BuTBoKIxURU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0keSQ79QjOBW8ZzboiPRBp" title="pulse">pulse</a></td>
@@ -235,12 +232,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>alternative emo</td>
+  <td><a href="https://everynoise.com/engenremap-alternativeemo.html" title="alternative emo">alternative emo</a></td>
   <td>Emo</td>
-  <td><b>Emo:</b> 10<br>Rock:4<br>Indie:3<br>Punk:2<br>C.Mexico.Latino:2<br>Hardstyle:1<br>Pop:1</td>
-  <td>You Blew It! &quot;Match &amp; Tinder&quot;<br><audio title="You Blew It! &quot;Match &amp; Tinder&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6680e9ef0adc855ad00a0795926d38bbe86c28e3" type="audio/mpeg">
-</audio></td>
+  <td>Emo:10<br>Rock:4<br>Indie:3<br>Punk:2<br>C.Mexico.Latino:2<br>Hardstyle:1<br>Pop:1</td>
+  <td>You Blew It! &quot;Match &amp; Tinder&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6680e9ef0adc855ad00a0795926d38bbe86c28e3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4RZ8ejso7uNp2Yz9DMqpVx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7iVKVuZRapiVx6Kw7KHOqp" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/67uxYp1LZKSO4DiykmOfdE" title="pulse">pulse</a></td>
@@ -248,12 +243,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>emo rap italiano</td>
+  <td><a href="https://everynoise.com/engenremap-emorapitaliano.html" title="emo rap italiano">emo rap italiano</a></td>
   <td>C.Italy<br>Emo<br>Rap</td>
-  <td><b>Pop:</b> 13<br>C.Italy:6<br>Emo:4<br>Rap:3<br>Trap:2<br>C.En.Espanol:2<br>Hyperpop:2<br>Viral:1<br>C.Germany:1<br>Gospel:1<br>Blues.Soul:1</td>
-  <td>Jack Out &quot;Domani (feat. Olly)&quot;<br><audio title="Jack Out &quot;Domani (feat. Olly)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ec6d6b6fd918def553aac3c871d48c1e5abf5d19" type="audio/mpeg">
-</audio></td>
+  <td>Pop:13<br>C.Italy:6<br>Emo:4<br>Rap:3<br>Trap:2<br>C.En.Espanol:2<br>Hyperpop:2<br>Viral:1<br>C.Germany:1<br>Gospel:1<br>Blues.Soul:1</td>
+  <td>Jack Out &quot;Domani (feat. Olly)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ec6d6b6fd918def553aac3c871d48c1e5abf5d19" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/518nIGwtzomegRteO67NXk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1sImQXzWR1W2xzxRZywRZZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/14Ha4Y4shm2TpShAAKjN8B" title="pulse">pulse</a></td>
@@ -261,12 +254,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>emo trap italiana</td>
+  <td><a href="https://everynoise.com/engenremap-emotrapitaliana.html" title="emo trap italiana">emo trap italiana</a></td>
   <td>C.Italy<br>Emo<br>Trap</td>
-  <td><b>Pop:</b> 12<br>C.Italy:5<br>Emo:4<br>Trap:3<br>Rap:2<br>C.En.Espanol:2<br>Hyperpop:2<br>Blues.Soul:2<br>C.Mexico.Latino:1<br>C.Germany:1<br>Gospel:1</td>
-  <td>demoncandy &quot;ANSIA SOCIALE&quot;<br><audio title="demoncandy &quot;ANSIA SOCIALE&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/673f179b6a771c3254820b1cb5076b2c973d68b8" type="audio/mpeg">
-</audio></td>
+  <td>Pop:12<br>C.Italy:5<br>Emo:4<br>Trap:3<br>Rap:2<br>C.En.Espanol:2<br>Hyperpop:2<br>Blues.Soul:2<br>C.Mexico.Latino:1<br>C.Germany:1<br>Gospel:1</td>
+  <td>demoncandy &quot;ANSIA SOCIALE&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/673f179b6a771c3254820b1cb5076b2c973d68b8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0AFo791ONzlWZ73HnrJ8lD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0zgZ5Ill8rMou7vS8xWlNP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2vmYgrLOCtNxYAXLI4b4nw" title="pulse">pulse</a></td>
@@ -274,12 +265,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>aussie emo</td>
+  <td><a href="https://everynoise.com/engenremap-aussieemo.html" title="aussie emo">aussie emo</a></td>
   <td>Emo</td>
-  <td><b>Emo:</b> 7<br>Rock:6<br>Indie:4<br>Pop:2<br>C.Mexico.Latino:2<br>Progressive:1<br>Punk:1<br>Hardstyle:1<br>Metal:1<br>C.Japan:1<br>C.Germany:1</td>
-  <td>Ceres &quot;A Thousand Miles - triple j Like A Version&quo<br><audio title="Ceres &quot;A Thousand Miles - triple j Like A Version&quo" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7e0b2b4c298956f314b569f2222ab830a30f431c" type="audio/mpeg">
-</audio></td>
+  <td>Emo:7<br>Rock:6<br>Indie:4<br>Pop:2<br>C.Mexico.Latino:2<br>Progressive:1<br>Punk:1<br>Hardstyle:1<br>Metal:1<br>C.Japan:1<br>C.Germany:1</td>
+  <td>Ceres &quot;A Thousand Miles - triple j Like A Version&quo<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7e0b2b4c298956f314b569f2222ab830a30f431c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0ZoecwlEBQTUVeG9AbAuHa" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6uG5BeIDUETDB7OtOyX7vP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0aXulH0TlgyGTyRWsPpTy0" title="pulse">pulse</a></td>
@@ -287,12 +276,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>emo</td>
+  <td><a href="https://everynoise.com/engenremap-emo.html" title="emo">emo</a></td>
   <td>Emo</td>
-  <td><b>Emo:</b> 10<br>Punk:4<br>Rock:3<br>Indie:2<br>Pop:2<br>C.Mexico.Latino:2<br>Hardstyle:1</td>
-  <td>The Promise Ring &quot;Red &amp; Blue Jeans&quot;<br><audio title="The Promise Ring &quot;Red &amp; Blue Jeans&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3349afe908060946bd6a01a38267e49a70208b6d" type="audio/mpeg">
-</audio></td>
+  <td>Emo:10<br>Punk:4<br>Rock:3<br>Indie:2<br>Pop:2<br>C.Mexico.Latino:2<br>Hardstyle:1</td>
+  <td>The Promise Ring &quot;Red &amp; Blue Jeans&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3349afe908060946bd6a01a38267e49a70208b6d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4eC7Sa1Xcy33lKn53gfiZb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2HQiR1RChiegHMHZXmoiiP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/66DA6NRYRuDp3OEchYhWtd" title="pulse">pulse</a></td>
@@ -300,12 +287,10 @@
 </tr>
 <tr>
   <td>20</td>
-  <td>japanese emo</td>
+  <td><a href="https://everynoise.com/engenremap-japaneseemo.html" title="japanese emo">japanese emo</a></td>
   <td>C.Japan<br>Emo</td>
-  <td><b>Rock:</b> 8<br>Emo:7<br>C.Japan:7<br>Punk:3<br>Hardstyle:2<br>Indie:2<br>Progressive:1<br>Metal:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8da363d0ea6bb08ba55edb2249d974f468d46671" type="audio/mpeg">
-</audio></td>
+  <td>Rock:8<br>Emo:7<br>C.Japan:7<br>Punk:3<br>Hardstyle:2<br>Indie:2<br>Progressive:1<br>Metal:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/8da363d0ea6bb08ba55edb2249d974f468d46671" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1XtPFaH9uCg92IUh349zfu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7Ho5uqy9ZdJqHMQc5bIWuK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/67lRuDkSqzDWaogc78uxCy" title="pulse">pulse</a></td>
@@ -313,12 +298,10 @@
 </tr>
 <tr>
   <td>21</td>
-  <td>brazilian emo</td>
+  <td><a href="https://everynoise.com/engenremap-brazilianemo.html" title="brazilian emo">brazilian emo</a></td>
   <td>Emo</td>
-  <td><b>Rock:</b> 11<br>Indie:8<br>Emo:3<br>Punk:1<br>Hardstyle:1<br>Pop:1<br>C.Mexico.Latino:1</td>
-  <td>Polara &quot;Como Assim&quot;<br><audio title="Polara &quot;Como Assim&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d42c71d879ed2302da0980d98eba61ab5d7f22c0" type="audio/mpeg">
-</audio></td>
+  <td>Rock:11<br>Indie:8<br>Emo:3<br>Punk:1<br>Hardstyle:1<br>Pop:1<br>C.Mexico.Latino:1</td>
+  <td>Polara &quot;Como Assim&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d42c71d879ed2302da0980d98eba61ab5d7f22c0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4529JKPn5nYRNB3e3JHJ3D" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6pn4KhSHeqVt3GoGMhg3dE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4G32aT1H58ikvxFASGkFGQ" title="pulse">pulse</a></td>
@@ -326,12 +309,10 @@
 </tr>
 <tr>
   <td>22</td>
-  <td>diy emo</td>
+  <td><a href="https://everynoise.com/engenremap-diyemo.html" title="diy emo">diy emo</a></td>
   <td>Emo</td>
-  <td><b>Indie:</b> 12<br>Emo:6<br>Rock:4<br>Progressive:1<br>Punk:1</td>
-  <td>Stars Hollow &quot;Tadpole&quot;<br><audio title="Stars Hollow &quot;Tadpole&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a4b8001a7dcbab8dd0045a7dd776d2433f43a951" type="audio/mpeg">
-</audio></td>
+  <td>Indie:12<br>Emo:6<br>Rock:4<br>Progressive:1<br>Punk:1<br>C.Irish:1</td>
+  <td>Stars Hollow &quot;Tadpole&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a4b8001a7dcbab8dd0045a7dd776d2433f43a951" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6Sk80JvC6Isqyf1Bs01r9j" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7hIyaVplN5S6DmNZvG0jBb" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2r7dt9uKlHvPXIeF2rd723" title="pulse">pulse</a></td>
@@ -339,11 +320,11 @@
 </tr>
 <tr>
   <td>23</td>
-  <td>new england emo</td>
+  <td><a href="https://everynoise.com/engenremap-newenglandemo.html" title="new england emo">new england emo</a></td>
   <td>Emo</td>
-  <td><b>Emo:</b> 8<br>Indie:7<br>Rock:4<br>Progressive:1<br>Metal:1<br>C.Japan:1</td>
-  <td>Perspective, a Lovely Hand to Hold &quot;Pepe Silvia&quot;<br><audio title="Perspective, a Lovely Hand to Hold &quot;Pepe Silvia&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ecf09556334de5e55fa2e10574cb6992fce19f82" type="audio/mpeg">
+  <td>Emo:8<br>Indie:7<br>Rock:4<br>Progressive:1<br>Metal:1<br>C.Japan:1</td>
+  <td>Perspective, a Lovely Hand to Hold &quot;Pepe Silvia&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ecf09556334de5e55fa2e10574cb6992fce19f82" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/5SfuVbeZFRwaXgZfXRd5So" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/22EvvWMYkQYeGrAqz6zkry" title="intro">intro</a></td>
@@ -352,12 +333,10 @@
 </tr>
 <tr>
   <td>24</td>
-  <td>italian emo</td>
+  <td><a href="https://everynoise.com/engenremap-italianemo.html" title="italian emo">italian emo</a></td>
   <td>C.Italy<br>Emo</td>
-  <td><b>Rock:</b> 7<br>C.Italy:6<br>Emo:4<br>Punk:3<br>Indie:3<br>Metal:3<br>Hardstyle:2<br>C.Spain:2<br>Psy.Rave:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Folk:1</td>
-  <td>Verme &quot;Va tutto malone&quot;<br><audio title="Verme &quot;Va tutto malone&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c24cc091ca34aa3dc6a04b4fdd87d84f510a33ee" type="audio/mpeg">
-</audio></td>
+  <td>Rock:7<br>C.Italy:6<br>Emo:4<br>Punk:3<br>Indie:3<br>Metal:3<br>Hardstyle:2<br>C.Spain:2<br>Psy.Rave:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Folk:1</td>
+  <td>Verme &quot;Va tutto malone&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c24cc091ca34aa3dc6a04b4fdd87d84f510a33ee" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2ZdTFWf2Mn6XcII1FwSf9G" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1yAEMD2xjbY1Jn7g7quM6Z" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5no4SvuJst5oBSljhXjK95" title="pulse">pulse</a></td>
@@ -365,12 +344,10 @@
 </tr>
 <tr>
   <td>25</td>
-  <td>indie emo</td>
+  <td><a href="https://everynoise.com/engenremap-indieemo.html" title="indie emo">indie emo</a></td>
   <td>Emo<br>Indie</td>
-  <td><b>Punk:</b> 8<br>Rock:6<br>Emo:4<br>Indie:3<br>C.Japan:2<br>Hardstyle:1<br>Pop:1</td>
-  <td>Nuzzle &quot;The Sorting That Evens Things Out&quot;<br><audio title="Nuzzle &quot;The Sorting That Evens Things Out&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/dd07d30bcf17f694ade87641f277b2f743c88e08" type="audio/mpeg">
-</audio></td>
+  <td>Punk:8<br>Rock:6<br>Emo:4<br>Indie:3<br>C.Japan:2<br>Hardstyle:1<br>Pop:1</td>
+  <td>Nuzzle &quot;The Sorting That Evens Things Out&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/dd07d30bcf17f694ade87641f277b2f743c88e08" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0fgslmPIDxUJjaUNZpQsEY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6VNVd6EWPfRx7P6UzOtRsr" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1FUgqXW7Wu6MiLGkJZvcH5" title="pulse">pulse</a></td>
@@ -378,12 +355,10 @@
 </tr>
 <tr>
   <td>26</td>
-  <td>5th wave emo</td>
+  <td><a href="https://everynoise.com/engenremap-5thwaveemo.html" title="5th wave emo">5th wave emo</a></td>
   <td>Emo</td>
-  <td><b>Indie:</b> 10<br>Emo:6<br>Rock:2<br>Progressive:1<br>Punk:1</td>
-  <td>Oolong &quot;Roxies and Cigarettes&quot;<br><audio title="Oolong &quot;Roxies and Cigarettes&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/41b97774764a12b99de1bac4fda2fd8098cb97fd" type="audio/mpeg">
-</audio></td>
+  <td>Indie:10<br>Emo:6<br>Rock:2<br>Progressive:1<br>Punk:1<br>C.Irish:1</td>
+  <td>Oolong &quot;Roxies and Cigarettes&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/41b97774764a12b99de1bac4fda2fd8098cb97fd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5jJRdxN4pD29Uhj0ZIRFPf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZsM9HKe1QLdqvmPxRu5Ol" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3kZS5scnM4wZJRQelCiGNO" title="pulse">pulse</a></td>
@@ -391,12 +366,10 @@
 </tr>
 <tr>
   <td>27</td>
-  <td>swedish emo</td>
+  <td><a href="https://everynoise.com/engenremap-swedishemo.html" title="swedish emo">swedish emo</a></td>
   <td>Emo</td>
-  <td><b>Metal:</b> 11<br>Rock:4<br>Emo:2<br>Psy.Rave:1<br>Progressive:1<br>Hardstyle:1<br>C.France:1<br>C.Mexico.Latino:1<br>Folk:1<br>Gospel:1<br>Classical:1</td>
-  <td>Shirokuma &quot;Black Lungs&quot;<br><audio title="Shirokuma &quot;Black Lungs&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3a7b4862a1ffcf1c622be0368846b1a9710945f5" type="audio/mpeg">
-</audio></td>
+  <td>Metal:11<br>Rock:4<br>Emo:2<br>Psy.Rave:1<br>Progressive:1<br>Hardstyle:1<br>C.France:1<br>C.Mexico.Latino:1<br>Folk:1<br>Gospel:1<br>Classical:1</td>
+  <td>Shirokuma &quot;Black Lungs&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3a7b4862a1ffcf1c622be0368846b1a9710945f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2aIwwGSay614PUmlynXBt1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6oxs0uFlgtq451j75QMhFk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/36CMjyZNKqz9OSIBhifYB3" title="pulse">pulse</a></td>
@@ -404,12 +377,10 @@
 </tr>
 <tr>
   <td>28</td>
-  <td>midwest emo</td>
+  <td><a href="https://everynoise.com/engenremap-midwestemo.html" title="midwest emo">midwest emo</a></td>
   <td>Emo</td>
-  <td><b>Emo:</b> 9<br>Indie:5<br>Rock:4<br>Punk:3<br>C.Italy:2<br>Hardstyle:1</td>
-  <td>Brave Bird &quot;Scared Enough&quot;<br><audio title="Brave Bird &quot;Scared Enough&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4b116b496f898e4b8f03d4e5dc7a2acba70bedc7" type="audio/mpeg">
-</audio></td>
+  <td>Emo:9<br>Indie:5<br>Rock:4<br>Punk:3<br>C.Italy:2<br>Hardstyle:1<br>C.Irish:1</td>
+  <td>Brave Bird &quot;Scared Enough&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4b116b496f898e4b8f03d4e5dc7a2acba70bedc7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6hXmqavi8q0NJ5u6PRt0MG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2HddiDpfJNB4ZGgtFwkuYw" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5FMIc0EU1l1Nixal0br4zI" title="pulse">pulse</a></td>
@@ -417,12 +388,10 @@
 </tr>
 <tr>
   <td>29</td>
-  <td>emotional black metal</td>
+  <td><a href="https://everynoise.com/engenremap-emotionalblackmetal.html" title="emotional black metal">emotional black metal</a></td>
   <td>Emo<br>Metal</td>
-  <td><b>Metal:</b> 17<br>Emo:2<br>Instrumental:1</td>
-  <td>Lantl &quot;Lake Fantasy&quot;<br><audio title="Lantl &quot;Lake Fantasy&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7d9d4e4b40bf08219c70b1540a5fdc2243ed5ef7" type="audio/mpeg">
-</audio></td>
+  <td>Metal:17<br>Emo:2<br>Instrumental:1</td>
+  <td>Lantl &quot;Lake Fantasy&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7d9d4e4b40bf08219c70b1540a5fdc2243ed5ef7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1hegXrmD7IwnAv8dPP5Wis" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/05O5TqrLS7EqWTq0Z7axos" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5kxLJP3q5MSXGpt6ytbUYR" title="pulse">pulse</a></td>
@@ -430,12 +399,10 @@
 </tr>
 <tr>
   <td>30</td>
-  <td>emo punk</td>
+  <td><a href="https://everynoise.com/engenremap-emopunk.html" title="emo punk">emo punk</a></td>
   <td>Emo<br>Punk</td>
-  <td><b>Emo:</b> 7<br>Indie:6<br>Rock:6<br>Punk:3<br>Hardstyle:2<br>C.Italy:1</td>
-  <td>Pop Unknown &quot;Writing It Down For You&quot;<br><audio title="Pop Unknown &quot;Writing It Down For You&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5a302a40d29d9bd4b082bad0604637eb93aacf32" type="audio/mpeg">
-</audio></td>
+  <td>Emo:7<br>Indie:6<br>Rock:6<br>Punk:3<br>Hardstyle:2<br>C.Italy:1</td>
+  <td>Pop Unknown &quot;Writing It Down For You&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5a302a40d29d9bd4b082bad0604637eb93aacf32" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7mGhICS65Y8036xSvdL5jN" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2OzfCzc85CYZ7fgb88J5xu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0DrYe28hqtdIZ3mJlTfMFz" title="pulse">pulse</a></td>
@@ -443,12 +410,10 @@
 </tr>
 <tr>
   <td>31</td>
-  <td>emocore</td>
+  <td><a href="https://everynoise.com/engenremap-emocore.html" title="emocore">emocore</a></td>
   <td>Emo</td>
-  <td><b>Punk:</b> 6<br>Emo:5<br>Hardstyle:4<br>Rock:4<br>Indie:2<br>Psy.Rave:1<br>Metal:1</td>
-  <td>Native Nod &quot;Bread&quot;<br><audio title="Native Nod &quot;Bread&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f58b5019579ae2876244397c1566fe6b9b1fe53b" type="audio/mpeg">
-</audio></td>
+  <td>Punk:6<br>Emo:5<br>Hardstyle:4<br>Rock:4<br>Indie:2<br>Psy.Rave:1<br>Metal:1</td>
+  <td>Native Nod &quot;Bread&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f58b5019579ae2876244397c1566fe6b9b1fe53b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0Z63t6kvtlrh1hAakGtVaO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/03IEvRxnsj5PkdA5HR7kbE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2bDOxhu99pYDQ7d5WoE8XW" title="pulse">pulse</a></td>
@@ -456,12 +421,10 @@
 </tr>
 <tr>
   <td>32</td>
-  <td>french emo</td>
+  <td><a href="https://everynoise.com/engenremap-frenchemo.html" title="french emo">french emo</a></td>
   <td>C.France<br>Emo</td>
-  <td><b>Metal:</b> 14<br>Progressive:2<br>Emo:2<br>C.France:2<br>Rock:1<br>C.Japan:1</td>
-  <td>Sed Non Satiata &quot;Les hommes sans visage&quot;<br><audio title="Sed Non Satiata &quot;Les hommes sans visage&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/771b7497a0f29581e517337840509826a79b118e" type="audio/mpeg">
-</audio></td>
+  <td>Metal:14<br>Progressive:2<br>Emo:2<br>C.France:2<br>Rock:1<br>C.Japan:1<br>C.Irish:1</td>
+  <td>Sed Non Satiata &quot;Les hommes sans visage&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/771b7497a0f29581e517337840509826a79b118e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1d6f6Y2mLEgdYGIS1z7daV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3hM1eHmmsWHI8qsFU0av8P" title="intro">intro</a></td>
   <td>--</td>
@@ -469,12 +432,10 @@
 </tr>
 <tr>
   <td>33</td>
-  <td>emoviolence</td>
+  <td><a href="https://everynoise.com/engenremap-emoviolence.html" title="emoviolence">emoviolence</a></td>
   <td>Emo</td>
-  <td><b>Metal:</b> 11<br>Emo:2<br>Hardstyle:1</td>
-  <td>letters to catalonia &quot;Insignificance&quot;<br><audio title="letters to catalonia &quot;Insignificance&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4154c7fb65a942c99786b654ad6a409e3a7c1eb5" type="audio/mpeg">
-</audio></td>
+  <td>Metal:11<br>Emo:2<br>Hardstyle:1</td>
+  <td>letters to catalonia &quot;Insignificance&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4154c7fb65a942c99786b654ad6a409e3a7c1eb5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/77u4SHd1TQSIMa3rtGFr6O" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1EN3BIlHChYYgKCKhcvnuC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/45TqKQFJ5IwRsjdKC4pZOR" title="pulse">pulse</a></td>
@@ -482,12 +443,10 @@
 </tr>
 <tr>
   <td>34</td>
-  <td>indie emo rock</td>
+  <td><a href="https://everynoise.com/engenremap-indieemorock.html" title="indie emo rock">indie emo rock</a></td>
   <td>Emo<br>Indie<br>Rock</td>
-  <td><b>Indie:</b> 18<br>Rock:3<br>Emo:3<br>Pop:2<br>Progressive:1</td>
-  <td>Ultramagg &quot;One Thousand Directions&quot;<br><audio title="Ultramagg &quot;One Thousand Directions&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/bdb3a1ea10ef304ae6c80d8bca80f74df0b0a0ec" type="audio/mpeg">
-</audio></td>
+  <td>Indie:18<br>Rock:3<br>Emo:3<br>Pop:2<br>Progressive:1</td>
+  <td>Ultramagg &quot;One Thousand Directions&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/bdb3a1ea10ef304ae6c80d8bca80f74df0b0a0ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0QkBGZO2RKrPN3kfiGCIkW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/27U81h3emsbJDOABV6rJDc" title="intro">intro</a></td>
   <td>--</td>
@@ -495,12 +454,10 @@
 </tr>
 <tr>
   <td>35</td>
-  <td>lo-fi emo</td>
+  <td><a href="https://everynoise.com/engenremap-lofiemo.html" title="lo-fi emo">lo-fi emo</a></td>
   <td>Emo</td>
-  <td><b>Indie:</b> 11<br>Progressive:2<br>Rock:2<br>Emo:2<br>Psy.Rave:1</td>
-  <td>Your Arms Are My Cocoon &quot;Snowy!&quot;<br><audio title="Your Arms Are My Cocoon &quot;Snowy!&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/63c065d7e073cf91ae27f685c0e6173e917ac4a2" type="audio/mpeg">
-</audio></td>
+  <td>Indie:11<br>Progressive:2<br>Rock:2<br>Emo:2<br>Psy.Rave:1</td>
+  <td>Your Arms Are My Cocoon &quot;Snowy!&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/63c065d7e073cf91ae27f685c0e6173e917ac4a2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3gDyXNhx15j4TSaddiiLq8" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1wiZThi93GebmUiEhQF87r" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3wa8GJiBoswAcEOOoIXOdl" title="pulse">pulse</a></td>
@@ -508,12 +465,10 @@
 </tr>
 <tr>
   <td>36</td>
-  <td>desi emo rap</td>
+  <td><a href="https://everynoise.com/engenremap-desiemorap.html" title="desi emo rap">desi emo rap</a></td>
   <td>Emo<br>Rap</td>
-  <td><b>Rap:</b> 13<br>Hip hop:6<br>Trap:3<br>C.India:3<br>Emo:2</td>
-  <td>SarpDansh &quot;Pills On My Mind&quot;<br><audio title="SarpDansh &quot;Pills On My Mind&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/1abcf2a862941f51086327d317a04d728aec6553" type="audio/mpeg">
-</audio></td>
+  <td>Rap:13<br>Hip hop:6<br>Trap:3<br>C.India:3<br>Emo:2</td>
+  <td>SarpDansh &quot;Pills On My Mind&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/1abcf2a862941f51086327d317a04d728aec6553" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0cHpDm16pCpH2LyvWVLaSg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2bdls7UsIWYlQTfgZKT87J" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5rvJ4GIT2AZ0q3FiwBMzX7" title="pulse">pulse</a></td>
@@ -521,12 +476,10 @@
 </tr>
 <tr>
   <td>37</td>
-  <td>musica piemonteisa</td>
+  <td><a href="https://everynoise.com/engenremap-musicapiemonteisa.html" title="musica piemonteisa">musica piemonteisa</a></td>
   <td>C.Mexico.Latino<br>Emo</td>
-  <td><b>C.Mexico.Latino:</b> 7<br>Folk:3<br>Emo:2<br>C.India:1</td>
-  <td>Gipo Farassino &quot;Mia mamma veul che fila&quot;<br><audio title="Gipo Farassino &quot;Mia mamma veul che fila&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/9786ad3bfb9d9965a8afc6b271260a264545e7f1" type="audio/mpeg">
-</audio></td>
+  <td>C.Mexico.Latino:7<br>Folk:3<br>Emo:2<br>C.India:1</td>
+  <td>Gipo Farassino &quot;Mia mamma veul che fila&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/9786ad3bfb9d9965a8afc6b271260a264545e7f1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0msVvCOGK0MZKvnDX6PsLW" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>

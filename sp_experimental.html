@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Experimental: (92 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>experimental dubstep</td>
+  <td><a href="https://everynoise.com/engenremap-experimentaldubstep.html" title="experimental dubstep">experimental dubstep</a></td>
   <td>Dubstep<br>Experimental</td>
-  <td><b>House:</b> 6<br>Trance:3<br>Breaks:3<br>Synth.Electronic:3<br>Dubstep:3<br>Techno:2<br>Experimental:2<br>Psy.Rave:1<br>Vocal:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Dance:1</td>
-  <td>Brothers Grinn &quot;Tik Tok - Bonkabass Mix&quot;<br><audio title="Brothers Grinn &quot;Tik Tok - Bonkabass Mix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/77285a3b161a433ba1f0d45d1aaf628921cc9655" type="audio/mpeg">
-</audio></td>
+  <td>House:6<br>Trance:3<br>Breaks:3<br>Synth.Electronic:3<br>Dubstep:3<br>Techno:2<br>Experimental:2<br>Psy.Rave:1<br>Vocal:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Dance:1</td>
+  <td>Brothers Grinn &quot;Tik Tok - Bonkabass Mix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/77285a3b161a433ba1f0d45d1aaf628921cc9655" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0yrnPLt9UfINwPvCLw9M25" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>experimental house</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalhouse.html" title="experimental house">experimental house</a></td>
   <td>Experimental<br>House</td>
-  <td><b>Synth.Electronic:</b> 8<br>House:7<br>Techno:3<br>Electronica:2<br>C.Japan:2<br>Experimental:2<br>Ambient.General:1<br>Disco:1</td>
-  <td>SW. &quot;Untitled A1&quot;<br><audio title="SW. &quot;Untitled A1&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c2b5f04d7d715c17379ce7d91b8ad9eecd6bc3ba" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:8<br>House:7<br>Techno:3<br>Electronica:2<br>C.Japan:2<br>Experimental:2<br>C.Irish:1<br>Ambient.General:1<br>Disco:1</td>
+  <td>SW. &quot;Untitled A1&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c2b5f04d7d715c17379ce7d91b8ad9eecd6bc3ba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3DuxgqofnqkTigBNylYnve" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2nD7dY56cDg7r0zE9KlmWy" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1HUkY9dYZh2F7aTxtn77YY" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>experimental techno</td>
+  <td><a href="https://everynoise.com/engenremap-experimentaltechno.html" title="experimental techno">experimental techno</a></td>
   <td>Experimental<br>Techno</td>
-  <td><b>Synth.Electronic:</b> 7<br>Techno:6<br>Experimental:3<br>House:2<br>Trance:2<br>Drum and bass:1<br>C.Spain:1<br>C.Korea:1<br>Dance:1<br>Dubstep:1</td>
-  <td>Forest Drive West &quot;Creation Dub&quot;<br><audio title="Forest Drive West &quot;Creation Dub&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/47def3a9b0e063b0df8cd37d422610ddc47dd06e" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:7<br>Techno:6<br>Experimental:3<br>House:2<br>Trance:2<br>Drum and bass:1<br>C.Spain:1<br>C.Korea:1<br>C.Irish:1<br>Dance:1<br>Dubstep:1</td>
+  <td>Forest Drive West &quot;Creation Dub&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/47def3a9b0e063b0df8cd37d422610ddc47dd06e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7mMkzbc7EHjOtaLiW0O3ya" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Z6gLHTszfeGXp91AhXcRo" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6GufXBpoagtCvHa8afMyYn" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>experimental dub</td>
+  <td><a href="https://everynoise.com/engenremap-experimentaldub.html" title="experimental dub">experimental dub</a></td>
   <td>Experimental<br>Reggae</td>
-  <td><b>Synth.Electronic:</b> 5<br>Reggae:4<br>Jazz:3<br>Experimental:3<br>House:2<br>Electronica:2<br>Techno:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Instrumental:1<br>Funk:1<br>Hip hop:1</td>
-  <td>Gary Clail &quot;Bad Natured&quot;<br><audio title="Gary Clail &quot;Bad Natured&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e3003adb95bd0999fee5a71b37266846af974769" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:5<br>Reggae:4<br>Jazz:3<br>Experimental:3<br>House:2<br>Electronica:2<br>Techno:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Instrumental:1<br>Funk:1<br>Hip hop:1</td>
+  <td>Gary Clail &quot;Bad Natured&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e3003adb95bd0999fee5a71b37266846af974769" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0iV2b6EaTAeHyUnZkCRVDc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/73mAyHuOxqmrfQ3Gr0TpJh" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6x5gpgSsyHDX4cZXI4yFvn" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>dutch experimental electronic</td>
+  <td><a href="https://everynoise.com/engenremap-dutchexperimentalelectronic.html" title="dutch experimental electronic">dutch experimental electronic</a></td>
   <td>Experimental<br>Synth.Electronic</td>
-  <td><b>Synth.Electronic:</b> 11<br>Experimental:4<br>Ambient.General:3<br>House:2<br>Electronica:2<br>Dance:2<br>Psy.Rave:1<br>Techno:1<br>C.Italy:1<br>C.Spain:1<br>C.China:1<br>C.Germany:1<br>Reggae:1</td>
-  <td>Gamma Intel &quot;Golden Hoop (Gamma Intel Remix)&quot;<br><audio title="Gamma Intel &quot;Golden Hoop (Gamma Intel Remix)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b244e82f31cd6a017b54a76451874d76b76f8c1d" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:11<br>Experimental:4<br>Ambient.General:3<br>House:2<br>Electronica:2<br>Dance:2<br>Psy.Rave:1<br>Techno:1<br>C.Italy:1<br>C.Spain:1<br>C.China:1<br>C.Germany:1<br>C.Irish:1<br>Reggae:1</td>
+  <td>Gamma Intel &quot;Golden Hoop (Gamma Intel Remix)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b244e82f31cd6a017b54a76451874d76b76f8c1d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6iYnCaLRzrWmM2UyrkXEIA" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>experimental bass</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalbass.html" title="experimental bass">experimental bass</a></td>
   <td>Experimental</td>
-  <td><b>Trap:</b> 4<br>Experimental:3<br>Synth.Electronic:2<br>Dance:2<br>Hip hop:2<br>Psy.Rave:1<br>House:1<br>Electronica:1<br>Drum and bass:1<br>Indie:1</td>
-  <td>EAZYBAKED &quot;Sapped&quot;<br><audio title="EAZYBAKED &quot;Sapped&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4f8599d3f6cd27426b0b642402d1aa1c4333978c" type="audio/mpeg">
-</audio></td>
+  <td>Trap:4<br>Experimental:3<br>Synth.Electronic:2<br>Dance:2<br>Hip hop:2<br>Psy.Rave:1<br>House:1<br>Electronica:1<br>Drum and bass:1<br>Indie:1</td>
+  <td>EAZYBAKED &quot;Sapped&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4f8599d3f6cd27426b0b642402d1aa1c4333978c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/55CFBhiiIM4k0rUYbLWWPU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3QWdonHeOHnEVrL5Wdfa4h" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/697M2CZ7K6Vsud1hXMGP8z" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>experimental club</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalclub.html" title="experimental club">experimental club</a></td>
   <td>Experimental</td>
-  <td><b>Synth.Electronic:</b> 6<br>Experimental:2<br>Psy.Rave:1<br>Electronica:1<br>Trance:1<br>Drum and bass:1<br>Indie:1<br>C.Taiwan:1<br>C.Korea:1</td>
-  <td>TSVI &quot;Darabukka&quot;<br><audio title="TSVI &quot;Darabukka&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/86876efff8bc109a7db6a2e7514fa1f1d58bd298" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:6<br>Experimental:2<br>Psy.Rave:1<br>Electronica:1<br>Trance:1<br>Drum and bass:1<br>Indie:1<br>C.Taiwan:1<br>C.Korea:1</td>
+  <td>TSVI &quot;Darabukka&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/86876efff8bc109a7db6a2e7514fa1f1d58bd298" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5T4YDWRog093Kqv01WcM9H" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2cOIkSQ2P9atoatLbgb0u5" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3c81aptlgPy3VGmttLvYIe" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>irish experimental electronic</td>
-  <td>Experimental<br>Synth.Electronic</td>
-  <td><b>Synth.Electronic:</b> 10<br>Experimental:4<br>Techno:2<br>House:1<br>Emo:1<br>C.Taiwan:1<br>C.Japan:1<br>C.China:1<br>Dance:1<br>Ambient.General:1</td>
-  <td>New Jackson &quot;There Will Always Be This Love&quot;<br><audio title="New Jackson &quot;There Will Always Be This Love&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7a6ea858bd98b64c83bd813d694bdc79182be09f" type="audio/mpeg">
-</audio></td>
+  <td><a href="https://everynoise.com/engenremap-irishexperimentalelectronic.html" title="irish experimental electronic">irish experimental electronic</a></td>
+  <td>C.Irish<br>Experimental<br>Synth.Electronic</td>
+  <td>Synth.Electronic:10<br>Experimental:4<br>C.Irish:3<br>Techno:2<br>House:1<br>Emo:1<br>C.Taiwan:1<br>C.Japan:1<br>C.China:1<br>Dance:1<br>Ambient.General:1</td>
+  <td>New Jackson &quot;There Will Always Be This Love&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7a6ea858bd98b64c83bd813d694bdc79182be09f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/24RLueVXOuPDMBFnTTBogj" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>hip-hop experimental</td>
+  <td><a href="https://everynoise.com/engenremap-hiphopexperimental.html" title="hip-hop experimental">hip-hop experimental</a></td>
   <td>Experimental</td>
-  <td><b>Jazz:</b> 5<br>Blues.Soul:3<br>Hip hop:3<br>Electronica:2<br>Indie:2<br>Experimental:2<br>Synth.Electronic:1<br>Pop:1<br>C.Japan:1<br>Instrumental:1<br>Funk:1</td>
-  <td>Al\'Tarba &quot;More Pressure&quot;<br><audio title="Al\'Tarba &quot;More Pressure&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/54206eacb6d25b706a46fd63b276c3d1dae3ce2c" type="audio/mpeg">
-</audio></td>
+  <td>Jazz:5<br>Blues.Soul:3<br>Hip hop:3<br>Electronica:2<br>Indie:2<br>Experimental:2<br>Synth.Electronic:1<br>Pop:1<br>C.Japan:1<br>Instrumental:1<br>Funk:1</td>
+  <td>Al\'Tarba &quot;More Pressure&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/54206eacb6d25b706a46fd63b276c3d1dae3ce2c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5ZhhKHUMdcxbMXhFKEFVrP" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0nHlT93zRZwbtQ0p87zAaY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1gMp0uJ3WbjQ0KJ6o0gL9K" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>russian experimental electronic</td>
+  <td><a href="https://everynoise.com/engenremap-russianexperimentalelectronic.html" title="russian experimental electronic">russian experimental electronic</a></td>
   <td>Experimental<br>Synth.Electronic</td>
-  <td><b>Synth.Electronic:</b> 11<br>Experimental:4<br>Techno:1<br>House:1<br>C.Taiwan:1<br>C.Japan:1<br>C.China:1<br>Dance:1</td>
-  <td>Nocow &quot;Pozdno Vstal&quot;<br><audio title="Nocow &quot;Pozdno Vstal&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b5836ddd5976f60aae88a283cd5d19f364fbcb3c" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:11<br>Experimental:4<br>Techno:1<br>House:1<br>C.Taiwan:1<br>C.Japan:1<br>C.China:1<br>C.Irish:1<br>Dance:1</td>
+  <td>Nocow &quot;Pozdno Vstal&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b5836ddd5976f60aae88a283cd5d19f364fbcb3c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1ozxaOoXCqpoeAXfw2XuMa" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2EDooVb3SGyZgPaC2KLsMP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3plr1R6n9AGm19K3e9ySal" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>abstract idm</td>
+  <td><a href="https://everynoise.com/engenremap-abstractidm.html" title="abstract idm">abstract idm</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 5<br>Synth.Electronic:4<br>Trance:2<br>Ambient.General:2<br>Punk:1<br>Industrial:1<br>Rock:1<br>Trap:1<br>C.Germany:1<br>Dance:1</td>
-  <td>Ocoeur &quot;Ascent&quot;<br><audio title="Ocoeur &quot;Ascent&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ad94fc05b7207374cf029f240ef9740dcd69e77a" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:5<br>Synth.Electronic:4<br>Trance:2<br>Ambient.General:2<br>Punk:1<br>Industrial:1<br>Rock:1<br>Trap:1<br>C.Germany:1<br>C.Irish:1<br>Dance:1</td>
+  <td>Ocoeur &quot;Ascent&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ad94fc05b7207374cf029f240ef9740dcd69e77a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0iCuzAER8gjEjq9sdVkdx1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1cNeJBWPHEmC4rAAiS2IJ0" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0MHFbLlzoQF1L86Q5aAtQn" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>experimental electronic</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalelectronic.html" title="experimental electronic">experimental electronic</a></td>
   <td>Experimental<br>Synth.Electronic</td>
-  <td><b>Experimental:</b> 7<br>Synth.Electronic:6<br>Pop:1<br>Trap:1<br>C.Japan:1<br>C.China:1<br>Dance:1</td>
-  <td>7038634357 &quot;Square Heart&quot;<br><audio title="7038634357 &quot;Square Heart&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/df4912edc782f7c25e4efbb07208a9c13301591c" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:7<br>Synth.Electronic:6<br>Pop:1<br>Trap:1<br>C.Japan:1<br>C.China:1<br>C.Irish:1<br>Dance:1</td>
+  <td>7038634357 &quot;Square Heart&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/df4912edc782f7c25e4efbb07208a9c13301591c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2Ir5MP20VzC5Aj62CBd2xW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4vrNxCLGfe8dpWGE4v0TZv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5J3kavg5ZnLl02gKpM9VXj" title="pulse">pulse</a></td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>ukrainian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-ukrainianexperimental.html" title="ukrainian experimental">ukrainian experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 9<br>Ambient.General:4<br>Synth.Electronic:3<br>House:1<br>Trance:1<br>Pop:1<br>Trap:1<br>C.Mexico.Latino:1<br>Dance:1</td>
-  <td>Zavoloka &quot;Stezhka&quot;<br><audio title="Zavoloka &quot;Stezhka&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3323ddd321c4850a3c621762bf4ea31c898dd0b5" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:9<br>Ambient.General:4<br>Synth.Electronic:3<br>House:1<br>Trance:1<br>Pop:1<br>Trap:1<br>C.Mexico.Latino:1<br>Dance:1</td>
+  <td>Zavoloka &quot;Stezhka&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3323ddd321c4850a3c621762bf4ea31c898dd0b5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3U4NUWEMSqoTI0TBcD0QHU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0f3xC5SCP12oZegeF5AQ38" title="intro">intro</a></td>
   <td>--</td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>uk experimental electronic</td>
+  <td><a href="https://everynoise.com/engenremap-ukexperimentalelectronic.html" title="uk experimental electronic">uk experimental electronic</a></td>
   <td>Experimental<br>Synth.Electronic</td>
-  <td><b>Experimental:</b> 8<br>Synth.Electronic:4<br>Industrial:1<br>Ambient.General:1</td>
-  <td>Lee Gamble &quot;Blurring&quot;<br><audio title="Lee Gamble &quot;Blurring&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f9f1b2bfa5251b435acba4b98556991cb7f68bdb" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:8<br>Synth.Electronic:4<br>Industrial:1<br>Ambient.General:1</td>
+  <td>Lee Gamble &quot;Blurring&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f9f1b2bfa5251b435acba4b98556991cb7f68bdb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7nC4B9gtrOBQ7aT1J7FiOt" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/07LgyO7TxxOkkNRK5PMHVD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/17UMTEypbl2l0Xgda0Asgx" title="pulse">pulse</a></td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>polish experimental electronic</td>
+  <td><a href="https://everynoise.com/engenremap-polishexperimentalelectronic.html" title="polish experimental electronic">polish experimental electronic</a></td>
   <td>Experimental<br>Synth.Electronic</td>
-  <td><b>Experimental:</b> 10<br>Ambient.General:5<br>Synth.Electronic:3<br>Psy.Rave:1<br>House:1<br>Trance:1<br>Indie:1<br>Pop:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>Soundtrack:1</td>
-  <td>Zamilska &quot;Delusion&quot;<br><audio title="Zamilska &quot;Delusion&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5a514109775da856a45ea036e1424dfeb976528d" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:10<br>Ambient.General:5<br>Synth.Electronic:3<br>Psy.Rave:1<br>House:1<br>Trance:1<br>Indie:1<br>Pop:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>Soundtrack.New.Age:1</td>
+  <td>Zamilska &quot;Delusion&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5a514109775da856a45ea036e1424dfeb976528d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7C8E5QgIfbJXb55XOrhe3b" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -248,12 +241,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>mallsoft</td>
+  <td><a href="https://everynoise.com/engenremap-mallsoft.html" title="mallsoft">mallsoft</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 6<br>Synth.Electronic:3<br>Punk:1<br>Industrial:1<br>Indie:1<br>Trap:1<br>Gaming:1<br>C.Japan:1<br>C.China:1<br>Ambient.General:1<br>Soundtrack:1</td>
-  <td>Xenon Masters &quot;Caramel&quot;<br><audio title="Xenon Masters &quot;Caramel&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/34a4dcc9effb9899c0bc6e87b388b08ec7fe0b46" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:6<br>Synth.Electronic:3<br>Punk:1<br>Industrial:1<br>Indie:1<br>Trap:1<br>Gaming:1<br>C.Japan:1<br>C.China:1<br>Ambient.General:1<br>Soundtrack.New.Age:1</td>
+  <td>Xenon Masters &quot;Caramel&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/34a4dcc9effb9899c0bc6e87b388b08ec7fe0b46" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4MDvMFbmhNDSIDlJmy2RAj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1Ho96R42S2KsTuopoyUCkH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1sjS5VJJZgdS0QgDBXTmCf" title="pulse">pulse</a></td>
@@ -261,12 +252,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>abstract</td>
+  <td><a href="https://everynoise.com/engenremap-abstract.html" title="abstract">abstract</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 8<br>Ambient.General:4<br>Synth.Electronic:2<br>House:1<br>Indie:1<br>Pop:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>Dance:1<br>Soundtrack:1</td>
-  <td>Squarepusher &quot;Beep Street&quot;<br><audio title="Squarepusher &quot;Beep Street&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f0063fa63d78324e26636a2d8e75e4469299488c" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:8<br>Ambient.General:4<br>Synth.Electronic:2<br>House:1<br>Indie:1<br>Pop:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>Dance:1<br>Soundtrack.New.Age:1</td>
+  <td>Squarepusher &quot;Beep Street&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f0063fa63d78324e26636a2d8e75e4469299488c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/66hfhXEaNMA2NMncX5HatH" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6xQYjjNnvCK5dAeq0jJxRK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4NgrKfsFNJTKwbsMfNKMXN" title="pulse">pulse</a></td>
@@ -274,12 +263,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>experimental r&amp;b</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalrb.html" title="experimental r&amp;b">experimental r&amp;b</a></td>
   <td>Blues.Soul<br>Experimental</td>
-  <td><b>Indie:</b> 12<br>Pop:2<br>C.India:2<br>Experimental:2<br>Blues.Soul:2<br>C.Korea:1<br>Folk:1<br>Jazz:1</td>
-  <td>serpentwithfeet &quot;Damn Gloves&quot;<br><audio title="serpentwithfeet &quot;Damn Gloves&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4831dd441f9d8359e96de83847fc7c96f9316032" type="audio/mpeg">
-</audio></td>
+  <td>Indie:12<br>Pop:2<br>C.India:2<br>Experimental:2<br>Blues.Soul:2<br>C.Korea:1<br>Folk:1<br>Jazz:1</td>
+  <td>serpentwithfeet &quot;Damn Gloves&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4831dd441f9d8359e96de83847fc7c96f9316032" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6iuMCyOY42ujcbBKUT3Fku" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5HJRgjv7sX48ZmbWglwMa7" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4IeZxUhHotHjt7BCc80Cc0" title="pulse">pulse</a></td>
@@ -287,12 +274,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>utopian virtual</td>
+  <td><a href="https://everynoise.com/engenremap-utopianvirtual.html" title="utopian virtual">utopian virtual</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 7<br>Synth.Electronic:2<br>Indie:2<br>Trance:1<br>Punk:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Ambient.General:1<br>Soundtrack:1</td>
-  <td>Eyeliner &quot;Private Hospital - Ako Remix&quot;<br><audio title="Eyeliner &quot;Private Hospital - Ako Remix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3a51fce274a5a153ec63642ee38bc0947dd1df96" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:7<br>Synth.Electronic:2<br>Indie:2<br>Trance:1<br>Punk:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Ambient.General:1<br>Soundtrack.New.Age:1</td>
+  <td>Eyeliner &quot;Private Hospital - Ako Remix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3a51fce274a5a153ec63642ee38bc0947dd1df96" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5Cz5zXo7uWHPnhVDgFdRws" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5o0GlB5k67JAPgzaIJoiag" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2FfDcHYuuyQDZxdNI75ltv" title="pulse">pulse</a></td>
@@ -300,12 +285,10 @@
 </tr>
 <tr>
   <td>20</td>
-  <td>experimental hip hop</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalhiphop.html" title="experimental hip hop">experimental hip hop</a></td>
   <td>Experimental<br>Hip hop</td>
-  <td><b>Indie:</b> 8<br>Hip hop:5<br>Rock:2<br>Experimental:2<br>Psy.Rave:1<br>Punk:1<br>Industrial:1<br>Pop:1<br>Chill:1<br>C.Mexico.Latino:1<br>Folk:1</td>
-  <td>AKAI SOLO &quot;Ruin On My Watch&quot;<br><audio title="AKAI SOLO &quot;Ruin On My Watch&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/79b0243352078114c28db8e4f37528bed0fa5fb6" type="audio/mpeg">
-</audio></td>
+  <td>Indie:8<br>Hip hop:5<br>Rock:2<br>Experimental:2<br>Psy.Rave:1<br>Punk:1<br>Industrial:1<br>Pop:1<br>Chill:1<br>C.Mexico.Latino:1<br>C.Portugal:1<br>Folk:1</td>
+  <td>AKAI SOLO &quot;Ruin On My Watch&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/79b0243352078114c28db8e4f37528bed0fa5fb6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3bjbpsbl2mzaqFJcyQNGjE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1eUqBTwYzTi7S5pzdRA9Sh" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4tGsDqvn24iCQNOoqsGm05" title="pulse">pulse</a></td>
@@ -313,12 +296,10 @@
 </tr>
 <tr>
   <td>21</td>
-  <td>glitch</td>
+  <td><a href="https://everynoise.com/engenremap-glitch.html" title="glitch">glitch</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 12<br>Synth.Electronic:2<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Dance:1</td>
-  <td>Frank Bretschneider &quot;A soft throbbing of time&quot;<br><audio title="Frank Bretschneider &quot;A soft throbbing of time&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/dce521b6eeb19252ae7c0127956cefc83184d7fa" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:12<br>Synth.Electronic:2<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Dance:1</td>
+  <td>Frank Bretschneider &quot;A soft throbbing of time&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/dce521b6eeb19252ae7c0127956cefc83184d7fa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/27smuYGRZZl9q0BCwda8en" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/71zDrSHrSCW2dquMyCanQG" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0iHbArwKCcjPrCcARvFQ3j" title="pulse">pulse</a></td>
@@ -326,12 +307,10 @@
 </tr>
 <tr>
   <td>22</td>
-  <td>slushwave</td>
+  <td><a href="https://everynoise.com/engenremap-slushwave.html" title="slushwave">slushwave</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 6<br>Rock:3<br>Psy.Rave:1<br>Punk:1<br>Industrial:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Japan:1<br>C.China:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/354b6a3cd6c1885bb7c7f503e280ceddc01f63d6" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:6<br>Rock:3<br>Psy.Rave:1<br>Punk:1<br>Industrial:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Japan:1<br>C.China:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/354b6a3cd6c1885bb7c7f503e280ceddc01f63d6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4aJWAqjVDWFCttlpi3F4HA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7CGmxa1V0JKwk8F9rfxcDN" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5dhSlYAtAQkXdgHeyC8UAQ" title="pulse">pulse</a></td>
@@ -339,12 +318,10 @@
 </tr>
 <tr>
   <td>23</td>
-  <td>didgeridoo</td>
+  <td><a href="https://everynoise.com/engenremap-didgeridoo.html" title="didgeridoo">didgeridoo</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 5<br>C.Mexico.Latino:2<br>Folk:2<br>Jazz:2<br>Electronica:1<br>C.Italy:1<br>C.Japan:1<br>C.China:1<br>C.India:1<br>Gospel:1<br>Instrumental:1</td>
-  <td>Ash Dargan &quot;Allambie - Quiet Place&quot;<br><audio title="Ash Dargan &quot;Allambie - Quiet Place&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/34135d4b5e058b9745289057ace816b80911a0e0" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:5<br>C.Mexico.Latino:2<br>Folk:2<br>Jazz:2<br>Electronica:1<br>C.Italy:1<br>C.Japan:1<br>C.China:1<br>C.India:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>Ash Dargan &quot;Allambie - Quiet Place&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/34135d4b5e058b9745289057ace816b80911a0e0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4iQIoXKmKERiy2cwVYvvMo" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Nh21rgQR0pqJEqO2RGlmf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6jmVv3yUcIVumWu1YTyOLb" title="pulse">pulse</a></td>
@@ -352,12 +329,10 @@
 </tr>
 <tr>
   <td>24</td>
-  <td>hardvapour</td>
+  <td><a href="https://everynoise.com/engenremap-hardvapour.html" title="hardvapour">hardvapour</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 7<br>Synth.Electronic:2<br>Punk:1<br>Indie:1<br>Trap:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Jazz:1<br>Soundtrack:1<br>Funk:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7040a05cefb6815100996441e7216dc843947d27" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:7<br>Synth.Electronic:2<br>Punk:1<br>Indie:1<br>Trap:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Jazz:1<br>Soundtrack.New.Age:1<br>Funk:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/7040a05cefb6815100996441e7216dc843947d27" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3uxKTCL9tzfBk4waAP3u9F" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3o7OOIjZXqnlH2vEsJRUWg" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0HYOYLAm8b63PMBWhrfl95" title="pulse">pulse</a></td>
@@ -365,12 +340,10 @@
 </tr>
 <tr>
   <td>25</td>
-  <td>brazilian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-brazilianexperimental.html" title="brazilian experimental">brazilian experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 13<br>Synth.Electronic:3<br>Jazz:2<br>Psy.Rave:1<br>Industrial:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1</td>
-  <td>Ana Frango El &quot;Electric Fish&quot;<br><audio title="Ana Frango El &quot;Electric Fish&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2a680a11b2c5537c9c97b396d9e9f016e24085cc" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:13<br>Synth.Electronic:3<br>Jazz:2<br>Psy.Rave:1<br>Industrial:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1</td>
+  <td>Ana Frango El &quot;Electric Fish&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2a680a11b2c5537c9c97b396d9e9f016e24085cc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3j1YYS7Palpfb92qd9x7vl" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Nb71FF0AkjDFp42zS0wNt" title="pulse">pulse</a></td>
@@ -378,12 +351,10 @@
 </tr>
 <tr>
   <td>26</td>
-  <td>finnish experimental</td>
+  <td><a href="https://everynoise.com/engenremap-finnishexperimental.html" title="finnish experimental">finnish experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 11<br>Synth.Electronic:4<br>Psy.Rave:1<br>Indie:1<br>Pop:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>C.Germany:1<br>Ambient.General:1<br>Soundtrack:1</td>
-  <td>Pan Sonic &quot;L / Transmission - Mixed&quot;<br><audio title="Pan Sonic &quot;L / Transmission - Mixed&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e20612d25e702760c2243d3e5bc7665a98b2b17c" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:11<br>Synth.Electronic:4<br>Psy.Rave:1<br>Indie:1<br>Pop:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>C.Germany:1<br>C.Portugal:1<br>Ambient.General:1<br>Soundtrack.New.Age:1</td>
+  <td>Pan Sonic &quot;L / Transmission - Mixed&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e20612d25e702760c2243d3e5bc7665a98b2b17c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3jyyfQn4I5SOTmaOZQ1NSK" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1CWxZCQn0BgigT9C0UR9yB" title="pulse">pulse</a></td>
@@ -391,12 +362,10 @@
 </tr>
 <tr>
   <td>27</td>
-  <td>experimental black metal</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalblackmetal.html" title="experimental black metal">experimental black metal</a></td>
   <td>Experimental<br>Metal</td>
-  <td><b>Metal:</b> 19<br>Experimental:2<br>C.Japan:1<br>C.Germany:1</td>
-  <td>Bethlehem &quot;Kalt\' Ritt in leicht faltiger Leere&quot;<br><audio title="Bethlehem &quot;Kalt\' Ritt in leicht faltiger Leere&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8f904c63b9fb6261a94593554c6993ca7452f2d9" type="audio/mpeg">
-</audio></td>
+  <td>Metal:19<br>Experimental:2<br>C.Japan:1<br>C.Germany:1</td>
+  <td>Bethlehem &quot;Kalt\' Ritt in leicht faltiger Leere&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8f904c63b9fb6261a94593554c6993ca7452f2d9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2cEb7MiAT7Zml7vizxftJm" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -404,12 +373,10 @@
 </tr>
 <tr>
   <td>28</td>
-  <td>experimental pop</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalpop.html" title="experimental pop">experimental pop</a></td>
   <td>Experimental<br>Pop</td>
-  <td><b>Indie:</b> 10<br>Pop:7<br>Psy.Rave:3<br>Experimental:3<br>Chill:1</td>
-  <td>U.S. Girls &quot;L-Over&quot;<br><audio title="U.S. Girls &quot;L-Over&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c81e893da972563a6a02572781f3d35fbdb8b92e" type="audio/mpeg">
-</audio></td>
+  <td>Indie:10<br>Pop:7<br>Psy.Rave:3<br>Experimental:3<br>Chill:1</td>
+  <td>U.S. Girls &quot;L-Over&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c81e893da972563a6a02572781f3d35fbdb8b92e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0MS8uaf4VjVPDb5e8LJVpm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/44hVWL7W5nkzb30oBdXfDD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0hqOLN17rGzmLfim1kAaRK" title="pulse">pulse</a></td>
@@ -417,12 +384,10 @@
 </tr>
 <tr>
   <td>29</td>
-  <td>chinese experimental</td>
+  <td><a href="https://everynoise.com/engenremap-chineseexperimental.html" title="chinese experimental">chinese experimental</a></td>
   <td>C.China<br>Experimental</td>
-  <td><b>Experimental:</b> 10<br>Synth.Electronic:3<br>C.China:3<br>Indie:2<br>Folk:2<br>Electronica:1<br>Industrial:1<br>Rock:1<br>C.France:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1</td>
-  <td>Dou Wei<br><audio title="Dou Wei" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d41de6290b5c79ef049dd2459f544b92f21b2103" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:10<br>Synth.Electronic:3<br>C.China:3<br>Indie:2<br>Folk:2<br>Electronica:1<br>Industrial:1<br>Rock:1<br>C.France:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1</td>
+  <td>Dou Wei<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d41de6290b5c79ef049dd2459f544b92f21b2103" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6Vwjb4YyR3ckQXU2k6cf6k" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -430,12 +395,10 @@
 </tr>
 <tr>
   <td>30</td>
-  <td>experimental indie</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalindie.html" title="experimental indie">experimental indie</a></td>
   <td>Experimental<br>Indie</td>
-  <td><b>Indie:</b> 13<br>Experimental:3<br>Pop:2<br>Rock:1<br>C.Mexico.Latino:1</td>
-  <td>Cindy Lee &quot;Heavy Metal&quot;<br><audio title="Cindy Lee &quot;Heavy Metal&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d2d3b088da55cc7e6aad437933b048bf30b00bff" type="audio/mpeg">
-</audio></td>
+  <td>Indie:13<br>Experimental:3<br>Pop:2<br>Rock:1<br>C.Mexico.Latino:1<br>C.Portugal:1</td>
+  <td>Cindy Lee &quot;Heavy Metal&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d2d3b088da55cc7e6aad437933b048bf30b00bff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3Zzm2a9gHWa14qXjXZ3ZM3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5einERKnCxbTpFE3RbUyeZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3JDwV24UPlG4ggTfUIteII" title="pulse">pulse</a></td>
@@ -443,12 +406,10 @@
 </tr>
 <tr>
   <td>31</td>
-  <td>broken transmission</td>
+  <td><a href="https://everynoise.com/engenremap-brokentransmission.html" title="broken transmission">broken transmission</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 7<br>Psy.Rave:1<br>Punk:1<br>Synth.Electronic:1<br>Industrial:1<br>Indie:1<br>Rock:1<br>Gaming:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Jazz:1<br>Soundtrack:1</td>
-  <td>Corp. &quot;SECRETS OF MY AGE&quot;<br><audio title="Corp. &quot;SECRETS OF MY AGE&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/fb0cfd973ac831e37c20cd81e83d5bfb7fa28ae5" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:7<br>Psy.Rave:1<br>Punk:1<br>Synth.Electronic:1<br>Industrial:1<br>Indie:1<br>Rock:1<br>Gaming:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Jazz:1<br>Soundtrack.New.Age:1</td>
+  <td>Corp. &quot;SECRETS OF MY AGE&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/fb0cfd973ac831e37c20cd81e83d5bfb7fa28ae5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1qubOOGbin1gborc1nAMdJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2UD4tJD3AnbSqPd0uLmjMH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7tMkK4tEaf3XNdYMbQ4IiF" title="pulse">pulse</a></td>
@@ -456,12 +417,10 @@
 </tr>
 <tr>
   <td>32</td>
-  <td>new isolationism</td>
+  <td><a href="https://everynoise.com/engenremap-newisolationism.html" title="new isolationism">new isolationism</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 8<br>Rock:3<br>C.Italy:2<br>Ambient.General:2<br>Psy.Rave:1<br>Techno:1<br>Punk:1<br>Synth.Electronic:1<br>Industrial:1</td>
-  <td>Vanity Productions &quot;Melts All Your Memories&quot;<br><audio title="Vanity Productions &quot;Melts All Your Memories&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a76320387c7d5921275b8a863285f4c8cc0850a7" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:8<br>Rock:3<br>C.Italy:2<br>Ambient.General:2<br>Psy.Rave:1<br>Techno:1<br>Punk:1<br>Synth.Electronic:1<br>Industrial:1</td>
+  <td>Vanity Productions &quot;Melts All Your Memories&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a76320387c7d5921275b8a863285f4c8cc0850a7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3b97q4GnhWUw2oMm5OmC0w" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5IXWSxVbZ0YfKejB36CyUg" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/385KHxnhZPPHk2kfGNbC2I" title="pulse">pulse</a></td>
@@ -469,12 +428,10 @@
 </tr>
 <tr>
   <td>33</td>
-  <td>african experimental</td>
+  <td><a href="https://everynoise.com/engenremap-africanexperimental.html" title="african experimental">african experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 14<br>Psy.Rave:2<br>Synth.Electronic:2<br>Jazz:2<br>Indie:1<br>Rock:1<br>Gaming:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.China:1<br>Soundtrack:1</td>
-  <td>KMRU &quot;Space of Uncertainty&quot;<br><audio title="KMRU &quot;Space of Uncertainty&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b9254853be2083a089157c402a1ecf208978b892" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:14<br>Psy.Rave:2<br>Synth.Electronic:2<br>Jazz:2<br>Indie:1<br>Rock:1<br>Gaming:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.China:1<br>Soundtrack.New.Age:1</td>
+  <td>KMRU &quot;Space of Uncertainty&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b9254853be2083a089157c402a1ecf208978b892" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/48uCDGE2YYjZsPSyhZXGP5" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -482,12 +439,10 @@
 </tr>
 <tr>
   <td>34</td>
-  <td>french experimental rock</td>
+  <td><a href="https://everynoise.com/engenremap-frenchexperimentalrock.html" title="french experimental rock">french experimental rock</a></td>
   <td>C.France<br>Experimental<br>Rock</td>
-  <td><b>Indie:</b> 8<br>Rock:8<br>Experimental:5<br>Psy.Rave:2<br>C.France:2<br>Jazz:2<br>Progressive:1<br>Pop:1<br>Emo:1<br>C.Mexico.Latino:1</td>
-  <td>Diabologum &quot;365 jours ouvrables&quot;<br><audio title="Diabologum &quot;365 jours ouvrables&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/9cfb7a775ac1d963524ea77068d74ae723ab684c" type="audio/mpeg">
-</audio></td>
+  <td>Indie:8<br>Rock:8<br>Experimental:5<br>Psy.Rave:2<br>C.France:2<br>Jazz:2<br>Progressive:1<br>Pop:1<br>Emo:1<br>C.Mexico.Latino:1</td>
+  <td>Diabologum &quot;365 jours ouvrables&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/9cfb7a775ac1d963524ea77068d74ae723ab684c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1LIS1YWqU2NRSVl7aAINyv" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -495,11 +450,11 @@
 </tr>
 <tr>
   <td>35</td>
-  <td>experimental indie rock</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalindierock.html" title="experimental indie rock">experimental indie rock</a></td>
   <td>Experimental<br>Indie<br>Rock</td>
-  <td><b>Indie:</b> 8<br>Rock:8<br>Experimental:4<br>Psy.Rave:1<br>Progressive:1<br>Emo:1<br>C.France:1<br>C.Japan:1<br>Instrumental:1</td>
-  <td>Deerhoof &quot;Midnight, The Stars and You&quot;<br><audio title="Deerhoof &quot;Midnight, The Stars and You&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d95978e0b4948c22fb175b39e9436537525c9aeb" type="audio/mpeg">
+  <td>Indie:8<br>Rock:8<br>Experimental:4<br>Psy.Rave:1<br>Progressive:1<br>Emo:1<br>C.France:1<br>C.Japan:1<br>Instrumental:1</td>
+  <td>Deerhoof &quot;Midnight, The Stars and You&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d95978e0b4948c22fb175b39e9436537525c9aeb" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/7bqLyNAboQ3L7RxCXP2X3S" title="playlist">playlist</a></td>
   <td>--</td>
@@ -508,12 +463,10 @@
 </tr>
 <tr>
   <td>36</td>
-  <td>mandible</td>
+  <td><a href="https://everynoise.com/engenremap-mandible.html" title="mandible">mandible</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 10<br>Synth.Electronic:2<br>House:1<br>Punk:1<br>C.Italy:1</td>
-  <td>Vladislav Delay &quot;Untitled Track&quot;<br><audio title="Vladislav Delay &quot;Untitled Track&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/bec82e8a5fa34ffa262939d6701ae2190c5e1bfd" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:10<br>Synth.Electronic:2<br>House:1<br>Punk:1<br>C.Italy:1</td>
+  <td>Vladislav Delay &quot;Untitled Track&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/bec82e8a5fa34ffa262939d6701ae2190c5e1bfd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6mLO13tVLO98kSfe3A6XJg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6Q2BptXI1fTUtyFE9YRmlC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7gvvosj89KtlaVfYmhIdaY" title="pulse">pulse</a></td>
@@ -521,12 +474,10 @@
 </tr>
 <tr>
   <td>37</td>
-  <td>mexican experimental</td>
+  <td><a href="https://everynoise.com/engenremap-mexicanexperimental.html" title="mexican experimental">mexican experimental</a></td>
   <td>C.Mexico.Latino<br>Experimental</td>
-  <td><b>Experimental:</b> 14<br>Synth.Electronic:2<br>C.Mexico.Latino:2<br>Psy.Rave:1<br>Indie:1<br>Rock:1<br>Gaming:1<br>C.Korea:1<br>C.Japan:1<br>C.China:1<br>Soundtrack:1</td>
-  <td>Murcof &quot;Avril 14th (Aphex Twin) - Vanessa Wagner Vers<br><audio title="Murcof &quot;Avril 14th (Aphex Twin) - Vanessa Wagner Vers" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4901bccfacf3df72e23a3066ff8430f83e14ae4e" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:14<br>Synth.Electronic:2<br>C.Mexico.Latino:2<br>Psy.Rave:1<br>Indie:1<br>Rock:1<br>Gaming:1<br>C.Korea:1<br>C.Japan:1<br>C.China:1<br>C.Portugal:1<br>Soundtrack.New.Age:1</td>
+  <td>Murcof &quot;Avril 14th (Aphex Twin) - Vanessa Wagner Vers<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4901bccfacf3df72e23a3066ff8430f83e14ae4e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0E4isSxspV6ey8CoOXeL7Y" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4LwfzOa0LkZ2ssVLuKoDfe" title="pulse">pulse</a></td>
@@ -534,12 +485,10 @@
 </tr>
 <tr>
   <td>38</td>
-  <td>swiss experimental</td>
+  <td><a href="https://everynoise.com/engenremap-swissexperimental.html" title="swiss experimental">swiss experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 11<br>Ambient.General:2<br>Psy.Rave:1<br>House:1<br>Synth.Electronic:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Jazz:1</td>
-  <td>A Devi &quot;Immortelle&quot;<br><audio title="A Devi &quot;Immortelle&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d318a618d37b1b1f407cf4897a9983ade4923c2c" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:11<br>Ambient.General:2<br>Psy.Rave:1<br>House:1<br>Synth.Electronic:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Jazz:1</td>
+  <td>A Devi &quot;Immortelle&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d318a618d37b1b1f407cf4897a9983ade4923c2c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7d9YLozBOYeouQ0UyKPUpZ" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -547,12 +496,10 @@
 </tr>
 <tr>
   <td>39</td>
-  <td>bulgarian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-bulgarianexperimental.html" title="bulgarian experimental">bulgarian experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 14<br>Psy.Rave:1<br>Synth.Electronic:1<br>Indie:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1</td>
-  <td>Mytrip &quot;Eyepiece&quot;<br><audio title="Mytrip &quot;Eyepiece&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/00a470bedba85ca42cf8e9178463193aca6988c6" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:14<br>Psy.Rave:1<br>Synth.Electronic:1<br>Indie:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Portugal:1</td>
+  <td>Mytrip &quot;Eyepiece&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/00a470bedba85ca42cf8e9178463193aca6988c6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6kWfC5lHYMJFMHVC22pkFX" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -560,12 +507,10 @@
 </tr>
 <tr>
   <td>40</td>
-  <td>japanese experimental</td>
+  <td><a href="https://everynoise.com/engenremap-japaneseexperimental.html" title="japanese experimental">japanese experimental</a></td>
   <td>C.Japan<br>Experimental</td>
-  <td><b>Experimental:</b> 9<br>Jazz:6<br>C.Japan:5<br>C.Mexico.Latino:2<br>Synth.Electronic:1<br>C.France:1<br>C.Italy:1<br>C.Taiwan:1<br>C.China:1<br>Folk:1<br>Instrumental:1</td>
-  <td>Yasuaki Shimizu &quot;Seiko 2&quot;<br><audio title="Yasuaki Shimizu &quot;Seiko 2&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c5ccdf2ccb71ce68255088a4ef98dbc836bf9c1b" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:9<br>Jazz:6<br>C.Japan:5<br>C.Mexico.Latino:2<br>Synth.Electronic:1<br>C.France:1<br>C.Italy:1<br>C.Taiwan:1<br>C.China:1<br>Folk:1<br>Instrumental:1</td>
+  <td>Yasuaki Shimizu &quot;Seiko 2&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c5ccdf2ccb71ce68255088a4ef98dbc836bf9c1b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0mAl3OKvTiSz5tiwlW8fUD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5eAQWpiUo1lslQ2Bp3a0qx" title="intro">intro</a></td>
   <td>--</td>
@@ -573,12 +518,10 @@
 </tr>
 <tr>
   <td>41</td>
-  <td>experimental rock</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalrock.html" title="experimental rock">experimental rock</a></td>
   <td>Experimental<br>Rock</td>
-  <td><b>Rock:</b> 9<br>Punk:4<br>Experimental:4<br>Industrial:2<br>Pop:2<br>Hardstyle:1<br>Indie:1</td>
-  <td>Suicide &quot;Surrender (\'88 Version) (2023 Remaster)&quot<br><audio title="Suicide &quot;Surrender (\'88 Version) (2023 Remaster)&quot" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/cde35a4596e2408ef4580ef7bc15874813b9e786" type="audio/mpeg">
-</audio></td>
+  <td>Rock:9<br>Punk:4<br>Experimental:4<br>Industrial:2<br>Pop:2<br>Hardstyle:1<br>Indie:1</td>
+  <td>Suicide &quot;Surrender (\'88 Version) (2023 Remaster)&quot<br><audio class="playback" src="https://p.scdn.co/mp3-preview/cde35a4596e2408ef4580ef7bc15874813b9e786" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3iC8vhGrOS9XvvWBz85jfF" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0oJyL99RvUg67NZC36vg1e" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5GrXXkjY5QwhvTb5wXGZ4B" title="pulse">pulse</a></td>
@@ -586,12 +529,10 @@
 </tr>
 <tr>
   <td>42</td>
-  <td>korean experimental</td>
+  <td><a href="https://everynoise.com/engenremap-koreanexperimental.html" title="korean experimental">korean experimental</a></td>
   <td>C.Korea<br>Experimental</td>
-  <td><b>Experimental:</b> 15<br>C.Korea:3<br>Synth.Electronic:2<br>Rock:2<br>Psy.Rave:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.China:1</td>
-  <td>250 &quot;Royal Blue&quot;<br><audio title="250 &quot;Royal Blue&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b5d8f5ca142a712a7da3f7aa740f0a8075e0b142" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:15<br>C.Korea:3<br>Synth.Electronic:2<br>Rock:2<br>Psy.Rave:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.China:1</td>
+  <td>250 &quot;Royal Blue&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b5d8f5ca142a712a7da3f7aa740f0a8075e0b142" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3ld6kktsIosfOrMt3AVPiU" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -599,12 +540,10 @@
 </tr>
 <tr>
   <td>43</td>
-  <td>epic collage</td>
+  <td><a href="https://everynoise.com/engenremap-epiccollage.html" title="epic collage">epic collage</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 8<br>Psy.Rave:4<br>Rock:3<br>Industrial:1<br>C.Italy:1<br>C.Korea:1<br>C.Japan:1<br>Folk:1</td>
-  <td>Elysia Crampton &quot;Grove (feat. Embaci)&quot;<br><audio title="Elysia Crampton &quot;Grove (feat. Embaci)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/db2a3e5ebd88c5ae1aa0e83df65821a04f5055c9" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:8<br>Psy.Rave:4<br>Rock:3<br>Industrial:1<br>C.Italy:1<br>C.Korea:1<br>C.Japan:1<br>Folk:1</td>
+  <td>Elysia Crampton &quot;Grove (feat. Embaci)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/db2a3e5ebd88c5ae1aa0e83df65821a04f5055c9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6RYGqT1H88p3UT5gJdnbjr" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1uyUXybaRo9gEIMQSHjLqK" title="intro">intro</a></td>
   <td>--</td>
@@ -612,12 +551,10 @@
 </tr>
 <tr>
   <td>44</td>
-  <td>czech experimental</td>
+  <td><a href="https://everynoise.com/engenremap-czechexperimental.html" title="czech experimental">czech experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 14<br>Psy.Rave:2<br>C.Italy:2<br>Synth.Electronic:1<br>Rock:1<br>C.Korea:1</td>
-  <td>Bols/Slob &quot;CARBON&quot;<br><audio title="Bols/Slob &quot;CARBON&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e0a81868a0eb332d6e1eba387dc1c6cdf0e014a5" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:14<br>Psy.Rave:2<br>C.Italy:2<br>Synth.Electronic:1<br>Rock:1<br>C.Korea:1<br>C.Portugal:1</td>
+  <td>Bols/Slob &quot;CARBON&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e0a81868a0eb332d6e1eba387dc1c6cdf0e014a5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0425SqjE9dL7IryiNmSnkp" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -625,12 +562,10 @@
 </tr>
 <tr>
   <td>45</td>
-  <td>peruvian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-peruvianexperimental.html" title="peruvian experimental">peruvian experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 9<br>Rock:3<br>Psy.Rave:2<br>Industrial:1<br>Indie:1<br>C.Italy:1<br>C.Korea:1<br>Folk:1</td>
-  <td>Ale Hop &quot;Son de los diablos&quot;<br><audio title="Ale Hop &quot;Son de los diablos&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/771bfb89a18f304b5c35840a5a38b3c23ad8a9bd" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:9<br>Rock:3<br>Psy.Rave:2<br>Industrial:1<br>Indie:1<br>C.Italy:1<br>C.Korea:1<br>Folk:1</td>
+  <td>Ale Hop &quot;Son de los diablos&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/771bfb89a18f304b5c35840a5a38b3c23ad8a9bd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0gsDmsRdnzAyOje1xsgIP2" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -638,12 +573,10 @@
 </tr>
 <tr>
   <td>46</td>
-  <td>commons</td>
+  <td><a href="https://everynoise.com/engenremap-commons.html" title="commons">commons</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 4<br>Synth.Electronic:3<br>Soundtrack:3<br>Indie:2<br>Pop:1<br>Gaming:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Japan:1<br>C.China:1<br>C.Germany:1<br>Ambient.General:1<br>Classical:1<br>Instrumental:1</td>
-  <td>Celestial Aeon Project &quot;Misty Mountains (From &quot;T<br><audio title="Celestial Aeon Project &quot;Misty Mountains (From &quot;T" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8025178a883067a42ab67ff6fdbfa52668a9946e" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:4<br>Synth.Electronic:3<br>Soundtrack.New.Age:3<br>Indie:2<br>Pop:1<br>Gaming:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Japan:1<br>C.China:1<br>C.Germany:1<br>Ambient.General:1<br>Classical:1<br>Instrumental:1</td>
+  <td>Celestial Aeon Project &quot;Misty Mountains (From &quot;T<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8025178a883067a42ab67ff6fdbfa52668a9946e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3CBfMoFYBPPtZNE3uRlmZi" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -651,12 +584,10 @@
 </tr>
 <tr>
   <td>47</td>
-  <td>taiwan experimental</td>
+  <td><a href="https://everynoise.com/engenremap-taiwanexperimental.html" title="taiwan experimental">taiwan experimental</a></td>
   <td>C.Taiwan<br>Experimental</td>
-  <td><b>Experimental:</b> 9<br>Rock:4<br>C.Taiwan:3<br>Psy.Rave:2<br>Synth.Electronic:2<br>Indie:2<br>Jazz:2<br>Industrial:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Japan:1<br>C.China:1<br>Folk:1</td>
-  <td>Mong Tong &quot;A Nambra&quot;<br><audio title="Mong Tong &quot;A Nambra&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c01bf5ffe926a200e5940f381d8fa9b3c01b8bdd" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:9<br>Rock:4<br>C.Taiwan:3<br>Psy.Rave:2<br>Synth.Electronic:2<br>Indie:2<br>Jazz:2<br>Industrial:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Japan:1<br>C.China:1<br>Folk:1</td>
+  <td>Mong Tong &quot;A Nambra&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c01bf5ffe926a200e5940f381d8fa9b3c01b8bdd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/14iJpIFvqItkSS8jsq5sKB" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -664,12 +595,10 @@
 </tr>
 <tr>
   <td>48</td>
-  <td>polish experimental</td>
+  <td><a href="https://everynoise.com/engenremap-polishexperimental.html" title="polish experimental">polish experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 14<br>Psy.Rave:2<br>Rock:2<br>C.Italy:2<br>Synth.Electronic:1<br>C.Korea:1</td>
-  <td>julek ploski &quot;Bigger Crimes&quot;<br><audio title="julek ploski &quot;Bigger Crimes&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/250eedddd45756c93d519f5b560670f114a36993" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:14<br>Psy.Rave:2<br>Rock:2<br>C.Italy:2<br>Synth.Electronic:1<br>C.Korea:1</td>
+  <td>julek ploski &quot;Bigger Crimes&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/250eedddd45756c93d519f5b560670f114a36993" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5mJMwtywZacymdtdT21ABQ" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -677,12 +606,10 @@
 </tr>
 <tr>
   <td>49</td>
-  <td>italian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-italianexperimental.html" title="italian experimental">italian experimental</a></td>
   <td>C.Italy<br>Experimental</td>
-  <td><b>Experimental:</b> 12<br>C.Italy:4<br>Ambient.General:2<br>Psy.Rave:1<br>Punk:1<br>Industrial:1<br>Jazz:1</td>
-  <td>Caterina Barbieri &quot;SOTRS&quot;<br><audio title="Caterina Barbieri &quot;SOTRS&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0b37490734a14dd5cbde895e2b0d406fb352d7e2" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:12<br>C.Italy:4<br>Ambient.General:2<br>Psy.Rave:1<br>Punk:1<br>Industrial:1<br>C.Portugal:1<br>Jazz:1</td>
+  <td>Caterina Barbieri &quot;SOTRS&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0b37490734a14dd5cbde895e2b0d406fb352d7e2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5IWPEblkRFpFY7hVDfi97O" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -690,12 +617,10 @@
 </tr>
 <tr>
   <td>50</td>
-  <td>experimental jazz</td>
+  <td><a href="https://everynoise.com/engenremap-experimentaljazz.html" title="experimental jazz">experimental jazz</a></td>
   <td>Experimental<br>Jazz</td>
-  <td><b>Experimental:</b> 7<br>Rock:6<br>Jazz:5<br>Psy.Rave:2<br>Indie:2<br>Progressive:1<br>Synth.Electronic:1<br>C.France:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Folk:1</td>
-  <td>Jaimie Branch &quot;borealis dancing&quot;<br><audio title="Jaimie Branch &quot;borealis dancing&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c27802f63687d7581b33f530af783c754f877987" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:7<br>Rock:6<br>Jazz:5<br>Psy.Rave:2<br>Indie:2<br>Progressive:1<br>Synth.Electronic:1<br>C.France:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Folk:1</td>
+  <td>Jaimie Branch &quot;borealis dancing&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c27802f63687d7581b33f530af783c754f877987" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2SrPXLwpNixB3uyGMZryAT" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ee0pj7bCLmUa8KSTTB33p" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZAjGAnTTMnGdHqIhTqnPX" title="pulse">pulse</a></td>
@@ -703,12 +628,10 @@
 </tr>
 <tr>
   <td>51</td>
-  <td>british experimental</td>
+  <td><a href="https://everynoise.com/engenremap-britishexperimental.html" title="british experimental">british experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 12<br>Industrial:3<br>Synth.Electronic:1<br>Metal:1<br>Rock:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.China:1<br>Ambient.General:1<br>Reggae:1</td>
-  <td>Coil &quot;Tattooed Man - Remastered&quot;<br><audio title="Coil &quot;Tattooed Man - Remastered&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c617d7c4e5b3e66570dd20a46751ad518bebaa59" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:12<br>Industrial:3<br>Synth.Electronic:1<br>Metal:1<br>Rock:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.China:1<br>C.Portugal:1<br>Ambient.General:1<br>Reggae:1</td>
+  <td>Coil &quot;Tattooed Man - Remastered&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c617d7c4e5b3e66570dd20a46751ad518bebaa59" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7yYi9aJirMqgnn5XlqOkZp" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5TOFICm4VIVwfDeWb2eUiQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2pgHFrrIxnT0tP3CzwaMh9" title="pulse">pulse</a></td>
@@ -716,12 +639,10 @@
 </tr>
 <tr>
   <td>52</td>
-  <td>ai</td>
+  <td><a href="https://everynoise.com/engenremap-ai.html" title="ai">ai</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 15<br>Synth.Electronic:2<br>Pop:1<br>C.Italy:1<br>C.Korea:1<br>Jazz:1<br>Ambient.General:1</td>
-  <td>Arca &quot;Rakata&quot;<br><audio title="Arca &quot;Rakata&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0971b002acdd1a51dfe0f5af043ac7ff22bc46ff" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:15<br>Synth.Electronic:2<br>Pop:1<br>C.Italy:1<br>C.Korea:1<br>C.Irish:1<br>C.Portugal:1<br>Jazz:1<br>Ambient.General:1</td>
+  <td>Arca &quot;Rakata&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0971b002acdd1a51dfe0f5af043ac7ff22bc46ff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3e0cmyYVSDVqZTFseCyg3y" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -729,12 +650,10 @@
 </tr>
 <tr>
   <td>53</td>
-  <td>turkish experimental</td>
+  <td><a href="https://everynoise.com/engenremap-turkishexperimental.html" title="turkish experimental">turkish experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 16<br>Synth.Electronic:1<br>Rock:1<br>C.Italy:1<br>C.Korea:1<br>Jazz:1</td>
-  <td>Replikas &quot;Ya Elli&quot;<br><audio title="Replikas &quot;Ya Elli&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/21f4483a14173cfbb87d128fe2e966669b3aa597" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:16<br>Synth.Electronic:1<br>Rock:1<br>C.Italy:1<br>C.Korea:1<br>C.Portugal:1<br>Jazz:1</td>
+  <td>Replikas &quot;Ya Elli&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/21f4483a14173cfbb87d128fe2e966669b3aa597" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/45AtGBDEqhtRHNflon49pO" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -742,12 +661,10 @@
 </tr>
 <tr>
   <td>54</td>
-  <td>tennessee experimental</td>
+  <td><a href="https://everynoise.com/engenremap-tennesseeexperimental.html" title="tennessee experimental">tennessee experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 12<br>Rock:3<br>Synth.Electronic:1<br>Pop:1<br>C.Korea:1<br>Folk:1<br>Ambient.General:1</td>
-  <td>R. Stevie Moore &quot;Do You Feel About the Same?&quot;<br><audio title="R. Stevie Moore &quot;Do You Feel About the Same?&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/1dda840c646a3aa708d1565008d602c1778403b9" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:12<br>Rock:3<br>Synth.Electronic:1<br>Pop:1<br>C.Korea:1<br>C.Portugal:1<br>Folk:1<br>Ambient.General:1</td>
+  <td>R. Stevie Moore &quot;Do You Feel About the Same?&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/1dda840c646a3aa708d1565008d602c1778403b9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2yZaGhmtFyRYuCHG8P2hyX" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -755,12 +672,10 @@
 </tr>
 <tr>
   <td>55</td>
-  <td>hauntology</td>
+  <td><a href="https://everynoise.com/engenremap-hauntology.html" title="hauntology">hauntology</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 13<br>Synth.Electronic:3<br>House:1<br>Pop:1<br>C.Italy:1<br>Jazz:1<br>Ambient.General:1</td>
-  <td>Pye Corner Audio &quot;Hollow Earth&quot;<br><audio title="Pye Corner Audio &quot;Hollow Earth&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/427b0819f97a4f8481c50540b857c8511705f023" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:13<br>Synth.Electronic:3<br>House:1<br>Pop:1<br>C.Italy:1<br>C.Portugal:1<br>Jazz:1<br>Ambient.General:1</td>
+  <td>Pye Corner Audio &quot;Hollow Earth&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/427b0819f97a4f8481c50540b857c8511705f023" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7yKED2Klt77liZOLVAwzma" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4XmN0ItjJP8hEkdFu3sAA3" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2c8ZWLAmWb0KITThlXN7ja" title="pulse">pulse</a></td>
@@ -768,12 +683,10 @@
 </tr>
 <tr>
   <td>56</td>
-  <td>danish experimental</td>
+  <td><a href="https://everynoise.com/engenremap-danishexperimental.html" title="danish experimental">danish experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 14<br>Psy.Rave:1<br>Techno:1<br>Synth.Electronic:1<br>Pop:1<br>C.Italy:1<br>C.Korea:1<br>Jazz:1<br>Ambient.General:1</td>
-  <td>Croatian Amor &quot;LA Hills Burn At The Peak Of Winter&qu<br><audio title="Croatian Amor &quot;LA Hills Burn At The Peak Of Winter&qu" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/cdf8a9b0d1fefa5de548a5a872515eea619b7e73" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:14<br>Psy.Rave:1<br>Techno:1<br>Synth.Electronic:1<br>Pop:1<br>C.Italy:1<br>C.Korea:1<br>C.Portugal:1<br>Jazz:1<br>Ambient.General:1</td>
+  <td>Croatian Amor &quot;LA Hills Burn At The Peak Of Winter&qu<br><audio class="playback" src="https://p.scdn.co/mp3-preview/cdf8a9b0d1fefa5de548a5a872515eea619b7e73" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0SUatsZp7U7k1VgYcY1j5K" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6iGe25ABzmoHyOqzhvebtM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0lLTAeUn2sXch458BkwxXi" title="pulse">pulse</a></td>
@@ -781,12 +694,10 @@
 </tr>
 <tr>
   <td>57</td>
-  <td>australian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-australianexperimental.html" title="australian experimental">australian experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 11<br>Ambient.General:3<br>Punk:1<br>Synth.Electronic:1<br>Pop:1<br>C.Italy:1<br>C.Spain:1<br>Jazz:1</td>
-  <td>HTRK &quot;Bio&quot;<br><audio title="HTRK &quot;Bio&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4bd2b8df7632137467f534620de695f0dd07ebe1" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:11<br>Ambient.General:3<br>Punk:1<br>Synth.Electronic:1<br>Pop:1<br>C.Italy:1<br>C.Spain:1<br>Jazz:1</td>
+  <td>HTRK &quot;Bio&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4bd2b8df7632137467f534620de695f0dd07ebe1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/40JvmtDltgFju6fGoscWlJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3WSlRAX47xpkQmaZts2MyQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Xw0yxBC43LqCWbiLQguWU" title="pulse">pulse</a></td>
@@ -794,12 +705,10 @@
 </tr>
 <tr>
   <td>58</td>
-  <td>arab experimental</td>
+  <td><a href="https://everynoise.com/engenremap-arabexperimental.html" title="arab experimental">arab experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 12<br>Synth.Electronic:4<br>Psy.Rave:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Jazz:1<br>Ambient.General:1</td>
-  <td>Nadah El Shazly &quot;B - A COLORS SHOW&quot;<br><audio title="Nadah El Shazly &quot;B - A COLORS SHOW&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/fa86bd1a1dd70a6d2f0c13796762099e44af7e42" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:12<br>Synth.Electronic:4<br>Psy.Rave:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Portugal:1<br>Jazz:1<br>Ambient.General:1</td>
+  <td>Nadah El Shazly &quot;B - A COLORS SHOW&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/fa86bd1a1dd70a6d2f0c13796762099e44af7e42" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/77lhjovotRh2w54Eqznx2H" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -807,12 +716,10 @@
 </tr>
 <tr>
   <td>59</td>
-  <td>norwegian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-norwegianexperimental.html" title="norwegian experimental">norwegian experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 13<br>Jazz:2<br>Psy.Rave:1<br>Rock:1<br>C.Italy:1<br>Ambient.General:1</td>
-  <td>Deathprod &quot;Dead People\'s Things&quot;<br><audio title="Deathprod &quot;Dead People\'s Things&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7603a7d219941ff8267966ffbdedd012ca1eaaa0" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:13<br>Jazz:2<br>Psy.Rave:1<br>Rock:1<br>C.Italy:1<br>C.Irish:1<br>C.Portugal:1<br>Ambient.General:1</td>
+  <td>Deathprod &quot;Dead People\'s Things&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7603a7d219941ff8267966ffbdedd012ca1eaaa0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6MjHKjWZs7OgrZne7lq5yY" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -820,12 +727,10 @@
 </tr>
 <tr>
   <td>60</td>
-  <td>indonesian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-indonesianexperimental.html" title="indonesian experimental">indonesian experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 11<br>Rock:2<br>Psy.Rave:1<br>Synth.Electronic:1<br>Industrial:1<br>C.Italy:1<br>C.Korea:1<br>Folk:1</td>
-  <td>Senyawa &quot;Welcome To The New World&quot;<br><audio title="Senyawa &quot;Welcome To The New World&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2700783256ec42dffe29e74d0be347e1a2fc0bfb" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:11<br>Rock:2<br>Psy.Rave:1<br>Synth.Electronic:1<br>Industrial:1<br>C.Italy:1<br>C.Korea:1<br>Folk:1</td>
+  <td>Senyawa &quot;Welcome To The New World&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2700783256ec42dffe29e74d0be347e1a2fc0bfb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4PYAgOlnw0hnRkuNT1lLN6" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -833,12 +738,10 @@
 </tr>
 <tr>
   <td>61</td>
-  <td>icelandic experimental</td>
+  <td><a href="https://everynoise.com/engenremap-icelandicexperimental.html" title="icelandic experimental">icelandic experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 10<br>Folk:2<br>Ambient.General:2<br>Classical:2<br>Synth.Electronic:1<br>Pop:1<br>C.Spain:1<br>C.India:1<br>Jazz:1<br>Gospel:1</td>
-  <td>Hildur Gu &quot;Call Me Joker&quot;<br><audio title="Hildur Gu &quot;Call Me Joker&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6042bc07a17c0acfd02294261477597eb6b2e53c" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:10<br>Folk:2<br>Ambient.General:2<br>Classical:2<br>Synth.Electronic:1<br>Pop:1<br>C.Spain:1<br>C.Irish:1<br>C.India:1<br>Jazz:1<br>Gospel:1</td>
+  <td>Hildur Gu &quot;Call Me Joker&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6042bc07a17c0acfd02294261477597eb6b2e53c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3lLXYcLaUynh40EobqkiV7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6jWU1SX1upsYzs1DSPD45p" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1xToXIR0596ypsQGqEQYrM" title="pulse">pulse</a></td>
@@ -846,12 +749,10 @@
 </tr>
 <tr>
   <td>62</td>
-  <td>experimental synth</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalsynth.html" title="experimental synth">experimental synth</a></td>
   <td>Experimental<br>Synth.Electronic</td>
-  <td><b>Experimental:</b> 9<br>Synth.Electronic:4<br>Ambient.General:4<br>C.Japan:2<br>Soundtrack:2<br>Pop:1<br>Gaming:1<br>C.Spain:1<br>C.Korea:1<br>Jazz:1</td>
-  <td>Sarah Davachi &quot;Or Something&quot;<br><audio title="Sarah Davachi &quot;Or Something&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/1a0003a4402fb275011fa4d2911eb6e4249ba5b6" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:9<br>Synth.Electronic:4<br>Ambient.General:4<br>C.Japan:2<br>Soundtrack.New.Age:2<br>Pop:1<br>Gaming:1<br>C.Spain:1<br>C.Korea:1<br>Jazz:1</td>
+  <td>Sarah Davachi &quot;Or Something&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/1a0003a4402fb275011fa4d2911eb6e4249ba5b6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3JIOP9ciE3hb2cXTMOzBma" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3UrufwmnWjNhW6QEO3GHny" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5mzDrDEhyHCWzoVtA0l8W9" title="pulse">pulse</a></td>
@@ -859,12 +760,10 @@
 </tr>
 <tr>
   <td>63</td>
-  <td>theme</td>
+  <td><a href="https://everynoise.com/engenremap-theme.html" title="theme">theme</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 6<br>Psy.Rave:1<br>Synth.Electronic:1<br>Indie:1<br>Rock:1<br>Pop:1<br>Folk:1<br>Ambient.General:1<br>Soundtrack:1</td>
-  <td>Peter Howell &quot;Doctor Who - Opening Theme (The Five Do<br><audio title="Peter Howell &quot;Doctor Who - Opening Theme (The Five Do" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/90b4dfb012aaaebaa1a08804a5eca952f6a5670e" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:6<br>Psy.Rave:1<br>Synth.Electronic:1<br>Indie:1<br>Rock:1<br>Pop:1<br>Folk:1<br>Ambient.General:1<br>Soundtrack.New.Age:1</td>
+  <td>Peter Howell &quot;Doctor Who - Opening Theme (The Five Do<br><audio class="playback" src="https://p.scdn.co/mp3-preview/90b4dfb012aaaebaa1a08804a5eca952f6a5670e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/38KAIcOl7fuUVC3LP9vn6F" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3tCuuX9dbpYjtMyMPo5u3T" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6cJ9sjZZGuEybpl9hATbyA" title="pulse">pulse</a></td>
@@ -872,12 +771,10 @@
 </tr>
 <tr>
   <td>64</td>
-  <td>slowcore</td>
+  <td><a href="https://everynoise.com/engenremap-slowcore.html" title="slowcore">slowcore</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 3<br>Pop:2<br>Folk:2<br>Psy.Rave:1<br>Hardstyle:1<br>Rock:1<br>Ambient.General:1</td>
-  <td>Bedhead &quot;Bedside Table&quot;<br><audio title="Bedhead &quot;Bedside Table&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0860f38e613a4e7983f60bb363724ec46f6b7e73" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:3<br>Pop:2<br>Folk:2<br>Psy.Rave:1<br>Hardstyle:1<br>Rock:1<br>Ambient.General:1</td>
+  <td>Bedhead &quot;Bedside Table&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0860f38e613a4e7983f60bb363724ec46f6b7e73" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1YD7lXqICOb2LCQH5Q03RM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1j7xCvCrXWjd4P8CWf0s14" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6t151PdwOqaNfKdjN0WF4J" title="pulse">pulse</a></td>
@@ -885,12 +782,10 @@
 </tr>
 <tr>
   <td>65</td>
-  <td>portuguese experimental</td>
-  <td>Experimental</td>
-  <td><b>Experimental:</b> 17<br>Psy.Rave:1<br>House:1<br>Synth.Electronic:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Instrumental:1</td>
-  <td>T Trips &quot;Tango Surdina&quot;<br><audio title="T Trips &quot;Tango Surdina&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3297a5c0f99453517ddfc6b044133e0d16baa532" type="audio/mpeg">
-</audio></td>
+  <td><a href="https://everynoise.com/engenremap-portugueseexperimental.html" title="portuguese experimental">portuguese experimental</a></td>
+  <td>C.Portugal<br>Experimental</td>
+  <td>Experimental:17<br>C.Portugal:2<br>Psy.Rave:1<br>House:1<br>Synth.Electronic:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Instrumental:1</td>
+  <td>T Trips &quot;Tango Surdina&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3297a5c0f99453517ddfc6b044133e0d16baa532" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0ju49bDfuL4CUqVhqna7s8" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -898,12 +793,10 @@
 </tr>
 <tr>
   <td>66</td>
-  <td>fantasy</td>
+  <td><a href="https://everynoise.com/engenremap-fantasy.html" title="fantasy">fantasy</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 6<br>Synth.Electronic:2<br>C.Japan:2<br>Ambient.General:2<br>Pop:1<br>C.India:1<br>Folk:1<br>Jazz:1<br>Soundtrack:1</td>
-  <td>Martin Egger &quot;Laketown Tavern - Traditional Version&q<br><audio title="Martin Egger &quot;Laketown Tavern - Traditional Version&q" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/cd9971c2cdd5bcc6be5aeb4da2e3f2902c9ef873" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:6<br>Synth.Electronic:2<br>C.Japan:2<br>Ambient.General:2<br>Soundtrack.New.Age:2<br>Pop:1<br>C.Irish:1<br>C.India:1<br>Folk:1<br>Jazz:1</td>
+  <td>Martin Egger &quot;Laketown Tavern - Traditional Version&q<br><audio class="playback" src="https://p.scdn.co/mp3-preview/cd9971c2cdd5bcc6be5aeb4da2e3f2902c9ef873" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7yZS6e9IMeOkEzIydo1FYB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0fihUZCCTETIdHiL7uaNQe" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1zws4Fpet00yiTNaN03V75" title="pulse">pulse</a></td>
@@ -911,12 +804,10 @@
 </tr>
 <tr>
   <td>67</td>
-  <td>new england experimental</td>
+  <td><a href="https://everynoise.com/engenremap-newenglandexperimental.html" title="new england experimental">new england experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 14<br>Punk:1<br>Synth.Electronic:1<br>C.Italy:1<br>C.Spain:1<br>Jazz:1<br>Ambient.General:1</td>
-  <td>Keith Fullerton Whitman &quot;Track3a (2waynice)&quot;<br><audio title="Keith Fullerton Whitman &quot;Track3a (2waynice)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6f9e04614bfe95c6b852f11ff1ab7587685984fa" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:14<br>Punk:1<br>Synth.Electronic:1<br>C.Italy:1<br>C.Spain:1<br>C.Portugal:1<br>Jazz:1<br>Ambient.General:1</td>
+  <td>Keith Fullerton Whitman &quot;Track3a (2waynice)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6f9e04614bfe95c6b852f11ff1ab7587685984fa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1eE2MRCEWlqIKF1IGZFC2r" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -924,12 +815,10 @@
 </tr>
 <tr>
   <td>68</td>
-  <td>abstractro</td>
+  <td><a href="https://everynoise.com/engenremap-abstractro.html" title="abstractro">abstractro</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 6<br>Ambient.General:5<br>Synth.Electronic:3<br>Rock:3<br>Psy.Rave:2<br>C.Italy:2<br>Punk:1<br>Industrial:1<br>Gaming:1<br>C.Spain:1</td>
-  <td>Bitchin Bajas &quot;Amorpha&quot;<br><audio title="Bitchin Bajas &quot;Amorpha&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/305bae0b13621b7be4a27c68a3cd981f3efae0d8" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:6<br>Ambient.General:5<br>Synth.Electronic:3<br>Rock:3<br>Psy.Rave:2<br>C.Italy:2<br>Punk:1<br>Industrial:1<br>Gaming:1<br>C.Spain:1</td>
+  <td>Bitchin Bajas &quot;Amorpha&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/305bae0b13621b7be4a27c68a3cd981f3efae0d8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3WkjlWImZ936rGAeweH93i" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0oH3n4BAwDRenAVTNlK1Hr" title="intro">intro</a></td>
   <td>--</td>
@@ -937,12 +826,10 @@
 </tr>
 <tr>
   <td>69</td>
-  <td>middle earth</td>
+  <td><a href="https://everynoise.com/engenremap-middleearth.html" title="middle earth">middle earth</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 6<br>Synth.Electronic:2<br>Metal:2<br>Ambient.General:2<br>Pop:1<br>C.Spain:1<br>C.Japan:1<br>C.India:1<br>Folk:1<br>Jazz:1<br>Gospel:1<br>Soundtrack:1</td>
-  <td>Howard Shore &quot;Concerning Hobbits&quot;<br><audio title="Howard Shore &quot;Concerning Hobbits&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f036e8187a122760cad93a5ec318a596325b9a09" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:6<br>Synth.Electronic:2<br>Metal:2<br>Ambient.General:2<br>Pop:1<br>C.Spain:1<br>C.Japan:1<br>C.Irish:1<br>C.India:1<br>Folk:1<br>Jazz:1<br>Gospel:1<br>Soundtrack.New.Age:1</td>
+  <td>Howard Shore &quot;Concerning Hobbits&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f036e8187a122760cad93a5ec318a596325b9a09" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5oCnQo5S6M9850XBP8LTqS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3nY5oq40n7wUEtvGhRhmTB" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4y0IH6x5EEfBkd8SoxkG8l" title="pulse">pulse</a></td>
@@ -950,12 +837,10 @@
 </tr>
 <tr>
   <td>70</td>
-  <td>experimental</td>
+  <td><a href="https://everynoise.com/engenremap-experimental.html" title="experimental">experimental</a></td>
   <td>Experimental</td>
-  <td><b>Rock:</b> 7<br>Experimental:5<br>Industrial:3<br>Punk:2<br>Psy.Rave:1<br>Pop:1<br>Instrumental:1</td>
-  <td>Faust &quot;Jennifer - 2006 Digital Remaster&quot;<br><audio title="Faust &quot;Jennifer - 2006 Digital Remaster&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6a2fe231a3cc654cb08c07b03c6526d863714f1d" type="audio/mpeg">
-</audio></td>
+  <td>Rock:7<br>Experimental:5<br>Industrial:3<br>Punk:2<br>Psy.Rave:1<br>Pop:1<br>Instrumental:1</td>
+  <td>Faust &quot;Jennifer - 2006 Digital Remaster&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6a2fe231a3cc654cb08c07b03c6526d863714f1d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/13rgRSFVuyKQ0YtrZDJD6R" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/54VRmKw2Vl3PVu1gJBlMF1" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1W6K5Q2jG9Oh3QzFFh2HLy" title="pulse">pulse</a></td>
@@ -963,12 +848,10 @@
 </tr>
 <tr>
   <td>71</td>
-  <td>zampogna</td>
+  <td><a href="https://everynoise.com/engenremap-zampogna.html" title="zampogna">zampogna</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 4<br>Pop:3<br>Ambient.General:2<br>Rock:1<br>Folk:1<br>Jazz:1<br>Gospel:1<br>Country:1</td>
-  <td>Antonio Critelli &quot;Ballo lento / Tarantella (Calabria)<br><audio title="Antonio Critelli &quot;Ballo lento / Tarantella (Calabria)" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8dace1c883bc4d17f77a5c729f534a061c90d281" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:4<br>Pop:3<br>Ambient.General:2<br>Rock:1<br>Folk:1<br>Jazz:1<br>Gospel:1<br>Country:1</td>
+  <td>Antonio Critelli &quot;Ballo lento / Tarantella (Calabria)<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8dace1c883bc4d17f77a5c729f534a061c90d281" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6egS6vpB5c6raIlw1v0Nx2" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -976,12 +859,10 @@
 </tr>
 <tr>
   <td>72</td>
-  <td>canadian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-canadianexperimental.html" title="canadian experimental">canadian experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 11<br>Ambient.General:3<br>Psy.Rave:2<br>C.Italy:2<br>Punk:1<br>Synth.Electronic:1<br>Industrial:1<br>Rock:1<br>C.Spain:1</td>
-  <td>Frankie Sparo &quot;See My Film&quot;<br><audio title="Frankie Sparo &quot;See My Film&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/19561ee33aaff84dfadba4bba6e41cdf08776408" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:11<br>Ambient.General:3<br>Psy.Rave:2<br>C.Italy:2<br>Punk:1<br>Synth.Electronic:1<br>Industrial:1<br>Rock:1<br>C.Spain:1</td>
+  <td>Frankie Sparo &quot;See My Film&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/19561ee33aaff84dfadba4bba6e41cdf08776408" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/46vWzFtJUqX1PZHoQswUuR" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -989,12 +870,10 @@
 </tr>
 <tr>
   <td>73</td>
-  <td>sound collage</td>
+  <td><a href="https://everynoise.com/engenremap-soundcollage.html" title="sound collage">sound collage</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 6<br>Rock:4<br>Folk:3<br>Synth.Electronic:1<br>Pop:1<br>C.France:1<br>C.Taiwan:1<br>C.Japan:1</td>
-  <td>Nurse With Wound &quot;Monument To Perez Prado&quot;<br><audio title="Nurse With Wound &quot;Monument To Perez Prado&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4e1934a3f0136829d0773941b24d739464b03948" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:6<br>Rock:4<br>Folk:3<br>Synth.Electronic:1<br>Pop:1<br>C.France:1<br>C.Taiwan:1<br>C.Japan:1</td>
+  <td>Nurse With Wound &quot;Monument To Perez Prado&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4e1934a3f0136829d0773941b24d739464b03948" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3oQe51s7JnZnVSbZmMY21m" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1002,12 +881,10 @@
 </tr>
 <tr>
   <td>74</td>
-  <td>spectra</td>
+  <td><a href="https://everynoise.com/engenremap-spectra.html" title="spectra">spectra</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 8<br>Pop:2<br>Folk:2<br>Ambient.General:2<br>Synth.Electronic:1<br>C.Spain:1<br>C.Japan:1<br>C.India:1<br>Jazz:1<br>Soundtrack:1</td>
-  <td>Felicia Atkinson &quot;And All The Spirals Of The World&qu<br><audio title="Felicia Atkinson &quot;And All The Spirals Of The World&qu" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/718f8568ab93306c010078e7372b9004a70b27e3" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:8<br>Pop:2<br>Folk:2<br>Ambient.General:2<br>Synth.Electronic:1<br>C.Spain:1<br>C.Japan:1<br>C.Irish:1<br>C.India:1<br>Jazz:1<br>Soundtrack.New.Age:1</td>
+  <td>Felicia Atkinson &quot;And All The Spirals Of The World&qu<br><audio class="playback" src="https://p.scdn.co/mp3-preview/718f8568ab93306c010078e7372b9004a70b27e3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2WTTJ6Punvhns8Evgh2AC3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4mxxY62xmzYFTVDmqTfhbO" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6qyVc6F42yKltOcmahVHDm" title="pulse">pulse</a></td>
@@ -1015,12 +892,10 @@
 </tr>
 <tr>
   <td>75</td>
-  <td>belgian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-belgianexperimental.html" title="belgian experimental">belgian experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 11<br>C.Japan:2<br>Ambient.General:2<br>Synth.Electronic:1<br>Pop:1<br>Jazz:1<br>Soundtrack:1<br>Instrumental:1</td>
-  <td>Ben Bertrand &quot;The Nixe of John Cage\'s River&quot;<br><audio title="Ben Bertrand &quot;The Nixe of John Cage\'s River&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/9c8c3f223e26094b14802bda99d2f3a025d5266b" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:11<br>C.Japan:2<br>Ambient.General:2<br>Synth.Electronic:1<br>Pop:1<br>C.Irish:1<br>C.Portugal:1<br>Jazz:1<br>Soundtrack.New.Age:1<br>Instrumental:1</td>
+  <td>Ben Bertrand &quot;The Nixe of John Cage\'s River&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/9c8c3f223e26094b14802bda99d2f3a025d5266b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/21rt1kGjzWvxHSnsrGVA88" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1028,12 +903,10 @@
 </tr>
 <tr>
   <td>76</td>
-  <td>irish experimental</td>
-  <td>Experimental</td>
-  <td><b>Experimental:</b> 10<br>Folk:2<br>Synth.Electronic:1<br>Pop:1<br>C.Spain:1<br>C.India:1<br>Jazz:1<br>Ambient.General:1</td>
-  <td>Roger Doyle &quot;Spring Is Coming With a Strawberry in th<br><audio title="Roger Doyle &quot;Spring Is Coming With a Strawberry in th" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/950514fc924b0da53f0f441df48ded81b10bc98d" type="audio/mpeg">
-</audio></td>
+  <td><a href="https://everynoise.com/engenremap-irishexperimental.html" title="irish experimental">irish experimental</a></td>
+  <td>C.Irish<br>Experimental</td>
+  <td>Experimental:10<br>C.Irish:2<br>Folk:2<br>Synth.Electronic:1<br>Pop:1<br>C.Spain:1<br>C.India:1<br>Jazz:1<br>Ambient.General:1</td>
+  <td>Roger Doyle &quot;Spring Is Coming With a Strawberry in th<br><audio class="playback" src="https://p.scdn.co/mp3-preview/950514fc924b0da53f0f441df48ded81b10bc98d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4iLweHFQ2lFWihZk6J22Na" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1041,12 +914,10 @@
 </tr>
 <tr>
   <td>77</td>
-  <td>experimental vocal</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalvocal.html" title="experimental vocal">experimental vocal</a></td>
   <td>Experimental<br>Vocal</td>
-  <td><b>Folk:</b> 4<br>Experimental:3<br>Vocal:2<br>Ambient.General:2<br>Pop:1<br>Gospel:1</td>
-  <td>Meredith Monk &quot;Ellis Island&quot;<br><audio title="Meredith Monk &quot;Ellis Island&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/27c410639bb34b7734c9e225be96520515303057" type="audio/mpeg">
-</audio></td>
+  <td>Folk:4<br>Experimental:3<br>Vocal:2<br>Ambient.General:2<br>Pop:1<br>Gospel:1</td>
+  <td>Meredith Monk &quot;Ellis Island&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/27c410639bb34b7734c9e225be96520515303057" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0nN0oPt34YcHQoqkfHHubG" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1054,12 +925,10 @@
 </tr>
 <tr>
   <td>78</td>
-  <td>swedish experimental</td>
+  <td><a href="https://everynoise.com/engenremap-swedishexperimental.html" title="swedish experimental">swedish experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 7<br>Ambient.General:5<br>Industrial:3<br>Synth.Electronic:2<br>Punk:1<br>C.Spain:1</td>
-  <td>Deutsch Nepal &quot;Carrions Still Walkin\'&quot;<br><audio title="Deutsch Nepal &quot;Carrions Still Walkin\'&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c86896045c77b27391890be3a04257b49cce5dbb" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:7<br>Ambient.General:5<br>Industrial:3<br>Synth.Electronic:2<br>Punk:1<br>C.Spain:1</td>
+  <td>Deutsch Nepal &quot;Carrions Still Walkin\'&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c86896045c77b27391890be3a04257b49cce5dbb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0vMO95PHDDpR99ysMzuxj5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4U0mDZpdqZqQveVDC8cOJY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6AZG7PLbPjkRb4EudFXBG1" title="pulse">pulse</a></td>
@@ -1067,12 +936,10 @@
 </tr>
 <tr>
   <td>79</td>
-  <td>experimental percussion</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalpercussion.html" title="experimental percussion">experimental percussion</a></td>
   <td>Experimental<br>Instrumental</td>
-  <td><b>Experimental:</b> 13<br>Instrumental:4<br>Psy.Rave:1<br>Synth.Electronic:1<br>Pop:1<br>Jazz:1<br>Ambient.General:1</td>
-  <td>Valentina Magaletti &quot;Rumours of Bread&quot;<br><audio title="Valentina Magaletti &quot;Rumours of Bread&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/73a316253e21dab7125d882ac3c562f6e4a44de6" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:13<br>Instrumental:4<br>Psy.Rave:1<br>Synth.Electronic:1<br>Pop:1<br>C.Portugal:1<br>Jazz:1<br>Ambient.General:1</td>
+  <td>Valentina Magaletti &quot;Rumours of Bread&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/73a316253e21dab7125d882ac3c562f6e4a44de6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0dVEVtMAMauolhaE2hgnNZ" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1080,12 +947,10 @@
 </tr>
 <tr>
   <td>80</td>
-  <td>spanish experimental</td>
+  <td><a href="https://everynoise.com/engenremap-spanishexperimental.html" title="spanish experimental">spanish experimental</a></td>
   <td>C.Spain<br>Experimental</td>
-  <td><b>Experimental:</b> 11<br>Ambient.General:5<br>Synth.Electronic:3<br>C.Spain:2<br>Punk:1<br>C.Japan:1<br>Jazz:1<br>Soundtrack:1</td>
-  <td>Suso Saiz &quot;Looking You In Silence&quot;<br><audio title="Suso Saiz &quot;Looking You In Silence&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/37ac60b441063f60f591f8efb86f04ec07035ebb" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:11<br>Ambient.General:5<br>Synth.Electronic:3<br>C.Spain:2<br>Punk:1<br>C.Japan:1<br>C.Irish:1<br>Jazz:1<br>Soundtrack.New.Age:1</td>
+  <td>Suso Saiz &quot;Looking You In Silence&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/37ac60b441063f60f591f8efb86f04ec07035ebb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5NInEvlgKr6MTytu7av3e3" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4hWYYNJ95yEa8FOyqVGmIO" title="pulse">pulse</a></td>
@@ -1093,12 +958,10 @@
 </tr>
 <tr>
   <td>81</td>
-  <td>iranian experimental</td>
+  <td><a href="https://everynoise.com/engenremap-iranianexperimental.html" title="iranian experimental">iranian experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 11<br>Ambient.General:5<br>Synth.Electronic:2<br>Psy.Rave:1<br>Punk:1<br>Industrial:1<br>C.Italy:1<br>C.Spain:1</td>
-  <td>Siavash Amini &quot;The Darkness About the Pole&quot;<br><audio title="Siavash Amini &quot;The Darkness About the Pole&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/20f91d182ea6908e1a29b2e212c7ad9aece388ec" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:11<br>Ambient.General:5<br>Synth.Electronic:2<br>Psy.Rave:1<br>Punk:1<br>Industrial:1<br>C.Italy:1<br>C.Spain:1</td>
+  <td>Siavash Amini &quot;The Darkness About the Pole&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/20f91d182ea6908e1a29b2e212c7ad9aece388ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6u5cs7trIBWbrSFplDuZo1" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6QzoID1I8zhk9nA5dOfo8l" title="pulse">pulse</a></td>
@@ -1106,12 +969,10 @@
 </tr>
 <tr>
   <td>82</td>
-  <td>dutch experimental</td>
+  <td><a href="https://everynoise.com/engenremap-dutchexperimental.html" title="dutch experimental">dutch experimental</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 7<br>Ambient.General:5<br>Synth.Electronic:2<br>C.Spain:1<br>Classical:1</td>
-  <td>Machinefabriek &quot;+ Joana Gama&quot;<br><audio title="Machinefabriek &quot;+ Joana Gama&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/39c01eac38f0137c1254911a20eed96497de1049" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:7<br>Ambient.General:5<br>Synth.Electronic:2<br>C.Spain:1<br>Classical:1</td>
+  <td>Machinefabriek &quot;+ Joana Gama&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/39c01eac38f0137c1254911a20eed96497de1049" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2lme11IX1jmvadLWtDcxFv" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1119,12 +980,10 @@
 </tr>
 <tr>
   <td>83</td>
-  <td>police band</td>
+  <td><a href="https://everynoise.com/engenremap-policeband.html" title="police band">police band</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 5<br>Psy.Rave:4<br>Rock:3<br>C.Japan:2<br>Industrial:1<br>C.Italy:1<br>Folk:1<br>Ambient.General:1</td>
-  <td>Grampian Police Pipe Band &quot;The Battle of the Somme - <br><audio title="Grampian Police Pipe Band &quot;The Battle of the Somme - " controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ca93af9aefa8b79f6d2fd90797c96785d5559594" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:5<br>Psy.Rave:4<br>Rock:3<br>C.Japan:2<br>Industrial:1<br>C.Italy:1<br>Folk:1<br>Ambient.General:1</td>
+  <td>Grampian Police Pipe Band &quot;The Battle of the Somme - <br><audio class="playback" src="https://p.scdn.co/mp3-preview/ca93af9aefa8b79f6d2fd90797c96785d5559594" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5PUxbB9Jk47DOKdYKMoYQs" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/54SuOq2wiebMFbsMLjVyNh" title="pulse">pulse</a></td>
@@ -1132,12 +991,10 @@
 </tr>
 <tr>
   <td>84</td>
-  <td>experimental psych</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalpsych.html" title="experimental psych">experimental psych</a></td>
   <td>Experimental<br>Psy.Rave</td>
-  <td><b>Experimental:</b> 10<br>Psy.Rave:3<br>C.Italy:2<br>Folk:2<br>Ambient.General:2<br>Punk:1<br>Industrial:1<br>Rock:1<br>C.Spain:1</td>
-  <td>Marisa Anderson &quot;Hesitation Theme and Variation Blues<br><audio title="Marisa Anderson &quot;Hesitation Theme and Variation Blues" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4daa2614c876333ffd60ce7d429db30ac19ea67e" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:10<br>Psy.Rave:3<br>C.Italy:2<br>Folk:2<br>Ambient.General:2<br>Punk:1<br>Industrial:1<br>Rock:1<br>C.Spain:1</td>
+  <td>Marisa Anderson &quot;Hesitation Theme and Variation Blues<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4daa2614c876333ffd60ce7d429db30ac19ea67e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7d4A45WwlxWLN2E0LIrUxE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5MV1uWkoHnRFazlWLWIfz7" title="intro">intro</a></td>
   <td>--</td>
@@ -1145,12 +1002,10 @@
 </tr>
 <tr>
   <td>85</td>
-  <td>experimental ambient</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalambient.html" title="experimental ambient">experimental ambient</a></td>
   <td>Ambient.General<br>Experimental</td>
-  <td><b>Soundtrack:</b> 8<br>Ambient.General:7<br>Experimental:4<br>Classical:2<br>Synth.Electronic:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>C.Germany:1<br>Country:1</td>
-  <td>Kaitlyn Aurelia Smith &quot;Stratus&quot;<br><audio title="Kaitlyn Aurelia Smith &quot;Stratus&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3e7eb35e936506a65cb32af75c02bf3399ea4b35" type="audio/mpeg">
-</audio></td>
+  <td>Soundtrack.New.Age:8<br>Ambient.General:7<br>Experimental:4<br>Classical:2<br>Synth.Electronic:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>C.Germany:1<br>Country:1</td>
+  <td>Kaitlyn Aurelia Smith &quot;Stratus&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3e7eb35e936506a65cb32af75c02bf3399ea4b35" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1EZksekNRKhPgFNfE6x9pt" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/65DcUc5HZvBYlbgsTP6om0" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3EKNBAUhezBIPqrPonBtIu" title="pulse">pulse</a></td>
@@ -1158,12 +1013,10 @@
 </tr>
 <tr>
   <td>86</td>
-  <td>experimental folk</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalfolk.html" title="experimental folk">experimental folk</a></td>
   <td>Experimental<br>Folk</td>
-  <td><b>Folk:</b> 6<br>Experimental:4<br>Ambient.General:3<br>Pop:1<br>C.Italy:1<br>C.India:1<br>Jazz:1<br>Gospel:1<br>Classical:1<br>Soundtrack:1</td>
-  <td>Weyes Blood &quot;Andromeda&quot;<br><audio title="Weyes Blood &quot;Andromeda&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6026e44361cf28d7bfb3f823b7392eb4b4a3eefb" type="audio/mpeg">
-</audio></td>
+  <td>Folk:6<br>Experimental:4<br>Ambient.General:3<br>Soundtrack.New.Age:2<br>Pop:1<br>C.Italy:1<br>C.Irish:1<br>C.India:1<br>Jazz:1<br>Gospel:1<br>Classical:1</td>
+  <td>Weyes Blood &quot;Andromeda&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6026e44361cf28d7bfb3f823b7392eb4b4a3eefb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0CGco9gTEucsrVG65NV5yZ" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1171,12 +1024,10 @@
 </tr>
 <tr>
   <td>87</td>
-  <td>experimental big band</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalbigband.html" title="experimental big band">experimental big band</a></td>
   <td>Experimental</td>
-  <td><b>Jazz:</b> 5<br>Classical:3<br>Experimental:3<br>Rock:1<br>Folk:1</td>
-  <td>Fire! Orchestra &quot;ECHOES: Forest without shadows&quot;<br><audio title="Fire! Orchestra &quot;ECHOES: Forest without shadows&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3856a5586aa102a540d14b5657f526e367d59f34" type="audio/mpeg">
-</audio></td>
+  <td>Jazz:5<br>Classical:3<br>Experimental:3<br>Rock:1<br>Folk:1</td>
+  <td>Fire! Orchestra &quot;ECHOES: Forest without shadows&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3856a5586aa102a540d14b5657f526e367d59f34" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2Xkgh1OTAgZuqnsnWb8QAe" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1184,12 +1035,10 @@
 </tr>
 <tr>
   <td>88</td>
-  <td>totalism</td>
+  <td><a href="https://everynoise.com/engenremap-totalism.html" title="totalism">totalism</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 10<br>Synth.Electronic:2<br>Folk:2<br>Ambient.General:2<br>Psy.Rave:1<br>C.Italy:1<br>C.Spain:1<br>Soundtrack:1<br>Instrumental:1</td>
-  <td>Michael Gordon &quot;Gene Takes a Drink&quot;<br><audio title="Michael Gordon &quot;Gene Takes a Drink&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/46e066b54e17e8734c94192dfcada6e797c28956" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:10<br>Synth.Electronic:2<br>Folk:2<br>Ambient.General:2<br>Psy.Rave:1<br>C.Italy:1<br>C.Spain:1<br>C.Irish:1<br>Soundtrack.New.Age:1<br>Instrumental:1</td>
+  <td>Michael Gordon &quot;Gene Takes a Drink&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/46e066b54e17e8734c94192dfcada6e797c28956" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5tkbtAUDPnLNzP9yxcIlhe" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1197,12 +1046,10 @@
 </tr>
 <tr>
   <td>89</td>
-  <td>sound art</td>
+  <td><a href="https://everynoise.com/engenremap-soundart.html" title="sound art">sound art</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 6<br>Ambient.General:5<br>Synth.Electronic:1<br>Industrial:1<br>C.Spain:1</td>
-  <td>William Basinski &quot;Melancholia II&quot;<br><audio title="William Basinski &quot;Melancholia II&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/de9033c13238bb254902a6ef5e0f170b65f74c03" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:6<br>Ambient.General:5<br>Synth.Electronic:1<br>Industrial:1<br>C.Spain:1</td>
+  <td>William Basinski &quot;Melancholia II&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/de9033c13238bb254902a6ef5e0f170b65f74c03" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7JWvFuSIklMeBelZettpB5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1Rly3ZnYIxId1QwSgJI7qs" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6RnaauxQKcGJfnoHQknGK3" title="pulse">pulse</a></td>
@@ -1210,12 +1057,10 @@
 </tr>
 <tr>
   <td>90</td>
-  <td>experimental guitar</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalguitar.html" title="experimental guitar">experimental guitar</a></td>
   <td>Experimental<br>Instrumental</td>
-  <td><b>Jazz:</b> 6<br>Experimental:5<br>Instrumental:4<br>Folk:2<br>C.Italy:1<br>C.Japan:1<br>Ambient.General:1<br>Soundtrack:1</td>
-  <td>Loren Connors &quot;Now Who Are These Guys?&quot;<br><audio title="Loren Connors &quot;Now Who Are These Guys?&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/cd0a00181162eb89a364e7e39d9a9ff2efd622d8" type="audio/mpeg">
-</audio></td>
+  <td>Jazz:6<br>Experimental:5<br>Instrumental:4<br>Folk:2<br>C.Italy:1<br>C.Japan:1<br>Ambient.General:1<br>Soundtrack.New.Age:1</td>
+  <td>Loren Connors &quot;Now Who Are These Guys?&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/cd0a00181162eb89a364e7e39d9a9ff2efd622d8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3BK0gx0rvmoqDp691gtQZG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4e2Oo0swFDwXgwn3xhral3" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7yYIuZ6ev8qzzMUBNajcNd" title="pulse">pulse</a></td>
@@ -1223,12 +1068,10 @@
 </tr>
 <tr>
   <td>91</td>
-  <td>experimental poetry</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalpoetry.html" title="experimental poetry">experimental poetry</a></td>
   <td>Experimental</td>
-  <td><b>Experimental:</b> 2<br>Children:1<br>C.Mexico.Latino:1</td>
-  <td>Soundwalk Collective &quot;Blessed Are The Lovers&quot;<br><audio title="Soundwalk Collective &quot;Blessed Are The Lovers&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4dae0bb0570ae4746d22266d7af09a0af5a716a2" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:2<br>Children:1<br>C.Mexico.Latino:1</td>
+  <td>Soundwalk Collective &quot;Blessed Are The Lovers&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4dae0bb0570ae4746d22266d7af09a0af5a716a2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0RO8YBtv36PJFXHS6ohiYP" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1236,12 +1079,10 @@
 </tr>
 <tr>
   <td>92</td>
-  <td>experimental classical</td>
+  <td><a href="https://everynoise.com/engenremap-experimentalclassical.html" title="experimental classical">experimental classical</a></td>
   <td>Classical<br>Experimental</td>
-  <td><b>Classical:</b> 6<br>Ambient.Yoga.Therapy.Sleep.White.Noise:3<br>Experimental:3<br>Synth.Electronic:1<br>C.China:1<br>Ambient.General:1<br>Soundtrack:1</td>
-  <td>John Luther Adams &quot;Canticles of the Sky: I. Sky with <br><audio title="John Luther Adams &quot;Canticles of the Sky: I. Sky with " controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/42407a4c50129a5230c82334afd2ff2c007be6f2" type="audio/mpeg">
-</audio></td>
+  <td>Classical:6<br>Ambient.Yoga.Therapy.Sleep.White.Noise:3<br>Experimental:3<br>Synth.Electronic:1<br>C.China:1<br>Ambient.General:1<br>Soundtrack.New.Age:1</td>
+  <td>John Luther Adams &quot;Canticles of the Sky: I. Sky with <br><audio class="playback" src="https://p.scdn.co/mp3-preview/42407a4c50129a5230c82334afd2ff2c007be6f2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7dsOzqgEOrtXP3GEZEgwgr" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ePCi1T6vBmUbm3VkgZioZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2o1jIYgG9rGz9szZME6Wwe" title="pulse">pulse</a></td>

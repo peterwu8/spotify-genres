@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Industrial: (19 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>hard industrial techno</td>
+  <td><a href="https://everynoise.com/engenremap-hardindustrialtechno.html" title="hard industrial techno">hard industrial techno</a></td>
   <td>Industrial<br>Techno</td>
-  <td><b>Psy.Rave:</b> 5<br>Techno:5<br>Industrial:2<br>House:1<br>Trance:1</td>
-  <td>Die+Rich &quot;Death Valley&quot;<br><audio title="Die+Rich &quot;Death Valley&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0ec5d6638e3d7c096e5fcddfce6f24b3612fc6e0" type="audio/mpeg">
-</audio></td>
+  <td>Psy.Rave:5<br>Techno:5<br>Industrial:2<br>House:1<br>Trance:1</td>
+  <td>Die+Rich &quot;Death Valley&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0ec5d6638e3d7c096e5fcddfce6f24b3612fc6e0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6LC1olQQ2lwUpbwCzWF8P7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0uu0FfhLYy4D0cxAjc8MkZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2zMEID5JFJzWblpZi8EQmh" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>industrial techno</td>
+  <td><a href="https://everynoise.com/engenremap-industrialtechno.html" title="industrial techno">industrial techno</a></td>
   <td>Industrial<br>Techno</td>
-  <td><b>Techno:</b> 9<br>Synth.Electronic:6<br>Trance:2<br>Industrial:2<br>Progressive:1<br>House:1<br>Breaks:1<br>Dance:1<br>Experimental:1<br>Reggae:1</td>
-  <td>UVB &quot;Mixtion - Original Mix&quot;<br><audio title="UVB &quot;Mixtion - Original Mix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3028d848134d0f94b533a06105f2a6ba17b8d5e9" type="audio/mpeg">
-</audio></td>
+  <td>Techno:9<br>Synth.Electronic:6<br>Trance:2<br>Industrial:2<br>Progressive:1<br>House:1<br>Breaks:1<br>Dance:1<br>Experimental:1<br>Reggae:1</td>
+  <td>UVB &quot;Mixtion - Original Mix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3028d848134d0f94b533a06105f2a6ba17b8d5e9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4dKxJnBaUEkEarU8qT0AMN" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2pp1WKHjDxFKH9ezAr2E8L" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/07aqO7ND12pD0y4xoFVuQ8" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>electro-industrial</td>
+  <td><a href="https://everynoise.com/engenremap-electroindustrial.html" title="electro-industrial">electro-industrial</a></td>
   <td>Industrial<br>Synth.Electronic</td>
-  <td><b>Synth.Electronic:</b> 7<br>Industrial:6<br>Trance:2<br>Rock:2<br>Progressive:1<br>House:1<br>Punk:1<br>Industrial.Punk.EBM:1<br>Metal:1<br>Dance:1</td>
-  <td>Decoded Feedback &quot;Phoenix&quot;<br><audio title="Decoded Feedback &quot;Phoenix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6f63f8569484579e47ba3f479a7b4c71c326c218" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:7<br>Industrial:6<br>Trance:2<br>Rock:2<br>Progressive:1<br>House:1<br>Punk:1<br>Industrial.Punk.EBM:1<br>Metal:1<br>Dance:1</td>
+  <td>Decoded Feedback &quot;Phoenix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6f63f8569484579e47ba3f479a7b4c71c326c218" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0ZVLhUadGf0IkCOecGIgtf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ojsS2nL4hqPJU1S9TjzOF" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2dmgK42Ye2lkwbgDwlI3HS" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>dark electro-industrial</td>
+  <td><a href="https://everynoise.com/engenremap-darkelectroindustrial.html" title="dark electro-industrial">dark electro-industrial</a></td>
   <td>Industrial<br>Synth.Electronic</td>
-  <td><b>Synth.Electronic:</b> 6<br>Industrial:5<br>Trance:2<br>Punk:2<br>Breaks:2<br>Rock:2<br>Dance:2<br>Uplifting:1<br>Industrial.Punk.EBM:1<br>Pop:1<br>Chill:1<br>Gospel:1</td>
-  <td>Diverje &quot;Wrapped Around - The Synthetic Dream Foundat<br><audio title="Diverje &quot;Wrapped Around - The Synthetic Dream Foundat" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/93a95925d1a544e2f672263ee10268a7fb50f0e2" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:6<br>Industrial:5<br>Trance:2<br>Punk:2<br>Breaks:2<br>Rock:2<br>Dance:2<br>Uplifting:1<br>Industrial.Punk.EBM:1<br>Pop:1<br>Chill:1<br>Gospel:1</td>
+  <td>Diverje &quot;Wrapped Around - The Synthetic Dream Foundat<br><audio class="playback" src="https://p.scdn.co/mp3-preview/93a95925d1a544e2f672263ee10268a7fb50f0e2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2DmqZ2vZQNftNYjlMiL13d" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>neo-industrial rock</td>
+  <td><a href="https://everynoise.com/engenremap-neoindustrialrock.html" title="neo-industrial rock">neo-industrial rock</a></td>
   <td>Industrial<br>Rock</td>
-  <td><b>Industrial:</b> 5<br>Punk:4<br>Rock:4<br>Synth.Electronic:3<br>Indie:2<br>Goth:2<br>Hardstyle:1<br>Metal:1<br>Dance:1</td>
-  <td>Chaotica &quot;Unstable&quot;<br><audio title="Chaotica &quot;Unstable&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/04e96a1862059229f0619af8241d97c2528c101c" type="audio/mpeg">
-</audio></td>
+  <td>Industrial:5<br>Punk:4<br>Rock:4<br>Synth.Electronic:3<br>Indie:2<br>Goth:2<br>Hardstyle:1<br>Metal:1<br>Dance:1</td>
+  <td>Chaotica &quot;Unstable&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/04e96a1862059229f0619af8241d97c2528c101c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/76yP8tntlsX9RDgjcAfa53" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>industrial hardcore</td>
+  <td><a href="https://everynoise.com/engenremap-industrialhardcore.html" title="industrial hardcore">industrial hardcore</a></td>
   <td>Hardstyle<br>Industrial</td>
-  <td><b>Hardstyle:</b> 8<br>Industrial:3<br>Techno:1<br>Metal:1<br>C.France:1<br>C.Japan:1<br>Dubstep:1</td>
-  <td>Tymon &quot;Dead Evil&quot;<br><audio title="Tymon &quot;Dead Evil&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2a8e9c51927d41f555f03a210d06b57569a154ea" type="audio/mpeg">
-</audio></td>
+  <td>Hardstyle:8<br>Industrial:3<br>Techno:1<br>Metal:1<br>C.France:1<br>C.Japan:1<br>Dubstep:1</td>
+  <td>Tymon &quot;Dead Evil&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2a8e9c51927d41f555f03a210d06b57569a154ea" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4SuEoxbyTWZvBG1cmnp2mq" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7xnGJKAX3EJSCQ5KbDnVgS" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7eWzjNDGWk00iZTeRMnpdj" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>industrial pop</td>
+  <td><a href="https://everynoise.com/engenremap-industrialpop.html" title="industrial pop">industrial pop</a></td>
   <td>Industrial<br>Pop</td>
-  <td><b>Synth.Electronic:</b> 6<br>Pop:4<br>C.Japan:3<br>Punk:2<br>Industrial:2<br>Indie:2<br>Rock:2<br>Dance:2<br>Trance:1<br>Vocal:1<br>Blues.Soul:1</td>
-  <td>KANGA &quot;Going Red&quot;<br><audio title="KANGA &quot;Going Red&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/660af371ad69a40d98af3518834c6899facabe7c" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:6<br>Pop:4<br>C.Japan:3<br>Punk:2<br>Industrial:2<br>Indie:2<br>Rock:2<br>Dance:2<br>Trance:1<br>Vocal:1<br>Blues.Soul:1</td>
+  <td>KANGA &quot;Going Red&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/660af371ad69a40d98af3518834c6899facabe7c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3jYAVSY29Gc023JUj7cGTf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/52RWE2vIaJIlHa7cVjoFCO" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6Pr5zMk9duURvu7oZGRktl" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>industrial metal</td>
+  <td><a href="https://everynoise.com/engenremap-industrialmetal.html" title="industrial metal">industrial metal</a></td>
   <td>Industrial<br>Metal</td>
-  <td><b>Industrial:</b> 6<br>Metal:6<br>Rock:4<br>Hardstyle:2<br>Rap:2<br>Punk:1<br>Synth.Electronic:1<br>Industrial.Punk.EBM:1<br>Goth:1</td>
-  <td>Orgy &quot;Blue Monday&quot;<br><audio title="Orgy &quot;Blue Monday&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/38a15a5372657e385d7481dcfd28a37f7ca666c7" type="audio/mpeg">
-</audio></td>
+  <td>Industrial:6<br>Metal:6<br>Rock:4<br>Hardstyle:2<br>Rap:2<br>Punk:1<br>Synth.Electronic:1<br>Industrial.Punk.EBM:1<br>Goth:1</td>
+  <td>Orgy &quot;Blue Monday&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/38a15a5372657e385d7481dcfd28a37f7ca666c7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/65Jejep3SssPpTW8RGELh6" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/44SjyZBXI0nOnv228z0V7W" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7h6GQWA8Rmeoo47PccAkWL" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>industrial rock</td>
+  <td><a href="https://everynoise.com/engenremap-industrialrock.html" title="industrial rock">industrial rock</a></td>
   <td>Industrial<br>Rock</td>
-  <td><b>Punk:</b> 5<br>Industrial:5<br>Rock:5<br>Metal:3<br>Synth.Electronic:2<br>Experimental:2<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Goth:1</td>
-  <td>KMFDM &quot;Megalomaniac&quot;<br><audio title="KMFDM &quot;Megalomaniac&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e775a13fabb5c7172b542fe7b7aabd2005c166db" type="audio/mpeg">
-</audio></td>
+  <td>Punk:5<br>Industrial:5<br>Rock:5<br>Metal:3<br>Synth.Electronic:2<br>Experimental:2<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Goth:1</td>
+  <td>KMFDM &quot;Megalomaniac&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e775a13fabb5c7172b542fe7b7aabd2005c166db" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3YA1JuMxq4iJNRr1G4hilC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6dFslkdghf49NnUIomR7df" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3mCAYtn5Rb9Vr2KkolOlek" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>extratone</td>
+  <td><a href="https://everynoise.com/engenremap-extratone.html" title="extratone">extratone</a></td>
   <td>Industrial</td>
-  <td><b>Industrial:</b> 4<br>Punk:2<br>Breaks:2<br>Synth.Electronic:2<br>Hardstyle:2<br>Metal:2<br>Rock:2<br>Chill:1<br>C.China:1</td>
-  <td>Coakira &quot;Balalaika&quot;<br><audio title="Coakira &quot;Balalaika&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/be1f9feb9b45448ca9c8aa51d1ad547841f590ba" type="audio/mpeg">
-</audio></td>
+  <td>Industrial:4<br>Punk:2<br>Breaks:2<br>Synth.Electronic:2<br>Hardstyle:2<br>Metal:2<br>Rock:2<br>Chill:1<br>C.China:1</td>
+  <td>Coakira &quot;Balalaika&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/be1f9feb9b45448ca9c8aa51d1ad547841f590ba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6xQmgTM4atbKMcjHlnKuXS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5UFrW96K4Ti6xtbDt3pNlg" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4mwdmOExl1Zo3GynMCFdaJ" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>industrial</td>
+  <td><a href="https://everynoise.com/engenremap-industrial.html" title="industrial">industrial</a></td>
   <td>Industrial</td>
-  <td><b>Industrial:</b> 8<br>Experimental:3<br>Punk:2<br>Synth.Electronic:2<br>Industrial.Punk.EBM:2<br>Rock:2<br>Indie:1<br>Metal:1<br>Folk:1<br>Ambient.General:1</td>
-  <td>Throbbing Gristle &quot;Hamburger Lady - Remastered&quot;<br><audio title="Throbbing Gristle &quot;Hamburger Lady - Remastered&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/427563d67617ed14441021b41b16e935751aa5f4" type="audio/mpeg">
-</audio></td>
+  <td>Industrial:8<br>Experimental:3<br>Punk:2<br>Synth.Electronic:2<br>Industrial.Punk.EBM:2<br>Rock:2<br>Indie:1<br>Metal:1<br>Folk:1<br>Ambient.General:1</td>
+  <td>Throbbing Gristle &quot;Hamburger Lady - Remastered&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/427563d67617ed14441021b41b16e935751aa5f4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/77sv0mFP4YSZgApxcqjaOb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2FylYycs64Bg5IgC1cSZQJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2hF3DTT2LA7yhbY0anOz6T" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>industrial hip hop</td>
+  <td><a href="https://everynoise.com/engenremap-industrialhiphop.html" title="industrial hip hop">industrial hip hop</a></td>
   <td>Hip hop<br>Industrial</td>
-  <td><b>Indie:</b> 7<br>Rock:4<br>Hip hop:4<br>Punk:2<br>Industrial:2<br>Metal:2<br>Trap:1<br>C.Italy:1<br>C.Japan:1<br>Experimental:1<br>Funk:1<br>Reggae:1</td>
-  <td>D &quot;Spiritual Healing&quot;<br><audio title="D &quot;Spiritual Healing&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/504041835aca47913fab2ac80432f65ef1852201" type="audio/mpeg">
-</audio></td>
+  <td>Indie:7<br>Rock:4<br>Hip hop:4<br>Punk:2<br>Industrial:2<br>Metal:2<br>Trap:1<br>C.Italy:1<br>C.Japan:1<br>Experimental:1<br>Funk:1<br>Reggae:1</td>
+  <td>D &quot;Spiritual Healing&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/504041835aca47913fab2ac80432f65ef1852201" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5oNLeNpkqvL9VqIndPrMVp" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Oi1bTAHtOf6RkrY365UVx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0XblyhCFuU5axa5vAtu8Gw" title="pulse">pulse</a></td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>industrial black metal</td>
+  <td><a href="https://everynoise.com/engenremap-industrialblackmetal.html" title="industrial black metal">industrial black metal</a></td>
   <td>Industrial<br>Metal</td>
-  <td><b>Metal:</b> 20<br>Industrial:2<br>C.France:1<br>C.Italy:1</td>
-  <td>D &quot;Tankespinnerens Smerte&quot;<br><audio title="D &quot;Tankespinnerens Smerte&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ac46055589ed767cf30cffd560f2bd5d46b27f60" type="audio/mpeg">
-</audio></td>
+  <td>Metal:20<br>Industrial:2<br>C.Portugal:2<br>C.France:1<br>C.Italy:1</td>
+  <td>D &quot;Tankespinnerens Smerte&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ac46055589ed767cf30cffd560f2bd5d46b27f60" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6Iq7OIw7e1FzmKXPGJrhOU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6E5cjPMdHXqnBjOixPAbXb" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1c2clMJm2KL4jDeviLqUTq" title="pulse">pulse</a></td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>british industrial</td>
+  <td><a href="https://everynoise.com/engenremap-britishindustrial.html" title="british industrial">british industrial</a></td>
   <td>Industrial</td>
-  <td><b>Experimental:</b> 6<br>Industrial:4<br>Psy.Rave:1<br>Techno:1<br>Synth.Electronic:1<br>Indie:1<br>Metal:1<br>Pop:1<br>C.Taiwan:1<br>C.China:1<br>Jazz:1<br>Ambient.General:1<br>Reggae:1</td>
-  <td>Test Dept &quot;Fuckhead&quot;<br><audio title="Test Dept &quot;Fuckhead&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5da2b6aebe6028e831017c54d48569ff068afc6a" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:6<br>Industrial:4<br>Psy.Rave:1<br>Techno:1<br>Synth.Electronic:1<br>Indie:1<br>Metal:1<br>Pop:1<br>C.Taiwan:1<br>C.China:1<br>Jazz:1<br>Ambient.General:1<br>Reggae:1</td>
+  <td>Test Dept &quot;Fuckhead&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5da2b6aebe6028e831017c54d48569ff068afc6a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2w6OEmFNpIydAbrB8m0DIX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2thEs36dFE5sVXXj4KXt2C" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7iMqaTeb92ctyaGtPGmTt4" title="pulse">pulse</a></td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>italian industrial</td>
+  <td><a href="https://everynoise.com/engenremap-italianindustrial.html" title="italian industrial">italian industrial</a></td>
   <td>C.Italy<br>Industrial</td>
-  <td><b>Industrial:</b> 4<br>Metal:4<br>Rock:4<br>C.Italy:4<br>Experimental:3<br>Psy.Rave:2<br>C.Japan:1<br>Ambient.General:1<br>Reggae:1</td>
-  <td>Mai Mai Mai &quot;Fimmine Fimmine&quot;<br><audio title="Mai Mai Mai &quot;Fimmine Fimmine&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b8ab929fd37b4f09a52e54ae3bdb3d0483b115e9" type="audio/mpeg">
-</audio></td>
+  <td>Industrial:4<br>Metal:4<br>Rock:4<br>C.Italy:4<br>Experimental:3<br>Psy.Rave:2<br>C.Japan:1<br>Ambient.General:1<br>Reggae:1</td>
+  <td>Mai Mai Mai &quot;Fimmine Fimmine&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b8ab929fd37b4f09a52e54ae3bdb3d0483b115e9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6MCiWpvpGO4vHkMjOf9FGI" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -248,12 +241,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>martial industrial</td>
+  <td><a href="https://everynoise.com/engenremap-martialindustrial.html" title="martial industrial">martial industrial</a></td>
   <td>Industrial</td>
-  <td><b>Industrial:</b> 5<br>Experimental:5<br>Psy.Rave:2<br>C.Italy:2<br>Folk:2<br>Ambient.General:2<br>Synth.Electronic:1<br>Rock:1<br>C.Korea:1<br>C.Germany:1<br>Classical:1</td>
-  <td>Blood Axis &quot;Walked in Line&quot;<br><audio title="Blood Axis &quot;Walked in Line&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d4e10e8274615dbb1fb8044656ec1e8b5bf7c140" type="audio/mpeg">
-</audio></td>
+  <td>Industrial:5<br>Experimental:5<br>Psy.Rave:2<br>C.Italy:2<br>Folk:2<br>Ambient.General:2<br>Synth.Electronic:1<br>Rock:1<br>C.Korea:1<br>C.Germany:1<br>Classical:1</td>
+  <td>Blood Axis &quot;Walked in Line&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d4e10e8274615dbb1fb8044656ec1e8b5bf7c140" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3rNs7l5F94njXt7oG8CiAc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4ejzia71jiTzQconcYYQdD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5fUX4opgSjgcSXILBpwnQJ" title="pulse">pulse</a></td>
@@ -261,12 +252,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>industrial noise</td>
+  <td><a href="https://everynoise.com/engenremap-industrialnoise.html" title="industrial noise">industrial noise</a></td>
   <td>Industrial</td>
-  <td><b>Metal:</b> 11<br>Industrial:4<br>Ambient.General:2<br>Synth.Electronic:1<br>Rock:1<br>Experimental:1</td>
-  <td>Prurient &quot;Trap&quot;<br><audio title="Prurient &quot;Trap&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/17a47d05192711529cf4f3210f6b9777ad9f2c32" type="audio/mpeg">
-</audio></td>
+  <td>Metal:11<br>Industrial:4<br>Ambient.General:2<br>Synth.Electronic:1<br>Rock:1<br>Experimental:1</td>
+  <td>Prurient &quot;Trap&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/17a47d05192711529cf4f3210f6b9777ad9f2c32" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0jiK6wprtcZIx6LJv3SYfx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6HwWi7IOJL54HG1kujawQa" title="intro">intro</a></td>
   <td>--</td>
@@ -274,12 +263,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>death industrial</td>
+  <td><a href="https://everynoise.com/engenremap-deathindustrial.html" title="death industrial">death industrial</a></td>
   <td>Industrial</td>
-  <td><b>Metal:</b> 10<br>Industrial:4<br>Ambient.General:2<br>Synth.Electronic:1<br>Rock:1<br>Experimental:1</td>
-  <td>Trepaneringsritualen &quot;Black Egg&quot;<br><audio title="Trepaneringsritualen &quot;Black Egg&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c5da7de514a0af34cf28f374f3e7bb6918995e9a" type="audio/mpeg">
-</audio></td>
+  <td>Metal:10<br>Industrial:4<br>Ambient.General:2<br>Synth.Electronic:1<br>Rock:1<br>Experimental:1</td>
+  <td>Trepaneringsritualen &quot;Black Egg&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c5da7de514a0af34cf28f374f3e7bb6918995e9a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5Wh6LBCI5BX6VVLfkcJ1g6" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4R4qcRrtKs0wdrNE4bFWjd" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/17tXDyBx85ODH8xfKJxqiz" title="pulse">pulse</a></td>
@@ -287,12 +274,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>ambient industrial</td>
+  <td><a href="https://everynoise.com/engenremap-ambientindustrial.html" title="ambient industrial">ambient industrial</a></td>
   <td>Ambient.General<br>Industrial</td>
-  <td><b>Experimental:</b> 6<br>Industrial:5<br>Synth.Electronic:4<br>Ambient.General:4<br>Punk:1<br>C.Spain:1<br>Folk:1</td>
-  <td>Nocturnal Emissions &quot;Sugar Can\'t Satisfy&quot;<br><audio title="Nocturnal Emissions &quot;Sugar Can\'t Satisfy&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c854b655a3a354df9c9f6b2bc9d5b0ca6be37955" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:6<br>Industrial:5<br>Synth.Electronic:4<br>Ambient.General:4<br>Punk:1<br>C.Spain:1<br>Folk:1</td>
+  <td>Nocturnal Emissions &quot;Sugar Can\'t Satisfy&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c854b655a3a354df9c9f6b2bc9d5b0ca6be37955" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6SjDZKf8ke13f8E3v1XAQ8" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ofIH5lomEhhQkVTLXT7pM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6NXnSdOL5VAmuRj4KI5Rkf" title="pulse">pulse</a></td>

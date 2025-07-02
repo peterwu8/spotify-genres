@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Country: (51 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>country rap</td>
+  <td><a href="https://everynoise.com/engenremap-countryrap.html" title="country rap">country rap</a></td>
   <td>Country<br>Rap</td>
-  <td><b>Pop:</b> 7<br>Rap:6<br>Hip hop:4<br>C.Japan:2<br>Dance:2<br>Country:2<br>Psy.Rave:1<br>Viral:1<br>Trap:1<br>C.India:1</td>
-  <td>Cypress Spring &quot;Way of Life&quot;<br><audio title="Cypress Spring &quot;Way of Life&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8d8a4b1af722253f65b66a49200e59a53e1ec411" type="audio/mpeg">
-</audio></td>
+  <td>Pop:7<br>Rap:6<br>Hip hop:4<br>C.Japan:2<br>Dance:2<br>Country:2<br>Psy.Rave:1<br>Viral:1<br>Trap:1<br>C.India:1</td>
+  <td>Cypress Spring &quot;Way of Life&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8d8a4b1af722253f65b66a49200e59a53e1ec411" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0vbiEQuSW4DIvyr169jPzg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/34SnVoqIDx2FfVti07FKiK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/31agUnO7d7ExFFEBiQp52X" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>modern country rock</td>
+  <td><a href="https://everynoise.com/engenremap-moderncountryrock.html" title="modern country rock">modern country rock</a></td>
   <td>Country<br>Rock</td>
-  <td><b>Rock:</b> 10<br>Pop:9<br>Country:9<br>C.Italy:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Party.Festival:1</td>
-  <td>Kip Moore &quot;Somethin\' \'Bout A Truck&quot;<br><audio title="Kip Moore &quot;Somethin\' \'Bout A Truck&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ff703a1976b763fb8a31305765a650e299c6c603" type="audio/mpeg">
-</audio></td>
+  <td>Rock:10<br>Pop:9<br>Country:9<br>C.Italy:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Party.Festival:1</td>
+  <td>Kip Moore &quot;Somethin\' \'Bout A Truck&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ff703a1976b763fb8a31305765a650e299c6c603" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/01b3JSy4UfA2iiKodhAXse" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0naryMQVAe5fmk43YZCxjf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4HuWyIXgji0iFMrnH7vfdh" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>canadian contemporary country</td>
+  <td><a href="https://everynoise.com/engenremap-canadiancontemporarycountry.html" title="canadian contemporary country">canadian contemporary country</a></td>
   <td>Country</td>
-  <td><b>Rock:</b> 9<br>Pop:9<br>Country:9<br>Indie:1<br>C.Italy:1<br>C.Japan:1<br>C.Germany:1</td>
-  <td>Chad Brownlee &quot;Forever\'s Gotta Start Somewhere&quot;<br><audio title="Chad Brownlee &quot;Forever\'s Gotta Start Somewhere&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8bcf775a2227ad498914cfcc1a53e93fec6d6237" type="audio/mpeg">
-</audio></td>
+  <td>Rock:9<br>Pop:9<br>Country:9<br>Indie:1<br>C.Italy:1<br>C.Japan:1<br>C.Germany:1</td>
+  <td>Chad Brownlee &quot;Forever\'s Gotta Start Somewhere&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8bcf775a2227ad498914cfcc1a53e93fec6d6237" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1Q21zPND8PRlf6boARmyX5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3cwySOP8ECWQJmgvtAZky2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4eb8mdtcy8XseT4DgjmrXz" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>alberta country</td>
+  <td><a href="https://everynoise.com/engenremap-albertacountry.html" title="alberta country">alberta country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 10<br>Pop:8<br>Rock:6<br>C.Spain:2<br>C.Italy:1<br>C.Mexico.Latino:1<br>Party.Festival:1</td>
-  <td>Gord Bamford &quot;When Your Lips Are so Close&quot;<br><audio title="Gord Bamford &quot;When Your Lips Are so Close&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d2b9517025a5963eb6a24542c6fb45cb40b554cf" type="audio/mpeg">
-</audio></td>
+  <td>Country:10<br>Pop:8<br>Rock:6<br>C.Spain:2<br>C.Italy:1<br>C.Mexico.Latino:1<br>Party.Festival:1</td>
+  <td>Gord Bamford &quot;When Your Lips Are so Close&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d2b9517025a5963eb6a24542c6fb45cb40b554cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5kYkybE1CkN3ShUzZA5n6A" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2giA2OQpSFTL7iTY0OY4lp" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/20NlhkJcNI2vLhf78CjaVT" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>country pop</td>
+  <td><a href="https://everynoise.com/engenremap-countrypop.html" title="country pop">country pop</a></td>
   <td>Country<br>Pop</td>
-  <td><b>Country:</b> 9<br>Pop:8<br>Rock:7<br>Indie:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Party.Festival:1</td>
-  <td>Brandon Ray &quot;Hold On (feat. Lauren Weintraub)&quot;<br><audio title="Brandon Ray &quot;Hold On (feat. Lauren Weintraub)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7f89d9a7d71a197df028f78f82fea448eea66730" type="audio/mpeg">
-</audio></td>
+  <td>Country:9<br>Pop:8<br>Rock:7<br>Indie:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Party.Festival:1</td>
+  <td>Brandon Ray &quot;Hold On (feat. Lauren Weintraub)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7f89d9a7d71a197df028f78f82fea448eea66730" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1kmPba3K0wZwyVJXktgJii" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/05ZvYsnEasH4v1MF9oO7jH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0rnk8Pywh60ZaXXVkI7aPK" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>contemporary country</td>
+  <td><a href="https://everynoise.com/engenremap-contemporarycountry.html" title="contemporary country">contemporary country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 13<br>Pop:6<br>Rock:4<br>C.Italy:1<br>C.Spain:1<br>Party.Festival:1</td>
-  <td>Lee Brice &quot;One Of Them Girls&quot;<br><audio title="Lee Brice &quot;One Of Them Girls&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3587df4ee9fd89943486a6b3ee7d0bb7c19bfb35" type="audio/mpeg">
-</audio></td>
+  <td>Country:13<br>Pop:6<br>Rock:4<br>C.Italy:1<br>C.Spain:1<br>Party.Festival:1</td>
+  <td>Lee Brice &quot;One Of Them Girls&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3587df4ee9fd89943486a6b3ee7d0bb7c19bfb35" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0VZfpqcbBUWC6kpP1vVrvA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6P8BGbHRLqxM55hMydN02V" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1DH4D0Umk6xQwaIGGfYicd" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>country road</td>
+  <td><a href="https://everynoise.com/engenremap-countryroad.html" title="country road">country road</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 12<br>Pop:6<br>Rock:4<br>C.Italy:1<br>C.Spain:1</td>
-  <td>Randy Houser &quot;Note to Self&quot;<br><audio title="Randy Houser &quot;Note to Self&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/63867b119633ebf0164c0790a426c8bb3a6a006d" type="audio/mpeg">
-</audio></td>
+  <td>Country:12<br>Pop:6<br>Rock:4<br>C.Italy:1<br>C.Spain:1</td>
+  <td>Randy Houser &quot;Note to Self&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/63867b119633ebf0164c0790a426c8bb3a6a006d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4fj8PNbbwGXBWHKodGQhfD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1EUBhStyMANsGmIG9vFkof" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/01BPvHEtPVN6eY6anB3wTm" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>texas country</td>
+  <td><a href="https://everynoise.com/engenremap-texascountry.html" title="texas country">texas country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 11<br>Pop:8<br>Rock:5<br>Indie:1<br>C.Italy:1</td>
-  <td>Seth Ward &quot;She Was Mine&quot;<br><audio title="Seth Ward &quot;She Was Mine&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d3d2cf5184f2b3be38c59829c61fca85e5895dee" type="audio/mpeg">
-</audio></td>
+  <td>Country:11<br>Pop:8<br>Rock:5<br>Indie:1<br>C.Italy:1</td>
+  <td>Seth Ward &quot;She Was Mine&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d3d2cf5184f2b3be38c59829c61fca85e5895dee" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2R6Ej1e4rvxe1Dz1ySNzhi" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0c7wPbIDIIYK2eq8UDkxRJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6g4zgRbQkdXFD9OnRF8f4N" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>red dirt</td>
+  <td><a href="https://everynoise.com/engenremap-reddirt.html" title="red dirt">red dirt</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 9<br>Pop:7<br>Rock:6<br>Indie:2<br>Americana:1</td>
-  <td>Micky &amp; The Motorcars &quot;One in a Lifetime Girl&quo<br><audio title="Micky &amp; The Motorcars &quot;One in a Lifetime Girl&quo" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/602c9d51fecfcd383dec4714b41463c555e476a0" type="audio/mpeg">
-</audio></td>
+  <td>Country:9<br>Pop:7<br>Rock:6<br>Indie:2<br>Americana:1</td>
+  <td>Micky &amp; The Motorcars &quot;One in a Lifetime Girl&quo<br><audio class="playback" src="https://p.scdn.co/mp3-preview/602c9d51fecfcd383dec4714b41463c555e476a0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/208eKWeHXifDir7qV5DQYB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1jBqxFoUGtDAn4IxMc6050" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6XGDhv3y9WzhpuXdnsRuMr" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>manitoba country</td>
+  <td><a href="https://everynoise.com/engenremap-manitobacountry.html" title="manitoba country">manitoba country</a></td>
   <td>Country</td>
-  <td><b>Pop:</b> 9<br>Country:6<br>Indie:3<br>Rock:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>Gospel:1</td>
-  <td>William Prince &quot;The Spark&quot;<br><audio title="William Prince &quot;The Spark&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5910436c3d71c1a4661bd6c563aa6d39bf97ed66" type="audio/mpeg">
-</audio></td>
+  <td>Pop:9<br>Country:6<br>Indie:3<br>Rock:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>Gospel:1</td>
+  <td>William Prince &quot;The Spark&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5910436c3d71c1a4661bd6c563aa6d39bf97ed66" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/43W23zGmvcC07hP0OoWvdb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6rCKxEzPlpak91x8BUXKVW" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/48ugg24zZwZsVjhebKVCIW" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>modern country pop</td>
+  <td><a href="https://everynoise.com/engenremap-moderncountrypop.html" title="modern country pop">modern country pop</a></td>
   <td>Country<br>Pop</td>
-  <td><b>Pop:</b> 10<br>Country:10<br>Rock:2</td>
-  <td>Warren Zeiders &quot;Pretty Little Poison&quot;<br><audio title="Warren Zeiders &quot;Pretty Little Poison&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/edec90019e2f14e4d9725ca680c572780061c930" type="audio/mpeg">
-</audio></td>
+  <td>Pop:10<br>Country:10<br>Rock:2</td>
+  <td>Warren Zeiders &quot;Pretty Little Poison&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/edec90019e2f14e4d9725ca680c572780061c930" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1AmdZJ5lBBbe6SX1MyAst9" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6FRdTk3oCWUY8xz89TdXkH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2D7UKdzU2VWisKfoKozwA5" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>swiss country</td>
+  <td><a href="https://everynoise.com/engenremap-swisscountry.html" title="swiss country">swiss country</a></td>
   <td>Country</td>
-  <td><b>Indie:</b> 10<br>C.Mexico.Latino:4<br>Pop:3<br>Country:3<br>C.Japan:2<br>Psy.Rave:1<br>Rock:1<br>C.Taiwan:1<br>C.Germany:1<br>Instrumental:1</td>
-  <td>Polo Hofer &quot;Alperose&quot;<br><audio title="Polo Hofer &quot;Alperose&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/fcfa1d73481400871dbfaed25f13fedea2cfc491" type="audio/mpeg">
-</audio></td>
+  <td>Indie:10<br>C.Mexico.Latino:4<br>Pop:3<br>Country:3<br>C.Japan:2<br>Psy.Rave:1<br>Rock:1<br>C.Taiwan:1<br>C.Germany:1<br>Instrumental:1</td>
+  <td>Polo Hofer &quot;Alperose&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/fcfa1d73481400871dbfaed25f13fedea2cfc491" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5fkSaHCkIJjZxl14up4NSh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/38y9M5gw2I45WkkwK05NiC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/62GcMzMPCIwSLjMVstCkZo" title="pulse">pulse</a></td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>rez country</td>
+  <td><a href="https://everynoise.com/engenremap-rezcountry.html" title="rez country">rez country</a></td>
   <td>Country</td>
-  <td><b>Rock:</b> 8<br>Indie:3<br>Country:3<br>Blues.Soul:2<br>Punk:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Germany:1</td>
-  <td>Rez Boyz &quot;Why Did You Leave Me&quot;<br><audio title="Rez Boyz &quot;Why Did You Leave Me&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3736940d3dc797c85674ee96e5cd4441761c6f31" type="audio/mpeg">
-</audio></td>
+  <td>Rock:8<br>Indie:3<br>Country:3<br>Blues.Soul:2<br>Punk:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Germany:1</td>
+  <td>Rez Boyz &quot;Why Did You Leave Me&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3736940d3dc797c85674ee96e5cd4441761c6f31" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2t478T5CCDyRz9IwV8mE4V" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2fDyHr73UMUO1AkexaoIbJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5n2voz1PIi8bGVFNf0I3wK" title="pulse">pulse</a></td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>norwegian country</td>
+  <td><a href="https://everynoise.com/engenremap-norwegiancountry.html" title="norwegian country">norwegian country</a></td>
   <td>Country</td>
-  <td><b>Pop:</b> 6<br>Country:3<br>Rock:2<br>Indie:1<br>C.France:1<br>C.Spain:1<br>Folk:1<br>Gospel:1</td>
-  <td>R Mix &quot;Skulle hatt ein TDI&quot;<br><audio title="R Mix &quot;Skulle hatt ein TDI&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/cf61183f0edf79f508b41119d1229452515201eb" type="audio/mpeg">
-</audio></td>
+  <td>Pop:6<br>Country:3<br>Rock:2<br>Indie:1<br>C.France:1<br>C.Spain:1<br>Folk:1<br>Gospel:1</td>
+  <td>R Mix &quot;Skulle hatt ein TDI&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/cf61183f0edf79f508b41119d1229452515201eb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3OYcipXDDwzqMoNgfMf4az" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5zhN3OrsiGMCp8nz65p4Ei" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1AlTN18p6e14Z9YIctuyr4" title="pulse">pulse</a></td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>oklahoma country</td>
+  <td><a href="https://everynoise.com/engenremap-oklahomacountry.html" title="oklahoma country">oklahoma country</a></td>
   <td>Country</td>
-  <td><b>Indie:</b> 7<br>Rock:6<br>Pop:3<br>Gospel:3<br>Country:3<br>C.Mexico.Latino:1<br>Folk:1</td>
-  <td>Gannon Fremin &amp; CCREV &quot;Always Around&quot;<br><audio title="Gannon Fremin &amp; CCREV &quot;Always Around&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/889da9f4fe6c6327b53788dce699694d04a42d33" type="audio/mpeg">
-</audio></td>
+  <td>Indie:7<br>Rock:6<br>Pop:3<br>Gospel:3<br>Country:3<br>C.Mexico.Latino:1<br>Folk:1</td>
+  <td>Gannon Fremin &amp; CCREV &quot;Always Around&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/889da9f4fe6c6327b53788dce699694d04a42d33" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0HETxB01hJ6A6PHf8kzgr5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6OoSeo4yw7zYb7ELSe4CA0" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3I87M1bxlXtIADGz5YKuJC" title="pulse">pulse</a></td>
@@ -248,12 +241,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>swedish country</td>
+  <td><a href="https://everynoise.com/engenremap-swedishcountry.html" title="swedish country">swedish country</a></td>
   <td>Country</td>
-  <td><b>Pop:</b> 8<br>Country:5<br>Indie:1<br>Folk:1<br>Gospel:1</td>
-  <td>Mats R &quot;Du kan alltid lita p pojkarna  35&quot;<br><audio title="Mats R &quot;Du kan alltid lita p pojkarna  35&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/923cad344e8b41e1305c942f3cbce04e4c86fb67" type="audio/mpeg">
-</audio></td>
+  <td>Pop:8<br>Country:5<br>Indie:1<br>Folk:1<br>Gospel:1</td>
+  <td>Mats R &quot;Du kan alltid lita p pojkarna  35&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/923cad344e8b41e1305c942f3cbce04e4c86fb67" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4StF9VDinlQNwMPcWhAfjz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3o5bcsHVAq6RLShKsNgw2w" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/03Hw6cRcCiy5xKhBqNdJAo" title="pulse">pulse</a></td>
@@ -261,12 +252,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>neo-traditional country</td>
+  <td><a href="https://everynoise.com/engenremap-neotraditionalcountry.html" title="neo-traditional country">neo-traditional country</a></td>
   <td>Country</td>
-  <td><b>Indie:</b> 5<br>Country:5<br>C.Mexico.Latino:3<br>Pop:2<br>Psy.Rave:1<br>Rock:1<br>C.Taiwan:1<br>C.Japan:1<br>C.India:1<br>Folk:1</td>
-  <td>The Mavericks &quot;Dance The Night Away&quot;<br><audio title="The Mavericks &quot;Dance The Night Away&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4c1880c7850bf8a3d7a0aa54c57f675f589290a6" type="audio/mpeg">
-</audio></td>
+  <td>Indie:5<br>Country:5<br>C.Mexico.Latino:3<br>Pop:2<br>Psy.Rave:1<br>Rock:1<br>C.Taiwan:1<br>C.Japan:1<br>C.India:1<br>Folk:1</td>
+  <td>The Mavericks &quot;Dance The Night Away&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4c1880c7850bf8a3d7a0aa54c57f675f589290a6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/42xcPVnKaE1gu7PScFIG9H" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -274,11 +263,11 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>german country</td>
+  <td><a href="https://everynoise.com/engenremap-germancountry.html" title="german country">german country</a></td>
   <td>C.Germany<br>Country</td>
-  <td><b>Pop:</b> 4<br>C.Mexico.Latino:4<br>C.Germany:2<br>Country:2<br>Blues.Soul:2<br>Indie:1<br>Rock:1<br>C.France:1<br>Folk:1</td>
-  <td>Truck Stop &quot;Take It Easy, altes Haus&quot;<br><audio title="Truck Stop &quot;Take It Easy, altes Haus&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c58e1ec083288ff4f0a1f7a28b72896dc22c6f27" type="audio/mpeg">
+  <td>Pop:4<br>C.Mexico.Latino:4<br>C.Germany:2<br>Country:2<br>Blues.Soul:2<br>Indie:1<br>Rock:1<br>C.France:1<br>Folk:1</td>
+  <td>Truck Stop &quot;Take It Easy, altes Haus&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c58e1ec083288ff4f0a1f7a28b72896dc22c6f27" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/5ap6ICYu15SLUZ2WUdWUBA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/71YuP1gTWo04sLFJHM3eQs" title="intro">intro</a></td>
@@ -287,12 +276,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>australian country</td>
+  <td><a href="https://everynoise.com/engenremap-australiancountry.html" title="australian country">australian country</a></td>
   <td>Country</td>
-  <td><b>Pop:</b> 5<br>Country:5<br>Americana:2<br>C.Mexico.Latino:2<br>Gospel:2<br>C.France:1<br>Folk:1</td>
-  <td>Amber Lawrence &quot;We Live in a Zoo&quot;<br><audio title="Amber Lawrence &quot;We Live in a Zoo&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/071c01bb08ca4df9c84898a01ad0f7270029dc33" type="audio/mpeg">
-</audio></td>
+  <td>Pop:5<br>Country:5<br>Americana:2<br>C.Mexico.Latino:2<br>Gospel:2<br>C.France:1<br>Folk:1</td>
+  <td>Amber Lawrence &quot;We Live in a Zoo&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/071c01bb08ca4df9c84898a01ad0f7270029dc33" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1hseduxVpn5p3ukaREgsSi" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0I6zCUW3zD3YVoFGuNreEk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZwXszrHoWwtTEv2oySUcR" title="pulse">pulse</a></td>
@@ -300,12 +287,10 @@
 </tr>
 <tr>
   <td>20</td>
-  <td>deep contemporary country</td>
+  <td><a href="https://everynoise.com/engenremap-deepcontemporarycountry.html" title="deep contemporary country">deep contemporary country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 9<br>Pop:6<br>Folk:2<br>Indie:1</td>
-  <td>Danni Leigh &quot;Ol\' Lonesome&quot;<br><audio title="Danni Leigh &quot;Ol\' Lonesome&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b706349740f2b2c66a031bf0f7172ec21baa3e43" type="audio/mpeg">
-</audio></td>
+  <td>Country:9<br>Pop:6<br>Folk:2<br>Indie:1</td>
+  <td>Danni Leigh &quot;Ol\' Lonesome&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b706349740f2b2c66a031bf0f7172ec21baa3e43" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5TqoG1t47RTBqODKy6xjdK" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/37vpP3kXugCVw8Be4xPyQw" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/47NsWA6f68d80itf676OYg" title="pulse">pulse</a></td>
@@ -313,12 +298,10 @@
 </tr>
 <tr>
   <td>21</td>
-  <td>country quebecois</td>
+  <td><a href="https://everynoise.com/engenremap-countryquebecois.html" title="country quebecois">country quebecois</a></td>
   <td>Country</td>
-  <td><b>Pop:</b> 5<br>Country:5<br>Indie:1<br>Americana:1<br>Folk:1<br>Gospel:1</td>
-  <td>V Labb &quot;Fermez les Honky Tonks&quot;<br><audio title="V Labb &quot;Fermez les Honky Tonks&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4ee16beb7b74787a30f05727cf8b2a8390b85609" type="audio/mpeg">
-</audio></td>
+  <td>Pop:5<br>Country:5<br>Indie:1<br>Americana:1<br>Folk:1<br>Gospel:1</td>
+  <td>V Labb &quot;Fermez les Honky Tonks&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4ee16beb7b74787a30f05727cf8b2a8390b85609" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0H51A6nNghqfiLc9wm47xR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2kM1OqtvkFOlT2Y04Eb74F" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3RiYiImiiyhonUdaRkWS82" title="pulse">pulse</a></td>
@@ -326,12 +309,10 @@
 </tr>
 <tr>
   <td>22</td>
-  <td>south african country</td>
+  <td><a href="https://everynoise.com/engenremap-southafricancountry.html" title="south african country">south african country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 6<br>Pop:4<br>Rock:2<br>Folk:2<br>C.Mexico.Latino:1</td>
-  <td>Billy Forrest &quot;Tiny Bubbles&quot;<br><audio title="Billy Forrest &quot;Tiny Bubbles&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/40fc190e9706e3a3965c283e4f768fad08b29c44" type="audio/mpeg">
-</audio></td>
+  <td>Country:6<br>Pop:4<br>Rock:2<br>Folk:2<br>C.Mexico.Latino:1</td>
+  <td>Billy Forrest &quot;Tiny Bubbles&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/40fc190e9706e3a3965c283e4f768fad08b29c44" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1CKRS7bZY4KGSJ5qBc4T39" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4DlMcogsyUCM2QZTzwNpQl" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1p8JR4ejuRiHdKuvqNqtQI" title="pulse">pulse</a></td>
@@ -339,12 +320,10 @@
 </tr>
 <tr>
   <td>23</td>
-  <td>british country</td>
+  <td><a href="https://everynoise.com/engenremap-britishcountry.html" title="british country">british country</a></td>
   <td>Country</td>
-  <td><b>Pop:</b> 5<br>Indie:3<br>Country:3<br>Gospel:2<br>Americana:1<br>C.Taiwan:1<br>C.Korea:1<br>C.India:1<br>Folk:1</td>
-  <td>Jade Helliwell &quot;Smoke&quot;<br><audio title="Jade Helliwell &quot;Smoke&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b7877bd0c57a78b4a0474aa02ccd993732d09234" type="audio/mpeg">
-</audio></td>
+  <td>Pop:5<br>Indie:3<br>Country:3<br>Gospel:2<br>Americana:1<br>C.Taiwan:1<br>C.Korea:1<br>C.India:1<br>Folk:1</td>
+  <td>Jade Helliwell &quot;Smoke&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b7877bd0c57a78b4a0474aa02ccd993732d09234" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/45GY1sw2pj0LitunAGcMz6" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/699URHs7HJ704jhjxrwbcR" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3YheoR5ALLDQqICvfuORJr" title="pulse">pulse</a></td>
@@ -352,11 +331,11 @@
 </tr>
 <tr>
   <td>24</td>
-  <td>country dawn</td>
+  <td><a href="https://everynoise.com/engenremap-countrydawn.html" title="country dawn">country dawn</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 9<br>Pop:6<br>Indie:1<br>Americana:1<br>Gospel:1</td>
-  <td>Jo Dee Messina &quot;Heads Carolina, Tails California&quot<br><audio title="Jo Dee Messina &quot;Heads Carolina, Tails California&quot" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/940467459b73c6524c61ade32527ab1a7d0288a2" type="audio/mpeg">
+  <td>Country:9<br>Pop:6<br>Indie:1<br>Americana:1<br>Gospel:1</td>
+  <td>Jo Dee Messina &quot;Heads Carolina, Tails California&quot<br><audio class="playback" src="https://p.scdn.co/mp3-preview/940467459b73c6524c61ade32527ab1a7d0288a2" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/2qk8D3ZyEBXDwR02alzjXq" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5mjpjhGMGtglpT13VwBMXR" title="intro">intro</a></td>
@@ -365,12 +344,10 @@
 </tr>
 <tr>
   <td>25</td>
-  <td>canadian country</td>
+  <td><a href="https://everynoise.com/engenremap-canadiancountry.html" title="canadian country">canadian country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 9<br>Pop:4<br>Folk:2<br>Rock:1<br>Americana:1<br>C.Italy:1<br>Gospel:1</td>
-  <td>Doc Walker &quot;Rocket Girl&quot;<br><audio title="Doc Walker &quot;Rocket Girl&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2f5a72773338caa03932db37f382755db0ae2a2e" type="audio/mpeg">
-</audio></td>
+  <td>Country:9<br>Pop:4<br>Folk:2<br>Rock:1<br>Americana:1<br>C.Italy:1<br>Gospel:1</td>
+  <td>Doc Walker &quot;Rocket Girl&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2f5a72773338caa03932db37f382755db0ae2a2e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/72nKBOJxfLUr3iuUUMn2nV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6wzh4l2LqOBEiDoCwp93XN" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5fV9VZLTH8sFoUsLgrnMSF" title="pulse">pulse</a></td>
@@ -378,12 +355,10 @@
 </tr>
 <tr>
   <td>26</td>
-  <td>classic texas country</td>
+  <td><a href="https://everynoise.com/engenremap-classictexascountry.html" title="classic texas country">classic texas country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 6<br>Pop:5<br>Americana:4<br>Rock:3<br>Folk:2<br>C.Italy:1</td>
-  <td>Cory Morrow &quot;Lonesome&quot;<br><audio title="Cory Morrow &quot;Lonesome&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b75852c4cb27d406c353bfcff0fd5625132fb387" type="audio/mpeg">
-</audio></td>
+  <td>Country:6<br>Pop:5<br>Americana:4<br>Rock:3<br>Folk:2<br>C.Italy:1</td>
+  <td>Cory Morrow &quot;Lonesome&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b75852c4cb27d406c353bfcff0fd5625132fb387" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4HbGCzaH6bTsF1FGAESEzG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3LeGql6AIHVUg1IelwR4qb" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0pmwjl0ijKMz3GMM5xCg2d" title="pulse">pulse</a></td>
@@ -391,12 +366,10 @@
 </tr>
 <tr>
   <td>27</td>
-  <td>country</td>
+  <td><a href="https://everynoise.com/engenremap-country.html" title="country">country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 12<br>Pop:6<br>Rock:2<br>C.India:1<br>Blues.Soul:1</td>
-  <td>John Michael Montgomery &quot;Sold (The Grundy County Auct<br><audio title="John Michael Montgomery &quot;Sold (The Grundy County Auct" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/327c020067dc3208aed124191674a27741179c52" type="audio/mpeg">
-</audio></td>
+  <td>Country:12<br>Pop:6<br>Rock:2<br>C.India:1<br>Blues.Soul:1</td>
+  <td>John Michael Montgomery &quot;Sold (The Grundy County Auct<br><audio class="playback" src="https://p.scdn.co/mp3-preview/327c020067dc3208aed124191674a27741179c52" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4mijVkpSXJziPiOrK7YX4M" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3zrS209mu01Z5RIedtzSZ1" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0HiZhOweCCeCKJBo9eZWog" title="pulse">pulse</a></td>
@@ -404,12 +377,10 @@
 </tr>
 <tr>
   <td>28</td>
-  <td>queer country</td>
+  <td><a href="https://everynoise.com/engenremap-queercountry.html" title="queer country">queer country</a></td>
   <td>Country</td>
-  <td><b>Americana:</b> 6<br>Pop:2<br>Country:2<br>Indie:1<br>C.Mexico.Latino:1<br>C.China:1<br>Folk:1<br>Gospel:1</td>
-  <td>Paisley Fields &quot;Ride Me Cowboy&quot;<br><audio title="Paisley Fields &quot;Ride Me Cowboy&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/24be79cfcba71cdd134c220b40ae4fb9bfb1d5eb" type="audio/mpeg">
-</audio></td>
+  <td>Americana:6<br>Pop:2<br>Country:2<br>Indie:1<br>C.Mexico.Latino:1<br>C.China:1<br>Folk:1<br>Gospel:1</td>
+  <td>Paisley Fields &quot;Ride Me Cowboy&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/24be79cfcba71cdd134c220b40ae4fb9bfb1d5eb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5lAp13nSaA7eHafwqV5ilp" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1zpT4LLOpEEIr16bRKcdwU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7egFXiz7QCP1MaVd5YXYxF" title="pulse">pulse</a></td>
@@ -417,12 +388,10 @@
 </tr>
 <tr>
   <td>29</td>
-  <td>alternative country</td>
+  <td><a href="https://everynoise.com/engenremap-alternativecountry.html" title="alternative country">alternative country</a></td>
   <td>Country</td>
-  <td><b>Americana:</b> 7<br>Country:4<br>Indie:3<br>Rock:3<br>Folk:3<br>Pop:1</td>
-  <td>The Bottle Rockets &quot;Indianapolis&quot;<br><audio title="The Bottle Rockets &quot;Indianapolis&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/262e8c745ee4b8296c04c197e56b43c7c1761847" type="audio/mpeg">
-</audio></td>
+  <td>Americana:7<br>Country:4<br>Indie:3<br>Rock:3<br>Folk:3<br>Pop:1</td>
+  <td>The Bottle Rockets &quot;Indianapolis&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/262e8c745ee4b8296c04c197e56b43c7c1761847" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5BmMjQp8OwPGdg7OOINCHm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0LvOz3i6xGRzBuGKDTIl1L" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6MdqVwbUAMHuAeqX0jz09h" title="pulse">pulse</a></td>
@@ -430,12 +399,10 @@
 </tr>
 <tr>
   <td>30</td>
-  <td>truck-driving country</td>
+  <td><a href="https://everynoise.com/engenremap-truckdrivingcountry.html" title="truck-driving country">truck-driving country</a></td>
   <td>C.Korea<br>Country</td>
-  <td><b>Country:</b> 5<br>Blues.Soul:5<br>Pop:2<br>C.Korea:2<br>C.Mexico.Latino:1<br>Folk:1</td>
-  <td>Dave Dudley &quot;Six Days on the Road&quot;<br><audio title="Dave Dudley &quot;Six Days on the Road&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8a9d5ea2a483015a463eb3ad3a960f28c5afda10" type="audio/mpeg">
-</audio></td>
+  <td>Country:5<br>Blues.Soul:5<br>Pop:2<br>C.Korea:2<br>C.Mexico.Latino:1<br>Folk:1</td>
+  <td>Dave Dudley &quot;Six Days on the Road&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8a9d5ea2a483015a463eb3ad3a960f28c5afda10" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3Vdljk27QABnI9Ca5TefAj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6rDZySrcnQFKujmNLrW2gK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5zL71dPlFxOneDODBdYDMK" title="pulse">pulse</a></td>
@@ -443,12 +410,10 @@
 </tr>
 <tr>
   <td>31</td>
-  <td>countrygaze</td>
+  <td><a href="https://everynoise.com/engenremap-countrygaze.html" title="countrygaze">countrygaze</a></td>
   <td>Country</td>
-  <td><b>Indie:</b> 6<br>Pop:3<br>Americana:2<br>Folk:2<br>Country:2<br>Psy.Rave:1<br>C.China:1<br>Gospel:1</td>
-  <td>Adrianne Lenker &quot;anything&quot;<br><audio title="Adrianne Lenker &quot;anything&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e2d939054c9d00c2d5a63619daa6f787c05cef2a" type="audio/mpeg">
-</audio></td>
+  <td>Indie:6<br>Pop:3<br>Americana:2<br>Folk:2<br>Country:2<br>Psy.Rave:1<br>C.China:1<br>Gospel:1</td>
+  <td>Adrianne Lenker &quot;anything&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e2d939054c9d00c2d5a63619daa6f787c05cef2a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1xXSk37syopROCZAloc1Vc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6CNf7JJZpkG5WaWAjXCBfA" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1AaCbN8yCYooY7XrkuBJ54" title="pulse">pulse</a></td>
@@ -456,12 +421,10 @@
 </tr>
 <tr>
   <td>32</td>
-  <td>country rock</td>
+  <td><a href="https://everynoise.com/engenremap-countryrock.html" title="country rock">country rock</a></td>
   <td>Country<br>Rock</td>
-  <td><b>Rock:</b> 13<br>Country:5<br>Blues.Soul:3<br>Folk:2<br>Psy.Rave:1<br>Pop:1</td>
-  <td>Pure Prairie League &quot;Amie - Remastered January 1992&q<br><audio title="Pure Prairie League &quot;Amie - Remastered January 1992&q" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/13d49e04b9b549cf258c142773f90c2e457dd392" type="audio/mpeg">
-</audio></td>
+  <td>Rock:13<br>Country:5<br>Blues.Soul:3<br>Folk:2<br>Psy.Rave:1<br>Pop:1</td>
+  <td>Pure Prairie League &quot;Amie - Remastered January 1992&q<br><audio class="playback" src="https://p.scdn.co/mp3-preview/13d49e04b9b549cf258c142773f90c2e457dd392" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2yykv7TMUr4jPHPAE8Q3vW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0l6wOI4h8bbJZytOUlghHh" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5PBqBmQKjD4G9rd5i62ETw" title="pulse">pulse</a></td>
@@ -469,12 +432,10 @@
 </tr>
 <tr>
   <td>33</td>
-  <td>czech country</td>
+  <td><a href="https://everynoise.com/engenremap-czechcountry.html" title="czech country">czech country</a></td>
   <td>Country</td>
-  <td><b>Pop:</b> 7<br>Country:5<br>Rock:4<br>Folk:3<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Blues.Soul:1</td>
-  <td>Mirek Hoffmann &quot;V Do Tennessee&quot;<br><audio title="Mirek Hoffmann &quot;V Do Tennessee&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c1d1b7190700f05b4682891572715f2045c8e704" type="audio/mpeg">
-</audio></td>
+  <td>Pop:7<br>Country:5<br>Rock:4<br>Folk:3<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Blues.Soul:1</td>
+  <td>Mirek Hoffmann &quot;V Do Tennessee&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c1d1b7190700f05b4682891572715f2045c8e704" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4aSo2zrj9m9RzjNIwsTJod" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/614i9mmkix7RSFjDMhELZk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/49MQvkxGF1TA3A3cm8ieWk" title="pulse">pulse</a></td>
@@ -482,12 +443,10 @@
 </tr>
 <tr>
   <td>34</td>
-  <td>irish country</td>
-  <td>Country</td>
-  <td><b>Pop:</b> 4<br>Gospel:4<br>Country:3<br>Americana:1<br>C.China:1<br>Folk:1</td>
-  <td>Larry Cunningham &quot;Lovely Leitrim&quot;<br><audio title="Larry Cunningham &quot;Lovely Leitrim&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/14aeaa05b0945e28c00e5f2ab69b7105b12aee82" type="audio/mpeg">
-</audio></td>
+  <td><a href="https://everynoise.com/engenremap-irishcountry.html" title="irish country">irish country</a></td>
+  <td>C.Irish<br>Country</td>
+  <td>Pop:4<br>C.Irish:4<br>Gospel:4<br>Country:3<br>Americana:1<br>C.China:1<br>Folk:1</td>
+  <td>Larry Cunningham &quot;Lovely Leitrim&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/14aeaa05b0945e28c00e5f2ab69b7105b12aee82" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6ZoVYWfvloSUP0sYwAk0Eg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1k4EtRn9I4sOU7TKtL9LpG" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1fNvswqo7PVsrjQfF8qsDz" title="pulse">pulse</a></td>
@@ -495,12 +454,10 @@
 </tr>
 <tr>
   <td>35</td>
-  <td>classic australian country</td>
+  <td><a href="https://everynoise.com/engenremap-classicaustraliancountry.html" title="classic australian country">classic australian country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 7<br>Folk:2<br>C.Korea:1<br>C.India:1<br>Gospel:1<br>Bluegrass:1</td>
-  <td>Reg Lindsay &quot;Armstrong&quot;<br><audio title="Reg Lindsay &quot;Armstrong&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f12109d1c5efce4f9ae213819ce66eccde16d655" type="audio/mpeg">
-</audio></td>
+  <td>Country:7<br>Folk:2<br>C.Korea:1<br>C.India:1<br>Gospel:1<br>Bluegrass:1</td>
+  <td>Reg Lindsay &quot;Armstrong&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f12109d1c5efce4f9ae213819ce66eccde16d655" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3s3zindCeXj6wbEpjlP6xX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4FkivGG254aMtiNMs1XaDL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1HKACRS70TbuGP704h8tXP" title="pulse">pulse</a></td>
@@ -508,12 +465,10 @@
 </tr>
 <tr>
   <td>36</td>
-  <td>outlaw country</td>
+  <td><a href="https://everynoise.com/engenremap-outlawcountry.html" title="outlaw country">outlaw country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 11<br>Rock:2<br>Folk:2<br>Pop:1<br>C.Korea:1<br>Blues.Soul:1</td>
-  <td>Billy Joe Shaver &quot;Live Forever&quot;<br><audio title="Billy Joe Shaver &quot;Live Forever&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/444145a43f331b42343b9c4b4e6d300eb3c178b5" type="audio/mpeg">
-</audio></td>
+  <td>Country:11<br>Rock:2<br>Folk:2<br>Pop:1<br>C.Korea:1<br>Blues.Soul:1</td>
+  <td>Billy Joe Shaver &quot;Live Forever&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/444145a43f331b42343b9c4b4e6d300eb3c178b5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5D1IoXQGtdt84Mx8QvvSSY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/57Jd1qj1J47qNVmNRDURRB" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1Ts8DqTqHvdrENVBB4CBPJ" title="pulse">pulse</a></td>
@@ -521,12 +476,10 @@
 </tr>
 <tr>
   <td>37</td>
-  <td>classic oklahoma country</td>
+  <td><a href="https://everynoise.com/engenremap-classicoklahomacountry.html" title="classic oklahoma country">classic oklahoma country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 6<br>Pop:5<br>C.Mexico.Latino:2<br>C.India:1<br>Folk:1<br>Gospel:1<br>Bluegrass:1<br>Blues.Soul:1</td>
-  <td>Joe Diffie &quot;Pickup Man&quot;<br><audio title="Joe Diffie &quot;Pickup Man&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c532325862e13fc474846a96c49bf39a828aa2c3" type="audio/mpeg">
-</audio></td>
+  <td>Country:6<br>Pop:5<br>C.Mexico.Latino:2<br>C.India:1<br>Folk:1<br>Gospel:1<br>Bluegrass:1<br>Blues.Soul:1</td>
+  <td>Joe Diffie &quot;Pickup Man&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c532325862e13fc474846a96c49bf39a828aa2c3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4swO9BLJdUIGuNJii0IXLI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1KFK7WuJN0md0KXqPcpA6H" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0zRJtKIAOMooFcNnIJH2F1" title="pulse">pulse</a></td>
@@ -534,12 +487,10 @@
 </tr>
 <tr>
   <td>38</td>
-  <td>classic country pop</td>
+  <td><a href="https://everynoise.com/engenremap-classiccountrypop.html" title="classic country pop">classic country pop</a></td>
   <td>Country<br>Pop</td>
-  <td><b>Country:</b> 11<br>Pop:4<br>Rock:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.India:1</td>
-  <td>Donna Fargo &quot;The Happiest Girl In The Whole U.S.A.&qu<br><audio title="Donna Fargo &quot;The Happiest Girl In The Whole U.S.A.&qu" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/918a64c4ba003f7f57a3df6ca37d781dded15b92" type="audio/mpeg">
-</audio></td>
+  <td>Country:11<br>Pop:4<br>Rock:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Irish:1<br>C.India:1</td>
+  <td>Donna Fargo &quot;The Happiest Girl In The Whole U.S.A.&qu<br><audio class="playback" src="https://p.scdn.co/mp3-preview/918a64c4ba003f7f57a3df6ca37d781dded15b92" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6lOCvTH6vW5Jc7oyryNom4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1aSFayTG738J4b0vyX3JwM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/57lPv23eBVEYHhKzzNwoJY" title="pulse">pulse</a></td>
@@ -547,12 +498,10 @@
 </tr>
 <tr>
   <td>39</td>
-  <td>classic nz country</td>
+  <td><a href="https://everynoise.com/engenremap-classicnzcountry.html" title="classic nz country">classic nz country</a></td>
   <td>Country</td>
-  <td><b>Folk:</b> 5<br>Country:4<br>Pop:3<br>Progressive:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.India:1<br>Bluegrass:1</td>
-  <td>Brendan Dugan &quot;Honky Tonk Heroes&quot;<br><audio title="Brendan Dugan &quot;Honky Tonk Heroes&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/59112c62a5e44cd3f494f119ea513196e22354c6" type="audio/mpeg">
-</audio></td>
+  <td>Folk:5<br>Country:4<br>Pop:3<br>C.Irish:2<br>Progressive:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.India:1<br>Bluegrass:1</td>
+  <td>Brendan Dugan &quot;Honky Tonk Heroes&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/59112c62a5e44cd3f494f119ea513196e22354c6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4wQOyJ9wTOnLVQxIGPZReJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6UscKFXWnjWufwZwOFfdaf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2p5gIubCTKoI9CnaZLlDxD" title="pulse">pulse</a></td>
@@ -560,12 +509,10 @@
 </tr>
 <tr>
   <td>40</td>
-  <td>bush ballad</td>
+  <td><a href="https://everynoise.com/engenremap-bushballad.html" title="bush ballad">bush ballad</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 4<br>Folk:3<br>Pop:2<br>C.Mexico.Latino:2<br>Gospel:1</td>
-  <td>John Williamson &quot;True Blue&quot;<br><audio title="John Williamson &quot;True Blue&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/891c064fab1efb9369546620b34805390f101d11" type="audio/mpeg">
-</audio></td>
+  <td>Country:4<br>Folk:3<br>Pop:2<br>C.Mexico.Latino:2<br>C.Irish:1<br>Gospel:1</td>
+  <td>John Williamson &quot;True Blue&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/891c064fab1efb9369546620b34805390f101d11" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5CsdQrrAgQycaViamtpJtb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2xyBipuXbw7Xk3OosEXSCv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0VuPRI9cScuGX5oSSjx1Or" title="pulse">pulse</a></td>
@@ -573,12 +520,10 @@
 </tr>
 <tr>
   <td>41</td>
-  <td>arkansas country</td>
+  <td><a href="https://everynoise.com/engenremap-arkansascountry.html" title="arkansas country">arkansas country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 5<br>Folk:2<br>Blues.Soul:2<br>Pop:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.India:1</td>
-  <td>Jim Ed Brown &quot;Pop a Top&quot;<br><audio title="Jim Ed Brown &quot;Pop a Top&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ac0e9b639f69e209536002431e20a2d3337557d5" type="audio/mpeg">
-</audio></td>
+  <td>Country:5<br>Folk:2<br>Blues.Soul:2<br>Pop:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Irish:1<br>C.India:1</td>
+  <td>Jim Ed Brown &quot;Pop a Top&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ac0e9b639f69e209536002431e20a2d3337557d5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/58UKNHdZKjKa9q3gPPwSsC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5O8fys94o8ebqxQMqcgoRr" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/19kptIl4AIPEIaPlsSj9yu" title="pulse">pulse</a></td>
@@ -586,12 +531,10 @@
 </tr>
 <tr>
   <td>42</td>
-  <td>shanty</td>
+  <td><a href="https://everynoise.com/engenremap-shanty.html" title="shanty">shanty</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 4<br>Pop:3<br>Folk:2<br>Blues.Soul:2<br>C.India:1<br>Gospel:1</td>
-  <td>Sean Dagher &quot;Leave Her Johnny&quot;<br><audio title="Sean Dagher &quot;Leave Her Johnny&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3ac485fa92732adebc463f4077b5604cb87464cf" type="audio/mpeg">
-</audio></td>
+  <td>Country:4<br>Pop:3<br>Folk:2<br>Blues.Soul:2<br>C.Irish:1<br>C.India:1<br>Gospel:1</td>
+  <td>Sean Dagher &quot;Leave Her Johnny&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3ac485fa92732adebc463f4077b5604cb87464cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/65o8CHGJHdl6kvNdF66XjX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6OiOFDjRmsi4LMTIYItGBe" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1XXam4uDhO1eIOjWw2fkaZ" title="pulse">pulse</a></td>
@@ -599,12 +542,10 @@
 </tr>
 <tr>
   <td>43</td>
-  <td>honky tonk</td>
+  <td><a href="https://everynoise.com/engenremap-honkytonk.html" title="honky tonk">honky tonk</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 4<br>Folk:3<br>Pop:2<br>Gospel:1<br>Bluegrass:1</td>
-  <td>Webb Pierce &quot;There Stands the Glass&quot;<br><audio title="Webb Pierce &quot;There Stands the Glass&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/32419e00e458340ebe1de095326b4a3db82c8de3" type="audio/mpeg">
-</audio></td>
+  <td>Country:4<br>Folk:3<br>Pop:2<br>C.Irish:1<br>Gospel:1<br>Bluegrass:1</td>
+  <td>Webb Pierce &quot;There Stands the Glass&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/32419e00e458340ebe1de095326b4a3db82c8de3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4nPH9l8L8OIkYnb0JSGsbW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4V6Hjb03nf5shy4mPWXl1z" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3BhkDtuj7XfM2vvg1pAzrV" title="pulse">pulse</a></td>
@@ -612,12 +553,10 @@
 </tr>
 <tr>
   <td>44</td>
-  <td>ambient country</td>
+  <td><a href="https://everynoise.com/engenremap-ambientcountry.html" title="ambient country">ambient country</a></td>
   <td>Ambient.General<br>Country</td>
-  <td><b>Soundtrack:</b> 8<br>Ambient.General:6<br>C.Italy:2<br>Classical:2<br>Country:2<br>C.France:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Folk:1<br>Experimental:1</td>
-  <td>Golden Brown &quot;Mammoth Star&quot;<br><audio title="Golden Brown &quot;Mammoth Star&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3d9e95b861109a19c3159e0744369b05546e5712" type="audio/mpeg">
-</audio></td>
+  <td>Soundtrack.New.Age:9<br>Ambient.General:6<br>C.Italy:2<br>Classical:2<br>Country:2<br>C.France:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Folk:1<br>Experimental:1</td>
+  <td>Golden Brown &quot;Mammoth Star&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3d9e95b861109a19c3159e0744369b05546e5712" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/208ByvEuq0IyX67lXWdNYQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5rUz9hyXL8cQwgvJMmAu1Q" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/42Arbgmg7nk1cM5SMqQidv" title="pulse">pulse</a></td>
@@ -625,12 +564,10 @@
 </tr>
 <tr>
   <td>45</td>
-  <td>cowboy western</td>
+  <td><a href="https://everynoise.com/engenremap-cowboywestern.html" title="cowboy western">cowboy western</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 4<br>Folk:3<br>Pop:2<br>C.Mexico.Latino:1<br>Gospel:1<br>Blues.Soul:1</td>
-  <td>Tex Ritter &quot;Rye Whiskey&quot;<br><audio title="Tex Ritter &quot;Rye Whiskey&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d6049c0a06d4853a6c7c863c0a10d5d7c1ce8598" type="audio/mpeg">
-</audio></td>
+  <td>Country:4<br>Folk:3<br>Pop:2<br>C.Irish:2<br>C.Mexico.Latino:1<br>Gospel:1<br>Blues.Soul:1</td>
+  <td>Tex Ritter &quot;Rye Whiskey&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d6049c0a06d4853a6c7c863c0a10d5d7c1ce8598" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7DbE34FMEbrWv8GhU9NeH0" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1H1zks2bayeB1ATCXjNPH0" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6pFRAApSfXmFbS8Nv9MevU" title="pulse">pulse</a></td>
@@ -638,12 +575,10 @@
 </tr>
 <tr>
   <td>46</td>
-  <td>western swing</td>
+  <td><a href="https://everynoise.com/engenremap-westernswing.html" title="western swing">western swing</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 6<br>Pop:2<br>C.Italy:1<br>C.Mexico.Latino:1<br>Folk:1<br>Gospel:1<br>Bluegrass:1</td>
-  <td>Bob Wills &amp; His Texas Playboys &quot;Bubbles In My Bee<br><audio title="Bob Wills &amp; His Texas Playboys &quot;Bubbles In My Bee" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a0122b69f9302121300460ee814cbc6d04878981" type="audio/mpeg">
-</audio></td>
+  <td>Country:6<br>Pop:2<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Irish:1<br>Folk:1<br>Gospel:1<br>Bluegrass:1</td>
+  <td>Bob Wills &amp; His Texas Playboys &quot;Bubbles In My Bee<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a0122b69f9302121300460ee814cbc6d04878981" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4C4MIUXQzBPxXL4pb4iXb4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2p3nz6876zLy6sodRBtNop" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1iUvNRJGcw36AHckAxiRwq" title="pulse">pulse</a></td>
@@ -651,12 +586,10 @@
 </tr>
 <tr>
   <td>47</td>
-  <td>country gospel</td>
+  <td><a href="https://everynoise.com/engenremap-countrygospel.html" title="country gospel">country gospel</a></td>
   <td>Country<br>Gospel</td>
-  <td><b>Gospel:</b> 5<br>Folk:4<br>Country:3<br>Pop:2<br>C.Mexico.Latino:2<br>Bluegrass:1</td>
-  <td>The Carter Family &quot;Will the Circle Be Unbroken&quot;<br><audio title="The Carter Family &quot;Will the Circle Be Unbroken&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2de2e4f31487ded6459da89d8e816f98b62007c3" type="audio/mpeg">
-</audio></td>
+  <td>Gospel:5<br>Folk:4<br>Country:3<br>Pop:2<br>C.Mexico.Latino:2<br>C.Irish:1<br>Bluegrass:1</td>
+  <td>The Carter Family &quot;Will the Circle Be Unbroken&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2de2e4f31487ded6459da89d8e816f98b62007c3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7DZDNqoxWp3uIgwTMHdBN6" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZYm4Ksw5DxzNoIOpm7GNZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3lxGkfT3pTVu8I2eiBoR2C" title="pulse">pulse</a></td>
@@ -664,12 +597,10 @@
 </tr>
 <tr>
   <td>48</td>
-  <td>country boogie</td>
+  <td><a href="https://everynoise.com/engenremap-countryboogie.html" title="country boogie">country boogie</a></td>
   <td>Country</td>
-  <td><b>Blues.Soul:</b> 7<br>Country:3<br>Folk:2<br>C.Italy:1<br>C.Mexico.Latino:1<br>Bluegrass:1</td>
-  <td>The Delmore Brothers &quot;Blues Stay Away from Me&quot;<br><audio title="The Delmore Brothers &quot;Blues Stay Away from Me&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3261a2e553ea4eae2e126b4fa2a905482deeef13" type="audio/mpeg">
-</audio></td>
+  <td>Blues.Soul:7<br>Country:3<br>Folk:2<br>C.Italy:1<br>C.Mexico.Latino:1<br>Bluegrass:1</td>
+  <td>The Delmore Brothers &quot;Blues Stay Away from Me&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3261a2e553ea4eae2e126b4fa2a905482deeef13" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5au2CYTVy8KmBilpD2ofYl" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2uyHvd6G6o7BIvMinvt7fD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5qfw0aipQsfzyvBI4wHq7U" title="pulse">pulse</a></td>
@@ -677,12 +608,10 @@
 </tr>
 <tr>
   <td>49</td>
-  <td>traditional country</td>
+  <td><a href="https://everynoise.com/engenremap-traditionalcountry.html" title="traditional country">traditional country</a></td>
   <td>Country</td>
-  <td><b>Country:</b> 5<br>Folk:4<br>Pop:2<br>Gospel:2<br>C.Mexico.Latino:1<br>Bluegrass:1</td>
-  <td>Roy Acuff &quot;Wabash Cannonball&quot;<br><audio title="Roy Acuff &quot;Wabash Cannonball&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e65d9d027f74707829b248443bc657a716b232ef" type="audio/mpeg">
-</audio></td>
+  <td>Country:5<br>Folk:4<br>Pop:2<br>Gospel:2<br>C.Mexico.Latino:1<br>C.Irish:1<br>Bluegrass:1</td>
+  <td>Roy Acuff &quot;Wabash Cannonball&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e65d9d027f74707829b248443bc657a716b232ef" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7yV5vLKdCyBDi4MW0It39c" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ccRALGxmA8HOqxeNRxrxS" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0IzfQ5yXrWgSVqMlPpUs4w" title="pulse">pulse</a></td>
@@ -690,12 +619,10 @@
 </tr>
 <tr>
   <td>50</td>
-  <td>country blues</td>
+  <td><a href="https://everynoise.com/engenremap-countryblues.html" title="country blues">country blues</a></td>
   <td>Blues.Soul<br>Country</td>
-  <td><b>Blues.Soul:</b> 14<br>Folk:4<br>Country:2<br>House:1<br>Gospel:1<br>Instrumental:1</td>
-  <td>Mance Lipscomb &quot;Sugar Babe&quot;<br><audio title="Mance Lipscomb &quot;Sugar Babe&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/515b6e0a268fa4ee926cfaae1190f4a80e6a1910" type="audio/mpeg">
-</audio></td>
+  <td>Blues.Soul:14<br>Folk:4<br>Country:2<br>House:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>Mance Lipscomb &quot;Sugar Babe&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/515b6e0a268fa4ee926cfaae1190f4a80e6a1910" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5LpV4RS7WgWaDyKxu0W60r" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1pCZk4vLtENvQ3z9d8Ss94" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0EOZtLMmtfRkbPc5YXZu7T" title="pulse">pulse</a></td>
@@ -703,12 +630,10 @@
 </tr>
 <tr>
   <td>51</td>
-  <td>vintage country folk</td>
+  <td><a href="https://everynoise.com/engenremap-vintagecountryfolk.html" title="vintage country folk">vintage country folk</a></td>
   <td>Country<br>Folk</td>
-  <td><b>Folk:</b> 8<br>Blues.Soul:5<br>Country:3<br>House:1<br>Dance:1<br>Gospel:1<br>Instrumental:1</td>
-  <td>Prince Albert Hunt\'s Texas Ramblers &quot;Wake Up Jacob - <br><audio title="Prince Albert Hunt\'s Texas Ramblers &quot;Wake Up Jacob - " controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/93866f05a97b173b71e738ca0243b521b8ed372f" type="audio/mpeg">
-</audio></td>
+  <td>Folk:8<br>Blues.Soul:5<br>Country:3<br>House:1<br>Dance:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>Prince Albert Hunt\'s Texas Ramblers &quot;Wake Up Jacob - <br><audio class="playback" src="https://p.scdn.co/mp3-preview/93866f05a97b173b71e738ca0243b521b8ed372f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/34X13zwfKF95I5PKO6GEKk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3hyJTRuhFmHzVcjU4GJU3N" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5VpNHGxzXfFLB0CVnFnFcK" title="pulse">pulse</a></td>

@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Viral: (24 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>fvnky rimex</td>
+  <td><a href="https://everynoise.com/engenremap-fvnkyrimex.html" title="fvnky rimex">fvnky rimex</a></td>
   <td>Viral</td>
-  <td><b>Viral:</b> 1<br>Disco:1</td>
-  <td>IVANSYAH &quot;DJ GASOLINA PANTEK&quot;<br><audio title="IVANSYAH &quot;DJ GASOLINA PANTEK&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3b3cabc58340e0cce089eb32b799e67025f4ae95" type="audio/mpeg">
-</audio></td>
+  <td>Viral:1<br>Disco:1</td>
+  <td>IVANSYAH &quot;DJ GASOLINA PANTEK&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3b3cabc58340e0cce089eb32b799e67025f4ae95" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0Re6qLjokHfCHLgTmL9DeF" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5aDaPId7sMkxwmmge6I61w" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4m7SK1pXKOYwb0Dc7Mk3r6" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>indonesian viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-indonesianviralpop.html" title="indonesian viral pop">indonesian viral pop</a></td>
   <td>Viral</td>
-  <td><b>Viral:</b> 2<br>House:1<br>Breaks:1<br>Funk:1<br>Blues.Soul:1</td>
-  <td>DJ Haning &quot;Pikir Keri X Kroncong Protol&quot;<br><audio title="DJ Haning &quot;Pikir Keri X Kroncong Protol&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0b5d97f8f496230e3f9885c5c0b95ee2426b51e1" type="audio/mpeg">
-</audio></td>
+  <td>Viral:2<br>House:1<br>Breaks:1<br>Funk:1<br>Blues.Soul:1</td>
+  <td>DJ Haning &quot;Pikir Keri X Kroncong Protol&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0b5d97f8f496230e3f9885c5c0b95ee2426b51e1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6oDViKcW0pnol9cJVJ4aiy" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Xl7yPC2zldarmvzmOIEDR" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1i2eUjIqPSAuVYpWK4Rh5R" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>russian viral rap</td>
+  <td><a href="https://everynoise.com/engenremap-russianviralrap.html" title="russian viral rap">russian viral rap</a></td>
   <td>Rap<br>Viral</td>
-  <td><b>Hip hop:</b> 7<br>Viral:4<br>Rap:4<br>C.Mexico.Latino:2<br>Reggae:2<br>Trap:1<br>Children:1<br>C.Japan:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/da57b4a505d38f5559fc4b674cc071b8bd278126" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:7<br>Viral:4<br>Rap:4<br>C.Mexico.Latino:2<br>Reggae:2<br>Trap:1<br>Children:1<br>C.Japan:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/da57b4a505d38f5559fc4b674cc071b8bd278126" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3VKeOhZ2pYJnpJGokFZLJQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1FxbioiFJNK3glpHAO2bUL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0o0mIlm59AKNGztYwRcLxl" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>latin viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-latinviralpop.html" title="latin viral pop">latin viral pop</a></td>
   <td>C.Mexico.Latino<br>Viral</td>
-  <td><b>Pop:</b> 11<br>C.Mexico.Latino:5<br>Viral:3<br>Dance:3<br>Reggae:3<br>Rap:1<br>C.Japan:1</td>
-  <td>Javier Ramirez &quot;Me Atrap&quot;<br><audio title="Javier Ramirez &quot;Me Atrap&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c6b2cae3c5701c5403e3fa0cb752b8ae24c6d0d6" type="audio/mpeg">
-</audio></td>
+  <td>Pop:11<br>C.Mexico.Latino:5<br>Viral:3<br>Dance:3<br>Reggae:3<br>Rap:1<br>C.Japan:1</td>
+  <td>Javier Ramirez &quot;Me Atrap&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c6b2cae3c5701c5403e3fa0cb752b8ae24c6d0d6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6yZCXdIyG6jxAnWnm2wXKp" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0fdfAveOUm2FVvyyFlx44k" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0GE5qaOITedlcOJCb9h98f" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>russian viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-russianviralpop.html" title="russian viral pop">russian viral pop</a></td>
   <td>Viral</td>
-  <td><b>Pop:</b> 6<br>Viral:5<br>Rap:4<br>C.Japan:4<br>Hip hop:3<br>C.China:2<br>Trap:1<br>C.Taiwan:1<br>C.Korea:1<br>Dance:1<br>Hyperpop:1</td>
-  <td>Pokrov &quot; &quot;<br><audio title="Pokrov &quot; &quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ed83942bc123f3b03d84349c38ee5276c37eaa9b" type="audio/mpeg">
-</audio></td>
+  <td>Pop:6<br>Viral:5<br>Rap:4<br>C.Japan:4<br>Hip hop:3<br>C.China:2<br>Trap:1<br>C.Taiwan:1<br>C.Korea:1<br>Dance:1<br>Hyperpop:1</td>
+  <td>Pokrov &quot; &quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ed83942bc123f3b03d84349c38ee5276c37eaa9b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7lyDbz4Yb4gFJUwx8ktTMS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1SoBrAsfmg6iIXHlnjmHXT" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2NJMs55jPeymBwwS1AJtbO" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>polish viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-polishviralpop.html" title="polish viral pop">polish viral pop</a></td>
   <td>Viral</td>
-  <td><b>Hip hop:</b> 8<br>Viral:5<br>Rap:3<br>Pop:1<br>Trap:1<br>Children:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1</td>
-  <td>Przemek.pro &quot;Akropol&quot;<br><audio title="Przemek.pro &quot;Akropol&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8453e6fb490182f2b7eeee7dd32964a8f25a31f4" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:8<br>Viral:5<br>Rap:3<br>Pop:1<br>Trap:1<br>Children:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1</td>
+  <td>Przemek.pro &quot;Akropol&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8453e6fb490182f2b7eeee7dd32964a8f25a31f4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5b0iTcDchorEjIxvQHZqvY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4XW2e8ELq99DpE0uldWhTK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZQVjQRRcelipycqy4BL3G" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>japanese viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-japaneseviralpop.html" title="japanese viral pop">japanese viral pop</a></td>
   <td>C.Japan<br>Viral</td>
-  <td><b>Pop:</b> 11<br>C.Japan:4<br>Synth.Electronic:2<br>Viral:2<br>Punk:1<br>C.Korea:1<br>Dance:1<br>Gospel:1<br>Party.Festival:1<br>Instrumental:1<br>Blues.Soul:1<br>Reggae:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c30e77da37d1805fd3cfcc582a203e20a00fe23a" type="audio/mpeg">
-</audio></td>
+  <td>Pop:11<br>C.Japan:4<br>Synth.Electronic:2<br>Viral:2<br>Punk:1<br>C.Korea:1<br>Dance:1<br>Gospel:1<br>Party.Festival:1<br>Instrumental:1<br>Blues.Soul:1<br>Reggae:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/c30e77da37d1805fd3cfcc582a203e20a00fe23a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0pXSOiNK2pCoGc7X0SZ24b" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4biBbmaRxzahphiJBRSW1N" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/67ZQZnKGMXcmz14oGsWmAZ" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>viral rap</td>
+  <td><a href="https://everynoise.com/engenremap-viralrap.html" title="viral rap">viral rap</a></td>
   <td>Rap<br>Viral</td>
-  <td><b>Trap:</b> 6<br>Hip hop:6<br>Rap:5<br>Viral:3<br>C.India:1</td>
-  <td>WhoHeem &quot;Lets Link&quot;<br><audio title="WhoHeem &quot;Lets Link&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/167a9c2d285ad63b871dbe951ed4b17384d8f2b0" type="audio/mpeg">
-</audio></td>
+  <td>Trap:6<br>Hip hop:6<br>Rap:5<br>Viral:3<br>C.India:1</td>
+  <td>WhoHeem &quot;Lets Link&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/167a9c2d285ad63b871dbe951ed4b17384d8f2b0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0JlicqX0XpVPjBfyriYDPP" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3LMetE63cbGwm0DNIeC2Ei" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3MWcGkY2RcX4vpXq0MnIsr" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>viral trap</td>
+  <td><a href="https://everynoise.com/engenremap-viraltrap.html" title="viral trap">viral trap</a></td>
   <td>Trap<br>Viral</td>
-  <td><b>Hip hop:</b> 8<br>Trap:6<br>Rap:3<br>Viral:2<br>C.Germany:1<br>C.India:1</td>
-  <td>Desiigner &quot;Tiimmy Turner&quot;<br><audio title="Desiigner &quot;Tiimmy Turner&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/923fd59aab5bfab7a3cf90e32fdb76d140ce309e" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:8<br>Trap:6<br>Rap:3<br>Viral:2<br>C.Germany:1<br>C.India:1</td>
+  <td>Desiigner &quot;Tiimmy Turner&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/923fd59aab5bfab7a3cf90e32fdb76d140ce309e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2A6Y6Pd9IBETbI1Rx0dw3h" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3aPoL0LWI1Rcns6moBJxkH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0DTw2sxrv3i8pO5zVBJT1l" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>czsk viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-czskviralpop.html" title="czsk viral pop">czsk viral pop</a></td>
   <td>Viral</td>
-  <td><b>Hip hop:</b> 11<br>Viral:3<br>Trap:3<br>Rap:3<br>C.Japan:3<br>C.Taiwan:1<br>C.China:1</td>
-  <td>TVTwixx &quot;Louis Vuitton&quot;<br><audio title="TVTwixx &quot;Louis Vuitton&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/dc4d079ecf851d6861397a65a958e0aa206602e6" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:11<br>Viral:3<br>Trap:3<br>Rap:3<br>C.Japan:3<br>C.Taiwan:1<br>C.China:1</td>
+  <td>TVTwixx &quot;Louis Vuitton&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/dc4d079ecf851d6861397a65a958e0aa206602e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1QSrkrMmfEX0V2bYLYSE4h" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7AFPgYI5lK1PZgzvw0ZB6U" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1mb4QCf2ZzOcFWlgbEKMVq" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>polish viral rap</td>
+  <td><a href="https://everynoise.com/engenremap-polishviralrap.html" title="polish viral rap">polish viral rap</a></td>
   <td>Rap<br>Viral</td>
-  <td><b>Rap:</b> 11<br>Hip hop:6<br>Trap:4<br>Viral:3<br>C.Mexico.Latino:3<br>C.Korea:1<br>C.India:1</td>
-  <td>Cezary Nykiel &quot;Jeste Ty&quot;<br><audio title="Cezary Nykiel &quot;Jeste Ty&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/607036c65fcda0551a46f003e19cb337493ecb48" type="audio/mpeg">
-</audio></td>
+  <td>Rap:11<br>Hip hop:6<br>Trap:4<br>Viral:3<br>C.Mexico.Latino:3<br>C.Korea:1<br>C.India:1</td>
+  <td>Cezary Nykiel &quot;Jeste Ty&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/607036c65fcda0551a46f003e19cb337493ecb48" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1pk59BcOiRwpMVttf3NVLK" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/23Zh9uSvn3tYaufHyzwgdd" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0s5XhV836wMAkEIeIUbSsc" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>antiviral pop</td>
+  <td><a href="https://everynoise.com/engenremap-antiviralpop.html" title="antiviral pop">antiviral pop</a></td>
   <td>Viral</td>
-  <td><b>Indie:</b> 6<br>Pop:6<br>Viral:2<br>C.Mexico.Latino:2<br>C.Germany:1</td>
-  <td>Brad Knauber &quot;Don\'t Mine At Night - Minecraft Parody&<br><audio title="Brad Knauber &quot;Don\'t Mine At Night - Minecraft Parody&" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3178c29241ec4f6ec3fc56198bf353323a47f7c5" type="audio/mpeg">
-</audio></td>
+  <td>Indie:6<br>Pop:6<br>Viral:2<br>C.Mexico.Latino:2<br>C.Germany:1</td>
+  <td>Brad Knauber &quot;Don\'t Mine At Night - Minecraft Parody&<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3178c29241ec4f6ec3fc56198bf353323a47f7c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6vGBafdEMRFhPiatbPLfjw" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7BFrIw13V7j0FbDWY6Ywfi" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6CBDb51SR3OzX3Ed4dkS6V" title="pulse">pulse</a></td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>chinese viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-chineseviralpop.html" title="chinese viral pop">chinese viral pop</a></td>
   <td>C.China<br>Viral</td>
-  <td><b>Pop:</b> 7<br>Indie:5<br>C.China:4<br>Blues.Soul:3<br>Viral:2<br>Rap:2<br>Synth.Electronic:1<br>Emo:1<br>C.France:1<br>C.Korea:1<br>C.India:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4c334ce12153b5f612db305cab13f0b87984e1e6" type="audio/mpeg">
-</audio></td>
+  <td>Pop:7<br>Indie:5<br>C.China:4<br>Blues.Soul:3<br>Viral:2<br>Rap:2<br>Synth.Electronic:1<br>Emo:1<br>C.France:1<br>C.Korea:1<br>C.India:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/4c334ce12153b5f612db305cab13f0b87984e1e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/04mJ4eJ9jtVx0Ucuyuk1Tx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5CPgTMHG8ygydyRcfArelC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0qAolkAOPmiUTuNSCSWu09" title="pulse">pulse</a></td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>funk viral</td>
+  <td><a href="https://everynoise.com/engenremap-funkviral.html" title="funk viral">funk viral</a></td>
   <td>Funk<br>Viral</td>
-  <td><b>Funk:</b> 15<br>Viral:2<br>Rap:1</td>
-  <td>Mc Frog &quot;N Quer Chifre&quot;<br><audio title="Mc Frog &quot;N Quer Chifre&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2cbfd8883482b320c2355c699d67169560554ed5" type="audio/mpeg">
-</audio></td>
+  <td>Funk:15<br>Viral:2<br>Rap:1</td>
+  <td>Mc Frog &quot;N Quer Chifre&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2cbfd8883482b320c2355c699d67169560554ed5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6lulrwh852gB3WirPe1e4p" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Fux4YgkaStXy4KlWbXMCV" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0rY3rZXngBi43NZyhghgh3" title="pulse">pulse</a></td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>ukrainian viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-ukrainianviralpop.html" title="ukrainian viral pop">ukrainian viral pop</a></td>
   <td>Viral</td>
-  <td><b>Rap:</b> 8<br>Hip hop:4<br>Pop:3<br>Trap:3<br>Viral:2<br>Emo:1<br>Gaming:1<br>C.Germany:1<br>C.India:1<br>Blues.Soul:1</td>
-  <td>Tery &quot;  &quot;<br><audio title="Tery &quot;  &quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f51b2cc8b7b4bf8453014e288da75e8cb12fd296" type="audio/mpeg">
-</audio></td>
+  <td>Rap:8<br>Hip hop:4<br>Pop:3<br>Trap:3<br>Viral:2<br>Emo:1<br>Gaming:1<br>C.Germany:1<br>C.Irish:1<br>C.India:1<br>Blues.Soul:1</td>
+  <td>Tery &quot;  &quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f51b2cc8b7b4bf8453014e288da75e8cb12fd296" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5mfYEZ678jSqX3VkLfO0rE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0EJhrhP8BdTt5Z7TXtj9lz" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2I5rFtr9tW19N9mDbbRKAp" title="pulse">pulse</a></td>
@@ -248,12 +241,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>thai viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-thaiviralpop.html" title="thai viral pop">thai viral pop</a></td>
   <td>Viral</td>
-  <td><b>Rap:</b> 7<br>Pop:4<br>Viral:3<br>Blues.Soul:3<br>Indie:2<br>C.India:2<br>Trap:1<br>C.China:1<br>Hip hop:1</td>
-  <td>PHAMEK<br><audio title="PHAMEK" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e9793d629f1263cf04327de8675e12c95ee301a2" type="audio/mpeg">
-</audio></td>
+  <td>Rap:7<br>Pop:4<br>Viral:3<br>Blues.Soul:3<br>Indie:2<br>C.India:2<br>Trap:1<br>C.China:1<br>Hip hop:1</td>
+  <td>PHAMEK<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e9793d629f1263cf04327de8675e12c95ee301a2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/11tHE4G3GBYPIxPw3RNetv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6x3VSuQeSkKNVPOq7Dk5Cs" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7pXvEVpdoqAjeXBtvWNOai" title="pulse">pulse</a></td>
@@ -261,12 +252,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>german viral rap</td>
+  <td><a href="https://everynoise.com/engenremap-germanviralrap.html" title="german viral rap">german viral rap</a></td>
   <td>C.Germany<br>Rap<br>Viral</td>
-  <td><b>Rap:</b> 8<br>Hip hop:6<br>Viral:2<br>C.Germany:2<br>C.India:2<br>Trap:1<br>Chill:1<br>Gospel:1</td>
-  <td>Standart Skill &quot;Skybase&quot;<br><audio title="Standart Skill &quot;Skybase&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/1c67a2cf6226adee394b9a892ab53e1eca84dbdd" type="audio/mpeg">
-</audio></td>
+  <td>Rap:8<br>Hip hop:6<br>Viral:2<br>C.Germany:2<br>C.India:2<br>Trap:1<br>Chill:1<br>Gospel:1</td>
+  <td>Standart Skill &quot;Skybase&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/1c67a2cf6226adee394b9a892ab53e1eca84dbdd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7GdLrGCiNoYrQ2f8onhkkG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0G1bJLT0yU6tm60ssqaGpm" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6CbhHMbD9m7j87sQ6wApu7" title="pulse">pulse</a></td>
@@ -274,12 +263,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>chanson virale</td>
+  <td><a href="https://everynoise.com/engenremap-chansonvirale.html" title="chanson virale">chanson virale</a></td>
   <td>Viral</td>
-  <td><b>Hip hop:</b> 9<br>Pop:3<br>Viral:2<br>Rap:2<br>C.Mexico.Latino:2<br>Psy.Rave:1<br>Chill:1<br>C.Japan:1<br>C.China:1</td>
-  <td>Norman &quot;Luigi clash Mario&quot;<br><audio title="Norman &quot;Luigi clash Mario&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ddf9494d4ba1e057c92352acc5fea254a484614e" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:9<br>Pop:3<br>Viral:2<br>Rap:2<br>C.Mexico.Latino:2<br>Psy.Rave:1<br>Chill:1<br>C.Japan:1<br>C.China:1</td>
+  <td>Norman &quot;Luigi clash Mario&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ddf9494d4ba1e057c92352acc5fea254a484614e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6Ic0Ef0ztGNGTirOaWNCUB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1jzqCTKxUnj8CCTuY8h2oC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6o3pc1gVAOi3xMMobxYjTl" title="pulse">pulse</a></td>
@@ -287,12 +274,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>pop virale italiano</td>
+  <td><a href="https://everynoise.com/engenremap-popviraleitaliano.html" title="pop virale italiano">pop virale italiano</a></td>
   <td>C.Italy<br>Viral</td>
-  <td><b>Rap:</b> 7<br>Pop:5<br>C.Italy:5<br>Blues.Soul:5<br>Viral:2<br>Hip hop:2<br>Emo:1<br>C.Korea:1<br>Gospel:1<br>Reggae:1</td>
-  <td>Aiden &quot;Vorrei Amarti&quot;<br><audio title="Aiden &quot;Vorrei Amarti&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/880ae3470cb25987f0371ba944157af40c95fb50" type="audio/mpeg">
-</audio></td>
+  <td>Rap:7<br>Pop:5<br>C.Italy:5<br>Blues.Soul:5<br>Viral:2<br>Hip hop:2<br>Emo:1<br>C.Korea:1<br>C.Portugal:1<br>Gospel:1<br>Reggae:1</td>
+  <td>Aiden &quot;Vorrei Amarti&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/880ae3470cb25987f0371ba944157af40c95fb50" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5GHeUAdOq5tTdtDQm3kagL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4FykF9o84Y9E5BgTojLvPh" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4uVAvP5Ke98WoozEFf8fMm" title="pulse">pulse</a></td>
@@ -300,12 +285,10 @@
 </tr>
 <tr>
   <td>20</td>
-  <td>viral pop brasileiro</td>
+  <td><a href="https://everynoise.com/engenremap-viralpopbrasileiro.html" title="viral pop brasileiro">viral pop brasileiro</a></td>
   <td>Viral</td>
-  <td><b>Trap:</b> 4<br>Rap:4<br>Hip hop:4<br>Viral:2<br>Psy.Rave:1<br>Pop:1<br>C.En.Espanol:1<br>C.Mexico.Latino:1<br>Blues.Soul:1</td>
-  <td>Bibi Tatto &quot;V Op&quot;<br><audio title="Bibi Tatto &quot;V Op&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2980e8d01714633cfe74f53937bd1ffd994597a9" type="audio/mpeg">
-</audio></td>
+  <td>Trap:4<br>Rap:4<br>Hip hop:4<br>Viral:2<br>Psy.Rave:1<br>Pop:1<br>C.En.Espanol:1<br>C.Mexico.Latino:1<br>Blues.Soul:1</td>
+  <td>Bibi Tatto &quot;V Op&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2980e8d01714633cfe74f53937bd1ffd994597a9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1FQ0OCZYijohM9rb04pv4e" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4zhzLQlyRMWVQU8nue1vUx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/14BmSWTkSh9JuYunMvDaUX" title="pulse">pulse</a></td>
@@ -313,12 +296,10 @@
 </tr>
 <tr>
   <td>21</td>
-  <td>viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-viralpop.html" title="viral pop">viral pop</a></td>
   <td>Viral</td>
-  <td><b>Pop:</b> 9<br>Indie:2<br>Viral:2<br>C.Mexico.Latino:2<br>Blues.Soul:2<br>C.Korea:1<br>C.China:1</td>
-  <td>Sam Tsui &quot;Easy On Me - Piano Acoustic&quot;<br><audio title="Sam Tsui &quot;Easy On Me - Piano Acoustic&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/514581d4aa2483fc1ad89a46417418893aa387f1" type="audio/mpeg">
-</audio></td>
+  <td>Pop:9<br>Indie:2<br>Viral:2<br>C.Mexico.Latino:2<br>Blues.Soul:2<br>C.Korea:1<br>C.China:1</td>
+  <td>Sam Tsui &quot;Easy On Me - Piano Acoustic&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/514581d4aa2483fc1ad89a46417418893aa387f1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0tAsyMQoefUL8DWNn6xkAk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4jj2Vjb6m1OEx4nEJwE6Up" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1zWBEMChyJgbH02lsiW4aw" title="pulse">pulse</a></td>
@@ -326,12 +307,10 @@
 </tr>
 <tr>
   <td>22</td>
-  <td>latin viral rap</td>
+  <td><a href="https://everynoise.com/engenremap-latinviralrap.html" title="latin viral rap">latin viral rap</a></td>
   <td>C.Mexico.Latino<br>Rap<br>Viral</td>
-  <td><b>Hip hop:</b> 10<br>Rap:7<br>Pop:3<br>Viral:2<br>C.Mexico.Latino:2<br>Reggae:2<br>C.France:1<br>C.Spain:1<br>C.Korea:1<br>C.Japan:1<br>C.India:1</td>
-  <td>Jay-F &quot;Alto Voltaje&quot;<br><audio title="Jay-F &quot;Alto Voltaje&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/219e1a7bec457132388e465a9455c85a09a36185" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:10<br>Rap:7<br>Pop:3<br>Viral:2<br>C.Mexico.Latino:2<br>Reggae:2<br>C.France:1<br>C.Spain:1<br>C.Korea:1<br>C.Japan:1<br>C.India:1</td>
+  <td>Jay-F &quot;Alto Voltaje&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/219e1a7bec457132388e465a9455c85a09a36185" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0eoW0DceOCQoyWLMqBO496" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0fP0Y3vVKJibnXT9cVLMm2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0pRtPnJaUS6cReBCd0rfUU" title="pulse">pulse</a></td>
@@ -339,12 +318,10 @@
 </tr>
 <tr>
   <td>23</td>
-  <td>vaikiskos dainos</td>
+  <td><a href="https://everynoise.com/engenremap-vaikiskosdainos.html" title="vaikiskos dainos">vaikiskos dainos</a></td>
   <td>Viral</td>
-  <td><b>Viral:</b> 2<br>Children:2<br>C.Korea:1<br>Hip hop:1</td>
-  <td>Dain Dar &quot;Jei Patinka  Dainel Daryk Taip&quot;<br><audio title="Dain Dar &quot;Jei Patinka  Dainel Daryk Taip&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8a6235704893a7b2ecdb776681a691dba9d933db" type="audio/mpeg">
-</audio></td>
+  <td>Viral:2<br>Children:2<br>C.Korea:1<br>Hip hop:1</td>
+  <td>Dain Dar &quot;Jei Patinka  Dainel Daryk Taip&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8a6235704893a7b2ecdb776681a691dba9d933db" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5Wa6334bix3KvCzwThgNYR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2WVhRwYBrdV4ac8TlRDBdl" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0bGqcdiZXlNDvxsGTh7byv" title="pulse">pulse</a></td>
@@ -352,12 +329,10 @@
 </tr>
 <tr>
   <td>24</td>
-  <td>viral afropop</td>
+  <td><a href="https://everynoise.com/engenremap-viralafropop.html" title="viral afropop">viral afropop</a></td>
   <td>Viral</td>
-  <td><b>Pop:</b> 6<br>Rap:4<br>Viral:2<br>C.Mexico.Latino:2<br>Indie:1<br>Rock:1<br>Blues.Soul:1<br>Hip hop:1</td>
-  <td>Hyce &quot;Vanilla (Sped Up)&quot;<br><audio title="Hyce &quot;Vanilla (Sped Up)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/66da928c14fc9da8e9512e050638d05c39a9fd73" type="audio/mpeg">
-</audio></td>
+  <td>Pop:6<br>Rap:4<br>Viral:2<br>C.Mexico.Latino:2<br>Indie:1<br>Rock:1<br>Blues.Soul:1<br>Hip hop:1</td>
+  <td>Hyce &quot;Vanilla (Sped Up)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/66da928c14fc9da8e9512e050638d05c39a9fd73" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6v6bVui4eQG1Av5Ri5f6w5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6luJoHdAoGGb9XuTQdZ83x" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5MoVY1LwUkT688ckGf0J6x" title="pulse">pulse</a></td>

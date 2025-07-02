@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Party.Festival: (5 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>1</td>
-  <td>partyschlager</td>
+  <td><a href="https://everynoise.com/engenremap-partyschlager.html" title="partyschlager">partyschlager</a></td>
   <td>Party.Festival</td>
-  <td><b>Party.Festival:</b> 3<br>Disco:2</td>
-  <td>Sabbotage &quot;Wir versaufen unser Geld&quot;<br><audio title="Sabbotage &quot;Wir versaufen unser Geld&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7d5c11f7517afbc04fa7b8b14afc4dba1bfdfe1d" type="audio/mpeg">
-</audio></td>
+  <td>Party.Festival:3<br>Disco:2</td>
+  <td>Sabbotage &quot;Wir versaufen unser Geld&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7d5c11f7517afbc04fa7b8b14afc4dba1bfdfe1d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4kO0iMQHG8HwbmkgBKIlOY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0CZmd4CMrWdvdvVPSIuZu8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1Gh89udQgTPu09twE2JrZ8" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>2</td>
-  <td>kids dance party</td>
+  <td><a href="https://everynoise.com/engenremap-kidsdanceparty.html" title="kids dance party">kids dance party</a></td>
   <td>Children<br>Dance<br>Party.Festival</td>
-  <td><b>Children:</b> 2<br>Dance:2<br>Party.Festival:2</td>
-  <td>Electric Slide Music Makers &quot;The Hampster Dance Song&<br><audio title="Electric Slide Music Makers &quot;The Hampster Dance Song&" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/914429a63008898e4e36da44a682f4ec2d20dccf" type="audio/mpeg">
-</audio></td>
+  <td>Children:2<br>Dance:2<br>Party.Festival:2</td>
+  <td>Electric Slide Music Makers &quot;The Hampster Dance Song&<br><audio class="playback" src="https://p.scdn.co/mp3-preview/914429a63008898e4e36da44a682f4ec2d20dccf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5YR7tBihIt7vVZPrSGmQYt" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1VySvFm3Zecxz6KNvPvnmP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0pa7UXIOGGsDa4lV9G6fun" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>3</td>
-  <td>junior songfestival</td>
+  <td><a href="https://everynoise.com/engenremap-juniorsongfestival.html" title="junior songfestival">junior songfestival</a></td>
   <td>Party.Festival</td>
-  <td><b>Pop:</b> 5<br>House:3<br>Synth.Electronic:3<br>C.China:2<br>Party.Festival:2<br>Electronica:1<br>Indie:1<br>Viral:1<br>C.Japan:1<br>Gospel:1<br>Instrumental:1<br>Blues.Soul:1<br>Reggae:1</td>
-  <td>MAX &amp; ANNE &quot;Samen&quot;<br><audio title="MAX &amp; ANNE &quot;Samen&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/eab0175b5f49da922d77c146a9e86191210a61d2" type="audio/mpeg">
-</audio></td>
+  <td>Pop:5<br>House:3<br>Synth.Electronic:3<br>C.China:2<br>Party.Festival:2<br>Electronica:1<br>Indie:1<br>Viral:1<br>C.Japan:1<br>Gospel:1<br>Instrumental:1<br>Blues.Soul:1<br>Reggae:1</td>
+  <td>MAX &amp; ANNE &quot;Samen&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/eab0175b5f49da922d77c146a9e86191210a61d2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1dSOtAiMosLW5kyLkKlObJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2fatZE0EY6cApMPZZ3yfDW" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/696JQPspNaRERbSYKkTgyB" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>4</td>
-  <td>oktoberfest</td>
+  <td><a href="https://everynoise.com/engenremap-oktoberfest.html" title="oktoberfest">oktoberfest</a></td>
   <td>Party.Festival</td>
-  <td><b>Pop:</b> 5<br>Party.Festival:3<br>C.Mexico.Latino:1<br>C.India:1</td>
-  <td>Original Oktoberfest Band &quot;Liechtensteiner Polka&quot<br><audio title="Original Oktoberfest Band &quot;Liechtensteiner Polka&quot" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/91fa4e4b53ba15d3b815f321916f8bccd7bfff68" type="audio/mpeg">
-</audio></td>
+  <td>Pop:5<br>Party.Festival:3<br>C.Mexico.Latino:1<br>C.India:1</td>
+  <td>Original Oktoberfest Band &quot;Liechtensteiner Polka&quot<br><audio class="playback" src="https://p.scdn.co/mp3-preview/91fa4e4b53ba15d3b815f321916f8bccd7bfff68" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4qBVIfsK0B5SadYeuCCoSZ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/40CBOwzcdwboJl1t5YmBsq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/35dUgN7gxGHpbsNobytwzI" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>5</td>
-  <td>festigal</td>
+  <td><a href="https://everynoise.com/engenremap-festigal.html" title="festigal">festigal</a></td>
   <td>Party.Festival</td>
-  <td><b>Pop:</b> 11<br>Country:4<br>Rock:3<br>C.Spain:2<br>Party.Festival:2<br>C.Italy:1<br>C.Mexico.Latino:1</td>
-  <td>Tal Mosseri &quot; &quot;<br><audio title="Tal Mosseri &quot; &quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/32ca9d17efd50fd520cf75cfa25a8630be5d9162" type="audio/mpeg">
-</audio></td>
+  <td>Pop:11<br>Country:4<br>Rock:3<br>C.Spain:2<br>Party.Festival:2<br>C.Italy:1<br>C.Mexico.Latino:1</td>
+  <td>Tal Mosseri &quot; &quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/32ca9d17efd50fd520cf75cfa25a8630be5d9162" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5KQBeEusXD5IQ5NIjxek94" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2K6bX5waUcu7gkT0YVfyH7" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2qVIYE8k8ZO1Za7O80Hs3h" title="pulse">pulse</a></td>

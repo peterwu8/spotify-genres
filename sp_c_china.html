@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>C.China: (46 genres)</title>
+    <title>C.China: (47 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
-<strong>Name:</strong> C.China: (46 genres)<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
+<strong>Name:</strong> C.China: (47 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>chinese metalcore</td>
+  <td><a href="https://everynoise.com/engenremap-chinesemetalcore.html" title="chinese metalcore">chinese metalcore</a></td>
   <td>C.China<br>Metal</td>
-  <td><b>Metal:</b> 14<br>C.China:3<br>Hardstyle:2<br>C.Taiwan:2<br>Trance:1<br>Punk:1<br>Synth.Electronic:1<br>Rock:1<br>C.Germany:1</td>
-  <td>Instinct of Sight<br><audio title="Instinct of Sight" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/fcaa61223406ef32e4cfc830913f058149fe245d" type="audio/mpeg">
-</audio></td>
+  <td>Metal:14<br>C.China:3<br>Hardstyle:2<br>C.Taiwan:2<br>Trance:1<br>Punk:1<br>Synth.Electronic:1<br>Rock:1<br>C.Germany:1</td>
+  <td>Instinct of Sight<br><audio class="playback" src="https://p.scdn.co/mp3-preview/fcaa61223406ef32e4cfc830913f058149fe245d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7DXmRDKwSNv3RB2NuYIfL7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5MaYJaO4ClEfCogIi5QYtn" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1DQa0NlbKA69myr3K4sw42" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>chinese reggae</td>
+  <td><a href="https://everynoise.com/engenremap-chinesereggae.html" title="chinese reggae">chinese reggae</a></td>
   <td>C.China<br>Reggae</td>
-  <td><b>Reggae:</b> 6<br>Blues.Soul:3<br>Hip hop:3<br>Pop:2<br>C.China:2<br>Electronica:1<br>Dance:1<br>Party.Festival:1<br>Funk:1</td>
-  <td>Kawa<br><audio title="Kawa" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4b782de2ec72f71f3298690c423e39319ded4616" type="audio/mpeg">
-</audio></td>
+  <td>Reggae:6<br>Blues.Soul:3<br>Hip hop:3<br>Pop:2<br>C.China:2<br>Electronica:1<br>Dance:1<br>Party.Festival:1<br>Funk:1</td>
+  <td>Kawa<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4b782de2ec72f71f3298690c423e39319ded4616" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3OSFhi0ovn7gMQ1Q4dcIjz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/58PDhzGcwWSEjwxqmkdDIu" title="intro">intro</a></td>
   <td>--</td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>chinese manyao</td>
+  <td><a href="https://everynoise.com/engenremap-chinesemanyao.html" title="chinese manyao">chinese manyao</a></td>
   <td>C.China</td>
-  <td><b>Pop:</b> 7<br>C.China:4<br>C.Japan:3<br>Viral:2<br>Rap:2<br>C.Korea:2<br>House:1<br>Synth.Electronic:1<br>Trap:1<br>Dance:1<br>Gospel:1<br>Party.Festival:1<br>Instrumental:1<br>Hyperpop:1<br>Reggae:1</td>
-  <td>&quot; - DJ Version&quot;<br><audio title="&quot; - DJ Version&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/cdadde8d104143a6a4a755ee7fa4f2716f6e6322" type="audio/mpeg">
-</audio></td>
+  <td>Pop:7<br>C.China:4<br>C.Japan:3<br>Viral:2<br>Rap:2<br>C.Korea:2<br>House:1<br>Synth.Electronic:1<br>Trap:1<br>Dance:1<br>Gospel:1<br>Party.Festival:1<br>Instrumental:1<br>Hyperpop:1<br>Reggae:1</td>
+  <td>&quot; - DJ Version&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/cdadde8d104143a6a4a755ee7fa4f2716f6e6322" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5mTsY0boKtT3YqTPcTCULR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Ca6gXm4z1PKbwAqkBLEY8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5LxfyKZoc55KHL7z6EAn4j" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>c-pop girl group</td>
+  <td><a href="https://everynoise.com/engenremap-cpopgirlgroup.html" title="c-pop girl group">c-pop girl group</a></td>
   <td>C.China<br>Pop</td>
-  <td><b>Pop:</b> 14<br>Rock:3<br>C.Japan:3<br>C.China:3<br>Synth.Electronic:1<br>Indie:1<br>C.Spain:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Dance:1<br>Reggae:1</td>
-  <td>7SENSES &quot;Who Is Your Girl - Japanese Ver.&quot;<br><audio title="7SENSES &quot;Who Is Your Girl - Japanese Ver.&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5806aef79776c45aa848afe807d5e3f14500b84f" type="audio/mpeg">
-</audio></td>
+  <td>Pop:14<br>Rock:3<br>C.Japan:3<br>C.China:3<br>Synth.Electronic:1<br>Indie:1<br>C.Spain:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Dance:1<br>Reggae:1</td>
+  <td>7SENSES &quot;Who Is Your Girl - Japanese Ver.&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5806aef79776c45aa848afe807d5e3f14500b84f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1La91OalQ5WK60xP7o28lJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4FOYkpulV0ZVVymhzJEAYJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/604vU9qarFqwKkc0rJHGNS" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>chinese metal</td>
+  <td><a href="https://everynoise.com/engenremap-chinesemetal.html" title="chinese metal">chinese metal</a></td>
   <td>C.China<br>Metal</td>
-  <td><b>Metal:</b> 12<br>Rock:5<br>C.China:4<br>C.Spain:2<br>Punk:1<br>Hardstyle:1<br>Indie:1<br>C.Korea:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/38a3538a05ec8f832f9aadf25b9ba69bff7883cf" type="audio/mpeg">
-</audio></td>
+  <td>Metal:12<br>Rock:5<br>C.China:4<br>C.Spain:2<br>Punk:1<br>Hardstyle:1<br>Indie:1<br>C.Korea:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/38a3538a05ec8f832f9aadf25b9ba69bff7883cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/56w4CTZ5B1kCuJfw0IEmrk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Sjm7vHQ9XQvve3fGexpyI" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/59QK4fOEmkc82yBs3heLsS" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>chinese idol pop</td>
+  <td><a href="https://everynoise.com/engenremap-chineseidolpop.html" title="chinese idol pop">chinese idol pop</a></td>
   <td>C.China<br>Pop</td>
-  <td><b>Pop:</b> 15<br>C.China:5<br>Synth.Electronic:3<br>Indie:3<br>Hyperpop:2<br>Rock:1<br>C.Japan:1<br>C.Germany:1<br>Dance:1</td>
-  <td>(Theo Zhu) &quot;Empty Space&quot;<br><audio title="(Theo Zhu) &quot;Empty Space&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0392dc38966c41a1a7b65dd8218c0d37f3c4e588" type="audio/mpeg">
-</audio></td>
+  <td>Pop:15<br>C.China:5<br>Synth.Electronic:3<br>Indie:3<br>Hyperpop:2<br>Rock:1<br>C.Japan:1<br>C.Germany:1<br>Dance:1</td>
+  <td>(Theo Zhu) &quot;Empty Space&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0392dc38966c41a1a7b65dd8218c0d37f3c4e588" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/29W4FPNZsBNek3jA5zKfBh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0tEvJpIvzoET6HG01LbheK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4oYNNeKhGk3xJm2SRIIjM2" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>chinese electronic</td>
+  <td><a href="https://everynoise.com/engenremap-chineseelectronic.html" title="chinese electronic">chinese electronic</a></td>
   <td>C.China<br>Synth.Electronic</td>
-  <td><b>Synth.Electronic:</b> 9<br>Electronica:4<br>C.China:3<br>Experimental:3<br>Indie:1<br>Chill:1<br>C.Italy:1<br>C.Taiwan:1<br>Dance:1</td>
-  <td>Howie Lee &quot;Birdy Island&quot;<br><audio title="Howie Lee &quot;Birdy Island&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b30921a41d54e0784da3a214212b0af094c6153a" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:9<br>Electronica:4<br>C.China:3<br>Experimental:3<br>Indie:1<br>Chill:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Irish:1<br>Dance:1</td>
+  <td>Howie Lee &quot;Birdy Island&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b30921a41d54e0784da3a214212b0af094c6153a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6y8Q7oaqi56xodW4PIu9fP" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5kgpT4LDChOxeXud4XZkfV" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4HatUY6Rbijse2528FWrfa" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>chinese electropop</td>
+  <td><a href="https://everynoise.com/engenremap-chineseelectropop.html" title="chinese electropop">chinese electropop</a></td>
   <td>C.China<br>Synth.Electronic</td>
-  <td><b>Pop:</b> 14<br>Synth.Electronic:5<br>C.China:3<br>Hyperpop:3<br>Indie:2<br>C.En.Espanol:2<br>Trap:1<br>Emo:1<br>C.Japan:1<br>C.Germany:1</td>
-  <td>Karencici &quot;Bad Girls Behave&quot;<br><audio title="Karencici &quot;Bad Girls Behave&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/1389da624bf5802fe8ab62d1ae0806e682931d07" type="audio/mpeg">
-</audio></td>
+  <td>Pop:14<br>Synth.Electronic:5<br>C.China:3<br>Hyperpop:3<br>Indie:2<br>C.En.Espanol:2<br>Trap:1<br>Emo:1<br>C.Japan:1<br>C.Germany:1</td>
+  <td>Karencici &quot;Bad Girls Behave&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/1389da624bf5802fe8ab62d1ae0806e682931d07" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6d1TMThIMAnrw7zfkVBSuf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6nxO6FzwHfpdeZQQY1MbDK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/224dLEaxILYiwPBKWZw2Oi" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>chinese melodic rap</td>
+  <td><a href="https://everynoise.com/engenremap-chinesemelodicrap.html" title="chinese melodic rap">chinese melodic rap</a></td>
   <td>C.China<br>Rap</td>
-  <td><b>Pop:</b> 7<br>Rap:4<br>Indie:2<br>Viral:2<br>Trap:2<br>C.China:2<br>C.India:2<br>Hip hop:2<br>Synth.Electronic:1<br>Gaming:1<br>Hyperpop:1</td>
-  <td>DripO<br><audio title="DripO" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6022227c2c3cc343e8b94f3f0e81b87202c0db81" type="audio/mpeg">
-</audio></td>
+  <td>Pop:7<br>Rap:4<br>Indie:2<br>Viral:2<br>Trap:2<br>C.China:2<br>C.India:2<br>Hip hop:2<br>Synth.Electronic:1<br>Gaming:1<br>C.Irish:1<br>Hyperpop:1</td>
+  <td>DripO<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6022227c2c3cc343e8b94f3f0e81b87202c0db81" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2rMhjmx6ALZb8nfmQpOFa2" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7x5YyYx4bN8UOEtoIFJg0L" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2mSWBXG1Ey60hdlDLDisx0" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>chinese indie pop</td>
+  <td><a href="https://everynoise.com/engenremap-chineseindiepop.html" title="chinese indie pop">chinese indie pop</a></td>
   <td>C.China<br>Indie<br>Pop</td>
-  <td><b>Indie:</b> 14<br>Pop:6<br>C.China:4<br>Synth.Electronic:3<br>C.India:2<br>C.France:1<br>C.Korea:1<br>Instrumental:1</td>
-  <td>The Life Journey<br><audio title="The Life Journey" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/42ab1a0f63b67c09844ce1964b2fc854452067ac" type="audio/mpeg">
-</audio></td>
+  <td>Indie:14<br>Pop:6<br>C.China:4<br>Synth.Electronic:3<br>C.India:2<br>C.France:1<br>C.Korea:1<br>Instrumental:1</td>
+  <td>The Life Journey<br><audio class="playback" src="https://p.scdn.co/mp3-preview/42ab1a0f63b67c09844ce1964b2fc854452067ac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7mv3d734tlpipCOpjEfLMD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/53xOY9fW6iZeEGDu5AseU8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1IrxqmyLhWrBvz0gW1EIBR" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>chinese punk</td>
+  <td><a href="https://everynoise.com/engenremap-chinesepunk.html" title="chinese punk">chinese punk</a></td>
   <td>C.China<br>Punk</td>
-  <td><b>Punk:</b> 17<br>Rock:3<br>C.China:3<br>Metal:2<br>C.France:2<br>C.Germany:2<br>Indie:1<br>Pop:1<br>Rap:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>Gospel:1</td>
-  <td>Brain Failure &quot;COMING DOWN TO BEIJING&quot;<br><audio title="Brain Failure &quot;COMING DOWN TO BEIJING&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/87738d95c2b0de3733aa4508bc3ec2279f208e36" type="audio/mpeg">
-</audio></td>
+  <td>Punk:17<br>Rock:3<br>C.China:3<br>Metal:2<br>C.France:2<br>C.Germany:2<br>Indie:1<br>Pop:1<br>Rap:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>Gospel:1</td>
+  <td>Brain Failure &quot;COMING DOWN TO BEIJING&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/87738d95c2b0de3733aa4508bc3ec2279f208e36" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/370ziWDySqtFGSNQwJADo6" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5hhv0x3vD69EI9Y9qmknQO" title="intro">intro</a></td>
   <td>--</td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>chinese viral pop</td>
+  <td><a href="https://everynoise.com/engenremap-chineseviralpop.html" title="chinese viral pop">chinese viral pop</a></td>
   <td>C.China<br>Viral</td>
-  <td><b>Pop:</b> 7<br>Indie:5<br>C.China:4<br>Blues.Soul:3<br>Viral:2<br>Rap:2<br>Synth.Electronic:1<br>Emo:1<br>C.France:1<br>C.Korea:1<br>C.India:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4c334ce12153b5f612db305cab13f0b87984e1e6" type="audio/mpeg">
-</audio></td>
+  <td>Pop:7<br>Indie:5<br>C.China:4<br>Blues.Soul:3<br>Viral:2<br>Rap:2<br>Synth.Electronic:1<br>Emo:1<br>C.France:1<br>C.Korea:1<br>C.India:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/4c334ce12153b5f612db305cab13f0b87984e1e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/04mJ4eJ9jtVx0Ucuyuk1Tx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5CPgTMHG8ygydyRcfArelC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0qAolkAOPmiUTuNSCSWu09" title="pulse">pulse</a></td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>chinese hip hop</td>
+  <td><a href="https://everynoise.com/engenremap-chinesehiphop.html" title="chinese hip hop">chinese hip hop</a></td>
   <td>C.China<br>Hip hop</td>
-  <td><b>Hip hop:</b> 18<br>Rap:2<br>C.China:2<br>Viral:1<br>Pop:1<br>C.Taiwan:1<br>C.Japan:1<br>C.India:1</td>
-  <td>&quot;Room&quot;<br><audio title="&quot;Room&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2946346f85f5f860beab5c0e8cf8651f57cf1829" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:18<br>Rap:2<br>C.China:2<br>Viral:1<br>Pop:1<br>C.Taiwan:1<br>C.Japan:1<br>C.India:1</td>
+  <td>&quot;Room&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2946346f85f5f860beab5c0e8cf8651f57cf1829" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0eoEJg0k4tV0Jw3gmTfRko" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5kHaE5uCueSUS48b8HmLqc" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4WCd9tXobnvkqotWg1dBOj" title="pulse">pulse</a></td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>chinese post-punk</td>
+  <td><a href="https://everynoise.com/engenremap-chinesepostpunk.html" title="chinese post-punk">chinese post-punk</a></td>
   <td>C.China<br>Punk</td>
-  <td><b>Punk:</b> 7<br>Indie:7<br>Rock:4<br>C.China:4<br>C.Spain:2<br>Psy.Rave:1<br>Metal:1<br>Pop:1<br>C.Italy:1<br>C.Japan:1<br>C.Germany:1<br>Instrumental:1</td>
-  <td>Birdstriking &quot;25&quot;<br><audio title="Birdstriking &quot;25&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/bafcebde35e971a5c5269127659aba87ed2a383c" type="audio/mpeg">
-</audio></td>
+  <td>Punk:7<br>Indie:7<br>Rock:4<br>C.China:4<br>C.Spain:2<br>Psy.Rave:1<br>Metal:1<br>Pop:1<br>C.Italy:1<br>C.Japan:1<br>C.Germany:1<br>Instrumental:1</td>
+  <td>Birdstriking &quot;25&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/bafcebde35e971a5c5269127659aba87ed2a383c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4YUp9F2OYkScNE65mZRlU5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4O2ORzy0aCtum3AcTgsYOC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5zefLbSvdsRpXTrbJF5IlQ" title="pulse">pulse</a></td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>chinese indie rock</td>
+  <td><a href="https://everynoise.com/engenremap-chineseindierock.html" title="chinese indie rock">chinese indie rock</a></td>
   <td>C.China<br>Indie<br>Rock</td>
-  <td><b>Indie:</b> 19<br>C.China:6<br>Rock:5<br>Punk:2</td>
-  <td>Joyside &quot;Not My Time to Die&quot;<br><audio title="Joyside &quot;Not My Time to Die&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/1103003078af95baea1865dcc41ffcf25c9cfd05" type="audio/mpeg">
-</audio></td>
+  <td>Indie:19<br>C.China:6<br>Rock:5<br>Punk:2<br>C.Portugal:1</td>
+  <td>Joyside &quot;Not My Time to Die&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/1103003078af95baea1865dcc41ffcf25c9cfd05" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0OIcuYsVfWtMnBTqLShcPS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0i1kWzfcST88ldZaMEcKbQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/19vvj8tjV5DsxCudFnz4w0" title="pulse">pulse</a></td>
@@ -248,12 +241,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>southern china indie</td>
+  <td><a href="https://everynoise.com/engenremap-southernchinaindie.html" title="southern china indie">southern china indie</a></td>
   <td>C.China<br>Indie</td>
-  <td><b>Indie:</b> 18<br>C.China:7<br>Rock:3<br>Pop:2<br>Punk:1<br>C.Taiwan:1<br>C.Germany:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/9617c6d782e9b0bf03f941e19802710b93bfa336" type="audio/mpeg">
-</audio></td>
+  <td>Indie:18<br>C.China:7<br>Rock:3<br>Pop:2<br>Punk:1<br>C.Taiwan:1<br>C.Germany:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/9617c6d782e9b0bf03f941e19802710b93bfa336" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3yusk4RifBR0AXb6ZYwwyu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/083vBGs3cEv7js14M6mWPH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3iyCTshRX50rdSFZQceXc1" title="pulse">pulse</a></td>
@@ -261,12 +252,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>chinese black metal</td>
+  <td><a href="https://everynoise.com/engenremap-chineseblackmetal.html" title="chinese black metal">chinese black metal</a></td>
   <td>C.China<br>Metal</td>
-  <td><b>Metal:</b> 21<br>C.China:3<br>Progressive:1<br>Industrial:1<br>C.Italy:1<br>Folk:1</td>
-  <td>Zuriaake &quot;River Metempsychosis&quot;<br><audio title="Zuriaake &quot;River Metempsychosis&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a1d1e05b7255902b9b49e4bba33e70df1f813c64" type="audio/mpeg">
-</audio></td>
+  <td>Metal:21<br>C.China:3<br>Progressive:1<br>Industrial:1<br>C.Italy:1<br>C.Portugal:1<br>Folk:1</td>
+  <td>Zuriaake &quot;River Metempsychosis&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a1d1e05b7255902b9b49e4bba33e70df1f813c64" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0L7bHV0lbJioaqp5SuHPrc" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -274,12 +263,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>chinese talent show</td>
+  <td><a href="https://everynoise.com/engenremap-chinesetalentshow.html" title="chinese talent show">chinese talent show</a></td>
   <td>C.China</td>
-  <td><b>Indie:</b> 12<br>Pop:4<br>C.India:4<br>C.Korea:2<br>C.China:2<br>Instrumental:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/925894195c1f11ca140715bcc1bb5c3944438487" type="audio/mpeg">
-</audio></td>
+  <td>Indie:12<br>Pop:4<br>C.India:4<br>C.Korea:2<br>C.China:2<br>Instrumental:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/925894195c1f11ca140715bcc1bb5c3944438487" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2Ar7fmPoKFxWbUV4YGAe84" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3gyCIh9hxVWLhE8ewlRT4b" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4mtOKfrGzjUPfjZAewlLIg" title="pulse">pulse</a></td>
@@ -287,12 +274,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>chinese new year</td>
+  <td><a href="https://everynoise.com/engenremap-chinesenewyear.html" title="chinese new year">chinese new year</a></td>
   <td>C.China</td>
-  <td><b>Pop:</b> 7<br>Country:3<br>C.China:2<br>Gospel:2<br>C.India:1</td>
-  <td>Queenzy Cheng<br><audio title="Queenzy Cheng" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8b231a0524fb5ae56bc9dfdcab85d7ef87177f2e" type="audio/mpeg">
-</audio></td>
+  <td>Pop:7<br>Country:3<br>C.China:2<br>Gospel:2<br>C.India:1</td>
+  <td>Queenzy Cheng<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8b231a0524fb5ae56bc9dfdcab85d7ef87177f2e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3mGatBOEASsNJvNPI3Penj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Y7LytXu4Vrb2JYLfPwTOF" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6MgdeQTWkeWeXLAMH7sSvL" title="pulse">pulse</a></td>
@@ -300,12 +285,10 @@
 </tr>
 <tr>
   <td>20</td>
-  <td>chinese r&amp;b</td>
+  <td><a href="https://everynoise.com/engenremap-chineserb.html" title="chinese r&amp;b">chinese r&amp;b</a></td>
   <td>Blues.Soul<br>C.China</td>
-  <td><b>Pop:</b> 11<br>Indie:4<br>Blues.Soul:4<br>C.China:2<br>Viral:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.India:1</td>
-  <td>LINION &quot;Can\'t Find&quot;<br><audio title="LINION &quot;Can\'t Find&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2c791430839f8236cda446d4bcf6f6d0a6e04554" type="audio/mpeg">
-</audio></td>
+  <td>Pop:11<br>Indie:4<br>Blues.Soul:4<br>C.China:2<br>Viral:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.India:1</td>
+  <td>LINION &quot;Can\'t Find&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2c791430839f8236cda446d4bcf6f6d0a6e04554" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2XXreCGINlOqm8wEn7WszA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Dnr8rag22KWTgaH5blVGu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2uUznd0HYTKusR6sl7z3PH" title="pulse">pulse</a></td>
@@ -313,12 +296,10 @@
 </tr>
 <tr>
   <td>21</td>
-  <td>northwest china indie</td>
+  <td><a href="https://everynoise.com/engenremap-northwestchinaindie.html" title="northwest china indie">northwest china indie</a></td>
   <td>C.China<br>Indie</td>
-  <td><b>Indie:</b> 19<br>C.China:3<br>Pop:2<br>C.Germany:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6bc118fb72c648e7d254484f47c695b4be2dbe39" type="audio/mpeg">
-</audio></td>
+  <td>Indie:19<br>C.China:3<br>Pop:2<br>C.Germany:1<br>C.Portugal:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/6bc118fb72c648e7d254484f47c695b4be2dbe39" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4bZvft7DVkJCAslix0FqWj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6AN0GbUZLOXNO9iH8Lrk59" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3wwQU0nsQ0mjYCXLSWyKD6" title="pulse">pulse</a></td>
@@ -326,12 +307,10 @@
 </tr>
 <tr>
   <td>22</td>
-  <td>mainland chinese pop</td>
+  <td><a href="https://everynoise.com/engenremap-mainlandchinesepop.html" title="mainland chinese pop">mainland chinese pop</a></td>
   <td>C.China<br>Pop</td>
-  <td><b>Pop:</b> 10<br>C.China:8<br>Indie:5<br>C.India:2<br>Viral:1</td>
-  <td>Hu Xia<br><audio title="Hu Xia" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f70466b9d51248b85a731d7dfd8123336f861347" type="audio/mpeg">
-</audio></td>
+  <td>Pop:10<br>C.China:8<br>Indie:5<br>C.India:2<br>Viral:1<br>C.Irish:1</td>
+  <td>Hu Xia<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f70466b9d51248b85a731d7dfd8123336f861347" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7KmV0LJiGPgoQFKAOqgWxs" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/23QpSUVlGaMeFgUneEgF37" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/18Kp8K9OxyudP3PIbSM66T" title="pulse">pulse</a></td>
@@ -339,12 +318,10 @@
 </tr>
 <tr>
   <td>23</td>
-  <td>chinese singer-songwriter</td>
+  <td><a href="https://everynoise.com/engenremap-chinesesingersongwriter.html" title="chinese singer-songwriter">chinese singer-songwriter</a></td>
   <td>C.China</td>
-  <td><b>Pop:</b> 8<br>C.China:6<br>Indie:4<br>Gospel:2<br>C.Taiwan:1<br>C.Korea:1<br>C.India:1<br>Folk:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2287655b03671d641fd279f403cc15aed57d6e6b" type="audio/mpeg">
-</audio></td>
+  <td>Pop:8<br>C.China:6<br>Indie:4<br>Gospel:2<br>C.Taiwan:1<br>C.Korea:1<br>C.Irish:1<br>C.India:1<br>Folk:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/2287655b03671d641fd279f403cc15aed57d6e6b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/59TtFc8U1gqn3hcQd1nBoV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7wQVGtivrYS2j8Cdo5Qn6j" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2QFCgb5qbPkGqAFg6iDLTg" title="pulse">pulse</a></td>
@@ -352,12 +329,10 @@
 </tr>
 <tr>
   <td>24</td>
-  <td>chinese indie</td>
+  <td><a href="https://everynoise.com/engenremap-chineseindie.html" title="chinese indie">chinese indie</a></td>
   <td>C.China<br>Indie</td>
-  <td><b>Indie:</b> 13<br>Pop:5<br>C.China:5<br>C.Taiwan:3<br>C.India:1<br>Gospel:1</td>
-  <td>&quot;just like you&quot;<br><audio title="&quot;just like you&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/351018fa875b16cc7a377726c753c60fb53b73fa" type="audio/mpeg">
-</audio></td>
+  <td>Indie:13<br>Pop:5<br>C.China:5<br>C.Taiwan:3<br>C.India:1<br>Gospel:1</td>
+  <td>&quot;just like you&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/351018fa875b16cc7a377726c753c60fb53b73fa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0wYpNflDnwSC3OZqdrQCBt" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1s8BvixbmIPaRIU3vEtpam" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0G31LEptGs4bFzMwU3JAEC" title="pulse">pulse</a></td>
@@ -365,12 +340,10 @@
 </tr>
 <tr>
   <td>25</td>
-  <td>chinese drama ost</td>
+  <td><a href="https://everynoise.com/engenremap-chinesedramaost.html" title="chinese drama ost">chinese drama ost</a></td>
   <td>C.China</td>
-  <td><b>Indie:</b> 7<br>Pop:6<br>C.China:5<br>Gospel:4<br>C.Spain:1<br>C.Japan:1<br>Folk:1</td>
-  <td>&quot; - &quot;<br><audio title="&quot; - &quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/33bfb89547338e3f95579ad154817792de3793ae" type="audio/mpeg">
-</audio></td>
+  <td>Indie:7<br>Pop:6<br>C.China:5<br>Gospel:4<br>C.Spain:1<br>C.Japan:1<br>C.Irish:1<br>Folk:1</td>
+  <td>&quot; - &quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/33bfb89547338e3f95579ad154817792de3793ae" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7Dlr19bDtTlFFYTAvEG7k2" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/73INB1pbpHFcEpZK85v99S" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5AIZJO3xJLmzGAO3C3bMO4" title="pulse">pulse</a></td>
@@ -378,12 +351,10 @@
 </tr>
 <tr>
   <td>26</td>
-  <td>chinese post-rock</td>
+  <td><a href="https://everynoise.com/engenremap-chinesepostrock.html" title="chinese post-rock">chinese post-rock</a></td>
   <td>C.China<br>Rock</td>
-  <td><b>Rock:</b> 7<br>C.China:4<br>Folk:4<br>Indie:3<br>Experimental:3<br>Synth.Electronic:2<br>Psy.Rave:1<br>Pop:1<br>C.Taiwan:1<br>C.Korea:1<br>C.India:1<br>Ambient.General:1<br>Instrumental:1</td>
-  <td>Wang Wen &quot;Lonely God&quot;<br><audio title="Wang Wen &quot;Lonely God&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ccb894d31414857a8a134e7b67e3ad401d37bc96" type="audio/mpeg">
-</audio></td>
+  <td>Rock:7<br>C.China:4<br>Folk:4<br>Indie:3<br>Experimental:3<br>Synth.Electronic:2<br>Psy.Rave:1<br>Pop:1<br>C.Taiwan:1<br>C.Korea:1<br>C.India:1<br>Ambient.General:1<br>Instrumental:1</td>
+  <td>Wang Wen &quot;Lonely God&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ccb894d31414857a8a134e7b67e3ad401d37bc96" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5L5KQye8CH1VgsYwmTTAxg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5s8cMCIEW4JAd8AKbfTl0y" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5m8KlyGNKmE9wAwEcMXOYR" title="pulse">pulse</a></td>
@@ -391,12 +362,10 @@
 </tr>
 <tr>
   <td>27</td>
-  <td>chinese experimental</td>
+  <td><a href="https://everynoise.com/engenremap-chineseexperimental.html" title="chinese experimental">chinese experimental</a></td>
   <td>C.China<br>Experimental</td>
-  <td><b>Experimental:</b> 10<br>Synth.Electronic:3<br>C.China:3<br>Indie:2<br>Folk:2<br>Electronica:1<br>Industrial:1<br>Rock:1<br>C.France:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1</td>
-  <td>Dou Wei<br><audio title="Dou Wei" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d41de6290b5c79ef049dd2459f544b92f21b2103" type="audio/mpeg">
-</audio></td>
+  <td>Experimental:10<br>Synth.Electronic:3<br>C.China:3<br>Indie:2<br>Folk:2<br>Electronica:1<br>Industrial:1<br>Rock:1<br>C.France:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1</td>
+  <td>Dou Wei<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d41de6290b5c79ef049dd2459f544b92f21b2103" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6Vwjb4YyR3ckQXU2k6cf6k" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -404,12 +373,10 @@
 </tr>
 <tr>
   <td>28</td>
-  <td>er ge</td>
+  <td><a href="https://everynoise.com/engenremap-erge.html" title="er ge">er ge</a></td>
   <td>C.China</td>
-  <td><b>C.Mexico.Latino:</b> 4<br>Folk:4<br>Children:3<br>C.China:2<br>Pop:1<br>Americana:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/01ff2b6d53d69c51c625165197b61f0a4bced360" type="audio/mpeg">
-</audio></td>
+  <td>C.Mexico.Latino:4<br>Folk:4<br>Children:3<br>C.China:2<br>Pop:1<br>Americana:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/01ff2b6d53d69c51c625165197b61f0a4bced360" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6cpNMLQ7oDdFbATi9wYL7f" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZPzdQHFr06r0GrYZlCNNr" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0v4BdyHKS58Zj5UurOAjgB" title="pulse">pulse</a></td>
@@ -417,12 +384,10 @@
 </tr>
 <tr>
   <td>29</td>
-  <td>chinese folk</td>
+  <td><a href="https://everynoise.com/engenremap-chinesefolk.html" title="chinese folk">chinese folk</a></td>
   <td>C.China<br>Folk</td>
-  <td><b>Gospel:</b> 6<br>Indie:5<br>C.China:2<br>Folk:2<br>Pop:1<br>C.France:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.India:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/cbd6268d3a8f9c07492a573fe1e1f77296364648" type="audio/mpeg">
-</audio></td>
+  <td>Gospel:6<br>Indie:5<br>C.China:2<br>Folk:2<br>Pop:1<br>C.France:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.India:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/cbd6268d3a8f9c07492a573fe1e1f77296364648" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2rovPgCyVZxrrqtnGz6bwD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7edtd2ayNROvZZ6fUnLKPm" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Ixt72t16Exhtz5CVPULfc" title="pulse">pulse</a></td>
@@ -430,12 +395,10 @@
 </tr>
 <tr>
   <td>30</td>
-  <td>c-pop</td>
+  <td><a href="https://everynoise.com/engenremap-cpop.html" title="c-pop">c-pop</a></td>
   <td>C.China<br>Pop</td>
-  <td><b>Pop:</b> 7<br>C.China:3<br>C.Taiwan:2<br>Folk:2<br>Indie:1<br>Gospel:1<br>Country:1</td>
-  <td>Jenny Tseng &quot; - []&quot;<br><audio title="Jenny Tseng &quot; - []&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7d4e5d15635f95de80615594da1af3c0e08e37df" type="audio/mpeg">
-</audio></td>
+  <td>Pop:7<br>C.China:3<br>C.Taiwan:2<br>Folk:2<br>Indie:1<br>Gospel:1<br>Country:1</td>
+  <td>Jenny Tseng &quot; - []&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7d4e5d15635f95de80615594da1af3c0e08e37df" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1xyLXFq8PsdtkBeTmWqRjQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/58hZQqYkSmZllCGpK8Cnvo" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7KtTTZxbGsAGLKlY25EC00" title="pulse">pulse</a></td>
@@ -443,12 +406,10 @@
 </tr>
 <tr>
   <td>31</td>
-  <td>chinese minyao</td>
+  <td><a href="https://everynoise.com/engenremap-chineseminyao.html" title="chinese minyao">chinese minyao</a></td>
   <td>C.China</td>
-  <td><b>Indie:</b> 7<br>Folk:7<br>C.China:4<br>Pop:2<br>C.Spain:1<br>C.Korea:1<br>C.India:1</td>
-  <td>&quot; ()&quot;<br><audio title="&quot; ()&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/56471868d1335df2936551cc5c9e17940869f45d" type="audio/mpeg">
-</audio></td>
+  <td>Indie:7<br>Folk:7<br>C.China:4<br>Pop:2<br>C.Spain:1<br>C.Korea:1<br>C.India:1</td>
+  <td>&quot; ()&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/56471868d1335df2936551cc5c9e17940869f45d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3YP86Xx0MYwRzAfshgzXTP" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0aZMrfIby8x86EVhzkDe9I" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6RhkCO2vOKBEs4TNMxjWNE" title="pulse">pulse</a></td>
@@ -456,12 +417,10 @@
 </tr>
 <tr>
   <td>32</td>
-  <td>chinese worship</td>
+  <td><a href="https://everynoise.com/engenremap-chineseworship.html" title="chinese worship">chinese worship</a></td>
   <td>C.China<br>Gospel</td>
-  <td><b>Gospel:</b> 7<br>Indie:3<br>Folk:3<br>Pop:2<br>C.Korea:2<br>C.China:2<br>Americana:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>Country:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/9bc3a5031fb23d3031019bfccbbcbd405a5eab44" type="audio/mpeg">
-</audio></td>
+  <td>Gospel:7<br>Indie:3<br>Folk:3<br>Pop:2<br>C.Korea:2<br>C.China:2<br>Americana:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>Country:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/9bc3a5031fb23d3031019bfccbbcbd405a5eab44" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2blf5MBGY8yhdojrYgWsXB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/08BMq5uqtoWg3EQUggAWWR" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2HD2tCUyZmsFU4BN3MTMox" title="pulse">pulse</a></td>
@@ -469,12 +428,10 @@
 </tr>
 <tr>
   <td>33</td>
-  <td>chinese audiophile</td>
+  <td><a href="https://everynoise.com/engenremap-chineseaudiophile.html" title="chinese audiophile">chinese audiophile</a></td>
   <td>C.China</td>
-  <td><b>Folk:</b> 8<br>Indie:4<br>Pop:3<br>C.China:3<br>Gospel:2<br>C.Taiwan:1</td>
-  <td>Chen Guo &quot;A Love Story of a Genius and an Idiot&quot;<br><audio title="Chen Guo &quot;A Love Story of a Genius and an Idiot&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b2a523a925d78ba0b2c56f88b298f512a8b2e32a" type="audio/mpeg">
-</audio></td>
+  <td>Folk:8<br>Indie:4<br>Pop:3<br>C.China:3<br>Gospel:2<br>C.Taiwan:1<br>C.Irish:1</td>
+  <td>Chen Guo &quot;A Love Story of a Genius and an Idiot&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b2a523a925d78ba0b2c56f88b298f512a8b2e32a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7FCVjVoaNjv3ZSl6RxySlz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Kifl5DcXlHEgGuwyF4Mtc" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6PNoInY6rmMdEG1dzZlKA6" title="pulse">pulse</a></td>
@@ -482,12 +439,10 @@
 </tr>
 <tr>
   <td>34</td>
-  <td>chinese jazz</td>
+  <td><a href="https://everynoise.com/engenremap-chinesejazz.html" title="chinese jazz">chinese jazz</a></td>
   <td>C.China<br>Jazz</td>
-  <td><b>Jazz:</b> 12<br>Folk:3<br>C.Mexico.Latino:2<br>C.Japan:2<br>C.China:2<br>Indie:1<br>Pop:1<br>C.France:1<br>C.Korea:1</td>
-  <td>Joanna Wang &quot;Wild World - Acoustic Version&quot;<br><audio title="Joanna Wang &quot;Wild World - Acoustic Version&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/201af3b6690ca84f0e89f3c65621c6431b087bf2" type="audio/mpeg">
-</audio></td>
+  <td>Jazz:12<br>Folk:3<br>C.Mexico.Latino:2<br>C.Japan:2<br>C.China:2<br>Indie:1<br>Pop:1<br>C.France:1<br>C.Korea:1<br>C.Portugal:1</td>
+  <td>Joanna Wang &quot;Wild World - Acoustic Version&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/201af3b6690ca84f0e89f3c65621c6431b087bf2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3vnRXcNe4Twu2ceASnGOtJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/55NyoZQrQvd8QEPMpCsW3X" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/42KZvUoKui3Et4KWaQ6cOo" title="pulse">pulse</a></td>
@@ -495,12 +450,10 @@
 </tr>
 <tr>
   <td>35</td>
-  <td>chinese soundtrack</td>
-  <td>C.China<br>Soundtrack</td>
-  <td><b>Soundtrack:</b> 8<br>Ambient.General:7<br>C.Japan:2<br>C.China:2<br>Synth.Electronic:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>C.India:1<br>Classical:1<br>Country:1<br>Experimental:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5600fe8c7746d425d33713108e4b59eb36ec899d" type="audio/mpeg">
-</audio></td>
+  <td><a href="https://everynoise.com/engenremap-chinesesoundtrack.html" title="chinese soundtrack">chinese soundtrack</a></td>
+  <td>C.China<br>Soundtrack.New.Age</td>
+  <td>Soundtrack.New.Age:9<br>Ambient.General:7<br>C.Japan:2<br>C.China:2<br>Synth.Electronic:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>C.India:1<br>Classical:1<br>Country:1<br>Experimental:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/5600fe8c7746d425d33713108e4b59eb36ec899d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1vH4G2PWCvespHrxCOI0oK" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1isZbStsfgOtuw9OhDqkTS" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/06KT4h86UOmpJGKSkWqT2K" title="pulse">pulse</a></td>
@@ -508,12 +461,10 @@
 </tr>
 <tr>
   <td>36</td>
-  <td>vintage chinese pop</td>
+  <td><a href="https://everynoise.com/engenremap-vintagechinesepop.html" title="vintage chinese pop">vintage chinese pop</a></td>
   <td>C.China<br>Folk<br>Pop</td>
-  <td><b>Folk:</b> 8<br>Pop:6<br>C.China:3<br>C.Taiwan:2<br>C.Japan:1<br>Classical:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f1a317578e6e352e16328cd69c03c92880019e78" type="audio/mpeg">
-</audio></td>
+  <td>Folk:8<br>Pop:6<br>C.China:3<br>C.Taiwan:2<br>C.Japan:1<br>Classical:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/f1a317578e6e352e16328cd69c03c92880019e78" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2cqL0s5H6viqXVDnfhp1nY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Fk72cr0XPwD98Vv6Nf6tc" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5TdSk6v7F9Yc8yaNM7z8q0" title="pulse">pulse</a></td>
@@ -521,12 +472,10 @@
 </tr>
 <tr>
   <td>37</td>
-  <td>chinese bgm</td>
+  <td><a href="https://everynoise.com/engenremap-chinesebgm.html" title="chinese bgm">chinese bgm</a></td>
   <td>C.China</td>
-  <td><b>Instrumental:</b> 8<br>C.China:2<br>Jazz:2<br>Gospel:2<br>C.Taiwan:1<br>C.Japan:1</td>
-  <td>&quot; -&quot;<br><audio title="&quot; -&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/dd245efbb2848727f1cf1ef2374964fbea213bdb" type="audio/mpeg">
-</audio></td>
+  <td>Instrumental:8<br>C.China:2<br>Jazz:2<br>Gospel:2<br>C.Taiwan:1<br>C.Japan:1</td>
+  <td>&quot; -&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/dd245efbb2848727f1cf1ef2374964fbea213bdb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1Kcs9JPtTzFVgBhqnlmLM3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1vbNT9wryiKllxpKNdgXJ8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1dOJEdCXkPqPReky9fvSQ1" title="pulse">pulse</a></td>
@@ -534,12 +483,10 @@
 </tr>
 <tr>
   <td>38</td>
-  <td>chinese instrumental</td>
+  <td><a href="https://everynoise.com/engenremap-chineseinstrumental.html" title="chinese instrumental">chinese instrumental</a></td>
   <td>C.China<br>Instrumental</td>
-  <td><b>Soundtrack:</b> 5<br>C.China:4<br>Ambient.General:4<br>C.Japan:3<br>Instrumental:3<br>Classical:2<br>C.France:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.India:1<br>Folk:1<br>Gospel:1<br>Country:1<br>Experimental:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/eec095263cd2849751546b2e7cc26034e423e25c" type="audio/mpeg">
-</audio></td>
+  <td>Soundtrack.New.Age:5<br>C.China:4<br>Ambient.General:4<br>C.Japan:3<br>Instrumental:3<br>Classical:2<br>C.France:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Irish:1<br>C.India:1<br>Folk:1<br>Gospel:1<br>Country:1<br>Experimental:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/eec095263cd2849751546b2e7cc26034e423e25c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4gexXSDuDHS3FgLpRseBDL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ljKMb4DxnK44XtJrf59i2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6BANdNrf4W2sJme7F5l4GS" title="pulse">pulse</a></td>
@@ -547,12 +494,10 @@
 </tr>
 <tr>
   <td>39</td>
-  <td>chinese traditional</td>
+  <td><a href="https://everynoise.com/engenremap-chinesetraditional.html" title="chinese traditional">chinese traditional</a></td>
   <td>C.China</td>
-  <td><b>C.China:</b> 4<br>Ambient.Yoga.Therapy.Sleep.White.Noise:4<br>Classical:1<br>Experimental:1<br>Instrumental:1</td>
-  <td>Xiang Sihua &quot;The Lofty Mountain And Running Water&quo<br><audio title="Xiang Sihua &quot;The Lofty Mountain And Running Water&quo" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/fae68aa5880aa717ae489853f8830b1b2a911cbe" type="audio/mpeg">
-</audio></td>
+  <td>C.China:5<br>Ambient.Yoga.Therapy.Sleep.White.Noise:4<br>Classical:1<br>Experimental:1<br>Instrumental:1</td>
+  <td>Xiang Sihua &quot;The Lofty Mountain And Running Water&quo<br><audio class="playback" src="https://p.scdn.co/mp3-preview/fae68aa5880aa717ae489853f8830b1b2a911cbe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6l6X13EYuQyuFBU6c6JRJM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6jQr4PbAyfhu4zDYLbLKoU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6h670Q8lB0UzwDPwbnKtKq" title="pulse">pulse</a></td>
@@ -560,37 +505,44 @@
 </tr>
 <tr>
   <td>40</td>
-  <td>chinese wind</td>
+  <td><a href="https://everynoise.com/engenremap-erhu.html" title="erhu">erhu</a></td>
   <td>C.China</td>
-  <td><b>Classical:</b> 7<br>C.China:3<br>C.Italy:2<br>Baroque:2<br>Rock:1</td>
-  <td>Zhang Weiliang &quot;At the Dressing Table&quot;<br><audio title="Zhang Weiliang &quot;At the Dressing Table&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6b8f0eef7c27e6b1b3dd6eb583a1cb8af7ce8406" type="audio/mpeg">
-</audio></td>
+  <td>C.China:4<br>Soundtrack.New.Age:3<br>Folk:2<br>Classical:2<br>C.France:1<br>C.Italy:1<br>Ambient.General:1<br>Country:1<br>Instrumental:1</td>
+  <td>Min Huifen &quot;The Butterfly Lovers&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e8e8f40eefd261a80f4ff48814ef7d51d2fa816c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://open.spotify.com/playlist/7uVfHvphUCmZCSgbGiOCgw" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2f7HUqZwN5qpxNoI0cZzML" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2bq05GFmm5Hsdtp4mpueVQ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>41</td>
+  <td><a href="https://everynoise.com/engenremap-chinesewind.html" title="chinese wind">chinese wind</a></td>
+  <td>C.China</td>
+  <td>Classical:7<br>C.China:3<br>C.Italy:2<br>Baroque:2<br>Rock:1</td>
+  <td>Zhang Weiliang &quot;At the Dressing Table&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6b8f0eef7c27e6b1b3dd6eb583a1cb8af7ce8406" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7vd7ZntuBk9C5l1MMs5Cgm" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6Vnz2oz2m3d6iBKzc1ToVt" title="pulse">pulse</a></td>
   <td>--</td>
 </tr>
 <tr>
-  <td>41</td>
-  <td>chinese classical</td>
+  <td>42</td>
+  <td><a href="https://everynoise.com/engenremap-chineseclassical.html" title="chinese classical">chinese classical</a></td>
   <td>C.China<br>Classical</td>
-  <td><b>Classical:</b> 19<br>C.France:2<br>C.China:2<br>C.Italy:1<br>C.Spain:1</td>
-  <td>Tan Dun &quot;For the World&quot;<br><audio title="Tan Dun &quot;For the World&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f32b69434bf19c76c23d3bc791bd87679f07707c" type="audio/mpeg">
-</audio></td>
+  <td>Classical:19<br>C.France:2<br>C.China:2<br>C.Italy:1<br>C.Spain:1</td>
+  <td>Tan Dun &quot;For the World&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f32b69434bf19c76c23d3bc791bd87679f07707c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/30sre1XG3IKvRYM6q0rBdE" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
   <td>--</td>
 </tr>
 <tr>
-  <td>42</td>
-  <td>chinese classical performance</td>
+  <td>43</td>
+  <td><a href="https://everynoise.com/engenremap-chineseclassicalperformance.html" title="chinese classical performance">chinese classical performance</a></td>
   <td>C.China<br>Classical</td>
-  <td><b>Classical:</b> 16<br>C.China:3<br>Instrumental:2<br>C.Korea:1<br>C.Japan:1<br>C.Germany:1<br>Ambient.General:1</td>
-  <td>Yuja Wang &quot;Orfeo ed Euridice, Wq. 30 (Arranged by Sga<br><audio title="Yuja Wang &quot;Orfeo ed Euridice, Wq. 30 (Arranged by Sga" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/92015ec1cb4700f9173685fd8db461f59198cce5" type="audio/mpeg">
+  <td>Classical:16<br>C.China:3<br>Instrumental:2<br>C.Korea:1<br>C.Japan:1<br>C.Germany:1<br>Ambient.General:1</td>
+  <td>Yuja Wang &quot;Orfeo ed Euridice, Wq. 30 (Arranged by Sga<br><audio class="playback" src="https://p.scdn.co/mp3-preview/92015ec1cb4700f9173685fd8db461f59198cce5" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/2pxOA8NLXwZaCk09pjaerb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3ARWe8bp1UWLqDqS1IOZFg" title="intro">intro</a></td>
@@ -598,38 +550,34 @@
   <td>--</td>
 </tr>
 <tr>
-  <td>43</td>
-  <td>guqin</td>
+  <td>44</td>
+  <td><a href="https://everynoise.com/engenremap-guqin.html" title="guqin">guqin</a></td>
   <td>C.China</td>
-  <td><b>C.China:</b> 1</td>
-  <td>Wu Jinglue &quot;Chat Between A Fisherman And A Woodcutter<br><audio title="Wu Jinglue &quot;Chat Between A Fisherman And A Woodcutter" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b3dec14907c58e7fbc1796d959d5c83329cb59ba" type="audio/mpeg">
-</audio></td>
+  <td>C.China:1</td>
+  <td>Wu Jinglue &quot;Chat Between A Fisherman And A Woodcutter<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b3dec14907c58e7fbc1796d959d5c83329cb59ba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/59r5KTXDuXTXZcIKo2rHFH" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Q6r0iMBQi5vYDgjxHV3Ch" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5e876F3nn8465RI6Wi4pwE" title="pulse">pulse</a></td>
   <td>--</td>
 </tr>
 <tr>
-  <td>44</td>
-  <td>tanci</td>
+  <td>45</td>
+  <td><a href="https://everynoise.com/engenremap-tanci.html" title="tanci">tanci</a></td>
   <td>C.China</td>
-  <td><b>C.China:</b> 2</td>
-  <td>Liu Baorui &quot;Battle In Yunnan&quot;<br><audio title="Liu Baorui &quot;Battle In Yunnan&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7b0584e80ec52713d4cb33b07510454b9111581c" type="audio/mpeg">
-</audio></td>
+  <td>C.China:2</td>
+  <td>Liu Baorui &quot;Battle In Yunnan&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7b0584e80ec52713d4cb33b07510454b9111581c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7ratOul7KberTWrn86l4O7" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
   <td>--</td>
 </tr>
 <tr>
-  <td>45</td>
-  <td>chinese classical piano</td>
+  <td>46</td>
+  <td><a href="https://everynoise.com/engenremap-chineseclassicalpiano.html" title="chinese classical piano">chinese classical piano</a></td>
   <td>C.China<br>Classical<br>Instrumental</td>
-  <td><b>Classical:</b> 20<br>Instrumental:19<br>C.China:3<br>C.France:1<br>C.Mexico.Latino:1</td>
-  <td>Lang Lang &quot;Liebestraum No. 3 in A-Flat Major, S. 541 <br><audio title="Lang Lang &quot;Liebestraum No. 3 in A-Flat Major, S. 541 " controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a3f2cb8e5bc8f64631d7087fc779e1d7ec3515ae" type="audio/mpeg">
+  <td>Classical:20<br>Instrumental:19<br>C.China:3<br>C.France:1<br>C.Mexico.Latino:1</td>
+  <td>Lang Lang &quot;Liebestraum No. 3 in A-Flat Major, S. 541 <br><audio class="playback" src="https://p.scdn.co/mp3-preview/a3f2cb8e5bc8f64631d7087fc779e1d7ec3515ae" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/4X5NadJ9dnHyKd2vLILC7v" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ppqZma80J95aOXJZ78zX3" title="intro">intro</a></td>
@@ -637,13 +585,11 @@
   <td>--</td>
 </tr>
 <tr>
-  <td>46</td>
-  <td>chinese opera</td>
+  <td>47</td>
+  <td><a href="https://everynoise.com/engenremap-chineseopera.html" title="chinese opera">chinese opera</a></td>
   <td>C.China<br>Classical</td>
-  <td><b>C.China:</b> 2<br>Classical:2</td>
-  <td>Song Xiaochuan &quot;The Story of the Whike Snake: Aria B&<br><audio title="Song Xiaochuan &quot;The Story of the Whike Snake: Aria B&" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3ac8deee83515471ccc970fd124f366cc9e90fbe" type="audio/mpeg">
-</audio></td>
+  <td>C.China:2<br>Classical:2</td>
+  <td>Song Xiaochuan &quot;The Story of the Whike Snake: Aria B&<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3ac8deee83515471ccc970fd124f366cc9e90fbe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3ueKGpM7H6yOxXaawk7yeD" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>

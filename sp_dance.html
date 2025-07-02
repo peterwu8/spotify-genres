@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Dance: (53 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>hard dance</td>
+  <td><a href="https://everynoise.com/engenremap-harddance.html" title="hard dance">hard dance</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 2</td>
-  <td>Lights Of Saratoga &quot;Conduit (The Arrival) - Platinum <br><audio title="Lights Of Saratoga &quot;Conduit (The Arrival) - Platinum " controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0fd085f1b43d0b044b58d924326a9095190d4334" type="audio/mpeg">
-</audio></td>
+  <td>Dance:2</td>
+  <td>Lights Of Saratoga &quot;Conduit (The Arrival) - Platinum <br><audio class="playback" src="https://p.scdn.co/mp3-preview/0fd085f1b43d0b044b58d924326a9095190d4334" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1OaA4XBHa4LnyOOrBOAaqE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/48CfUb71XWp2C5AYkMIrgJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4f4gzHCI0J0nt1DFsCXhs4" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>euro hi-nrg</td>
+  <td><a href="https://everynoise.com/engenremap-eurohinrg.html" title="euro hi-nrg">euro hi-nrg</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 5<br>House:4<br>Synth.Electronic:3<br>Industrial.Punk.EBM:2<br>C.Spain:2<br>Disco:2<br>Breaks:1<br>Pop:1<br>Vocal:1<br>C.Germany:1</td>
-  <td>Abbacadabra &quot;Fernando - Matt Pop Radio Edit&quot;<br><audio title="Abbacadabra &quot;Fernando - Matt Pop Radio Edit&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/1ad5aa5dbc1dfd6a63dfcfad3f92ca1ca1205770" type="audio/mpeg">
-</audio></td>
+  <td>Dance:5<br>House:4<br>Synth.Electronic:3<br>Industrial.Punk.EBM:2<br>C.Spain:2<br>Disco:2<br>Breaks:1<br>Pop:1<br>Vocal:1<br>C.Germany:1</td>
+  <td>Abbacadabra &quot;Fernando - Matt Pop Radio Edit&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/1ad5aa5dbc1dfd6a63dfcfad3f92ca1ca1205770" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3aT99aG5pTpyttveznrzIj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0f0lPjNmfrdGmBFyTBFRB8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7hruWHVoyP4CiWtlnBnNW7" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>belgian dance</td>
+  <td><a href="https://everynoise.com/engenremap-belgiandance.html" title="belgian dance">belgian dance</a></td>
   <td>Dance</td>
-  <td><b>Synth.Electronic:</b> 5<br>Trance:4<br>Breaks:2<br>Industrial.Punk.EBM:2<br>C.Germany:2<br>Dance:2<br>Dubstep:2<br>Progressive:1<br>Techno:1<br>House:1<br>C.Japan:1<br>Experimental:1</td>
-  <td>The Mackenzie &quot;Innocence&quot;<br><audio title="The Mackenzie &quot;Innocence&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b842cd9bb881ea350b1f6c1e21d4d7fd2e20facc" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:5<br>Trance:4<br>Breaks:2<br>Industrial.Punk.EBM:2<br>C.Germany:2<br>Dance:2<br>Dubstep:2<br>Progressive:1<br>Techno:1<br>House:1<br>C.Japan:1<br>Experimental:1</td>
+  <td>The Mackenzie &quot;Innocence&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b842cd9bb881ea350b1f6c1e21d4d7fd2e20facc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7LiSIthh02iaUmBElzs3J8" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ieAcH4PwdTDnjXnhitx6I" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2DJ4k7k5rqkKa4orKlVGw7" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>italo dance</td>
+  <td><a href="https://everynoise.com/engenremap-italodance.html" title="italo dance">italo dance</a></td>
   <td>Dance</td>
-  <td><b>House:</b> 8<br>Dance:4<br>Synth.Electronic:2<br>Vocal:2<br>Trance:1<br>Industrial.Punk.EBM:1<br>Pop:1<br>C.Italy:1<br>C.Spain:1<br>Disco:1</td>
-  <td>Danijay &quot;Il gioco dell\'amore - Radio Smat Mix&quot;<br><audio title="Danijay &quot;Il gioco dell\'amore - Radio Smat Mix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/05a631435afbcf73d5a8717563e47cfead85a2fc" type="audio/mpeg">
-</audio></td>
+  <td>House:8<br>Dance:4<br>Synth.Electronic:2<br>Vocal:2<br>Trance:1<br>Industrial.Punk.EBM:1<br>Pop:1<br>C.Italy:1<br>C.Spain:1<br>Disco:1</td>
+  <td>Danijay &quot;Il gioco dell\'amore - Radio Smat Mix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/05a631435afbcf73d5a8717563e47cfead85a2fc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3IExr8qtJzsRF1vICyPux3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/55pDfP39bOwuOUqPYe9Pm6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4iC91jc85ac5J96yfoQzCD" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>bubblegum dance</td>
+  <td><a href="https://everynoise.com/engenremap-bubblegumdance.html" title="bubblegum dance">bubblegum dance</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 6<br>Synth.Electronic:3<br>House:2<br>Pop:2<br>Disco:2<br>Vocal:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Germany:1</td>
-  <td>Me &amp; My &quot;Dub-I-Dub&quot;<br><audio title="Me &amp; My &quot;Dub-I-Dub&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e7b149dd905b1d7bb2fbf75c7550a7af7a0db821" type="audio/mpeg">
-</audio></td>
+  <td>Dance:6<br>Synth.Electronic:3<br>House:2<br>Pop:2<br>Disco:2<br>Vocal:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Germany:1</td>
+  <td>Me &amp; My &quot;Dub-I-Dub&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e7b149dd905b1d7bb2fbf75c7550a7af7a0db821" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2FYJ3kw41qQGBtIDhusO7L" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2hmvVp20WIyoPK1DnbQFSM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6vLY9e1YRvdHFddpaXi8Qy" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>eurodance</td>
+  <td><a href="https://everynoise.com/engenremap-eurodance.html" title="eurodance">eurodance</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 8<br>House:3<br>Synth.Electronic:3<br>C.Spain:2<br>C.Germany:2<br>Techno:1<br>Trance:1<br>Industrial.Punk.EBM:1<br>Pop:1<br>Vocal:1</td>
-  <td>Mr. President &quot;Coco Jamboo&quot;<br><audio title="Mr. President &quot;Coco Jamboo&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ae7019859326cbe15f2bfeb87c16bfb4486d1316" type="audio/mpeg">
-</audio></td>
+  <td>Dance:8<br>House:3<br>Synth.Electronic:3<br>C.Spain:2<br>C.Germany:2<br>Techno:1<br>Trance:1<br>Industrial.Punk.EBM:1<br>Pop:1<br>Vocal:1</td>
+  <td>Mr. President &quot;Coco Jamboo&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ae7019859326cbe15f2bfeb87c16bfb4486d1316" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4jw4G9J55p7tXV2xEAGUj4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7JwUly1hvirv9QUWcSbqXP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6MvRplzCp0Lbmp6irx6xam" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>cantaditas</td>
+  <td><a href="https://everynoise.com/engenremap-cantaditas.html" title="cantaditas">cantaditas</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 6<br>House:2<br>Synth.Electronic:2<br>Industrial.Punk.EBM:2<br>C.Spain:2<br>Breaks:1<br>Hardstyle:1<br>Vocal:1<br>Hip hop:1</td>
-  <td>Head Horny\'s &quot;I\'m The 1 You\'re Looking 4 (12&quot; In<br><audio title="Head Horny\'s &quot;I\'m The 1 You\'re Looking 4 (12&quot; In" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c5140d17e776e415af27d4dc5db4933a4f1035e0" type="audio/mpeg">
-</audio></td>
+  <td>Dance:6<br>House:2<br>Synth.Electronic:2<br>Industrial.Punk.EBM:2<br>C.Spain:2<br>Breaks:1<br>Hardstyle:1<br>Vocal:1<br>Hip hop:1</td>
+  <td>Head Horny\'s &quot;I\'m The 1 You\'re Looking 4 (12&quot; In<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c5140d17e776e415af27d4dc5db4933a4f1035e0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5VGQF5ilaoNOEl3HEI1TgT" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6iWgQl2kHs0SNT3diqsxAC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ioA6lgrvomQWnRYYVOrsh" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>dancefloor dnb</td>
+  <td><a href="https://everynoise.com/engenremap-dancefloordnb.html" title="dancefloor dnb">dancefloor dnb</a></td>
   <td>Dance<br>Drum and bass</td>
-  <td><b>Hardstyle:</b> 5<br>Drum and bass:3<br>Dubstep:3<br>Dance:2<br>Techno:1<br>Funk:1</td>
-  <td>Ekko &amp; Sidetrack &quot;Paper Birds&quot;<br><audio title="Ekko &amp; Sidetrack &quot;Paper Birds&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e25619800e14c95155196c092557548b30cf5627" type="audio/mpeg">
-</audio></td>
+  <td>Hardstyle:5<br>Drum and bass:3<br>Dubstep:3<br>Dance:2<br>Techno:1<br>Funk:1</td>
+  <td>Ekko &amp; Sidetrack &quot;Paper Birds&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e25619800e14c95155196c092557548b30cf5627" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0R4q3eZSSoSCLq7jNYeF5t" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5dlOOhROTbkbeZhIhtiBoB" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6yUa9hudiRSks7Ab8FCkK4" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>german dance</td>
+  <td><a href="https://everynoise.com/engenremap-germandance.html" title="german dance">german dance</a></td>
   <td>C.Germany<br>Dance</td>
-  <td><b>House:</b> 7<br>Dance:7<br>Pop:3<br>C.Germany:2<br>Synth.Electronic:1<br>Vocal:1</td>
-  <td>LIZOT &quot;This Is The Life&quot;<br><audio title="LIZOT &quot;This Is The Life&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/16c22a0c0d24439355d4759c866b94cd5605a98b" type="audio/mpeg">
-</audio></td>
+  <td>House:7<br>Dance:7<br>Pop:3<br>C.Germany:2<br>Synth.Electronic:1<br>Vocal:1</td>
+  <td>LIZOT &quot;This Is The Life&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/16c22a0c0d24439355d4759c866b94cd5605a98b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0ociygIFg7QypC1T9v1g7x" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5B9n00tumg5eHg3weuvKmd" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0B3P48989y7lW9NjTAb6y1" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>uk dance</td>
+  <td><a href="https://everynoise.com/engenremap-ukdance.html" title="uk dance">uk dance</a></td>
   <td>Dance</td>
-  <td><b>House:</b> 8<br>Dance:5<br>Pop:3<br>Synth.Electronic:2<br>Vocal:1<br>C.Spain:1<br>C.Germany:1</td>
-  <td>Nathan Dawe &quot;21 Reasons (feat. Ella Henderson)&quot;<br><audio title="Nathan Dawe &quot;21 Reasons (feat. Ella Henderson)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d156060faa3d61d5fa3ea817f7ebc4008a954549" type="audio/mpeg">
-</audio></td>
+  <td>House:8<br>Dance:5<br>Pop:3<br>Synth.Electronic:2<br>Vocal:1<br>C.Spain:1<br>C.Germany:1</td>
+  <td>Nathan Dawe &quot;21 Reasons (feat. Ella Henderson)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d156060faa3d61d5fa3ea817f7ebc4008a954549" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5kDzf9eWk24U16EBkTDdpb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2j8n4bukCIYy8vnVWbAExn" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1xjYim3Vd0C4RGTC7YyQao" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>christian dance</td>
+  <td><a href="https://everynoise.com/engenremap-christiandance.html" title="christian dance">christian dance</a></td>
   <td>Dance<br>Gospel</td>
-  <td><b>Synth.Electronic:</b> 7<br>Dance:4<br>Gospel:3<br>Rock:2<br>Psy.Rave:1<br>Electronica:1<br>Trance:1<br>Pop:1<br>Dubstep:1</td>
-  <td>David Thulin &quot;Light In Me - Chris Howland Remix&quot;<br><audio title="David Thulin &quot;Light In Me - Chris Howland Remix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/38b1fa316b5fcf5ec83ffdf4c68e167b054e5ff3" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:7<br>Dance:4<br>Gospel:3<br>Rock:2<br>Psy.Rave:1<br>Electronica:1<br>Trance:1<br>Pop:1<br>Dubstep:1</td>
+  <td>David Thulin &quot;Light In Me - Chris Howland Remix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/38b1fa316b5fcf5ec83ffdf4c68e167b054e5ff3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1gwP21GRuImodOMURpSXYs" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6I56C7708z9zixDHC8YApi" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1TY3aWJ28RKFe09Gz9v05I" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>kids dance party</td>
+  <td><a href="https://everynoise.com/engenremap-kidsdanceparty.html" title="kids dance party">kids dance party</a></td>
   <td>Children<br>Dance<br>Party.Festival</td>
-  <td><b>Children:</b> 2<br>Dance:2<br>Party.Festival:2</td>
-  <td>Electric Slide Music Makers &quot;The Hampster Dance Song&<br><audio title="Electric Slide Music Makers &quot;The Hampster Dance Song&" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/914429a63008898e4e36da44a682f4ec2d20dccf" type="audio/mpeg">
-</audio></td>
+  <td>Children:2<br>Dance:2<br>Party.Festival:2</td>
+  <td>Electric Slide Music Makers &quot;The Hampster Dance Song&<br><audio class="playback" src="https://p.scdn.co/mp3-preview/914429a63008898e4e36da44a682f4ec2d20dccf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5YR7tBihIt7vVZPrSGmQYt" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1VySvFm3Zecxz6KNvPvnmP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0pa7UXIOGGsDa4lV9G6fun" title="pulse">pulse</a></td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>swedish eurodance</td>
+  <td><a href="https://everynoise.com/engenremap-swedisheurodance.html" title="swedish eurodance">swedish eurodance</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 7<br>Pop:6<br>House:2<br>Synth.Electronic:2<br>C.Spain:2<br>Punk:1<br>Vocal:1<br>C.Korea:1<br>C.Germany:1</td>
-  <td>Discocrew &quot;Pilsnerh&quot;<br><audio title="Discocrew &quot;Pilsnerh&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/288ff45af6d0b14ce33a04806e07c8bef0ad5d6d" type="audio/mpeg">
-</audio></td>
+  <td>Dance:7<br>Pop:6<br>House:2<br>Synth.Electronic:2<br>C.Spain:2<br>Punk:1<br>Vocal:1<br>C.Korea:1<br>C.Germany:1</td>
+  <td>Discocrew &quot;Pilsnerh&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/288ff45af6d0b14ce33a04806e07c8bef0ad5d6d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3smhgA5tMEWCfjqB6WF54r" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Mfigr3ADcwYIReYDx07ni" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/20OjKHosX8vjALpH6Z7UJR" title="pulse">pulse</a></td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>deep eurodance</td>
+  <td><a href="https://everynoise.com/engenremap-deepeurodance.html" title="deep eurodance">deep eurodance</a></td>
   <td>Dance</td>
-  <td><b>Synth.Electronic:</b> 5<br>Dance:4<br>Funk:3<br>C.Spain:2<br>C.Mexico.Latino:2<br>House:1<br>Electronica:1<br>Punk:1<br>Disco:1</td>
-  <td>Diana\'s &quot;All I Need Is Love - Eurodance Mix&quot;<br><audio title="Diana\'s &quot;All I Need Is Love - Eurodance Mix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c41652feae798d8f2957f0e2c4f27e2907c99fc5" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:5<br>Dance:4<br>Funk:3<br>C.Spain:2<br>C.Mexico.Latino:2<br>House:1<br>Electronica:1<br>Punk:1<br>Disco:1</td>
+  <td>Diana\'s &quot;All I Need Is Love - Eurodance Mix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c41652feae798d8f2957f0e2c4f27e2907c99fc5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2xuduhoWA5fxvaeYjuvcBk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7pP1yrybfmNjex5lN5mduH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6WWpIYGmZHfk9OKsiKmEm7" title="pulse">pulse</a></td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>pop dance</td>
+  <td><a href="https://everynoise.com/engenremap-popdance.html" title="pop dance">pop dance</a></td>
   <td>Dance<br>Pop</td>
-  <td><b>House:</b> 7<br>Pop:6<br>Dance:4<br>Progressive:2<br>Synth.Electronic:2</td>
-  <td>Alesso &quot;Words (feat. Zara Larsson)&quot;<br><audio title="Alesso &quot;Words (feat. Zara Larsson)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/1164c378d1a70ec8cfa42a28dc108503e8f62768" type="audio/mpeg">
-</audio></td>
+  <td>House:7<br>Pop:6<br>Dance:4<br>Progressive:2<br>Synth.Electronic:2</td>
+  <td>Alesso &quot;Words (feat. Zara Larsson)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/1164c378d1a70ec8cfa42a28dc108503e8f62768" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2HhaArHsOiofpUheCRPkLa" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2VTBLqusGN8KUO8PYwAEtt" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2LHZ8btZDM6jc43vT3oaKs" title="pulse">pulse</a></td>
@@ -248,12 +241,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>alternative dance</td>
+  <td><a href="https://everynoise.com/engenremap-alternativedance.html" title="alternative dance">alternative dance</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 6<br>Synth.Electronic:4<br>Rock:4<br>Electronica:2<br>Indie:2<br>Pop:2<br>House:1<br>Trance:1<br>Punk:1<br>Chill:1<br>Gospel:1<br>Disco:1</td>
-  <td>Cut Copy &quot;Lights &amp; Music&quot;<br><audio title="Cut Copy &quot;Lights &amp; Music&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c7483111af7b2478579f4de6383820df4936ecc6" type="audio/mpeg">
-</audio></td>
+  <td>Dance:6<br>Synth.Electronic:4<br>Rock:4<br>Electronica:2<br>Indie:2<br>Pop:2<br>House:1<br>Trance:1<br>Punk:1<br>Chill:1<br>Gospel:1<br>Disco:1</td>
+  <td>Cut Copy &quot;Lights &amp; Music&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c7483111af7b2478579f4de6383820df4936ecc6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5LwcdWTCx2JoWeVVWOYsGj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5mWt5O5HpAIf3hMaHK46wD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1A2gajFy5iWaGGBrBBPO84" title="pulse">pulse</a></td>
@@ -261,12 +252,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>australian dance</td>
+  <td><a href="https://everynoise.com/engenremap-australiandance.html" title="australian dance">australian dance</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 5<br>Synth.Electronic:4<br>Pop:4<br>Electronica:3<br>Trap:2<br>C.Japan:2<br>House:1<br>Rock:1<br>C.Mexico.Latino:1<br>Gospel:1</td>
-  <td>The Presets &quot;My People&quot;<br><audio title="The Presets &quot;My People&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0a867948616af8b4ac128bcf2010f03a3bdbdaba" type="audio/mpeg">
-</audio></td>
+  <td>Dance:5<br>Synth.Electronic:4<br>Pop:4<br>Electronica:3<br>Trap:2<br>C.Japan:2<br>House:1<br>Rock:1<br>C.Mexico.Latino:1<br>Gospel:1</td>
+  <td>The Presets &quot;My People&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0a867948616af8b4ac128bcf2010f03a3bdbdaba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3iiCEjJsCfkP18Xfqv9fZi" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5UeKJJ9ZHnkss8yeY2I6jD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/48mZMy2thegwbMfm1wLvIv" title="pulse">pulse</a></td>
@@ -274,12 +263,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>russian rave</td>
+  <td><a href="https://everynoise.com/engenremap-russianrave.html" title="russian rave">russian rave</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 5<br>Trap:2<br>House:1<br>Electronica:1<br>Synth.Electronic:1<br>Hardstyle:1<br>Pop:1<br>C.Germany:1<br>Hip hop:1</td>
-  <td>&quot;  &quot;<br><audio title="&quot;  &quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/82c07022db4c73e9b02541904c5f8dcc1738bcfe" type="audio/mpeg">
-</audio></td>
+  <td>Dance:5<br>Trap:2<br>House:1<br>Electronica:1<br>Synth.Electronic:1<br>Hardstyle:1<br>Pop:1<br>C.Germany:1<br>Hip hop:1</td>
+  <td>&quot;  &quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/82c07022db4c73e9b02541904c5f8dcc1738bcfe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7kEE6AcLLvewkDzi1KYKzg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Ooe9kJOTwDym5Byn12cvf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7AYQ49Ro0efZ0sjOV6OXtc" title="pulse">pulse</a></td>
@@ -287,12 +274,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>mashup</td>
+  <td><a href="https://everynoise.com/engenremap-mashup.html" title="mashup">mashup</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 5<br>Pop:4<br>House:3<br>Synth.Electronic:2<br>Trap:2<br>Punk:1<br>Rock:1<br>C.Japan:1</td>
-  <td>Girl Talk &quot;Eurostep&quot;<br><audio title="Girl Talk &quot;Eurostep&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/928eabb861415883453edb3e0974af22cf1663ce" type="audio/mpeg">
-</audio></td>
+  <td>Dance:5<br>Pop:4<br>House:3<br>Synth.Electronic:2<br>Trap:2<br>Punk:1<br>Rock:1<br>C.Japan:1</td>
+  <td>Girl Talk &quot;Eurostep&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/928eabb861415883453edb3e0974af22cf1663ce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7ifqnqwYf2PT1QazqZ4ekQ" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -300,12 +285,10 @@
 </tr>
 <tr>
   <td>20</td>
-  <td>dance rock</td>
+  <td><a href="https://everynoise.com/engenremap-dancerock.html" title="dance rock">dance rock</a></td>
   <td>Dance<br>Rock</td>
-  <td><b>Rock:</b> 5<br>Dance:4<br>Synth.Electronic:3<br>Pop:3<br>Punk:2<br>C.Japan:2</td>
-  <td>Frankie Goes To Hollywood &quot;Relax&quot;<br><audio title="Frankie Goes To Hollywood &quot;Relax&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/fa7015e65bf8da36eb49ef1fa02d247dbca2b293" type="audio/mpeg">
-</audio></td>
+  <td>Rock:5<br>Dance:4<br>Synth.Electronic:3<br>Pop:3<br>Punk:2<br>C.Japan:2</td>
+  <td>Frankie Goes To Hollywood &quot;Relax&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/fa7015e65bf8da36eb49ef1fa02d247dbca2b293" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3PgRe3aEtNXhWm9GOUgOdG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1die3vlIPzQiqs6jYPOFj2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6HCUGykUzmt5zSHO4PMDsm" title="pulse">pulse</a></td>
@@ -313,12 +296,10 @@
 </tr>
 <tr>
   <td>21</td>
-  <td>rkt</td>
+  <td><a href="https://everynoise.com/engenremap-rkt.html" title="rkt">rkt</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 1<br>Funk:1</td>
-  <td>BRIANMIX &quot;Intro Matador - feat. SoreMix&quot;<br><audio title="BRIANMIX &quot;Intro Matador - feat. SoreMix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e7dca63a5d74ae43b1644640769b3612c47cd346" type="audio/mpeg">
-</audio></td>
+  <td>Dance:1<br>Funk:1</td>
+  <td>BRIANMIX &quot;Intro Matador - feat. SoreMix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e7dca63a5d74ae43b1644640769b3612c47cd346" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3VrPTHyM5DuNHzEZUWzsnt" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3bhjqygtWflNGAG2Dugpra" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7GdLkAyxhyjI6WnhD2UWUf" title="pulse">pulse</a></td>
@@ -326,12 +307,10 @@
 </tr>
 <tr>
   <td>22</td>
-  <td>south african pop dance</td>
+  <td><a href="https://everynoise.com/engenremap-southafricanpopdance.html" title="south african pop dance">south african pop dance</a></td>
   <td>Dance<br>Pop</td>
-  <td><b>Pop:</b> 3<br>Viral:2<br>Dance:2<br>Funk:2<br>Blues.Soul:2<br>Hip hop:2<br>Reggae:2<br>House:1<br>Electronica:1<br>Indie:1<br>Trap:1<br>C.France:1<br>C.China:1<br>Party.Festival:1</td>
-  <td>Euphonik &quot;Don\'t Wanna Be (Your Friend)&quot;<br><audio title="Euphonik &quot;Don\'t Wanna Be (Your Friend)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b738fdbb2bae3d0820f4c62ce4eaf6db91e2ec24" type="audio/mpeg">
-</audio></td>
+  <td>Pop:3<br>Viral:2<br>Dance:2<br>Funk:2<br>Blues.Soul:2<br>Hip hop:2<br>Reggae:2<br>House:1<br>Electronica:1<br>Indie:1<br>Trap:1<br>C.France:1<br>C.China:1<br>Party.Festival:1</td>
+  <td>Euphonik &quot;Don\'t Wanna Be (Your Friend)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b738fdbb2bae3d0820f4c62ce4eaf6db91e2ec24" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4F77ekCL0tJOFm6tWINkhf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2eegvhTewVHbCk2T4Qm49T" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2HRCD6sXwwXtl7FxJBA5du" title="pulse">pulse</a></td>
@@ -339,12 +318,10 @@
 </tr>
 <tr>
   <td>23</td>
-  <td>russian dance pop</td>
+  <td><a href="https://everynoise.com/engenremap-russiandancepop.html" title="russian dance pop">russian dance pop</a></td>
   <td>Dance<br>Pop</td>
-  <td><b>Pop:</b> 17<br>Dance:6<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Japan:1<br>Gospel:1<br>Instrumental:1</td>
-  <td><br><audio title="" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c77178678936eed244e8475c318bff426dea6055" type="audio/mpeg">
-</audio></td>
+  <td>Pop:17<br>Dance:6<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Japan:1<br>Gospel:1<br>Instrumental:1</td>
+  <td><br><audio class="playback" src="https://p.scdn.co/mp3-preview/c77178678936eed244e8475c318bff426dea6055" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/01XFN44RI7293VZIugv49n" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4ALzQHtbGWG5G9J2oLS62w" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4qyLZCu8Qlkv5TwZyXioih" title="pulse">pulse</a></td>
@@ -352,12 +329,10 @@
 </tr>
 <tr>
   <td>24</td>
-  <td>japanese dance pop</td>
+  <td><a href="https://everynoise.com/engenremap-japanesedancepop.html" title="japanese dance pop">japanese dance pop</a></td>
   <td>C.Japan<br>Dance<br>Pop</td>
-  <td><b>Pop:</b> 12<br>Dance:6<br>C.Korea:4<br>C.Japan:4<br>Synth.Electronic:3<br>Punk:1<br>Viral:1<br>C.China:1<br>Gospel:1<br>Instrumental:1</td>
-  <td>Hiroomi Tosaka &quot;BLUE SAPPHIRE&quot;<br><audio title="Hiroomi Tosaka &quot;BLUE SAPPHIRE&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7b257143f508da7803f131d2b7cc3299a40275a7" type="audio/mpeg">
-</audio></td>
+  <td>Pop:12<br>Dance:6<br>C.Korea:4<br>C.Japan:4<br>Synth.Electronic:3<br>Punk:1<br>Viral:1<br>C.China:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>Hiroomi Tosaka &quot;BLUE SAPPHIRE&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7b257143f508da7803f131d2b7cc3299a40275a7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0YAZmJwfOmlDyimcG7smQj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5P41DKksSznDfMjfO0fZ7q" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Z002rC6laTKbLDk5FrGHu" title="pulse">pulse</a></td>
@@ -365,12 +340,10 @@
 </tr>
 <tr>
   <td>25</td>
-  <td>dance pop</td>
+  <td><a href="https://everynoise.com/engenremap-dancepop.html" title="dance pop">dance pop</a></td>
   <td>Dance<br>Pop</td>
-  <td><b>Pop:</b> 13<br>Dance:5<br>Rap:2<br>C.Korea:1<br>Gospel:1<br>Instrumental:1<br>Blues.Soul:1<br>Hip hop:1</td>
-  <td>Britney Spears &quot;Toxic&quot;<br><audio title="Britney Spears &quot;Toxic&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6de2791f84c1d637a0e24734b6df3997cc742da4" type="audio/mpeg">
-</audio></td>
+  <td>Pop:13<br>Dance:5<br>Rap:2<br>C.Korea:1<br>Gospel:1<br>Instrumental:1<br>Blues.Soul:1<br>Hip hop:1</td>
+  <td>Britney Spears &quot;Toxic&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6de2791f84c1d637a0e24734b6df3997cc742da4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2ZIRxkFuqNPMnlY7vL54uK" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3mDa7z4jYrOgZRelRS2vzc" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3rl2wHSooZj57G9zdMTfx0" title="pulse">pulse</a></td>
@@ -378,12 +351,10 @@
 </tr>
 <tr>
   <td>26</td>
-  <td>braindance</td>
+  <td><a href="https://everynoise.com/engenremap-braindance.html" title="braindance">braindance</a></td>
   <td>Dance</td>
-  <td><b>Synth.Electronic:</b> 9<br>Dance:3<br>Experimental:2<br>Psy.Rave:1<br>Techno:1<br>House:1<br>Electronica:1<br>Trance:1<br>Drum and bass:1<br>C.Italy:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Reggae:1</td>
-  <td>Rolando Simmons &quot;Decay - Mixed&quot;<br><audio title="Rolando Simmons &quot;Decay - Mixed&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/de35c6d8e62f0921f857c36b9e3d93c51651daf8" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:9<br>Dance:3<br>Experimental:2<br>Psy.Rave:1<br>Techno:1<br>House:1<br>Electronica:1<br>Trance:1<br>Drum and bass:1<br>C.Italy:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Reggae:1</td>
+  <td>Rolando Simmons &quot;Decay - Mixed&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/de35c6d8e62f0921f857c36b9e3d93c51651daf8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0r1CgdiknCUXvmW7gunLBo" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2u2dzL1hJmxP2GfLN09EcJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7h9RQHj36a8t9Oi3Sns0Wk" title="pulse">pulse</a></td>
@@ -391,12 +362,10 @@
 </tr>
 <tr>
   <td>27</td>
-  <td>magyar retro dance</td>
+  <td><a href="https://everynoise.com/engenremap-magyarretrodance.html" title="magyar retro dance">magyar retro dance</a></td>
   <td>Dance</td>
-  <td><b>Pop:</b> 9<br>Dance:3<br>Punk:1<br>Synth.Electronic:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Folk:1<br>Gospel:1<br>Instrumental:1<br>Reggae:1</td>
-  <td>Baby Sisters &quot;Szeresd a testem&quot;<br><audio title="Baby Sisters &quot;Szeresd a testem&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/01542333b200c0f99c65384ea920de5bb48b29dd" type="audio/mpeg">
-</audio></td>
+  <td>Pop:9<br>Dance:3<br>Punk:1<br>Synth.Electronic:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Folk:1<br>Gospel:1<br>Instrumental:1<br>Reggae:1</td>
+  <td>Baby Sisters &quot;Szeresd a testem&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/01542333b200c0f99c65384ea920de5bb48b29dd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6felxoq1MSnlYbMAXuMJyH" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6cgkE8U8wYUngipqlvULiA" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2J0Ok6DWVWqk04YvnRufta" title="pulse">pulse</a></td>
@@ -404,12 +373,10 @@
 </tr>
 <tr>
   <td>28</td>
-  <td>dance-punk</td>
+  <td><a href="https://everynoise.com/engenremap-dancepunk.html" title="dance-punk">dance-punk</a></td>
   <td>Dance<br>Punk</td>
-  <td><b>Rock:</b> 6<br>Synth.Electronic:5<br>Indie:4<br>Dance:4<br>Electronica:2<br>Punk:2<br>C.Japan:2<br>House:1</td>
-  <td>The Rapture &quot;Echoes&quot;<br><audio title="The Rapture &quot;Echoes&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/704b4ddb7afe9346a76723d741b75d5fb41ae10a" type="audio/mpeg">
-</audio></td>
+  <td>Rock:6<br>Synth.Electronic:5<br>Indie:4<br>Dance:4<br>Electronica:2<br>Punk:2<br>C.Japan:2<br>House:1</td>
+  <td>The Rapture &quot;Echoes&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/704b4ddb7afe9346a76723d741b75d5fb41ae10a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6c6EDGbcWdOSUvTaaUENyg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3rAOglz1cj5SqqUJbUdSmn" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5z55c3qs34Mw4lkgTe9s0k" title="pulse">pulse</a></td>
@@ -417,12 +384,10 @@
 </tr>
 <tr>
   <td>29</td>
-  <td>deep dance pop</td>
+  <td><a href="https://everynoise.com/engenremap-deepdancepop.html" title="deep dance pop">deep dance pop</a></td>
   <td>Dance<br>Pop</td>
-  <td><b>Pop:</b> 13<br>Synth.Electronic:4<br>C.China:2<br>Dance:2<br>Indie:1<br>C.Taiwan:1<br>C.Korea:1<br>Hyperpop:1</td>
-  <td>Tino Coury &quot;Diary&quot;<br><audio title="Tino Coury &quot;Diary&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c02397c2f803eecc2ff4c16b91f81c5e38b601c9" type="audio/mpeg">
-</audio></td>
+  <td>Pop:13<br>Synth.Electronic:4<br>C.China:2<br>Dance:2<br>Indie:1<br>C.Taiwan:1<br>C.Korea:1<br>Hyperpop:1</td>
+  <td>Tino Coury &quot;Diary&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c02397c2f803eecc2ff4c16b91f81c5e38b601c9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2FTKXAfnRZlKfOSPQnvc2O" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5D9SHvaiLaCNeSTzcw7gE4" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1UVc3xy9i5YeAVlvaUVpCh" title="pulse">pulse</a></td>
@@ -430,12 +395,10 @@
 </tr>
 <tr>
   <td>30</td>
-  <td>russian dance</td>
+  <td><a href="https://everynoise.com/engenremap-russiandance.html" title="russian dance">russian dance</a></td>
   <td>Dance</td>
-  <td><b>Pop:</b> 5<br>Rap:4<br>C.Japan:4<br>Viral:3<br>Trap:3<br>Hip hop:3<br>C.Korea:2<br>Dance:2<br>C.Taiwan:1<br>C.China:1<br>Country:1<br>Hyperpop:1</td>
-  <td>Dzhozzi &quot;    (feat. MACAN)&quot;<br><audio title="Dzhozzi &quot;    (feat. MACAN)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2569abbc40c0b708b774fde8df0ae3a63950a575" type="audio/mpeg">
-</audio></td>
+  <td>Pop:5<br>Rap:4<br>C.Japan:4<br>Viral:3<br>Trap:3<br>Hip hop:3<br>C.Korea:2<br>Dance:2<br>C.Taiwan:1<br>C.China:1<br>Country:1<br>Hyperpop:1</td>
+  <td>Dzhozzi &quot;    (feat. MACAN)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2569abbc40c0b708b774fde8df0ae3a63950a575" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0UOoeghqStZk0brm8Ozz5L" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6nThNkXjLLHQkoHcMhplTj" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4vMZg69q3NzzMsDDgzSdBt" title="pulse">pulse</a></td>
@@ -443,12 +406,10 @@
 </tr>
 <tr>
   <td>31</td>
-  <td>finnish dance pop</td>
+  <td><a href="https://everynoise.com/engenremap-finnishdancepop.html" title="finnish dance pop">finnish dance pop</a></td>
   <td>Dance<br>Pop</td>
-  <td><b>Pop:</b> 14<br>Dance:4<br>Rock:1<br>Rap:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Gospel:1<br>Country:1<br>Instrumental:1<br>Hip hop:1<br>Reggae:1</td>
-  <td>Nikke Ankara &quot;Rikkin Prinsessa&quot;<br><audio title="Nikke Ankara &quot;Rikkin Prinsessa&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3d71cd86a965444675ef4e25196591d638dfd238" type="audio/mpeg">
-</audio></td>
+  <td>Pop:14<br>Dance:4<br>Rock:1<br>Rap:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Gospel:1<br>Country:1<br>Instrumental:1<br>Hip hop:1<br>Reggae:1</td>
+  <td>Nikke Ankara &quot;Rikkin Prinsessa&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3d71cd86a965444675ef4e25196591d638dfd238" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/18sKpIGOaFlR5256AqCh2E" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6cPCwRGHX7TBm2aED9DI1y" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5r3IYZTOfh5kUzBLJyw2GY" title="pulse">pulse</a></td>
@@ -456,12 +417,10 @@
 </tr>
 <tr>
   <td>32</td>
-  <td>dancehall mauricien</td>
+  <td><a href="https://everynoise.com/engenremap-dancehallmauricien.html" title="dancehall mauricien">dancehall mauricien</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 4<br>Hip hop:4<br>Funk:2<br>House:1<br>Trap:1<br>Rap:1</td>
-  <td>Platinum Event &quot;Billionaire cartel&quot;<br><audio title="Platinum Event &quot;Billionaire cartel&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6a781df80e05a1c6d5aa1f8fc79184723940c99e" type="audio/mpeg">
-</audio></td>
+  <td>Dance:4<br>Hip hop:4<br>Funk:2<br>House:1<br>Trap:1<br>Rap:1</td>
+  <td>Platinum Event &quot;Billionaire cartel&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6a781df80e05a1c6d5aa1f8fc79184723940c99e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6kZdqAAu0DeWGCtrU7Lu2V" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7t0SGA8cSztZkypydFmYxf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/79VMRBsNibOYPy9XwDtWAi" title="pulse">pulse</a></td>
@@ -469,12 +428,10 @@
 </tr>
 <tr>
   <td>33</td>
-  <td>dancehall colombiano</td>
+  <td><a href="https://everynoise.com/engenremap-dancehallcolombiano.html" title="dancehall colombiano">dancehall colombiano</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 4<br>Reggae:4<br>Pop:3<br>C.Mexico.Latino:3<br>Funk:3<br>Rap:2<br>Hip hop:2<br>Trap:1<br>C.En.Espanol:1</td>
-  <td>Lexx Chanyer &quot;Campeona&quot;<br><audio title="Lexx Chanyer &quot;Campeona&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/bae49e164d718871d28702a4e28e1197916e94ab" type="audio/mpeg">
-</audio></td>
+  <td>Dance:4<br>Reggae:4<br>Pop:3<br>C.Mexico.Latino:3<br>Funk:3<br>Rap:2<br>Hip hop:2<br>Trap:1<br>C.En.Espanol:1</td>
+  <td>Lexx Chanyer &quot;Campeona&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/bae49e164d718871d28702a4e28e1197916e94ab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6FyN2aDjKcSmuy3im6mz5H" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4HjrgLG6bmb0iBy7mBrN0U" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5f9WYlDPLqTMw2QVn6khNl" title="pulse">pulse</a></td>
@@ -482,12 +439,10 @@
 </tr>
 <tr>
   <td>34</td>
-  <td>swedish dancehall</td>
+  <td><a href="https://everynoise.com/engenremap-swedishdancehall.html" title="swedish dancehall">swedish dancehall</a></td>
   <td>Dance</td>
-  <td><b>Reggae:</b> 13<br>Pop:5<br>Dance:3<br>Trap:1<br>C.En.Espanol:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Hip hop:1</td>
-  <td>Kaliffa &quot;Helt seri&quot;<br><audio title="Kaliffa &quot;Helt seri&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/24cd5adb4a252e6b037fa034777bccb55d3b09d4" type="audio/mpeg">
-</audio></td>
+  <td>Reggae:13<br>Pop:5<br>Dance:3<br>Trap:1<br>C.En.Espanol:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Hip hop:1</td>
+  <td>Kaliffa &quot;Helt seri&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/24cd5adb4a252e6b037fa034777bccb55d3b09d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6gXVFkNldt9IAzv1U5YSaj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4YwseAx1X3ziGkdv0Wnn6s" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3smXIZg9aRDU4b7aBUPpWg" title="pulse">pulse</a></td>
@@ -495,12 +450,10 @@
 </tr>
 <tr>
   <td>35</td>
-  <td>uk dancehall</td>
+  <td><a href="https://everynoise.com/engenremap-ukdancehall.html" title="uk dancehall">uk dancehall</a></td>
   <td>Dance</td>
-  <td><b>Reggae:</b> 7<br>Dance:5<br>Hip hop:3<br>Pop:2<br>Rap:2<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1</td>
-  <td>Kojo Funds &quot;Check (with RAYE)&quot;<br><audio title="Kojo Funds &quot;Check (with RAYE)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/3fdbf33d61385c878c4f95f032a745b89bab1e9c" type="audio/mpeg">
-</audio></td>
+  <td>Reggae:7<br>Dance:5<br>Hip hop:3<br>Pop:2<br>Rap:2<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1</td>
+  <td>Kojo Funds &quot;Check (with RAYE)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/3fdbf33d61385c878c4f95f032a745b89bab1e9c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0vcUt06PMmyZUJ9BlAu1Xp" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/66rZONZbRcta1QH0k9jXsC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1CQunuSgEbNLR3PJuqwZQ4" title="pulse">pulse</a></td>
@@ -508,12 +461,10 @@
 </tr>
 <tr>
   <td>36</td>
-  <td>singeli</td>
+  <td><a href="https://everynoise.com/engenremap-singeli.html" title="singeli">singeli</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 3<br>Pop:2<br>Hip hop:2<br>Electronica:1<br>Synth.Electronic:1<br>Rock:1<br>Viral:1<br>Trap:1<br>C.Mexico.Latino:1<br>C.India:1</td>
-  <td>Mzee wa Bwax &quot;Kafubaa&quot;<br><audio title="Mzee wa Bwax &quot;Kafubaa&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/319bc670a332a5199aff647950dd719c956a89ea" type="audio/mpeg">
-</audio></td>
+  <td>Dance:3<br>Pop:2<br>Hip hop:2<br>Electronica:1<br>Synth.Electronic:1<br>Rock:1<br>Viral:1<br>Trap:1<br>C.Mexico.Latino:1<br>C.India:1</td>
+  <td>Mzee wa Bwax &quot;Kafubaa&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/319bc670a332a5199aff647950dd719c956a89ea" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5XOIgM9rUSMgiM8CGfMLjg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3qIawERdEXERE6GQgQwwwS" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/49EME9jk77y6Sz7ikVQShW" title="pulse">pulse</a></td>
@@ -521,12 +472,10 @@
 </tr>
 <tr>
   <td>37</td>
-  <td>dancehall chileno</td>
+  <td><a href="https://everynoise.com/engenremap-dancehallchileno.html" title="dancehall chileno">dancehall chileno</a></td>
   <td>Dance</td>
-  <td><b>Pop:</b> 6<br>Dance:4<br>Reggae:4<br>Rap:3<br>Hip hop:2<br>C.En.Espanol:1<br>C.Spain:1<br>C.Mexico.Latino:1</td>
-  <td>Escala Mercalli &quot;Dices&quot;<br><audio title="Escala Mercalli &quot;Dices&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/19184eedc9c6a3a388c4ba8c2276cb50fef2b443" type="audio/mpeg">
-</audio></td>
+  <td>Pop:6<br>Dance:4<br>Reggae:4<br>Rap:3<br>Hip hop:2<br>C.En.Espanol:1<br>C.Spain:1<br>C.Mexico.Latino:1</td>
+  <td>Escala Mercalli &quot;Dices&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/19184eedc9c6a3a388c4ba8c2276cb50fef2b443" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1lVBYFbzpNc3bhAeXPpY2R" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5lORN5gR0eFYQ9pEYvcTuD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/05BmDei6xt5eNKA89eCiPE" title="pulse">pulse</a></td>
@@ -534,12 +483,10 @@
 </tr>
 <tr>
   <td>38</td>
-  <td>intelligent dance music</td>
+  <td><a href="https://everynoise.com/engenremap-intelligentdancemusic.html" title="intelligent dance music">intelligent dance music</a></td>
   <td>Dance</td>
-  <td><b>Techno:</b> 4<br>Dance:3<br>Ambient.General:3<br>Synth.Electronic:2<br>Experimental:2<br>House:1<br>Electronica:1<br>Breaks:1<br>Reggae:1</td>
-  <td>Autechre &quot;Bike&quot;<br><audio title="Autechre &quot;Bike&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b938d7e5addec0a27260b7002b94fce4fe53f152" type="audio/mpeg">
-</audio></td>
+  <td>Techno:4<br>Dance:3<br>Ambient.General:3<br>Synth.Electronic:2<br>Experimental:2<br>House:1<br>Electronica:1<br>Breaks:1<br>C.Irish:1<br>Reggae:1</td>
+  <td>Autechre &quot;Bike&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b938d7e5addec0a27260b7002b94fce4fe53f152" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3P9lEX8RzKkD3hNVvnoMc5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5TNkPCumevSVC3uhe868uG" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/35g0COCo53SrYeDYB3nM3X" title="pulse">pulse</a></td>
@@ -547,12 +494,10 @@
 </tr>
 <tr>
   <td>39</td>
-  <td>old school dancehall</td>
+  <td><a href="https://everynoise.com/engenremap-oldschooldancehall.html" title="old school dancehall">old school dancehall</a></td>
   <td>Dance</td>
-  <td><b>Reggae:</b> 9<br>Rap:3<br>Dance:3<br>Rock:2<br>Hip hop:1</td>
-  <td>Echo Minott &quot;Hypnotize Me&quot;<br><audio title="Echo Minott &quot;Hypnotize Me&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8f6aeebf10a7c6219568f89795c9c588ff848d96" type="audio/mpeg">
-</audio></td>
+  <td>Reggae:9<br>Rap:3<br>Dance:3<br>Rock:2<br>Hip hop:1</td>
+  <td>Echo Minott &quot;Hypnotize Me&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8f6aeebf10a7c6219568f89795c9c588ff848d96" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/69jZqaBhTVQXMepSKTK2YI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1Sz8RE83sDgfoVpW3H7Tfp" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Vn7iBuQO2vgVEgYZQT2aH" title="pulse">pulse</a></td>
@@ -560,12 +505,10 @@
 </tr>
 <tr>
   <td>40</td>
-  <td>gregorian dance</td>
+  <td><a href="https://everynoise.com/engenremap-gregoriandance.html" title="gregorian dance">gregorian dance</a></td>
   <td>Dance</td>
-  <td><b>Indie:</b> 10<br>Pop:6<br>Psy.Rave:3<br>Dance:2<br>Trance:1<br>Punk:1<br>Rock:1<br>Goth:1<br>C.Korea:1<br>C.Japan:1<br>Hyperpop:1</td>
-  <td>Gregorian Choir &quot;Feel&quot;<br><audio title="Gregorian Choir &quot;Feel&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8d0f01fd6d9a32c44b652d883086bc7ac6cc08eb" type="audio/mpeg">
-</audio></td>
+  <td>Indie:10<br>Pop:6<br>Psy.Rave:3<br>Dance:2<br>Trance:1<br>Punk:1<br>Rock:1<br>Goth:1<br>C.Korea:1<br>C.Japan:1<br>Hyperpop:1</td>
+  <td>Gregorian Choir &quot;Feel&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8d0f01fd6d9a32c44b652d883086bc7ac6cc08eb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0MqHxVPXSBnVvIdp5arLVy" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7dpi7ryGX9iIq34ggOW7DF" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7DaMFtGmLPp5eudKctvxpP" title="pulse">pulse</a></td>
@@ -573,12 +516,10 @@
 </tr>
 <tr>
   <td>41</td>
-  <td>haitian dance</td>
+  <td><a href="https://everynoise.com/engenremap-haitiandance.html" title="haitian dance">haitian dance</a></td>
   <td>Dance</td>
-  <td><b>C.Mexico.Latino:</b> 4<br>Pop:2<br>Dance:2<br>Funk:2<br>Synth.Electronic:1<br>Reggae:1</td>
-  <td>Koudjay &quot;Bwa mare&quot;<br><audio title="Koudjay &quot;Bwa mare&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0675d0fdf0a204b1e20d520db489db997c6836f3" type="audio/mpeg">
-</audio></td>
+  <td>C.Mexico.Latino:4<br>Pop:2<br>Dance:2<br>Funk:2<br>Synth.Electronic:1<br>Reggae:1</td>
+  <td>Koudjay &quot;Bwa mare&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0675d0fdf0a204b1e20d520db489db997c6836f3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1jQvTlkNbsXJfrvRG5jlEC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7KeMR86AEmcWYjRflRWyGu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/29XL0Xy0ZfVPXCdGBTJO92" title="pulse">pulse</a></td>
@@ -586,12 +527,10 @@
 </tr>
 <tr>
   <td>42</td>
-  <td>belly dance</td>
+  <td><a href="https://everynoise.com/engenremap-bellydance.html" title="belly dance">belly dance</a></td>
   <td>Dance</td>
-  <td><b>C.Mexico.Latino:</b> 2<br>C.Japan:2<br>Dance:2<br>Psy.Rave:1<br>Electronica:1<br>Punk:1<br>Indie:1<br>Pop:1<br>C.France:1<br>C.Italy:1<br>Jazz:1<br>Experimental:1<br>Instrumental:1<br>Funk:1<br>Hip hop:1</td>
-  <td>Issam Houshan &quot;Drum Solo Wassan Pharaoun - Bonus Trac<br><audio title="Issam Houshan &quot;Drum Solo Wassan Pharaoun - Bonus Trac" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/eda2eb3f24c8053ec57034bc9394b0354820a2a5" type="audio/mpeg">
-</audio></td>
+  <td>C.Mexico.Latino:2<br>C.Japan:2<br>Dance:2<br>Psy.Rave:1<br>Electronica:1<br>Punk:1<br>Indie:1<br>Pop:1<br>C.France:1<br>C.Italy:1<br>Jazz:1<br>Experimental:1<br>Instrumental:1<br>Funk:1<br>Hip hop:1</td>
+  <td>Issam Houshan &quot;Drum Solo Wassan Pharaoun - Bonus Trac<br><audio class="playback" src="https://p.scdn.co/mp3-preview/eda2eb3f24c8053ec57034bc9394b0354820a2a5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7nRoLyNA8m2l23FFjanoi4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4pzz4PCgvHpY2VMDFwWKPu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3kTt2OylKnbDK1bfonxwS5" title="pulse">pulse</a></td>
@@ -599,12 +538,10 @@
 </tr>
 <tr>
   <td>43</td>
-  <td>dancehall guyanaise</td>
+  <td><a href="https://everynoise.com/engenremap-dancehallguyanaise.html" title="dancehall guyanaise">dancehall guyanaise</a></td>
   <td>Dance</td>
-  <td><b>Hip hop:</b> 7<br>Trap:5<br>Rap:4<br>Pop:2<br>Dance:2<br>C.India:1</td>
-  <td>Lion P &quot;Neva&quot;<br><audio title="Lion P &quot;Neva&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/99e18cbd7f069a92345704319566ee920f83d596" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:7<br>Trap:5<br>Rap:4<br>Pop:2<br>Dance:2<br>C.India:1</td>
+  <td>Lion P &quot;Neva&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/99e18cbd7f069a92345704319566ee920f83d596" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6J3skQbRjVeJObR2OUtQ47" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ct8XEvVRcMCTd308XVHrU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/77Bve8WqcqUGId9Jwue9mY" title="pulse">pulse</a></td>
@@ -612,12 +549,10 @@
 </tr>
 <tr>
   <td>44</td>
-  <td>dancehall queen</td>
+  <td><a href="https://everynoise.com/engenremap-dancehallqueen.html" title="dancehall queen">dancehall queen</a></td>
   <td>Dance</td>
-  <td><b>Hip hop:</b> 5<br>Dance:4<br>Reggae:3<br>Pop:2<br>Trap:2<br>Rap:1</td>
-  <td>Dovey Magnum &quot;Bawl Out&quot;<br><audio title="Dovey Magnum &quot;Bawl Out&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7b58d43026656c57878160f0e875bb09fd2140f7" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:5<br>Dance:4<br>Reggae:3<br>Pop:2<br>Trap:2<br>Rap:1</td>
+  <td>Dovey Magnum &quot;Bawl Out&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7b58d43026656c57878160f0e875bb09fd2140f7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3pzSGkzUJDkkNvNBq1lrx0" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1JwVz5KKyQssM5ecprXfe3" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5EG4We2tV9udhUOfkdi0TO" title="pulse">pulse</a></td>
@@ -625,12 +560,10 @@
 </tr>
 <tr>
   <td>45</td>
-  <td>zimdancehall</td>
+  <td><a href="https://everynoise.com/engenremap-zimdancehall.html" title="zimdancehall">zimdancehall</a></td>
   <td>Dance</td>
-  <td><b>Pop:</b> 8<br>Rap:3<br>Hip hop:3<br>Dance:2<br>Reggae:2<br>C.France:1<br>C.Mexico.Latino:1<br>C.India:1</td>
-  <td>Shinsoman &quot;Why Worry&quot;<br><audio title="Shinsoman &quot;Why Worry&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7c9bda630c30ae3f9dab8c9f3591acfde485e21d" type="audio/mpeg">
-</audio></td>
+  <td>Pop:8<br>Rap:3<br>Hip hop:3<br>Dance:2<br>Reggae:2<br>C.France:1<br>C.Mexico.Latino:1<br>C.India:1</td>
+  <td>Shinsoman &quot;Why Worry&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7c9bda630c30ae3f9dab8c9f3591acfde485e21d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2K3BDsbnwwsJClbZqOQztK" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3TpEglsUsYM5IsM27aNEJJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5CagSlELd59f52LTLwMMz0" title="pulse">pulse</a></td>
@@ -638,12 +571,10 @@
 </tr>
 <tr>
   <td>46</td>
-  <td>dancehall</td>
+  <td><a href="https://everynoise.com/engenremap-dancehall.html" title="dancehall">dancehall</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 6<br>Hip hop:5<br>Reggae:4<br>Rock:1<br>Trap:1</td>
-  <td>Govana &quot;1Matik&quot;<br><audio title="Govana &quot;1Matik&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/638c3ebeb323434e0149984657a9af6277493253" type="audio/mpeg">
-</audio></td>
+  <td>Dance:6<br>Hip hop:5<br>Reggae:4<br>Rock:1<br>Trap:1</td>
+  <td>Govana &quot;1Matik&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/638c3ebeb323434e0149984657a9af6277493253" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4NWfwcqBdZ3wltgu3BESG7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6N8ukzjfsOLYPuKYt2M1TV" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5BGaSqYOZ3cw57BzBydc2n" title="pulse">pulse</a></td>
@@ -651,12 +582,10 @@
 </tr>
 <tr>
   <td>47</td>
-  <td>jamaican dancehall</td>
+  <td><a href="https://everynoise.com/engenremap-jamaicandancehall.html" title="jamaican dancehall">jamaican dancehall</a></td>
   <td>Dance</td>
-  <td><b>Hip hop:</b> 9<br>Dance:4<br>Rap:3<br>Trap:2<br>Reggae:2<br>C.Spain:1</td>
-  <td>IWaata &quot;Whisper&quot;<br><audio title="IWaata &quot;Whisper&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/fd81ba5eb5ee9cfa18835cd24a5b5c822ff6a328" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:9<br>Dance:4<br>Rap:3<br>Trap:2<br>Reggae:2<br>C.Spain:1</td>
+  <td>IWaata &quot;Whisper&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/fd81ba5eb5ee9cfa18835cd24a5b5c822ff6a328" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3hOKZkKbbvR05LZsde28i6" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7q6xAA7jBowXNSnMK0dUX9" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7n5RC6H1babqz1CPMR2jld" title="pulse">pulse</a></td>
@@ -664,12 +593,10 @@
 </tr>
 <tr>
   <td>48</td>
-  <td>irish dance</td>
-  <td>Dance</td>
-  <td><b>Pop:</b> 3<br>Folk:3<br>Dance:2<br>Children:1<br>C.China:1<br>Jazz:1<br>Gospel:1</td>
-  <td>Christopher McGrory &quot;Reels 3 (113) Twigs &amp; Bark&q<br><audio title="Christopher McGrory &quot;Reels 3 (113) Twigs &amp; Bark&q" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/66999a3d818cd3fa6e81ef42ed82c5a6d2a8237b" type="audio/mpeg">
-</audio></td>
+  <td><a href="https://everynoise.com/engenremap-irishdance.html" title="irish dance">irish dance</a></td>
+  <td>C.Irish<br>Dance</td>
+  <td>Pop:3<br>C.Irish:3<br>Folk:3<br>Dance:2<br>Children:1<br>C.China:1<br>Jazz:1<br>Gospel:1</td>
+  <td>Christopher McGrory &quot;Reels 3 (113) Twigs &amp; Bark&q<br><audio class="playback" src="https://p.scdn.co/mp3-preview/66999a3d818cd3fa6e81ef42ed82c5a6d2a8237b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2vx6eFsG12cuB7SfTHJWdz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1MVb0LtPTfZtBygzVMdKds" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Aw2TlcDFwKYw5rWNNFpuc" title="pulse">pulse</a></td>
@@ -677,12 +604,10 @@
 </tr>
 <tr>
   <td>49</td>
-  <td>language</td>
+  <td><a href="https://everynoise.com/engenremap-language.html" title="language">language</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 1</td>
-  <td>Henry Raymond Jr. &quot;Lesson 2 - Basic Phrases&quot;<br><audio title="Henry Raymond Jr. &quot;Lesson 2 - Basic Phrases&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2a70f4112374c1ef28f7cbf7f99695dbaa1715c1" type="audio/mpeg">
-</audio></td>
+  <td>Dance:1</td>
+  <td>Henry Raymond Jr. &quot;Lesson 2 - Basic Phrases&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2a70f4112374c1ef28f7cbf7f99695dbaa1715c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/222ayS1WOFrZVmTeVOFhfd" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6YZLMusIUS6TZA2oO3K1zI" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6YeBDUs4gTRPTE8hlByrgr" title="pulse">pulse</a></td>
@@ -690,12 +615,10 @@
 </tr>
 <tr>
   <td>50</td>
-  <td>contra dance</td>
+  <td><a href="https://everynoise.com/engenremap-contradance.html" title="contra dance">contra dance</a></td>
   <td>Dance</td>
-  <td><b>Folk:</b> 4<br>Bluegrass:4<br>Dance:2<br>Progressive:1<br>Instrumental:1</td>
-  <td>The Free Raisins &quot;Flannel Dreams / Le Releveur&quot;<br><audio title="The Free Raisins &quot;Flannel Dreams / Le Releveur&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2bb648c7539834ad67f8c2cedd281ce198b6ce7c" type="audio/mpeg">
-</audio></td>
+  <td>Folk:4<br>Bluegrass:4<br>C.Irish:2<br>Dance:2<br>Progressive:1<br>Instrumental:1</td>
+  <td>The Free Raisins &quot;Flannel Dreams / Le Releveur&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2bb648c7539834ad67f8c2cedd281ce198b6ce7c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1Q3GggwlxAbMZmH5kmaXYJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Otvo8we0evKjFFv50qAxu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4a0wuYbN96wHagFin2mUf4" title="pulse">pulse</a></td>
@@ -703,12 +626,10 @@
 </tr>
 <tr>
   <td>51</td>
-  <td>lasten satuja</td>
+  <td><a href="https://everynoise.com/engenremap-lastensatuja.html" title="lasten satuja">lasten satuja</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 1<br>Gospel:1<br>Comedy:1</td>
-  <td>Minna Mannonen &quot;Kuningas ja savenvalaja&quot;<br><audio title="Minna Mannonen &quot;Kuningas ja savenvalaja&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/69ef84bafee79004953c639bca3fcacfc462784a" type="audio/mpeg">
-</audio></td>
+  <td>Dance:1<br>Gospel:1<br>Comedy:1</td>
+  <td>Minna Mannonen &quot;Kuningas ja savenvalaja&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/69ef84bafee79004953c639bca3fcacfc462784a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4RhupISMLdVdHZoCJFhWCt" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4YdvAtTmQKYh3bVr2najmG" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Sim0qMhE8jfqm0KCF0ut1" title="pulse">pulse</a></td>
@@ -716,12 +637,10 @@
 </tr>
 <tr>
   <td>52</td>
-  <td>guidance</td>
+  <td><a href="https://everynoise.com/engenremap-guidance.html" title="guidance">guidance</a></td>
   <td>Dance</td>
-  <td><b>Dance:</b> 2<br>C.Germany:1<br>Folk:1<br>Gospel:1</td>
-  <td>Henry N. Raymond &quot;Lesson 1: Basics&quot;<br><audio title="Henry N. Raymond &quot;Lesson 1: Basics&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4a7b306785d69538d21f019767941f2f6b379dac" type="audio/mpeg">
-</audio></td>
+  <td>Dance:2<br>C.Germany:1<br>Folk:1<br>Gospel:1</td>
+  <td>Henry N. Raymond &quot;Lesson 1: Basics&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4a7b306785d69538d21f019767941f2f6b379dac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/78WdKuEUr6gpUMpQpDeaYe" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6VtfxOxrxv43ixe20j7bDv" title="intro">intro</a></td>
   <td>--</td>
@@ -729,12 +648,10 @@
 </tr>
 <tr>
   <td>53</td>
-  <td>british dance band</td>
+  <td><a href="https://everynoise.com/engenremap-britishdanceband.html" title="british dance band">british dance band</a></td>
   <td>Dance</td>
-  <td><b>Folk:</b> 2<br>Dance:2<br>Jazz:1<br>Classical:1<br>Blues.Soul:1</td>
-  <td>Henry Hall &amp; The BBC Dance Orchestra &quot;I\'m Putting<br><audio title="Henry Hall &amp; The BBC Dance Orchestra &quot;I\'m Putting" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2b29852938826ff5966b00b454502e92e72f6edc" type="audio/mpeg">
-</audio></td>
+  <td>Folk:2<br>Dance:2<br>Jazz:1<br>Classical:1<br>Blues.Soul:1</td>
+  <td>Henry Hall &amp; The BBC Dance Orchestra &quot;I\'m Putting<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2b29852938826ff5966b00b454502e92e72f6edc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0siH6CPssx5JoGoqfz5ahx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6NHJ2NYBOzwXGRG5SsnyFZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3UqK3ejomxITxRvK9N0Mhn" title="pulse">pulse</a></td>

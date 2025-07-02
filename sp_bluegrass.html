@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bluegrass: (21 genres)</title>
+    <title>Bluegrass: (19 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
-<strong>Name:</strong> Bluegrass: (21 genres)<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
+<strong>Name:</strong> Bluegrass: (19 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>neo-traditional bluegrass</td>
+  <td><a href="https://everynoise.com/engenremap-neotraditionalbluegrass.html" title="neo-traditional bluegrass">neo-traditional bluegrass</a></td>
   <td>Bluegrass</td>
-  <td><b>Pop:</b> 5<br>Bluegrass:4<br>Folk:3<br>C.Mexico.Latino:2<br>Progressive:1<br>C.India:1<br>Gospel:1<br>Country:1</td>
-  <td>Mile Twelve &quot;City That Drowned&quot;<br><audio title="Mile Twelve &quot;City That Drowned&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e27a112a69f7f71313302eaa946d035e8d9bea56" type="audio/mpeg">
-</audio></td>
+  <td>Pop:5<br>Bluegrass:4<br>Folk:3<br>C.Mexico.Latino:2<br>Progressive:1<br>C.India:1<br>Gospel:1<br>Country:1</td>
+  <td>Mile Twelve &quot;City That Drowned&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e27a112a69f7f71313302eaa946d035e8d9bea56" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6tLZeHeJuat5gr4ygTW4Fc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2FaH0ZlZ9Iv3nStQSO4Wop" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3nCch3c67ng0IW3bThz0Vf" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>ceilidh</td>
+  <td><a href="https://everynoise.com/engenremap-ceilidh.html" title="ceilidh">ceilidh</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 3<br>Folk:2<br>Pop:1</td>
-  <td>Kilfenora C Band &quot;Clare to Here. (Song)&quot;<br><audio title="Kilfenora C Band &quot;Clare to Here. (Song)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8b08a1db49433b285ff0209d19de712ecab70593" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:3<br>Folk:2<br>Pop:1<br>C.Irish:1</td>
+  <td>Kilfenora C Band &quot;Clare to Here. (Song)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8b08a1db49433b285ff0209d19de712ecab70593" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5E9RzzgZEIPkm0RBiU7fhM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0OiqbGICnmCwczaHj1PtcQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/33AZjQrsSQawtEuGz7caBy" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>traditional bluegrass</td>
+  <td><a href="https://everynoise.com/engenremap-traditionalbluegrass.html" title="traditional bluegrass">traditional bluegrass</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 4<br>Folk:3<br>Pop:1<br>C.India:1<br>Gospel:1<br>Instrumental:1</td>
-  <td>The Bluegrass Cardinals &quot;Just A Little Talk With Jesu<br><audio title="The Bluegrass Cardinals &quot;Just A Little Talk With Jesu" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4410a685f781e71c6376c6fc30a2d692227e56c0" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:4<br>Folk:3<br>Pop:1<br>C.Irish:1<br>C.Portugal:1<br>C.India:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>The Bluegrass Cardinals &quot;Just A Little Talk With Jesu<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4410a685f781e71c6376c6fc30a2d692227e56c0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2imk6p7ApJgnOSuEs1Znn9" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2zDkpSttX33xLov0BGXH3T" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2NXct3qMoBE3cRO6dOyU1D" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>cajun</td>
+  <td><a href="https://everynoise.com/engenremap-cajun.html" title="cajun">cajun</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 2<br>Pop:1<br>Folk:1<br>Blues.Soul:1</td>
-  <td>Iry LeJeune &quot;J\'Ai  Au Bal&quot;<br><audio title="Iry LeJeune &quot;J\'Ai  Au Bal&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/aff92c41bfd2216287d48c02359d8dd9ac1aa028" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:2<br>Pop:1<br>C.Irish:1<br>C.Portugal:1<br>Folk:1<br>Blues.Soul:1</td>
+  <td>Iry LeJeune &quot;J\'Ai  Au Bal&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/aff92c41bfd2216287d48c02359d8dd9ac1aa028" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/56Ans10K2OrCDU63QQTHre" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2bjcGRxtJcBSmUVU4ATmTA" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/53blrQgYXX9eMtkZlMInjJ" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>instrumental bluegrass</td>
+  <td><a href="https://everynoise.com/engenremap-instrumentalbluegrass.html" title="instrumental bluegrass">instrumental bluegrass</a></td>
   <td>Bluegrass<br>Instrumental</td>
-  <td><b>Bluegrass:</b> 7<br>Instrumental:4<br>Folk:2<br>Progressive:1<br>C.Mexico.Latino:1<br>Jazz:1<br>Dance:1</td>
-  <td>Adam Steffey &quot;Durang\'s Hornpipe&quot;<br><audio title="Adam Steffey &quot;Durang\'s Hornpipe&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/89d9205616e27e4bdb9ddad9b395819ae7a4d71d" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:7<br>Instrumental:4<br>C.Irish:2<br>Folk:2<br>Progressive:1<br>C.Mexico.Latino:1<br>Jazz:1<br>Dance:1</td>
+  <td>Adam Steffey &quot;Durang\'s Hornpipe&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/89d9205616e27e4bdb9ddad9b395819ae7a4d71d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6VOFPHsVHwKrKYTCxbVheA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0rp8gWPbRkPFDJlEP9yWVv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3QuiOrAzgFHfGnePpKXDEM" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>dragspel</td>
+  <td><a href="https://everynoise.com/engenremap-dragspel.html" title="dragspel">dragspel</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 5<br>Instrumental:3<br>C.Mexico.Latino:1<br>Jazz:1<br>Gospel:1</td>
-  <td>Br Lindqvist &quot;Wiggen&quot;<br><audio title="Br Lindqvist &quot;Wiggen&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e4c1505ccdee3d77f6f7b543f48da80b5594dc61" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:5<br>Instrumental:3<br>C.Mexico.Latino:1<br>C.Irish:1<br>Jazz:1<br>Gospel:1</td>
+  <td>Br Lindqvist &quot;Wiggen&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e4c1505ccdee3d77f6f7b543f48da80b5594dc61" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2MmOxyg27Johuy1EaTrgAU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4VxU9XAAoeSD9V9WXmoAzn" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/34xlLBemSJAYko8jkWV6Rr" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>draaiorgel</td>
+  <td><a href="https://everynoise.com/engenremap-draaiorgel.html" title="draaiorgel">draaiorgel</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 4<br>Folk:2<br>Jazz:1<br>Dance:1<br>Instrumental:1</td>
-  <td>Draaiorgel Theadora &quot;Second Waltz&quot;<br><audio title="Draaiorgel Theadora &quot;Second Waltz&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/118d7a3a815b4a3e4fee8d10e2d05e77eda9eb11" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:4<br>C.Irish:2<br>Folk:2<br>Jazz:1<br>Dance:1<br>Instrumental:1</td>
+  <td>Draaiorgel Theadora &quot;Second Waltz&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/118d7a3a815b4a3e4fee8d10e2d05e77eda9eb11" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4Jw47hdV6OqSfXh5z0HvZJ" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6KaBBaLMubIyF0U7UbXbYQ" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>bluegrass</td>
+  <td><a href="https://everynoise.com/engenremap-bluegrass.html" title="bluegrass">bluegrass</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 8<br>Progressive:1<br>Folk:1<br>Gospel:1<br>Country:1<br>Instrumental:1</td>
-  <td>Del McCoury &quot;High On A Mountain&quot;<br><audio title="Del McCoury &quot;High On A Mountain&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c6aebdc93af4e622c9fac485c9ee4a4640c3ad40" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:8<br>Progressive:1<br>C.Irish:1<br>Folk:1<br>Gospel:1<br>Country:1<br>Instrumental:1</td>
+  <td>Del McCoury &quot;High On A Mountain&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c6aebdc93af4e622c9fac485c9ee4a4640c3ad40" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5JJqX7mabvOf6x2SfHqnzU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2STtSr7USTcAl07NQmNLnY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Izwqngcbxn07sw1RRwrld" title="pulse">pulse</a></td>
@@ -157,50 +164,33 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>irish accordion</td>
-  <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 5<br>Folk:2<br>Instrumental:2<br>Progressive:1<br>C.Mexico.Latino:1<br>Dance:1</td>
-  <td>Jackie Daly &quot;Ashoken Farewell&quot;<br><audio title="Jackie Daly &quot;Ashoken Farewell&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/efbd80e14b46f0eb36d0da57ea1631c766afdeb7" type="audio/mpeg">
-</audio></td>
-  <td><a href="https://open.spotify.com/playlist/2YLa9JlRnHaBVG5cSWxdyY" title="playlist">playlist</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/1g6V1FwH5auwg4Sk9nUMC9" title="intro">intro</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/4IpoT8qutpn7oU3iRaMoZO" title="pulse">pulse</a></td>
-  <td>--</td>
-</tr>
-<tr>
-  <td>10</td>
-  <td>progressive bluegrass</td>
+  <td><a href="https://everynoise.com/engenremap-progressivebluegrass.html" title="progressive bluegrass">progressive bluegrass</a></td>
   <td>Bluegrass<br>Progressive</td>
-  <td><b>Bluegrass:</b> 8<br>Pop:4<br>Folk:4<br>Progressive:2<br>Indie:1<br>Americana:1<br>C.India:1<br>Gospel:1<br>Instrumental:1</td>
-  <td>Sam Bush &quot;Play By Your Own Rules&quot;<br><audio title="Sam Bush &quot;Play By Your Own Rules&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/09b9ed261aaad519d1d29283fcbb96f0cf5a104a" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:8<br>Pop:4<br>Folk:4<br>Progressive:2<br>Indie:1<br>Americana:1<br>C.India:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>Sam Bush &quot;Play By Your Own Rules&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/09b9ed261aaad519d1d29283fcbb96f0cf5a104a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2ychGMsKkWCqjgkgNHommE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7mliGW2VJzeZh4mPkBDmIa" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4mk6gUKAyFJikC8bKsHuzo" title="pulse">pulse</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/15iVBWjPT9UikxbI1eKW5h" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>11</td>
-  <td>bluegrass fiddle</td>
+  <td>10</td>
+  <td><a href="https://everynoise.com/engenremap-bluegrassfiddle.html" title="bluegrass fiddle">bluegrass fiddle</a></td>
   <td>Bluegrass</td>
-  <td><b>Folk:</b> 6<br>Bluegrass:4<br>Instrumental:2<br>Progressive:1<br>Jazz:1<br>Dance:1</td>
-  <td>Aubrey Haynie &quot;Eternal Blues&quot;<br><audio title="Aubrey Haynie &quot;Eternal Blues&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b0d08f82f08707854891cf7f19aed158a2b37647" type="audio/mpeg">
-</audio></td>
+  <td>Folk:6<br>Bluegrass:4<br>Instrumental:2<br>Progressive:1<br>Jazz:1<br>Dance:1</td>
+  <td>Aubrey Haynie &quot;Eternal Blues&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b0d08f82f08707854891cf7f19aed158a2b37647" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2DOzLv2V28INol2KQFiI33" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ViV6dqUg8f6fMtEHnF90h" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2TRgvlSAPinzgGpyya5GUs" title="pulse">pulse</a></td>
   <td>--</td>
 </tr>
 <tr>
-  <td>12</td>
-  <td>bluegrass gospel</td>
+  <td>11</td>
+  <td><a href="https://everynoise.com/engenremap-bluegrassgospel.html" title="bluegrass gospel">bluegrass gospel</a></td>
   <td>Bluegrass<br>Gospel</td>
-  <td><b>Bluegrass:</b> 6<br>Pop:4<br>Country:4<br>Gospel:3<br>Progressive:1<br>C.India:1<br>Folk:1</td>
-  <td>Larry Sparks &quot;Thank You, Lord&quot;<br><audio title="Larry Sparks &quot;Thank You, Lord&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/447741a26fce0078073367d61bc771587ca8b9c4" type="audio/mpeg">
+  <td>Bluegrass:6<br>Pop:4<br>Country:4<br>Gospel:3<br>Progressive:1<br>C.Irish:1<br>C.India:1<br>Folk:1</td>
+  <td>Larry Sparks &quot;Thank You, Lord&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/447741a26fce0078073367d61bc771587ca8b9c4" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/2y2KkDXCURfqez8Uvh8dtY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4PbJF6g1DfS0wZ6nB7zgwe" title="intro">intro</a></td>
@@ -208,90 +198,67 @@
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6XDJXVKrcSFW6DD9FjKiDZ" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>13</td>
-  <td>landler</td>
+  <td>12</td>
+  <td><a href="https://everynoise.com/engenremap-modernoldtime.html" title="modern old-time">modern old-time</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 2<br>C.Mexico.Latino:1<br>Folk:1<br>Instrumental:1</td>
-  <td>L Hans Muff &quot;Steiner Chilbi&quot;<br><audio title="L Hans Muff &quot;Steiner Chilbi&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/70f4488cb001f067fdd662bd8d515d289a0b345a" type="audio/mpeg">
-</audio></td>
-  <td><a href="https://open.spotify.com/playlist/6yZn81v1jP6Phi9S0tm4At" title="playlist">playlist</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/5zD3tw5PwzSRSBkxCaudAq" title="intro">intro</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/5AnCHARmRglUFejpX4MDiK" title="pulse">pulse</a></td>
-  <td>--</td>
-</tr>
-<tr>
-  <td>14</td>
-  <td>modern old-time</td>
-  <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 4<br>Folk:2<br>Progressive:1<br>Pop:1<br>Dance:1<br>Gospel:1<br>Country:1<br>Instrumental:1</td>
-  <td>Rayna Gellert &quot;Tupelo Blues&quot;<br><audio title="Rayna Gellert &quot;Tupelo Blues&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/0873f4ef97eae9bd6f39c72c7c2fe7f540141d0a" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:4<br>Folk:2<br>Progressive:1<br>Pop:1<br>C.Irish:1<br>Dance:1<br>Gospel:1<br>Country:1<br>Instrumental:1</td>
+  <td>Rayna Gellert &quot;Tupelo Blues&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/0873f4ef97eae9bd6f39c72c7c2fe7f540141d0a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2OuXPWzn1Ih8B8u9kPnh5g" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3jmd5OhEQ6XsY6zwqDXhmd" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/40AFuaFRrOtqWhdcxOfrp5" title="pulse">pulse</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6n3IrIAb8NpnYotCWVz8K7" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>15</td>
-  <td>mandolin</td>
+  <td>13</td>
+  <td><a href="https://everynoise.com/engenremap-mandolin.html" title="mandolin">mandolin</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 5<br>Instrumental:3<br>C.Mexico.Latino:2<br>Progressive:1<br>Folk:1<br>Jazz:1<br>Dance:1<br>Classical:1</td>
-  <td>Mike Marshall &quot;Big Country - Instrumental&quot;<br><audio title="Mike Marshall &quot;Big Country - Instrumental&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4cdf7113a6f7e5df0438f59fd2deece0174e6a8b" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:5<br>Instrumental:3<br>C.Mexico.Latino:2<br>Progressive:1<br>C.Irish:1<br>Folk:1<br>Jazz:1<br>Dance:1<br>Classical:1</td>
+  <td>Mike Marshall &quot;Big Country - Instrumental&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4cdf7113a6f7e5df0438f59fd2deece0174e6a8b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/76roKwsb3rNacnWYupZEgb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3lVpWllHSmgvN9JWanQWoY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3gBwZK1woK0husHtke4VbP" title="pulse">pulse</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6uf6R1svBSjMIU858B0OPm" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>16</td>
-  <td>viola caipira</td>
+  <td>14</td>
+  <td><a href="https://everynoise.com/engenremap-violacaipira.html" title="viola caipira">viola caipira</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 4<br>C.Mexico.Latino:3<br>Folk:2<br>Gospel:1<br>Instrumental:1</td>
-  <td>Cachoeira &quot;Viola marruda&quot;<br><audio title="Cachoeira &quot;Viola marruda&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b731c18c8e4313ec5e2ee82d5f75f22eb45cf8d4" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:4<br>C.Mexico.Latino:3<br>Folk:2<br>C.Irish:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>Cachoeira &quot;Viola marruda&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b731c18c8e4313ec5e2ee82d5f75f22eb45cf8d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2iGD86hTlTtzdQmh3prGPr" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7BkR5KrdlnJIhv8fSN1AKT" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Fr1xwNV9tS9utCwdctyrw" title="pulse">pulse</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3b4Y08hUujBvCc3Wgo3hQn" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>17</td>
-  <td>string band</td>
+  <td>15</td>
+  <td><a href="https://everynoise.com/engenremap-stringband.html" title="string band">string band</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 5<br>C.Mexico.Latino:4<br>Folk:2<br>Emo:1<br>Gospel:1<br>Instrumental:1</td>
-  <td>Chance McCoy &amp; The Appalachian String Band &quot;Gospe<br><audio title="Chance McCoy &amp; The Appalachian String Band &quot;Gospe" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/674dbe8dd763c26ede6e81d96730b7159f627658" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:5<br>C.Mexico.Latino:4<br>C.Irish:2<br>Folk:2<br>Emo:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>Chance McCoy &amp; The Appalachian String Band &quot;Gospe<br><audio class="playback" src="https://p.scdn.co/mp3-preview/674dbe8dd763c26ede6e81d96730b7159f627658" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1DV8BCntskEpuTae25lsNl" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5roNd1Fqy9DaNoouNZt4UU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/19VpIp1jGkHilsEErCkC2l" title="pulse">pulse</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4PxxkkLhd2POVbdsdqLDCD" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>18</td>
-  <td>banjo</td>
+  <td>16</td>
+  <td><a href="https://everynoise.com/engenremap-banjo.html" title="banjo">banjo</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 8<br>Folk:3<br>C.Mexico.Latino:2<br>Progressive:1<br>Pop:1<br>Gospel:1<br>Instrumental:1</td>
-  <td>J.D. Crowe &amp; The New South &quot;Old Home Place&quot;<br><audio title="J.D. Crowe &amp; The New South &quot;Old Home Place&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7dc20a1799c5603653180febde3b68c49a1104e2" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:8<br>Folk:3<br>C.Mexico.Latino:2<br>Progressive:1<br>Pop:1<br>C.Irish:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>J.D. Crowe &amp; The New South &quot;Old Home Place&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7dc20a1799c5603653180febde3b68c49a1104e2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6xIivwu6v2453oCCJk6Wxo" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4o1VT8irfslcCpe84BBiDm" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ProbFt20oiqJxigPLB6pK" title="pulse">pulse</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/12fWYtk5Ift8YM2A6QHUlP" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>19</td>
-  <td>old-time fiddle</td>
+  <td>17</td>
+  <td><a href="https://everynoise.com/engenremap-oldtimefiddle.html" title="old-time fiddle">old-time fiddle</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 4<br>Folk:3<br>Pop:1<br>Dance:1<br>Gospel:1</td>
-  <td>Rhys Jones, Jeff Miller And Jim Nelson &quot;Possum On A R<br><audio title="Rhys Jones, Jeff Miller And Jim Nelson &quot;Possum On A R" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/aaefe9826e6af840594136527768f5cbf7cab6ea" type="audio/mpeg">
+  <td>Bluegrass:4<br>Folk:3<br>Pop:1<br>C.Irish:1<br>Dance:1<br>Gospel:1</td>
+  <td>Rhys Jones, Jeff Miller And Jim Nelson &quot;Possum On A R<br><audio class="playback" src="https://p.scdn.co/mp3-preview/aaefe9826e6af840594136527768f5cbf7cab6ea" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/272JEE1LOwGe3QjMOo59IX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/065rbvAvRVoLTSmiK8ADlx" title="intro">intro</a></td>
@@ -299,26 +266,22 @@
   <td>--</td>
 </tr>
 <tr>
-  <td>20</td>
-  <td>irish banjo</td>
-  <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 5<br>Instrumental:3<br>Folk:2<br>C.Mexico.Latino:1<br>Jazz:1<br>Dance:1</td>
-  <td>Peter Carberry and Angelina Carberry and John Blake &quot;<br><audio title="Peter Carberry and Angelina Carberry and John Blake &quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/231f587acca7bb0621307cf5623969f124c55993" type="audio/mpeg">
-</audio></td>
+  <td>18</td>
+  <td><a href="https://everynoise.com/engenremap-irishbanjo.html" title="irish banjo">irish banjo</a></td>
+  <td>Bluegrass<br>C.Irish</td>
+  <td>Bluegrass:5<br>C.Irish:4<br>Instrumental:3<br>Folk:2<br>C.Mexico.Latino:1<br>Jazz:1<br>Dance:1</td>
+  <td>Peter Carberry and Angelina Carberry and John Blake &quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/231f587acca7bb0621307cf5623969f124c55993" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2wL2qCBk0diEm7vQEEx9Qa" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/609lX5ih12R7qS6fgEwB5P" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1oI8fMEa0HUb9hpTRR8UeW" title="pulse">pulse</a></td>
   <td>--</td>
 </tr>
 <tr>
-  <td>21</td>
-  <td>clawhammer banjo</td>
+  <td>19</td>
+  <td><a href="https://everynoise.com/engenremap-clawhammerbanjo.html" title="clawhammer banjo">clawhammer banjo</a></td>
   <td>Bluegrass</td>
-  <td><b>Bluegrass:</b> 4<br>Folk:3<br>Jazz:1<br>Dance:1<br>Country:1</td>
-  <td>Bob Carlin &quot;The Falls Of Richmond&quot;<br><audio title="Bob Carlin &quot;The Falls Of Richmond&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/21126dbdce7dfcad833771f51be48510b301b1f1" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:4<br>Folk:3<br>C.Irish:1<br>Jazz:1<br>Dance:1<br>Country:1</td>
+  <td>Bob Carlin &quot;The Falls Of Richmond&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/21126dbdce7dfcad833771f51be48510b301b1f1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5b3ce3FIod5FdBxsshVYIV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Rqgxv6jIw2MS3z4NiDwqE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5HVpPiExU9Z6IbANVK9YHA" title="pulse">pulse</a></td>

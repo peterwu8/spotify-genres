@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Progressive: (43 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>deep progressive house</td>
+  <td><a href="https://everynoise.com/engenremap-deepprogressivehouse.html" title="deep progressive house">deep progressive house</a></td>
   <td>House<br>Progressive</td>
-  <td><b>Techno:</b> 15<br>Progressive:4<br>House:4<br>Trance:1<br>Breaks:1<br>Synth.Electronic:1<br>C.France:1<br>C.Italy:1<br>C.Spain:1<br>C.India:1</td>
-  <td>Ewan Rill &quot;10 Targets&quot;<br><audio title="Ewan Rill &quot;10 Targets&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/906106a0896e6e66dcfe53dd0164e3377087465c" type="audio/mpeg">
-</audio></td>
+  <td>Techno:15<br>Progressive:4<br>House:4<br>Trance:1<br>Breaks:1<br>Synth.Electronic:1<br>C.France:1<br>C.Italy:1<br>C.Spain:1<br>C.India:1</td>
+  <td>Ewan Rill &quot;10 Targets&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/906106a0896e6e66dcfe53dd0164e3377087465c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7LcYmCAzj3ZFMc6mACdwP0" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2RWsjYJdFd7sQo2Pt2lY51" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/09g90buJpXobxdLIkBmoFO" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>dark progressive house</td>
+  <td><a href="https://everynoise.com/engenremap-darkprogressivehouse.html" title="dark progressive house">dark progressive house</a></td>
   <td>House<br>Progressive</td>
-  <td><b>Techno:</b> 13<br>House:5<br>Progressive:4<br>Synth.Electronic:2<br>Trance:1<br>Breaks:1<br>C.France:1<br>C.Italy:1<br>C.India:1</td>
-  <td>Marcelo Vasami &quot;A Fantastic Fear of Everything - Cid <br><audio title="Marcelo Vasami &quot;A Fantastic Fear of Everything - Cid " controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a83e607124c27372e37729d22be816e541d394fd" type="audio/mpeg">
-</audio></td>
+  <td>Techno:13<br>House:5<br>Progressive:4<br>Synth.Electronic:2<br>Trance:1<br>Breaks:1<br>C.France:1<br>C.Italy:1<br>C.India:1</td>
+  <td>Marcelo Vasami &quot;A Fantastic Fear of Everything - Cid <br><audio class="playback" src="https://p.scdn.co/mp3-preview/a83e607124c27372e37729d22be816e541d394fd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/49CisrDGk8SedCS99g0blP" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1fCd9hqjmuwT7y6a4t53UZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5RacbJeS2LSDaL3HJyIYlF" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>progressive psytrance</td>
+  <td><a href="https://everynoise.com/engenremap-progressivepsytrance.html" title="progressive psytrance">progressive psytrance</a></td>
   <td>Progressive<br>Psy.Rave</td>
-  <td><b>Psy.Rave:</b> 6<br>Techno:5<br>Trance:3<br>Synth.Electronic:3<br>Progressive:2<br>Breaks:1<br>C.Mexico.Latino:1<br>C.Germany:1</td>
-  <td>Sideform &quot;Dropper - Remix&quot;<br><audio title="Sideform &quot;Dropper - Remix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e4cc708f81626d3868bb3bafd466acb572650ca3" type="audio/mpeg">
-</audio></td>
+  <td>Psy.Rave:6<br>Techno:5<br>Trance:3<br>Synth.Electronic:3<br>Progressive:2<br>Breaks:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>C.Portugal:1</td>
+  <td>Sideform &quot;Dropper - Remix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e4cc708f81626d3868bb3bafd466acb572650ca3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4rmUSS4GQxpHjuZPf6eiSz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/72wplVdk4w3c66g6Qtqiv6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0dtNAYoPXwqfi1Ln3u5Gf4" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>progressive breaks</td>
+  <td><a href="https://everynoise.com/engenremap-progressivebreaks.html" title="progressive breaks">progressive breaks</a></td>
   <td>Breaks<br>Progressive</td>
-  <td><b>Synth.Electronic:</b> 6<br>Progressive:5<br>Techno:4<br>House:4<br>Trance:4<br>Breaks:3<br>Psy.Rave:2<br>C.Mexico.Latino:1<br>C.Japan:1</td>
-  <td>Rick Tedesco &quot;Inner Light&quot;<br><audio title="Rick Tedesco &quot;Inner Light&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e52786e40dfabcf096a22dc103d91f2c434ab628" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:6<br>Progressive:5<br>Techno:4<br>House:4<br>Trance:4<br>Breaks:3<br>Psy.Rave:2<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Irish:1</td>
+  <td>Rick Tedesco &quot;Inner Light&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e52786e40dfabcf096a22dc103d91f2c434ab628" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7HLEjm2fEZsErggSthuFmZ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5BrlbyZksPldeaxiEzObjL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/528Yi3qpG9tlJTtAD7SCj9" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>japanese progressive house</td>
+  <td><a href="https://everynoise.com/engenremap-japaneseprogressivehouse.html" title="japanese progressive house">japanese progressive house</a></td>
   <td>C.Japan<br>House<br>Progressive</td>
-  <td><b>Trance:</b> 7<br>Progressive:3<br>Synth.Electronic:3<br>House:2<br>C.Japan:2<br>Hip hop:2<br>Uplifting:1<br>Breaks:1<br>Drum and bass:1<br>C.Italy:1<br>C.Germany:1<br>Dance:1</td>
-  <td>KaNa &quot;Flower of Snow - Shingo NAKAMURA Remix&quot;<br><audio title="KaNa &quot;Flower of Snow - Shingo NAKAMURA Remix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/62e57bed71faee191b714ef9b038fc8470e56eaa" type="audio/mpeg">
-</audio></td>
+  <td>Trance:7<br>Progressive:3<br>Synth.Electronic:3<br>House:2<br>C.Japan:2<br>Hip hop:2<br>Uplifting:1<br>Breaks:1<br>Drum and bass:1<br>C.Italy:1<br>C.Germany:1<br>Dance:1</td>
+  <td>KaNa &quot;Flower of Snow - Shingo NAKAMURA Remix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/62e57bed71faee191b714ef9b038fc8470e56eaa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2Z3QlVfnnWJMxseVVlPCAw" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0wafHnhCmWhZGg0tpRLHo3" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5XjIjw0QaIwjTgJ5fjHUB2" title="pulse">pulse</a></td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>deep progressive trance</td>
+  <td><a href="https://everynoise.com/engenremap-deepprogressivetrance.html" title="deep progressive trance">deep progressive trance</a></td>
   <td>Progressive<br>Trance</td>
-  <td><b>Trance:</b> 7<br>Synth.Electronic:4<br>Progressive:3<br>Dance:2<br>House:1<br>Hardstyle:1<br>Drum and bass:1<br>C.Italy:1<br>C.Korea:1<br>C.Japan:1<br>C.Germany:1<br>Hip hop:1</td>
-  <td>Global Experience &quot;Madras&quot;<br><audio title="Global Experience &quot;Madras&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/bc592a13c8524f7b13eac118ce8e2fd6165d5d32" type="audio/mpeg">
-</audio></td>
+  <td>Trance:7<br>Synth.Electronic:4<br>Progressive:3<br>Dance:2<br>House:1<br>Hardstyle:1<br>Drum and bass:1<br>C.Italy:1<br>C.Korea:1<br>C.Japan:1<br>C.Germany:1<br>Hip hop:1</td>
+  <td>Global Experience &quot;Madras&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/bc592a13c8524f7b13eac118ce8e2fd6165d5d32" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0kUfDiMQYGivJnakru5Vh0" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5qz4RsSTnx3nTNXQFzbm1c" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6vPaFli43pMwojoUAl1I3b" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>progressive trance house</td>
+  <td><a href="https://everynoise.com/engenremap-progressivetrancehouse.html" title="progressive trance house">progressive trance house</a></td>
   <td>House<br>Progressive<br>Trance</td>
-  <td><b>Synth.Electronic:</b> 10<br>Techno:5<br>Progressive:4<br>House:3<br>Trance:3<br>Psy.Rave:1<br>Breaks:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1</td>
-  <td>Jacob Henry &quot;Hopeful Romantic - Johan Vilborg Remix&q<br><audio title="Jacob Henry &quot;Hopeful Romantic - Johan Vilborg Remix&q" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/45abcadc7ba8c3bd37ef07ae5d22410005ce4e3d" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:10<br>Techno:5<br>Progressive:4<br>House:3<br>Trance:3<br>Psy.Rave:1<br>Breaks:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1<br>C.Irish:1</td>
+  <td>Jacob Henry &quot;Hopeful Romantic - Johan Vilborg Remix&q<br><audio class="playback" src="https://p.scdn.co/mp3-preview/45abcadc7ba8c3bd37ef07ae5d22410005ce4e3d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3JDDP1JjveG5kUAnEIQK1l" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3JL7LqyEsM6dGQlLAQl6xz" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/40Xjn2yTK712XCeue5t2my" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>progressive uplifting trance</td>
+  <td><a href="https://everynoise.com/engenremap-progressiveupliftingtrance.html" title="progressive uplifting trance">progressive uplifting trance</a></td>
   <td>Progressive<br>Trance<br>Uplifting</td>
-  <td><b>Trance:</b> 9<br>Uplifting:5<br>Progressive:3<br>Synth.Electronic:1<br>Industrial:1<br>Rock:1</td>
-  <td>A.r.d.i. &quot;Lost In The Dark&quot;<br><audio title="A.r.d.i. &quot;Lost In The Dark&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b5b63d8848e4a21ec4a969ab28c13ba76f0809a6" type="audio/mpeg">
-</audio></td>
+  <td>Trance:9<br>Uplifting:5<br>Progressive:3<br>Synth.Electronic:1<br>Industrial:1<br>Rock:1</td>
+  <td>A.r.d.i. &quot;Lost In The Dark&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b5b63d8848e4a21ec4a969ab28c13ba76f0809a6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7u6WmGIdrl2LFd73vZhBJQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0DATKc0DmcY7EPIis3f48e" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7tJjBdOAso48RvqAVe789k" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>classic progressive house</td>
+  <td><a href="https://everynoise.com/engenremap-classicprogressivehouse.html" title="classic progressive house">classic progressive house</a></td>
   <td>House<br>Progressive</td>
-  <td><b>Synth.Electronic:</b> 6<br>House:5<br>Trance:4<br>Techno:3<br>Progressive:2<br>Experimental:2<br>Breaks:1<br>C.Korea:1<br>Dance:1</td>
-  <td>Bedrock &quot;Beautiful Strange - ambient mix&quot;<br><audio title="Bedrock &quot;Beautiful Strange - ambient mix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a6f3294089899cc97242f9460aaaea669566214e" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:6<br>House:5<br>Trance:4<br>Techno:3<br>Progressive:2<br>Experimental:2<br>Breaks:1<br>C.Korea:1<br>C.Irish:1<br>Dance:1</td>
+  <td>Bedrock &quot;Beautiful Strange - ambient mix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a6f3294089899cc97242f9460aaaea669566214e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7sbU5WLJxjZeBzFCF1HSHX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6zdQ8jSJ311dLWRNHTv6OI" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ldTT9ax2lVQbWeKy8GT7W" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>progressive trance</td>
+  <td><a href="https://everynoise.com/engenremap-progressivetrance.html" title="progressive trance">progressive trance</a></td>
   <td>Progressive<br>Trance</td>
-  <td><b>Trance:</b> 10<br>Uplifting:4<br>Progressive:4<br>Synth.Electronic:4<br>Punk:2<br>House:1<br>Breaks:1<br>Industrial:1<br>Vocal:1<br>Chill:1<br>Dance:1<br>Gospel:1</td>
-  <td>Adrian Alexander &quot;Lights Out&quot;<br><audio title="Adrian Alexander &quot;Lights Out&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2c2f857825515d75a1c789e8f4e63abe48065140" type="audio/mpeg">
-</audio></td>
+  <td>Trance:10<br>Uplifting:4<br>Progressive:4<br>Synth.Electronic:4<br>Punk:2<br>House:1<br>Breaks:1<br>Industrial:1<br>Vocal:1<br>Chill:1<br>Dance:1<br>Gospel:1</td>
+  <td>Adrian Alexander &quot;Lights Out&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2c2f857825515d75a1c789e8f4e63abe48065140" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3LfgRDV6HceI9exDCtTJo3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ddDUn7yojoeehayW2m31J" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4xewUOBRLZtLeXWiYDHE4a" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>progressive electro house</td>
+  <td><a href="https://everynoise.com/engenremap-progressiveelectrohouse.html" title="progressive electro house">progressive electro house</a></td>
   <td>House<br>Progressive<br>Synth.Electronic</td>
-  <td><b>House:</b> 9<br>Synth.Electronic:4<br>Progressive:3<br>Pop:2<br>Dubstep:2<br>Dance:1</td>
-  <td>DubVision &quot;Electricity&quot;<br><audio title="DubVision &quot;Electricity&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/fc6c1d0156677a3527dc7de9299a7137262761a4" type="audio/mpeg">
-</audio></td>
+  <td>House:9<br>Synth.Electronic:4<br>Progressive:3<br>Pop:2<br>Dubstep:2<br>Dance:1</td>
+  <td>DubVision &quot;Electricity&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/fc6c1d0156677a3527dc7de9299a7137262761a4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6j9xPeEsHgCS1eZW0HsIsk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0XAM1XaONWgDt0Sp1IdyFi" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6krviJ6qoGTWQjncEkYlhj" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>progressive house</td>
+  <td><a href="https://everynoise.com/engenremap-progressivehouse.html" title="progressive house">progressive house</a></td>
   <td>House<br>Progressive</td>
-  <td><b>Trance:</b> 8<br>House:7<br>Progressive:5<br>Uplifting:2<br>Synth.Electronic:2<br>Dance:2<br>Dubstep:2<br>Pop:1<br>Vocal:1<br>C.Germany:1<br>Gospel:1</td>
-  <td>Maor Levi &quot;Let You Go&quot;<br><audio title="Maor Levi &quot;Let You Go&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/9f18c46f531313e319ff8db9554268e7bb1c586a" type="audio/mpeg">
-</audio></td>
+  <td>Trance:8<br>House:7<br>Progressive:5<br>Uplifting:2<br>Synth.Electronic:2<br>Dance:2<br>Dubstep:2<br>Pop:1<br>Vocal:1<br>C.Germany:1<br>Gospel:1</td>
+  <td>Maor Levi &quot;Let You Go&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/9f18c46f531313e319ff8db9554268e7bb1c586a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3ApHTzZrOMqtDhnyiBSSci" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/26Uy5phdS4DQVkz6G7tL0p" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/36FRz1sl84pHsRpzAJ7pFU" title="pulse">pulse</a></td>
@@ -209,11 +208,11 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>progressive metalcore</td>
+  <td><a href="https://everynoise.com/engenremap-progressivemetalcore.html" title="progressive metalcore">progressive metalcore</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 17<br>Progressive:2<br>Hardstyle:2<br>C.Germany:2<br>Synth.Electronic:1<br>C.Italy:1<br>C.Taiwan:1<br>Gospel:1</td>
-  <td>Above, Below &quot;Scorpion&quot;<br><audio title="Above, Below &quot;Scorpion&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f76d9b4dd545927af3dd26dd9397966bc9532738" type="audio/mpeg">
+  <td>Metal:17<br>Progressive:2<br>Hardstyle:2<br>C.Germany:2<br>Synth.Electronic:1<br>C.Italy:1<br>C.Taiwan:1<br>Gospel:1</td>
+  <td>Above, Below &quot;Scorpion&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f76d9b4dd545927af3dd26dd9397966bc9532738" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://open.spotify.com/playlist/2dNnJRyRUcwVBuAtBQTrQQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5sr6JH8ud4PD2kMnXdgH1x" title="intro">intro</a></td>
@@ -222,12 +221,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>instrumental progressive metal</td>
+  <td><a href="https://everynoise.com/engenremap-instrumentalprogressivemetal.html" title="instrumental progressive metal">instrumental progressive metal</a></td>
   <td>Instrumental<br>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 8<br>Instrumental:4<br>Progressive:2<br>Punk:1<br>Synth.Electronic:1<br>Indie:1<br>Rock:1<br>C.China:1<br>C.Germany:1<br>Reggae:1</td>
-  <td>Joel Lindfors &quot;Dawn&quot;<br><audio title="Joel Lindfors &quot;Dawn&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5c308edde72e1b7306bbcb5129a61d2072e13d57" type="audio/mpeg">
-</audio></td>
+  <td>Metal:8<br>Instrumental:4<br>Progressive:2<br>Punk:1<br>Synth.Electronic:1<br>Indie:1<br>Rock:1<br>C.China:1<br>C.Germany:1<br>Reggae:1</td>
+  <td>Joel Lindfors &quot;Dawn&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5c308edde72e1b7306bbcb5129a61d2072e13d57" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4KcMILB3MEuiqCtL03JvX8" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3FkVRaK7h9f8RbPMRfKGNh" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3jlV9JaadEh1Vg5keJuPT5" title="pulse">pulse</a></td>
@@ -235,12 +232,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>progressive deathcore</td>
+  <td><a href="https://everynoise.com/engenremap-progressivedeathcore.html" title="progressive deathcore">progressive deathcore</a></td>
   <td>Progressive</td>
-  <td><b>Metal:</b> 7<br>Progressive:2<br>C.Germany:2<br>Hardstyle:1<br>C.Taiwan:1<br>Gospel:1</td>
-  <td>A Trust Unclean &quot;Whore - EP Edit&quot;<br><audio title="A Trust Unclean &quot;Whore - EP Edit&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/89f8c19c64204444565867a17448dd8148fe6ef6" type="audio/mpeg">
-</audio></td>
+  <td>Metal:7<br>Progressive:2<br>C.Germany:2<br>Hardstyle:1<br>C.Taiwan:1<br>Gospel:1</td>
+  <td>A Trust Unclean &quot;Whore - EP Edit&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/89f8c19c64204444565867a17448dd8148fe6ef6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/69bfEySBI2rIRQbBJ1f383" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2DomWxW9cBn182lfCbZT0z" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4HXF7KVkYyJrci5Tkxpkdk" title="pulse">pulse</a></td>
@@ -248,12 +243,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>melodic progressive metal</td>
+  <td><a href="https://everynoise.com/engenremap-melodicprogressivemetal.html" title="melodic progressive metal">melodic progressive metal</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 17<br>Progressive:8<br>C.Italy:3<br>Hardstyle:2<br>Goth:1<br>Emo:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Folk:1<br>Gospel:1</td>
-  <td>Lost In Thought &quot;Seek to Find&quot;<br><audio title="Lost In Thought &quot;Seek to Find&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2445f3d281509644da8993d6fe16e6ec7c9485e7" type="audio/mpeg">
-</audio></td>
+  <td>Metal:17<br>Progressive:8<br>C.Italy:3<br>Hardstyle:2<br>Goth:1<br>Emo:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Folk:1<br>Gospel:1</td>
+  <td>Lost In Thought &quot;Seek to Find&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2445f3d281509644da8993d6fe16e6ec7c9485e7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6fvk63guE3C9CwuBHTnELe" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5bzFQgXV2Pqy6n0OQVdWy3" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0f38OLJEbftZjiBvcsfrk4" title="pulse">pulse</a></td>
@@ -261,12 +254,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>finnish progressive metal</td>
+  <td><a href="https://everynoise.com/engenremap-finnishprogressivemetal.html" title="finnish progressive metal">finnish progressive metal</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 22<br>Folk:3<br>Progressive:2<br>Goth:2<br>C.Italy:1</td>
-  <td>Wintersun &quot;Beyond the Dark Sun&quot;<br><audio title="Wintersun &quot;Beyond the Dark Sun&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/9c212f73c3034ad836fd24f404345b26e05163f2" type="audio/mpeg">
-</audio></td>
+  <td>Metal:22<br>Folk:3<br>Progressive:2<br>Goth:2<br>C.Italy:1</td>
+  <td>Wintersun &quot;Beyond the Dark Sun&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/9c212f73c3034ad836fd24f404345b26e05163f2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1B8OWWOqc7hn1ajJpv4768" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -274,12 +265,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>progressive power metal</td>
+  <td><a href="https://everynoise.com/engenremap-progressivepowermetal.html" title="progressive power metal">progressive power metal</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 19<br>Progressive:5<br>C.Italy:3<br>Hardstyle:2<br>C.Mexico.Latino:1<br>C.Germany:1<br>Folk:1<br>Gospel:1<br>Classical:1</td>
-  <td>Pyramaze &quot;Back for More&quot;<br><audio title="Pyramaze &quot;Back for More&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ad1a7533cb26da4d1c525fb036b0ef351461074d" type="audio/mpeg">
-</audio></td>
+  <td>Metal:19<br>Progressive:5<br>C.Italy:3<br>Hardstyle:2<br>C.Mexico.Latino:1<br>C.Germany:1<br>Folk:1<br>Gospel:1<br>Classical:1</td>
+  <td>Pyramaze &quot;Back for More&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ad1a7533cb26da4d1c525fb036b0ef351461074d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/19WG6CV3V43ALyOvQFv5U8" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1sMoIzABTj7GeukEJkt1UL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/38Gr5WLNgEwONyZTExxKrC" title="pulse">pulse</a></td>
@@ -287,12 +276,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>progressive post-hardcore</td>
+  <td><a href="https://everynoise.com/engenremap-progressiveposthardcore.html" title="progressive post-hardcore">progressive post-hardcore</a></td>
   <td>Hardstyle<br>Progressive</td>
-  <td><b>Metal:</b> 5<br>Rock:5<br>Emo:4<br>Progressive:3<br>Hardstyle:2<br>Indie:2<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1</td>
-  <td>Sianvar &quot;1100 Days&quot;<br><audio title="Sianvar &quot;1100 Days&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b158de2ea2115e70967a6f5c14732c76fa4557ec" type="audio/mpeg">
-</audio></td>
+  <td>Metal:5<br>Rock:5<br>Emo:4<br>Progressive:3<br>Hardstyle:2<br>Indie:2<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1</td>
+  <td>Sianvar &quot;1100 Days&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b158de2ea2115e70967a6f5c14732c76fa4557ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4tzo97AF7cGmRpYnnMosHP" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/60X9kg6qh6MQIrp0zqPxDg" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3UYcJoNiRcMTn4gV6BJmQt" title="pulse">pulse</a></td>
@@ -300,12 +287,10 @@
 </tr>
 <tr>
   <td>20</td>
-  <td>brazilian progressive metal</td>
+  <td><a href="https://everynoise.com/engenremap-brazilianprogressivemetal.html" title="brazilian progressive metal">brazilian progressive metal</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 21<br>Progressive:5<br>C.Italy:3<br>Folk:2<br>Hardstyle:1<br>Goth:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Gospel:1</td>
-  <td>Almah &quot;Breathe&quot;<br><audio title="Almah &quot;Breathe&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d5e31c56621378aee7902a7caa880b7eadc0d23b" type="audio/mpeg">
-</audio></td>
+  <td>Metal:21<br>Progressive:5<br>C.Italy:3<br>Folk:2<br>Hardstyle:1<br>Goth:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Gospel:1</td>
+  <td>Almah &quot;Breathe&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d5e31c56621378aee7902a7caa880b7eadc0d23b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1kymVzLVYVIaSutk4cwaRX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6uSK66KbAHvvk1qKVVOOPz" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1OxjamLa4RB8W3LzqrhNmT" title="pulse">pulse</a></td>
@@ -313,12 +298,10 @@
 </tr>
 <tr>
   <td>21</td>
-  <td>italian progressive metal</td>
+  <td><a href="https://everynoise.com/engenremap-italianprogressivemetal.html" title="italian progressive metal">italian progressive metal</a></td>
   <td>C.Italy<br>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 22<br>Progressive:6<br>C.Italy:3<br>Goth:2<br>C.Mexico.Latino:2<br>Folk:2<br>Classical:2<br>Gospel:1</td>
-  <td>Labyrinth &quot;Moonlight&quot;<br><audio title="Labyrinth &quot;Moonlight&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e81b313f8bd09108f64289a6b8aeb837dda55738" type="audio/mpeg">
-</audio></td>
+  <td>Metal:22<br>Progressive:6<br>C.Italy:3<br>Goth:2<br>C.Mexico.Latino:2<br>Folk:2<br>Classical:2<br>Gospel:1</td>
+  <td>Labyrinth &quot;Moonlight&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e81b313f8bd09108f64289a6b8aeb837dda55738" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1mteRepMdleAEulhDVGhI4" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -326,12 +309,10 @@
 </tr>
 <tr>
   <td>22</td>
-  <td>swedish progressive metal</td>
+  <td><a href="https://everynoise.com/engenremap-swedishprogressivemetal.html" title="swedish progressive metal">swedish progressive metal</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 17<br>Progressive:6<br>Rock:3<br>Goth:2<br>C.Italy:2<br>C.Mexico.Latino:2<br>Classical:2<br>Emo:1<br>C.Spain:1<br>Folk:1<br>Gospel:1</td>
-  <td>Darkwater &quot;Alive - Pt. II&quot;<br><audio title="Darkwater &quot;Alive - Pt. II&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5433ffe57ff36440968922d14f888fc1b0be5ef8" type="audio/mpeg">
-</audio></td>
+  <td>Metal:17<br>Progressive:6<br>Rock:3<br>Goth:2<br>C.Italy:2<br>C.Mexico.Latino:2<br>Classical:2<br>Emo:1<br>C.Spain:1<br>Folk:1<br>Gospel:1</td>
+  <td>Darkwater &quot;Alive - Pt. II&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5433ffe57ff36440968922d14f888fc1b0be5ef8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3QwSD9T1GukGSbjQAzGYEr" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2C3YTx3DYrc2zLvJmeEdrP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4NrCJVeUwche2vVtE45bs7" title="pulse">pulse</a></td>
@@ -339,12 +320,10 @@
 </tr>
 <tr>
   <td>23</td>
-  <td>progressive thrash</td>
+  <td><a href="https://everynoise.com/engenremap-progressivethrash.html" title="progressive thrash">progressive thrash</a></td>
   <td>Progressive</td>
-  <td><b>Metal:</b> 18<br>Progressive:2<br>Hardstyle:1<br>C.France:1<br>C.Mexico.Latino:1<br>Folk:1</td>
-  <td>Vektor &quot;Tetrastructural Minds&quot;<br><audio title="Vektor &quot;Tetrastructural Minds&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d289cea201dbb379fac5588c721501c368e48fab" type="audio/mpeg">
-</audio></td>
+  <td>Metal:18<br>Progressive:2<br>Hardstyle:1<br>C.France:1<br>C.Mexico.Latino:1<br>Folk:1</td>
+  <td>Vektor &quot;Tetrastructural Minds&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d289cea201dbb379fac5588c721501c368e48fab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0YHogJbqA5TrygAp2KAXjn" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -352,12 +331,10 @@
 </tr>
 <tr>
   <td>24</td>
-  <td>progressive alternative</td>
+  <td><a href="https://everynoise.com/engenremap-progressivealternative.html" title="progressive alternative">progressive alternative</a></td>
   <td>Progressive</td>
-  <td><b>Indie:</b> 10<br>Rock:5<br>Emo:4<br>Progressive:2<br>Psy.Rave:1<br>Punk:1</td>
-  <td>boil &quot;Sleepwalker&quot;<br><audio title="boil &quot;Sleepwalker&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d2dd84eb14d504ea8d87845f2de8dbbd277f6d4e" type="audio/mpeg">
-</audio></td>
+  <td>Indie:10<br>Rock:5<br>Emo:4<br>Progressive:2<br>C.Irish:2<br>Psy.Rave:1<br>Punk:1</td>
+  <td>boil &quot;Sleepwalker&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d2dd84eb14d504ea8d87845f2de8dbbd277f6d4e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6Mz4j5CTDBR3V369aRhLvw" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1gp2Bx7MOsA8epHieP2Yjr" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6XdUh49cHXtxsl1SrvvYWf" title="pulse">pulse</a></td>
@@ -365,12 +342,10 @@
 </tr>
 <tr>
   <td>25</td>
-  <td>progressive groove metal</td>
+  <td><a href="https://everynoise.com/engenremap-progressivegroovemetal.html" title="progressive groove metal">progressive groove metal</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 20<br>Progressive:2<br>C.Mexico.Latino:1</td>
-  <td>Nevermore &quot;Believe in Nothing&quot;<br><audio title="Nevermore &quot;Believe in Nothing&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/04b06d2599f7f9dcc26e21847a376e9fecfcd53b" type="audio/mpeg">
-</audio></td>
+  <td>Metal:20<br>Progressive:2<br>C.Mexico.Latino:1</td>
+  <td>Nevermore &quot;Believe in Nothing&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/04b06d2599f7f9dcc26e21847a376e9fecfcd53b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5DXacEpgPNVZjnPQU6JiIi" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3qPNJfsHZWGObsu6Cz4qoV" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/072371UBclrOjXxpmbJsyy" title="pulse">pulse</a></td>
@@ -378,12 +353,10 @@
 </tr>
 <tr>
   <td>26</td>
-  <td>progressive metal</td>
+  <td><a href="https://everynoise.com/engenremap-progressivemetal.html" title="progressive metal">progressive metal</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 14<br>Progressive:10<br>Rock:5<br>C.Italy:1<br>Gospel:1<br>Classical:1</td>
-  <td>Pain of Salvation &quot;Undertow&quot;<br><audio title="Pain of Salvation &quot;Undertow&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/406f6564097438e1b5a6a54760ba4e3c0e97da72" type="audio/mpeg">
-</audio></td>
+  <td>Metal:14<br>Progressive:10<br>Rock:5<br>C.Italy:1<br>Gospel:1<br>Classical:1</td>
+  <td>Pain of Salvation &quot;Undertow&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/406f6564097438e1b5a6a54760ba4e3c0e97da72" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/74RFwHMUEVXkqK2KeeIMPl" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2noLyf1Cinx2Fb5bJZbYl4" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/09Tj8nfK33fOtU9X92zzXS" title="pulse">pulse</a></td>
@@ -391,12 +364,10 @@
 </tr>
 <tr>
   <td>27</td>
-  <td>progressive technical death metal</td>
+  <td><a href="https://everynoise.com/engenremap-progressivetechnicaldeathmetal.html" title="progressive technical death metal">progressive technical death metal</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 21<br>Progressive:3<br>C.France:1<br>C.Italy:1<br>C.Spain:1</td>
-  <td>Inanimate Existence &quot;Endless Waves&quot;<br><audio title="Inanimate Existence &quot;Endless Waves&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/fa64bb3bdb70a51dded75c84ee99b0f6059cd5de" type="audio/mpeg">
-</audio></td>
+  <td>Metal:21<br>Progressive:3<br>C.France:1<br>C.Italy:1<br>C.Spain:1<br>C.Portugal:1</td>
+  <td>Inanimate Existence &quot;Endless Waves&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/fa64bb3bdb70a51dded75c84ee99b0f6059cd5de" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2qKl9xYWzXTM65TG3PFmMc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4kpNX4GtFjkde3i11kUkhU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2gPQMCGlgS6frDjH032xOL" title="pulse">pulse</a></td>
@@ -404,12 +375,10 @@
 </tr>
 <tr>
   <td>28</td>
-  <td>progressive black metal</td>
+  <td><a href="https://everynoise.com/engenremap-progressiveblackmetal.html" title="progressive black metal">progressive black metal</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 22<br>Progressive:2<br>C.Italy:1<br>Folk:1</td>
-  <td>Enslaved &quot;What Else Is There - Bonus Version&quot;<br><audio title="Enslaved &quot;What Else Is There - Bonus Version&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a26fd9e2f9dfc440fe480cab3028ba799ea5d95e" type="audio/mpeg">
-</audio></td>
+  <td>Metal:22<br>Progressive:2<br>C.Italy:1<br>C.Portugal:1<br>Folk:1</td>
+  <td>Enslaved &quot;What Else Is There - Bonus Version&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a26fd9e2f9dfc440fe480cab3028ba799ea5d95e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1iPn7sRGKkXcqfeTf4Y5kL" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -417,12 +386,10 @@
 </tr>
 <tr>
   <td>29</td>
-  <td>spanish progressive rock</td>
+  <td><a href="https://everynoise.com/engenremap-spanishprogressiverock.html" title="spanish progressive rock">spanish progressive rock</a></td>
   <td>C.Spain<br>Progressive<br>Rock</td>
-  <td><b>Rock:</b> 13<br>Psy.Rave:5<br>C.Spain:5<br>Progressive:2<br>Indie:2<br>C.Mexico.Latino:2<br>Hardstyle:1<br>Goth:1<br>C.Italy:1</td>
-  <td>Toundra &quot;El Odio. Parte I&quot;<br><audio title="Toundra &quot;El Odio. Parte I&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5d4674656637822ddf007dd211057f6740fb0a85" type="audio/mpeg">
-</audio></td>
+  <td>Rock:13<br>Psy.Rave:5<br>C.Spain:5<br>Progressive:2<br>Indie:2<br>C.Mexico.Latino:2<br>Hardstyle:1<br>Goth:1<br>C.Italy:1</td>
+  <td>Toundra &quot;El Odio. Parte I&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5d4674656637822ddf007dd211057f6740fb0a85" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6YG4bN7FzZ562wTF5Cx0zC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/18dYEGE8InBDN2UHueLIVv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2fIZv5BEWsRzuA4BQtu9VR" title="pulse">pulse</a></td>
@@ -430,12 +397,10 @@
 </tr>
 <tr>
   <td>30</td>
-  <td>progressive doom</td>
+  <td><a href="https://everynoise.com/engenremap-progressivedoom.html" title="progressive doom">progressive doom</a></td>
   <td>Progressive</td>
-  <td><b>Metal:</b> 12<br>Progressive:3<br>Rock:2<br>C.Italy:2<br>Gospel:2<br>Emo:1<br>C.France:1<br>Folk:1</td>
-  <td>Anathema &quot;One Last Goodbye - Remastered&quot;<br><audio title="Anathema &quot;One Last Goodbye - Remastered&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ffa3e027e2278b725671296393dd189be8acb511" type="audio/mpeg">
-</audio></td>
+  <td>Metal:12<br>Progressive:3<br>Rock:2<br>C.Italy:2<br>Gospel:2<br>Emo:1<br>C.France:1<br>Folk:1</td>
+  <td>Anathema &quot;One Last Goodbye - Remastered&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ffa3e027e2278b725671296393dd189be8acb511" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7H8Ak1DtWspFbNv6m1HVlW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2s2XtQs53eDOtdtp2HFzlT" title="intro">intro</a></td>
   <td>--</td>
@@ -443,12 +408,10 @@
 </tr>
 <tr>
   <td>31</td>
-  <td>deep progressive rock</td>
+  <td><a href="https://everynoise.com/engenremap-deepprogressiverock.html" title="deep progressive rock">deep progressive rock</a></td>
   <td>Progressive<br>Rock</td>
-  <td><b>Progressive:</b> 7<br>Rock:6<br>Psy.Rave:2<br>Gospel:2<br>Indie:1<br>Metal:1<br>Pop:1<br>C.Germany:1</td>
-  <td>Nine Skies &quot;The Explorer&quot;<br><audio title="Nine Skies &quot;The Explorer&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ae6fae5343a821459d04dc2d099210c9a6dcff4d" type="audio/mpeg">
-</audio></td>
+  <td>Progressive:7<br>Rock:6<br>Psy.Rave:2<br>Gospel:2<br>Indie:1<br>Metal:1<br>Pop:1<br>C.Germany:1</td>
+  <td>Nine Skies &quot;The Explorer&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ae6fae5343a821459d04dc2d099210c9a6dcff4d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5D7ascA0846W8Ye1LACHQG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/42U7cT3zswjqWbo6ekfR5r" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6DhV8bvrwyHGujexntQXz0" title="pulse">pulse</a></td>
@@ -456,12 +419,10 @@
 </tr>
 <tr>
   <td>32</td>
-  <td>progressive death metal</td>
+  <td><a href="https://everynoise.com/engenremap-progressivedeathmetal.html" title="progressive death metal">progressive death metal</a></td>
   <td>Metal<br>Progressive</td>
-  <td><b>Metal:</b> 20<br>Progressive:5</td>
-  <td>Alkaloid &quot;The Cambrian Explosion&quot;<br><audio title="Alkaloid &quot;The Cambrian Explosion&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e7aa36b70ce09f47264065c0fc4e953a3664cef1" type="audio/mpeg">
-</audio></td>
+  <td>Metal:20<br>Progressive:5<br>C.Irish:1</td>
+  <td>Alkaloid &quot;The Cambrian Explosion&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e7aa36b70ce09f47264065c0fc4e953a3664cef1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5sEfquPnHosqWquqi93Ffh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3z3Pg4zMiBmH7mr9yKGlLD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2GRFbEP5hdUmliTaAZ23qo" title="pulse">pulse</a></td>
@@ -469,12 +430,10 @@
 </tr>
 <tr>
   <td>33</td>
-  <td>neo-trad prog</td>
+  <td><a href="https://everynoise.com/engenremap-neotradprog.html" title="neo-trad prog">neo-trad prog</a></td>
   <td>Progressive</td>
-  <td><b>Progressive:</b> 3<br>Indie:3<br>Rock:3<br>Gospel:2<br>Psy.Rave:1<br>Pop:1<br>C.Japan:1<br>C.Germany:1</td>
-  <td>Freedom To Glide &quot;The Chronicle of Stolen Souls (Prol<br><audio title="Freedom To Glide &quot;The Chronicle of Stolen Souls (Prol" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/277a89456c3776f00614cac24b8d6f7f0ae4f9c4" type="audio/mpeg">
-</audio></td>
+  <td>Progressive:3<br>Indie:3<br>Rock:3<br>Gospel:2<br>Psy.Rave:1<br>Pop:1<br>C.Japan:1<br>C.Germany:1</td>
+  <td>Freedom To Glide &quot;The Chronicle of Stolen Souls (Prol<br><audio class="playback" src="https://p.scdn.co/mp3-preview/277a89456c3776f00614cac24b8d6f7f0ae4f9c4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2jjhSbwhv2gNJh0ARmW0A2" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5lx2p76boL2xvE8sTHACyX" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6d6NrB5e8trwqas34srCoS" title="pulse">pulse</a></td>
@@ -482,12 +441,10 @@
 </tr>
 <tr>
   <td>34</td>
-  <td>progressive sludge</td>
+  <td><a href="https://everynoise.com/engenremap-progressivesludge.html" title="progressive sludge">progressive sludge</a></td>
   <td>Progressive</td>
-  <td><b>Metal:</b> 16<br>Progressive:3<br>C.Italy:2<br>Rock:1<br>Folk:1</td>
-  <td>Kylesa &quot;Scapegoat - 2022 Remaster&quot;<br><audio title="Kylesa &quot;Scapegoat - 2022 Remaster&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/725813129dfae3a525feba7ded7bbefbb8b08447" type="audio/mpeg">
-</audio></td>
+  <td>Metal:16<br>Progressive:3<br>C.Italy:2<br>Rock:1<br>Folk:1</td>
+  <td>Kylesa &quot;Scapegoat - 2022 Remaster&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/725813129dfae3a525feba7ded7bbefbb8b08447" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7yt4wc1wdEaGjVSHWGUu5d" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1PoilXwVJmkFjCO6fjZ3Rw" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3LXzxgpmK3OqIIT6rSMDDu" title="pulse">pulse</a></td>
@@ -495,12 +452,10 @@
 </tr>
 <tr>
   <td>35</td>
-  <td>crossover prog</td>
+  <td><a href="https://everynoise.com/engenremap-crossoverprog.html" title="crossover prog">crossover prog</a></td>
   <td>Progressive</td>
-  <td><b>Progressive:</b> 6<br>Indie:4<br>Rock:4<br>Gospel:2<br>Psy.Rave:1<br>Metal:1</td>
-  <td>Vienna Circle &quot;Envy&quot;<br><audio title="Vienna Circle &quot;Envy&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/42647e5275fb68a4287c2cfe881827d4e2843ab9" type="audio/mpeg">
-</audio></td>
+  <td>Progressive:6<br>Indie:4<br>Rock:4<br>Gospel:2<br>Psy.Rave:1<br>Metal:1</td>
+  <td>Vienna Circle &quot;Envy&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/42647e5275fb68a4287c2cfe881827d4e2843ab9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4dbAsOHzPJISKcPaiwvXwR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4LWuo7kK2QsX9RXS8pcJPI" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3xgKiDv3nhrM9SBl0cKwRN" title="pulse">pulse</a></td>
@@ -508,12 +463,10 @@
 </tr>
 <tr>
   <td>36</td>
-  <td>modern progressive rock</td>
+  <td><a href="https://everynoise.com/engenremap-modernprogressiverock.html" title="modern progressive rock">modern progressive rock</a></td>
   <td>Progressive<br>Rock</td>
-  <td><b>Progressive:</b> 5<br>Rock:4<br>Psy.Rave:2<br>Metal:1<br>Pop:1<br>C.Italy:1<br>C.Japan:1<br>C.Germany:1<br>Folk:1<br>Gospel:1</td>
-  <td>Huis &quot;Solilude&quot;<br><audio title="Huis &quot;Solilude&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/10f9c5bf0a38516c37dfa8580d7a5157377d3bed" type="audio/mpeg">
-</audio></td>
+  <td>Progressive:5<br>Rock:4<br>Psy.Rave:2<br>Metal:1<br>Pop:1<br>C.Italy:1<br>C.Japan:1<br>C.Germany:1<br>Folk:1<br>Gospel:1</td>
+  <td>Huis &quot;Solilude&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/10f9c5bf0a38516c37dfa8580d7a5157377d3bed" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5qyy5b1YfKIAjTRxuwYnDT" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1RWGH9hkOlmzjvevzDIQ85" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/580t0JUNl7tB6paefNS0ss" title="pulse">pulse</a></td>
@@ -521,12 +474,10 @@
 </tr>
 <tr>
   <td>37</td>
-  <td>norwegian prog</td>
+  <td><a href="https://everynoise.com/engenremap-norwegianprog.html" title="norwegian prog">norwegian prog</a></td>
   <td>Progressive</td>
-  <td><b>Progressive:</b> 5<br>Rock:4<br>Indie:3<br>Psy.Rave:2<br>Pop:1<br>Emo:1<br>C.Japan:1<br>C.Germany:1</td>
-  <td>Ring Van Mobius &quot;Anitras Dans&quot;<br><audio title="Ring Van Mobius &quot;Anitras Dans&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/93cb952579a5d3f833e028a0ac62f2a5053169bb" type="audio/mpeg">
-</audio></td>
+  <td>Progressive:5<br>Rock:4<br>Indie:3<br>Psy.Rave:2<br>Pop:1<br>Emo:1<br>C.Japan:1<br>C.Germany:1</td>
+  <td>Ring Van Mobius &quot;Anitras Dans&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/93cb952579a5d3f833e028a0ac62f2a5053169bb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3vvcydnbjOAGsRtkfLCVON" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7qMm8x5po90171Q5FtWbTP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1u5clMChuKQtCX7qLaa6Zb" title="pulse">pulse</a></td>
@@ -534,12 +485,10 @@
 </tr>
 <tr>
   <td>38</td>
-  <td>neo-progressive</td>
+  <td><a href="https://everynoise.com/engenremap-neoprogressive.html" title="neo-progressive">neo-progressive</a></td>
   <td>Progressive</td>
-  <td><b>Progressive:</b> 6<br>Rock:6<br>Psy.Rave:3<br>Indie:2<br>Emo:2<br>Gospel:2<br>Metal:1<br>Pop:1<br>C.Germany:1</td>
-  <td>Pallas &quot;Eyes in the Night - Arrive Alive&quot;<br><audio title="Pallas &quot;Eyes in the Night - Arrive Alive&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8d5a2a5519590a03d4003c9a18984f05d1ff20de" type="audio/mpeg">
-</audio></td>
+  <td>Progressive:6<br>Rock:6<br>Psy.Rave:3<br>Indie:2<br>Emo:2<br>Gospel:2<br>Metal:1<br>Pop:1<br>C.Germany:1</td>
+  <td>Pallas &quot;Eyes in the Night - Arrive Alive&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8d5a2a5519590a03d4003c9a18984f05d1ff20de" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4dwu8FLKXg4J3LQ4yHdVfr" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/12WTQhNlGTIpz3Dq4aNCIE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/18T7n70ksABbUH7XJXHayN" title="pulse">pulse</a></td>
@@ -547,12 +496,10 @@
 </tr>
 <tr>
   <td>39</td>
-  <td>progressive jazz fusion</td>
+  <td><a href="https://everynoise.com/engenremap-progressivejazzfusion.html" title="progressive jazz fusion">progressive jazz fusion</a></td>
   <td>Jazz<br>Progressive</td>
-  <td><b>Rock:</b> 8<br>Indie:5<br>Jazz:5<br>Experimental:3<br>Progressive:2<br>Pop:2<br>Instrumental:2<br>Psy.Rave:1<br>Metal:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.Japan:1</td>
-  <td>Mest &quot;Gentle Giant&quot;<br><audio title="Mest &quot;Gentle Giant&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/29fb3d8c3ee92eb0550b8d14101c6375ee96cf80" type="audio/mpeg">
-</audio></td>
+  <td>Rock:8<br>Indie:5<br>Jazz:5<br>Experimental:3<br>Progressive:2<br>Pop:2<br>Instrumental:2<br>Psy.Rave:1<br>Metal:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.Japan:1</td>
+  <td>Mest &quot;Gentle Giant&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/29fb3d8c3ee92eb0550b8d14101c6375ee96cf80" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7MxCJx6LskBWTpzCscHs7a" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6JKaGQ1InJTys24ssZF6ZQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Ulio7UskcjwjAKL7ZGhLN" title="pulse">pulse</a></td>
@@ -560,12 +507,10 @@
 </tr>
 <tr>
   <td>40</td>
-  <td>finnish progressive rock</td>
+  <td><a href="https://everynoise.com/engenremap-finnishprogressiverock.html" title="finnish progressive rock">finnish progressive rock</a></td>
   <td>Progressive<br>Rock</td>
-  <td><b>Indie:</b> 7<br>Rock:7<br>Progressive:3<br>Emo:2<br>Experimental:2<br>Psy.Rave:1<br>Pop:1<br>C.France:1<br>C.Japan:1<br>C.Germany:1</td>
-  <td>Kingston Wall &quot;Shine On Me&quot;<br><audio title="Kingston Wall &quot;Shine On Me&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/751599387e241cd59fd9105dda589f4fa8127a7c" type="audio/mpeg">
-</audio></td>
+  <td>Indie:7<br>Rock:7<br>Progressive:3<br>Emo:2<br>Experimental:2<br>Psy.Rave:1<br>Pop:1<br>C.France:1<br>C.Japan:1<br>C.Germany:1</td>
+  <td>Kingston Wall &quot;Shine On Me&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/751599387e241cd59fd9105dda589f4fa8127a7c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/26rQLpFzrmqS9ZvfBsLUZm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Y1XrBogr9y5sy6xizNJUu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6l9MzhpPoIkNUuJMEcHQNV" title="pulse">pulse</a></td>
@@ -573,12 +518,10 @@
 </tr>
 <tr>
   <td>41</td>
-  <td>progressive rock</td>
+  <td><a href="https://everynoise.com/engenremap-progressiverock.html" title="progressive rock">progressive rock</a></td>
   <td>Progressive<br>Rock</td>
-  <td><b>Rock:</b> 15<br>Progressive:6<br>Psy.Rave:1<br>Metal:1<br>C.Italy:1<br>Folk:1<br>Jazz:1<br>Blues.Soul:1</td>
-  <td>Steve Hackett &quot;Spectral Mornings - Remastered 2005&qu<br><audio title="Steve Hackett &quot;Spectral Mornings - Remastered 2005&qu" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/057d5caf3148d48d357f5cce33f1e01cf1de2a0a" type="audio/mpeg">
-</audio></td>
+  <td>Rock:15<br>Progressive:6<br>Psy.Rave:1<br>Metal:1<br>C.Italy:1<br>Folk:1<br>Jazz:1<br>Blues.Soul:1</td>
+  <td>Steve Hackett &quot;Spectral Mornings - Remastered 2005&qu<br><audio class="playback" src="https://p.scdn.co/mp3-preview/057d5caf3148d48d357f5cce33f1e01cf1de2a0a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1sYzsb7P37XzNZoUR2GGdm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2MHeveKJhjAT8KEA4oPo6S" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/33rY67n0MK3nIef1kYklF2" title="pulse">pulse</a></td>
@@ -586,12 +529,10 @@
 </tr>
 <tr>
   <td>42</td>
-  <td>italian progressive rock</td>
+  <td><a href="https://everynoise.com/engenremap-italianprogressiverock.html" title="italian progressive rock">italian progressive rock</a></td>
   <td>C.Italy<br>Progressive<br>Rock</td>
-  <td><b>Rock:</b> 9<br>Indie:5<br>C.Italy:4<br>Progressive:3<br>Psy.Rave:1<br>Synth.Electronic:1<br>Pop:1<br>Emo:1<br>C.Mexico.Latino:1</td>
-  <td>Latte E Miele &quot;Menestrello&quot;<br><audio title="Latte E Miele &quot;Menestrello&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/37afba02946e328f1bcf507ee34db8ecfc2d36b5" type="audio/mpeg">
-</audio></td>
+  <td>Rock:9<br>Indie:5<br>C.Italy:4<br>Progressive:3<br>Psy.Rave:1<br>Synth.Electronic:1<br>Pop:1<br>Emo:1<br>C.Mexico.Latino:1</td>
+  <td>Latte E Miele &quot;Menestrello&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/37afba02946e328f1bcf507ee34db8ecfc2d36b5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/68yWjo2Nhi5q74Q58yt1mU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4UusNO74wOIB0E3SKFOyXZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1L3rV3h6UZUg1wxk5sfz8l" title="pulse">pulse</a></td>
@@ -599,12 +540,10 @@
 </tr>
 <tr>
   <td>43</td>
-  <td>progressive bluegrass</td>
+  <td><a href="https://everynoise.com/engenremap-progressivebluegrass.html" title="progressive bluegrass">progressive bluegrass</a></td>
   <td>Bluegrass<br>Progressive</td>
-  <td><b>Bluegrass:</b> 8<br>Pop:4<br>Folk:4<br>Progressive:2<br>Indie:1<br>Americana:1<br>C.India:1<br>Gospel:1<br>Instrumental:1</td>
-  <td>Sam Bush &quot;Play By Your Own Rules&quot;<br><audio title="Sam Bush &quot;Play By Your Own Rules&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/09b9ed261aaad519d1d29283fcbb96f0cf5a104a" type="audio/mpeg">
-</audio></td>
+  <td>Bluegrass:8<br>Pop:4<br>Folk:4<br>Progressive:2<br>Indie:1<br>Americana:1<br>C.India:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>Sam Bush &quot;Play By Your Own Rules&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/09b9ed261aaad519d1d29283fcbb96f0cf5a104a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2ychGMsKkWCqjgkgNHommE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7mliGW2VJzeZh4mPkBDmIa" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4mk6gUKAyFJikC8bKsHuzo" title="pulse">pulse</a></td>

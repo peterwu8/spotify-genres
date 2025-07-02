@@ -25,19 +25,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
 </head>
 <body>
 
 <p>
-<strong>Updated:</strong> 2025-07-01 08:05 PM<br>
+<strong>Updated:</strong> 2025-07-02 12:57 AM<br>
 <strong>Name:</strong> Chill: (48 genres)<br>
 <strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a><br>
-
+<br><strong>Table ordering:</strong> Genres at top of table are more electronic and become more acoustic as you go further down the table.<br><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol>
 <br>
 </p>
 
 
-        <strong>Table 1:</strong> Playlists from mechanical and electric down to organic and acoustic. You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -53,12 +76,10 @@
           </tr>
           <tr>
   <td>01</td>
-  <td>spacewave</td>
+  <td><a href="https://everynoise.com/engenremap-spacewave.html" title="spacewave">spacewave</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 9<br>Synth.Electronic:4<br>Psy.Rave:2<br>Trance:2<br>Ambient.General:2<br>Breaks:1<br>Drum and bass:1<br>Pop:1<br>C.China:1<br>Dubstep:1<br>Hip hop:1</td>
-  <td>Stilz &quot;Test Pilot&quot;<br><audio title="Stilz &quot;Test Pilot&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b4e2c9c3e90a825e50bff870937627efc6c184f4" type="audio/mpeg">
-</audio></td>
+  <td>Chill:9<br>Synth.Electronic:4<br>Psy.Rave:2<br>Trance:2<br>Ambient.General:2<br>Breaks:1<br>Drum and bass:1<br>Pop:1<br>C.China:1<br>Dubstep:1<br>Hip hop:1</td>
+  <td>Stilz &quot;Test Pilot&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b4e2c9c3e90a825e50bff870937627efc6c184f4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2xzvhh7pEpGPJOLSE3FcTo" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4RQqKxnH9auPATIptlP7uf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6aj8yDWJdIYwUgmYovByuk" title="pulse">pulse</a></td>
@@ -66,12 +87,10 @@
 </tr>
 <tr>
   <td>02</td>
-  <td>chill phonk</td>
+  <td><a href="https://everynoise.com/engenremap-chillphonk.html" title="chill phonk">chill phonk</a></td>
   <td>Chill<br>Hip hop</td>
-  <td><b>Hip hop:</b> 4<br>Synth.Electronic:3<br>Trap:3<br>Chill:2<br>Electronica:1<br>Drum and bass:1<br>Rap:1<br>Gaming:1<br>C.Taiwan:1<br>C.Korea:1<br>Dance:1</td>
-  <td>BLADEFEAR &quot;In Essense&quot;<br><audio title="BLADEFEAR &quot;In Essense&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d2b4469aabb71c921499a114a26572d55249713f" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:4<br>Synth.Electronic:3<br>Trap:3<br>Chill:2<br>Electronica:1<br>Drum and bass:1<br>Rap:1<br>Gaming:1<br>C.Taiwan:1<br>C.Korea:1<br>Dance:1</td>
+  <td>BLADEFEAR &quot;In Essense&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d2b4469aabb71c921499a114a26572d55249713f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1pkHHdvmo3uvqjXXcumTja" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0BG9zVMAnUGGnGeWU8fvpk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6BeNbCFDkgyogS2YVI5zmw" title="pulse">pulse</a></td>
@@ -79,12 +98,10 @@
 </tr>
 <tr>
   <td>03</td>
-  <td>ambient psychill</td>
+  <td><a href="https://everynoise.com/engenremap-ambientpsychill.html" title="ambient psychill">ambient psychill</a></td>
   <td>Ambient.General<br>Chill<br>Psy.Rave</td>
-  <td><b>Ambient.General:</b> 8<br>Chill:6<br>Psy.Rave:4<br>Synth.Electronic:3<br>Trance:2<br>Techno:1<br>House:1<br>Drum and bass:1<br>C.Spain:1<br>Dance:1<br>Dubstep:1<br>Experimental:1<br>Reggae:1</td>
-  <td>Cabeiri &quot;Voices&quot;<br><audio title="Cabeiri &quot;Voices&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4400ade166de9f00c47fd81b359994d02a256791" type="audio/mpeg">
-</audio></td>
+  <td>Ambient.General:8<br>Chill:6<br>Psy.Rave:4<br>Synth.Electronic:3<br>Trance:2<br>Techno:1<br>House:1<br>Drum and bass:1<br>C.Spain:1<br>Dance:1<br>Dubstep:1<br>Experimental:1<br>Reggae:1</td>
+  <td>Cabeiri &quot;Voices&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4400ade166de9f00c47fd81b359994d02a256791" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4Ai1OzIuu5d40Ce1UFl8IW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2eSCWqzd2nbVtV0gPXewmT" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2oOThoS3aF7OUAU6f6jAGt" title="pulse">pulse</a></td>
@@ -92,12 +109,10 @@
 </tr>
 <tr>
   <td>04</td>
-  <td>chill baile</td>
+  <td><a href="https://everynoise.com/engenremap-chillbaile.html" title="chill baile">chill baile</a></td>
   <td>Chill</td>
-  <td><b>Synth.Electronic:</b> 3<br>Hip hop:3<br>Electronica:2<br>Trap:2<br>Chill:2<br>C.Mexico.Latino:2<br>Reggae:2<br>Viral:1<br>Pop:1<br>C.France:1<br>Dance:1<br>Instrumental:1<br>Funk:1<br>Blues.Soul:1</td>
-  <td>Tui &quot;Outra&quot;<br><audio title="Tui &quot;Outra&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d9aa0262a057fced795f86e2d7093cad48eb7eb8" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:3<br>Hip hop:3<br>Electronica:2<br>Trap:2<br>Chill:2<br>C.Mexico.Latino:2<br>Reggae:2<br>Viral:1<br>Pop:1<br>C.France:1<br>Dance:1<br>Instrumental:1<br>Funk:1<br>Blues.Soul:1</td>
+  <td>Tui &quot;Outra&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d9aa0262a057fced795f86e2d7093cad48eb7eb8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0wu0GgZYI3a492oNpnpjBZ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/241MDo42pJYqI1uy37kk0X" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1R2gb8TyYr1suVbWLS6ZUR" title="pulse">pulse</a></td>
@@ -105,12 +120,10 @@
 </tr>
 <tr>
   <td>05</td>
-  <td>chill groove</td>
+  <td><a href="https://everynoise.com/engenremap-chillgroove.html" title="chill groove">chill groove</a></td>
   <td>Chill</td>
-  <td><b>Synth.Electronic:</b> 8<br>Chill:3<br>House:2<br>Electronica:2<br>Ambient.General:2<br>Techno:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1<br>C.India:1<br>Experimental:1</td>
-  <td>Threestyle &quot;Ready to Go&quot;<br><audio title="Threestyle &quot;Ready to Go&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/113e53da15026eba30f6344f0b033a4d4c00cb54" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:8<br>Chill:3<br>House:2<br>Electronica:2<br>Ambient.General:2<br>Techno:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1<br>C.India:1<br>Experimental:1</td>
+  <td>Threestyle &quot;Ready to Go&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/113e53da15026eba30f6344f0b033a4d4c00cb54" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7wQsJI14eRUiBLMk65F8DS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4uTbh15pC2UqVJSQoVQMlH" title="intro">intro</a></td>
   <td>--</td>
@@ -118,12 +131,10 @@
 </tr>
 <tr>
   <td>06</td>
-  <td>chill-out trance</td>
+  <td><a href="https://everynoise.com/engenremap-chillouttrance.html" title="chill-out trance">chill-out trance</a></td>
   <td>Chill<br>Trance</td>
-  <td><b>Synth.Electronic:</b> 9<br>Chill:5<br>Psy.Rave:2<br>Trance:2<br>Electronica:1<br>Gaming:1<br>C.Spain:1<br>C.Taiwan:1<br>C.China:1<br>Ambient.General:1<br>Dubstep:1<br>Experimental:1</td>
-  <td>Robien M &quot;Hawaii - MilamDo pres. Harmonic Rush Remix&<br><audio title="Robien M &quot;Hawaii - MilamDo pres. Harmonic Rush Remix&" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b8f8bca370b3da1796ed49e6519427970e00a0bb" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:9<br>Chill:5<br>Psy.Rave:2<br>Trance:2<br>Electronica:1<br>Gaming:1<br>C.Spain:1<br>C.Taiwan:1<br>C.China:1<br>C.Irish:1<br>Ambient.General:1<br>Dubstep:1<br>Experimental:1</td>
+  <td>Robien M &quot;Hawaii - MilamDo pres. Harmonic Rush Remix&<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b8f8bca370b3da1796ed49e6519427970e00a0bb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2TZYaVQjU4v0HIzwOsgo0E" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4ftRraokPPlusUzqEkFKlf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/44bvE2Rj9QnZGlMHCbDdhh" title="pulse">pulse</a></td>
@@ -131,12 +142,10 @@
 </tr>
 <tr>
   <td>07</td>
-  <td>karaoke</td>
+  <td><a href="https://everynoise.com/engenremap-karaoke.html" title="karaoke">karaoke</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 3<br>Indie:2<br>House:1<br>Electronica:1<br>Synth.Electronic:1<br>C.France:1<br>Ambient.General:1<br>Disco:1</td>
-  <td>The Karaoke Channel &quot;Cuban Pete (Karaoke Demonstratio<br><audio title="The Karaoke Channel &quot;Cuban Pete (Karaoke Demonstratio" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/9d48b1a16b3a38fc55628e2160889d5c0c698d31" type="audio/mpeg">
-</audio></td>
+  <td>Chill:3<br>Indie:2<br>House:1<br>Electronica:1<br>Synth.Electronic:1<br>C.France:1<br>Ambient.General:1<br>Disco:1</td>
+  <td>The Karaoke Channel &quot;Cuban Pete (Karaoke Demonstratio<br><audio class="playback" src="https://p.scdn.co/mp3-preview/9d48b1a16b3a38fc55628e2160889d5c0c698d31" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0hxVmcfrIAuXXps0kX1aN5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ywCLhoD5tHLeBpBX6Ov3N" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Of9OWNPWjOC7jgjYNwOz9" title="pulse">pulse</a></td>
@@ -144,12 +153,10 @@
 </tr>
 <tr>
   <td>08</td>
-  <td>psychill</td>
+  <td><a href="https://everynoise.com/engenremap-psychill.html" title="psychill">psychill</a></td>
   <td>Chill<br>Psy.Rave</td>
-  <td><b>Psy.Rave:</b> 6<br>Chill:5<br>Ambient.General:5<br>Synth.Electronic:4<br>Trance:2<br>Experimental:2<br>Techno:1<br>House:1<br>Trap:1<br>Emo:1<br>Dance:1<br>Dubstep:1<br>Reggae:1</td>
-  <td>Cell &quot;Calling&quot;<br><audio title="Cell &quot;Calling&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/47407e04bb71382dee5d07f7c1ecdc9bb98906db" type="audio/mpeg">
-</audio></td>
+  <td>Psy.Rave:6<br>Chill:5<br>Ambient.General:5<br>Synth.Electronic:4<br>Trance:2<br>Experimental:2<br>Techno:1<br>House:1<br>Trap:1<br>Emo:1<br>C.Irish:1<br>Dance:1<br>Dubstep:1<br>Reggae:1</td>
+  <td>Cell &quot;Calling&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/47407e04bb71382dee5d07f7c1ecdc9bb98906db" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/1JqHnsfMUxosj0lbrhnbaC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3tBPo1RhRFZUHvtl6Dlirx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/50bsmCTy8DRGqxRnLRR52W" title="pulse">pulse</a></td>
@@ -157,12 +164,10 @@
 </tr>
 <tr>
   <td>09</td>
-  <td>chillsynth</td>
+  <td><a href="https://everynoise.com/engenremap-chillsynth.html" title="chillsynth">chillsynth</a></td>
   <td>Chill<br>Synth.Electronic</td>
-  <td><b>Synth.Electronic:</b> 9<br>Chill:7<br>Psy.Rave:3<br>Electronica:1<br>Trance:1<br>Emo:1<br>C.Italy:1<br>C.Spain:1<br>C.China:1<br>Ambient.General:1<br>Dubstep:1<br>Reggae:1</td>
-  <td>DEPARTURE &quot;Imagine&quot;<br><audio title="DEPARTURE &quot;Imagine&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/cebd6bfd0bbf605c18a57dbf89dafc6e273bc3ca" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:9<br>Chill:7<br>Psy.Rave:3<br>Electronica:1<br>Trance:1<br>Emo:1<br>C.Italy:1<br>C.Spain:1<br>C.China:1<br>Ambient.General:1<br>Dubstep:1<br>Reggae:1</td>
+  <td>DEPARTURE &quot;Imagine&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/cebd6bfd0bbf605c18a57dbf89dafc6e273bc3ca" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6oWtD6La5xHpdSGJXb1FnN" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1U3VE4XcD8VJpWQzs3zFV2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0n7kwNsLTpVgDEweh6XgQ4" title="pulse">pulse</a></td>
@@ -170,12 +175,10 @@
 </tr>
 <tr>
   <td>10</td>
-  <td>backing track</td>
+  <td><a href="https://everynoise.com/engenremap-backingtrack.html" title="backing track">backing track</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 5<br>Synth.Electronic:3<br>Ambient.General:3<br>Techno:2<br>Electronica:1<br>C.Germany:1<br>Dance:1<br>Reggae:1</td>
-  <td>Quist Backing Jam Tracks &quot;Slow Blues Jam Sexy Guitar <br><audio title="Quist Backing Jam Tracks &quot;Slow Blues Jam Sexy Guitar " controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/daef9860f282c831b9a4635f1c1a828caa5e71c3" type="audio/mpeg">
-</audio></td>
+  <td>Chill:5<br>Synth.Electronic:3<br>Ambient.General:3<br>Techno:2<br>Electronica:1<br>C.Germany:1<br>Dance:1<br>Reggae:1</td>
+  <td>Quist Backing Jam Tracks &quot;Slow Blues Jam Sexy Guitar <br><audio class="playback" src="https://p.scdn.co/mp3-preview/daef9860f282c831b9a4635f1c1a828caa5e71c3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0OntTiyGzKP5yAqKhvmPXB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/73gGZTrI8JgTjcVaGje9I6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/29XyNX6BDIKVUoMCpaBgH2" title="pulse">pulse</a></td>
@@ -183,12 +186,10 @@
 </tr>
 <tr>
   <td>11</td>
-  <td>deep chill</td>
+  <td><a href="https://everynoise.com/engenremap-deepchill.html" title="deep chill">deep chill</a></td>
   <td>Chill</td>
-  <td><b>Synth.Electronic:</b> 6<br>Chill:6<br>Electronica:2<br>Ambient.General:2<br>Psy.Rave:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1<br>C.India:1<br>Reggae:1</td>
-  <td>351 Lake Shore Drive &quot;You Make My Day&quot;<br><audio title="351 Lake Shore Drive &quot;You Make My Day&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/39da91fa0ba4a3435b490fabb701b29c77b3a208" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:6<br>Chill:6<br>Electronica:2<br>Ambient.General:2<br>Psy.Rave:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1<br>C.India:1<br>Reggae:1</td>
+  <td>351 Lake Shore Drive &quot;You Make My Day&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/39da91fa0ba4a3435b490fabb701b29c77b3a208" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5ELJuzyWxmJSF24NtjZ5oH" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2SBecJuGRSJdXaamRx6mPe" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3mGvhNmQOKCaO238DfGOZ4" title="pulse">pulse</a></td>
@@ -196,12 +197,10 @@
 </tr>
 <tr>
   <td>12</td>
-  <td>neo grime</td>
+  <td><a href="https://everynoise.com/engenremap-neogrime.html" title="neo grime">neo grime</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 4<br>Synth.Electronic:3<br>Trance:2<br>Ambient.General:2<br>Hip hop:2<br>Psy.Rave:1<br>House:1<br>Breaks:1<br>Drum and bass:1<br>Trap:1<br>Gaming:1<br>C.Taiwan:1</td>
-  <td>Vexxy &quot;All Night&quot;<br><audio title="Vexxy &quot;All Night&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/cd24239f301f353a1f015026f721b204c0828eb0" type="audio/mpeg">
-</audio></td>
+  <td>Chill:4<br>Synth.Electronic:3<br>Trance:2<br>Ambient.General:2<br>Hip hop:2<br>Psy.Rave:1<br>House:1<br>Breaks:1<br>Drum and bass:1<br>Trap:1<br>Gaming:1<br>C.Taiwan:1</td>
+  <td>Vexxy &quot;All Night&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/cd24239f301f353a1f015026f721b204c0828eb0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3Xb1CTuAvYH2xYTVUVpOdT" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4EV5p6hahUPepZiPB8CCqW" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2px0tDk5t1PtHDJ3tmb3s6" title="pulse">pulse</a></td>
@@ -209,12 +208,10 @@
 </tr>
 <tr>
   <td>13</td>
-  <td>chill beats</td>
+  <td><a href="https://everynoise.com/engenremap-chillbeats.html" title="chill beats">chill beats</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 5<br>Ambient.General:5<br>Synth.Electronic:4<br>Techno:2<br>House:2<br>Electronica:2<br>Reggae:2<br>Psy.Rave:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1</td>
-  <td>Chill Cole &quot;Himalayas&quot;<br><audio title="Chill Cole &quot;Himalayas&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ab428552c1cbe397aee3b3c6a1cc649856efaf35" type="audio/mpeg">
-</audio></td>
+  <td>Chill:5<br>Ambient.General:5<br>Synth.Electronic:4<br>Techno:2<br>House:2<br>Electronica:2<br>Reggae:2<br>Psy.Rave:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1</td>
+  <td>Chill Cole &quot;Himalayas&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ab428552c1cbe397aee3b3c6a1cc649856efaf35" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7uLo8nwzm2LWLfgET15HCK" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5bxcqZcyAbibXE0vl71lCt" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1SNNevHSL499zPcjOBvrSB" title="pulse">pulse</a></td>
@@ -222,12 +219,10 @@
 </tr>
 <tr>
   <td>14</td>
-  <td>wave</td>
+  <td><a href="https://everynoise.com/engenremap-wave.html" title="wave">wave</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 7<br>Synth.Electronic:3<br>Ambient.General:3<br>House:2<br>Trance:2<br>Psy.Rave:1<br>Breaks:1<br>Trap:1<br>C.China:1<br>Dubstep:1<br>Hip hop:1</td>
-  <td>Sorsari &quot;Dyne&quot;<br><audio title="Sorsari &quot;Dyne&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f901bcada45b0b8e343894df6c2645551ce18bb1" type="audio/mpeg">
-</audio></td>
+  <td>Chill:7<br>Synth.Electronic:3<br>Ambient.General:3<br>House:2<br>Trance:2<br>Psy.Rave:1<br>Breaks:1<br>Trap:1<br>C.China:1<br>Dubstep:1<br>Hip hop:1</td>
+  <td>Sorsari &quot;Dyne&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f901bcada45b0b8e343894df6c2645551ce18bb1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4LMXDmIn72kgOz2tlneVG2" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6HO9J7QcTl53unPFGne4q1" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1lcGp1KK9IgUkmASJ4iKEm" title="pulse">pulse</a></td>
@@ -235,12 +230,10 @@
 </tr>
 <tr>
   <td>15</td>
-  <td>bardcore</td>
+  <td><a href="https://everynoise.com/engenremap-bardcore.html" title="bardcore">bardcore</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 7<br>Ambient.General:3<br>Synth.Electronic:2<br>Techno:1<br>House:1<br>Electronica:1<br>Emo:1<br>C.China:1<br>C.Germany:1<br>Dance:1</td>
-  <td>Joseph C. Phaze &quot;Take on Me&quot;<br><audio title="Joseph C. Phaze &quot;Take on Me&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/1fb9de2857e5bee0ff96833b45af7fdcce2af54b" type="audio/mpeg">
-</audio></td>
+  <td>Chill:7<br>Ambient.General:3<br>Synth.Electronic:2<br>Techno:1<br>House:1<br>Electronica:1<br>Emo:1<br>C.China:1<br>C.Germany:1<br>Dance:1</td>
+  <td>Joseph C. Phaze &quot;Take on Me&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/1fb9de2857e5bee0ff96833b45af7fdcce2af54b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6TkBKzb8SP3wI1OGi871qn" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6H8mce0CHW5OFIifdhMoao" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4NnxoFhxxNUQhMs8ZcG76x" title="pulse">pulse</a></td>
@@ -248,12 +241,10 @@
 </tr>
 <tr>
   <td>16</td>
-  <td>chill lounge</td>
+  <td><a href="https://everynoise.com/engenremap-chilllounge.html" title="chill lounge">chill lounge</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 6<br>Synth.Electronic:5<br>Electronica:3<br>Ambient.General:2<br>Psy.Rave:1<br>Indie:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1<br>Reggae:1</td>
-  <td>SoulChillaz &quot;Slow Morning&quot;<br><audio title="SoulChillaz &quot;Slow Morning&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5863696f0b0c202c83fa999d8a5375ad19b40aa4" type="audio/mpeg">
-</audio></td>
+  <td>Chill:6<br>Synth.Electronic:5<br>Electronica:3<br>Ambient.General:2<br>Psy.Rave:1<br>Indie:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1<br>Reggae:1</td>
+  <td>SoulChillaz &quot;Slow Morning&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5863696f0b0c202c83fa999d8a5375ad19b40aa4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/03lYJ1JeE7DJJ43emp4TVO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3bFguXZVSocYcwrGSTuzUM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ZttjDVY1jBgtFUUbIUxct" title="pulse">pulse</a></td>
@@ -261,12 +252,10 @@
 </tr>
 <tr>
   <td>17</td>
-  <td>chill breakcore</td>
+  <td><a href="https://everynoise.com/engenremap-chillbreakcore.html" title="chill breakcore">chill breakcore</a></td>
   <td>Breaks<br>Chill</td>
-  <td><b>Punk:</b> 6<br>Breaks:3<br>Chill:2<br>C.Mexico.Latino:2<br>Trance:1<br>Gaming:1<br>Ambient.General:1</td>
-  <td>llwll &quot;blues&quot;<br><audio title="llwll &quot;blues&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/533229a0320fc008b3f8353dd0812a6be62874f1" type="audio/mpeg">
-</audio></td>
+  <td>Punk:6<br>Breaks:3<br>Chill:2<br>C.Mexico.Latino:2<br>Trance:1<br>Gaming:1<br>Ambient.General:1</td>
+  <td>llwll &quot;blues&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/533229a0320fc008b3f8353dd0812a6be62874f1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6wnosjv0zXay7wCgWAa3TG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7sACIthHL6SJs1xESCpxWu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1zA6fuw5IUREMyTJa3tSQ3" title="pulse">pulse</a></td>
@@ -274,12 +263,10 @@
 </tr>
 <tr>
   <td>18</td>
-  <td>sunset lounge</td>
+  <td><a href="https://everynoise.com/engenremap-sunsetlounge.html" title="sunset lounge">sunset lounge</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 7<br>Techno:4<br>Ambient.General:4<br>Reggae:2<br>Electronica:1<br>Synth.Electronic:1<br>C.Germany:1<br>Dance:1</td>
-  <td>Eldon De Baker &quot;Calm and Relax in My Garden&quot;<br><audio title="Eldon De Baker &quot;Calm and Relax in My Garden&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/adff1e51bd60c5dcfa1b2a5e9293039a36c79b49" type="audio/mpeg">
-</audio></td>
+  <td>Chill:7<br>Techno:4<br>Ambient.General:4<br>Reggae:2<br>Electronica:1<br>Synth.Electronic:1<br>C.Germany:1<br>Dance:1</td>
+  <td>Eldon De Baker &quot;Calm and Relax in My Garden&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/adff1e51bd60c5dcfa1b2a5e9293039a36c79b49" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/36rl8fYkSJS6szi6ZYezk4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4ZPAXEbjlfX3wNIa7ov0AT" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5NudVoownBPB64CnidK6B7" title="pulse">pulse</a></td>
@@ -287,12 +274,10 @@
 </tr>
 <tr>
   <td>19</td>
-  <td>deep chill-out</td>
+  <td><a href="https://everynoise.com/engenremap-deepchillout.html" title="deep chill-out">deep chill-out</a></td>
   <td>Chill</td>
-  <td><b>Synth.Electronic:</b> 4<br>Chill:4<br>Electronica:3<br>House:1<br>Indie:1<br>C.Italy:1<br>C.China:1<br>C.Germany:1<br>Ambient.General:1</td>
-  <td>Pretz &quot;Chapel Stile&quot;<br><audio title="Pretz &quot;Chapel Stile&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e7b0a2d53142c8405e822a7c89f74a0f64fcb7b7" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:4<br>Chill:4<br>Electronica:3<br>House:1<br>Indie:1<br>C.Italy:1<br>C.China:1<br>C.Germany:1<br>Ambient.General:1</td>
+  <td>Pretz &quot;Chapel Stile&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e7b0a2d53142c8405e822a7c89f74a0f64fcb7b7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4KQJnPNAZPb94t5bKQmHCY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0rMQ0IIj3zc9IpRX2y7ANf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/14eHi19Pm2Cgx8HkMmrllf" title="pulse">pulse</a></td>
@@ -300,12 +285,10 @@
 </tr>
 <tr>
   <td>20</td>
-  <td>chill dream pop</td>
+  <td><a href="https://everynoise.com/engenremap-chilldreampop.html" title="chill dream pop">chill dream pop</a></td>
   <td>Chill<br>Pop</td>
-  <td><b>Punk:</b> 5<br>Pop:5<br>Indie:3<br>Rock:2<br>Goth:2<br>Chill:2<br>C.Mexico.Latino:2<br>Psy.Rave:1<br>Gaming:1<br>C.France:1<br>C.Italy:1<br>C.Japan:1</td>
-  <td>Swiss Portrait &quot;Paralyzed&quot;<br><audio title="Swiss Portrait &quot;Paralyzed&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2e6a5f4a29fc157d89500504e9419535a7b0966e" type="audio/mpeg">
-</audio></td>
+  <td>Punk:5<br>Pop:5<br>Indie:3<br>Rock:2<br>Goth:2<br>Chill:2<br>C.Mexico.Latino:2<br>Psy.Rave:1<br>Gaming:1<br>C.France:1<br>C.Italy:1<br>C.Japan:1</td>
+  <td>Swiss Portrait &quot;Paralyzed&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2e6a5f4a29fc157d89500504e9419535a7b0966e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0HGczg4L8Tx36FK5Wktk0N" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0WBMHczuQDOz8K1l112s3c" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6t71WdmzUFS83YrVbvNGNr" title="pulse">pulse</a></td>
@@ -313,12 +296,10 @@
 </tr>
 <tr>
   <td>21</td>
-  <td>world chill</td>
+  <td><a href="https://everynoise.com/engenremap-worldchill.html" title="world chill">world chill</a></td>
   <td>Chill</td>
-  <td><b>Synth.Electronic:</b> 7<br>Chill:4<br>Electronica:2<br>Indie:1<br>Pop:1<br>Trap:1<br>C.Taiwan:1<br>C.China:1<br>Experimental:1</td>
-  <td>Kirpi &quot;The Song&quot;<br><audio title="Kirpi &quot;The Song&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/1b6623d07e4839c288ba798fde5cdcfc7f0481a5" type="audio/mpeg">
-</audio></td>
+  <td>Synth.Electronic:7<br>Chill:4<br>Electronica:2<br>Indie:1<br>Pop:1<br>Trap:1<br>C.Taiwan:1<br>C.China:1<br>Experimental:1</td>
+  <td>Kirpi &quot;The Song&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/1b6623d07e4839c288ba798fde5cdcfc7f0481a5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2BdFdt6mjGNmXAHogW2yNR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/33lgau5OGunCVp0E7QadVp" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2AiKgdhROsfbgL5EJYJdwI" title="pulse">pulse</a></td>
@@ -326,12 +307,10 @@
 </tr>
 <tr>
   <td>22</td>
-  <td>chillwave</td>
+  <td><a href="https://everynoise.com/engenremap-chillwave.html" title="chillwave">chillwave</a></td>
   <td>Chill</td>
-  <td><b>Pop:</b> 7<br>Indie:6<br>Electronica:2<br>Synth.Electronic:2<br>Chill:2<br>Rock:1<br>C.France:1<br>Dance:1<br>Experimental:1</td>
-  <td>Washed Out &quot;Feel It All Around&quot;<br><audio title="Washed Out &quot;Feel It All Around&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e142d104ffe00ff322e44e071f0b1b64c29efb01" type="audio/mpeg">
-</audio></td>
+  <td>Pop:7<br>Indie:6<br>Electronica:2<br>Synth.Electronic:2<br>Chill:2<br>Rock:1<br>C.France:1<br>Dance:1<br>Experimental:1</td>
+  <td>Washed Out &quot;Feel It All Around&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e142d104ffe00ff322e44e071f0b1b64c29efb01" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5pDD5tz9aQULzowpuKMSep" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5EdUlrZV2zQicf7rxrfWGk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2IP2zkYzkNenLPvneigykD" title="pulse">pulse</a></td>
@@ -339,12 +318,10 @@
 </tr>
 <tr>
   <td>23</td>
-  <td>chillstep</td>
+  <td><a href="https://everynoise.com/engenremap-chillstep.html" title="chillstep">chillstep</a></td>
   <td>Chill<br>Dubstep</td>
-  <td><b>Dubstep:</b> 5<br>Chill:3<br>Ambient.General:3<br>Psy.Rave:1<br>House:1<br>Trance:1<br>Punk:1<br>Indie:1<br>Pop:1<br>Trap:1<br>Gaming:1<br>Dance:1<br>Experimental:1</td>
-  <td>Rameses B &quot;Children&quot;<br><audio title="Rameses B &quot;Children&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a2147dc64351b6b99505d682728489f564663ff9" type="audio/mpeg">
-</audio></td>
+  <td>Dubstep:5<br>Chill:3<br>Ambient.General:3<br>Psy.Rave:1<br>House:1<br>Trance:1<br>Punk:1<br>Indie:1<br>Pop:1<br>Trap:1<br>Gaming:1<br>Dance:1<br>Experimental:1</td>
+  <td>Rameses B &quot;Children&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a2147dc64351b6b99505d682728489f564663ff9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/22pjJtfW7sA4PiaruUB5yN" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/36q0MNoh4vbYdGlahcq9E5" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1kuBwxrhzVSz46h4V8P3fD" title="pulse">pulse</a></td>
@@ -352,12 +329,10 @@
 </tr>
 <tr>
   <td>24</td>
-  <td>chill house</td>
+  <td><a href="https://everynoise.com/engenremap-chillhouse.html" title="chill house">chill house</a></td>
   <td>Chill<br>House</td>
-  <td><b>Indie:</b> 6<br>House:3<br>Pop:2<br>Chill:2<br>Breaks:1<br>Industrial:1<br>Hip hop:1</td>
-  <td>BOURI &quot;Fall in Love&quot;<br><audio title="BOURI &quot;Fall in Love&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/384d17770032349d215edaf8b3771e9139349d8d" type="audio/mpeg">
-</audio></td>
+  <td>Indie:6<br>House:3<br>Pop:2<br>Chill:2<br>Breaks:1<br>Industrial:1<br>Hip hop:1</td>
+  <td>BOURI &quot;Fall in Love&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/384d17770032349d215edaf8b3771e9139349d8d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5JbAFiiJ3NkrymbL3pv23b" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2iCc76MEoAY3UhMIgmVCiP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1LxRYupoWUEHtF1y1Rzzr8" title="pulse">pulse</a></td>
@@ -365,12 +340,10 @@
 </tr>
 <tr>
   <td>25</td>
-  <td>lo-fi vgm</td>
+  <td><a href="https://everynoise.com/engenremap-lofivgm.html" title="lo-fi vgm">lo-fi vgm</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 4<br>Ambient.General:4<br>Techno:2<br>House:2<br>Electronica:1<br>Synth.Electronic:1<br>C.Japan:1<br>C.Germany:1<br>Jazz:1<br>Reggae:1</td>
-  <td>Hapspee &quot;City of Tears (From &quot;Hollow Knight&quot<br><audio title="Hapspee &quot;City of Tears (From &quot;Hollow Knight&quot" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b66edd9992b3b261a5067210835fe74d5feede8f" type="audio/mpeg">
-</audio></td>
+  <td>Chill:4<br>Ambient.General:4<br>Techno:2<br>House:2<br>Electronica:1<br>Synth.Electronic:1<br>C.Japan:1<br>C.Germany:1<br>Jazz:1<br>Reggae:1</td>
+  <td>Hapspee &quot;City of Tears (From &quot;Hollow Knight&quot<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b66edd9992b3b261a5067210835fe74d5feede8f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/213ytvvMz8Fjj5cQ405EUX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0it8rrESFOnLiK7n4ZvM1n" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6mvUrh2AHmZuRb0BSTXoav" title="pulse">pulse</a></td>
@@ -378,12 +351,10 @@
 </tr>
 <tr>
   <td>26</td>
-  <td>viet lo-fi</td>
+  <td><a href="https://everynoise.com/engenremap-vietlofi.html" title="viet lo-fi">viet lo-fi</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 8<br>Rap:2<br>Pop:1<br>C.Japan:1<br>Ambient.General:1<br>Disco:1</td>
-  <td>Freak D &quot; M Em (Lofi Ver.)&quot;<br><audio title="Freak D &quot; M Em (Lofi Ver.)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/c61b3921888e27dd34415bb2268dbbb6dde6ef27" type="audio/mpeg">
-</audio></td>
+  <td>Chill:8<br>Rap:2<br>Pop:1<br>C.Japan:1<br>Ambient.General:1<br>Disco:1</td>
+  <td>Freak D &quot; M Em (Lofi Ver.)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/c61b3921888e27dd34415bb2268dbbb6dde6ef27" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/3Vy0xyJdPMRV5TYcVz7VFB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/488wqc2V8fixn6fZDkjyUS" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7LC69pmAsWNSzwc9ovvfzs" title="pulse">pulse</a></td>
@@ -391,12 +362,10 @@
 </tr>
 <tr>
   <td>27</td>
-  <td>chill out</td>
+  <td><a href="https://everynoise.com/engenremap-chillout.html" title="chill out">chill out</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 5<br>Ambient.General:3<br>House:2<br>Electronica:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1<br>Jazz:1<br>Gospel:1</td>
-  <td>LeVoite &quot;Heavy Eye Lids&quot;<br><audio title="LeVoite &quot;Heavy Eye Lids&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/8d359dd445f324ec9d5197ae4774d294a0c6222d" type="audio/mpeg">
-</audio></td>
+  <td>Chill:5<br>Ambient.General:3<br>House:2<br>Electronica:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1<br>Jazz:1<br>Gospel:1</td>
+  <td>LeVoite &quot;Heavy Eye Lids&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/8d359dd445f324ec9d5197ae4774d294a0c6222d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5PI1ISPDdvY2InHQ4ltty1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7vdO33WgO3czT8FCd1c4v7" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2boyYwmaBeu3kZukFpHaZa" title="pulse">pulse</a></td>
@@ -404,12 +373,10 @@
 </tr>
 <tr>
   <td>28</td>
-  <td>japanese chill rap</td>
+  <td><a href="https://everynoise.com/engenremap-japanesechillrap.html" title="japanese chill rap">japanese chill rap</a></td>
   <td>C.Japan<br>Chill<br>Rap</td>
-  <td><b>Hip hop:</b> 7<br>Rap:5<br>C.Japan:5<br>Pop:4<br>Chill:2<br>C.India:2<br>Indie:1<br>Viral:1<br>C.Mexico.Latino:1<br>Blues.Soul:1<br>Reggae:1</td>
-  <td>in-d &quot;weekday&quot;<br><audio title="in-d &quot;weekday&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/dc5652ad6e64a07f00eeb8be1597a557cbc79264" type="audio/mpeg">
-</audio></td>
+  <td>Hip hop:7<br>Rap:5<br>C.Japan:5<br>Pop:4<br>Chill:2<br>C.India:2<br>Indie:1<br>Viral:1<br>C.Mexico.Latino:1<br>Blues.Soul:1<br>Reggae:1</td>
+  <td>in-d &quot;weekday&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/dc5652ad6e64a07f00eeb8be1597a557cbc79264" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/15np3AD89wmZNE1pXavg8C" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2sG23Zdk4ehTkk7a75P9F4" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3cSUBgBPwTj0wyZrRD5CE3" title="pulse">pulse</a></td>
@@ -417,12 +384,10 @@
 </tr>
 <tr>
   <td>29</td>
-  <td>slowed and reverb</td>
+  <td><a href="https://everynoise.com/engenremap-slowedandreverb.html" title="slowed and reverb">slowed and reverb</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 3<br>Folk:3<br>Pop:2<br>Rap:2<br>Ambient.General:2<br>House:1<br>C.Japan:1<br>C.India:1</td>
-  <td>FiloChill &quot;D u s k T i l l D a w n (slowed reverb)&qu<br><audio title="FiloChill &quot;D u s k T i l l D a w n (slowed reverb)&qu" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/2b67b1e7c3b9ee9aa4d524a96734e65006e22eff" type="audio/mpeg">
-</audio></td>
+  <td>Chill:3<br>Folk:3<br>Pop:2<br>Rap:2<br>Ambient.General:2<br>House:1<br>C.Japan:1<br>C.India:1</td>
+  <td>FiloChill &quot;D u s k T i l l D a w n (slowed reverb)&qu<br><audio class="playback" src="https://p.scdn.co/mp3-preview/2b67b1e7c3b9ee9aa4d524a96734e65006e22eff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/44NzAKSh19KifXgIbe5FvL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6HgprJ7nUVAUFVGVx5sCZr" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/64ezuZUnpruizyae0eVvNg" title="pulse">pulse</a></td>
@@ -430,12 +395,10 @@
 </tr>
 <tr>
   <td>30</td>
-  <td>chill drill</td>
+  <td><a href="https://everynoise.com/engenremap-chilldrill.html" title="chill drill">chill drill</a></td>
   <td>Chill</td>
-  <td><b>Rap:</b> 7<br>Hip hop:4<br>Chill:2<br>C.India:2<br>Viral:1<br>Pop:1<br>Trap:1<br>C.Germany:1<br>Gospel:1</td>
-  <td>Ronzo &quot;Left Back - Remix&quot;<br><audio title="Ronzo &quot;Left Back - Remix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/d813d663fe55620a57856a15a1dc12074f24460f" type="audio/mpeg">
-</audio></td>
+  <td>Rap:7<br>Hip hop:4<br>Chill:2<br>C.India:2<br>Viral:1<br>Pop:1<br>Trap:1<br>C.Germany:1<br>Gospel:1</td>
+  <td>Ronzo &quot;Left Back - Remix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/d813d663fe55620a57856a15a1dc12074f24460f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7EPz5p65YLw2YTfKhFGGZx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2HCNpOSoieTE7tOhXFdeW5" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/12GU1LDcxjVRoP7enCzNtV" title="pulse">pulse</a></td>
@@ -443,12 +406,10 @@
 </tr>
 <tr>
   <td>31</td>
-  <td>steelpan</td>
+  <td><a href="https://everynoise.com/engenremap-steelpan.html" title="steelpan">steelpan</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 4<br>Jazz:3<br>Indie:1<br>Folk:1<br>Dance:1<br>Ambient.General:1<br>Disco:1</td>
-  <td>The Carnival Steel Drum Band &quot;One Love&quot;<br><audio title="The Carnival Steel Drum Band &quot;One Love&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/197b5168a586d3e3803ad0281d15ae0cd6875d40" type="audio/mpeg">
-</audio></td>
+  <td>Chill:4<br>Jazz:3<br>Indie:1<br>Folk:1<br>Dance:1<br>Ambient.General:1<br>Disco:1</td>
+  <td>The Carnival Steel Drum Band &quot;One Love&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/197b5168a586d3e3803ad0281d15ae0cd6875d40" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4sJZ53JDyryVhDLcUFARLL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/693MPRLLIVwFE4iu1eNykQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1lKZRvkaawGHGW6rAu4neO" title="pulse">pulse</a></td>
@@ -456,12 +417,10 @@
 </tr>
 <tr>
   <td>32</td>
-  <td>study beats</td>
+  <td><a href="https://everynoise.com/engenremap-studybeats.html" title="study beats">study beats</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 3<br>House:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1</td>
-  <td>Steefann &quot;Really Get Going&quot;<br><audio title="Steefann &quot;Really Get Going&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6c962c0b7f64b7e16a750ab0f33675d2d93f0607" type="audio/mpeg">
-</audio></td>
+  <td>Chill:3<br>House:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1</td>
+  <td>Steefann &quot;Really Get Going&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6c962c0b7f64b7e16a750ab0f33675d2d93f0607" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7gMAoS3RpftL5PDiOu1ug0" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1poyzbn304YvXzuc2t1Rgc" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0TgmNKenIEY7g1hG3G4smP" title="pulse">pulse</a></td>
@@ -469,12 +428,10 @@
 </tr>
 <tr>
   <td>33</td>
-  <td>chill r&amp;b</td>
+  <td><a href="https://everynoise.com/engenremap-chillrb.html" title="chill r&amp;b">chill r&amp;b</a></td>
   <td>Blues.Soul<br>Chill</td>
-  <td><b>Blues.Soul:</b> 7<br>C.Mexico.Latino:6<br>Chill:3<br>Indie:2<br>Pop:2<br>Psy.Rave:1<br>Viral:1<br>C.Germany:1</td>
-  <td>Thomas Ng &quot;One Last Dance (feat. Milky Day)&quot;<br><audio title="Thomas Ng &quot;One Last Dance (feat. Milky Day)&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/4b9076179e98e6ef97c7346dadf0aedf332ff1c2" type="audio/mpeg">
-</audio></td>
+  <td>Blues.Soul:7<br>C.Mexico.Latino:6<br>Chill:3<br>Indie:2<br>Pop:2<br>Psy.Rave:1<br>Viral:1<br>C.Germany:1</td>
+  <td>Thomas Ng &quot;One Last Dance (feat. Milky Day)&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/4b9076179e98e6ef97c7346dadf0aedf332ff1c2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/60FHIWc8xWDuaUyPMlhPFm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4ovxfXzBkrVqzBWqjJj0nv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7r8s6Pe4A99ldrYTEXN9ia" title="pulse">pulse</a></td>
@@ -482,12 +439,10 @@
 </tr>
 <tr>
   <td>34</td>
-  <td>chill pop</td>
+  <td><a href="https://everynoise.com/engenremap-chillpop.html" title="chill pop">chill pop</a></td>
   <td>Chill<br>Pop</td>
-  <td><b>Pop:</b> 8<br>Indie:5<br>Chill:3<br>Blues.Soul:3<br>C.India:2<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.China:1<br>C.Germany:1</td>
-  <td>Zachary Knowles &quot;slow down my thoughts&quot;<br><audio title="Zachary Knowles &quot;slow down my thoughts&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/624bcf966822a27b65041f21afc14c6cdb8d2e05" type="audio/mpeg">
-</audio></td>
+  <td>Pop:8<br>Indie:5<br>Chill:3<br>Blues.Soul:3<br>C.India:2<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.China:1<br>C.Germany:1</td>
+  <td>Zachary Knowles &quot;slow down my thoughts&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/624bcf966822a27b65041f21afc14c6cdb8d2e05" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6NqeUZV00Bj7iKBNniWBpE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0vxjnxgdjm2e8PtjxTQxGu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7omtKjdWtiuxf7P2GMjfI7" title="pulse">pulse</a></td>
@@ -495,12 +450,10 @@
 </tr>
 <tr>
   <td>35</td>
-  <td>chillhop</td>
+  <td><a href="https://everynoise.com/engenremap-chillhop.html" title="chillhop">chillhop</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 6<br>Jazz:4<br>Synth.Electronic:1<br>Ambient.General:1<br>Disco:1</td>
-  <td>FloFilz &quot;Inside Out&quot;<br><audio title="FloFilz &quot;Inside Out&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e45bc3a30a3664f22b8b11c9d9957e216d0284c5" type="audio/mpeg">
-</audio></td>
+  <td>Chill:6<br>Jazz:4<br>Synth.Electronic:1<br>Ambient.General:1<br>Disco:1</td>
+  <td>FloFilz &quot;Inside Out&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e45bc3a30a3664f22b8b11c9d9957e216d0284c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0cRVSi1eXiAYipZDgVU11c" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Ruhg2gEWNS2QRq5Cn9v2w" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5J8bQ6BOD8BAvvwLv5fygC" title="pulse">pulse</a></td>
@@ -508,12 +461,10 @@
 </tr>
 <tr>
   <td>36</td>
-  <td>viet chill rap</td>
+  <td><a href="https://everynoise.com/engenremap-vietchillrap.html" title="viet chill rap">viet chill rap</a></td>
   <td>Chill<br>Rap</td>
-  <td><b>Chill:</b> 5<br>Pop:3<br>Rap:3<br>Folk:2<br>Indie:1<br>C.China:1<br>Jazz:1</td>
-  <td>DucMinh &quot;Ng s  em&quot;<br><audio title="DucMinh &quot;Ng s  em&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/a8beace33a186f069ad461da1e408844e9f86257" type="audio/mpeg">
-</audio></td>
+  <td>Chill:5<br>Pop:3<br>Rap:3<br>Folk:2<br>Indie:1<br>C.China:1<br>Jazz:1</td>
+  <td>DucMinh &quot;Ng s  em&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/a8beace33a186f069ad461da1e408844e9f86257" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/72TDfcmK4FAKaBt5AXfGce" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7DESRKpjtcGH5uSFQ9p1jv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4rtZZHo3QecA6sYeJ1FkJy" title="pulse">pulse</a></td>
@@ -521,12 +472,10 @@
 </tr>
 <tr>
   <td>37</td>
-  <td>lo-fi chill</td>
+  <td><a href="https://everynoise.com/engenremap-lofichill.html" title="lo-fi chill">lo-fi chill</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 5<br>Rap:4<br>Pop:2<br>Folk:2<br>Indie:1<br>Emo:1<br>C.China:1</td>
-  <td>Monty Datta &quot;Can\'t Love Myself&quot;<br><audio title="Monty Datta &quot;Can\'t Love Myself&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/e2fc6b80c86db8b965d833f133f549727024255b" type="audio/mpeg">
-</audio></td>
+  <td>Chill:5<br>Rap:4<br>Pop:2<br>Folk:2<br>Indie:1<br>Emo:1<br>C.China:1</td>
+  <td>Monty Datta &quot;Can\'t Love Myself&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/e2fc6b80c86db8b965d833f133f549727024255b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/12bxvDyycP9jNYaYKK57DO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2pUXQSGxXTosSrXZeWmtK6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2lUzSMJibTZdYka9xvMvyT" title="pulse">pulse</a></td>
@@ -534,12 +483,10 @@
 </tr>
 <tr>
   <td>38</td>
-  <td>japanese chillhop</td>
+  <td><a href="https://everynoise.com/engenremap-japanesechillhop.html" title="japanese chillhop">japanese chillhop</a></td>
   <td>C.Japan<br>Chill</td>
-  <td><b>Chill:</b> 7<br>C.Japan:2<br>Ambient.General:2<br>House:1<br>C.Mexico.Latino:1<br>Jazz:1<br>Gospel:1</td>
-  <td>F Durak &quot;Glances&quot;<br><audio title="F Durak &quot;Glances&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/f22004a7bdfa1bf3d8e2248464955c6c5279e7c3" type="audio/mpeg">
-</audio></td>
+  <td>Chill:7<br>C.Japan:2<br>Ambient.General:2<br>House:1<br>C.Mexico.Latino:1<br>Jazz:1<br>Gospel:1</td>
+  <td>F Durak &quot;Glances&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/f22004a7bdfa1bf3d8e2248464955c6c5279e7c3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/0LiL4uxTI4oq6hSvmCkVe0" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7dirOHS0peXnJhNDpDA0fT" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1jy8IqcjIBjU9iYpPG9rJy" title="pulse">pulse</a></td>
@@ -547,12 +494,10 @@
 </tr>
 <tr>
   <td>39</td>
-  <td>chill abstract hip hop</td>
+  <td><a href="https://everynoise.com/engenremap-chillabstracthiphop.html" title="chill abstract hip hop">chill abstract hip hop</a></td>
   <td>Chill<br>Hip hop</td>
-  <td><b>Rock:</b> 6<br>Blues.Soul:5<br>Hip hop:5<br>Indie:2<br>Chill:2<br>C.Mexico.Latino:2<br>Pop:1<br>C.France:1<br>C.Germany:1<br>Experimental:1<br>Instrumental:1</td>
-  <td>KWAMZAY &quot;untitled&quot;<br><audio title="KWAMZAY &quot;untitled&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/7e558198523220149b40fabf59dd51533562ab73" type="audio/mpeg">
-</audio></td>
+  <td>Rock:6<br>Blues.Soul:5<br>Hip hop:5<br>Indie:2<br>Chill:2<br>C.Mexico.Latino:2<br>Pop:1<br>C.France:1<br>C.Germany:1<br>Experimental:1<br>Instrumental:1</td>
+  <td>KWAMZAY &quot;untitled&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/7e558198523220149b40fabf59dd51533562ab73" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4U0qNcMhZxPKtKbrCjaZdF" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2OC1aGkMX6fl1cg3cyMmwM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4s8z2z9ppzmNuwZOvEs9xr" title="pulse">pulse</a></td>
@@ -560,12 +505,10 @@
 </tr>
 <tr>
   <td>40</td>
-  <td>lo-fi study</td>
+  <td><a href="https://everynoise.com/engenremap-lofistudy.html" title="lo-fi study">lo-fi study</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 3<br>House:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Gospel:1<br>Ambient.Yoga.Therapy.Sleep.White.Noise:1</td>
-  <td>Claudia Lessing &quot;El Tiempo Corre&quot;<br><audio title="Claudia Lessing &quot;El Tiempo Corre&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/5aa666ed1ef2e775957c6c2c4d2d5fca13d20968" type="audio/mpeg">
-</audio></td>
+  <td>Chill:3<br>House:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Gospel:1<br>Ambient.Yoga.Therapy.Sleep.White.Noise:1</td>
+  <td>Claudia Lessing &quot;El Tiempo Corre&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/5aa666ed1ef2e775957c6c2c4d2d5fca13d20968" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/6KM2bexSz0CWtpMtrrA4iX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4CPAX0pPCdfMuRIUXLIgQD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5OdG9dX4XcoyZvGwQUwfJc" title="pulse">pulse</a></td>
@@ -573,12 +516,10 @@
 </tr>
 <tr>
   <td>41</td>
-  <td>anime lo-fi</td>
+  <td><a href="https://everynoise.com/engenremap-animelofi.html" title="anime lo-fi">anime lo-fi</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 3<br>C.Japan:2<br>House:1<br>C.Mexico.Latino:1<br>Jazz:1<br>Gospel:1<br>Ambient.Yoga.Therapy.Sleep.White.Noise:1<br>Instrumental:1</td>
-  <td>Cadred &quot;Red Swan Lofi&quot;<br><audio title="Cadred &quot;Red Swan Lofi&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/95c094f61c43876fdcb7fd70c25722cc01445983" type="audio/mpeg">
-</audio></td>
+  <td>Chill:3<br>C.Japan:2<br>House:1<br>C.Mexico.Latino:1<br>Jazz:1<br>Gospel:1<br>Ambient.Yoga.Therapy.Sleep.White.Noise:1<br>Instrumental:1</td>
+  <td>Cadred &quot;Red Swan Lofi&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/95c094f61c43876fdcb7fd70c25722cc01445983" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/73KqelVOge5J7pIo7b87SV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1pC4BefyrGfaB10N0d2mEl" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7AsMVB3jnPtd8yzKvJrUXd" title="pulse">pulse</a></td>
@@ -586,12 +527,10 @@
 </tr>
 <tr>
   <td>42</td>
-  <td>lo-fi product</td>
+  <td><a href="https://everynoise.com/engenremap-lofiproduct.html" title="lo-fi product">lo-fi product</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 2<br>House:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1<br>Gospel:1</td>
-  <td>Sad LoFi Boy &quot;Lofi Forgetting To Study&quot;<br><audio title="Sad LoFi Boy &quot;Lofi Forgetting To Study&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/bea4a58102cb2b040442809fb911bfd44bf871da" type="audio/mpeg">
-</audio></td>
+  <td>Chill:2<br>House:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1<br>Gospel:1</td>
+  <td>Sad LoFi Boy &quot;Lofi Forgetting To Study&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/bea4a58102cb2b040442809fb911bfd44bf871da" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2ucuFoIFqmKn5VK1tyngBZ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1fvc8edyFX7m64yX4T0xmJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/426TPG8pTTxNRkH3jVkYLr" title="pulse">pulse</a></td>
@@ -599,12 +538,10 @@
 </tr>
 <tr>
   <td>43</td>
-  <td>lo-fi brasileiro</td>
+  <td><a href="https://everynoise.com/engenremap-lofibrasileiro.html" title="lo-fi brasileiro">lo-fi brasileiro</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 5<br>Indie:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1<br>Gospel:1<br>Ambient.General:1</td>
-  <td>Geezmo &quot;Pacific Ocean&quot;<br><audio title="Geezmo &quot;Pacific Ocean&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/96665a77d14dc2c81e0f7b09998f2716ef47e871" type="audio/mpeg">
-</audio></td>
+  <td>Chill:5<br>Indie:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1<br>Gospel:1<br>Ambient.General:1</td>
+  <td>Geezmo &quot;Pacific Ocean&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/96665a77d14dc2c81e0f7b09998f2716ef47e871" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/33mIX3kzpt4p3BGv0b508d" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ChiiDGBXKVWIZWQbACSpq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0UjDexzDFeLYnLUGiPH1gm" title="pulse">pulse</a></td>
@@ -612,12 +549,10 @@
 </tr>
 <tr>
   <td>44</td>
-  <td>focus beats</td>
+  <td><a href="https://everynoise.com/engenremap-focusbeats.html" title="focus beats">focus beats</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 4<br>House:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1<br>Gospel:1</td>
-  <td>Electricsheep42 &quot;Aburaya&quot;<br><audio title="Electricsheep42 &quot;Aburaya&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/35a79ba6a085b7392eaf8a4908ab69bf2f960bc9" type="audio/mpeg">
-</audio></td>
+  <td>Chill:4<br>House:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1<br>Gospel:1</td>
+  <td>Electricsheep42 &quot;Aburaya&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/35a79ba6a085b7392eaf8a4908ab69bf2f960bc9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4s0siSTRtglRvQKxpWJ6pM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6MQS6zUNVMPkyexSnfaP3k" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6dS6riwEqfGyrPj9zcW24H" title="pulse">pulse</a></td>
@@ -625,12 +560,10 @@
 </tr>
 <tr>
   <td>45</td>
-  <td>lo-fi beats</td>
+  <td><a href="https://everynoise.com/engenremap-lofibeats.html" title="lo-fi beats">lo-fi beats</a></td>
   <td>Chill</td>
-  <td><b>Chill:</b> 5<br>House:1<br>Indie:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1<br>Gospel:1</td>
-  <td>eiji &quot;Ocean Drive&quot;<br><audio title="eiji &quot;Ocean Drive&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/b342b90b694ad3f312cb127c3890ddd00f432fcc" type="audio/mpeg">
-</audio></td>
+  <td>Chill:5<br>House:1<br>Indie:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Jazz:1<br>Gospel:1</td>
+  <td>eiji &quot;Ocean Drive&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/b342b90b694ad3f312cb127c3890ddd00f432fcc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/5OzAgYmdiqJKWjGvX7cP4Q" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3hZ6N7t0owGXe8afpoSmtz" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4lQx2jLFLFpnAUtHt2veOY" title="pulse">pulse</a></td>
@@ -638,12 +571,10 @@
 </tr>
 <tr>
   <td>46</td>
-  <td>coverchill</td>
+  <td><a href="https://everynoise.com/engenremap-coverchill.html" title="coverchill">coverchill</a></td>
   <td>Chill</td>
-  <td><b>Jazz:</b> 6<br>Instrumental:3<br>Chill:2<br>Pop:1<br>Gospel:1<br>Reggae:1</td>
-  <td>Dalbani &quot;Sunday Morning - Bossa Nova Mix&quot;<br><audio title="Dalbani &quot;Sunday Morning - Bossa Nova Mix&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/ed75524087f903db440209f12a6a78a1dd817a38" type="audio/mpeg">
-</audio></td>
+  <td>Jazz:6<br>Instrumental:3<br>Chill:2<br>Pop:1<br>Gospel:1<br>Reggae:1</td>
+  <td>Dalbani &quot;Sunday Morning - Bossa Nova Mix&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/ed75524087f903db440209f12a6a78a1dd817a38" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/2X35a4BVWpyP9BwcyRRhJD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4CxlqKXfllXcdYGXvi4Zb9" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1QhR4ZClQqPGpM8wI112t3" title="pulse">pulse</a></td>
@@ -651,12 +582,10 @@
 </tr>
 <tr>
   <td>47</td>
-  <td>acoustic chill</td>
+  <td><a href="https://everynoise.com/engenremap-acousticchill.html" title="acoustic chill">acoustic chill</a></td>
   <td>Chill</td>
-  <td><b>Folk:</b> 7<br>Pop:4<br>Vocal:3<br>Jazz:3<br>Indie:2<br>Chill:2<br>C.Korea:1<br>C.Japan:1</td>
-  <td>Le Vitates &quot;Say So&quot;<br><audio title="Le Vitates &quot;Say So&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/6c26ebfca624f6d26779f8c834876052b446c8fb" type="audio/mpeg">
-</audio></td>
+  <td>Folk:7<br>Pop:4<br>Vocal:3<br>Jazz:3<br>Indie:2<br>Chill:2<br>C.Korea:1<br>C.Japan:1</td>
+  <td>Le Vitates &quot;Say So&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/6c26ebfca624f6d26779f8c834876052b446c8fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/7dJlO6VYlCSlfxued1pqso" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0XcEaV9ZAS6Q8MYZ6fz9jK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7otnoTWLdtHkAOmp634mYw" title="pulse">pulse</a></td>
@@ -664,12 +593,10 @@
 </tr>
 <tr>
   <td>48</td>
-  <td>chill guitar</td>
+  <td><a href="https://everynoise.com/engenremap-chillguitar.html" title="chill guitar">chill guitar</a></td>
   <td>Chill<br>Instrumental</td>
-  <td><b>Chill:</b> 2<br>Instrumental:2</td>
-  <td>Solomon Davis &quot;Before The Tide&quot;<br><audio title="Solomon Davis &quot;Before The Tide&quot;" controls preload="none">
-<source src="https://p.scdn.co/mp3-preview/65a80abedd792402efe7a3984da249b585a62d3d" type="audio/mpeg">
-</audio></td>
+  <td>Chill:2<br>Instrumental:2</td>
+  <td>Solomon Davis &quot;Before The Tide&quot;<br><audio class="playback" src="https://p.scdn.co/mp3-preview/65a80abedd792402efe7a3984da249b585a62d3d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://open.spotify.com/playlist/4XhnpVMVwnL8e7EHxA2Rna" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6TRVlRnNGDQxha5imjQhbp" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7C4PMwvRTx2LlFNGRgsu38" title="pulse">pulse</a></td>
