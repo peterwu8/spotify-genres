@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.En.Espanol<br>Rock</td>
   <td>Rock:8<br>C.Mexico.Latino:8<br>Pop:6<br>C.En.Espanol:2<br>Reggae:2<br>C.Spain:1<br>Folk:1</td>
   <td>Maldita Vecindad Y Los Hijos Del 5to. Patio &quot;Kumbala&<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1687c34f87c13a2c8f76e7608e065218527fa295" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rock-en-espanol" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0xZkDM0jIfrFATSeaGt9Ms" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/76lcb0JxyScYFsm2EJ3IyM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0mxidos6OCntwaasVvuD8A" title="pulse">pulse</a></td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.En.Espanol<br>Reggae</td>
   <td>Reggae:13<br>Pop:5<br>C.En.Espanol:2<br>Dance:2<br>Rock:1<br>C.Italy:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>C.Africa:1<br>Traditional:1</td>
   <td>La Muza &quot;Una Vez Mas&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f825ba7c9e2b267a10b0be7c447822ff96166981" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/reggae-en-espanol" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/672uAsamKiPJti4m4EdETY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6IPlLzgouXsCM3LAZVSqmx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6rDKnbfFPIHPL7BXPqf9GQ" title="pulse">pulse</a></td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.En.Espanol<br>Hyperpop<br>Pop</td>
   <td>Pop:13<br>Hyperpop:9<br>Emo:5<br>Rap:3<br>C.En.Espanol:3<br>Trap:2<br>C.Italy:2<br>Synth.Electronic:1<br>C.Japan:1<br>C.China:1<br>C.Germany:1<br>Blues.Soul:1</td>
   <td>Loyalkidx &quot;offside&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1fa4acc4895575f5fb7d45834ef0267797d7c756" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hyperpop-en-espanol" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/67WXwFxh6c7BJujM1zvn25" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4DeBj0hiaaUGv6T9FUgevX" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4EElR6kN0KiyDuZpHxSlyO" title="pulse">pulse</a></td>
@@ -116,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Blues.Soul<br>C.En.Espanol</td>
   <td>Trap:9<br>Rap:3<br>C.Mexico.Latino:3<br>Blues.Soul:3<br>C.En.Espanol:2<br>Viral:1<br>C.Japan:1<br>C.India:1<br>Hip hop:1<br>Reggae:1</td>
   <td>Jesse Baez &quot;Malib&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2af7375deca4e01a75e489b1c836be677d1f673e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/r&amp;b-en-espanol" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4tzYxjoGLrGjrjp1x0Sggg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4zRJZumF22WhBW2nLtVm2J" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0NwNO3BQvbg29sYOjOFlYM" title="pulse">pulse</a></td>
@@ -127,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.En.Espanol<br>Emo<br>Trap</td>
   <td>Pop:11<br>Hyperpop:8<br>Emo:6<br>Trap:4<br>Rap:3<br>C.En.Espanol:3<br>C.Italy:3<br>Synth.Electronic:2<br>Indie:1<br>C.China:1<br>C.Germany:1</td>
   <td>Gremlin Shawty &quot;PALLMALLPOPSTAR&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e50eb660fa2a366d566e8ffde2efef8a32b73c66" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emo-trap-en-espanol" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4vHFUc9Gak6omVxBYkDLRv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6xk9kuRH69d4XggI6ShUgb" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6rz0vmTdryqdpEgPuNkmwQ" title="pulse">pulse</a></td>
@@ -136,8 +143,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>6</td>
   <td>plugg en espanol <a href="https://everynoise.com/engenremap-pluggenespanol.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.En.Espanol</td>
-  <td>Trap:7<br>Rap:7<br>C.En.Espanol:3<br>C.India:2<br>Rehhab:2<br>Hip hop:2<br>Pop:1<br>C.Germany:1<br>C.Irish:1</td>
+  <td>Trap:7<br>Rap:7<br>C.En.Espanol:3<br>C.India:2<br>Curated.rehhab:2<br>Hip hop:2<br>Pop:1<br>C.Germany:1<br>C.Irish:1</td>
   <td>Hwii &quot;Escaparme&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a35e6dc96407f43096b0304c1b9f58175015718b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/plugg-en-espanol" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4iWNy2pQP264gRiOnVIZs5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6k9W9pFKVsY4QMWsqP50VW" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5jbPwUpOd3wasVxAtyenfB" title="pulse">pulse</a></td>
@@ -147,8 +155,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>7</td>
   <td>detroit trap en espanol <a href="https://everynoise.com/engenremap-detroittrapenespanol.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.En.Espanol<br>Trap</td>
-  <td>Trap:8<br>Rap:7<br>C.En.Espanol:3<br>C.Germany:2<br>Rehhab:2<br>Hip hop:2<br>C.Irish:1</td>
+  <td>Trap:8<br>Rap:7<br>C.En.Espanol:3<br>C.Germany:2<br>Curated.rehhab:2<br>Hip hop:2<br>C.Irish:1</td>
   <td>Doly Flackko &quot;20 Milagros&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1d2f5c60089dff7d88dc6b9bce2dbbf714a1f287" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/detroit-trap-en-espanol" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/71p5kU1kMytV6A1aJ0jW8a" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3edUzb8JL4833ETLrC8KQ1" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ey344WthcF3B6Qj7ItlCE" title="pulse">pulse</a></td>
@@ -160,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.En.Espanol<br>Rock</td>
   <td>Rock:16<br>C.En.Espanol:2<br>Punk:1<br>C.Gypsy:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1<br>Blues.Soul:1</td>
   <td>Rock\'n\'Bordes &quot;Dios de m se olvid&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f6463951caed3ce291068a608d09ec6bc1851655" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rockabilly-en-espanol" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4Dyha25pIbrEfMawz52bYE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6xVeVKwEWtgGj1vXY53mei" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0bJI0meGSpUZhqXtkRWg9T" title="pulse">pulse</a></td>

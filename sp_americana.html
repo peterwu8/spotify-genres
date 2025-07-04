@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Pop:5<br>Americana:4<br>Country:4<br>Rock:2<br>Folk:2<br>Indie:1<br>C.Italy:1<br>C.Spain:1<br>Gospel:1</td>
   <td>Jeremy Pinnell &quot;Ballad of 1892&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5a9729c682c4329472d9f4d326bfd82d5fa4c3c3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/roots-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1iWoJHBrst3QgMIW6kXHxb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3MOOwuzeXXzhvaMStI8pEU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1u7nge1AoybtOShR9Zyfk2" title="pulse">pulse</a></td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana &#x2380;</td>
   <td>Americana:3<br>Rock:2<br>Pop:2<br>Country:2<br>Indie:1<br>C.Mexico.Latino:1<br>Folk:1<br>Gospel:1</td>
   <td>Chancey Williams &quot;One of These Days&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ec39f1917c03d8fa815d50c350d3ac144f710f0d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/wyoming-roots" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/48weBBj0M7WB4i0YSh3w9i" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2aJUFeQPGb2ngcpJka4wTP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2tvBBEgBebWqrSyZtKjIet" title="pulse">pulse</a></td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:4<br>Rock:3<br>Pop:3<br>C.Mexico.Latino:3<br>Indie:2<br>Folk:2<br>C.France:1<br>Blues.Soul:1</td>
   <td>Amythyst Kiah &quot;Black Myself&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1369c10db836b0f2d89b01429c622c09e275a078" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/black-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7aC9044BJHzFWWAX18Bo95" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2loVU1NLDiNkUQceZNba9H" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/49ISfkFTBcmYACprMRFmiA" title="pulse">pulse</a></td>
@@ -116,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:6<br>Indie:3<br>Rock:3<br>C.Mexico.Latino:2<br>Pop:1<br>C.Italy:1<br>Folk:1</td>
   <td>Susto &quot;Get Down&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d54c4b1fbd3edc43b17f58bc7d416b384533ccce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-new-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0J8pO9hK5KnAFWaLE3oTfK" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/49FpU3R7ih9KwWX1hkN6BG" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1YzMCSvW33BW3dbk6cyQPn" title="pulse">pulse</a></td>
@@ -127,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana &#x2380;</td>
   <td>Americana:3<br>Indie:2<br>Folk:2<br>Rock:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Country:1</td>
   <td>Ylva Haru &quot;Uuden Alku&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6785e7aa81aff8604d5dc8f966efba1d9e1a40b2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/laulaja-lauluntekija" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3HHF173MIu4NBRr3pbgXsB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0gbjhdbCQjxIXa48EMOk8u" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0r49oAZd2kpoEXzpr4vM9B" title="pulse">pulse</a></td>
@@ -138,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:8<br>Rock:3<br>Pop:3<br>C.Italy:1<br>C.Mexico.Latino:1<br>Folk:1<br>Country:1</td>
   <td>Slaid Cleaves &quot;Breakfast In Hell&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6eacdf4d452c25be8b4a5af9149845aad9af4611" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austin-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4m33gxxb6nOSVYMzB0Rm94" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Eo2IxZcl6JuNFBJ3n651k" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ztAGpPjw9XVruqgYPKEhM" title="pulse">pulse</a></td>
@@ -149,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Rock:5<br>Blues.Soul:5<br>Americana:4<br>Punk:1<br>Indie:1<br>Pop:1<br>C.Mexico.Latino:1<br>Folk:1<br>Country:1</td>
   <td>Mark Edgar Stuart &quot;Remote Control&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2ad7e9926a065471d63eb34f7acc7a07ca6ff04e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/memphis-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/37qBQkNmniKSzKQSaF1gOw" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6HmbhlijD9MhrM1IqmtwTF" title="pulse">pulse</a></td>
@@ -160,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana &#x2380;</td>
   <td>Americana:9<br>Rock:2<br>Indie:1<br>Pop:1<br>C.Italy:1<br>C.Japan:1<br>Gospel:1</td>
   <td>Eric Bolander &quot;The Wind&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/08fb45818b804c431d1dd468759f51be5bc7e720" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kentucky-roots" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5K1iPKk49VzQ7QFocqwgYx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2JbU3WFNer1lHdcXR38YZR" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7LjzoIvl1MLySxVrs3s4LV" title="pulse">pulse</a></td>
@@ -171,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:9<br>Indie:4<br>Rock:2<br>C.Mexico.Latino:1<br>Folk:1<br>Country:1</td>
   <td>Arlo McKinley &quot;This Damn Town&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/076ae974fe925b68bf1d01ddf7025c8e462f50d1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/southern-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/74lUBySWkWlasy8qCmtXAP" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4hrSuvN2aA5SAgVFmiGZHc" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2zd8onnl5Q6Q2Qee3qZwFO" title="pulse">pulse</a></td>
@@ -182,6 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:7<br>Rock:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Country:1</td>
   <td>Lilly Hiatt &quot;Brightest Star&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6c90164b5a759ffcbdc5e8b920c8b6e053c8a332" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nashville-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/34hqvaKy6jIvN2hNf1sKlq" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1sXvAhwck6ZoxQiX9AkgMx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2AGjOaPAmaclcBdfuTkguV" title="pulse">pulse</a></td>
@@ -193,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana &#x2380;</td>
   <td>Americana:5<br>Folk:4<br>Indie:1<br>Pop:1<br>C.Mexico.Latino:1<br>Country:1</td>
   <td>Tophouse &quot;The Mountain Song&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/60e9391a01196a5d9aa44d4e3332ff195809fa67" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/montana-roots" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5fcYFvhlE6Yf4yKQTHwC0f" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -204,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:7<br>Pop:2<br>Country:2<br>Indie:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.India:1<br>Folk:1<br>Gospel:1</td>
   <td>The Weeping Willows &quot;Black Crow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/baad64ea3c21f0fc9d4e9961a3abb914ba96b358" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4cavePoqp7tBZ8FYfZaDlf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1X21E6puTkvNgs7YkCZ4du" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6QlFXELZAX5pYgAGlAR1wp" title="pulse">pulse</a></td>
@@ -215,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana<br>Goth</td>
   <td>Indie:15<br>Americana:2<br>Goth:2<br>Punk:1<br>Rock:1<br>Folk:1<br>Blues.Soul:1</td>
   <td>Strawfoot &quot;Damnation Way&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9f22ab451ab1e90ddb936032995128b0a988ee0f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gothic-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3s8q8jIapmc1VcZoG9HztR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/21gtjCtL08CsAFDpsHFQLB" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0mwzMTSg853S6CXRGk1cMI" title="pulse">pulse</a></td>
@@ -226,6 +241,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana &#x2380;</td>
   <td>Americana:5<br>Pop:3<br>Rock:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Folk:1<br>Gospel:1<br>Country:1</td>
   <td>Jimmy LaFave &quot;Walk Away Ren&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/907af78a76d60ac5606c7ddfe01c549636307275" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austin-singer-songwriter" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4fcravOX9bIqlZMXgKqWV9" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZMAXmVwavw1cQNGnn78X0" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2k7DIjDP7tlkiFUOVMtwWw" title="pulse">pulse</a></td>
@@ -237,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:10<br>Indie:2<br>Rock:2<br>C.Mexico.Latino:1<br>Folk:1<br>Country:1</td>
   <td>Douwe Bob &quot;This World Is Our Home&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b02fcf3da4577d5faa39366992d7a4574aa0c493" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dutch-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2udlgcqCb6IBRpLIkuVXxe" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/62f3TlAurdyHDFhkirnbb8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1BIFyVQFWCWa7dEj7f3BPZ" title="pulse">pulse</a></td>
@@ -248,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:9<br>Indie:3<br>Rock:2<br>Folk:2<br>Country:2<br>C.Mexico.Latino:1</td>
   <td>Humbird &quot;Pharmakon&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/61ab6501f087824443e36c5b22414def24f9b257" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/midwest-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/35vbrIRrC2Yt071E4HL8Y4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/63dnmAWgK52bbnxCEcjaaW" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0W2QhDq1R28HswYdlmYdI1" title="pulse">pulse</a></td>
@@ -259,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:6<br>Indie:2<br>Folk:2<br>Gospel:2<br>Country:2<br>Rock:1<br>C.Mexico.Latino:1</td>
   <td>Malin Pettersen &quot;Pause&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6bb25c283c5090c560ff74160dcd8238ca98ae25" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/norwegian-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3iCft6V9x3v1KxFIu1gDfL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/30YEoUUA2NXG4FvOQnlZ9G" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5AvHe79z6ktrcGrcTiorfL" title="pulse">pulse</a></td>
@@ -270,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:7<br>Indie:3<br>Country:3<br>Folk:2<br>Gospel:2<br>Rock:1<br>C.Mexico.Latino:1</td>
   <td>Bear\'s Den &quot;Above The Clouds Of Pompeii&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5ff8ed0a8779b44aaa6040a16fce9cd8c92a1a2a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1fy3ClO9H8sOTy5ij9H5DC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5zcF9qkjyrUIwyWbv4OXXz" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1blaf9VNQ3cZkgxKf0oooQ" title="pulse">pulse</a></td>
@@ -281,6 +301,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana<br>C.Mexico.Latino</td>
   <td>C.Mexico.Latino:11<br>Pop:4<br>Folk:3<br>Americana:2<br>C.India:2<br>Psy.Goa:1<br>C.France:1</td>
   <td>Sara Curruchich &quot;Pueblos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8d6283dda850d37e22edbe3cbad2a10f94d8c227" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-indigena-latinoamericana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3S3QryoGmumYB1YkvJNmoE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7wMl8deDHbzpNJNR7lBg6a" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ies4KeRqD46UPHX8nkDbl" title="pulse">pulse</a></td>
@@ -292,6 +313,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Indie:6<br>Americana:4<br>Folk:4<br>C.Mexico.Latino:2<br>Pop:1<br>C.Spain:1<br>Country:1</td>
   <td>Angel Olsen &quot;Shut Up Kiss Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2e7e3f3f700e3df1c97f1cf58086449cf91e523d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/alternative-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3C2FLsEbuhOQ2lUDdc7IyF" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/06kgsxIwSA5USN5Y4dctkO" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4rnPchE6mj3i1atefD7AWE" title="pulse">pulse</a></td>
@@ -303,6 +325,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:8<br>Pop:4<br>Rock:2<br>C.Italy:1<br>Folk:1<br>Country:1</td>
   <td>John Craigie &quot;I Am California&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/693031f3e69d0b1f17af3266e928767a74d9fa08" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/western-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0wngtIMvcnsMdZbd9xukhI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5yoRaZpY7P76zGzbCVziGP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5KUOeDApc4Maw9ik0cWTW9" title="pulse">pulse</a></td>
@@ -314,6 +337,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana &#x2380;</td>
   <td>Americana:5<br>Pop:2<br>Folk:2<br>Country:2<br>Indie:1<br>C.Mexico.Latino:1</td>
   <td>Sarah Harmer &quot;Basement Apt.&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bd186b39fb5d9d15960c09962e6e00b20afd53f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-singer-songwriter" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2IBJxQyIykOBbtKZosjNvI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4OR6Rem90GMTdn7ahSioGL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5wM0rbdSIrKieV40rjWdDS" title="pulse">pulse</a></td>
@@ -325,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana &#x2380;</td>
   <td>Americana:5<br>Folk:3<br>Pop:1<br>C.Mexico.Latino:1<br>Country:1</td>
   <td>Hotdog &quot;Manila&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7de47ae31be52bb564c02ea603b15b0e982e89d1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/manila-sound" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2pnop4rfcyjGCVBAvzRXqX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/10z971rdQ3kF5XYkIJBHPE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4CAzdaqvrZ4p3Pwr8rORlU" title="pulse">pulse</a></td>
@@ -336,6 +361,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana<br>C.Mexico.Latino</td>
   <td>C.Mexico.Latino:5<br>Kids:4<br>Americana:2<br>Folk:2</td>
   <td>Mariana Baggio &quot;Luna Lanar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/623fa8b245ff5cc9d5ef12402fc48348d7fd6f2b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cancion-infantil-latinoamericana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/52NSoGCxxTdsQEuoSP9dTr" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2pcXbjq3mlGsoqZdaPKtMH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4hSQptVcF0jAzy57aPJMTW" title="pulse">pulse</a></td>
@@ -347,6 +373,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana &#x2380;</td>
   <td>Americana:3<br>Folk:3<br>Pop:2<br>Rock:1<br>C.Mexico.Latino:1<br>Gospel:1<br>Country:1</td>
   <td>Rona Kenan &quot;   &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/66b5766fedc880181c87bae04ed1ffb5c7460cf3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/israeli-singer-songwriter" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7MDyqTQYlHkHfXuMzwlk68" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6V9zENYuANBxA43dOMETT5" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ep0IuEM1PnBJxSUQBaM4m" title="pulse">pulse</a></td>
@@ -358,6 +385,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Indie:6<br>Pop:3<br>Americana:3<br>Folk:2<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.China:1<br>Gospel:1<br>Country:1</td>
   <td>Christian Kjellvander &quot;Disgust for the Poor&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/940b47ac359f1be27a841f244fdb73ed9e910d1f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5XyX3dS27WbXZLiWoJNsdM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2eFhodoLhJ2xGkThkdf1Ja" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1yGZJqLeCLGNytTT4S1XrC" title="pulse">pulse</a></td>
@@ -369,6 +397,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:8<br>Folk:5<br>Rock:2<br>Progressive:1<br>Indie:1<br>Country:1<br>Bluegrass:1</td>
   <td>Justin Townes Earle &quot;Maybe A Moment&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a61f0bc45c93c97763ab3e4d84b1c89e9a355251" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7uSlfH4blWi70SZAtqAWbe" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2mxDvbrgwBCqcOOiRpQUUJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5P3bIrDxuCHsNjr2h7WJKX" title="pulse">pulse</a></td>
@@ -380,6 +409,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Folk:6<br>Americana:5<br>Indie:1<br>Country:1</td>
   <td>Roseanne Reid &quot;Sweet Annie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/58c0945b0ab30000929d8dd710085db948f39625" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/scottish-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3N5aACQHuW5K3DVecXbhnB" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/65IcbIsglfB4VbOSLtuYqO" title="pulse">pulse</a></td>
@@ -391,6 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Americana:7<br>Folk:4<br>C.Mexico.Latino:1<br>Country:1</td>
   <td>The Ballroom Thieves &quot;In the Morning&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7a4a2d7d43ec4ceb319dd3c50586b7bef8894c48" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-england-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2dKpmkhjtnpUnqY6kDB3Mv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5H0O5S4OaRu3n29ZW3V0rx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/62ALeh6dLxcBBNvAEdS7Iv" title="pulse">pulse</a></td>
@@ -402,6 +433,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana &#x2380;</td>
   <td>Americana:4<br>C.Mexico.Latino:3<br>Folk:2<br>Pop:1<br>C.Spain:1<br>Gospel:1<br>Country:1</td>
   <td>Pablo G &quot;Ya Se Acerca el D&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b49ee2e449978473a46213773ab6faef99161874" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/lldm" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3uBMvagrQmxD0fFw5W6fOS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4coaXNekyNvzKx4Ex7dzpn" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4mXA2zBVk98r8b5bL3kByd" title="pulse">pulse</a></td>
@@ -413,6 +445,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Folk:6<br>Americana:5<br>C.Mexico.Latino:2</td>
   <td>Old Man Luedecke &quot;I Quit My Job&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/122d5d0a2abf70109e38965067ebec0fc20bd187" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1UiJjWUShOuChiHEzF4w1x" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Sqf13vO7V3zcjF8Ia5QEH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/23oW5cOVP91qeqrodYlAKI" title="pulse">pulse</a></td>
@@ -424,6 +457,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Americana</td>
   <td>Folk:7<br>C.Mexico.Latino:5<br>Pop:3<br>C.Italy:3<br>Americana:2<br>Indie:1<br>Rock:1<br>Blues.Soul:1</td>
   <td>The Lostines &quot;Playing the Fool&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8133fa401fed175d07444e53797e377a29158e17" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-orleans-americana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6CIENNuy8mm01lwYaVOjIb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0RDxIvW4jqU4fU3K2fzGSy" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7KZiJEI8Kw2qi9YdjXsTdS" title="pulse">pulse</a></td>

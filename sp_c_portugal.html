@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Techno</td>
   <td>Techno:19<br>Synth.Electronic:2<br>C.Portugal:2<br>C.France:1<br>C.Italy:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>C.India:1</td>
   <td>The Advent &quot;Stronger&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c43a4a9c8abd2a3a1aa4276508dff4de793a5a70" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-techno" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0CTd4Z6oTkyeVD394QZ5cw" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1Ti5iJaENcP7mzbUjR7YRL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Pg3cyqpaB9Z7x928OkCK1" title="pulse">pulse</a></td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Pop</td>
   <td>Pop:14<br>C.Portugal:3<br>C.Mexico.Latino:2<br>Folk:1</td>
   <td>Broa de Mel &quot;O fim de uma vida a dois&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cd69b0680a347016b38aa669930d9929e932d2ce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-portuguese-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/196T2qP29EjWxI1x6oSiXa" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1XXnxf0aveYhHgmgkctUjt" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6uhW7n4Pxy5HKOnd4uqadI" title="pulse">pulse</a></td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Metal</td>
   <td>Metal:20<br>C.Portugal:5<br>Hardstyle:1<br>C.France:1<br>C.Africa:1<br>C.India:1<br>Gospel:1</td>
   <td>Revolution Within &quot;Pure Hate&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6fd133934145538ad8fafc8d6addfbc22d874fde" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5DcksqG6G4xJ9nu1t15wEQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0pqJv6eRZmbIFmvSW1INyu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0VWOPzsuv83szAPg4jJRwt" title="pulse">pulse</a></td>
@@ -116,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Metal</td>
   <td>Metal:19<br>C.Portugal:4<br>Progressive:1<br>C.France:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1<br>Gospel:1</td>
   <td>Sacred Sin &quot;Darkside&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/42abcecd6b2ae0c0a85f1532ef4ea606ca9b118c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-death-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0LcFA2C9lH8yfRXt8S2N3R" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -127,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Indie<br>Rock</td>
   <td>Indie:21<br>Rock:5<br>C.Portugal:4<br>C.China:1</td>
   <td>Ganso &quot;Sorte a Minha&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a4025704e3b2688bcf04368278cc431de57a7215" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-indie-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0RcObnwNtF2QxFx5hFSLJv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6Ab3FLwHYkAc6TbAIgMith" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ocU7dlACXnZA72lMerxeN" title="pulse">pulse</a></td>
@@ -138,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Hardstyle</td>
   <td>Metal:11<br>Hardstyle:9<br>C.Portugal:3<br>Punk:1<br>C.France:1<br>C.Korea:1<br>C.Germany:1</td>
   <td>Deadly Mind &quot;The way of the brave&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bee690566e5155b924185c53ddbdc23888b8dcd7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-hardcore" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1Rcb7ssxQppghsnMG37D8s" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6KzJ53tSgJvtOG8gtQgBJN" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1t9CH3JIgVomaF9IUHH4oD" title="pulse">pulse</a></td>
@@ -149,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Metal</td>
   <td>Metal:22<br>C.Portugal:4<br>Progressive:1<br>Industrial:1<br>C.Italy:1<br>C.China:1<br>Folk:1</td>
   <td>Morte Incandescente &quot;Diz N a Vida&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f791c18d8508fcd39720878b8037db93c8e7578d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-black-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4PKY5a2HVsjJDCJ6nbT3k0" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -160,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Pop</td>
   <td>Blues.Soul:7<br>Pop:6<br>C.Mexico.Latino:4<br>C.Portugal:3<br>Indie:2<br>Hip hop:2<br>C.Italy:1<br>C.Korea:1<br>C.India:1</td>
   <td>Virgul &quot;Rainha&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e86894e695e533d633cce240c2c3b93f8b0cd02a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1Rn01P3YPioy5QRQoo32Lv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/54h7oZ0QLTufJvVb1k5f6H" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3reLD18lScUAtwuLxsnW8e" title="pulse">pulse</a></td>
@@ -171,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Indie</td>
   <td>Indie:19<br>C.Portugal:4<br>Rock:2<br>Pop:1<br>C.China:1<br>C.India:1</td>
   <td>Glockenwise &quot;Besta&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dca6c2027fbda25cfee4177c7a5c1f5fae6d4456" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-indie" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6iwoiGbEuqmejpaGrxJWiT" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2hE2dHDMR3G7lRsn7w2Yj9" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ucYJThpwq5LnFKyxyJXKj" title="pulse">pulse</a></td>
@@ -182,6 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Rock</td>
   <td>Indie:13<br>C.Portugal:6<br>Rock:5<br>Punk:2<br>C.Mexico.Latino:2</td>
   <td>Virgem Suta &quot;Linhas Cruzadas&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/19c08a489b3c7b2d4772d3fd2efef1fb0e4bfb9a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6k201S3pA59wTeZ9NZ386Y" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3N4BnQq8QIbIFg46oF0ToE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5qH7JHTyygYsbS2P2DDOhj" title="pulse">pulse</a></td>
@@ -193,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Rock</td>
   <td>Rock:18<br>C.Mexico.Latino:2<br>C.Portugal:2<br>Experimental:2<br>Instrumental:2<br>Psy.Goa:1<br>C.France:1<br>C.Italy:1<br>C.India:1</td>
   <td>Surma &quot;Maasai&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0c0b770db2287ddae0c22ff510e8c7e0b91489f2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-post-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/31adiB2neUkKBC43IBDeXA" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -204,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal</td>
   <td>Pop:5<br>C.Mexico.Latino:5<br>C.Portugal:3<br>C.India:2<br>Country:2<br>Rock:1<br>C.Korea:1<br>Folk:1</td>
   <td>Rancho Folcl Divino Salvador de Del &quot;Malh da Nossa Te<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ff8ec46b82b28824f305d9cdc8b1eb85e9f628d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/folclore-portugues" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3weJSiTAEBXFb2GGzQdzDH" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Vdu9Vz84HiU0VmYy8zZKv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0h9h98z006UdgUEn2izVPk" title="pulse">pulse</a></td>
@@ -215,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Experimental</td>
   <td>Experimental:17<br>C.Portugal:2<br>Psy.Goa:1<br>House:1<br>Synth.Electronic:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Instrumental:1</td>
   <td>T Trips &quot;Tango Surdina&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3297a5c0f99453517ddfc6b044133e0d16baa532" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-experimental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0ju49bDfuL4CUqVhqna7s8" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -226,6 +241,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Mexico.Latino<br>C.Portugal</td>
   <td>Folk:9<br>Indie:3<br>C.Portugal:3<br>C.Mexico.Latino:2<br>Rock:1<br>C.Taiwan:1<br>C.Japan:1<br>Gospel:1</td>
   <td>Samuel Uria &quot; preciso que eu diminua&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3f90e1bac403a31ef4d6433c1efd170bc4b47461" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-portuguesa-contemporanea" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0rEVT4ZihSorrk2EwgmP63" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0jegkxZFcxZfM38aRhY8xo" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3RPCTrya96OSsi6KWeAD3d" title="pulse">pulse</a></td>
@@ -237,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Folk</td>
   <td>Folk:8<br>C.Portugal:3<br>Indie:2<br>Pop:2<br>C.Mexico.Latino:2<br>C.Japan:2<br>C.Taiwan:1<br>C.Irish:1</td>
   <td>Julio Pereira &quot;Bai do Mar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e6a19acbf26cbf343da0d6595507d78c6a785d98" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-folk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4sg2LK8vl8utC7ug4xPknT" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0G029eLq4j5hLKQz7S2a0d" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6USfz7MesmEN0ZsM5uBBsz" title="pulse">pulse</a></td>
@@ -248,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Instrumental</td>
   <td>Jazz:8<br>C.Portugal:6<br>Instrumental:4<br>Traditional:2<br>C.Gypsy:1</td>
   <td>Francisco Carvalhinho &quot;Fado can&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b5cd78bba0d157f8ffb6116bf519d9b831ca1ff6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fado-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2w0tfXHDvjHmSqZ3Pi1OuJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/37VdasuGfSsqf4zjfvlsxA" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3cbir82REgmBiABDuZZSYV" title="pulse">pulse</a></td>
@@ -259,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal</td>
   <td>C.Portugal:9<br>Folk:7<br>Pop:2<br>Traditional:2<br>Instrumental:2<br>Rock:1<br>Vocal:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Irish:1<br>Jazz:1</td>
   <td>Maria Da F &quot;Divino Fado&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/908d5103de6e77db69c17c0c6112002a1d724fed" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fado" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5yLmmznzjfw9EnWo1MFtdL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4kOYEVelZpQ2VyUWaTLn86" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6MnvScsakQ1RlDtY2FdnrR" title="pulse">pulse</a></td>
@@ -270,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Jazz</td>
   <td>Jazz:18<br>C.Italy:2<br>C.Portugal:2<br>C.Germany:1<br>C.Irish:1<br>Folk:1<br>Classical:1<br>Instrumental:1</td>
   <td>Bernardo Sassetti &quot;Reflexos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/150832a10c72bb70d1cced91e2b86cb03d8b9fb3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-jazz" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2NXy82Atoz6QzvmxQ0rir3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ANyb64ptFxBpwpK5yqfxs" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4rPjmyHFELN1hpMOkxLKJF" title="pulse">pulse</a></td>
@@ -281,6 +301,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Instrumental</td>
   <td>C.Portugal:6<br>Traditional:4<br>Instrumental:4<br>Jazz:3<br>Folk:2<br>C.Spain:1<br>C.Africa:1</td>
   <td>Carlos Paredes &quot;Can verdes anos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7f6fe5e52d9abaf810af80d4f25bda660a19e2f9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guitarra-portuguesa" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0kxFR8tp2YZ8BsAvRpaSDl" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Hc0XfVoiO1YV9GtJ1L0wg" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/334Ea4OG3NGHtYtdzbazNy" title="pulse">pulse</a></td>
@@ -292,6 +313,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal &#x2380;</td>
   <td>C.Portugal:1</td>
   <td>Mahfuz Kalarab &quot;Kalima Nosibe Mor Dio&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3c47d97adcc50c7f275fd3f21acb4247e6beefd6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bangla-gojol" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4l9Au9k4gNnPq5curJUKRz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Ncevy1gH1XOv8cYorYciB" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2gZiyyiEVC5kPo63MVEjMw" title="pulse">pulse</a></td>
@@ -303,6 +325,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal</td>
   <td>C.Portugal:6<br>Folk:5<br>Traditional:2<br>Instrumental:2<br>Pop:1<br>C.Italy:1<br>C.India:1</td>
   <td>Fernando Farinha &quot;Menina do R-Do-Ch&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/43d5cc1b8fee96ace70882e143a7567cac33f62c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fado-antigo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6kMd7pDwtSA0F7b0RrvsSe" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/15X7d1iAiErPdCjymAfNdt" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/01uYCaqKLVOObJfoZdUbHX" title="pulse">pulse</a></td>
@@ -314,6 +337,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal</td>
   <td>C.Portugal:6<br>Traditional:3<br>C.Irish:2<br>C.Islam:2<br>Instrumental:2<br>Folk:1</td>
   <td>Luiz Goes &quot;Fado Do Estudante&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0b47476ab85ae6abe0317c255a298d2fd4321836" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fado-de-coimbra" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/24ThUsj0I1BHKdVe0oIbJS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Zwhcci8WPzB3JQSIgZHXy" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/07rzC2le8n8eSFJ1h4DyAX" title="pulse">pulse</a></td>
@@ -327,6 +351,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Eurico Carrapatoso &quot;Lla, contradan e descantes: No. 1<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fe7b9725052f9a0275880b3cabe97a6ec37486b2" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-contemporary-classical" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6VoRk8kuJy99zXhIxdjwqt" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -340,6 +365,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Francisco Ant de Almeida &quot;Il trionfo d\'amore, Introdu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/130881a588ddf6dde606f76e57cb40a571829589" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-early-music" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2WWDUDxy1PCo3bonaDqe6A" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -351,6 +377,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Classical</td>
   <td>Classical:17<br>C.Portugal:3<br>C.Spain:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1<br>Instrumental:1</td>
   <td>Jo Domingos Bomtempo &quot;Bomtempo: Requiem to the memory<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7f217eb5abd997b8cc57711757cb2a0b4ffb3d72" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-classical" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6fFdKNug4QTsmBT6vX8Axr" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>

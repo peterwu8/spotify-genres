@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Techno</td>
   <td>Techno:16<br>Synth.Electronic:5<br>C.Irish:3<br>C.France:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.India:1<br>Experimental:1</td>
   <td>Matador &quot;Apollo 11&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/18ac923cffc90af7d5ec9af984864b06400cf49a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-techno" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4DQTzDMn0qfHZRt1NMk5A3" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Synth.Electronic</td>
   <td>Synth.Electronic:10<br>Techno:5<br>House:3<br>Trance:2<br>C.Japan:2<br>C.Irish:2<br>Progressive:1<br>Electronica:1<br>C.Mexico.Latino:1<br>C.Africa:1<br>Experimental:1</td>
   <td>KETTAMA &quot;Fly Away XTC&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e19dc292882d3f79a415446e3be09c4eae8c5ed5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-electronic" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7vtKvrXpzwYH31cDsCSL5z" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/68p215DVVqdg6wmv3ZU8M4" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0GH8mo6I0GTSE4UdO9uATP" title="pulse">pulse</a></td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Experimental<br>Synth.Electronic</td>
   <td>Synth.Electronic:10<br>Experimental:4<br>C.Irish:3<br>Techno:2<br>Rave:1<br>House:1<br>Emo:1<br>C.Taiwan:1<br>C.Japan:1<br>C.China:1<br>Dance:1<br>Ambient.General:1</td>
   <td>New Jackson &quot;There Will Always Be This Love&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7a6ea858bd98b64c83bd813d694bdc79182be09f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-experimental-electronic" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/24RLueVXOuPDMBFnTTBogj" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -116,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Indie</td>
   <td>Indie:17<br>Rock:7<br>C.Irish:3<br>Punk:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Germany:1</td>
   <td>Brand New Friend &quot;Talk It Out&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/debd7b34ecf7a150c86db1dd58dca6afbc819de9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/northern-irish-indie" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1fe9VfOKBZBwKQtblm4Ceq" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5mRwpEkpFhhzYjwCRxz9sC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7myd0pHkRYkcnZcEzyOO4n" title="pulse">pulse</a></td>
@@ -125,8 +131,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>05</td>
   <td>irish trap <a href="https://everynoise.com/engenremap-irishtrap.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.Irish<br>Trap</td>
-  <td>Rap:10<br>Trap:6<br>C.Irish:3<br>Hip hop:3<br>Pop:2<br>C.India:2<br>Rehhab:2<br>Viral:1<br>Emo:1<br>C.En.Espanol:1<br>C.Germany:1<br>Hyperpop:1</td>
+  <td>Rap:10<br>Trap:6<br>C.Irish:3<br>Hip hop:3<br>Pop:2<br>C.India:2<br>Curated.rehhab:2<br>Viral:1<br>Emo:1<br>C.En.Espanol:1<br>C.Germany:1<br>Hyperpop:1</td>
   <td>Evans Junior &quot;Movie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/79dbf2d815041d4b4e6d98207677885c2271e67e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-trap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1u5mmyg0iXNefdvJnyYxR1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ov6iaDedJaiYbPVi9Lfpc" title="intro">intro</a></td>
   <td>--</td>
@@ -138,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish</td>
   <td>Rap:5<br>Hip hop:4<br>C.Irish:3<br>Viral:1<br>Chill:1<br>C.Germany:1<br>Comedy:1<br>Funk:1</td>
   <td>Av9 &quot;Sasuke&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d5f86bf2f63ef0e13adc6c2cc90f70f1148b2180" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-drill" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6CDATmLv64et9BPZMpUspM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5WiP24jAVM5qpFylncdbja" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2gPzt3vPnbDlExaSUlz2UO" title="pulse">pulse</a></td>
@@ -149,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Indie<br>Rock</td>
   <td>Indie:17<br>Rock:7<br>C.Irish:4<br>Punk:1<br>Emo:1<br>Reggae:1</td>
   <td>THUMPER &quot;The Loser&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c97174a7c48ae2c9e36e7db764030197961f99b1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-indie-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7BIh11WdlHdXCweFeyjmJ6" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7AL3HE74ZrsAqWzcHS7RST" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2GtnpfCCl2KsRUTZqDrzDP" title="pulse">pulse</a></td>
@@ -158,8 +167,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>08</td>
   <td>irish post-punk <a href="https://everynoise.com/engenremap-irishpostpunk.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.Irish<br>Punk</td>
-  <td>Indie:6<br>Punk:5<br>Rock:5<br>Emo:3<br>C.Irish:3<br>Progressive:1<br>Metal:1<br>C.Germany:1</td>
+  <td>Indie:6<br>Punk:5<br>Rock:5<br>Emo:3<br>C.Irish:3<br>Progressive:1<br>Metal:1<br>C.Germany:1<br>Curated.life:1</td>
   <td>SPRINTS &quot;Up and Comer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5966b77ca2c6d81b4a81077fec3f34969ebaadb8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-post-punk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5ppMC4JfzbAFlIVXLQHT2v" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4VvIEcggVY4uOhUgT1DcFD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1qw0EYPj9495lc49wB2WMy" title="pulse">pulse</a></td>
@@ -171,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Metal</td>
   <td>Metal:22<br>C.Irish:4<br>Progressive:1<br>Goth:1</td>
   <td>Ten Ton Slug &quot;Matriarch of Slime&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a656526d15fb6347c2a272910ed242255b52ed7e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3rm5ycg2D4VayBq52p478N" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7pevZpHOWbV3zX9t1qqLT9" title="pulse">pulse</a></td>
@@ -182,6 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Metal</td>
   <td>Metal:19<br>C.Irish:4</td>
   <td>Mourning Beloveth &quot;I Saw a Dying Child in Your Arms&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c1f54fcb6ab30e6a2bd18508e0c1605d2bdbca79" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-death-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1l68udGkykRW1ROitwX0DZ" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -191,8 +203,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>11</td>
   <td>irish hip hop <a href="https://everynoise.com/engenremap-irishhiphop.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.Irish<br>Hip hop</td>
-  <td>Hip hop:13<br>C.Irish:5<br>Rap:4<br>Trap:2<br>Indie:1<br>Rehhab:1</td>
+  <td>Hip hop:13<br>C.Irish:5<br>Rap:4<br>Trap:2<br>Indie:1<br>Curated.rehhab:1</td>
   <td>Kojaque &quot;WOOF&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/64e4e65e3ea2a22f89718bc19aeaf6dceb39a8a3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-hip-hop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7yawHmXHreTbNJ9wu1UBs7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6D8IUL0MzLrRf2M9RYPV5a" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4KVo9anXSNopHwP7KElCB6" title="pulse">pulse</a></td>
@@ -204,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Punk</td>
   <td>Punk:18<br>C.Irish:4<br>Hardstyle:1<br>Metal:1<br>Rock:1<br>Pop:1<br>C.Germany:1</td>
   <td>The Nilz &quot;Class War&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f4005dfc93cc4fde4274187669c94d18c072bdff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-punk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5NiqVWMIAbKPchF0UebEsC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4afmv0bzY9DGCIKxMGPdzs" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3TDnreblokN11BALJA64o9" title="pulse">pulse</a></td>
@@ -215,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Punk</td>
   <td>Punk:12<br>Rock:5<br>C.Irish:4<br>Indie:2<br>Psy.Goa:1<br>C.Mexico.Latino:1</td>
   <td>The Undertones &quot;Teenage Kicks&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9b526996182979825a0613cb8765e2795712c012" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/northern-irish-punk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/53XJjU20RldmQHpuxGzGzw" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2xE66mVh07EGeUpLHG7jO3" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2kCEXrlTkbPmKl5WEIvZgh" title="pulse">pulse</a></td>
@@ -226,6 +241,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Hardstyle</td>
   <td>Hardstyle:10<br>Metal:8<br>C.Irish:3<br>Punk:2<br>C.Mexico.Latino:2<br>Gospel:2</td>
   <td>Bitter Pill &quot;Dog Days&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cc9cef1e9e92334800d1fbaf716adb3be725a069" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-hardcore" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3I1xZDsmVVyEVV0Qe9HiqG" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -237,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Rock</td>
   <td>Indie:18<br>C.Irish:5<br>Rock:3<br>Folk:1</td>
   <td>Bell X1 &quot;The Great Defector&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c544ab744cbf6ac2d9bde244e45b224072620b8c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2CBHXjkBbHfiKcKIHesfbC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7FOgCarflRn9fkiTmP1hqe" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4AZLXWgUzoaH5zSA0XqXv5" title="pulse">pulse</a></td>
@@ -248,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Pop</td>
   <td>Pop:9<br>Indie:4<br>C.China:2<br>C.Irish:2<br>Gospel:2<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Germany:1<br>C.India:1<br>Folk:1</td>
   <td>Le Boom &quot;Friday Night - Radio Edit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3862746d97a0e7344d0a5206e61dd2289ae27afb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0aMVUw2FEVxBCFUZVxTt5u" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0dwqho8WrrK8KcF8mumWlF" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2io4ce3hpXGsudbcjdShTS" title="pulse">pulse</a></td>
@@ -259,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Metal</td>
   <td>Metal:22<br>C.Irish:4<br>C.France:1<br>C.Japan:1<br>C.Germany:1<br>Folk:1</td>
   <td>Primordial &quot;How It Ends&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5ef7357cb3f95db2c0150dd516475ed01d423c98" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-black-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3vtNM3t1XaVyyu38aY7r8m" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -270,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Dance</td>
   <td>Pop:3<br>C.Irish:3<br>Folk:3<br>Dance:2<br>Kids:1<br>C.China:1<br>Jazz:1<br>Gospel:1<br>Traditional:1</td>
   <td>Christopher McGrory &quot;Reels 3 (113) Twigs &amp; Bark&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/66999a3d818cd3fa6e81ef42ed82c5a6d2a8237b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-dance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2vx6eFsG12cuB7SfTHJWdz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1MVb0LtPTfZtBygzVMdKds" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Aw2TlcDFwKYw5rWNNFpuc" title="pulse">pulse</a></td>
@@ -281,6 +301,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Rap</td>
   <td>Hip hop:17<br>Rap:5<br>C.Irish:3<br>Psy.Goa:1<br>C.Italy:1</td>
   <td>Lethal Dialect &quot;Beast-Mode&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/288a4f10795cdcd2b80ace8f27a4e3da75ee73b8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-underground-rap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/49HaUMpoVqCFErbqVmiiLU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7qTd3Zp22kJGubNVpsJbus" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6gr8KLaxfwZakh32SnduCU" title="pulse">pulse</a></td>
@@ -292,6 +313,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Indie</td>
   <td>Indie:12<br>Gospel:5<br>Pop:3<br>C.Irish:2<br>C.France:1<br>C.Spain:1<br>C.Japan:1<br>C.China:1<br>Folk:1</td>
   <td>Saint Sister &quot;Eternal Flame&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/18fc78f1173a00be8c5ac019d81b3cc1afb2e0f4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-indie" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0Yk4pcyhMTdt3M4oThvYD1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7MDDDRC0Q9V6xtwW2RpzXl" title="intro">intro</a></td>
   <td>--</td>
@@ -303,6 +325,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Country</td>
   <td>Pop:4<br>C.Irish:4<br>Gospel:4<br>Country:3<br>Americana:1<br>C.China:1<br>Folk:1</td>
   <td>Larry Cunningham &quot;Lovely Leitrim&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/14aeaa05b0945e28c00e5f2ab69b7105b12aee82" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-country" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6ZoVYWfvloSUP0sYwAk0Eg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1k4EtRn9I4sOU7TKtL9LpG" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1fNvswqo7PVsrjQfF8qsDz" title="pulse">pulse</a></td>
@@ -314,6 +337,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish</td>
   <td>Folk:9<br>Indie:3<br>C.Irish:3<br>Rock:1<br>Pop:1<br>C.Taiwan:1<br>C.Japan:1<br>Gospel:1<br>Party.Festival.Band.Cheer:1</td>
   <td>Declan O\'Rourke &quot;Galileo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e73fdfee386c9d09d47a58155d83fd235ab6cb89" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-singer-songwriter" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/67ljvMZzzG7KNJkCH7hY6z" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0eO2mllRha2mdi0t1FZhK1" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1hXwTVquP37kiEehzfU090" title="pulse">pulse</a></td>
@@ -325,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish</td>
   <td>Pop:10<br>Folk:3<br>C.Irish:2<br>Rock:1<br>C.Italy:1<br>C.Spain:1<br>C.Mexico.Latino:1</td>
   <td>Terry O\' Neill &quot;Something Inside So Strong&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/25690b8a07e72aac6e5387685ba78bf659813d22" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-rebel-song" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4YTLyNGigTUxRK2VOKBGPM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2McH06Tbp5YzcBOmEBGXf2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3lQOHDCum3lnqsmq4hGdib" title="pulse">pulse</a></td>
@@ -336,6 +361,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Experimental</td>
   <td>Experimental:10<br>C.Irish:2<br>Folk:2<br>Synth.Electronic:1<br>Pop:1<br>C.Spain:1<br>C.India:1<br>Jazz:1<br>Ambient.General:1</td>
   <td>Roger Doyle &quot;Spring Is Coming With a Strawberry in th<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/950514fc924b0da53f0f441df48ded81b10bc98d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-experimental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4iLweHFQ2lFWihZk6J22Na" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -347,6 +373,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish</td>
   <td>Bluegrass:5<br>C.Irish:3<br>Folk:2<br>Instrumental:2<br>Progressive:1<br>C.Mexico.Latino:1<br>Dance:1<br>Traditional:1</td>
   <td>Jackie Daly &quot;Ashoken Farewell&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/efbd80e14b46f0eb36d0da57ea1631c766afdeb7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-accordion" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2YLa9JlRnHaBVG5cSWxdyY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1g6V1FwH5auwg4Sk9nUMC9" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4IpoT8qutpn7oU3iRaMoZO" title="pulse">pulse</a></td>
@@ -358,6 +385,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Traditional</td>
   <td>Folk:11<br>C.Irish:4<br>Traditional:3<br>Pop:1<br>C.Portugal:1<br>Dance:1</td>
   <td>T &quot;R Liatroma / The Green Cockade / The Mourne Mounta<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8ad55243f9e4abf6ef40d7574338aa7b8e42c86a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-neo-traditional" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3hlXbOQHxy81Epj5j9ZAPE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6KJqbIoVbQBjgPvSJX0JMx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Sm7TKkQUhUyFFy2XdPijZ" title="pulse">pulse</a></td>
@@ -369,6 +397,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish</td>
   <td>Pop:3<br>C.Irish:3<br>Country:3<br>Folk:2<br>Gospel:2<br>C.Mexico.Latino:1<br>C.India:1<br>Bluegrass:1<br>Blues.Soul:1</td>
   <td>Cu Chulainn &quot;Ramblin\' Rover&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fa03b1f67b6a13e969628fb2f8ca6adb07f677ce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-pub-song" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/31kp3FbHcLyawjY5YWDkHb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3ksNoT5l8GsXpknG5TEwJf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5gMRTUilWxuNTpe41asFWM" title="pulse">pulse</a></td>
@@ -380,6 +409,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Jazz</td>
   <td>Jazz:19<br>C.Irish:2<br>C.Italy:1<br>C.Korea:1<br>C.Africa:1<br>C.Portugal:1<br>Traditional:1<br>Instrumental:1</td>
   <td>Robocobra Quartet &quot;Wellness&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3aa65af3d69399bb9af1ce563aef2d0e77253945" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-modern-jazz" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5cCSALXlXRj6q2FO947V8m" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -391,6 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass<br>C.Irish</td>
   <td>Bluegrass:5<br>C.Irish:4<br>Instrumental:3<br>Folk:2<br>C.Mexico.Latino:1<br>Jazz:1<br>Dance:1</td>
   <td>Peter Carberry and Angelina Carberry and John Blake &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/231f587acca7bb0621307cf5623969f124c55993" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-banjo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2wL2qCBk0diEm7vQEEx9Qa" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/609lX5ih12R7qS6fgEwB5P" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1oI8fMEa0HUb9hpTRR8UeW" title="pulse">pulse</a></td>
@@ -402,6 +433,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Folk</td>
   <td>C.Irish:8<br>Folk:6<br>Traditional:3<br>Rock:2<br>Pop:1<br>Country:1<br>Bluegrass:1</td>
   <td>De Dannan &quot;The Wren\'s Nest&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/53722244dc40c8dd95aed37eded2a3c604b31b0c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-folk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5VedI2ZC26yEKJ8JTA7OuW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4kjrmjVIrrO7TrBaZTySUY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/64p4YbsKAEENKDHyrhqT8g" title="pulse">pulse</a></td>
@@ -415,6 +447,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Catherine McEvoy, Caoimh  Raghallaigh &amp; M  Raghallaigh<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/033c355d01649557e2d350602f7c0d66f6014588" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jig-and-reel" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/13xIyn7asOWIcgTwTFw293" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6t8yMU5UU7BKt5h3cDqhpM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5bFzxbZVkKJcoXDlxPBCO5" title="pulse">pulse</a></td>
@@ -426,6 +459,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish</td>
   <td>Soundtrack.New.Age:6<br>Classical:5<br>C.Irish:2<br>Ambient.General:2<br>Synth.Electronic:1<br>Pop:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>Instrumental:1</td>
   <td>Roderick J. MacLeod &quot;6/8 Marches: Pipe Major Donald M<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/19d98c6f36b30481a9e2c2ace4132a85f8f66648" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pibroch" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1VUKmy5qSzD3KJQU0SA3ku" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5vH8mnFZ2f9kr71yAdGBb4" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5qcowrJwq8WXhp75OPs1YS" title="pulse">pulse</a></td>
@@ -437,6 +471,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish</td>
   <td>C.Irish:3</td>
   <td>Catherine McEvoy &quot;Rolling in the Ryegrass/The Travell<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fa9000075ff0628a4f163b88f1f4bbeb59cbf2d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-flute" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2jZIFXAzpHGKquLdfC7bs3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0YMJlQYnG87zcwRYzakCyM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3hEQz36tBuElI7yYrq6Jth" title="pulse">pulse</a></td>
@@ -448,6 +483,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish</td>
   <td>C.Irish:4<br>Folk:2<br>Bluegrass:2<br>Dance:1</td>
   <td>Brian Rooney &quot;The Godfather / John Brennan\'s (feat. J<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/85d8d9cd3a8c8a242a3439669be914101151e514" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-fiddle" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2xqUVVwHeAeyl8PvtPPcFm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/591gcnswcrswyzqM3DZ7Ws" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/74erdXw9wIV4CIuJzw4vDV" title="pulse">pulse</a></td>
@@ -459,6 +495,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Classical</td>
   <td>Classical:16<br>C.Japan:2<br>C.Irish:2<br>Synth.Electronic:1<br>C.Spain:1<br>C.Portugal:1<br>Gospel:1<br>Instrumental:1</td>
   <td>Michael McGlynn &quot;Where All Roses Go&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3c01e1f2836854f5f9824cfa4fd6d31e28d1abe0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-contemporary-classical" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/69AS6y3vT3IRvzBiPwvqP9" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -470,6 +507,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Folk</td>
   <td>Folk:6<br>C.Irish:4<br>Traditional:3<br>C.Portugal:2<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Islam:1<br>Choir:1<br>Instrumental:1</td>
   <td>Lasairfh &quot;Casadh an tSug&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d74feb31613d349a2d999872c3d72093f25f0d3e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-gaelic-folk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4T7aBqQkKYQesg9BiDG0FD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ks3NBkFmBR35DCClEPDLD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0lHKWADkjKYPhlP8WQmxNq" title="pulse">pulse</a></td>
@@ -481,6 +519,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish</td>
   <td>Classical:4<br>C.Irish:3<br>Folk:3<br>C.Italy:2<br>C.Japan:1<br>C.Portugal:1<br>Gospel:1<br>Traditional:1<br>Choir:1</td>
   <td>John McCormack &quot;It\'s a Long Way to Tipperary&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/37d3935270e3ea9d5bf50215627a88e352ef67c4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-ballad" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5FDzNJpE1HyIV5Q5AqVvCR" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -492,6 +531,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Traditional</td>
   <td>C.Irish:4<br>Folk:2<br>Traditional:2</td>
   <td>Joe Heaney &quot;The Rocks of Bawn&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3841a5ba232e3ad746d09d768c73d45bf7ba9c24" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/traditional-irish-singing" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2psBm18i8yELM0SUBhYLJL" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -503,6 +543,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Irish<br>Classical</td>
   <td>Classical:15<br>C.Irish:2<br>C.France:1<br>C.Germany:1</td>
   <td>John Field &quot;Nocturne No. 2 in C Minor&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fd0593c5de6c785e64725cfd36b87733615aad2a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-classical" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4DbSZoIbHauAhoZl2oAKmo" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>

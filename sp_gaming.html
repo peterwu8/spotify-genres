@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Gaming</td>
   <td>Pop:5<br>Punk:4<br>C.Japan:4<br>Rock:3<br>Metal:2<br>Gaming:2<br>Vocal:1<br>C.Italy:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a1c4646ef22fc59352e00d39a97458e7b26cf4a7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/idol-game" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5c0efazHur2H93z7zI5tl1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6KFVhpgZFrUzESfRTkybu2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0vt3w0fQLKA4Us5VyAOKdi" title="pulse">pulse</a></td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Gaming</td>
   <td>Dubstep:4<br>Trap:3<br>Electronica:2<br>Synth.Electronic:2<br>Pop:2<br>Gaming:2<br>Trance:1<br>Indie:1<br>Vocal:1<br>Chill:1<br>C.Mexico.Latino:1<br>Dance:1<br>Gospel:1</td>
   <td>Disfigure &quot;Blank&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ed6d3c21646d88b23ece1465aae99c9570ef79c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gaming-edm" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5kredHbbKjb6EUN5exsaQh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2vUtlsUkIPfyEo3tMMeDCU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0z3EB1GI05qP9HDq9HT5IY" title="pulse">pulse</a></td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Dubstep<br>Gaming</td>
   <td>Dubstep:8<br>House:2<br>Gaming:2<br>Synth.Electronic:1<br>Drum and bass:1<br>Trap:1<br>C.Japan:1<br>C.Africa:1</td>
   <td>Tryple &quot;Fuzzy Memory&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ba59b7d8f18d73be1294882298b063bfb5c5c385" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gaming-dubstep" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3fNf910W3Pn6kodHqV5YFM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1SVFJVIVn51MMpxESKPQN9" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2IG1Wo1kaSv8UVyglugHcr" title="pulse">pulse</a></td>
@@ -116,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Gaming</td>
   <td>Punk:5<br>Breaks:2<br>Gaming:2<br>Industrial:1<br>Indie:1<br>Rock:1<br>Pop:1<br>Chill:1<br>C.Mexico.Latino:1<br>Blues.Soul:1</td>
   <td>Matt$ &quot;Markov&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c6adca36516b4d1c17b00605230d27af4ec61964" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rhythm-game" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2p7Kq3IMcBDLWSrFNUeNNC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1cDf5k8bwc4cWu3gtetQGX" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6AVjs1e5O11HYGs0EQlvxu" title="pulse">pulse</a></td>
@@ -127,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Gaming</td>
   <td>Synth.Electronic:5<br>Electronica:2<br>Gaming:2<br>Rave:1<br>Rap:1<br>Emo:1<br>Chill:1<br>C.Taiwan:1<br>C.China:1</td>
   <td>Joshua Morse &quot;Shop FUNKY Flights&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a53583c52a6de100635449515deacefc34b0a453" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gamecore" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6pwwr0yjxNzMlY5Qr20cEm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3MvlCNV12LOVRJEDuk3TBD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/65zVlOCAkMu54ADRBuJ4dK" title="pulse">pulse</a></td>
@@ -136,8 +143,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>06</td>
   <td>game mood <a href="https://everynoise.com/engenremap-gamemood.html" title="&#x2306;">&#x2306;</a></td>
   <td>Gaming</td>
-  <td>Pop:5<br>Rap:5<br>Hip hop:5<br>Trap:2<br>Gaming:2<br>C.Irish:2<br>Rehhab:2<br>Viral:1<br>C.Africa:1<br>Gospel:1<br>Hyperpop:1<br>Blues.Soul:1</td>
+  <td>Pop:5<br>Rap:5<br>Hip hop:5<br>Trap:2<br>Gaming:2<br>C.Irish:2<br>Curated.rehhab:2<br>Viral:1<br>C.Africa:1<br>Gospel:1<br>Hyperpop:1<br>Blues.Soul:1</td>
   <td>Valentine Dalla &quot;Hydra&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ca98d7067d440bdafa0fa53f94f0be90a27d0948" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/game-mood" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1l4otzwhS8LnLsWKducSxa" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1kNGwvEgRGWuDk6aFfG5tE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1iuyseXGYrKB03yXzabUCP" title="pulse">pulse</a></td>
@@ -149,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Gaming</td>
   <td>Punk:8<br>Rock:3<br>Pop:3<br>Indie:2<br>Goth:2<br>Gaming:2<br>C.Mexico.Latino:2<br>Chill:1<br>C.Italy:1<br>C.Spain:1<br>C.China:1</td>
   <td>(CV.) &quot;!!&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d8abf32593ad76e1b03edca8f011c0ed93ab191b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/anime-game" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0ycoVPkrIuTEU5agjtyrtx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3ryw3s4sch5WAk5sTuUViV" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ThBETFanbStb3HZCjU7mq" title="pulse">pulse</a></td>
@@ -158,8 +167,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>08</td>
   <td>slow game <a href="https://everynoise.com/engenremap-slowgame.html" title="&#x2306;">&#x2306;</a></td>
   <td>Gaming</td>
-  <td>Hip hop:9<br>Rap:6<br>Trap:3<br>Pop:2<br>Gaming:2<br>Blues.Soul:2<br>C.Germany:1<br>C.India:1<br>Gospel:1<br>Rehhab:1</td>
+  <td>Hip hop:9<br>Rap:6<br>Trap:3<br>Pop:2<br>Gaming:2<br>Blues.Soul:2<br>C.Germany:1<br>C.India:1<br>Gospel:1<br>Curated.rehhab:1</td>
   <td>Mistah Mez &quot;Put It on Me (feat. Rebecca Rosher)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f996e61dde5ac0a1c87a6cf86887dbd4011cba65" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/slow-game" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0qxI6lRUwws4qXyriYiINB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4NDvlEVQ3Z6oIojVJlZqAq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1503X6bPJt62jtOlaAhLT7" title="pulse">pulse</a></td>
@@ -171,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Gaming<br>Indie<br>Soundtrack.New.Age</td>
   <td>Experimental:7<br>Synth.Electronic:3<br>Gaming:3<br>Soundtrack.New.Age:3<br>Indie:2<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1<br>C.Germany:1<br>C.Africa:1<br>Ambient.General:1</td>
   <td>Ben Prunty &quot;Open a Breach&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7701d44676c6db61592724db261d3be3cdb5b4c9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-game-soundtrack" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/74xxbuuHJujl204kaRgsLk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7AbpSBUPOZDyLme6iohwBM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5H2pmS4FzuWjYMfI7XJl2y" title="pulse">pulse</a></td>
@@ -182,6 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Gaming</td>
   <td>Ambient.General:5<br>Experimental:5<br>Synth.Electronic:3<br>Gaming:3<br>Soundtrack.New.Age:3<br>C.Italy:2<br>Punk:1<br>Indie:1<br>Rock:1<br>C.Spain:1<br>C.Japan:1<br>C.India:1<br>Jazz:1<br>Classical:1</td>
   <td>Inon Zur &quot;Fallout 4 Main Theme&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2ee4bde1aba818882e17f66eab4f158b463faaff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/video-game-music" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3fMUb3gZXZ8ibcJb5zvy8r" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5mekXqKmmKPXBQIBG1lfWu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5h8imSaIGiCfGr5b6luQEB" title="pulse">pulse</a></td>
@@ -193,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Gaming</td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise:4<br>Gaming:2<br>Ambient.General:2<br>C.Mexico.Latino:1</td>
   <td>DJ YOSHITAKA &quot;Flower - Orchestra Arr.&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5d64bfee123c3c811d4dc2f69d855ebdf9e53a10" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bemani" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4ivlJRUHZWiP25Fm2qN7Dv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1Ok1atFhi52dVwSctYJQHG" title="intro">intro</a></td>
   <td>--</td>

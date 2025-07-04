@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Instrumental</td>
   <td>C.Africa:5<br>Instrumental:3<br>House:2<br>Blues.Soul:1</td>
   <td>Ntokzin &quot;Manyonyoba&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7d04e1dde3bb9642253c30041f3be50f1c96b4c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/amapiano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7xgfzFRkpWzI55LljwwuhO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5oxScrYOIjsKFpHrIdoL59" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZjBqUZwoXew8PVWp3QcYF" title="pulse">pulse</a></td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa &#x2380;</td>
   <td>C.Africa:4<br>House:2<br>Instrumental:2<br>Electronica:1<br>Synth.Electronic:1<br>Blues.Soul:1</td>
   <td>W4DE &quot;Rare Finale&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ddad4bb976c3d3c02be72a1509fa6d39fae1b989" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/sgija" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5FtrhztyLvH54xTr9KOHtp" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3xA7TnRCS9J8GOrMAxlRWe" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7u3JqN5kxeIBSaAXR5UHk4" title="pulse">pulse</a></td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>House</td>
   <td>House:12<br>C.Africa:6<br>Synth.Electronic:4<br>C.Germany:2<br>Instrumental:2<br>Disco:2<br>Techno:1<br>Blues.Soul:1</td>
   <td>Tea White &quot;Lost In Space - Enchanted Mix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d3a0c2c82aba661d802af927ef02662d8acce043" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-deep-house" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/11IIVaqPY3mfMjbjJbrp2l" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7HcLmxn9pA3AgIt2PEsEzh" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1dy4JX211m5yoDFp3IYWbT" title="pulse">pulse</a></td>
@@ -116,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Blues.Soul<br>C.Africa<br>House</td>
   <td>House:12<br>C.Africa:5<br>Synth.Electronic:4<br>Blues.Soul:3<br>C.Germany:2<br>Techno:1<br>Jazz:1<br>Instrumental:1<br>Disco:1</td>
   <td>Tee Maestro &quot;Silence&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a34dddddfec9f789851e4ff3b800387d7b661b7b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-soulful-deep-house" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4CgnLs5P0WWC60Ja8a60qO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2i7NVwOTN5mgIbQjzpRL4R" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0AtMiQrx1Suusz3tcYxEhb" title="pulse">pulse</a></td>
@@ -127,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>House</td>
   <td>House:12<br>C.Africa:5<br>Blues.Soul:3<br>Synth.Electronic:2<br>Pop:1<br>C.Germany:1<br>Jazz:1<br>Reggae:1</td>
   <td>House Victimz &quot;Amen for 8 years prayer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e121527bcf05ca7c6cb60f8c8cff8ec20d4d211f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-house" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6I1LKsxUEASQ3EkgmkCEry" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/73tRCw80ZM7BuGFXPBXN8i" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3BBeQnDvz1ExWakGUsWAzh" title="pulse">pulse</a></td>
@@ -138,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Instrumental</td>
   <td>C.Africa:6<br>House:5<br>Instrumental:3<br>Synth.Electronic:2<br>Electronica:1<br>C.Germany:1<br>Blues.Soul:1</td>
   <td>Sfarzo Rtee &quot;Impilo (feat. Mashudu)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/178fd317ac193fb79d4535255c47499095a3be34" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/underground-amapiano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/60u9ZHJHOBYU7yPFB3fJX1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2hdusBZybYkdOrYMWxjrK6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6yeIELhGmkWMizUWWc02ij" title="pulse">pulse</a></td>
@@ -149,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Techno</td>
   <td>Techno:9<br>Synth.Electronic:9<br>House:3<br>C.Africa:3<br>C.Japan:2<br>C.Irish:2<br>Electronica:1<br>Experimental:1</td>
   <td>Paws SA &quot;Come With Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/de02192bc16dcb8dbce928bc04a2037fe3cb77b0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-techno" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2DXNp8u6CzE9koDhaBYM6N" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5SYxib4HLZ1gfjFMbiG4N4" title="pulse">pulse</a></td>
@@ -160,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Drum and bass</td>
   <td>Drum and bass:8<br>Dubstep:4<br>Breaks:2<br>Hardstyle:2<br>C.Africa:2<br>Funk:2<br>C.France:1<br>Dance:1<br>Hip hop:1</td>
   <td>Dopplershift &quot;Take Me Home&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5553a8daad0f3a2ac97cc8ad89e57e290ea6b5d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-dnb" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/47IgaJIbWVutbBYD8JZRTZ" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -171,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Dance<br>Pop</td>
   <td>Pop:3<br>C.Africa:3<br>Viral:2<br>Dance:2<br>Funk:2<br>Blues.Soul:2<br>Hip hop:2<br>Reggae:2<br>House:1<br>Electronica:1<br>Indie:1<br>Trap:1<br>C.France:1<br>C.China:1<br>Party.Festival.Band.Cheer:1</td>
   <td>Euphonik &quot;Don\'t Wanna Be (Your Friend)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b738fdbb2bae3d0820f4c62ce4eaf6db91e2ec24" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-pop-dance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4F77ekCL0tJOFm6tWINkhf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2eegvhTewVHbCk2T4Qm49T" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2HRCD6sXwwXtl7FxJBA5du" title="pulse">pulse</a></td>
@@ -182,6 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa &#x2380;</td>
   <td>C.Africa:2<br>Funk:2<br>Pop:1<br>Disco:1<br>Reggae:1</td>
   <td>Les Youles &quot;Tou petit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8512eb09a3e39498f751e1e857d18663c8a76747" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mapouka" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6V384enS3I948e5HdX5P5A" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6U1mM9D0MIn4ymJoKR2uoH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6qeiFq2dD9IJCzgCYN3axf" title="pulse">pulse</a></td>
@@ -193,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Gospel<br>Instrumental</td>
   <td>Pop:13<br>Dance:4<br>C.Africa:3<br>Gospel:2<br>Instrumental:2<br>Reggae:2<br>Synth.Electronic:1<br>Viral:1<br>C.Korea:1<br>C.Japan:1<br>Party.Festival.Band.Cheer:1</td>
   <td>yoyo michael &quot;Suo M&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d4a0e6575c8056276f9852e48c28a3301d033b6a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gospel-amapiano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3ylVXN6w3CEsnryOPYziCZ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1KfU95OaUtcpNIbH5aM06Y" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1s9vwbUC4OzKZJrLd7ZJou" title="pulse">pulse</a></td>
@@ -204,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Synth.Electronic</td>
   <td>Synth.Electronic:7<br>C.Mexico.Latino:4<br>Electronica:3<br>Reggae:3<br>C.Africa:2<br>House:1<br>Chill:1<br>C.France:1<br>C.Japan:1<br>Jazz:1<br>Instrumental:1<br>Blues.Soul:1<br>Hip hop:1</td>
   <td>Nihiloxica &quot;Endongo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c4057ad5dbe374f8fb63109e08c34c47166a73da" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/african-electronic" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6UjUqa407F8vrTz5gKg4Jd" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1lAMQ5OnQPHMVBsVjj7OHq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7E1QhWo9kihHijFL2T86eR" title="pulse">pulse</a></td>
@@ -215,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Synth.Electronic</td>
   <td>Synth.Electronic:9<br>Electronica:4<br>C.Africa:4<br>C.Mexico.Latino:3<br>Techno:1<br>Chill:1<br>C.Italy:1<br>C.India:1<br>Jazz:1</td>
   <td>Kid Fonque &quot;Somewhere (feat. Jaidene Veda) - Dream Du<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b5566b11a23eacae914098df99e7b09ef2e5d67e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-electronic" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7zTToZXXsogKivmPyIoYvg" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -226,6 +241,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Pop</td>
   <td>C.Africa:9<br>Pop:7<br>Hip hop:3<br>Rock:2<br>House:1<br>Indie:1<br>Rap:1<br>C.India:1<br>Jazz:1<br>Dance:1<br>Blues.Soul:1</td>
   <td>Shekhinah &quot;Suited&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/884131fad4e1d50eb18cff395a00fec3dfea9c94" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2gCb5sPRAaufQVrfBOLgdN" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5HsEknBXrFMaOphBZVW6QB" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0WLni7kKlhnm4xQ5vvxEUN" title="pulse">pulse</a></td>
@@ -237,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Metal</td>
   <td>Metal:19<br>C.Africa:4<br>Rock:1<br>C.Portugal:1<br>C.India:1</td>
   <td>Sunken State &quot;Pure Hate&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c22bc1be4c586049d8b661f08b8aaf513777f6a1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1VdhLpUxXQT2SN1Vnum7Eu" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -248,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Rock</td>
   <td>Rock:11<br>Indie:9<br>C.Africa:5<br>Pop:1<br>C.Spain:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Irish:1<br>Gospel:1</td>
   <td>Zebra &amp; Giraffe &quot;The Knife&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7cd0e9f9770102436c8aa3e11030d704aec93627" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1uEgUI0ouVrWVeSImmq6xh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ie6yxSWTzVmQWzrZCCEv2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6Ui9E4W4A1JzxvNLx5a8xo" title="pulse">pulse</a></td>
@@ -259,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa</td>
   <td>C.Africa:5<br>C.India:3<br>Pop:2<br>Reggae:2<br>Rock:1</td>
   <td>Fitini &quot;Tout mignon&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e064f7c2e355cbf94beb05edb66d15dbc6bd3d7e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/zouglou" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7kGA6YnBYlU3HplyYp9buA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/68LPqL3IGQ4yauemWERGWK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1CYBaeISwXShTdVDWcFGcy" title="pulse">pulse</a></td>
@@ -270,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Punk</td>
   <td>Rock:9<br>Punk:3<br>Indie:3<br>C.Africa:2<br>Industrial:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Folk:1<br>Funk:1<br>Hip hop:1<br>Reggae:1</td>
   <td>Fokofpolisiekar &quot;Komma&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1a9f80fa81b7f4ed47fa7b41f04d962fff423bd7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-punk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7iWaRvvdUdD9fOWXkbuRlZ" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -281,6 +301,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Rock</td>
   <td>Rock:11<br>Indie:7<br>C.Africa:6<br>Metal:1<br>Pop:1</td>
   <td>Wonderboom &quot;Africa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/32506eca947e5e9b47ad087e7b1e7600a8fd4597" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/african-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5eXcXox905vgCOp8bE4TJI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3akfBnmvnpULtWRjADcDch" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ny7jkm3JxiFrQX1w9bKy1" title="pulse">pulse</a></td>
@@ -292,6 +313,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Reggae</td>
   <td>Reggae:11<br>Pop:5<br>C.Africa:3<br>C.Mexico.Latino:2<br>C.En.Espanol:1<br>C.Spain:1<br>C.Germany:1<br>Dance:1<br>Traditional:1<br>Hip hop:1</td>
   <td>Serges Kassy &quot;John Bri&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a869a9fdfb7f396aadd968b4fb73c338f9b9a965" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/african-reggae" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2W9yslxwwXvdsX1gpLETYD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0bWhlVdI2bsLgk4NnygeeQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2nQzEEcN4JDiA27hRTSCwz" title="pulse">pulse</a></td>
@@ -303,6 +325,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Metal</td>
   <td>Metal:20<br>C.Africa:2<br>Folk:2<br>Progressive:1<br>C.France:1<br>C.Portugal:1<br>C.India:1</td>
   <td>Skinflint &quot;Iron Pierced King&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/03ac9194ec99bae0552efa0c2567218845b8b3bc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/african-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/22Vw6zVm1ywaGcmSbbCJDe" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -314,6 +337,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa</td>
   <td>C.Africa:4<br>C.India:2<br>Reggae:2<br>Rock:1<br>Pop:1<br>C.France:1<br>C.Mexico.Latino:1<br>Folk:1<br>Dance:1<br>Funk:1</td>
   <td>Los Silver Star &quot;El Pato y la Gallina&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e76fcf56e439bc4d3d24cda14ff53bfe48307f18" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/punta" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0rApSgH1yXT0cr4hY3rlX8" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/038YZCEmt8wI94j3Y1vHgp" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Cb0Os9HBDYBK3SQXk6Xv8" title="pulse">pulse</a></td>
@@ -325,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Rock</td>
   <td>C.Africa:5<br>Reggae:4<br>Rock:2<br>C.India:2<br>Hip hop:2<br>Rap:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>Folk:1<br>Dance:1</td>
   <td>Mohobub &quot;Garifuna Punta&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9f3d8566b5158310e5da4f7105c599ae3c09484f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/punta-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1ew19In22xhtrdpohbzx6K" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0nOkuuX08WsnaTgQ3IVZeg" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7LhcI7BEq8cOvyiLFxBb3u" title="pulse">pulse</a></td>
@@ -336,6 +361,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa</td>
   <td>Indie:11<br>C.Africa:6<br>Pop:3<br>Synth.Electronic:2<br>Rock:2<br>C.France:1<br>C.India:1</td>
   <td>Runaway Nuns &quot;Alright Now&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b99e65b022f1bc5a78e88c28e35edd577fb7e5cd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-alternative" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2uNHP4lE72LZaqPCIVPhqo" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1rwG3DIuG8Boul8aKI4vKX" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5jWSKBzRxd5WEM8jFbGbPQ" title="pulse">pulse</a></td>
@@ -347,6 +373,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa &#x2380;</td>
   <td>C.Africa:3<br>Pop:2<br>C.India:2<br>Rap:1<br>C.Mexico.Latino:1<br>Comedy:1<br>Instrumental:1<br>Funk:1<br>Reggae:1</td>
   <td>Mossia &quot;Mowa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/656f211eb9cee9d592bbcbd7abf79bc13fb6ce52" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/baoule" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0pI6WrHCq5oRYSoCwMJkqi" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4YdrfXEmcVmqBrMVypa8Wn" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4QUasrngfOERHxXxLDu5Uo" title="pulse">pulse</a></td>
@@ -356,8 +383,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>26</td>
   <td>south african underground rap <a href="https://everynoise.com/engenremap-southafricanundergroundrap.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.Africa<br>Rap</td>
-  <td>Rap:10<br>Trap:6<br>Hip hop:5<br>C.Africa:4<br>C.Germany:3<br>C.En.Espanol:1<br>C.Irish:1<br>Rehhab:1<br>Blues.Soul:1</td>
+  <td>Rap:10<br>Trap:6<br>Hip hop:5<br>C.Africa:4<br>C.Germany:3<br>C.En.Espanol:1<br>C.Irish:1<br>Curated.rehhab:1<br>Blues.Soul:1</td>
   <td>808 Sallie &quot;Us&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/484678271312561efc7893f8e30c0ff8e2b171ba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-underground-rap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4es7qR688lDJ2NTZbVCmfK" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/37qSwbbsu3vPeGvpsvduRI" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1vESj6Q7I4PlXmtRKWGJrw" title="pulse">pulse</a></td>
@@ -369,6 +397,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>C.Mexico.Latino</td>
   <td>Indie:12<br>C.Mexico.Latino:5<br>Pop:2<br>C.Africa:2<br>Rock:1<br>C.Taiwan:1<br>C.Germany:1<br>C.India:1<br>Country:1<br>Traditional:1</td>
   <td>Costa de Papel &quot;El Mar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c6bb84700f9dcda4c373d9742f70dd23c35230e0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-puntana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7nwt8W3rxIONVDsEEaZk0V" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -380,6 +409,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Pop</td>
   <td>Pop:9<br>Rap:3<br>C.Africa:3<br>Hip hop:3<br>C.France:1<br>Dance:1<br>Reggae:1</td>
   <td>WurlD &quot;Sarafina&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1bb47d08b57daaa52ed24ee384a386107cf260fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nigerian-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7MwdQNmdKjQx3h1p3vP2eZ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2n5EBC7Xfgdlf2X0Ltks5n" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1yT0BeIkXUQbPIy9v906Fl" title="pulse">pulse</a></td>
@@ -391,6 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Hip hop</td>
   <td>Hip hop:13<br>Rap:6<br>C.Africa:4<br>Trap:3<br>C.Germany:2</td>
   <td>Okmalumkoolkat &quot;Amalobolo (Slow Jam Sase Mlazi)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/847680f2b37834ac3355decf9cd345b4ed6216d7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-hip-hop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4KLH6GGDeD0FFxjlz2ifeJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6CNtxVmhuSixblkyYxh5uk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4r0NS0GWMrclx838JFVrAk" title="pulse">pulse</a></td>
@@ -402,6 +433,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Hip hop</td>
   <td>Pop:7<br>Rap:4<br>Hip hop:4<br>C.Africa:3<br>Dance:2<br>Reggae:1</td>
   <td>CDQ &quot;Manya&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8145d7d9abbdb8fed93fb37c64f8412f46c4023d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nigerian-hip-hop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/33VujNIodgRGBI4TUuB4mx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7teB8MbwqDqRZz7kS8OhmW" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1fnBcCJlpdrbONe30Bi39s" title="pulse">pulse</a></td>
@@ -413,6 +445,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Trap</td>
   <td>Rap:10<br>Hip hop:8<br>C.Africa:4<br>Trap:2<br>Indie:1<br>Pop:1<br>C.Italy:1<br>C.Germany:1<br>Blues.Soul:1</td>
   <td>The Big Hash &quot;Circles&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/39dc601fb4f267af9893bbae157a286e72168000" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-trap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/43sN5RaFc8vfqheu5Je3gy" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Hq4MwDmQkoS2NaYfCA2L3" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2nnvGrlXMrEN7ZDsXPKGFq" title="pulse">pulse</a></td>
@@ -424,6 +457,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Country</td>
   <td>Country:6<br>Pop:4<br>Rock:2<br>C.Africa:2<br>Folk:2<br>C.Mexico.Latino:1<br>Traditional:1</td>
   <td>Billy Forrest &quot;Tiny Bubbles&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/40fc190e9706e3a3965c283e4f768fad08b29c44" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-country" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1CKRS7bZY4KGSJ5qBc4T39" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4DlMcogsyUCM2QZTzwNpQl" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1p8JR4ejuRiHdKuvqNqtQI" title="pulse">pulse</a></td>
@@ -433,8 +467,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>33</td>
   <td>south african r&amp;b <a href="https://everynoise.com/engenremap-southafricanrb.html" title="&#x2306;">&#x2306;</a></td>
   <td>Blues.Soul<br>C.Africa</td>
-  <td>Blues.Soul:10<br>Indie:2<br>Pop:2<br>Chill:2<br>C.Africa:2<br>Hip hop:2<br>Rap:1<br>C.Mexico.Latino:1<br>C.India:1<br>Folk:1<br>Rehhab:1</td>
+  <td>Blues.Soul:10<br>Indie:2<br>Pop:2<br>Chill:2<br>C.Africa:2<br>Hip hop:2<br>Rap:1<br>C.Mexico.Latino:1<br>C.India:1<br>Folk:1<br>Curated.rehhab:1</td>
   <td>Joda Kgosi &quot;Lunatic&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/02d4368c7c8bacedc9f56b1f937b2a0bb9352877" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-r&amp;b" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3UhutiIcXo23ICdnsxBEFE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1hOVpqhEqF0rI86ToijdWd" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4K7HvgICXZz4t62AMIWRON" title="pulse">pulse</a></td>
@@ -446,6 +481,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Gospel</td>
   <td>Gospel:7<br>Pop:5<br>C.France:2<br>C.Africa:2<br>Rock:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.India:1</td>
   <td>Franck Mulaja &quot;Nzambe Malamu&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9355019bda85b338c608c305eb0a07be7bbada43" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/african-gospel" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1eXBFopkxdOaCJzPM6ljsL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3E4pFBuKy3vDqgncmDbiPg" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3RwxsPHWJIEpHXDdinudtt" title="pulse">pulse</a></td>
@@ -457,6 +493,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Jazz</td>
   <td>C.Mexico.Latino:4<br>C.Africa:4<br>Jazz:3<br>Blues.Soul:3<br>Pop:2<br>C.India:1<br>Folk:1<br>Traditional:1<br>Instrumental:1</td>
   <td>Zim Ngqawana &quot;Elegies in C minor: (Opus #1) Qula Kwed<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f4d78278e52d28c04ee0a540f6ec1f43a20a54b4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-jazz" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0XRhBXYCpp2CBuISbi8dgr" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Ppc2otxgmvxJ92D56YPSZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4OcHWs0QSKYhOEp1D5wZJv" title="pulse">pulse</a></td>
@@ -468,6 +505,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Experimental</td>
   <td>Experimental:14<br>Psy.Goa:2<br>Synth.Electronic:2<br>C.Africa:2<br>Jazz:2<br>Indie:1<br>Rock:1<br>Gaming:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.China:1<br>Soundtrack.New.Age:1</td>
   <td>KMRU &quot;Space of Uncertainty&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b9254853be2083a089157c402a1ecf208978b892" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/african-experimental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/48uCDGE2YYjZsPSyhZXGP5" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -481,6 +519,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Sipho Makhabane &quot;Ebenzer (feat. Tshepiso Motaung, Hle<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5e03c1a763f9433607482046b6988ad983a30b13" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-gospel" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3VKGShOBz2FYrORLpgwTRe" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3ZGftGm90LsblFkxRT0dB2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0W6Igt9Fo0X7EV884SF5B6" title="pulse">pulse</a></td>
@@ -492,6 +531,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa</td>
   <td>Kids:3<br>C.Mexico.Latino:3<br>C.Africa:2<br>Pop:1<br>Americana:1<br>Folk:1<br>Traditional:1</td>
   <td>Issa Dakuyo &quot;V V (La princesse V)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a9c6ee0ba74d5566b7cfdd6506dcc2be648f9323" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/comptine-africaine" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7zC8y6bSAPAgorCGTJUuVo" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/40qEP8jwlmQx2RTx9BPI6a" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/63zmTq5FpX4DszzSiirLxU" title="pulse">pulse</a></td>
@@ -503,6 +543,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa</td>
   <td>C.Africa:2<br>Folk:2<br>Pop:1<br>Kids:1<br>C.Mexico.Latino:1<br>Instrumental:1<br>Blues.Soul:1</td>
   <td>Enigmatik Music Family &quot;Sango&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bd0cb64cdeb9f6abdf5a6fa89f1be4c9c6b5625e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-centrafricaine" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0Wd7ru6M2A4bqzvCTUtQ3Z" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -514,6 +555,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Jazz</td>
   <td>Pop:4<br>Folk:3<br>C.Africa:2<br>Jazz:2<br>C.India:1<br>Blues.Soul:1</td>
   <td>Horoya Band &quot;W W&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f1b7dad37fd2be9c124ff7ee8c4114267221bd5f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/west-african-jazz" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0WRIEExyzsjtbPZsUOAURR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5aoZ4P03HrmEBCmnbTkHSz" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2YHxeU9dpgDq8Qm9fJIGKX" title="pulse">pulse</a></td>
@@ -525,6 +567,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Jazz</td>
   <td>Jazz:18<br>C.Africa:3<br>C.Irish:1<br>Traditional:1<br>Instrumental:1</td>
   <td>Sisonke Xonti &quot;The Migration Suite Part II&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4225a0b53c2889df382c92b6218f82dff0074ad5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-modern-jazz" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6IJFcwLq8F7ZXUXhgARazn" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3EVFW5zm5lqT97aq2jJf4h" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1J1vn4l8rUUaeRjH6639E8" title="pulse">pulse</a></td>
@@ -536,6 +579,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa</td>
   <td>Pop:5<br>C.Africa:2<br>C.India:1<br>Folk:1<br>Gospel:1</td>
   <td>Soweto Gospel Choir &quot;Shosholoza&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/876f63f523785d9613fc6be7d235140e9162eaab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-choral" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/27nN5LFsfA2HkilFH9fRCy" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2P54zIYwsJaHTSB51mDUJB" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4jV6572vO7Vh4cjUT4PZGW" title="pulse">pulse</a></td>
@@ -547,6 +591,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Instrumental</td>
   <td>Jazz:13<br>Instrumental:6<br>C.Africa:2<br>C.Japan:1<br>C.Germany:1<br>C.Portugal:1<br>Classical:1</td>
   <td>Koungbanan Conde Ensemble &quot;Kassa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/57ca44919433aeb1ac0c0ab58ad1c3c3146d0280" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/african-percussion" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/23e4SXJoxyNtQ3s2mSb5dx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/18eWCrD8PJdjgv8RbmcPlZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1rIfCMxAs78VCwXDOmPAsr" title="pulse">pulse</a></td>
@@ -560,6 +605,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>William Grant Still &quot;3 Visions: No. 2, Summerland&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/664334adee6a32299974d8b77ed37440efbc53b3" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/african-american-classical" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3bPyMItEC0e3OU8asnzdn3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5l4D5F04HdHxnRcU9Vx71q" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2r1esWxbKewguXN2LTJ9DZ" title="pulse">pulse</a></td>

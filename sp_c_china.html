@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Metal</td>
   <td>Metal:14<br>C.China:3<br>Hardstyle:2<br>C.Taiwan:2<br>Trance:1<br>Punk:1<br>Synth.Electronic:1<br>Rock:1<br>C.Germany:1</td>
   <td>Instinct of Sight<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fcaa61223406ef32e4cfc830913f058149fe245d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-metalcore" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7DXmRDKwSNv3RB2NuYIfL7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5MaYJaO4ClEfCogIi5QYtn" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1DQa0NlbKA69myr3K4sw42" title="pulse">pulse</a></td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Reggae</td>
   <td>Reggae:6<br>Blues.Soul:3<br>Hip hop:3<br>Pop:2<br>C.China:2<br>C.Africa:2<br>Electronica:1<br>Dance:1<br>Party.Festival.Band.Cheer:1<br>Funk:1</td>
   <td>Kawa<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4b782de2ec72f71f3298690c423e39319ded4616" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-reggae" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3OSFhi0ovn7gMQ1Q4dcIjz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/58PDhzGcwWSEjwxqmkdDIu" title="intro">intro</a></td>
   <td>--</td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>Pop:7<br>C.China:4<br>C.Japan:3<br>Viral:2<br>Rap:2<br>C.Korea:2<br>House:1<br>Synth.Electronic:1<br>Trap:1<br>C.Africa:1<br>Dance:1<br>Gospel:1<br>Party.Festival.Band.Cheer:1<br>Instrumental:1<br>Hyperpop:1<br>Reggae:1</td>
   <td>&quot; - DJ Version&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cdadde8d104143a6a4a755ee7fa4f2716f6e6322" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-manyao" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5mTsY0boKtT3YqTPcTCULR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Ca6gXm4z1PKbwAqkBLEY8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5LxfyKZoc55KHL7z6EAn4j" title="pulse">pulse</a></td>
@@ -116,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Pop</td>
   <td>Pop:14<br>Rock:3<br>C.Japan:3<br>C.China:3<br>Synth.Electronic:1<br>Indie:1<br>C.Spain:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Dance:1<br>Reggae:1</td>
   <td>7SENSES &quot;Who Is Your Girl - Japanese Ver.&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5806aef79776c45aa848afe807d5e3f14500b84f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/c-pop-girl-group" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1La91OalQ5WK60xP7o28lJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4FOYkpulV0ZVVymhzJEAYJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/604vU9qarFqwKkc0rJHGNS" title="pulse">pulse</a></td>
@@ -127,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Metal</td>
   <td>Metal:12<br>Rock:5<br>C.China:4<br>C.Spain:2<br>Punk:1<br>Hardstyle:1<br>Indie:1<br>C.Korea:1<br>C.Africa:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/38a3538a05ec8f832f9aadf25b9ba69bff7883cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/56w4CTZ5B1kCuJfw0IEmrk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Sjm7vHQ9XQvve3fGexpyI" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/59QK4fOEmkc82yBs3heLsS" title="pulse">pulse</a></td>
@@ -138,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Pop</td>
   <td>Pop:15<br>C.China:5<br>Synth.Electronic:3<br>Indie:3<br>Hyperpop:2<br>Rock:1<br>C.Japan:1<br>C.Germany:1<br>Dance:1</td>
   <td>(Theo Zhu) &quot;Empty Space&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0392dc38966c41a1a7b65dd8218c0d37f3c4e588" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-idol-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/29W4FPNZsBNek3jA5zKfBh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0tEvJpIvzoET6HG01LbheK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4oYNNeKhGk3xJm2SRIIjM2" title="pulse">pulse</a></td>
@@ -147,8 +155,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>07</td>
   <td>sichuanese hip hop <a href="https://everynoise.com/engenremap-sichuanesehiphop.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.China<br>Hip hop</td>
-  <td>Hip hop:10<br>Viral:4<br>Trap:4<br>Rap:3<br>C.China:3<br>C.India:3<br>C.Korea:2<br>C.Japan:1<br>Rehhab:1</td>
+  <td>Hip hop:10<br>Viral:4<br>Trap:4<br>Rap:3<br>C.China:3<br>C.India:3<br>C.Korea:2<br>C.Japan:1<br>Curated.rehhab:1</td>
   <td>&quot;(Hakuna matata)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0717edb7ec02c802be884578314ac7d8401a7564" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/sichuanese-hip-hop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2ndBbRyLgo0vNL9SDNpVPy" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4OE5KqvdJ3uLgfSRumcFHb" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5M28nbHhbRhE0NRciL3GLx" title="pulse">pulse</a></td>
@@ -160,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Synth.Electronic</td>
   <td>Synth.Electronic:9<br>Electronica:4<br>C.China:3<br>Experimental:3<br>Indie:1<br>Chill:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Irish:1<br>Dance:1</td>
   <td>Howie Lee &quot;Birdy Island&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b30921a41d54e0784da3a214212b0af094c6153a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-electronic" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6y8Q7oaqi56xodW4PIu9fP" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5kgpT4LDChOxeXud4XZkfV" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4HatUY6Rbijse2528FWrfa" title="pulse">pulse</a></td>
@@ -171,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Synth.Electronic</td>
   <td>Pop:14<br>Synth.Electronic:5<br>C.China:3<br>Hyperpop:3<br>Indie:2<br>C.En.Espanol:2<br>Trap:1<br>Emo:1<br>C.Japan:1<br>C.Germany:1</td>
   <td>Karencici &quot;Bad Girls Behave&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1389da624bf5802fe8ab62d1ae0806e682931d07" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-electropop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6d1TMThIMAnrw7zfkVBSuf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6nxO6FzwHfpdeZQQY1MbDK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/224dLEaxILYiwPBKWZw2Oi" title="pulse">pulse</a></td>
@@ -180,8 +191,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>10</td>
   <td>chinese melodic rap <a href="https://everynoise.com/engenremap-chinesemelodicrap.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.China<br>Rap</td>
-  <td>Pop:7<br>Rap:4<br>Indie:2<br>Viral:2<br>Trap:2<br>C.China:2<br>C.India:2<br>Hip hop:2<br>Synth.Electronic:1<br>Gaming:1<br>C.Irish:1<br>Hyperpop:1<br>Rehhab:1</td>
+  <td>Pop:7<br>Rap:4<br>Indie:2<br>Viral:2<br>Trap:2<br>C.China:2<br>C.India:2<br>Hip hop:2<br>Synth.Electronic:1<br>Gaming:1<br>C.Irish:1<br>Hyperpop:1<br>Curated.rehhab:1</td>
   <td>DripO<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6022227c2c3cc343e8b94f3f0e81b87202c0db81" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-melodic-rap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2rMhjmx6ALZb8nfmQpOFa2" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7x5YyYx4bN8UOEtoIFJg0L" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2mSWBXG1Ey60hdlDLDisx0" title="pulse">pulse</a></td>
@@ -193,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Indie<br>Pop</td>
   <td>Indie:14<br>Pop:6<br>C.China:4<br>Synth.Electronic:3<br>C.India:2<br>C.France:1<br>C.Korea:1<br>Instrumental:1</td>
   <td>The Life Journey<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/42ab1a0f63b67c09844ce1964b2fc854452067ac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-indie-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7mv3d734tlpipCOpjEfLMD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/53xOY9fW6iZeEGDu5AseU8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1IrxqmyLhWrBvz0gW1EIBR" title="pulse">pulse</a></td>
@@ -202,8 +215,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>12</td>
   <td>chinese punk <a href="https://everynoise.com/engenremap-chinesepunk.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.China<br>Punk</td>
-  <td>Punk:17<br>Rock:3<br>C.China:3<br>Metal:2<br>C.France:2<br>C.Germany:2<br>Indie:1<br>Pop:1<br>Rap:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>Gospel:1</td>
+  <td>Punk:17<br>Rock:3<br>C.China:3<br>Metal:2<br>C.France:2<br>C.Germany:2<br>Indie:1<br>Pop:1<br>Rap:1<br>C.Spain:1<br>C.Mexico.Latino:1<br>Gospel:1<br>Curated.life:1</td>
   <td>Brain Failure &quot;COMING DOWN TO BEIJING&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/87738d95c2b0de3733aa4508bc3ec2279f208e36" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-punk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/370ziWDySqtFGSNQwJADo6" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5hhv0x3vD69EI9Y9qmknQO" title="intro">intro</a></td>
   <td>--</td>
@@ -215,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Viral</td>
   <td>Pop:7<br>Indie:5<br>C.China:4<br>Blues.Soul:3<br>Viral:2<br>Rap:2<br>Synth.Electronic:1<br>Emo:1<br>C.France:1<br>C.Korea:1<br>C.India:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4c334ce12153b5f612db305cab13f0b87984e1e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-viral-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/04mJ4eJ9jtVx0Ucuyuk1Tx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5CPgTMHG8ygydyRcfArelC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0qAolkAOPmiUTuNSCSWu09" title="pulse">pulse</a></td>
@@ -223,9 +238,10 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>14</td>
   <td>chinese hip hop <a href="https://everynoise.com/engenremap-chinesehiphop.html" title="&#x2306;">&#x2306;</a></td>
-  <td>C.China<br>Hip hop<br>Rehhab</td>
-  <td>Hip hop:18<br>C.China:3<br>Rap:2<br>C.India:2<br>Rehhab:2<br>Viral:1<br>Pop:1<br>C.Taiwan:1<br>C.Japan:1</td>
+  <td>C.China<br>Curated.rehhab<br>Hip hop</td>
+  <td>Hip hop:18<br>C.China:3<br>Rap:2<br>C.India:2<br>Curated.rehhab:2<br>Viral:1<br>Pop:1<br>C.Taiwan:1<br>C.Japan:1</td>
   <td>&quot;Room&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2946346f85f5f860beab5c0e8cf8651f57cf1829" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-hip-hop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0eoEJg0k4tV0Jw3gmTfRko" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5kHaE5uCueSUS48b8HmLqc" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4WCd9tXobnvkqotWg1dBOj" title="pulse">pulse</a></td>
@@ -237,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Punk</td>
   <td>Punk:7<br>Indie:7<br>Rock:4<br>C.China:4<br>C.Spain:2<br>Psy.Goa:1<br>Metal:1<br>Pop:1<br>C.Italy:1<br>C.Japan:1<br>C.Germany:1<br>Instrumental:1</td>
   <td>Birdstriking &quot;25&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bafcebde35e971a5c5269127659aba87ed2a383c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-post-punk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4YUp9F2OYkScNE65mZRlU5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4O2ORzy0aCtum3AcTgsYOC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5zefLbSvdsRpXTrbJF5IlQ" title="pulse">pulse</a></td>
@@ -248,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Indie<br>Rock</td>
   <td>Indie:19<br>C.China:6<br>Rock:5<br>Punk:2<br>C.Portugal:1</td>
   <td>Joyside &quot;Not My Time to Die&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1103003078af95baea1865dcc41ffcf25c9cfd05" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-indie-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0OIcuYsVfWtMnBTqLShcPS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0i1kWzfcST88ldZaMEcKbQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/19vvj8tjV5DsxCudFnz4w0" title="pulse">pulse</a></td>
@@ -259,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Indie</td>
   <td>Indie:18<br>C.China:7<br>Rock:3<br>Pop:2<br>Punk:1<br>C.Taiwan:1<br>C.Germany:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9617c6d782e9b0bf03f941e19802710b93bfa336" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/southern-china-indie" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3yusk4RifBR0AXb6ZYwwyu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/083vBGs3cEv7js14M6mWPH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3iyCTshRX50rdSFZQceXc1" title="pulse">pulse</a></td>
@@ -270,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Metal</td>
   <td>Metal:21<br>C.China:3<br>Progressive:1<br>Industrial:1<br>C.Italy:1<br>C.Portugal:1<br>Folk:1</td>
   <td>Zuriaake &quot;River Metempsychosis&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a1d1e05b7255902b9b49e4bba33e70df1f813c64" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-black-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0L7bHV0lbJioaqp5SuHPrc" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -281,6 +301,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>Indie:12<br>Pop:4<br>C.India:4<br>C.Korea:2<br>C.China:2<br>Instrumental:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/925894195c1f11ca140715bcc1bb5c3944438487" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-talent-show" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2Ar7fmPoKFxWbUV4YGAe84" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3gyCIh9hxVWLhE8ewlRT4b" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4mtOKfrGzjUPfjZAewlLIg" title="pulse">pulse</a></td>
@@ -292,6 +313,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>Pop:7<br>Country:3<br>C.China:2<br>Gospel:2<br>C.India:1</td>
   <td>Queenzy Cheng<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8b231a0524fb5ae56bc9dfdcab85d7ef87177f2e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-new-year" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3mGatBOEASsNJvNPI3Penj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Y7LytXu4Vrb2JYLfPwTOF" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6MgdeQTWkeWeXLAMH7sSvL" title="pulse">pulse</a></td>
@@ -303,6 +325,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Blues.Soul<br>C.China</td>
   <td>Pop:11<br>Indie:4<br>Blues.Soul:4<br>C.China:2<br>Viral:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.India:1</td>
   <td>LINION &quot;Can\'t Find&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2c791430839f8236cda446d4bcf6f6d0a6e04554" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-r&amp;b" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2XXreCGINlOqm8wEn7WszA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Dnr8rag22KWTgaH5blVGu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2uUznd0HYTKusR6sl7z3PH" title="pulse">pulse</a></td>
@@ -314,6 +337,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Indie</td>
   <td>Indie:19<br>C.China:3<br>Pop:2<br>C.Germany:1<br>C.Portugal:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6bc118fb72c648e7d254484f47c695b4be2dbe39" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/northwest-china-indie" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4bZvft7DVkJCAslix0FqWj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6AN0GbUZLOXNO9iH8Lrk59" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3wwQU0nsQ0mjYCXLSWyKD6" title="pulse">pulse</a></td>
@@ -325,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Pop</td>
   <td>Pop:10<br>C.China:8<br>Indie:5<br>C.India:2<br>Viral:1<br>C.Irish:1</td>
   <td>Hu Xia<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f70466b9d51248b85a731d7dfd8123336f861347" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mainland-chinese-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7KmV0LJiGPgoQFKAOqgWxs" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/23QpSUVlGaMeFgUneEgF37" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/18Kp8K9OxyudP3PIbSM66T" title="pulse">pulse</a></td>
@@ -336,6 +361,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>Pop:8<br>C.China:6<br>Indie:4<br>Gospel:2<br>C.Taiwan:1<br>C.Korea:1<br>C.Irish:1<br>C.India:1<br>Folk:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2287655b03671d641fd279f403cc15aed57d6e6b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-singer-songwriter" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/59TtFc8U1gqn3hcQd1nBoV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7wQVGtivrYS2j8Cdo5Qn6j" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2QFCgb5qbPkGqAFg6iDLTg" title="pulse">pulse</a></td>
@@ -347,6 +373,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Indie</td>
   <td>Indie:13<br>Pop:5<br>C.China:5<br>C.Taiwan:3<br>C.India:1<br>Gospel:1</td>
   <td>&quot;just like you&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/351018fa875b16cc7a377726c753c60fb53b73fa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-indie" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0wYpNflDnwSC3OZqdrQCBt" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1s8BvixbmIPaRIU3vEtpam" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0G31LEptGs4bFzMwU3JAEC" title="pulse">pulse</a></td>
@@ -358,6 +385,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>Indie:7<br>Pop:6<br>C.China:5<br>Gospel:4<br>C.Spain:1<br>C.Japan:1<br>C.Irish:1<br>Folk:1</td>
   <td>&quot; - &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/33bfb89547338e3f95579ad154817792de3793ae" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-drama-ost" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7Dlr19bDtTlFFYTAvEG7k2" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/73INB1pbpHFcEpZK85v99S" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5AIZJO3xJLmzGAO3C3bMO4" title="pulse">pulse</a></td>
@@ -369,6 +397,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Rock</td>
   <td>Rock:7<br>C.China:4<br>Folk:4<br>Indie:3<br>Experimental:3<br>Synth.Electronic:2<br>Psy.Goa:1<br>Pop:1<br>C.Taiwan:1<br>C.Korea:1<br>C.Africa:1<br>C.India:1<br>Ambient.General:1<br>Instrumental:1</td>
   <td>Wang Wen &quot;Lonely God&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ccb894d31414857a8a134e7b67e3ad401d37bc96" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-post-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5L5KQye8CH1VgsYwmTTAxg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5s8cMCIEW4JAd8AKbfTl0y" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5m8KlyGNKmE9wAwEcMXOYR" title="pulse">pulse</a></td>
@@ -380,6 +409,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Experimental</td>
   <td>Experimental:10<br>Synth.Electronic:3<br>C.China:3<br>Indie:2<br>Folk:2<br>Electronica:1<br>Industrial:1<br>Rock:1<br>C.France:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Africa:1<br>Jazz:1</td>
   <td>Dou Wei<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d41de6290b5c79ef049dd2459f544b92f21b2103" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-experimental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6Vwjb4YyR3ckQXU2k6cf6k" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -391,6 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>C.Mexico.Latino:4<br>Folk:4<br>Kids:3<br>C.China:2<br>Pop:1<br>Americana:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/01ff2b6d53d69c51c625165197b61f0a4bced360" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/er-ge" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6cpNMLQ7oDdFbATi9wYL7f" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZPzdQHFr06r0GrYZlCNNr" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0v4BdyHKS58Zj5UurOAjgB" title="pulse">pulse</a></td>
@@ -402,6 +433,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Folk</td>
   <td>Gospel:6<br>Indie:5<br>C.China:2<br>Folk:2<br>Pop:1<br>C.France:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.India:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cbd6268d3a8f9c07492a573fe1e1f77296364648" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-folk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2rovPgCyVZxrrqtnGz6bwD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7edtd2ayNROvZZ6fUnLKPm" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Ixt72t16Exhtz5CVPULfc" title="pulse">pulse</a></td>
@@ -413,6 +445,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Pop</td>
   <td>Pop:7<br>C.China:3<br>C.Taiwan:2<br>Folk:2<br>Indie:1<br>Gospel:1<br>Country:1</td>
   <td>Jenny Tseng &quot; - []&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7d4e5d15635f95de80615594da1af3c0e08e37df" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/c-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1xyLXFq8PsdtkBeTmWqRjQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/58hZQqYkSmZllCGpK8Cnvo" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7KtTTZxbGsAGLKlY25EC00" title="pulse">pulse</a></td>
@@ -424,6 +457,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>Indie:7<br>Folk:7<br>C.China:4<br>Pop:2<br>C.Spain:1<br>C.Korea:1<br>C.India:1<br>Party.Festival.Band.Cheer:1</td>
   <td>&quot; ()&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/56471868d1335df2936551cc5c9e17940869f45d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-minyao" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3YP86Xx0MYwRzAfshgzXTP" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0aZMrfIby8x86EVhzkDe9I" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6RhkCO2vOKBEs4TNMxjWNE" title="pulse">pulse</a></td>
@@ -435,6 +469,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Gospel</td>
   <td>Gospel:7<br>Indie:3<br>Folk:3<br>Pop:2<br>C.Korea:2<br>C.China:2<br>Americana:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>Country:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9bc3a5031fb23d3031019bfccbbcbd405a5eab44" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-worship" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2blf5MBGY8yhdojrYgWsXB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/08BMq5uqtoWg3EQUggAWWR" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2HD2tCUyZmsFU4BN3MTMox" title="pulse">pulse</a></td>
@@ -446,6 +481,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>Folk:8<br>Indie:4<br>Pop:3<br>C.China:3<br>Gospel:2<br>C.Taiwan:1<br>C.Irish:1<br>Party.Festival.Band.Cheer:1</td>
   <td>Chen Guo &quot;A Love Story of a Genius and an Idiot&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b2a523a925d78ba0b2c56f88b298f512a8b2e32a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-audiophile" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7FCVjVoaNjv3ZSl6RxySlz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Kifl5DcXlHEgGuwyF4Mtc" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6PNoInY6rmMdEG1dzZlKA6" title="pulse">pulse</a></td>
@@ -457,6 +493,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Jazz</td>
   <td>Jazz:12<br>Folk:3<br>C.Mexico.Latino:2<br>C.Japan:2<br>C.China:2<br>Indie:1<br>Pop:1<br>C.France:1<br>C.Korea:1<br>C.Portugal:1<br>Traditional:1</td>
   <td>Joanna Wang &quot;Wild World - Acoustic Version&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/201af3b6690ca84f0e89f3c65621c6431b087bf2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-jazz" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3vnRXcNe4Twu2ceASnGOtJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/55NyoZQrQvd8QEPMpCsW3X" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/42KZvUoKui3Et4KWaQ6cOo" title="pulse">pulse</a></td>
@@ -468,6 +505,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Soundtrack.New.Age</td>
   <td>Soundtrack.New.Age:9<br>Ambient.General:7<br>C.Japan:2<br>C.China:2<br>Synth.Electronic:1<br>C.France:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>C.India:1<br>Classical:1<br>Country:1<br>Experimental:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5600fe8c7746d425d33713108e4b59eb36ec899d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-soundtrack" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1vH4G2PWCvespHrxCOI0oK" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1isZbStsfgOtuw9OhDqkTS" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/06KT4h86UOmpJGKSkWqT2K" title="pulse">pulse</a></td>
@@ -479,6 +517,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Folk<br>Pop</td>
   <td>Folk:8<br>Pop:6<br>C.China:3<br>C.Taiwan:2<br>C.Japan:1<br>Classical:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f1a317578e6e352e16328cd69c03c92880019e78" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vintage-chinese-pop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2cqL0s5H6viqXVDnfhp1nY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Fk72cr0XPwD98Vv6Nf6tc" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5TdSk6v7F9Yc8yaNM7z8q0" title="pulse">pulse</a></td>
@@ -490,6 +529,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>Instrumental:8<br>C.China:2<br>Jazz:2<br>Holidays:2<br>Gospel:2<br>C.Taiwan:1<br>C.Japan:1<br>C.Africa:1</td>
   <td>&quot; -&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dd245efbb2848727f1cf1ef2374964fbea213bdb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-bgm" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1Kcs9JPtTzFVgBhqnlmLM3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1vbNT9wryiKllxpKNdgXJ8" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1dOJEdCXkPqPReky9fvSQ1" title="pulse">pulse</a></td>
@@ -501,6 +541,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Instrumental</td>
   <td>Soundtrack.New.Age:5<br>C.China:4<br>Ambient.General:4<br>C.Japan:3<br>Instrumental:3<br>Classical:2<br>C.France:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Irish:1<br>C.India:1<br>Folk:1<br>Gospel:1<br>Country:1<br>Traditional:1<br>Experimental:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eec095263cd2849751546b2e7cc26034e423e25c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4gexXSDuDHS3FgLpRseBDL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ljKMb4DxnK44XtJrf59i2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6BANdNrf4W2sJme7F5l4GS" title="pulse">pulse</a></td>
@@ -512,6 +553,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Traditional</td>
   <td>C.China:5<br>Ambient.Yoga.Therapy.Sleep.White.Noise:4<br>Traditional:2<br>Kids:1<br>Classical:1<br>Experimental:1<br>Instrumental:1</td>
   <td>Xiang Sihua &quot;The Lofty Mountain And Running Water&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fae68aa5880aa717ae489853f8830b1b2a911cbe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-traditional" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6l6X13EYuQyuFBU6c6JRJM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6jQr4PbAyfhu4zDYLbLKoU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6h670Q8lB0UzwDPwbnKtKq" title="pulse">pulse</a></td>
@@ -523,6 +565,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>C.China:4<br>Soundtrack.New.Age:3<br>Folk:2<br>Classical:2<br>Traditional:2<br>C.France:1<br>C.Italy:1<br>Gospel:1<br>Ambient.General:1<br>Country:1<br>Instrumental:1</td>
   <td>Min Huifen &quot;The Butterfly Lovers&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e8e8f40eefd261a80f4ff48814ef7d51d2fa816c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/erhu" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7uVfHvphUCmZCSgbGiOCgw" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2f7HUqZwN5qpxNoI0cZzML" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2bq05GFmm5Hsdtp4mpueVQ" title="pulse">pulse</a></td>
@@ -534,6 +577,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>Classical:7<br>C.China:3<br>C.Italy:2<br>Baroque:2<br>Rock:1<br>Traditional:1</td>
   <td>Zhang Weiliang &quot;At the Dressing Table&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6b8f0eef7c27e6b1b3dd6eb583a1cb8af7ce8406" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-wind" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7vd7ZntuBk9C5l1MMs5Cgm" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6Vnz2oz2m3d6iBKzc1ToVt" title="pulse">pulse</a></td>
@@ -545,6 +589,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Classical</td>
   <td>Classical:19<br>C.France:2<br>C.China:2<br>C.Italy:1<br>C.Spain:1</td>
   <td>Tan Dun &quot;For the World&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f32b69434bf19c76c23d3bc791bd87679f07707c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-classical" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/30sre1XG3IKvRYM6q0rBdE" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -558,6 +603,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Yuja Wang &quot;Orfeo ed Euridice, Wq. 30 (Arranged by Sga<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/92015ec1cb4700f9173685fd8db461f59198cce5" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-classical-performance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2pxOA8NLXwZaCk09pjaerb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3ARWe8bp1UWLqDqS1IOZFg" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/44Ck6ivNtHLplKeoAWJ2Q5" title="pulse">pulse</a></td>
@@ -569,6 +615,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China &#x2380;</td>
   <td>C.China:1<br>Traditional:1</td>
   <td>Wu Jinglue &quot;Chat Between A Fisherman And A Woodcutter<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b3dec14907c58e7fbc1796d959d5c83329cb59ba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guqin" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/59r5KTXDuXTXZcIKo2rHFH" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Q6r0iMBQi5vYDgjxHV3Ch" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5e876F3nn8465RI6Wi4pwE" title="pulse">pulse</a></td>
@@ -580,6 +627,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China</td>
   <td>C.China:2</td>
   <td>Liu Baorui &quot;Battle In Yunnan&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7b0584e80ec52713d4cb33b07510454b9111581c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tanci" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7ratOul7KberTWrn86l4O7" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -593,6 +641,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Lang Lang &quot;Liebestraum No. 3 in A-Flat Major, S. 541 <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a3f2cb8e5bc8f64631d7087fc779e1d7ec3515ae" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4X5NadJ9dnHyKd2vLILC7v" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ppqZma80J95aOXJZ78zX3" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4N707glnemKav6Vwq3SEYS" title="pulse">pulse</a></td>
@@ -604,6 +653,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Classical</td>
   <td>C.China:2<br>Classical:2</td>
   <td>Song Xiaochuan &quot;The Story of the Whike Snake: Aria B&<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3ac8deee83515471ccc970fd124f366cc9e90fbe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-opera" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3ueKGpM7H6yOxXaawk7yeD" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>

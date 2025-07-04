@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass<br>Traditional</td>
   <td>Pop:5<br>Bluegrass:4<br>Folk:3<br>C.Mexico.Latino:2<br>Traditional:2<br>Progressive:1<br>C.India:1<br>Gospel:1<br>Country:1</td>
   <td>Mile Twelve &quot;City That Drowned&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e27a112a69f7f71313302eaa946d035e8d9bea56" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/neo-traditional-bluegrass" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6tLZeHeJuat5gr4ygTW4Fc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2FaH0ZlZ9Iv3nStQSO4Wop" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3nCch3c67ng0IW3bThz0Vf" title="pulse">pulse</a></td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass &#x2380;</td>
   <td>Bluegrass:3<br>Folk:2<br>Traditional:2<br>Pop:1<br>C.Mexico.Latino:1<br>C.Irish:1<br>Instrumental:1</td>
   <td>Kilfenora C Band &quot;Clare to Here. (Song)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8b08a1db49433b285ff0209d19de712ecab70593" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ceilidh" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5E9RzzgZEIPkm0RBiU7fhM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0OiqbGICnmCwczaHj1PtcQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/33AZjQrsSQawtEuGz7caBy" title="pulse">pulse</a></td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass<br>Traditional</td>
   <td>Bluegrass:4<br>Folk:3<br>Traditional:2<br>Instrumental:2<br>Pop:1<br>C.Irish:1<br>C.Portugal:1<br>C.India:1<br>Gospel:1</td>
   <td>The Bluegrass Cardinals &quot;Just A Little Talk With Jesu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4410a685f781e71c6376c6fc30a2d692227e56c0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/traditional-bluegrass" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2imk6p7ApJgnOSuEs1Znn9" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2zDkpSttX33xLov0BGXH3T" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2NXct3qMoBE3cRO6dOyU1D" title="pulse">pulse</a></td>
@@ -116,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass<br>Instrumental</td>
   <td>Bluegrass:7<br>Instrumental:4<br>C.Irish:2<br>Folk:2<br>Traditional:2<br>Progressive:1<br>C.Mexico.Latino:1<br>Jazz:1<br>Dance:1</td>
   <td>Adam Steffey &quot;Durang\'s Hornpipe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/89d9205616e27e4bdb9ddad9b395819ae7a4d71d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-bluegrass" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6VOFPHsVHwKrKYTCxbVheA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0rp8gWPbRkPFDJlEP9yWVv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3QuiOrAzgFHfGnePpKXDEM" title="pulse">pulse</a></td>
@@ -127,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass &#x2380;</td>
   <td>Bluegrass:5<br>Instrumental:3<br>C.Mexico.Latino:1<br>C.Irish:1<br>Jazz:1<br>Gospel:1</td>
   <td>Br Lindqvist &quot;Wiggen&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e4c1505ccdee3d77f6f7b543f48da80b5594dc61" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dragspel" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2MmOxyg27Johuy1EaTrgAU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4VxU9XAAoeSD9V9WXmoAzn" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/34xlLBemSJAYko8jkWV6Rr" title="pulse">pulse</a></td>
@@ -138,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass &#x2380;</td>
   <td>Bluegrass:4<br>C.Irish:2<br>Folk:2<br>Jazz:1<br>Dance:1<br>Instrumental:1</td>
   <td>Draaiorgel Theadora &quot;Second Waltz&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/118d7a3a815b4a3e4fee8d10e2d05e77eda9eb11" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/draaiorgel" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4Jw47hdV6OqSfXh5z0HvZJ" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6KaBBaLMubIyF0U7UbXbYQ" title="pulse">pulse</a></td>
@@ -149,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass</td>
   <td>Bluegrass:8<br>Traditional:2<br>Progressive:1<br>C.Irish:1<br>Folk:1<br>Gospel:1<br>Country:1<br>Instrumental:1</td>
   <td>Del McCoury &quot;High On A Mountain&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c6aebdc93af4e622c9fac485c9ee4a4640c3ad40" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bluegrass" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5JJqX7mabvOf6x2SfHqnzU" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2STtSr7USTcAl07NQmNLnY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Izwqngcbxn07sw1RRwrld" title="pulse">pulse</a></td>
@@ -160,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass<br>Progressive</td>
   <td>Bluegrass:8<br>Pop:4<br>Folk:4<br>Progressive:2<br>Indie:1<br>Americana:1<br>C.India:1<br>Gospel:1<br>Traditional:1<br>Instrumental:1</td>
   <td>Sam Bush &quot;Play By Your Own Rules&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/09b9ed261aaad519d1d29283fcbb96f0cf5a104a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/progressive-bluegrass" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2ychGMsKkWCqjgkgNHommE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7mliGW2VJzeZh4mPkBDmIa" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4mk6gUKAyFJikC8bKsHuzo" title="pulse">pulse</a></td>
@@ -171,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass</td>
   <td>Folk:6<br>Bluegrass:4<br>Instrumental:2<br>Progressive:1<br>Jazz:1<br>Dance:1<br>Traditional:1</td>
   <td>Aubrey Haynie &quot;Eternal Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b0d08f82f08707854891cf7f19aed158a2b37647" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bluegrass-fiddle" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2DOzLv2V28INol2KQFiI33" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ViV6dqUg8f6fMtEHnF90h" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2TRgvlSAPinzgGpyya5GUs" title="pulse">pulse</a></td>
@@ -184,6 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Larry Sparks &quot;Thank You, Lord&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/447741a26fce0078073367d61bc771587ca8b9c4" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bluegrass-gospel" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2y2KkDXCURfqez8Uvh8dtY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4PbJF6g1DfS0wZ6nB7zgwe" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/44neTrf6MJIRihnARzqZCE" title="pulse">pulse</a></td>
@@ -195,6 +207,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass &#x2380;</td>
   <td>Bluegrass:4<br>Folk:2<br>Progressive:1<br>Pop:1<br>C.Irish:1<br>Dance:1<br>Gospel:1<br>Country:1<br>Instrumental:1</td>
   <td>Rayna Gellert &quot;Tupelo Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0873f4ef97eae9bd6f39c72c7c2fe7f540141d0a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/modern-old-time" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2OuXPWzn1Ih8B8u9kPnh5g" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3jmd5OhEQ6XsY6zwqDXhmd" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/40AFuaFRrOtqWhdcxOfrp5" title="pulse">pulse</a></td>
@@ -206,6 +219,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass &#x2380;</td>
   <td>Bluegrass:5<br>Instrumental:3<br>C.Mexico.Latino:2<br>Progressive:1<br>C.Irish:1<br>Folk:1<br>Jazz:1<br>Dance:1<br>Classical:1<br>Traditional:1</td>
   <td>Mike Marshall &quot;Big Country - Instrumental&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4cdf7113a6f7e5df0438f59fd2deece0174e6a8b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mandolin" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/76roKwsb3rNacnWYupZEgb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3lVpWllHSmgvN9JWanQWoY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3gBwZK1woK0husHtke4VbP" title="pulse">pulse</a></td>
@@ -217,6 +231,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass &#x2380;</td>
   <td>Bluegrass:4<br>C.Mexico.Latino:3<br>Folk:2<br>C.Irish:1<br>Gospel:1<br>Instrumental:1</td>
   <td>Cachoeira &quot;Viola marruda&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b731c18c8e4313ec5e2ee82d5f75f22eb45cf8d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viola-caipira" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2iGD86hTlTtzdQmh3prGPr" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7BkR5KrdlnJIhv8fSN1AKT" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Fr1xwNV9tS9utCwdctyrw" title="pulse">pulse</a></td>
@@ -228,6 +243,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass &#x2380;</td>
   <td>Bluegrass:5<br>C.Mexico.Latino:4<br>C.Irish:2<br>Folk:2<br>Emo:1<br>Gospel:1<br>Traditional:1<br>Instrumental:1</td>
   <td>Chance McCoy &amp; The Appalachian String Band &quot;Gospe<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/674dbe8dd763c26ede6e81d96730b7159f627658" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/string-band" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1DV8BCntskEpuTae25lsNl" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5roNd1Fqy9DaNoouNZt4UU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/19VpIp1jGkHilsEErCkC2l" title="pulse">pulse</a></td>
@@ -239,6 +255,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass</td>
   <td>Bluegrass:8<br>Folk:3<br>C.Mexico.Latino:2<br>Progressive:1<br>Pop:1<br>C.Irish:1<br>Gospel:1<br>Traditional:1<br>Instrumental:1</td>
   <td>J.D. Crowe &amp; The New South &quot;Old Home Place&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7dc20a1799c5603653180febde3b68c49a1104e2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/banjo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6xIivwu6v2453oCCJk6Wxo" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4o1VT8irfslcCpe84BBiDm" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ProbFt20oiqJxigPLB6pK" title="pulse">pulse</a></td>
@@ -252,6 +269,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Rhys Jones, Jeff Miller And Jim Nelson &quot;Possum On A R<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/aaefe9826e6af840594136527768f5cbf7cab6ea" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/old-time-fiddle" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/272JEE1LOwGe3QjMOo59IX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/065rbvAvRVoLTSmiK8ADlx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/07BmBKHVeaXS2Yvg5CoqOs" title="pulse">pulse</a></td>
@@ -263,6 +281,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass<br>C.Irish</td>
   <td>Bluegrass:5<br>C.Irish:4<br>Instrumental:3<br>Folk:2<br>C.Mexico.Latino:1<br>Jazz:1<br>Dance:1</td>
   <td>Peter Carberry and Angelina Carberry and John Blake &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/231f587acca7bb0621307cf5623969f124c55993" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-banjo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2wL2qCBk0diEm7vQEEx9Qa" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/609lX5ih12R7qS6fgEwB5P" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1oI8fMEa0HUb9hpTRR8UeW" title="pulse">pulse</a></td>
@@ -274,6 +293,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass</td>
   <td>Bluegrass:4<br>Folk:3<br>C.Irish:1<br>Jazz:1<br>Dance:1<br>Country:1<br>Traditional:1</td>
   <td>Bob Carlin &quot;The Falls Of Richmond&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/21126dbdce7dfcad833771f51be48510b301b1f1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/clawhammer-banjo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5b3ce3FIod5FdBxsshVYIV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Rqgxv6jIw2MS3z4NiDwqE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5HVpPiExU9Z6IbANVK9YHA" title="pulse">pulse</a></td>

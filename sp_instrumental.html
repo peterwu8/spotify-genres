@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Instrumental</td>
   <td>C.Africa:5<br>Instrumental:3<br>House:2<br>Blues.Soul:1</td>
   <td>Ntokzin &quot;Manyonyoba&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7d04e1dde3bb9642253c30041f3be50f1c96b4c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/amapiano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7xgfzFRkpWzI55LljwwuhO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5oxScrYOIjsKFpHrIdoL59" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZjBqUZwoXew8PVWp3QcYF" title="pulse">pulse</a></td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>House<br>Instrumental</td>
   <td>House:14<br>Synth.Electronic:2<br>Instrumental:2<br>Techno:1<br>Breaks:1<br>Vocal:1<br>C.Italy:1<br>Dubstep:1<br>Funk:1<br>Disco:1<br>Blues.Soul:1</td>
   <td>N Joi &quot;Anthem&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0e6fd0671bb2e0c033f4497f68b57b47c7ff572b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-house" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4JTbjpQmuLtfLzIkAH52Jt" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7M6Ah3ZU5uFYaQqs7Zx8XO" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4rEwWT30cVLd7SVM6Ht8bZ" title="pulse">pulse</a></td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Instrumental</td>
   <td>C.Africa:6<br>House:5<br>Instrumental:3<br>Synth.Electronic:2<br>Electronica:1<br>C.Germany:1<br>Blues.Soul:1</td>
   <td>Sfarzo Rtee &quot;Impilo (feat. Mashudu)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/178fd317ac193fb79d4535255c47499095a3be34" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/underground-amapiano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/60u9ZHJHOBYU7yPFB3fJX1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2hdusBZybYkdOrYMWxjrK6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6yeIELhGmkWMizUWWc02ij" title="pulse">pulse</a></td>
@@ -116,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Synth.Electronic:3<br>House:2<br>Instrumental:2<br>Reggae:2<br>Psy.Goa:1<br>Rap:1<br>Chill:1<br>C.France:1<br>C.Africa:1<br>Jazz:1<br>Dance:1<br>Funk:1<br>Blues.Soul:1<br>Hip hop:1</td>
   <td>Trends &quot;Nocturnal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4739904c53410b4c740000d06878e7d22b43d60f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-grime" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/534dDLa6qUAXMp5paJfNbu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7ruyT1aM1YJ5sA3lQAymGe" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1WGPjTX4GjxXeFkZgkxZMa" title="pulse">pulse</a></td>
@@ -127,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Gospel<br>Instrumental</td>
   <td>Pop:13<br>Dance:4<br>C.Africa:3<br>Gospel:2<br>Instrumental:2<br>Reggae:2<br>Synth.Electronic:1<br>Viral:1<br>C.Korea:1<br>C.Japan:1<br>Party.Festival.Band.Cheer:1</td>
   <td>yoyo michael &quot;Suo M&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d4a0e6575c8056276f9852e48c28a3301d033b6a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gospel-amapiano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3ylVXN6w3CEsnryOPYziCZ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1KfU95OaUtcpNIbH5aM06Y" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1s9vwbUC4OzKZJrLd7ZJou" title="pulse">pulse</a></td>
@@ -138,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Metal:7<br>Instrumental:5<br>Progressive:1<br>Synth.Electronic:1<br>Rock:1<br>C.China:1<br>C.Africa:1</td>
   <td>Wide Eyes &quot;Mind Lapse&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f477a548e0453c2923d38efe2927faee9040d33c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-djent" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/73fiuq4L8KLuDghQs9Bs7D" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4LwN9deVuM4WXik1gUTUnE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5RbP1FpzOZsHAqcWKBEmqR" title="pulse">pulse</a></td>
@@ -149,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Metal<br>Progressive</td>
   <td>Metal:8<br>Instrumental:4<br>Progressive:2<br>Punk:1<br>Synth.Electronic:1<br>Indie:1<br>Rock:1<br>C.China:1<br>C.Germany:1<br>C.Africa:1<br>Reggae:1</td>
   <td>Joel Lindfors &quot;Dawn&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5c308edde72e1b7306bbcb5129a61d2072e13d57" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-progressive-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4KcMILB3MEuiqCtL03JvX8" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3FkVRaK7h9f8RbPMRfKGNh" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3jlV9JaadEh1Vg5keJuPT5" title="pulse">pulse</a></td>
@@ -160,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Metal</td>
   <td>Metal:14<br>Instrumental:4<br>C.Portugal:2<br>Progressive:1<br>Synth.Electronic:1<br>Industrial:1<br>Gospel:1<br>Reggae:1</td>
   <td>Conquering Dystopia &quot;Ashes of Lesser Men&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3fc27e24f320fb12e0b6dbd3070e3b574eb55ff4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-death-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6BTRm34kIuBgr2YtPKVDtO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5eHnvbYvy8GynFmjR8fFcd" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4WrK6VfU0BW2jrkW6pEg7I" title="pulse">pulse</a></td>
@@ -171,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Hip hop<br>Instrumental</td>
   <td>Hip hop:7<br>Electronica:3<br>Jazz:2<br>Instrumental:2<br>Punk:1<br>Indie:1<br>Pop:1<br>C.France:1<br>C.Japan:1<br>Dance:1<br>Experimental:1<br>Hyperpop:1</td>
   <td>Madlib &quot;Distant Land&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c9d184de5e261c556949600e030053f112dffbf1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-hip-hop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4cA3igNXbIWZ2pJYdxAdYr" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3X4eXsHGRdlR8bGn3fi7wY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3QNhEHNa8HGivHwvz7ZkvK" title="pulse">pulse</a></td>
@@ -182,6 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Indie:11<br>Pop:7<br>C.Mexico.Latino:3<br>C.India:2<br>Instrumental:2<br>C.Japan:1<br>C.China:1<br>Gospel:1</td>
   <td>Jesse Rice &quot;Key West Time&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/95427ae7dca8149ce188ecfe64d1ff18736c198c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guitar-case" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0ZEV56fLOnyx0lWRueQwhO" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -193,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Metal</td>
   <td>Rock:7<br>Psy.Goa:4<br>Punk:4<br>Metal:4<br>Instrumental:3<br>Pop:2<br>C.Mexico.Latino:2<br>Jazz:2<br>Indie:1<br>C.Spain:1<br>C.China:1<br>Classical:1</td>
   <td>Rob Balducci &quot;Violet Horizon&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3fa7ad39a3eb7439e44ea866c735701dbfefebf1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metal-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6F4vsDq9BtEpFrSNqh2e6f" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1sL0BON4fTmFaMKztmwpYj" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/15BwXYaGaDUMgpML0NVcq2" title="pulse">pulse</a></td>
@@ -204,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Metal</td>
   <td>Metal:19<br>Instrumental:2<br>Emo:1<br>Ambient.General:1</td>
   <td>Lustre &quot;The First Snow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/338786174d57097f30638697a3f95a396998a473" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-black-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/56fQFv3pWIlOrxfJ1wBDd0" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4bDHYH2qGe0dI9GxmUd8gn" title="intro">intro</a></td>
   <td>--</td>
@@ -215,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Rock</td>
   <td>Rock:10<br>Indie:5<br>Punk:3<br>Instrumental:3<br>C.Japan:2<br>Progressive:1<br>Hardstyle:1<br>Gaming:1<br>Jazz:1</td>
   <td>Floral &quot;Marsh Partition&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/05e5aa5d93b68fcaddfcfe47cf427fcfcd8d2f8c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-math-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2chkIBpDgwkNgmkB1Viavs" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0rftByBBpcIqQy0ioYETIt" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/32ZakPcHeDDy8aJQjRS5Ne" title="pulse">pulse</a></td>
@@ -226,6 +241,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.India<br>Instrumental<br>Rock</td>
   <td>Rock:13<br>C.India:3<br>Indie:2<br>C.Mexico.Latino:2<br>C.Japan:2<br>Instrumental:2<br>Psy.Goa:1<br>Pop:1<br>C.Taiwan:1<br>C.Korea:1<br>C.Germany:1</td>
   <td>Blackstratblues &quot;Anuva\'s Sky&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/47b2b7e321c6be98390d791ec0c19bbb3c66b7e3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indian-instrumental-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0gbdE14EHL2dqs40VHEeyC" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7a8gI2vb6zgxwCbJUTJZ7C" title="pulse">pulse</a></td>
@@ -237,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Pop:3<br>Instrumental:3<br>C.Mexico.Latino:2<br>Psy.Goa:1<br>Rock:1<br>Folk:1<br>Party.Festival.Band.Cheer:1</td>
   <td>Oswaldinho do Acordeon &quot;Na Casa de Dona Anita&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/20d98667c452fb8d718cf453c3337ae8e0e79f53" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/forro-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3zLoWBeQkil0PcY4oFndPa" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/58WHVN8fTmeFlwDFcoXCbl" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1XK9SomF96IV9io68JyojU" title="pulse">pulse</a></td>
@@ -248,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Rock</td>
   <td>Rock:18<br>Metal:2<br>Instrumental:2<br>C.France:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>C.Portugal:1</td>
   <td>Collapse Under The Empire &quot;Captured Moments&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/32cc74becb4ff69d013d77570f1ede592ebc771b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-post-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7m4SvnJOObW34xVsLdXx30" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/770rcbdGShCUZRTD1DvONL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0TAI2qvVEiZQgQin87Gb3w" title="pulse">pulse</a></td>
@@ -259,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:2<br>Psy.Goa:1<br>Pop:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Folk:1<br>Dance:1<br>Party.Festival.Band.Cheer:1<br>Funk:1<br>Blues.Soul:1</td>
   <td>Orquestra Brasileira de M Jamaicana &quot;Vai!&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/14af1c0d38010a08395b436ca0b48d8c8b42bb1f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brass-band-brasileiro" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1KED9gpGOnUAKU9ChGCekB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5sjtLwlfE696zyIwcS9avk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/627epaHxJqraoH9dlvee1K" title="pulse">pulse</a></td>
@@ -270,6 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Rock</td>
   <td>Rock:9<br>Instrumental:5<br>Metal:3<br>Pop:2<br>C.Japan:2<br>Jazz:2<br>Psy.Goa:1<br>Progressive:1<br>Indie:1<br>Classical:1<br>Experimental:1</td>
   <td>Tony MacAlpine &quot;Chrome Castles&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/76e8776be2f4c4f3352fa7bb091b25271746aa04" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4GpNjPNQcTI39mXe6ht1ud" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0OYmJsYJ5nDkBjSd2UBLNd" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6PYHtk2xreEb9TPdGbCyXT" title="pulse">pulse</a></td>
@@ -281,6 +301,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Blues.Soul<br>Instrumental<br>Rock</td>
   <td>Blues.Soul:11<br>Rock:5<br>C.Mexico.Latino:2<br>C.Germany:2<br>Instrumental:2<br>C.France:1<br>C.Spain:1<br>Country:1<br>Traditional:1<br>Reggae:1</td>
   <td>Blues Delight &quot;Slightly Hung Over&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bc5f55f322b184be51094a4accf7b34284e2aa00" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/blues-rock-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2VkWOPUqwKkeBWMqcFx0L6" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0x8Ku2JIvdVpNbP8Y0TxRq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5dH4dLPeGaYiJdmWQiDMYI" title="pulse">pulse</a></td>
@@ -292,6 +313,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Rock</td>
   <td>Rock:14<br>Psy.Goa:9<br>Instrumental:3<br>Metal:2<br>Indie:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Jazz:1</td>
   <td>Mantra Machine &quot;Andromeda&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/beabf2956c4a00dc522d6dbfa95e90b6136f2a79" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-stoner-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6CEUe0Nc4gTonVgMf5VDWO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2sHQ2jSSBOy9kQnUTkE4Kq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0znfP8pK6sRPnyl1UmvY7O" title="pulse">pulse</a></td>
@@ -301,8 +323,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>021</td>
   <td>instrumental surf <a href="https://everynoise.com/engenremap-instrumentalsurf.html" title="&#x2306;">&#x2306;</a></td>
   <td>Instrumental</td>
-  <td>Rock:8<br>Punk:6<br>Indie:3<br>Instrumental:2<br>Pop:1<br>C.Mexico.Latino:1<br>C.China:1</td>
+  <td>Rock:8<br>Punk:6<br>Indie:3<br>Instrumental:2<br>Pop:1<br>C.Mexico.Latino:1<br>C.China:1<br>Curated.life:1</td>
   <td>The Kilaueas &quot;Wet Girls&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e0f2f699420eca1c2928ecd1132eeec41de21c5c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-surf" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/28QheXSjeY6TmsCVFEHJnB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5HoDJvGQVqQjv2Gdf8kqeA" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4fcsxVhRO0MUS88NIkxiuS" title="pulse">pulse</a></td>
@@ -314,6 +337,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:3<br>Psy.Goa:1<br>Indie:1<br>Rock:1<br>Pop:1<br>C.Africa:1<br>C.India:1<br>Folk:1<br>Jazz:1<br>Party.Festival.Band.Cheer:1<br>Blues.Soul:1</td>
   <td>Martine Appert &quot;C d\'accord - Valse&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c5d525fd01a4384c6b3e68257f6dbcb6cd09e868" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/accordeon" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4v2etpAUyEX5sRicWn1IHC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/05IjK1qBfqeo4nTLGXmOkG" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3SoKGnIegACPFlN4CaCSUq" title="pulse">pulse</a></td>
@@ -325,6 +349,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:3<br>Jazz:2<br>Rock:1<br>Pop:1<br>C.Mexico.Latino:1<br>Folk:1<br>Party.Festival.Band.Cheer:1<br>Funk:1</td>
   <td>Mirko Kodic<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/71c498ee7bd0f02f51a554b50a5a006ed910afb0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kolo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5C0NAjg481sIrIAhDN8tfh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1uW9hBelpNxK6jhHp9wlPA" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/49qxetb6jaZtUgVvpmk4Nk" title="pulse">pulse</a></td>
@@ -336,6 +361,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Rock</td>
   <td>Rock:7<br>Pop:5<br>Punk:2<br>Folk:2<br>Instrumental:2<br>C.Italy:1<br>Gospel:1</td>
   <td>Jack\'s Mannequin &quot;Dark Blue - 2015 Remastered&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/12219c6fd17e96b5196e2ec083d825ee8d13b8e3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5rVVQKO7UFXkwpt7jF1Ne4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/59m3fWLfWaAvttDLSKYYC9" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3sErADyGTciPxpB0kELZdC" title="pulse">pulse</a></td>
@@ -347,6 +373,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Mexico.Latino<br>Instrumental</td>
   <td>Jazz:5<br>Instrumental:4<br>C.Mexico.Latino:3<br>C.Japan:3<br>Traditional:3<br>C.Italy:2<br>Folk:2<br>Gospel:2<br>Synth.Electronic:1<br>Pop:1<br>C.France:1<br>Party.Festival.Band.Cheer:1<br>Experimental:1</td>
   <td>Daniel Torres &quot;Dios Incomparable - Instrumental Versi<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a2a763c0787d32b6157577abaa9c726eae0293ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-instrumental-cristiana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1qD4vvatdMhsiIgUld9eET" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5JLBU2aLHEnikVOH81zp53" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6DYxssUJmmt6yI0Qw0EeiP" title="pulse">pulse</a></td>
@@ -358,6 +385,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:3<br>C.Italy:2<br>Folk:2<br>Pop:1<br>C.Mexico.Latino:1<br>Jazz:1<br>Funk:1<br>Disco:1<br>Blues.Soul:1</td>
   <td>Edmondo Comandini &quot;Toca la Luna - Cha cha cha&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/548eb2ace120049b4b037040644d148046b16fac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fisarmonica" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3NN5dcWIgMWa2pz4hhubJb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/48ew0yZRzSB4koAbuP6ZNg" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7tEeh6oL4j1UchxBxHrX3E" title="pulse">pulse</a></td>
@@ -369,6 +397,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Funk:6<br>C.Mexico.Latino:2<br>Instrumental:2<br>Jazz:1<br>Dance:1<br>Hip hop:1</td>
   <td>Quinta Feira &quot;carnaval&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8e5e65e176b48b68e4a74eaab099da2ace080404" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-percussion" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6odC8x54AS8rzUqHupqLDS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5FLB4ZUQr8dQEihgw2lETT" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2X831yMhqsqd1dk5Kn200y" title="pulse">pulse</a></td>
@@ -380,6 +409,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.India<br>Instrumental</td>
   <td>C.Mexico.Latino:3<br>C.India:3<br>Instrumental:3<br>Pop:2<br>Traditional:2<br>Blues.Soul:2<br>Rap:1<br>C.Italy:1<br>C.Africa:1<br>Folk:1<br>Jazz:1</td>
   <td>Amar Khandha &quot;Neele Neele Ambar Par - Unwind Instrume<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c4b8fc3cfd2d9484677de3ca684ded6a5aead918" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indian-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2hNgMUbA6cV6NaIbXhd2Bg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6wvgls266mnKtfvHPuIKUN" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/53U89s2DoKuv4OMTuqaTEU" title="pulse">pulse</a></td>
@@ -391,6 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Funk<br>Instrumental</td>
   <td>Instrumental:4<br>Funk:2<br>Psy.Goa:1<br>Pop:1<br>C.Japan:1<br>Folk:1<br>Jazz:1<br>Dance:1<br>Party.Festival.Band.Cheer:1<br>Blues.Soul:1</td>
   <td>The New Mastersounds &quot;Freckles&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/db765389a5b5ea60fd298d06f34a0ab84b6546b8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-funk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1Ee9iZBp4eNLzR3F8Xf8VD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0oR9ncUrU2LjTFrGPuyd7V" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/230Kg054XdeBdrf2WOeUm4" title="pulse">pulse</a></td>
@@ -402,6 +433,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Blues.Soul:5<br>C.Mexico.Latino:3<br>Folk:3<br>Instrumental:3<br>Pop:1<br>C.Italy:1<br>C.Germany:1<br>C.India:1</td>
   <td>Mdou Moctar &quot;Chismiten&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a8a0ece23f10819bfc581a18bde57a7a527e4f38" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tuareg-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6GLGKlKKI6MNh5nXitwenw" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6h7S0vVjGSxccQY5BKVLsx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3UB8sAZwCwS50OBq0t05Th" title="pulse">pulse</a></td>
@@ -413,6 +445,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Blues.Soul<br>Instrumental</td>
   <td>Instrumental:4<br>Blues.Soul:4<br>Folk:2<br>Jazz:2<br>Traditional:2<br>Funk:2<br>Psy.Goa:1<br>C.Mexico.Latino:1</td>
   <td>The Meters &quot;Cissy Strut&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0f4a2725eded40c506b85a156addc09dc54a4eef" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-soul" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6EbIVsw2rb11ACHIlWXZFV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/04MeLIvlqfls215qPIJ8Ac" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0LTV3mktsC3yV8kaDnWUDK" title="pulse">pulse</a></td>
@@ -424,6 +457,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.India<br>Instrumental</td>
   <td>Instrumental:4<br>C.India:3<br>Jazz:2<br>Classical:2<br>Traditional:2<br>Psy.Goa:1<br>Pop:1<br>C.Mexico.Latino:1<br>Folk:1<br>Funk:1<br>Blues.Soul:1</td>
   <td>Bickram Ghosh &quot;Lost Innocence&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f238f1c96b03d0e39216ce9267af8675342fcaf2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indian-percussion" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4a3VarAtSbgKDRDjfqhB93" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0sB1FlDS14HhnOBByay8pH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/077EJEa8swwOHReSQ6c9r6" title="pulse">pulse</a></td>
@@ -435,6 +469,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:5<br>C.Mexico.Latino:2<br>Jazz:2<br>Chill:1<br>C.Italy:1<br>C.Africa:1<br>Holidays:1<br>Traditional:1<br>Experimental:1</td>
   <td>Dante Bucci &quot;Swing&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b6fa29a8b21bc707b637fbfd8c05b94bb030796c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-tribe" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0bW80mIdkzLcN8Z9YZ0KE7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2BoJ6Lp4lndWdANzfmGP78" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1FF3riDo8m8l39XXxCfTD6" title="pulse">pulse</a></td>
@@ -446,6 +481,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:5<br>Jazz:4<br>Folk:2<br>Synth.Electronic:1<br>Indie:1<br>C.Italy:1<br>Classical:1<br>Soundtrack.New.Age:1</td>
   <td>Amr Ismail &quot;Abu Ali&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/965b8a8dc867361faecb97d4683e73ed452f647b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arabic-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1ETZJ22QZBkO3WXLEGgRpf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0P56Pzm28jrX5mDRh7nib6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/15o8M71IFr7W4isQPV7iil" title="pulse">pulse</a></td>
@@ -457,6 +493,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:5<br>Folk:4<br>C.Korea:2<br>Jazz:2<br>Traditional:2<br>Pop:1<br>C.Italy:1<br>Experimental:1</td>
   <td>Saxo L T Qu &quot;Qua c m&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/99a486b0fd3c4bd2bee729e7a66cb8b99982461c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viet-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/21wDGffpNPXROzcaqp3Y0a" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2YIWPMkdQWYspRtcUzilOr" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ufZVSUhMZoyWxrrOTNAp5" title="pulse">pulse</a></td>
@@ -468,6 +505,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Folk:4<br>Instrumental:4<br>Jazz:3<br>C.France:2<br>Psy.Goa:1<br>Synth.Electronic:1<br>Indie:1<br>Pop:1<br>C.Italy:1<br>C.Korea:1<br>C.India:1<br>Traditional:1</td>
   <td>Tolga Sunter &quot;Dilek Ta&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b03198ec1171eb7668b3c65bbd437c7120de1c69" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5RlrJbvsNxoGvxAbXhzjYQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5O4gTyXnWMIx4DIqdtXvWk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2stNQT1azl3jvxH6Y60Q97" title="pulse">pulse</a></td>
@@ -479,6 +517,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:8<br>Gospel:3<br>Holidays:2<br>C.Taiwan:1<br>C.Japan:1<br>C.China:1<br>Jazz:1<br>Ambient.Yoga.Therapy.Sleep.White.Noise:1</td>
   <td>Noudi &quot;Lean On&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ba85da1bcb24ba53ca4282ab04d1917edf9190fc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/lo-fi-cover" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1GNpGs1XlJhH1ByOFhYfcN" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1IGHqOQ9zWQ50TANBIXb1r" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/71WwPM3WH3HELEFmWRn1SV" title="pulse">pulse</a></td>
@@ -490,6 +529,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Mexico.Latino<br>Instrumental</td>
   <td>Ambient.General:4<br>Pop:3<br>Instrumental:3<br>C.Mexico.Latino:2<br>Folk:2<br>Experimental:2<br>Synth.Electronic:1<br>C.India:1<br>Gospel:1<br>Country:1<br>Party.Festival.Band.Cheer:1</td>
   <td>Silvio Depieri &quot;Um Grande Amigo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d37c407b1b9b0d570b476ef59cb2296ff99ad579" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-evangelica-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3ASdA5uOWObzjjp6PFw2Q5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0Lpc367eyXX94NoAPhGWXv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6un6jmqUkyGSoceahUTpLG" title="pulse">pulse</a></td>
@@ -501,6 +541,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Mexico.Latino<br>Instrumental</td>
   <td>Instrumental:4<br>C.Mexico.Latino:3<br>Folk:3<br>C.Irish:2<br>Bluegrass:2<br>Jazz:1</td>
   <td>Hugo Prieto &quot;Popurr de Pasajes: Siempre Mujer / Amo M<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/56b97dd54d200b3b99005d0365f2ff106662ecc2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-colombiana-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1G2wEAoTNmKc75PoOvV0P7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7ehCwyfyEdoL1WQvkAcana" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0uTifNu6fyQlzKjUzSVNs5" title="pulse">pulse</a></td>
@@ -512,6 +553,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Jazz:5<br>Instrumental:4<br>C.Mexico.Latino:2<br>Traditional:2<br>Bluegrass:2<br>C.Irish:1<br>Folk:1<br>Funk:1</td>
   <td>Buddy Emmons &quot;Wild Mountain Thyme&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/92040514cd162a63612f2fe9743150fb5c666ae6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/steel-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4ZOdyb8AvqZ451nHJNFZdC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7zeVl4Wyu8EBK4We7XSqfU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6B2DEWauXlc8apBv7XQl6B" title="pulse">pulse</a></td>
@@ -523,6 +565,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bluegrass<br>Instrumental</td>
   <td>Bluegrass:7<br>Instrumental:4<br>C.Irish:2<br>Folk:2<br>Traditional:2<br>Progressive:1<br>C.Mexico.Latino:1<br>Jazz:1<br>Dance:1</td>
   <td>Adam Steffey &quot;Durang\'s Hornpipe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/89d9205616e27e4bdb9ddad9b395819ae7a4d71d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-bluegrass" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6VOFPHsVHwKrKYTCxbVheA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0rp8gWPbRkPFDJlEP9yWVv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3QuiOrAzgFHfGnePpKXDEM" title="pulse">pulse</a></td>
@@ -534,6 +577,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:7<br>Jazz:3<br>Traditional:2<br>C.Japan:1<br>C.China:1<br>C.Africa:1<br>Holidays:1</td>
   <td>Giulio Capone &quot;Metal Man - Piano Instrumental&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5bff5a2d017dff7d28c7fcf9d09aec967c9ae2e2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vgm-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3KX6z1klrH9RrmD4hvjlAl" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3rZhpAoRt4LefNmArYsryS" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1sGfoim1sy2o3UIPyVICBK" title="pulse">pulse</a></td>
@@ -545,6 +589,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:3<br>Bluegrass:3<br>Folk:2<br>C.Irish:1<br>Jazz:1<br>Traditional:1</td>
   <td>Hamilton De Holanda &quot;Faltando um Peda&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d64d9098ae9447dd70c768fb5803b1c79edf0f90" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bandolim" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1YyjDXxLn1KPLHMnN3B1F5" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3UDiiVn0zpMeMhO9QdoK44" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/11gd9imgpRPNgxUpbSEiHd" title="pulse">pulse</a></td>
@@ -556,6 +601,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:3<br>Jazz:2<br>Holidays:2<br>Indie:1<br>Chill:1<br>C.Japan:1<br>C.China:1<br>Gospel:1<br>Traditional:1</td>
   <td>Fran Gilbert &quot;Sigamos Pecando&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3fcdaf78801d51dd7f8f6878d34f53f5c62d6635" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/romantico" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/438mjqOPOjUa3aY1sOW50Q" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5xOYx65USrojHnARDfPedm" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Y15zkjLfS7lYkylcVncg8" title="pulse">pulse</a></td>
@@ -567,6 +613,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Traditional:3<br>Instrumental:2<br>C.Mexico.Latino:1<br>C.India:1<br>Folk:1<br>Funk:1<br>Blues.Soul:1</td>
   <td>S.E. Rogie &quot;Please Go Easy with Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/486169216984679e94f38a8954e7de4786e02043" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/palm-wine-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2dGXJ3KpdWfcgfvNAb8QPc" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1XGaMIV0kfbnarEe5y3fcK" title="pulse">pulse</a></td>
@@ -578,6 +625,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:4<br>Jazz:3<br>Folk:2<br>Traditional:1<br>Funk:1<br>Blues.Soul:1</td>
   <td>Emile Carrara &quot;Mon amant de Saint Jean&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3e7549ec053b54774a77472b0b6660c9af4a5dc7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bal-musette" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2qBRZvImPQjF7KXej3YmHz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5cQoyrQoaoCc0z0CVEjbMQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6v3Kfv25Dp5WjK77Cs31ga" title="pulse">pulse</a></td>
@@ -589,6 +637,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Experimental<br>Instrumental</td>
   <td>Experimental:13<br>Instrumental:4<br>Psy.Goa:1<br>Synth.Electronic:1<br>Pop:1<br>C.Africa:1<br>C.Portugal:1<br>Jazz:1<br>Ambient.General:1</td>
   <td>Valentina Magaletti &quot;Rumours of Bread&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/73a316253e21dab7125d882ac3c562f6e4a44de6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/experimental-percussion" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0dVEVtMAMauolhaE2hgnNZ" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -600,6 +649,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:4<br>C.Japan:2<br>Traditional:2<br>Chill:1</td>
   <td>Rick Cyge &quot;Here Comes the Sun&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/da37461994d7dfe58ec4765c858b0f2110cc6067" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/acoustic-guitar-cover" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6vjOsh6JeWFudKpQsOkYNP" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1LQjcvNhO5THxnMWFgOzV0" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1S2WWe9q5tTG51iHBT3EIv" title="pulse">pulse</a></td>
@@ -611,6 +661,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:4<br>Jazz:2<br>Bluegrass:2<br>C.Mexico.Latino:1<br>Traditional:1</td>
   <td>Crazy Otto &quot;Glad rag doll&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c15d503c668280f553fff66afa03becf8302e376" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/honky-tonk-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5GoMuz5RLIBWPsb8NExeYc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3OfMnH0KQz7oWClFdIvyCk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4icFlWQtnxfatAHP62HfA8" title="pulse">pulse</a></td>
@@ -622,6 +673,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:5<br>Folk:3<br>C.Italy:2<br>Pop:1<br>C.Africa:1<br>C.India:1<br>Jazz:1<br>Traditional:1<br>Party.Festival.Band.Cheer:1<br>Experimental:1</td>
   <td>Lisa Stoll &quot;Tanz der K&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/720ea0dd7bccb99875602f283d0bfa0095f22695" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/alphorn" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/74m3dVjqQ3WVDIFu0mpqks" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/31TsW7fm03IQMsE3tuGRAM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3av0JIpiRSbFPGvf3BrJJZ" title="pulse">pulse</a></td>
@@ -633,6 +685,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:8<br>Jazz:7<br>C.Italy:1<br>C.Korea:1<br>C.Africa:1<br>Folk:1<br>Traditional:1</td>
   <td>Maggie Sansone &quot;Bressay Lullaby/Don Oiche&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bf2044545136ea182fe77b2a4d8bd1381f18223a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hammered-dulcimer" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7xCQgIZOLanZADeIagOOx7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0A7qvUrYoRzJikZBGLQGYR" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/08MwZJljJkc3WON3MyAbeP" title="pulse">pulse</a></td>
@@ -644,6 +697,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Ambient.General<br>Instrumental</td>
   <td>Ambient.General:9<br>Soundtrack.New.Age:8<br>Instrumental:2<br>Synth.Electronic:1<br>Rock:1<br>C.Germany:1<br>Ambient.Yoga.Therapy.Sleep.White.Noise:1<br>Classical:1<br>Experimental:1</td>
   <td>Crows Labyrinth &quot;Our Last Dream - Single Version&quot<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cdefa7abbfa20fc10f4fa57c8347db40fd1e61f4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ambient-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/59Pr9qBrHMBhmlgWUkXUjh" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1yRgdCif3785HXwC33Jbva" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6kT5uAMcc5F12nGd5IVm11" title="pulse">pulse</a></td>
@@ -655,6 +709,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Japan<br>Instrumental</td>
   <td>Instrumental:8<br>C.Japan:3<br>Holidays:2<br>C.China:1<br>C.Africa:1<br>Jazz:1<br>Gospel:1</td>
   <td>arachang &quot;Inspirational Japanese Piano&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3019a9e5582b8a248e5c5351baa1c06b9db05725" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3Nd7gSpO4wcYP8G76NuE5I" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/34mgNdqVMkBr9TCZcY7ZHP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/65YZwjewR6tWdQK1Rfy35j" title="pulse">pulse</a></td>
@@ -666,6 +721,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Taiwan<br>Instrumental</td>
   <td>Soundtrack.New.Age:7<br>Instrumental:3<br>Synth.Electronic:2<br>C.Taiwan:2<br>C.Japan:2<br>C.China:2<br>C.France:1<br>C.Italy:1<br>C.Korea:1<br>Folk:1<br>Ambient.General:1<br>Classical:1<br>Traditional:1<br>Experimental:1</td>
   <td>Ken Yang &quot;() Journey at Sunrise (Starlit Night Versio<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dc31b3a23db7515a112fd430f0fe93025648a7ad" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5ktUoxOwva0xzMLV6HrR2g" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/36JkMNPAmJhgxmlFUkPqlz" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ctlr4Qjojye3HYbZh8ulQ" title="pulse">pulse</a></td>
@@ -677,6 +733,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Folk:6<br>Jazz:3<br>Traditional:2<br>Instrumental:2<br>Pop:1<br>Kids:1<br>C.Gypsy:1<br>C.Irish:1<br>C.Africa:1<br>C.Portugal:1<br>Choir:1</td>
   <td>Mikis Theodorakis &quot;Horos Tou Zorba (I) / Zorba\'s Danc<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/66b8c32cd55d71a815ae2690a50c12743f98830c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5DOjUjlPPDjf6BOY7kiVX4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5p9sIvt2qChYtOEOmllWvV" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/008ASRSwjWPbOR306Kb3M0" title="pulse">pulse</a></td>
@@ -688,6 +745,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Folk:3<br>Pop:2<br>C.Mexico.Latino:2<br>Jazz:2<br>Instrumental:2<br>Traditional:1<br>Bluegrass:1<br>Blues.Soul:1</td>
   <td>Jaime Guardia &quot;Munaspaqa Suyaykuway&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b424427d7eae259807065c3e2b9f222c121eb300" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guitarra-andina" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7F8Q0HfHeuuKuWM9UjBcU3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/72HnsptV0VEHFiLZ6D75Ux" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0HWMtFMW9ryUAyNzfWqfpo" title="pulse">pulse</a></td>
@@ -699,6 +757,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Mexico.Latino<br>Instrumental</td>
   <td>C.Mexico.Latino:3<br>Instrumental:3<br>Jazz:1</td>
   <td>Ramon Dona-Dio &quot;Guadalajara&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/31bdc9f8e974d8ed6ef4e27b98a7266c82138835" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guitarra-mexicana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5RTfxVbSrJFhZTCV6CwYW9" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6YUf8RlXTNAt4IcnaRDG5V" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5vXbwhL6aaRJkAfgkuFvFX" title="pulse">pulse</a></td>
@@ -710,6 +769,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Jazz:13<br>Instrumental:5<br>Experimental:2<br>C.Taiwan:1<br>C.Japan:1<br>C.Germany:1<br>C.Africa:1<br>C.Portugal:1<br>Ambient.General:1</td>
   <td>Grandbrothers &quot;Bloodflow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1dc06a2c8fcbaba9933dcfa7046f83bb36af75fc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/prepared-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0KecgPjeyjAn9T2d5PNTwN" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -721,6 +781,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Traditional:4<br>Jazz:3<br>C.Mexico.Latino:2<br>Instrumental:2<br>Blues.Soul:2<br>Folk:1<br>Funk:1</td>
   <td>Tata G &quot;Descarga cubana - Remasterizado&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a1a387b9445cccb6006135d1b5e48ca25af55693" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/afro-cuban-percussion" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2knr8HbdAH4SBQfaoItBkS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5XJZp7DV8DAecGgAYJMCSD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2cs0ephIHSErFFi6bWrirK" title="pulse">pulse</a></td>
@@ -732,6 +793,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:10<br>C.Japan:3<br>Holidays:2<br>Gospel:2<br>C.China:1<br>C.Africa:1<br>Ambient.General:1<br>Ambient.Yoga.Therapy.Sleep.White.Noise:1</td>
   <td>Mugi Piano &quot;The Loneliest Girl (From &quot;Carole &am<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e0c601e3a2a15532086b58f34ec87627a02ee1c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/anime-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0KaPnh3dANNTOnqXlegsON" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/33Ijo26TCXS5IBZP6TH16A" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6GzXZgdhPRhnWpimuTettQ" title="pulse">pulse</a></td>
@@ -743,6 +805,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:7<br>Jazz:4<br>C.Japan:2<br>Chill:1<br>C.Africa:1<br>Holidays:1<br>Bluegrass:1</td>
   <td>D Saitenmusik &quot;Morgentau&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d09157986e71e8def863be6878e51bd9689aabc1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/alpenpanorama" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0JXnDtaoCfX7Q6QC6Q8i0x" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6dKoVyZdTjGMjyDVT2gOle" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1dGzd9YUxb0KFeuhnMdCz1" title="pulse">pulse</a></td>
@@ -754,6 +817,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:8<br>Jazz:3<br>Holidays:2<br>Gospel:2<br>Classical:2<br>C.Japan:1<br>C.China:1<br>C.Africa:1</td>
   <td>Ears Of Light &quot;When We Used To Know - Chill Mix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e92d79ea49f42bbb46574972f802ebd5ba81a219" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/relaxative" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4mFbCjaAKxq9b4Cy9seDXk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6djJ3Oq2D8TqlNZ3c1YhSR" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1IkFA4Gg9s0uTR2J8oMRxZ" title="pulse">pulse</a></td>
@@ -765,6 +829,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Korea<br>Instrumental</td>
   <td>Instrumental:7<br>Jazz:4<br>C.Korea:3<br>Folk:3<br>Traditional:3<br>Chill:1<br>C.Africa:1</td>
   <td>George Kuo &quot;Waik Hula Medley&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/557c2ad4f00bcb2fbdc9d9dfb1fa3ad749645df2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/slack-key-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3AcB5ov4dAX8jddis4Bafm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Q8wdO4sIQGbwk6iwCjW1r" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/18wdjIXcwyuhSZ5BLkuN5b" title="pulse">pulse</a></td>
@@ -776,6 +841,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Folk:6<br>Jazz:5<br>Instrumental:5<br>C.Korea:2<br>Traditional:2<br>C.Irish:1<br>C.Portugal:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a5ffa7b5ce4a2ca5884e05ee367a6a758213dab9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/thai-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1Ve019KZUUU4j6FmNt9B8a" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6iibAwHn9Fhq14Eiz7OIZx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4CjzGBJvT6xVhQWd7BVR4D" title="pulse">pulse</a></td>
@@ -787,6 +853,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Japan<br>Instrumental</td>
   <td>Jazz:6<br>Instrumental:6<br>C.Japan:3<br>Chill:1<br>C.China:1<br>C.Africa:1<br>Holidays:1<br>Classical:1</td>
   <td>paniyolo &quot;Color&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/323793bc81209b5a0071c0b74390170b531e3b56" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0dWgFxR0ieemTbUe1nfLed" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6XlUNMuZw7qFDdd0pju3PW" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6DNiiuCQyeOYAVLiSzRjTR" title="pulse">pulse</a></td>
@@ -798,6 +865,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:9<br>C.Japan:2<br>Holidays:2<br>Gospel:2<br>C.Italy:1<br>C.China:1<br>C.Africa:1<br>Jazz:1<br>Ambient.Yoga.Therapy.Sleep.White.Noise:1<br>Classical:1</td>
   <td>Jeremy Arndt &quot;Song of the Morning&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e4b27f98846e97675e19ce8db5d0bdf58291203a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/handpan" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3H9BwCqSvhqLxl6gyePHAE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/65d6HxbIxD8O5164SV1r1f" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Gpv2Zr8WejxPzlS9K4G82" title="pulse">pulse</a></td>
@@ -809,6 +877,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.China<br>Instrumental</td>
   <td>Soundtrack.New.Age:5<br>C.China:4<br>Ambient.General:4<br>C.Japan:3<br>Instrumental:3<br>Classical:2<br>C.France:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Irish:1<br>C.India:1<br>Folk:1<br>Gospel:1<br>Country:1<br>Traditional:1<br>Experimental:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eec095263cd2849751546b2e7cc26034e423e25c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4gexXSDuDHS3FgLpRseBDL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ljKMb4DxnK44XtJrf59i2" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6BANdNrf4W2sJme7F5l4GS" title="pulse">pulse</a></td>
@@ -820,6 +889,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Holidays<br>Instrumental</td>
   <td>Instrumental:7<br>Jazz:4<br>Holidays:3<br>C.Japan:2<br>C.China:1<br>C.Africa:1<br>Classical:1</td>
   <td>John Bladh &quot;See Amidst The Winter\'s Snow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/51b419ebac1665b378c7fe2cf0812246d253cedc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/christmas-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/61mWpz3ZqIBLOd3MxbjWFR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4r1t3ZOMfpNG2XQc25rIwH" title="intro">intro</a></td>
   <td>--</td>
@@ -831,6 +901,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Experimental<br>Instrumental</td>
   <td>Jazz:6<br>Experimental:5<br>Instrumental:4<br>Folk:2<br>C.Italy:1<br>C.Japan:1<br>Ambient.General:1<br>Soundtrack.New.Age:1</td>
   <td>Loren Connors &quot;Now Who Are These Guys?&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cd0a00181162eb89a364e7e39d9a9ff2efd622d8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/experimental-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3BK0gx0rvmoqDp691gtQZG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4e2Oo0swFDwXgwn3xhral3" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7yYIuZ6ev8qzzMUBNajcNd" title="pulse">pulse</a></td>
@@ -842,6 +913,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Instrumental</td>
   <td>Jazz:8<br>C.Portugal:6<br>Instrumental:4<br>Traditional:2<br>C.Gypsy:1</td>
   <td>Francisco Carvalhinho &quot;Fado can&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b5cd78bba0d157f8ffb6116bf519d9b831ca1ff6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fado-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2w0tfXHDvjHmSqZ3Pi1OuJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/37VdasuGfSsqf4zjfvlsxA" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3cbir82REgmBiABDuZZSYV" title="pulse">pulse</a></td>
@@ -853,6 +925,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Africa<br>Instrumental</td>
   <td>Jazz:13<br>Instrumental:6<br>C.Africa:2<br>C.Japan:1<br>C.Germany:1<br>C.Portugal:1<br>Classical:1</td>
   <td>Koungbanan Conde Ensemble &quot;Kassa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/57ca44919433aeb1ac0c0ab58ad1c3c3146d0280" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/african-percussion" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/23e4SXJoxyNtQ3s2mSb5dx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/18eWCrD8PJdjgv8RbmcPlZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1rIfCMxAs78VCwXDOmPAsr" title="pulse">pulse</a></td>
@@ -864,6 +937,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Gospel<br>Instrumental</td>
   <td>Instrumental:9<br>Gospel:4<br>Jazz:3<br>Classical:3<br>Holidays:2<br>C.Mexico.Latino:1<br>C.China:1<br>C.Africa:1</td>
   <td>Janice Faber &quot;Oh How He Loves You And Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/aba387f24c9d85ae29b0eef0cb72089675f69e82" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-worship" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4SR5G11OQyBa5WCPm24J1N" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0nOYwBaPEmuCilqiTnvzQ7" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7tBcKwKVKmTvhOS7CYFJBR" title="pulse">pulse</a></td>
@@ -875,6 +949,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:7<br>Jazz:3<br>C.Japan:2<br>Gospel:2<br>C.Italy:1<br>C.China:1<br>C.Africa:1<br>Holidays:1<br>Classical:1</td>
   <td>&quot;()&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1ea5beb51a10bb8809b6470d6db3ac736c44cae0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bgm" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3qmXZHBleLLE52bE1XYAfM" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1iIz5y5kMOQ3JzBqwiprcD" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3w4jI1QUL9DKAiBIOgUQBb" title="pulse">pulse</a></td>
@@ -886,6 +961,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:6<br>Jazz:4<br>Classical:3<br>Folk:2<br>Holidays:2<br>C.China:1<br>C.Germany:1<br>C.Africa:1<br>Gospel:1</td>
   <td>Randal L Meek &quot;Road to Haleakala&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f231e79d4a1fba9787950e03df64090559bc9799" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-acoustic-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3Yxx0Sca9slhFdzbUZLlyR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3c99rWzc0Xxq9kcmtHIMCy" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2HqBcYHh7OdSKFkwibw5Pt" title="pulse">pulse</a></td>
@@ -897,6 +973,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:10<br>C.Japan:2<br>Gospel:2<br>C.Italy:1<br>C.Korea:1<br>C.China:1<br>C.Africa:1<br>Jazz:1<br>Holidays:1<br>Ambient.Yoga.Therapy.Sleep.White.Noise:1<br>Classical:1</td>
   <td>Amanda Crow &quot;Someone Like You - Piano Version&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/76fb5a8eb8b6d6fe2a259e135df33996bf488c31" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classify" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6E9uHw2nQR9XPP4DGrBUcl" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4UJ6NUhduAho23YnBlS8Fx" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6EKcZLPXBAtSsmELQISf1s" title="pulse">pulse</a></td>
@@ -908,6 +985,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>C.India:4<br>Jazz:4<br>Instrumental:3<br>Traditional:2<br>Folk:1<br>Classical:1<br>Bluegrass:1</td>
   <td>U. Srinivas &quot;Kaliyugavaradana&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b6f693f0c8db68ca9cb6bf886277501192c2dd2e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/carnatic-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/520PdmxBhzhsOIfR0lAMth" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2WGbt00tn4fSSWuOkg8JQI" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3GaupbY9wUz7En6qCLDHR4" title="pulse">pulse</a></td>
@@ -919,6 +997,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:6<br>C.Japan:1<br>C.China:1<br>Holidays:1<br>Gospel:1</td>
   <td>Dogs Singing &quot;Happy Birthday (singing Dogs)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/33254cd3847f70699d34adc393243926960757c7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/animal-singing" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1eyCjFAnmJxBnrXvLndyOE" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -930,6 +1009,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Jazz:16<br>Instrumental:4<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1<br>C.Africa:1<br>C.Portugal:1<br>Classical:1</td>
   <td>Gilson Peranzzetta &quot;Com Que Roupa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/648ea5bb5522dd0e1f88927375a2aa49e86a2ab9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-mpb" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7GnFQMK9qCeEFN0BAxFvW7" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1tCcfQXH8uPIHF9COvx7qj" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2v5RCWGBXOCXUnGGiRlcjw" title="pulse">pulse</a></td>
@@ -941,6 +1021,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:5<br>Jazz:4<br>C.Africa:2<br>Classical:2<br>C.Japan:1<br>Holidays:1<br>Bluegrass:1</td>
   <td>Isato Nakagawa &quot;Sky Scraper&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8d6750f7a93ebc556cd183b1c71c799cc2ecd6b4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fingerstyle" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4ErdfOdFfbDdISqqgv23GV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4E13Lew9zLJWtOKpoE4oIQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/43wvVCe0MSMwzRNIwonbY3" title="pulse">pulse</a></td>
@@ -952,6 +1033,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Jazz:6<br>Instrumental:3<br>C.Africa:2<br>C.France:1<br>Classical:1</td>
   <td>Mora &quot;Sor Buler&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fe20cffc4f2de64c4e9041b1b7dcaf066a868931" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/flamenco-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0IqRtRiN7mb32cAmyt7G13" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2yRwutxQnS53r2UABegpEY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/37vEzr9Rlut0sMARWnrxjM" title="pulse">pulse</a></td>
@@ -963,6 +1045,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Portugal<br>Instrumental</td>
   <td>C.Portugal:6<br>Traditional:4<br>Instrumental:4<br>Jazz:3<br>Folk:2<br>C.Spain:1<br>C.Africa:1</td>
   <td>Carlos Paredes &quot;Can verdes anos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7f6fe5e52d9abaf810af80d4f25bda660a19e2f9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guitarra-portuguesa" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0kxFR8tp2YZ8BsAvRpaSDl" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4Hc0XfVoiO1YV9GtJ1L0wg" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/334Ea4OG3NGHtYtdzbazNy" title="pulse">pulse</a></td>
@@ -974,6 +1057,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Gospel<br>Instrumental</td>
   <td>Instrumental:10<br>Gospel:3<br>C.Korea:1<br>C.Japan:1<br>C.China:1<br>Holidays:1</td>
   <td>Jesus Raymond &quot;I Surrender All&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6436cf6f2195eb5c492eeacefae8b1e59f49fb89" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-worship" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5lVuY5dJVBbAYLA0L9KJix" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1zNQbW4xfulbFenux4ZiLR" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1AGnOBvs0TAzQdhwlcCsEc" title="pulse">pulse</a></td>
@@ -985,6 +1069,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Blues.Soul<br>Instrumental</td>
   <td>Blues.Soul:13<br>Instrumental:3<br>Jazz:2<br>Traditional:2<br>House:1<br>Pop:1<br>C.Mexico.Latino:1<br>Folk:1</td>
   <td>Big Maceo &quot;Worried Life Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/874cb01616800577a04c7dcb97b41090443991cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-blues" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/58hb46oJEDVQJxoew4Er8q" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5SJCu20SO0hwlIGxBONR4D" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6mupC5Ht58DW5oo0XHZRff" title="pulse">pulse</a></td>
@@ -996,6 +1081,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:8<br>Classical:4<br>C.Japan:3<br>C.China:2<br>Gospel:1<br>Ambient.General:1<br>Traditional:1</td>
   <td>Omina Far &quot;Skinny Love&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1dda5848dd180ef04a10c37ae5a4417b1bba7dab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/calming-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/64rpUcla6sbXJFkaOAq1qu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5Pf1c84oSF61IueHEQ9RMN" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5NS2E4E4CunbB2ogmqrpXJ" title="pulse">pulse</a></td>
@@ -1007,6 +1093,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Folk:6<br>Traditional:4<br>Jazz:3<br>Instrumental:2<br>C.Africa:1<br>Classical:1</td>
   <td>Jean Ritchie &quot;Jubilee&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7ce396d9860ac2f99964eb3ee68d1fa4f28bcb6b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mountain-dulcimer" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4VSoA0XmpkUnxEu7Vy6Dqk" title="playlist">playlist</a></td>
   <td>--</td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6PgjUuudWMj5NxSC6v55SH" title="pulse">pulse</a></td>
@@ -1018,6 +1105,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Jazz</td>
   <td>Jazz:12<br>Instrumental:5<br>House:1<br>Rap:1<br>C.Gypsy:1<br>C.France:1<br>C.Africa:1<br>Classical:1</td>
   <td>George Van Eps &quot;Cheek To Cheek&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f5d819b6688ed2884408aec2b5e53ff37b75b3f4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jazz-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4tH5CLOMXHah6ngcr3Z2Gu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3ug2FAazzzJpHKBrOYhl0a" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1hGrZsnMER8CylOtIOEeQ6" title="pulse">pulse</a></td>
@@ -1029,6 +1117,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Jazz:6<br>C.India:3<br>Instrumental:3<br>Classical:2<br>C.Germany:1<br>Traditional:1</td>
   <td>Hariprasad Chaurasia &quot;Jogiya&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/692e0fea395c3973d34906e8f2dd2d8be84713e5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hindustani-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3FkL35y5g0Vs6jMYo5vNYW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/39wBiTEzr3LIomUuRZ2ens" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2trY78l7BmIAWYzmHCLz4r" title="pulse">pulse</a></td>
@@ -1040,6 +1129,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:4<br>C.Japan:2<br>C.Mexico.Latino:1<br>C.China:1<br>Jazz:1<br>Holidays:1</td>
   <td>Venti Petrov &quot;Pli - 4/4&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/278c02e1a0b0629b24f073a9f6162e5502f13267" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ballet-class" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0HQGgNqnGE43URSB9W4Dy3" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3NlJVl1TYFyjItIeMRmyhI" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0z5YDvpXXhF8MZPdC0uHFr" title="pulse">pulse</a></td>
@@ -1051,6 +1141,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Jazz</td>
   <td>Jazz:16<br>Instrumental:6<br>Classical:3<br>C.Italy:2<br>C.Germany:1<br>C.Africa:1<br>C.Portugal:1</td>
   <td>Gerald Clayton &quot;That Roy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/91d24a6d1521d65c7d45e8ab5a84751ae5434bbd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/modern-jazz-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7fxBCO4CXLWl2mYNe8Jjg0" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5r0ziVtK1Lt8tSd7cqzkIC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3xjdIjmLct5g9RR0GLptLj" title="pulse">pulse</a></td>
@@ -1062,6 +1153,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Chill<br>Instrumental</td>
   <td>Chill:2<br>Instrumental:2</td>
   <td>Solomon Davis &quot;Before The Tide&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/65a80abedd792402efe7a3984da249b585a62d3d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chill-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4XhnpVMVwnL8e7EHxA2Rna" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6TRVlRnNGDQxha5imjQhbp" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7C4PMwvRTx2LlFNGRgsu38" title="pulse">pulse</a></td>
@@ -1073,6 +1165,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Classical<br>Instrumental</td>
   <td>Classical:8<br>Instrumental:5<br>Jazz:3<br>C.Taiwan:1<br>C.Japan:1<br>C.Africa:1<br>Baroque:1</td>
   <td>Chin Cheng Lin &quot;Cappuccino Lovely: No. 2. Milk&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f45d44a6e29e53fadd6cda467a689d24c9f21439" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-percussion" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1LCGVLfROniWAIoSSAEKEE" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2M1nfFGZkklem8N9u2gicd" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1KwQqbC3vqSMIifKPSESeC" title="pulse">pulse</a></td>
@@ -1084,6 +1177,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Jazz</td>
   <td>Jazz:11<br>Instrumental:6<br>C.Africa:2<br>Classical:2<br>Kids:1<br>C.France:1</td>
   <td>Wes Montgomery Trio &quot;Geno&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/40ddb6a2b0972128e8e38cfc6ecf283521e98a63" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jazz-guitar-trio" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5vS964lftHRyZAbjVeH26b" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1095,6 +1189,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:5<br>Gospel:1</td>
   <td>Mary Lou Stephens &quot;I\'m Yours&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8db90e87edbea228ba88d9c33f406e48019a654f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-cover" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6yGAwVDOmgKVKM4XDLNoVR" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Xxpr1if2q3u1SeBlK0uPw" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0CVAmwCzTd9jhGAazpAP23" title="pulse">pulse</a></td>
@@ -1108,6 +1203,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Amara Piano Quartet &quot;Piano Quartet No. 1 in C Minor, <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f5f8f396cf359b596f40b33cbe0566df067eb541" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-piano-quartet" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3o54yxPRl7qCZhZKGpp5IE" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1119,6 +1215,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Japan<br>Instrumental</td>
   <td>Classical:13<br>C.Japan:5<br>Instrumental:5<br>C.Taiwan:1<br>Ambient.General:1</td>
   <td>Itoko Toma &quot;Erica&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eee229c7d6efb7b40af432c886b827319b30ecb6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2pGRSENDZrRPtxsf7pSBhJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1Vo6LkmwsCRi1V3lNkjyYh" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5RXpYJxmffugotHwArxDHb" title="pulse">pulse</a></td>
@@ -1130,6 +1227,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:3</td>
   <td>Rozalia Simon &quot;Tonight all the stars all blinking&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9473955d70bdd1826fdc1c70e9a923dfe83e574c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/instrumental-lullaby" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5COOZ0qQHM3AhJnSF7ey9E" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6o45GD8IgEdO2mTpegb64o" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5vyAopQfgpwi07DM6vYAud" title="pulse">pulse</a></td>
@@ -1141,6 +1239,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:3<br>Gospel:1</td>
   <td>Eleonore Baumann &quot;Watching the Sunset&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bddbbd65a8a088398e830e6c40739d595ef0f6c4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pianissimo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3nN6qe9G9sTyORJ1KKyMaq" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Z1ZF29ddcukVgYG8s51fI" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1SKSNdyTq7PMomQWq4v9XX" title="pulse">pulse</a></td>
@@ -1152,6 +1251,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Jazz</td>
   <td>Jazz:13<br>Instrumental:4<br>C.France:1<br>C.Africa:1<br>Classical:1<br>Funk:1</td>
   <td>Cedar Walton &quot;Blues For Myself&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fd91e3f81c61a3f1710fa441d62036bde5d6a8b1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jazz-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5KudWqpwRKdH5CY6yQ1nwA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2GwS90TxqDAjgfGGFMzIyB" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/33wywx1LLfiRH7T7tdsqaU" title="pulse">pulse</a></td>
@@ -1163,6 +1263,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental &#x2380;</td>
   <td>Instrumental:7<br>Jazz:4<br>Classical:3<br>C.Italy:1<br>C.Japan:1<br>Traditional:1</td>
   <td>Paulo Bellinati &quot;Concerto Caboclo: II. Moda di viola.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/60e9285a5f600a92fe65ef5c238e4440e3fb0ecf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/violao-classico" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5G2C23N21neMHfn68HHT1S" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6d3Z6a1JrlethvqshXoJOE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2nxUWhdxVx3pMXKjKkzC7M" title="pulse">pulse</a></td>
@@ -1174,6 +1275,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Italy<br>Classical<br>Instrumental</td>
   <td>Instrumental:9<br>Classical:6<br>C.Italy:2<br>C.Korea:1<br>Soundtrack.New.Age:1</td>
   <td>Cristiano Porqueddu &quot;Etude No. 1&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/773f8f08bd9823cda036cf3db9006fd489b7af13" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/italian-classical-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2pUIRmPkTWfyaFrpGy61mk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4cn3smJ28atQqd6uu32q7H" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7i8Bo1o2nmV4INMbpYD5gS" title="pulse">pulse</a></td>
@@ -1185,6 +1287,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>House<br>Instrumental</td>
   <td>Blues.Soul:6<br>Folk:4<br>Instrumental:3<br>House:2<br>Jazz:2<br>C.Africa:1<br>Classical:1<br>Country:1</td>
   <td>Champion Jack Dupree &quot;Junker\'s Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bf19fa3b7998b10f960bffd2da908ecafe2090b0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/barrelhouse-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7FdGVAxDb8iB96NFXOiVMe" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1wVsoutGCuIyh7Ff4O2ZIQ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/18ciexxJiRQCodT4O58nMZ" title="pulse">pulse</a></td>
@@ -1196,6 +1299,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Korea<br>Instrumental</td>
   <td>Instrumental:5<br>C.Korea:2<br>C.Italy:1<br>Gospel:1<br>Classical:1<br>Soundtrack.New.Age:1</td>
   <td>Alves &quot;Beautiful (From  [Original Soundtrack])&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9a2136d02eac044d9b2f93480bd145f1aed2eda1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2zoo13IlfY1VrvdX9NfePC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ENRl2ulG581JNyI0YayyO" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1L4N2a3vtl2xVmkML4b2GB" title="pulse">pulse</a></td>
@@ -1207,6 +1311,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Classical:14<br>Instrumental:2<br>C.Spain:1<br>C.Korea:1<br>C.Japan:1<br>C.Portugal:1<br>Baroque:1</td>
   <td>Michael Hardey &quot;How Great Thou Art (Piano Solo)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3468cd8702eb178bd57cc17f2806564906e596d5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/lds-instrumental" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4LMmTHb7UkNibXuX7hdYrT" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6baGx6ajXDJQRkJeZsqQni" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7wn4jMnmLYzk9nXmYBQQgW" title="pulse">pulse</a></td>
@@ -1218,6 +1323,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:3<br>Jazz:2<br>Traditional:1</td>
   <td>Juan Fal &quot;Ya me Voy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f2bce867ecd8830d85a8de5e6f37d2ef8553e313" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guitarra-argentina" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7AM6up7skBINcBMsC4hcdA" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2PF3RJxabqqWX77UxhDprB" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4nDjIw2mTkNe8u4a6ikNPf" title="pulse">pulse</a></td>
@@ -1229,6 +1335,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Classical<br>Instrumental</td>
   <td>Classical:20<br>Instrumental:12<br>C.Japan:2<br>C.Italy:1<br>C.Spain:1<br>C.Korea:1<br>C.China:1</td>
   <td>Paul Lewis &quot;Sonata No. 14 &quot;Moonlight&quot; in C-<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4423bbe58e0471b17db02036ac93f9e1696dc663" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1B6F2FbtDNniCVjROeU0ga" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2nHgdLOws07MjsE7rmYJ5U" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6HNMbVGTJb73PV53yUHTHN" title="pulse">pulse</a></td>
@@ -1240,6 +1347,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Classical<br>Instrumental</td>
   <td>Classical:19<br>Instrumental:12<br>C.Spain:2<br>C.Mexico.Latino:2<br>C.Germany:2<br>C.Italy:1<br>C.Japan:1</td>
   <td>Nicolas Hodges &quot;Adams: Hallelujah Junction: 1st Movem<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4d09cb0ff1f2d0982290b64883df3fb4de15b8bf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/contemporary-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5ouCntxKITX88EkEogQZjz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3MI3keOz4qzshf4KkYKQtf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0KG6CJMlK6nvvRmXy3qPCU" title="pulse">pulse</a></td>
@@ -1253,6 +1361,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Joseph Banowetz &quot;6 Chants polonais, S. 480: No. 2, Fr<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1cdbfd66aa4a6e18505cc3d016191bda890b0064" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/american-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4bvyIQgxpp1YmiEUOvyFcL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3HiLZARVAgMoIEfGtHfgFC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZfuXP5QvbSgTJ48YohSCE" title="pulse">pulse</a></td>
@@ -1266,6 +1375,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Los Angeles Guitar Quartet &quot;The Yellow Cake Review, F<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1ee94264cefcac2ffdae6ab696d2f288baaf48ad" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-guitar-quartet" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5rMf64nAGUwqxV9R63o5jW" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1279,6 +1389,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Mao Fujita &quot;Ave verum corpus, K.618 (Arr. for Piano b<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/75d3be6db71cef14d298e5b385d45b7491a1a79d" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2xCFXS4di9R2XWQebiA5lv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1cSdW42HWxvv9S89UEjxv6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3RLKBwG3tmWdia2TyisM2k" title="pulse">pulse</a></td>
@@ -1290,6 +1401,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental<br>Soundtrack.New.Age</td>
   <td>Classical:12<br>Instrumental:12<br>Soundtrack.New.Age:3<br>C.Italy:2<br>C.Japan:2<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.Germany:1<br>Baroque:1</td>
   <td>Joe Yamada &quot;Chasing the Dream&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0784e3faf7fb6a29e3c2442411412e0bcad48558" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-age-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3z3YJH7rEJWuaVqggQaHnI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0J8DKA10YF7SOygeUYTxzV" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/06ErX6daanvbqhBp7LXPc7" title="pulse">pulse</a></td>
@@ -1301,6 +1413,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Classical<br>Instrumental</td>
   <td>Classical:6<br>Instrumental:6<br>C.Italy:1</td>
   <td>Brasil Guitar Duo &quot;Les guitares bien temperees (The W<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9c1a25c124043512032ebd4fe81ad25155dab4c8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-guitar-duo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/62soEe3oHcs4AwY063pK6B" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1314,6 +1427,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Seong-Jin Cho &quot;Suite bergamasque, L. 75: III. Clair d<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9ed82399ca9f16b38db2d5b39d77d59dc864822c" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3Bb1Rfc7TbQOHCMm4MHgCj" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2POyo3s40N7s4qUrv1WJgY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1RTiUN1RXrvcvutMz6ehdt" title="pulse">pulse</a></td>
@@ -1327,6 +1441,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Maurizio Pollini &quot;Nocturne No. 1 In B Flat Minor, Op.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ca61a2c8a205da988ebe452c607d65eb92f25773" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/italian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0TwTZK6NU4aTwNvDYGePPN" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4eQNSJHVnjMxG5fdzAitNM" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1HEe5MFbfaq7Jiha6b4shS" title="pulse">pulse</a></td>
@@ -1340,6 +1455,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Tal &amp; Groethuysen &quot;16 Waltzes, Op. 39 (Version fo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0662724ebecfb196e53ec80dfbb91333e43fbb9e" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/german-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2kmpwFIajNRGX0F4s4TnaX" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7pspRw7kSFiwanrQmqUQdc" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4T6scPt5fFnrG4Ot1BRQug" title="pulse">pulse</a></td>
@@ -1351,6 +1467,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Classical:19<br>Instrumental:18<br>C.France:1<br>C.Italy:1<br>C.China:1</td>
   <td>Domi Nova &quot;Night Clouds&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9783181e73bf5669de7bae78381a7cd9ce255184" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/background-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/66O4FigZBxS4Tz80TbZ9Zc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0O3cf9WPXl2NJ5LwZZScyj" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0myeeljW5iTEoxSSnaVtYU" title="pulse">pulse</a></td>
@@ -1362,6 +1479,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Classical<br>Instrumental</td>
   <td>Classical:19<br>Instrumental:18<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.China:1<br>C.Germany:1<br>Baroque:1</td>
   <td>Katia &amp; Marielle Lab &quot;Experiences No. 1&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1cf416b3d3fe0eb97fad749709dafa1289854c61" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-piano-duo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0U3TK5FgP7SbKWePe8OSKP" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1375,6 +1493,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Einar Steen-N &quot;Lyric Pieces, Book 1, Op. 12: Arietta&<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9bdbda238da1b6ffb4b2614d874c1ef6ae312627" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nordic-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0SETcL76TBGpA8SNODzRTI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5FDLWkqw67XhVUzCQ84otf" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2QYD1DiNjDY84RnPnbZM5A" title="pulse">pulse</a></td>
@@ -1386,6 +1505,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Classical<br>Instrumental</td>
   <td>Classical:21<br>Instrumental:17<br>C.Spain:2<br>C.Mexico.Latino:2<br>C.France:1<br>C.Italy:1<br>C.Korea:1<br>C.Japan:1<br>C.China:1</td>
   <td>Elena Kats-Chernin &quot;Lullaby for Nick&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c2a5e2552c767f04250325c53699ffea80064592" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5C9kvuGBcAUNipqfGNmq83" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1Eb0tIkyst9ntCRn22pNQF" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7ln002EmgaSQClTZoLeORG" title="pulse">pulse</a></td>
@@ -1399,6 +1519,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Lucas Jussen Was mir behagt, ist nur die muntre Jagd&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e0bf794b2d3ea3bb6d7b3b4ac1978cb5ccdaaca4" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dutch-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3V8nD3NiWXtxPsaUhquOhC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4yKIYXI6vDH3g7uVhuM9e5" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7MiWnwQp19vcrDXiOqczMd" title="pulse">pulse</a></td>
@@ -1410,6 +1531,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Classical<br>Instrumental</td>
   <td>Classical:15<br>Instrumental:13<br>C.Italy:2<br>C.Mexico.Latino:2<br>C.Spain:1<br>C.Germany:1<br>Soundtrack.New.Age:1</td>
   <td>Lorenzo Micheli &quot;Romanza&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cf6bf593f1e19427f785571ca08c55dc15b3e5c3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-guitar" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0qJTEzbjENk61TtYeqFxfq" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0xWQb17WEaDIz2mHCXG4xn" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/030aSk9FbdXXhiaW5BA2pc" title="pulse">pulse</a></td>
@@ -1423,6 +1545,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Glenn Gould &quot;Goldberg Variations, BWV 988: Aria&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fadbeb4f372bd288505f0d9c2d4462d83fffb510" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5U3GNko34JUJg2j4sTQpGb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3aUk5ENcILXzlN0sD2LoPl" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3sW1dooth5cGxvfANYNIT2" title="pulse">pulse</a></td>
@@ -1434,6 +1557,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Classical<br>Instrumental</td>
   <td>Classical:18<br>Instrumental:12<br>C.Japan:2<br>C.China:2<br>C.Spain:1<br>C.Germany:1</td>
   <td>Ivo Pogorelich &quot;Pictures at an Exhibition: Promenade.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1b46b0d9dfd50a702ad16105a5bc72c97892a24f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/balkan-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0mR6UfEMka4Lr5lodu6mUK" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1447,6 +1571,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Javier Perianes &quot;Lyric Pieces, Book 1, Op. 12: I. Ari<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/283ed15b648b25b3ca364a7cc556d97c3094fbab" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/22p4K2fHv3OEmaAQeXFs8y" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1458,6 +1583,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Instrumental</td>
   <td>Instrumental:9<br>Classical:7<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Germany:1</td>
   <td>Ricardo Cobo &quot;Estudios sencillos: First Series: II&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/28bd47f621f4b89e7f9a9b35b6efc3a65ce8cdea" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guitarra-clasica" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/609HOKG5EE7KHuK4NaDMqO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2gFSPJYhgAFRqQrIBBdks6" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7rHqdMyPuEcvpH5Vl6fURq" title="pulse">pulse</a></td>
@@ -1471,6 +1597,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Daniel Barenboim &quot;Nocturne No. 2 in E-Flat Major, Op.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4ab1c15237630e4731617f9f682387401300f03e" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/israeli-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0cgmdn2oo9pnVlJwdpQaT0" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3Ssa0qfXFchEOqsfLfw50w" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2mkD8Glpues4vYSsdwO8uK" title="pulse">pulse</a></td>
@@ -1484,6 +1611,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Martha Argerich &quot;Kinderszenen, Op. 15: 1. Von fremden<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/088b966a7f7db3567e10d1e6bdd7a2923f3ac074" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/latin-american-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7u5l82eY5aEZ2WN4PMxJ6K" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5iHXD4a3cWLLb5y1GiMJT0" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5v05UvpVP8hYxOtCM4y3kE" title="pulse">pulse</a></td>
@@ -1497,6 +1625,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Trio Wanderer &quot;Piano Trio No. 2 in E-Flat Major, D. 9<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f734f5d1a9172dba77bc56854b48f7d739e0fe5e" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-piano-trio" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4hW3PF8Guu6YsdiZoAE2Oi" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZtnqTwfLe546kXvABPuxi" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5UC7ALPAcURsRtgZZ9O4EY" title="pulse">pulse</a></td>
@@ -1510,6 +1639,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Arcadi Volodos &quot;Sechs Klavierst, Op. 118: II. Interme<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/83e86903458eda0bd082214175d2bb75ceffdc64" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2d32hJkHO6816u3Iho8NMC" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5eyD2m6CYtexPLJVsbPOsL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3cY5t0Z4GeS320bwzDG9CR" title="pulse">pulse</a></td>
@@ -1523,6 +1653,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Lang Lang &quot;Liebestraum No. 3 in A-Flat Major, S. 541 <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a3f2cb8e5bc8f64631d7087fc779e1d7ec3515ae" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4X5NadJ9dnHyKd2vLILC7v" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2ppqZma80J95aOXJZ78zX3" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4N707glnemKav6Vwq3SEYS" title="pulse">pulse</a></td>
@@ -1536,6 +1667,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Nelson Freire &quot;Nocturne No. 1 in B flat minor, Op. 9 <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f20dc20ec44690c964394096e435d4cd42b82929" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6c2XUzTGkczJ3WZ6e3uvbL" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3yjDgXXk8FvPgrl22VQAwt" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/671Z4bdeXx64mNdabfiUU7" title="pulse">pulse</a></td>
@@ -1549,6 +1681,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Francesco Piemontesi &quot;Preludes, L. 123, Book II: V. B<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cccec55972dcaf6237df6289fbfe0e5f6c215efb" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/38R6g7ojpzP4weT7JspODa" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1562,6 +1695,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Alfred Brendel &quot;Fantasia in D Minor, K. 397&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/31d36178770bbf91924d0ce1215c8294c3ffd628" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7henJ3D2euaPqsF2zGnkiS" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5vY3vbyq6XDPE9qPTUvodw" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7DiOxoSKhH4g7bEJNUxNvJ" title="pulse">pulse</a></td>
@@ -1575,6 +1709,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Khatia Buniatishvili &quot;St, S. 560 (Trans. from Schwane<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8b83ef901a39084cfe8c3c1ccf4a4567fad3da1c" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/caucasian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4KFZyroHoCu4C8Dd4dRhM4" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4pAWcFequAi2kRM99hfdGU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0MhqLX94luiXZqqYd4dfsP" title="pulse">pulse</a></td>
@@ -1588,6 +1723,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Bertrand Chamayou &quot;Ravel: Pavane pour une infante d, <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/759005c6c03aa4ebaec877f61df7f36d011cdfb3" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/french-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2KkLEZecIyFOblj7RdJQDI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/18PmGxyDdrlDcSDST824c5" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2NQ100KiTNVDllZKfdb2fA" title="pulse">pulse</a></td>
@@ -1601,6 +1737,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Radu Lupu &quot;4 Impromptus, Op. 90, D.899: No. 4 in A Fl<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/20671537a0f451b14d4949c41c1ac24f52eb708e" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/romanian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6JO6Yci8XeTZKmiMigOgXY" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1614,6 +1751,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Andr Schiff &quot;Piano Sonata No. 17 In D Minor, Op. 31, <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2406f73c8ad7d956cc40a6d05cd9018480a872ef" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5rZ75TobmwrURStRuCfugO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3PaD95cdbLxhFms8yVqBiH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0KfYTnaj3Bvhac4byiYfAS" title="pulse">pulse</a></td>
@@ -1627,6 +1765,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Ignaz Friedman &quot;Flute Sonata in E-Flat Major, BWV 103<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/25254b7520f24d032a7ca38106e22a2583f38c50" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/historic-piano-performance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5MXw4i9pRhleia2mDgrnbu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6joyx6uK9RjHeyO7rsPGAJ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5IQchKmLDlBziJ6ZO6Jl0U" title="pulse">pulse</a></td>
@@ -1640,6 +1779,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Valentina Lisitsa &quot;Piano Concerto No. 2 in C Minor, O<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6e1d905c72a360937bb898a4744a19cd6a1a6bff" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ukrainian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3ocyo0QqyIpbwsmGrgpgyG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4teaOrpzbunkijSQsL3eLN" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1SNQiBSuGZ382ARjXn1uL4" title="pulse">pulse</a></td>
@@ -1651,6 +1791,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Classical<br>Instrumental</td>
   <td>Classical:21<br>Instrumental:21<br>C.France:1<br>C.Italy:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>C.China:1</td>
   <td>Mikhail Pletnev &quot;Chopin: Nocturne No. 20 in C-Sharp M<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e6c85252b818afd6bb03fe316cbac3716665df82" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/russian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7tgHKaqrxEJdesPpK8pVY2" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3YtIOChWjS6IKsC3ixl8X0" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7E5BxH4J4CWmmDS1ZmqptZ" title="pulse">pulse</a></td>
@@ -1664,6 +1805,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Jean-Claude Vanden Eynden &quot; Dolly , 6 pi pour piano  <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e8d282dd013a8cf3b5fa8e3377b0db566243b20e" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4UQti246d8vnBvGLBCaJ2o" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1677,6 +1819,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Lukas Geniusas &quot;Pr in C-Sharp Minor, Op. 3 No. 2 (Len<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/627a7b0d68f165ff55898407626b072e944b69b2" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/baltic-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3ocwYOhhO6ayIfYSHDvMfF" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1690,6 +1833,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Ivan Klansky &quot;On the Overgrown Path, Series I: No. 1,<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fa1e8f141454e6beae8f9fbfe441895cdf282129" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4SAT9xwBIpqrUb4s09qrwC" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -1703,6 +1847,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Krystian Zimerman &quot;Ballade No. 1 in G Minor, Op. 23&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bcb93bf6a61dbdeb0067f537e91880f394078a66" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-classical-piano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2YxhESpDtgBdXr2AkOouvv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1rye8EODl6PI0GxbxJGgCy" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3mEP5ewpqLvjk3gduGrSN8" title="pulse">pulse</a></td>

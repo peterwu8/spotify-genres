@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,18 +72,20 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
   <td>01</td>
   <td>pop emo <a href="https://everynoise.com/engenremap-popemo.html" title="&#x2306;">&#x2306;</a></td>
   <td>Emo<br>Pop</td>
-  <td>Pop:8<br>Punk:7<br>Rock:4<br>Emo:3<br>Goth:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Gospel:1<br>Party.Festival.Band.Cheer:1</td>
+  <td>Pop:8<br>Punk:7<br>Rock:4<br>Emo:3<br>Goth:1<br>C.Italy:1<br>C.Taiwan:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Gospel:1<br>Party.Festival.Band.Cheer:1<br>Curated.life:1</td>
   <td>We Are The In Crowd &quot;The Best Thing (That Never Happe<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/118cb13c2f198282acc8b52ce475fbb739d1c5c9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pop-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3Gf8bbUuqd7zLFt4LrSLej" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6lv9yKVtzpCtlblXi9FK6m" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6WGbGU1QCoXBqDN6KN1nNO" title="pulse">pulse</a></td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Synth.Electronic:8<br>Experimental:3<br>House:2<br>Electronica:2<br>Emo:2<br>C.Italy:2<br>Indie:1<br>Gaming:1<br>C.Taiwan:1<br>C.China:1<br>C.Irish:1<br>Dance:1</td>
   <td>Jogeir Liljedahl &quot;Guitar Slinger&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/39e50b74585e576371c5d640a6941692d567778f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/demoscene" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/41x6s1VU0XUKV4TlvB7dEn" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/31LwqlZBarQvUXGdhRAlFq" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5U3MT9V6pVkIwlKzrPsapF" title="pulse">pulse</a></td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo<br>Party.Festival.Band.Cheer</td>
   <td>Punk:5<br>Pop:5<br>Emo:5<br>Rock:4<br>Gospel:2<br>Party.Festival.Band.Cheer:2<br>Metal:1<br>Goth:1<br>C.Taiwan:1<br>C.Mexico.Latino:1</td>
   <td>Homesafe &quot;Permanent Resolution&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/77b3b2be8104d6fae4fdb0767a8a2a127841b8c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/anthem-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1dHm6fhlORhY2O1v6aO4fc" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1DS1QV5xomvw9tYxBXbB52" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7blLWm5BDxRevYAUgBAAck" title="pulse">pulse</a></td>
@@ -114,8 +119,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>04</td>
   <td>russian emo rap <a href="https://everynoise.com/engenremap-russianemorap.html" title="&#x2306;">&#x2306;</a></td>
   <td>Emo<br>Rap</td>
-  <td>Pop:8<br>Trap:4<br>Emo:4<br>Hyperpop:4<br>Rap:3<br>Synth.Electronic:2<br>C.En.Espanol:2<br>House:1<br>Metal:1<br>Gaming:1<br>C.Korea:1<br>C.China:1<br>Rehhab:1</td>
+  <td>Pop:8<br>Trap:4<br>Emo:4<br>Hyperpop:4<br>Rap:3<br>Synth.Electronic:2<br>C.En.Espanol:2<br>House:1<br>Metal:1<br>Gaming:1<br>C.Korea:1<br>C.China:1<br>Curated.rehhab:1</td>
   <td>Katanacss<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bafae5571bad877161a26a1ee35f7f94b699e1a6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/russian-emo-rap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1Of03fMRcavbNFOuElUEYm" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4P06em5X27l38eJBYFAKMw" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2v4bvAPy4CltxfMZwn1Y6E" title="pulse">pulse</a></td>
@@ -124,9 +130,10 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>05</td>
   <td>emoplugg <a href="https://everynoise.com/engenremap-emoplugg.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Emo<br>Rehhab</td>
-  <td>Pop:11<br>Hyperpop:6<br>Emo:4<br>Indie:3<br>Rehhab:3<br>C.En.Espanol:2<br>Synth.Electronic:1<br>Trap:1<br>Rap:1<br>C.China:1<br>C.Germany:1<br>Gospel:1</td>
+  <td>Curated.rehhab<br>Emo</td>
+  <td>Pop:11<br>Hyperpop:6<br>Emo:4<br>Indie:3<br>Curated.rehhab:3<br>C.En.Espanol:2<br>Synth.Electronic:1<br>Trap:1<br>Rap:1<br>C.China:1<br>C.Germany:1<br>Gospel:1</td>
   <td>Eric2k &quot;lay with me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/827a570352222a928189595f3517897154bfd4d6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emoplugg" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0assY927mdLXpwVVgnRAPQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/21tQNQp7eKXcRVE2UVF089" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0977o6alZzgicTEWRfsgZY" title="pulse">pulse</a></td>
@@ -136,8 +143,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>06</td>
   <td>indonesian emo rap <a href="https://everynoise.com/engenremap-indonesianemorap.html" title="&#x2306;">&#x2306;</a></td>
   <td>Emo<br>Rap</td>
-  <td>Pop:8<br>Hyperpop:6<br>Emo:5<br>Rap:4<br>Trap:3<br>Synth.Electronic:2<br>C.En.Espanol:2<br>Indie:1<br>C.China:1<br>C.Germany:1<br>C.Irish:1<br>Rehhab:1<br>Blues.Soul:1</td>
+  <td>Pop:8<br>Hyperpop:6<br>Emo:5<br>Rap:4<br>Trap:3<br>Synth.Electronic:2<br>C.En.Espanol:2<br>Indie:1<br>C.China:1<br>C.Germany:1<br>C.Irish:1<br>Curated.rehhab:1<br>Blues.Soul:1</td>
   <td>Ramandhika &quot;We Both Sad AF&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2de909daebecf4a07cf287b339876c818c1c9429" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indonesian-emo-rap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/63VNJboa7qyn6gMcDMuU77" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5KzllKwXnmZIe1b6KwyPQv" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0O2CJotmqoFJqjTadXBB84" title="pulse">pulse</a></td>
@@ -149,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo<br>Pop</td>
   <td>Punk:10<br>Pop:7<br>Rock:5<br>Emo:3<br>C.Mexico.Latino:2<br>Indie:1<br>Metal:1<br>C.Spain:1<br>C.Taiwan:1<br>Party.Festival.Band.Cheer:1</td>
   <td>Hometown Anthem &quot;Picture Perfect Pieces&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c8777febb595b7759c5bb8113922e3852357cde8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-pop-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6O0YqAnrB1YHt2SbwD28fD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6BmB8mhoGCgRmu4RErqrQF" title="intro">intro</a></td>
   <td>--</td>
@@ -160,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.En.Espanol<br>Emo<br>Trap</td>
   <td>Pop:11<br>Hyperpop:8<br>Emo:6<br>Trap:4<br>Rap:3<br>C.En.Espanol:3<br>C.Italy:3<br>Synth.Electronic:2<br>Indie:1<br>C.China:1<br>C.Germany:1</td>
   <td>Gremlin Shawty &quot;PALLMALLPOPSTAR&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e50eb660fa2a366d566e8ffde2efef8a32b73c66" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emo-trap-en-espanol" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4vHFUc9Gak6omVxBYkDLRv" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6xk9kuRH69d4XggI6ShUgb" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6rz0vmTdryqdpEgPuNkmwQ" title="pulse">pulse</a></td>
@@ -173,6 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Sureste &quot;Empezar, Pt. 2&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4928cd5a81b73d7f7942525b8a70cc26b15168f9" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emo-mexicano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4yn120cVWRqpXwovvl3gGQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5j8S99hdpHQEbxT1t2uLYH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/33kXZajQTUr0u7Hgvtm4vA" title="pulse">pulse</a></td>
@@ -184,6 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Rock:12<br>Emo:4<br>Indie:2<br>Progressive:1<br>Hardstyle:1<br>Metal:1<br>Pop:1<br>C.Spain:1<br>C.Mexico.Latino:1</td>
   <td>&quot; &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ebc4d169c65b689d7e46308533a1536fb1731ff9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/russian-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/56MKvHNKAAYAVB3s24AyZz" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/39d3Wz3FbKyJGmbodM4MjL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6YUfZySRmkSqAdoA7zBYJT" title="pulse">pulse</a></td>
@@ -195,6 +207,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Metal:7<br>Rock:4<br>Emo:4<br>Indie:3<br>C.Spain:3<br>Progressive:2<br>Punk:2<br>Hardstyle:2<br>Pop:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.Germany:1<br>Folk:1</td>
   <td>Shewn &quot;Sun / Shine&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8ff5155c906f614f1d0d79d3854a121de6cd3c2a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indonesian-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4umpvMoqfoNM3DbdkMA8SB" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2Li15wZ2ayg57VINlYckPE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4IbDdukCsJ0t9MEhIZ8akN" title="pulse">pulse</a></td>
@@ -206,6 +219,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Emo:8<br>Rock:6<br>Indie:3<br>Metal:3<br>C.Spain:2<br>C.Mexico.Latino:2<br>Progressive:1<br>Hardstyle:1<br>C.Japan:1<br>C.Germany:1</td>
   <td>Condado &quot;CHERRY GOJO&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4aee48c4f736cd237bc86c4b46d0c0fc08b18e8f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/north-carolina-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6UhiAgqwwUoXo4JOrV104r" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/46CdNneXC11kF7SA6JgS3k" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0GeuOcl4H2JFhdx6gHZch3" title="pulse">pulse</a></td>
@@ -217,6 +231,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo<br>Rap</td>
   <td>Rap:9<br>Hip hop:7<br>Trap:4<br>Pop:2<br>Emo:2<br>C.India:2<br>Viral:1<br>C.Irish:1<br>Hyperpop:1</td>
   <td>Totally Nothin &quot;10mg freestyle&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c59b33d8c72cac9ea12ae4a108c88f4cd1893a96" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czsk-emo-rap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4izm3QhYxFaqBOrYVf0YAJ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/58RayEYEjkpq8ESToI72om" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1LXLCQbTsbUvAEIPGSMPZz" title="pulse">pulse</a></td>
@@ -226,8 +241,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>14</td>
   <td>emo rap <a href="https://everynoise.com/engenremap-emorap.html" title="&#x2306;">&#x2306;</a></td>
   <td>Emo<br>Rap</td>
-  <td>Pop:10<br>Rap:5<br>Emo:4<br>Hyperpop:3<br>Blues.Soul:3<br>Synth.Electronic:1<br>Indie:1<br>Trap:1<br>Chill:1<br>C.En.Espanol:1<br>C.Germany:1<br>Rehhab:1</td>
+  <td>Pop:10<br>Rap:5<br>Emo:4<br>Hyperpop:3<br>Blues.Soul:3<br>Synth.Electronic:1<br>Indie:1<br>Trap:1<br>Chill:1<br>C.En.Espanol:1<br>C.Germany:1<br>Curated.rehhab:1</td>
   <td>93FEETOFSMOKE &quot;TOOTHPASTE - DEDLINE PHONK REMIX&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7dfde7160ac2845663372b1da8fbf744326ef2fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emo-rap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0Fz9zaKbug4gw1xTvmTUWI" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1T3noICTvP5BuTBoKIxURU" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0keSQ79QjOBW8ZzboiPRBp" title="pulse">pulse</a></td>
@@ -239,6 +255,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Emo:10<br>Rock:4<br>Indie:3<br>Punk:2<br>C.Mexico.Latino:2<br>Hardstyle:1<br>Pop:1<br>Party.Festival.Band.Cheer:1</td>
   <td>You Blew It! &quot;Match &amp; Tinder&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6680e9ef0adc855ad00a0795926d38bbe86c28e3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/alternative-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4RZ8ejso7uNp2Yz9DMqpVx" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7iVKVuZRapiVx6Kw7KHOqp" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/67uxYp1LZKSO4DiykmOfdE" title="pulse">pulse</a></td>
@@ -250,6 +267,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Italy<br>Emo<br>Rap</td>
   <td>Pop:13<br>C.Italy:6<br>Emo:4<br>Rap:3<br>Trap:2<br>C.En.Espanol:2<br>Hyperpop:2<br>Viral:1<br>C.Germany:1<br>Gospel:1<br>Blues.Soul:1</td>
   <td>Jack Out &quot;Domani (feat. Olly)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ec6d6b6fd918def553aac3c871d48c1e5abf5d19" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emo-rap-italiano" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/518nIGwtzomegRteO67NXk" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1sImQXzWR1W2xzxRZywRZZ" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/14Ha4Y4shm2TpShAAKjN8B" title="pulse">pulse</a></td>
@@ -261,6 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Italy<br>Emo<br>Trap</td>
   <td>Pop:12<br>C.Italy:5<br>Emo:4<br>Trap:3<br>Rap:2<br>C.En.Espanol:2<br>Hyperpop:2<br>Blues.Soul:2<br>C.Mexico.Latino:1<br>C.Germany:1<br>Gospel:1</td>
   <td>demoncandy &quot;ANSIA SOCIALE&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/673f179b6a771c3254820b1cb5076b2c973d68b8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emo-trap-italiana" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0AFo791ONzlWZ73HnrJ8lD" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0zgZ5Ill8rMou7vS8xWlNP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2vmYgrLOCtNxYAXLI4b4nw" title="pulse">pulse</a></td>
@@ -272,6 +291,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Emo:7<br>Rock:6<br>Indie:4<br>Pop:2<br>C.Mexico.Latino:2<br>Progressive:1<br>Punk:1<br>Hardstyle:1<br>Metal:1<br>C.Japan:1<br>C.Germany:1</td>
   <td>Ceres &quot;A Thousand Miles - triple j Like A Version&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7e0b2b4c298956f314b569f2222ab830a30f431c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/aussie-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0ZoecwlEBQTUVeG9AbAuHa" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6uG5BeIDUETDB7OtOyX7vP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0aXulH0TlgyGTyRWsPpTy0" title="pulse">pulse</a></td>
@@ -283,6 +303,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Emo:10<br>Punk:4<br>Rock:3<br>Indie:2<br>Pop:2<br>C.Mexico.Latino:2<br>Hardstyle:1<br>Party.Festival.Band.Cheer:1</td>
   <td>The Promise Ring &quot;Red &amp; Blue Jeans&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3349afe908060946bd6a01a38267e49a70208b6d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4eC7Sa1Xcy33lKn53gfiZb" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2HQiR1RChiegHMHZXmoiiP" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/66DA6NRYRuDp3OEchYhWtd" title="pulse">pulse</a></td>
@@ -294,6 +315,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Japan<br>Emo</td>
   <td>Rock:8<br>Emo:7<br>C.Japan:7<br>Punk:3<br>Hardstyle:2<br>Indie:2<br>Progressive:1<br>Metal:1<br>C.Italy:1<br>C.Spain:1<br>C.Germany:1</td>
   <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8da363d0ea6bb08ba55edb2249d974f468d46671" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1XtPFaH9uCg92IUh349zfu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7Ho5uqy9ZdJqHMQc5bIWuK" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/67lRuDkSqzDWaogc78uxCy" title="pulse">pulse</a></td>
@@ -303,8 +325,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>21</td>
   <td>brazilian emo <a href="https://everynoise.com/engenremap-brazilianemo.html" title="&#x2306;">&#x2306;</a></td>
   <td>Emo</td>
-  <td>Rock:11<br>Indie:8<br>Emo:3<br>Punk:1<br>Hardstyle:1<br>Pop:1<br>C.Mexico.Latino:1</td>
+  <td>Rock:11<br>Indie:8<br>Emo:3<br>Punk:1<br>Hardstyle:1<br>Pop:1<br>C.Mexico.Latino:1<br>Curated.life:1</td>
   <td>Polara &quot;Como Assim&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d42c71d879ed2302da0980d98eba61ab5d7f22c0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4529JKPn5nYRNB3e3JHJ3D" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6pn4KhSHeqVt3GoGMhg3dE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4G32aT1H58ikvxFASGkFGQ" title="pulse">pulse</a></td>
@@ -314,8 +337,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>22</td>
   <td>diy emo <a href="https://everynoise.com/engenremap-diyemo.html" title="&#x2306;">&#x2306;</a></td>
   <td>Emo</td>
-  <td>Indie:12<br>Emo:6<br>Rock:4<br>Progressive:1<br>Punk:1<br>C.Irish:1</td>
+  <td>Indie:12<br>Emo:6<br>Rock:4<br>Progressive:1<br>Punk:1<br>C.Irish:1<br>Curated.life:1</td>
   <td>Stars Hollow &quot;Tadpole&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a4b8001a7dcbab8dd0045a7dd776d2433f43a951" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/diy-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6Sk80JvC6Isqyf1Bs01r9j" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7hIyaVplN5S6DmNZvG0jBb" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2r7dt9uKlHvPXIeF2rd723" title="pulse">pulse</a></td>
@@ -329,6 +353,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Perspective, a Lovely Hand to Hold &quot;Pepe Silvia&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ecf09556334de5e55fa2e10574cb6992fce19f82" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-england-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5SfuVbeZFRwaXgZfXRd5So" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/22EvvWMYkQYeGrAqz6zkry" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0ZIQ5o7feayvJH2Wxth1KM" title="pulse">pulse</a></td>
@@ -340,6 +365,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Italy<br>Emo</td>
   <td>Rock:7<br>C.Italy:6<br>Emo:4<br>Punk:3<br>Indie:3<br>Metal:3<br>Hardstyle:2<br>C.Spain:2<br>Psy.Goa:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>Folk:1</td>
   <td>Verme &quot;Va tutto malone&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c24cc091ca34aa3dc6a04b4fdd87d84f510a33ee" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/italian-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2ZdTFWf2Mn6XcII1FwSf9G" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1yAEMD2xjbY1Jn7g7quM6Z" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5no4SvuJst5oBSljhXjK95" title="pulse">pulse</a></td>
@@ -349,8 +375,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>25</td>
   <td>indie emo <a href="https://everynoise.com/engenremap-indieemo.html" title="&#x2306;">&#x2306;</a></td>
   <td>Emo<br>Indie</td>
-  <td>Punk:8<br>Rock:6<br>Emo:4<br>Indie:3<br>C.Japan:2<br>Hardstyle:1<br>Pop:1</td>
+  <td>Punk:8<br>Rock:6<br>Emo:4<br>Indie:3<br>C.Japan:2<br>Hardstyle:1<br>Pop:1<br>Curated.life:1</td>
   <td>Nuzzle &quot;The Sorting That Evens Things Out&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dd07d30bcf17f694ade87641f277b2f743c88e08" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0fgslmPIDxUJjaUNZpQsEY" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6VNVd6EWPfRx7P6UzOtRsr" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1FUgqXW7Wu6MiLGkJZvcH5" title="pulse">pulse</a></td>
@@ -362,6 +389,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Indie:10<br>Emo:6<br>Rock:2<br>Progressive:1<br>Punk:1<br>C.Irish:1</td>
   <td>Oolong &quot;Roxies and Cigarettes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/41b97774764a12b99de1bac4fda2fd8098cb97fd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/5th-wave-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5jJRdxN4pD29Uhj0ZIRFPf" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZsM9HKe1QLdqvmPxRu5Ol" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3kZS5scnM4wZJRQelCiGNO" title="pulse">pulse</a></td>
@@ -373,6 +401,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Metal:11<br>Rock:4<br>Emo:2<br>Psy.Goa:1<br>Progressive:1<br>Hardstyle:1<br>C.France:1<br>C.Mexico.Latino:1<br>Folk:1<br>Gospel:1<br>Classical:1</td>
   <td>Shirokuma &quot;Black Lungs&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3a7b4862a1ffcf1c622be0368846b1a9710945f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2aIwwGSay614PUmlynXBt1" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6oxs0uFlgtq451j75QMhFk" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/36CMjyZNKqz9OSIBhifYB3" title="pulse">pulse</a></td>
@@ -384,6 +413,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Emo:9<br>Indie:5<br>Rock:4<br>Punk:3<br>C.Italy:2<br>Hardstyle:1<br>C.Irish:1</td>
   <td>Brave Bird &quot;Scared Enough&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4b116b496f898e4b8f03d4e5dc7a2acba70bedc7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/midwest-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6hXmqavi8q0NJ5u6PRt0MG" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2HddiDpfJNB4ZGgtFwkuYw" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5FMIc0EU1l1Nixal0br4zI" title="pulse">pulse</a></td>
@@ -395,6 +425,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo<br>Metal</td>
   <td>Metal:17<br>Emo:2<br>Instrumental:1</td>
   <td>Lantl &quot;Lake Fantasy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7d9d4e4b40bf08219c70b1540a5fdc2243ed5ef7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emotional-black-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1hegXrmD7IwnAv8dPP5Wis" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/05O5TqrLS7EqWTq0Z7axos" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5kxLJP3q5MSXGpt6ytbUYR" title="pulse">pulse</a></td>
@@ -404,8 +435,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>30</td>
   <td>emo punk <a href="https://everynoise.com/engenremap-emopunk.html" title="&#x2306;">&#x2306;</a></td>
   <td>Emo<br>Punk</td>
-  <td>Emo:7<br>Indie:6<br>Rock:6<br>Punk:3<br>Hardstyle:2<br>C.Italy:1</td>
+  <td>Emo:7<br>Indie:6<br>Rock:6<br>Punk:3<br>Hardstyle:2<br>C.Italy:1<br>Curated.life:1</td>
   <td>Pop Unknown &quot;Writing It Down For You&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5a302a40d29d9bd4b082bad0604637eb93aacf32" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emo-punk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7mGhICS65Y8036xSvdL5jN" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2OzfCzc85CYZ7fgb88J5xu" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0DrYe28hqtdIZ3mJlTfMFz" title="pulse">pulse</a></td>
@@ -415,8 +447,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>31</td>
   <td>emocore <a href="https://everynoise.com/engenremap-emocore.html" title="&#x2306;">&#x2306;</a></td>
   <td>Emo</td>
-  <td>Punk:6<br>Emo:5<br>Hardstyle:4<br>Rock:4<br>Indie:2<br>Psy.Goa:1<br>Metal:1</td>
+  <td>Punk:6<br>Emo:5<br>Hardstyle:4<br>Rock:4<br>Indie:2<br>Psy.Goa:1<br>Metal:1<br>Curated.life:1</td>
   <td>Native Nod &quot;Bread&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f58b5019579ae2876244397c1566fe6b9b1fe53b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emocore" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0Z63t6kvtlrh1hAakGtVaO" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/03IEvRxnsj5PkdA5HR7kbE" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2bDOxhu99pYDQ7d5WoE8XW" title="pulse">pulse</a></td>
@@ -428,6 +461,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.France<br>Emo</td>
   <td>Metal:14<br>Progressive:2<br>Emo:2<br>C.France:2<br>Rock:1<br>C.Japan:1<br>C.Irish:1</td>
   <td>Sed Non Satiata &quot;Les hommes sans visage&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/771b7497a0f29581e517337840509826a79b118e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/french-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1d6f6Y2mLEgdYGIS1z7daV" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3hM1eHmmsWHI8qsFU0av8P" title="intro">intro</a></td>
   <td>--</td>
@@ -439,6 +473,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Metal:11<br>Emo:2<br>Hardstyle:1</td>
   <td>letters to catalonia &quot;Insignificance&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4154c7fb65a942c99786b654ad6a409e3a7c1eb5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/emoviolence" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/77u4SHd1TQSIMa3rtGFr6O" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1EN3BIlHChYYgKCKhcvnuC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/45TqKQFJ5IwRsjdKC4pZOR" title="pulse">pulse</a></td>
@@ -450,6 +485,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo<br>Indie<br>Rock</td>
   <td>Indie:18<br>Rock:3<br>Emo:3<br>Pop:2<br>Progressive:1</td>
   <td>Ultramagg &quot;One Thousand Directions&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bdb3a1ea10ef304ae6c80d8bca80f74df0b0a0ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-emo-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0QkBGZO2RKrPN3kfiGCIkW" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/27U81h3emsbJDOABV6rJDc" title="intro">intro</a></td>
   <td>--</td>
@@ -461,6 +497,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Emo</td>
   <td>Indie:11<br>Progressive:2<br>Rock:2<br>Emo:2<br>Psy.Goa:1</td>
   <td>Your Arms Are My Cocoon &quot;Snowy!&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/63c065d7e073cf91ae27f685c0e6173e917ac4a2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/lo-fi-emo" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3gDyXNhx15j4TSaddiiLq8" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1wiZThi93GebmUiEhQF87r" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3wa8GJiBoswAcEOOoIXOdl" title="pulse">pulse</a></td>
@@ -470,8 +507,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>36</td>
   <td>desi emo rap <a href="https://everynoise.com/engenremap-desiemorap.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.India<br>Emo<br>Rap</td>
-  <td>Rap:13<br>C.India:7<br>Hip hop:6<br>Trap:3<br>Emo:2<br>Rehhab:1</td>
+  <td>Rap:13<br>C.India:7<br>Hip hop:6<br>Trap:3<br>Emo:2<br>Curated.rehhab:1</td>
   <td>SarpDansh &quot;Pills On My Mind&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1abcf2a862941f51086327d317a04d728aec6553" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/desi-emo-rap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0cHpDm16pCpH2LyvWVLaSg" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/2bdls7UsIWYlQTfgZKT87J" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5rvJ4GIT2AZ0q3FiwBMzX7" title="pulse">pulse</a></td>
@@ -483,6 +521,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>C.Mexico.Latino<br>Emo</td>
   <td>C.Mexico.Latino:7<br>Folk:3<br>Emo:2<br>C.India:1</td>
   <td>Gipo Farassino &quot;Mia mamma veul che fila&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9786ad3bfb9d9965a8afc6b271260a264545e7f1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-piemonteisa" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0msVvCOGK0MZKvnDX6PsLW" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>

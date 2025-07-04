@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
 </ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
   <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </p>
 
 
-        <strong>Table 1:</strong> You need a Spotify account to open the playlists.<br>
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
         <table id="myTable1">
           <tr>
               <th onclick="sortTable_1(0)">Id</th>
@@ -71,10 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
@@ -83,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Trance<br>Uplifting</td>
   <td>Trance:13<br>Uplifting:5<br>Psy.Goa:2<br>Progressive:2<br>Synth.Electronic:2<br>Industrial:2<br>Rave:1<br>Hardstyle:1<br>C.Italy:1<br>C.Germany:1</td>
   <td>Type 41 &quot;Night Is Calling - Alatheia Radio Edit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0df19dfb83a1ff7a14b3dbf1026e52ac6a9baff7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cosmic-uplifting-trance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4if8aqDg8kCV1ReeSGvILy" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6p7uREL2dImSxWbPESq9WL" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1gF7XLLW9AHF5HwM6ThLJQ" title="pulse">pulse</a></td>
@@ -94,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Progressive<br>Trance<br>Uplifting</td>
   <td>Trance:9<br>Uplifting:5<br>Progressive:3<br>Synth.Electronic:1<br>Industrial:1<br>Rock:1</td>
   <td>A.r.d.i. &quot;Lost In The Dark&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b5b63d8848e4a21ec4a969ab28c13ba76f0809a6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/progressive-uplifting-trance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7u6WmGIdrl2LFd73vZhBJQ" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0DATKc0DmcY7EPIis3f48e" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/7tJjBdOAso48RvqAVe789k" title="pulse">pulse</a></td>
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Trance<br>Uplifting</td>
   <td>Trance:10<br>Uplifting:5<br>Synth.Electronic:4<br>Progressive:3<br>House:1<br>Punk:1<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Industrial:1<br>Dubstep:1</td>
   <td>Ferry Tayle &quot;Smile&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0b627027506f76e5098cc8003e1dee0e4840ab39" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uplifting-trance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2bV5j3UH5k9rMxJywzTYKu" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/3U043Q7qWwkkSrkXNsDuLH" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6xH3vUFwvee7s0csyv6E2p" title="pulse">pulse</a></td>
@@ -116,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>Trance<br>Uplifting</td>
   <td>Trance:8<br>Progressive:5<br>Uplifting:4<br>House:3<br>Dance:3<br>Dubstep:2<br>Rave:1<br>Synth.Electronic:1<br>C.Japan:1<br>C.Germany:1<br>Gospel:1<br>Hip hop:1</td>
   <td>Luke Bond &quot;Deep End&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a007e90da976481971b58b6f692fe6bae8a71eb6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-uplifting-trance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6RjtOHtdpwfcdepnu8RxLp" title="playlist">playlist</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4PVrSVmGHu6jtDNI2An7ZC" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZCIkVSQ1CcoWS6WjG3P5i" title="pulse">pulse</a></td>
