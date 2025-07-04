@@ -60,8 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
 <br>
 </p>
+
+<div id="audio-list">
 
 
         <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>1</td>
   <td>swedish ebm <a href="https://everynoise.com/engenremap-swedishebm.html" title="&#x2306;">&#x2306;</a></td>
   <td>Industrial.Punk.EBM</td>
-  <td>Dance:6<br>Synth.Electronic:5<br>Industrial.Punk.EBM:4<br>House:1<br>Trance:1<br>Breaks:1<br>Hardstyle:1<br>Gospel:1</td>
+  <td>Dance:6<br>Synth.Electronic:5<br>Industrial.Punk.EBM:4<br>House:1<br>Trance:1<br>Breaks:1<br>Hardstyle:1<br>C.Latino:1<br>Gospel:1</td>
   <td>Dupont &quot;Behave&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/02aeeab2447248bab9d630af78bca24e3579c0c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/swedish-ebm" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5Cc9X1cxRIn1WJuLTGrcju" title="playlist">playlist</a></td>
@@ -119,6 +122,9 @@ document.addEventListener("DOMContentLoaded", function() {
         </table>
         <br><br>
 
+
+<!-- id=audio-list -->
+</div>
 
 <script>
 
@@ -179,6 +185,45 @@ function sortTable_1(n) {
 
 
 </script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
 
 </body>
 </html>

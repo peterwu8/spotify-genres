@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>C.Islam: (2 genres)</title>
+    <title>C.Islam: (4 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <p>
 
-<strong>Name:</strong> C.Islam: (2 genres)<br>
+<strong>Name:</strong> C.Islam: (4 genres)<br>
 
 <strong>Notes:</strong><br><ul>
   <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
@@ -60,8 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
 <br>
 </p>
+
+<div id="audio-list">
 
 
         <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
@@ -81,6 +84,30 @@ document.addEventListener("DOMContentLoaded", function() {
           </tr>
           <tr>
   <td>1</td>
+  <td>latmiya <a href="https://everynoise.com/engenremap-latmiya.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Islam</td>
+  <td>C.Islam:3<br>Pop:2<br>Folk:2<br>Gospel:2<br>Pop.World:1<br>C.Germany:1<br>C.Africa:1</td>
+  <td>&quot; &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/45927d5077b02f22ab334c3918d326ee1c7a7216" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/latmiya" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/38pB7h48pDluEPSFk7NuyF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Td9ld31k21yjZ6UYG51U5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3KdotewnenmONe0JWsdnKj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/73CJ5LRKk25J9tMIRJBYGo" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>nohay <a href="https://everynoise.com/engenremap-nohay.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Islam</td>
+  <td>C.Islam:3</td>
+  <td>Irfan Haider &quot;Hogi Ziarat Qubool Insha Allah&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/83ed6eaf5bc0565c60c01967c2cd141b0303b725" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nohay" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0VNb1aKSyKWBrf9hHM2ZJD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2xjhX5fFusNXxR9mR8hmMd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2bAdsWHiCRO3Zupih6MdJS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4DvEINNYKO01dn6PFMgTQ8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>3</td>
   <td>quran <a href="https://everynoise.com/engenremap-quran.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.Islam</td>
   <td>C.Islam:3<br>C.Irish:2<br>C.Portugal:2<br>Folk:2</td>
@@ -92,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td><a href="https://open.spotify.com/user/particledetector/playlist/0q0N5NqtpVF8aWsyHdckQN" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>2</td>
+  <td>4</td>
   <td>islamic recitation <a href="https://everynoise.com/engenremap-islamicrecitation.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.Islam</td>
   <td>C.Islam:3<br>C.Portugal:2<br>Folk:1</td>
@@ -107,6 +134,9 @@ document.addEventListener("DOMContentLoaded", function() {
         </table>
         <br><br>
 
+
+<!-- id=audio-list -->
+</div>
 
 <script>
 
@@ -167,6 +197,45 @@ function sortTable_1(n) {
 
 
 </script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
 
 </body>
 </html>

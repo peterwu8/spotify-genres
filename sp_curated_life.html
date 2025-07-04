@@ -60,8 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
 <br>
 </p>
+
+<div id="audio-list">
 
 
         <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
@@ -119,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>04</td>
   <td>rap rock <a href="https://everynoise.com/engenremap-raprock.html" title="&#x2306;">&#x2306;</a></td>
   <td>Curated.life<br>Rap<br>Rock</td>
-  <td>Metal:7<br>Curated.life:6<br>Rock:5<br>Rap:4<br>Punk:2<br>C.Africa:2<br>Dance:2<br>Funk:2<br>Hardstyle:1<br>Industrial:1<br>Trap:1<br>C.Germany:1<br>Hip hop:1<br>Reggae:1</td>
+  <td>Metal:7<br>Curated.life:6<br>Rock:5<br>Rap:4<br>Punk:2<br>C.Africa:2<br>Dance:2<br>Funk:2<br>Hardstyle:1<br>Industrial:1<br>Trap:1<br>C.Germany:1<br>Ska:1<br>Hip hop:1<br>Reggae:1</td>
   <td>Crazy Town &quot;Butterfly&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1fe67a55e303b9b5ba380d0bd8b4b63dbf85c230" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/rap-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2xlyZ5SKttZHYxLU6o9mle" title="playlist">playlist</a></td>
@@ -131,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>05</td>
   <td>post-grunge <a href="https://everynoise.com/engenremap-postgrunge.html" title="&#x2306;">&#x2306;</a></td>
   <td>Curated.life</td>
-  <td>Rock:10<br>Curated.life:9<br>Metal:5<br>Punk:2<br>Pop:2<br>Industrial:1<br>Rap:1<br>C.Mexico.Latino:1<br>C.Germany:1<br>Funk:1</td>
+  <td>Rock:10<br>Curated.life:9<br>Metal:5<br>Punk:2<br>Industrial:1<br>Pop:1<br>Pop.World:1<br>Rap:1<br>C.Latino:1<br>C.Germany:1<br>Funk:1</td>
   <td>Seether &quot;Fake It&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6056f92c7dcd49c7abfa4fd5454772861b2e17ba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/post-grunge" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/60NgGlktCblheYPBSSUUXz" title="playlist">playlist</a></td>
@@ -143,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>06</td>
   <td>west coast rap <a href="https://everynoise.com/engenremap-westcoastrap.html" title="&#x2306;">&#x2306;</a></td>
   <td>Curated.life<br>Rap</td>
-  <td>Hip hop:10<br>Rap:8<br>Curated.life:5<br>Funk:2<br>Hardstyle:1<br>C.Mexico.Latino:1</td>
+  <td>Hip hop:10<br>Rap:8<br>Curated.life:5<br>Funk:2<br>Hardstyle:1<br>C.Latino:1<br>C.Poland:1</td>
   <td>Dru Down &quot;Pimp Of The Year&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/36d6ea8f93e43ba531103e228d23fcc4db2851f0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/west-coast-rap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3tSxvStT2zgdgPcTxLdI3g" title="playlist">playlist</a></td>
@@ -155,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>07</td>
   <td>rap metal <a href="https://everynoise.com/engenremap-rapmetal.html" title="&#x2306;">&#x2306;</a></td>
   <td>Curated.life<br>Metal<br>Rap</td>
-  <td>Metal:11<br>Curated.life:8<br>Punk:6<br>Rock:3<br>Rap:3<br>Industrial:1<br>C.France:1<br>C.China:1<br>C.Germany:1<br>Funk:1<br>Hip hop:1</td>
+  <td>Metal:11<br>Curated.life:8<br>Punk:6<br>Rock:3<br>Rap:3<br>Industrial:1<br>C.France:1<br>C.China:1<br>C.Germany:1<br>C.Indonesia:1<br>C.Russia:1<br>Funk:1<br>Hip hop:1</td>
   <td>Sevendust &quot;Denial&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/63ad5c729897a9e7c044d1868f569d49e9be05c0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/rap-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6VKTnBP8zsyEmP1Sk7TvMm" title="playlist">playlist</a></td>
@@ -167,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>08</td>
   <td>nu metal <a href="https://everynoise.com/engenremap-numetal.html" title="&#x2306;">&#x2306;</a></td>
   <td>Curated.life<br>Metal</td>
-  <td>Metal:13<br>Curated.life:11<br>Rock:6<br>Industrial:2<br>Rap:2<br>Funk:2<br>Hardstyle:1</td>
+  <td>Metal:13<br>Curated.life:11<br>Rock:6<br>Industrial:2<br>Rap:2<br>Funk:2<br>Hardstyle:1<br>C.Hungary:1<br>C.Brazil:1</td>
   <td>Mudvayne &quot;Happy?&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/902dacc92715211e588270b1f4e62fd3681e218e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/nu-metal" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6eFAocA46YeKpvr0HY4DQJ" title="playlist">playlist</a></td>
@@ -179,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>09</td>
   <td>gangster rap <a href="https://everynoise.com/engenremap-gangsterrap.html" title="&#x2306;">&#x2306;</a></td>
   <td>Curated.life<br>Rap</td>
-  <td>Hip hop:10<br>Rap:7<br>Curated.life:7<br>Pop:2<br>Hardstyle:1<br>Trap:1<br>C.Mexico.Latino:1<br>Funk:1</td>
+  <td>Hip hop:10<br>Rap:7<br>Curated.life:7<br>Pop:2<br>Hardstyle:1<br>Trap:1<br>C.Latino:1<br>Funk:1</td>
   <td>Scarface &quot;Smile&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b97f4269cab242c0dd5721c5ba1a515f538fcb59" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/gangster-rap" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2tzFkp6VPJPeAhFe3b5uHk" title="playlist">playlist</a></td>
@@ -191,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>10</td>
   <td>bronx hip hop <a href="https://everynoise.com/engenremap-bronxhiphop.html" title="&#x2306;">&#x2306;</a></td>
   <td>Curated.life<br>Hip hop</td>
-  <td>Hip hop:12<br>Curated.life:7<br>Rap:6<br>Funk:2<br>Hardstyle:1<br>C.Mexico.Latino:1<br>C.Korea:1<br>Jazz:1<br>Comedy:1</td>
+  <td>Hip hop:12<br>Curated.life:7<br>Rap:6<br>Funk:2<br>Hardstyle:1<br>C.Latino:1<br>C.Korea:1<br>C.Poland:1<br>Jazz:1<br>Comedy.Storytelling:1</td>
   <td>Showbiz &amp; A.G. &quot;Next Level - Nyte Time Mix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9606e6dee364edd8c51b321d7370cd14a821fdd0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/bronx-hip-hop" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4diPkvLp8ZKMhERnlQjNe8" title="playlist">playlist</a></td>
@@ -251,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>15</td>
   <td>shoegaze <a href="https://everynoise.com/engenremap-shoegaze.html" title="&#x2306;">&#x2306;</a></td>
   <td>Curated.life</td>
-  <td>Rock:5<br>Indie:3<br>Pop:3<br>Curated.life:3<br>Psy.Goa:1<br>C.Mexico.Latino:1<br>C.Germany:1</td>
+  <td>Rock:4<br>Curated.life:3<br>Indie:2<br>Pop:2<br>C.Brazil:2<br>Curated.Eyedress.Era:2<br>Psy.Goa:1<br>C.Latino:1<br>C.Germany:1</td>
   <td>Chapterhouse &quot;Pearl&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c47ffeed1dfaaf95a2a3e0ef1c750126dec83493" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/shoegaze" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5ydNNBQbwQJuhmcxyo8K1f" title="playlist">playlist</a></td>
@@ -263,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>16</td>
   <td>alternative rock <a href="https://everynoise.com/engenremap-alternativerock.html" title="&#x2306;">&#x2306;</a></td>
   <td>Curated.life<br>Rock</td>
-  <td>Curated.life:7<br>Rock:6<br>Pop:5<br>Punk:3<br>Metal:2<br>Indie:1</td>
+  <td>Curated.life:7<br>Rock:5<br>Pop:4<br>Punk:3<br>Metal:2<br>Curated.Eyedress.Era:2</td>
   <td>The White Stripes &quot;Seven Nation Army&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eca519f0a85862d9510d57d59df557081d375e3a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/alternative-rock" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3dlw4x21qVajwZLPNHtS3u" title="playlist">playlist</a></td>
@@ -311,6 +314,9 @@ document.addEventListener("DOMContentLoaded", function() {
         </table>
         <br><br>
 
+
+<!-- id=audio-list -->
+</div>
 
 <script>
 
@@ -371,6 +377,45 @@ function sortTable_1(n) {
 
 
 </script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
 
 </body>
 </html>

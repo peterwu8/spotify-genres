@@ -60,8 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
 <br>
 </p>
+
+<div id="audio-list">
 
 
         <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
@@ -131,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>05</td>
   <td>healing <a href="https://everynoise.com/engenremap-healing.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>C.Mexico.Latino:1<br>Soundtrack.New.Age:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>C.Latino:1<br>Soundtrack.New.Age:1</td>
   <td>Sacred Earth &quot;Breathing Space&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/39b808e0e5e1f8032f13883c26fdec2bf674511a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/healing" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/44UhH06dKGdI3cqbst5jJ4" title="playlist">playlist</a></td>
@@ -191,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>10</td>
   <td>color noise <a href="https://everynoise.com/engenremap-colornoise.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:7<br>C.Mexico.Latino:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:7<br>C.Latino:1</td>
   <td>Pinkage &quot;Green Drip-Drops&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/af36902389ef0d15dd744083a3d3c71d15a54d50" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/color-noise" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0CqBELlpt9OFtk9NybFIdm" title="playlist">playlist</a></td>
@@ -229,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>13</td>
   <td>brain waves <a href="https://everynoise.com/engenremap-brainwaves.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:2<br>Gaming:1<br>Kids:1<br>C.Mexico.Latino:1<br>C.China:1<br>Ambient.General:1<br>Traditional:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:2<br>Gaming:1<br>Kids:1<br>C.Latino:1<br>C.China:1<br>Ambient.General:1<br>Traditional:1</td>
   <td>Clark Hamilton &quot;Clear Your Mind&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8583aa3c82007def630ac32b940184487e510092" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/brain-waves" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/56jIKC6ujc2VuT8p8Q8EIx" title="playlist">playlist</a></td>
@@ -241,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>14</td>
   <td>sleep <a href="https://everynoise.com/engenremap-sleep.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:8<br>C.Mexico.Latino:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:8<br>C.Latino:1</td>
   <td>One Stop &quot;Sleep Drone&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2b6424283a97df5182999ca7f640d6f0edafbe1e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/sleep" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0cuaFpexE9V0zr3s7l6yjR" title="playlist">playlist</a></td>
@@ -265,7 +268,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>16</td>
   <td>world meditation <a href="https://everynoise.com/engenremap-worldmeditation.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Ambient.General:2<br>Soundtrack.New.Age:2<br>Synth.Electronic:1<br>Rap:1<br>Gaming:1<br>Kids:1<br>C.Mexico.Latino:1<br>C.China:1<br>Classical:1<br>Traditional:1<br>Experimental:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Ambient.General:2<br>Soundtrack.New.Age:2<br>Synth.Electronic:1<br>Rap:1<br>Gaming:1<br>Kids:1<br>C.Latino:1<br>C.China:1<br>Classical:1<br>Traditional:1<br>Experimental:1</td>
   <td>Antonio Jes Asi Sanz &quot;Sahasrara&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8d3e377e98724aa35f72682315a81c8e9774f1ff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/world-meditation" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1K5Q8BCOoB4ddGRzh9lryn" title="playlist">playlist</a></td>
@@ -277,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>17</td>
   <td>binaural <a href="https://everynoise.com/engenremap-binaural.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>Ambient.General:1<br>Traditional:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Gaming:1<br>C.Latino:1<br>C.China:1<br>Ambient.General:1<br>Traditional:1</td>
   <td>Hidden in Sound &quot;Zeit ist Gold - Alpha Sinus 87Hz - 9<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2f9bfa55c90e399865577c6706a961b00d1dfc99" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/binaural" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0bhejAZQ6fC8zVZU6wxkrh" title="playlist">playlist</a></td>
@@ -289,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>18</td>
   <td>spa <a href="https://everynoise.com/engenremap-spa.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:4<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>Ambient.General:1<br>Traditional:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:4<br>Gaming:1<br>C.Latino:1<br>C.China:1<br>Ambient.General:1<br>Traditional:1</td>
   <td>Amazing Spa Music &quot;Endure Tomorrow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e94dac4818ad5a109f2cfb7711a1bcdf16db9b5b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/spa" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0oRBlN7Dq4UxzVQl7q2bVO" title="playlist">playlist</a></td>
@@ -301,7 +304,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>19</td>
   <td>background music <a href="https://everynoise.com/engenremap-backgroundmusic.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Rap:1<br>Gaming:1<br>Kids:1<br>C.Mexico.Latino:1<br>C.China:1<br>Ambient.General:1<br>Classical:1<br>Traditional:1<br>Experimental:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Rap:1<br>Gaming:1<br>Kids:1<br>C.Latino:1<br>C.China:1<br>Ambient.General:1<br>Classical:1<br>Traditional:1<br>Experimental:1</td>
   <td>Miranda Moniz &quot;V Devagar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d889afe3171faa7254340bdf8b5b327d4042f322" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/background-music" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2JsqQdMbBC2hh7GjsEjKFg" title="playlist">playlist</a></td>
@@ -313,7 +316,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>20</td>
   <td>zen <a href="https://everynoise.com/engenremap-zen.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:7<br>Ambient.General:2<br>Rap:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>Traditional:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:7<br>Ambient.General:2<br>Rap:1<br>Gaming:1<br>C.Latino:1<br>C.China:1<br>Traditional:1</td>
   <td>Asian Zen Meditation &quot;Contemplation&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/10e63c524c717f58c4137e7e2f8fce7193505a2c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/zen" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7y2Av5WgZgD7jSuQZu6M7n" title="playlist">playlist</a></td>
@@ -325,7 +328,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>21</td>
   <td>subliminal product <a href="https://everynoise.com/engenremap-subliminalproduct.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:6<br>Ambient.General:2<br>Synth.Electronic:1<br>Rap:1<br>Gaming:1<br>Kids:1<br>C.Mexico.Latino:1<br>C.China:1<br>Classical:1<br>Traditional:1<br>Experimental:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:6<br>Ambient.General:2<br>Synth.Electronic:1<br>Rap:1<br>Gaming:1<br>Kids:1<br>C.Latino:1<br>C.China:1<br>Classical:1<br>Traditional:1<br>Experimental:1</td>
   <td>Pua Mgtow &quot;Attract Wealth Subliminal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f746f2348a7b22f44a963add8830f575b139cb81" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/subliminal-product" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/51kogmxTfY04jR6LrOlcMp" title="playlist">playlist</a></td>
@@ -349,7 +352,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>23</td>
   <td>massage <a href="https://everynoise.com/engenremap-massage.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Ambient.General:2<br>Rap:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>Traditional:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Ambient.General:2<br>Rap:1<br>Gaming:1<br>C.Latino:1<br>C.China:1<br>Traditional:1</td>
   <td>Massage Beauty Sanctuary &quot;Traditional Bali Holiday&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c9c9c4ebc339bdc70a5acffb0c6532a73c0257f6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/massage" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2LzMNx1bNYPyEmqtLnu0t0" title="playlist">playlist</a></td>
@@ -385,7 +388,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>26</td>
   <td>guided meditation <a href="https://everynoise.com/engenremap-guidedmeditation.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:7<br>Synth.Electronic:1<br>Rap:1<br>C.Mexico.Latino:1<br>C.China:1<br>Ambient.General:1<br>Traditional:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:7<br>Synth.Electronic:1<br>Rap:1<br>C.Latino:1<br>C.China:1<br>Ambient.General:1<br>Traditional:1</td>
   <td>Susan Kern &quot;Sacred Forest for Stress Release and Quie<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bc4eca1aa4f36e27b6f4e59242048d92b9aa0dce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/guided-meditation" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3yGP9iTHnDBiMHdBxiNUaa" title="playlist">playlist</a></td>
@@ -397,7 +400,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>27</td>
   <td>healing hz <a href="https://everynoise.com/engenremap-healinghz.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Gaming:1<br>C.Mexico.Latino:1<br>Ambient.General:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Gaming:1<br>C.Latino:1<br>Ambient.General:1</td>
   <td>Chaccara &quot;Naname 528 Hz&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b1b672ca784a6e9de63117c4fc733a4fa86d5403" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/healing-hz" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0PaPyYEZfzx2vpoPmjVYzY" title="playlist">playlist</a></td>
@@ -409,7 +412,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>28</td>
   <td>meditation <a href="https://everynoise.com/engenremap-meditation.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:3<br>Gaming:1<br>C.Mexico.Latino:1<br>Ambient.General:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:3<br>Gaming:1<br>C.Latino:1<br>Ambient.General:1</td>
   <td>Steven Halpern &quot;Om Zone 2.0 - I&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/32f3164533b69a3dd621f42f5c81b2bf38a09b16" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/meditation" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/1RJKluktWr9Dh7fXhhRkHV" title="playlist">playlist</a></td>
@@ -421,7 +424,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>29</td>
   <td>neru <a href="https://everynoise.com/engenremap-neru.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Classical:4<br>Ambient.General:3<br>Synth.Electronic:1<br>Rap:1<br>C.Mexico.Latino:1<br>C.China:1<br>Traditional:1<br>Experimental:1<br>Instrumental:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:5<br>Classical:4<br>Ambient.General:3<br>Synth.Electronic:1<br>Rap:1<br>C.Latino:1<br>C.China:1<br>Traditional:1<br>Experimental:1<br>Instrumental:1</td>
   <td>&quot;Optimal Health&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e9b7750bc7a881ecf75361100c52dc828b366597" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/neru" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3mTv8YnTdrpfdmQRSiu1dx" title="playlist">playlist</a></td>
@@ -433,7 +436,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>30</td>
   <td>mindfulness <a href="https://everynoise.com/engenremap-mindfulness.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:3<br>Gaming:1<br>C.Mexico.Latino:1<br>Ambient.General:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:3<br>Gaming:1<br>C.Latino:1<br>Ambient.General:1</td>
   <td>Mindfullness Meditation World &quot;Zen Water&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9079b80f0bdf1e53d3f2b148aad2183b1533176f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/mindfulness" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0Q3p2ozB9LNh4MgJtTlrXh" title="playlist">playlist</a></td>
@@ -445,7 +448,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>31</td>
   <td>therapy <a href="https://everynoise.com/engenremap-therapy.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise<br>Rap</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:6<br>Rap:2<br>Ambient.General:2<br>Traditional:2<br>Synth.Electronic:1<br>Gaming:1<br>C.Mexico.Latino:1<br>C.Japan:1<br>C.China:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:6<br>Rap:2<br>Ambient.General:2<br>Traditional:2<br>Synth.Electronic:1<br>Gaming:1<br>C.Latino:1<br>C.Japan:1<br>C.China:1</td>
   <td>Sound Therapy Masters &quot;Washing Machine  Deep Sleep&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7dccf7babca114f59a37c9523381e3669f0a7a8f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/therapy" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/6k7Tv57wY0l9lrPGhYfrw7" title="playlist">playlist</a></td>
@@ -457,7 +460,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>32</td>
   <td>528hz <a href="https://everynoise.com/engenremap-528hz.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:3<br>Ambient.General:2<br>Gaming:1<br>C.Mexico.Latino:1<br>C.China:1<br>Traditional:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:3<br>Ambient.General:2<br>Gaming:1<br>C.Latino:1<br>C.China:1<br>Traditional:1</td>
   <td>Lo Amber &quot;Mint Green 528 Hz&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0e128ba6b85b0349d341e284bc27feb572470519" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/528hz" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3qHTGXTTyexCin7nO1Wbv1" title="playlist">playlist</a></td>
@@ -493,7 +496,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>35</td>
   <td>chakra <a href="https://everynoise.com/engenremap-chakra.html" title="&#x2306;">&#x2306;</a></td>
   <td>Ambient.Yoga.Therapy.Sleep.White.Noise &#x2380;</td>
-  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:4<br>Gaming:1<br>C.Mexico.Latino:1<br>Ambient.General:1</td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise:4<br>Gaming:1<br>C.Latino:1<br>Ambient.General:1</td>
   <td>Chakra Healing Music Academy &quot;The Solar Plexus&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c900512bc4580ca9b255d3619e592ab46a831abf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/chakra" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4mnzw6x7d1i0ek9pwdNYOO" title="playlist">playlist</a></td>
@@ -505,6 +508,9 @@ document.addEventListener("DOMContentLoaded", function() {
         </table>
         <br><br>
 
+
+<!-- id=audio-list -->
+</div>
 
 <script>
 
@@ -565,6 +571,45 @@ function sortTable_1(n) {
 
 
 </script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
 
 </body>
 </html>

@@ -60,8 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
 <br>
 </p>
+
+<div id="audio-list">
 
 
         <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>1</td>
   <td>halloween <a href="https://everynoise.com/engenremap-halloween.html" title="&#x2306;">&#x2306;</a></td>
   <td>Holidays</td>
-  <td>Ambient.General:7<br>Experimental:7<br>Holidays:2<br>Synth.Electronic:1<br>Industrial:1<br>Gaming:1<br>C.Spain:1<br>C.Irish:1</td>
+  <td>Ambient.General:7<br>Experimental:7<br>Holidays:2<br>Synth.Electronic:1<br>Industrial:1<br>Gaming:1<br>C.Spain:1<br>C.Latino:1<br>C.Poland:1<br>C.Irish:1</td>
   <td>Halloween Sound Effects &quot;Fangs Spectral&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/21567a2d01bdb50b130d2751dfbef80165c22713" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/halloween" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/3c4jETt4Inrxg7nN4bWehP" title="playlist">playlist</a></td>
@@ -95,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>2</td>
   <td>christmas product <a href="https://everynoise.com/engenremap-christmasproduct.html" title="&#x2306;">&#x2306;</a></td>
   <td>Holidays</td>
-  <td>Instrumental:5<br>Jazz:4<br>Holidays:3<br>Pop:1<br>Kids:1<br>C.Mexico.Latino:1<br>C.China:1<br>C.Africa:1<br>C.India:1<br>Classical:1<br>Traditional:1<br>Choir:1</td>
+  <td>Instrumental:5<br>Jazz:4<br>Holidays:3<br>Pop.World:1<br>Kids:1<br>C.Latino:1<br>C.China:1<br>C.Africa:1<br>C.Brazil:1<br>C.India:1<br>Classical:1<br>Traditional:1<br>Choir:1</td>
   <td>Holiday Guitar &quot;Away in a Manger&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/392abcb5ea38615b0b57973651f70ddd7cdaf38d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/christmas-product" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/0MxCys4nmIa6XRlJrCt9vJ" title="playlist">playlist</a></td>
@@ -119,6 +122,9 @@ document.addEventListener("DOMContentLoaded", function() {
         </table>
         <br><br>
 
+
+<!-- id=audio-list -->
+</div>
 
 <script>
 
@@ -179,6 +185,45 @@ function sortTable_1(n) {
 
 
 </script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
 
 </body>
 </html>

@@ -60,8 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
 <br>
 </p>
+
+<div id="audio-list">
 
 
         <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>1</td>
   <td>cosmic uplifting trance <a href="https://everynoise.com/engenremap-cosmicupliftingtrance.html" title="&#x2306;">&#x2306;</a></td>
   <td>Trance<br>Uplifting</td>
-  <td>Trance:13<br>Uplifting:5<br>Psy.Goa:2<br>Progressive:2<br>Synth.Electronic:2<br>Industrial:2<br>Rave:1<br>Hardstyle:1<br>C.Italy:1<br>C.Germany:1</td>
+  <td>Trance:13<br>Uplifting:5<br>Psy.Goa:2<br>Progressive:2<br>Synth.Electronic:2<br>Industrial:2<br>Rave:1<br>Hardstyle:1<br>C.Italy:1<br>C.Germany:1<br>C.Russia:1</td>
   <td>Type 41 &quot;Night Is Calling - Alatheia Radio Edit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0df19dfb83a1ff7a14b3dbf1026e52ac6a9baff7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/cosmic-uplifting-trance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/4if8aqDg8kCV1ReeSGvILy" title="playlist">playlist</a></td>
@@ -95,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>2</td>
   <td>progressive uplifting trance <a href="https://everynoise.com/engenremap-progressiveupliftingtrance.html" title="&#x2306;">&#x2306;</a></td>
   <td>Progressive<br>Trance<br>Uplifting</td>
-  <td>Trance:9<br>Uplifting:5<br>Progressive:3<br>Synth.Electronic:1<br>Industrial:1<br>Rock:1</td>
+  <td>Trance:9<br>Uplifting:5<br>Progressive:3<br>Synth.Electronic:1<br>Industrial:1<br>Rock:1<br>C.Russia:1</td>
   <td>A.r.d.i. &quot;Lost In The Dark&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b5b63d8848e4a21ec4a969ab28c13ba76f0809a6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/progressive-uplifting-trance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/7u6WmGIdrl2LFd73vZhBJQ" title="playlist">playlist</a></td>
@@ -107,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>3</td>
   <td>uplifting trance <a href="https://everynoise.com/engenremap-upliftingtrance.html" title="&#x2306;">&#x2306;</a></td>
   <td>Trance<br>Uplifting</td>
-  <td>Trance:10<br>Uplifting:5<br>Synth.Electronic:4<br>Progressive:3<br>House:1<br>Punk:1<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Industrial:1<br>Dubstep:1</td>
+  <td>Trance:10<br>Uplifting:5<br>Synth.Electronic:4<br>Progressive:3<br>House:1<br>Punk:1<br>Hardstyle:1<br>Industrial.Punk.EBM:1<br>Industrial:1<br>C.Russia:1<br>Dubstep:1</td>
   <td>Ferry Tayle &quot;Smile&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0b627027506f76e5098cc8003e1dee0e4840ab39" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/uplifting-trance" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2bV5j3UH5k9rMxJywzTYKu" title="playlist">playlist</a></td>
@@ -131,6 +134,9 @@ document.addEventListener("DOMContentLoaded", function() {
         </table>
         <br><br>
 
+
+<!-- id=audio-list -->
+</div>
 
 <script>
 
@@ -191,6 +197,45 @@ function sortTable_1(n) {
 
 
 </script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
 
 </body>
 </html>

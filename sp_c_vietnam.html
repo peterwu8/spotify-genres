@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C.Vietnam: (16 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> C.Vietnam: (16 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>viet edm <a href="https://everynoise.com/engenremap-vietedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam</td>
+  <td>House:4<br>Synth.Electronic:4<br>C.Vietnam:3<br>Trap:2<br>Psy.Goa:1<br>Electronica:1<br>Trance:1<br>C.Indonesia:1<br>C.Russia:1<br>C.India:1<br>Dance:1<br>Party.Festival.Band.Cheer:1<br>Hip hop:1</td>
+  <td>DG812 &quot;In Your Eyes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a2eee407614b7724281323fe5a5b0c566755c42b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viet-edm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ue7mRobKgve30zMintxMN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ELNbro2ZJJxCK1bCzPogP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3oyKkl12X85thSPo6tBMDf" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>viet remix <a href="https://everynoise.com/engenremap-vietremix.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam</td>
+  <td>C.Vietnam:4<br>Pop.World:3<br>C.China:3<br>Viral:2<br>Rap:2<br>C.Latino:2<br>Blues.Soul:2<br>Reggae:2<br>Trap:1<br>C.Poland:1<br>C.Japan:1<br>C.Russia:1</td>
+  <td>TVk &quot;Ph T (MEE REMIX)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dbd93ca43011ee624a4b003c73a8f3b96217ee72" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viet-remix" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5PZu55kuQyZjNE43eQuuTB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2SLHBtV5aDjBT1kU7F8nnQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7fWwRisZkI2P3EntgIHu7W" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7jljJoArs2f56dP9wRAHc0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>vietnamese trap <a href="https://everynoise.com/engenremap-vietnamesetrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Trap</td>
+  <td>Hip hop:9<br>Trap:7<br>C.Vietnam:4<br>Rap:3<br>C.Latino:3<br>Psy.Goa:1<br>C.India:1</td>
+  <td>Hustlang Robber &quot;Slatt ON&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bef19d115279bbb2e207761b729a2b9410997533" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vietnamese-trap" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5GgeLstLaU0EeYEJa3NlFO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bNsM5HHzZCs9GpIlraoZE" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Xc8gIxv5htWcgA7HCLbWZ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5KMmysQEAWnerw1rXKUog4" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>vietnamese electronic <a href="https://everynoise.com/engenremap-vietnameseelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Synth.Electronic</td>
+  <td>Synth.Electronic:9<br>Electronica:3<br>Ambient.General:3<br>Experimental:3<br>C.Vietnam:2<br>Psy.Goa:1<br>Techno:1<br>House:1<br>Indie:1<br>Chill:1<br>C.Italy:1<br>C.Japan:1<br>C.China:1<br>C.Germany:1<br>C.Irish:1<br>C.Russia:1<br>Dance:1<br>Reggae:1</td>
+  <td>DUSTIN NGO  &quot;Night&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3f8115e4a9e959db2739ab912f94ca27367c914b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vietnamese-electronic" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6LuWh1x0fOIdgftSeHlR7g" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Tti4ARuhmj9iC18gciDqA" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>vietnamese melodic rap <a href="https://everynoise.com/engenremap-vietnamesemelodicrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Rap</td>
+  <td>Hip hop:9<br>Rap:8<br>C.Vietnam:4<br>Trap:3<br>C.India:2<br>Psy.Goa:1<br>Viral:1<br>Pop:1<br>Pop.World:1<br>C.China:1</td>
+  <td>Coldzy &quot;If You Said So (feat. Wxrdie &amp; 2Pillz)&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a74326996084615040fa2f03ab959fcc2827b267" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vietnamese-melodic-rap" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5r7iScQieYhKk1vit2T1SC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6XLB0CvhdZ04aHrCawmNkz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Im8MvbdBQhflOyfpkaWqg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3tauRkYI8vyFy2ZWyk8oXB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>vietnamese idol pop <a href="https://everynoise.com/engenremap-vietnameseidolpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Pop.World</td>
+  <td>Pop.World:9<br>Pop:4<br>C.India:3<br>C.Vietnam:2<br>C.Brazil:2<br>House:1<br>Indie:1<br>C.Latino:1<br>C.Africa:1<br>C.Indonesia:1<br>Gospel:1<br>Hip hop:1</td>
+  <td>T Ti &quot;C Ai Th Em Nh Anh&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0573c7ef48a5df9401dea17db7c63acfd86820e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vietnamese-idol-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6YpdvZ6EMGDRtzI7V9UCV0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5DrTjanqhUCDDa4vA9LQ9Q" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/430xvpmvjRMwuSFAYRptiT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7EefS5jRCB3aOIYeZE5R3M" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>viet lo-fi <a href="https://everynoise.com/engenremap-vietlofi.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam</td>
+  <td>Chill:8<br>C.Vietnam:4<br>Rap:2<br>Pop:1<br>C.Italy:1<br>C.Japan:1<br>C.Indonesia:1<br>C.Brazil:1<br>Ambient.General:1<br>Party.Festival.Band.Cheer:1<br>Disco:1<br>Curated.Rehhab:1</td>
+  <td>Freak D &quot; M Em (Lofi Ver.)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c61b3921888e27dd34415bb2268dbbb6dde6ef27" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viet-lo-fi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Vy0xyJdPMRV5TYcVz7VFB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/488wqc2V8fixn6fZDkjyUS" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7LC69pmAsWNSzwc9ovvfzs" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18IiX6zxETva86A7JkjFxy" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>rock viet <a href="https://everynoise.com/engenremap-rockviet.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Rock</td>
+  <td>Indie:18<br>C.Vietnam:3<br>Rock:2<br>Metal:1<br>C.Latino:1<br>C.Indonesia:1<br>Gospel:1</td>
+  <td>iTeu &quot;Khi Ta Kh C Nhau&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f2711a121833ee5f684ff2ede1943086ec435ceb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rock-viet" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6qVh7Afbsv1raiNNAioHSs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/79dSIe9IOIbbtYGJjzEAFd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/23jNfpTH4pUtfQUQoXWrJ8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5jkLboC02q51RaTi7d9zuS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>vietnamese hip hop <a href="https://everynoise.com/engenremap-vietnamesehiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Hip hop</td>
+  <td>Hip hop:10<br>Rap:7<br>C.Vietnam:4<br>C.India:2<br>Viral:1<br>Pop:1<br>Trap:1<br>C.Brazil:1</td>
+  <td>VSOUL &quot;NGTANOISE&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fbfb325ad4d428d7cadfd558e59a9181c3990495" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vietnamese-hip-hop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5wT8Nw3HVG9EBgnaZtos80" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0INxoE9Z0rDboVs67nW88j" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5SvX7A0PSRtNd8MFdrmmn5" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7y51JSOANFzx3aJelyUo4l" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>viet chill rap <a href="https://everynoise.com/engenremap-vietchillrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Chill<br>Rap</td>
+  <td>Chill:5<br>Pop:3<br>Rap:3<br>C.Vietnam:3<br>Folk:2<br>Indie:1<br>C.China:1<br>Jazz:1<br>Traditional:1<br>Party.Festival.Band.Cheer:1<br>Curated.Rehhab:1</td>
+  <td>DucMinh &quot;Ng s  em&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a8beace33a186f069ad461da1e408844e9f86257" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viet-chill-rap" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/72TDfcmK4FAKaBt5AXfGce" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7DESRKpjtcGH5uSFQ9p1jv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rtZZHo3QecA6sYeJ1FkJy" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1EHRa14fHjT5wORuKQJUq4" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>vietnamese bolero <a href="https://everynoise.com/engenremap-vietnamesebolero.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam</td>
+  <td>Pop:3<br>Pop.World:3<br>C.Vietnam:3<br>Indie:2<br>C.China:2<br>C.Taiwan:1<br>C.Brazil:1<br>Folk:1<br>Gospel:1<br>Country:1</td>
+  <td>L  Loan &quot;N Anh  H&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/831c258c9a2a059f9f7454c38ea647a24cf6252b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vietnamese-bolero" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/29lodCEQR3cCLJdljJOBxy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4KTz3VS4FUAcmcgOlDrcKd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Ib7U2HelbS32irGOwTiK3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6nm9uOHDPbWtcbQyidilXB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>vietnamese pop <a href="https://everynoise.com/engenremap-vietnamesepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Pop.World</td>
+  <td>Indie:3<br>Pop.World:3<br>C.Vietnam:3<br>Folk:2<br>Pop:1<br>C.Latino:1<br>C.Korea:1<br>C.China:1<br>C.Irish:1<br>Gospel:1<br>Party.Festival.Band.Cheer:1</td>
+  <td>Nh Mai &quot;L Con Xin Ch&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/05b17467703cc0d692497aea2d7ebcfff0dabcc0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vietnamese-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3sEVkAftmt4GT4hheDpDsC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5l5nJPAds9bkBwXR0pKZQj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/53UtoZWKlP9dAnbBiw5JFq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4yEkSYgfuQbAiu0nNYithu" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>vietnamese singer-songwriter <a href="https://everynoise.com/engenremap-vietnamesesingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam</td>
+  <td>Indie:4<br>Pop:3<br>C.Vietnam:3<br>Folk:3<br>C.Indonesia:2<br>Pop.World:1<br>C.Korea:1<br>C.Germany:1<br>C.India:1<br>Gospel:1</td>
+  <td>Th  &quot;Ph Kh Em&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a7118b4b5c321f27054793a22c88cf190a60d073" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vietnamese-singer-songwriter" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2W8qlNiQFfQJTE6Tj2EIdU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rDBsBwnoMyN4v6qfjk0VJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ckE0bZBdLhlyBOv1QxflI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0jP7y3HO5EJe8Ta0e8W9IG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>viet instrumental <a href="https://everynoise.com/engenremap-vietinstrumental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Instrumental</td>
+  <td>Instrumental:5<br>Folk:4<br>C.Korea:2<br>C.Vietnam:2<br>Jazz:2<br>Traditional:2<br>Pop.World:1<br>C.Italy:1<br>Experimental:1</td>
+  <td>Saxo L T Qu &quot;Qua c m&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/99a486b0fd3c4bd2bee729e7a66cb8b99982461c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viet-instrumental" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/21wDGffpNPXROzcaqp3Y0a" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2YIWPMkdQWYspRtcUzilOr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ufZVSUhMZoyWxrrOTNAp5" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>indie viet <a href="https://everynoise.com/engenremap-indieviet.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Indie</td>
+  <td>Jazz:8<br>C.Vietnam:4<br>Indie:2<br>Chill:2<br>Traditional:2<br>Rock:1<br>Pop:1<br>C.China:1<br>C.Brazil:1<br>Holidays:1</td>
+  <td>Minh  &quot;7711(b b m m) - Acoustic&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c8d4f6c310cc73cf184f73df11aabeb2e856cef9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-viet" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2mKeOh3TSHzA5XioOb0D2C" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Kbgy8WxvwyY1GQcAmoVJR" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2DoUq9QWtMaJxbrEOuCkDJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2HtLW6OOoiUUzqKwp04eIG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>vietnamese traditional <a href="https://everynoise.com/engenremap-vietnamesetraditional.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Vietnam<br>Traditional</td>
+  <td>Jazz:14<br>C.Latino:2<br>C.Vietnam:2<br>Folk:2<br>Traditional:2<br>C.Korea:1<br>C.Poland:1<br>C.Brazil:1<br>Instrumental:1</td>
+  <td>Ph  Th &quot;Ly Ngua O&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/df08bc677b04e77115c0421114fc484be53a05ac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vietnamese-traditional" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1mvtazNJybNmsRmeTNjdEf" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
+
+</body>
+</html>

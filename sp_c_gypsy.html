@@ -60,8 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
 <br>
 </p>
+
+<div id="audio-list">
 
 
         <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>1</td>
   <td>gypsy fusion <a href="https://everynoise.com/engenremap-gypsyfusion.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.Gypsy</td>
-  <td>C.Mexico.Latino:5<br>Indie:2<br>C.Gypsy:2<br>Funk:2<br>Reggae:2<br>Electronica:1<br>Viral:1<br>Pop:1<br>C.Japan:1<br>Jazz:1<br>Dance:1<br>Party.Festival.Band.Cheer:1</td>
+  <td>C.Latino:6<br>Indie:2<br>C.Gypsy:2<br>C.Brazil:2<br>Funk:2<br>Reggae:2<br>Electronica:1<br>Viral:1<br>Pop:1<br>C.Japan:1<br>Jazz:1<br>Dance:1<br>Party.Festival.Band.Cheer:1</td>
   <td>Mahala Rai Banda &quot;Mahalageasca&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5966239deb94a6c29671f58214eb8dea5de406c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/gypsy-fusion" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/2p6sVxmP69Qd9ysNCuMb7Y" title="playlist">playlist</a></td>
@@ -95,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>2</td>
   <td>gypsy punk <a href="https://everynoise.com/engenremap-gypsypunk.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.Gypsy<br>Punk</td>
-  <td>Rock:14<br>Punk:2<br>Indie:2<br>C.Gypsy:2<br>C.Italy:1<br>Folk:1<br>Party.Festival.Band.Cheer:1<br>Blues.Soul:1</td>
+  <td>Rock:14<br>C.Latino:3<br>Punk:2<br>Indie:2<br>C.Gypsy:2<br>C.Brazil:2<br>C.Italy:1<br>C.Russia:1<br>Folk:1<br>Party.Festival.Band.Cheer:1<br>Blues.Soul:1</td>
   <td>Gogol Bordello &quot;Start Wearing Purple&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ab3a7673c7673ece9950b3a51309c52f91a29860" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/gypsy-punk" title="chosic">chosic</a></td>
   <td><a href="https://open.spotify.com/playlist/5OddLZaXByhRjd6UbnaB2s" title="playlist">playlist</a></td>
@@ -107,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>3</td>
   <td>gypsy <a href="https://everynoise.com/engenremap-gypsy.html" title="&#x2306;">&#x2306;</a></td>
   <td>C.Gypsy</td>
-  <td>Traditional:4<br>Folk:3<br>C.Gypsy:2<br>Jazz:2<br>Classical:2<br>Pop:1<br>C.India:1<br>Instrumental:1</td>
+  <td>Traditional:4<br>Folk:3<br>C.Gypsy:2<br>Jazz:2<br>Classical:2<br>Pop:1<br>C.Russia:1<br>C.India:1<br>Instrumental:1</td>
   <td>Kanizsa Csillagai &quot;Ahuz, mama (Listen, mother)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/036e3ab6e29610782e68d861106e1243e6eb95f6" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
@@ -133,6 +136,9 @@ document.addEventListener("DOMContentLoaded", function() {
         </table>
         <br><br>
 
+
+<!-- id=audio-list -->
+</div>
 
 <script>
 
@@ -193,6 +199,45 @@ function sortTable_1(n) {
 
 
 </script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
 
 </body>
 </html>
