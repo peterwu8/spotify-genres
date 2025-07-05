@@ -25,6 +25,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
 
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
 
 </head>
 <body>
@@ -6180,12 +6197,6 @@ function sortTable_1(n) {
     if (currentAudioIndex < audioElements.length) {
       audioElements[currentAudioIndex].play();
 
-        // Set a timeout to pause the audio after 5 seconds
-        playTimeout = setTimeout(() => {
-          audioElements[currentAudioIndex].pause();
-          playNextAudio(); // Play the next audio after pausing
-        }, 5000); // 5000 milliseconds = 5 seconds
-
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
@@ -6196,10 +6207,6 @@ function sortTable_1(n) {
 
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
-
-    // If the audio ends naturally (e.g., it's shorter than 5s)
-    // we still want to move to the next one
-    clearTimeout(playTimeout); // Clear any pending timeout
 
       playNextAudio();
     });
@@ -6212,34 +6219,7 @@ function sortTable_1(n) {
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
 
-  // Set a timeout to pause the first audio after 5 seconds
-  playTimeout = setTimeout(() => {
-    audioElements[currentAudioIndex].pause();
-    playNextAudio(); // Play the next audio after pausing
-  }, 5000); // 5 seconds
-
   }
-
-function onlyPlayOneIn(container) {
-  container.addEventListener("play", function(event) {
-    if (startedAudioScan > 0) {
-        // Do not all allow this code if we're in Preview All mode.
-        return;
-    }
-
-  audio_elements = container.getElementsByTagName("audio")
-    for(i=0; i < audio_elements.length; i++) {
-      audio_element = audio_elements[i];
-      if (audio_element !== event.target) {
-        audio_element.pause();
-      }
-    }
-  }, true);
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  onlyPlayOneIn(document.body);
-});
 </script>
 
 
