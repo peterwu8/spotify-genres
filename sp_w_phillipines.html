@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Phillipines: (6 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Phillipines: (6 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Phillipines is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>1</td>
+  <td>bohol indie <a href="https://everynoise.com/engenremap-boholindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Phillipines</td>
+  <td>Philippines<br>bisrock<br>pinoy indie<br>vispop<br>opm<br>reggae</td>
+  <td>Willfreedo &quot;I Will Make You Katawa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/633aaa5ed5e72f324807c8e2f01e0858d74f361b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bohol-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2R8swOEVr7pKNYVVWCcvPN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/46kIIqkNXmvgL4U7XWGUtg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4dQOxE4DW05V0jKjPn0uTK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4z0tj4WsGYhy9gPspP5nCb" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>tagalog rap <a href="https://everynoise.com/engenremap-tagalograp.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Phillipines</td>
+  <td>Philippines<br>pinoy hip hop<br>pinoy r&b<br>opm<br>p-pop<br>pinoy trap</td>
+  <td>A$tro &quot;Pabalik Balik&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/774d2957354fe9b00dcefe6f6b3146d0df44c416" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tagalog-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/36vPCNK5e2ZozMtwBe4Nb2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Hx6fdHGxv9nOZgZShbekL" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/33RvC1ZMChzIAimaXmKQXr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2EJ5om6FiOdO6MH5hC4fQj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Ezyl7Fm0suwMCcNvuoXEU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>bisaya rap <a href="https://everynoise.com/engenremap-bisayarap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Phillipines</td>
+  <td>Philippines<br>pinoy hip hop<br>bisrock<br>pinoy r&b<br>opm<br>pinoy indie</td>
+  <td>JKLRD &quot;Holly&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a37c9eee28d87fef4124b4255838b604498ce10f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bisaya-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3zQby6kY7GECQ4cmWmnNfC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0rcyvtwJZ7X49avts9SSBQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3OFRO0FJM4tLNycNFgHd1N" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/62v91iB3XQkUv0sWpmIzCD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2dSziaS84H5iU7RLYIUgaH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>bisaya indie <a href="https://everynoise.com/engenremap-bisayaindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Phillipines</td>
+  <td>Philippines<br>pinoy indie<br>bisrock<br>opm<br>vispop<br>pinoy rock</td>
+  <td>Vincent Eco &quot;Ibog&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f644d46a4d135e58e7dd2796dccb82355a8682d2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bisaya-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7ooSlBDRlYg0StZtdjl28l" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4U8rCEbvM6wuegEVUZ87M7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0gSqDaMeqM6CSNWIkPmZxD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0BSzu2k5OHbbR8LKA5qbKH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4xZCF52luCS3uIxTVdEDlA" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>bisaya worship <a href="https://everynoise.com/engenremap-bisayaworship.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>W.Phillipines</td>
+  <td>Philippines<br>christian<br>worship<br>pinoy indie<br>bisrock</td>
+  <td>Rhema &quot;Dalangpanan&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/10b72c6a277ac03dfb543b8b9d25bc2aef0f4a83" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bisaya-worship" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/64MhRd698godLWpkt38bgD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5dtZGNx5IeTjAl5IYXRPje" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6w1nQPFwNfY1R43NuOaXxF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6RZnTdZ7PBHURXPJB5yBJU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66DirA7G2NAvEOZIOvBldm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>tagalog worship <a href="https://everynoise.com/engenremap-tagalogworship.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>W.Phillipines</td>
+  <td>Philippines<br>worship<br>kundiman<br>opm<br>pinoy indie<br>pinoy alternative</td>
+  <td>Rey Malipot &quot;Jesus On The Cross&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9eb92d7f12858c4e6a004db6411c7b171669a4a7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tagalog-worship" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3iNunDraHMgPJ6dYgIUuTb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2uoIbc4ps6iwqwobnHdDwg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3MZfdRzK9i8zsVvIneBY0f" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1IvR9A5MZIGqJcPcEDW6MQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/50Gz6Gas25EMsRfmLxv9b8" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

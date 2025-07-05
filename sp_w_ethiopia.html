@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Ethiopia: (6 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Ethiopia: (6 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Ethiopia is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>1</td>
+  <td>ethiopian hip hop <a href="https://everynoise.com/engenremap-ethiopianhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Ethiopia</td>
+  <td>Ethiopia<br>ethiopian pop<br>ethiopian jazz<br>drill<br>amharic pop<br>afrobeat</td>
+  <td>Samon Zemas &quot;Kanchiga New&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6df3399f05040c7be310e7aee1f12c0474835ce4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ethiopian-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0SpOtLj1K80MwJpvSFyRYA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5DuLi0To9tbwZDum6RDEcH" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6XBZYHHFXAhHSVDXGGhaZX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5AVKMHqxbUDP6UYHlevuxj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/20rR2zcuImncSBvPfDEWpq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>ethiopian pop <a href="https://everynoise.com/engenremap-ethiopianpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Ethiopia</td>
+  <td>Ethiopia<br>ethiopian jazz<br>amharic pop<br>ethiopian hip hop<br>ethio-jazz<br>oromo pop</td>
+  <td>Hibist Tiruneh &quot;Tagesegne&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bf0535a118ff3cffe9a651453a7b9f32e936f8f7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ethiopian-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1nFgzlG8HDBDbJ9Pc8RJOY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Qr0VHtF0DP2GMTFj3XJx8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1nFlTk6fp5MuDIcOfJAquw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0VhZycnQexq5oq8rFPhtyS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5IVkX4hXIQeJSKDPB0qaHt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>mezmur <a href="https://everynoise.com/engenremap-mezmur.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ethiopia &#x2380;</td>
+  <td>Ethiopia<br>pentecostal<br>ethiopian jazz<br>gospel<br>eritrean pop<br>traditional folk</td>
+  <td>Kefa Midekesa &quot;Andie Wodajie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f8187a6a68e7bf3630f0751d1865831c0f714c34" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mezmur" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Zyh4DmbqppyeKO0CkpUdt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6RFAXWzgMsqIkfZBXoFi8C" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KtSURlyuqdxkzBcISBi3b" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6dtzJmdIrj4VO3HMzh4CAv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/04zgLXOvqt02UEyrg6C5n0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>tigrigna pop <a href="https://everynoise.com/engenremap-tigrignapop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Ethiopia</td>
+  <td>Ethiopia<br>ethiopian jazz<br>ethiopian pop<br>eritrean pop<br>mezmur</td>
+  <td>Rahel Haile &quot;Heji Grem&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0fe5d5988f216d0c4e67d56106b5cc6c1e34b87c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tigrigna-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4hhtq5rCGGbgBztO84Bd8q" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1T35MTE40rPXbmU0O0Hgyv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0daxZq9F0RKkSc1zTSOXiO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5rPAHpP1OUbS1tCBzcuAQS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7blyEjBtV5OtRNNA2Z2eqx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>ethio-jazz <a href="https://everynoise.com/engenremap-ethiojazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Ethiopia</td>
+  <td>Ethiopia<br>ethiopian jazz<br>ethiopian pop<br>afrobeat<br>ethiopian traditional<br>afro soul</td>
+  <td>Alemayehu Eshete &quot;Telantena zare&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/511333faa212de09003b9d1f667e61346838131d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ethio-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1GgFFNpFxYf322tMzGtOZQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1a8QWAogYxy8ULfcuI181A" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/50F97yYrtpDR3MhVBHSd6i" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/550wEpyqY3Up5StwOs5oY0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/16tvFtWk32QEVoFGKU9AUA" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>ethiopian traditional <a href="https://everynoise.com/engenremap-ethiopiantraditional.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Traditional<br>W.Ethiopia</td>
+  <td>Ethiopia<br>ethiopian jazz<br>ethiopian pop<br>ethio-jazz<br>traditional music</td>
+  <td>Asnaq W &quot;Mengedegnaw lebe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/61130a40cff05e4ca565a5af3d0666b42e32362b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ethiopian-traditional" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0C5RPQiioli6YuBgDLNSaA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6pwxXxDllzVgmynD4Xr0kh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/30J3UWHaebOW2zrMnsD4uv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5JmJguVQyD2ajfvqaYoqgm" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

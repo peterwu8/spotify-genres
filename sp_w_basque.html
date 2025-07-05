@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Basque: (12 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Basque: (12 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Basque is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>euskal reggae <a href="https://everynoise.com/engenremap-euskalreggae.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Basque</td>
+  <td>Spain<br>euskal rock<br>ska<br>rocksteady<br>dub<br>euskal musica</td>
+  <td>Skabidean &quot;Gure Unea&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/324250b081a9899bd97e06f285ef3c8b3663f93c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/euskal-reggae" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3CvlX7CZgS46LYblnpTGBf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/19V77ntG0X9Py7dXHL6Bzt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Gcpn18LCUCorLC00X0XDD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rqSGQP5ovIgZHJxPbryya" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5BzEkNs7mA3ta0XvbAhnKM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>punk euskera <a href="https://everynoise.com/engenremap-punkeuskera.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Basque</td>
+  <td>Spain<br>euskal rock<br>street punk espanol<br>punk<br>spanish punk<br>ska punk</td>
+  <td>The Bobby\'s &quot;Aquellos A&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/26fef7a9bebe801f4b8c9a40cbb70d133c513bf1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/punk-euskera" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6WJpQkNAdvdOdL82aFDhpx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/24UeBVPHdmORN5JOPIZiuV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5vjr8FLutoAuiRNFWS6I8o" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7HsId4b6CaitNTmG4RGPgQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Rh07vdAkdE89S79XSG4Uh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>euskal metal <a href="https://everynoise.com/engenremap-euskalmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Basque</td>
+  <td>Spain<br>euskal rock<br>spanish metal<br>power metal<br>spanish death metal<br>stoner rock</td>
+  <td>Latzen &quot;Laztana&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/12acf28972eac2156ad2c523fb1095f0fdffd2ac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/euskal-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3m9dbDhQhBLWWagvIvNbnr" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1iLekEU5MMII393Pnk1yEt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1UzrFVvZHdwtssMFChDDZx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pO7gA1gopWk5gCTBRZEwO" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>euskal indie <a href="https://everynoise.com/engenremap-euskalindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Basque</td>
+  <td>Basque Country<br>euskal rock<br>euskal musica<br>euskal reggae<br>folk pop<br>rap euskera</td>
+  <td>M I C E &quot;Ernaltzen&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8748320b7beb909b1678a8f9e43cdded843fe7ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/euskal-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0BINjLn4csdvb0aIZuWCjE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/10ZdPLIr6c2dFAALbRAFhG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6qLdYDbRycxyNe99OGfs38" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7BdpvrRZNgLhpuuQML3vO1" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3zeeHcQ0G67rgYb5RI4KQQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>euskal rock <a href="https://everynoise.com/engenremap-euskalrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Basque</td>
+  <td>Spain<br>euskal musica<br>punk euskera<br>euskal indie<br>ska punk<br>euskal reggae</td>
+  <td>EH Sukarra &quot;Aspaldiko loreak&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b7a56a3f4594f5e301771a160eb17f1e3cb1e80f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/euskal-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2qwzhUzBR662cTXY5j76Jp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4fgHorklhTT5M7ANsHRtqr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/67OnBEivasCP1BGRhoJctu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2HqFx9O8zmr2ylxO3Ip2YQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0BCD2Y3Q79H1mF92R5Wrpm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>musica tabasquena <a href="https://everynoise.com/engenremap-musicatabasquena.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Basque<br>W.Latino</td>
+  <td>Mexico<br>tropical music<br>cumbia<br>cumbia del sureste<br>musica indigena mexicana<br>son jarocho</td>
+  <td>Karmito Jr.Y Los Supremos &quot;El Atractivo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b73981bbcd7e6b1e11c537d6b6025ad426daaecd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-tabasquena" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1v1XLaOXEHKXzOGMpIC6A7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1RjbzvmW1Y1tDBt8PCiDqQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2HzuUucWdwr2p9usOA5OLI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5XHMqL3mXBPU2m79bAoP9U" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5zWA4A6QaZjTrmhoz05SeO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>indie tabasqueno <a href="https://everynoise.com/engenremap-indietabasqueno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Basque</td>
+  <td>Mexico<br>latin surf rock<br>surf rock<br>punto guajiro<br>latin indie<br>mexican indie</td>
+  <td>Lasitud &quot;El Muchacho de Los Ojos Tristes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fd7cb688795c954cebc3d336df704378608bd7fa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-tabasqueno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/245sxLp2trBRGWfFtg3qa6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Eji2sbOvPKXBQfUmNI9PZ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>rap euskera <a href="https://everynoise.com/engenremap-rapeuskera.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Basque</td>
+  <td>Spain<br>euskal rock<br>euskal reggae<br>euskal indie<br>punk rap<br>ragga</td>
+  <td>Nikotina &quot;Unity&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/23a731747cd0a93db8f85ec106d513c7e5fc17df" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-euskera" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0ByM1vJwYja9ucuczEW3lb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ebuevcL5O3MAsu80HzDWn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2RfLc75ALJyn6Qs23q8cm3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZKhdNfN5z45gUZITZ4ElL" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5tIfRHJjP6ykAPhVKELGCY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>trikiti <a href="https://everynoise.com/engenremap-trikiti.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Basque &#x2380;</td>
+  <td>Spain<br>basque folk<br>euskal rock<br>traditional music<br>celtic<br>haur kantak</td>
+  <td>Kepa, Zabaleta eta Motriku &quot;Anbototik Oizera&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0a0616b34d51e66c14f234924b6af2b588b93a63" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trikiti" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2FY5DBXyysBeiOl8OjPuXP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3afEVFqOSkek2AWlSPK9Mo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/44i0zDZmRihYGalQihRdTL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1o727Ar0uPcz7qtIljEEcr" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3uzt4189dbP0vhPiS7utob" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>euskal musica <a href="https://everynoise.com/engenremap-euskalmusica.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Basque<br>W.Latino</td>
+  <td>Spain<br>euskal rock<br>euskal indie<br>euskal reggae<br>folk pop<br>villancicos</td>
+  <td>Izaki Gardenak &quot;Amaieratik hasi&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/327a4b0ee83efc8a383ebed82c3eb1d5e3b6bc03" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/euskal-musica" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5YOZhvvuE9akn66WVKnpfF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4fLE9MkUAcauwyK84mkhl8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7AfyIrleRgvCTquORlkJOj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3uF7MjeZGLkePFTOuCWr4e" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/579nlUjLm7zSffmOTLKxjj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>chant basque <a href="https://everynoise.com/engenremap-chantbasque.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Basque</td>
+  <td>France<br>pasodobles<br>musica occitana<br>villancicos<br>zouk<br>gregorian chant</td>
+  <td>Ontuak &quot;Hegoak&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6edc3b789257de55bcfd1261e204b6486456e0b8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chant-basque" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/47dLqtNrmdEJ0lUDmFfDk3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Oqn4J5BKH3kedUtGR6iUv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4HNeAzXgVGtLPczqrbGVJ0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4XeJJ0sw728kugc93yiF09" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>basque folk <a href="https://everynoise.com/engenremap-basquefolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Basque</td>
+  <td>Spain<br>trikiti<br>traditional music<br>euskal rock<br>celtic<br>folk</td>
+  <td>Pier Paul Berzaitz &quot;Baratze bat&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/152a96cadae135a17f40a9198149cafad27784ba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/basque-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4qJiX3wn6tyTe1xWjS4Twa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0hO9RR41kv0bwGywHy4qfR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4vwuHguixIPuDRSJH7EWCY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/37t1lVbv5Hqh9B8h7RujR8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1OpD95oSAr5uMRC0xv6hpr" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

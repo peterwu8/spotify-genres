@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>/Misc Collection/: (2 genres)</title>
+    <title>/Misc Collection/: (1 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -48,20 +48,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <p>
 
-<strong>Name:</strong> /Misc Collection/: (2 genres)<br>
+<strong>Name:</strong> /Misc Collection/: (1 genres)<br>
 
 <strong>Notes:</strong><br><ul>
-  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
 </ul><strong>Spotify playlist types:</strong><br><ol>
-  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
-  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
   <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
 <br>
 </p>
+
+<div id="audio-list">
 
 
         <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
@@ -72,41 +77,34 @@ document.addEventListener("DOMContentLoaded", function() {
   <th onclick="sortTable_1(2)">Collections</th>
   <th onclick="sortTable_1(3)">Influences</th>
   <th onclick="sortTable_1(4)">Preview</th>
-  <th onclick="sortTable_1(5)">Chosic</th>
-  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
-  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
-  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
-  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
 
           </tr>
           <tr>
   <td>1</td>
-  <td>fife and drum <a href="https://everynoise.com/engenremap-fifeanddrum.html" title="&#x2306;">&#x2306;</a></td>
+  <td>draaiorgel <a href="https://everynoise.com/engenremap-draaiorgel.html" title="&#x2306;">&#x2306;</a></td>
   <td>/Misc Collection/</td>
-  <td>fife and drum</td>
-  <td>Plymouth Fife &amp; Drum Corps &quot;British (Medley)&quot<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7e9a8b0d75c4d153a272d5ecf12d8f9e37192bda" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
-  <td><a href="https://www.chosic.com/genre-chart/fife-and-drum" title="chosic">chosic</a></td>
-  <td><a href="https://open.spotify.com/playlist/47qloHCA0Ygkm4Jn1pOYNt" title="playlist">playlist</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/5VrKnk2n9FNWfgIJiC3H2V" title="intro">intro</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/3s6glRjhxoTUzlX0AnR6dz" title="pulse">pulse</a></td>
+  <td>draaiorgel<br>old-time fiddle<br>irish accordion<br>ballroom<br>band organ</td>
+  <td>Draaiorgel Theadora &quot;Second Waltz&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/118d7a3a815b4a3e4fee8d10e2d05e77eda9eb11" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/draaiorgel" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5KwZFkx12Vo8RcijEF5xce" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Jw47hdV6OqSfXh5z0HvZJ" title="playlist">playlist</a></td>
   <td>--</td>
-</tr>
-<tr>
-  <td>2</td>
-  <td>clap and tap <a href="https://everynoise.com/engenremap-clapandtap.html" title="&#x2306;">&#x2306;</a></td>
-  <td>/Misc Collection/</td>
-  <td>clap and tap</td>
-  <td>Balatedi Ba Morena &quot;Ke Se Ke Utlwile&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8c5dc944059c02a828c29e85c174f7a9be7775fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
-  <td><a href="https://www.chosic.com/genre-chart/clap-and-tap" title="chosic">chosic</a></td>
-  <td><a href="https://open.spotify.com/playlist/2txBERwbpo2voBtdwA8VGG" title="playlist">playlist</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/3AgG0eZTd52wo02mA8D5ow" title="intro">intro</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/7mXirc4rj7h2gMSwv4eQ4A" title="pulse">pulse</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/60LThzuhGRYW9nQ8hhUOLz" title="edge">edge</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KaBBaLMubIyF0U7UbXbYQ" title="pulse">pulse</a></td>
+  <td>--</td>
 </tr>
 
         </table>
         <br><br>
 
+
+<!-- id=audio-list -->
+</div>
 
 <script>
 
@@ -167,6 +165,66 @@ function sortTable_1(n) {
 
 
 </script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
 
 </body>
 </html>

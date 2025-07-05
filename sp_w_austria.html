@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Austria: (17 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Austria: (17 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Austria is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>austrian techno <a href="https://everynoise.com/engenremap-austriantechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Austria</td>
+  <td>Germany<br>techno<br>acid techno<br>hard techno<br>minimal techno<br>melodic house</td>
+  <td>Specific Objects &quot;Lockdown Groove&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d6c06d30d5868100a6b8f9de55b89166abe50857" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4E3Xiqh4mwUu9WUrxLkVY2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2RzvBAsSztYg07TK5XRiTB" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>austrian dnb <a href="https://everynoise.com/engenremap-austriandnb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Drum and Bass<br>W.Austria</td>
+  <td>United Kingdom<br>drum and bass<br>liquid funk<br>jungle<br>neurofunk<br>drumstep</td>
+  <td>Wingz &quot;Struggle&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/253cde014cf8cf88248c5423c60a8d8a3cd7cb7b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-dnb" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0M7bfLr5Q9zSehiV3xufPi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4tMXl8E1wE42prbMi3LuwR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/65KNG3nmxBidtobRSjjrUV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3rVNQkeFl1Uqe1TtkbGm8X" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3M4IYomBItU2gUu7m42e1s" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>austrian punk <a href="https://everynoise.com/engenremap-austrianpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Austria</td>
+  <td>Germany<br>skate punk<br>hardcore punk<br>punk<br>melodic hardcore<br>hardcore</td>
+  <td>TURBOBIER &quot;Arbeitslos durch den Tag&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bed8d9ea6c8cb1f9239407d2f49f0530100411c7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/01d3drkg0d57Y2RCQ6vVWx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3suLYeJHg2ANaSgtN0PnAA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/77Gtaqfx2XjGTiHiZTTNWP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4dQvBH7FcuudHCWjvN1iwp" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>salzburg indie <a href="https://everynoise.com/engenremap-salzburgindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Austria</td>
+  <td>Austria<br>stoner rock<br>austrian stoner rock<br>sludge metal<br>progressive metal<br>space rock</td>
+  <td>Steaming Satellites &quot;Honey&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1cca0cb6629ee2c1aa5d78e335197605cf3c8d7a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/salzburg-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Iz7K3WjlIRIzomQ2SXvZa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/56bVlmhPJ7OfRjMIfA2TBQ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>austrian pop <a href="https://everynoise.com/engenremap-austrianpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Austria</td>
+  <td>Germany<br>german pop<br>austrian indie<br>german indie<br>austropop<br>schlager</td>
+  <td>Bilderbuch &quot;Maschin&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c19e89cef08bba048588aa9884c1f78dea835698" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2GI0wF3iRFfBvcdrHyxTlN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7uivlZOhfHotY1IiRFctsW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7nrVB5wgFb0hHfU1hEXZaP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZMmfhkkfAqPD9fGkt6uzp" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/101K4LujahEDHCZmtY6iBv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>graz indie <a href="https://everynoise.com/engenremap-grazindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Austria</td>
+  <td>Austria<br>german pop<br>volkspop<br>german indie<br>austropop<br>stoner metal</td>
+  <td>Pizzera &amp; Jaus &quot;eine ins leben&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/60992ae9bc5b36a7785a60dc0157750857367a8c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/graz-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7I8cinLWgRGMJduVfLJmpm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1qQ39j0RpgAr9ewFJlZMSU" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>austrian metal <a href="https://everynoise.com/engenremap-austrianmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Austria</td>
+  <td>United States<br>black metal<br>symphonic metal<br>melodic death metal<br>metalcore<br>melodic metal</td>
+  <td>We Blame The Empire &quot;As I Fall&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6c0558eea4f45a6eb4472762e4982bddd86b6140" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7pQLIeBQy7IQieF3X9djbo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5zBqJ2TE7dQrLB4Sxq6NVQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5zGu3fdHbnnuqW2vJrsIiX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7IXsMhEEHVjwMIjNvvPwAQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0lXaKnx36n5d2Oms1dOhm6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>austrian indie <a href="https://everynoise.com/engenremap-austrianindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Austria</td>
+  <td>Austria<br>german indie<br>german pop<br>austrian pop<br>vienna indie<br>austrian hip hop</td>
+  <td>My Ugly Clementine &quot;Who&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6f795558e6870a25de524f533fa00280ec1b2cf9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3HXErkce5KedxzufKohXNC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2pEF8qW6YyLXvEOflWiPTz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/28rknSPV3n6VZxs8zg5z9G" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5iqHvbDtbSfJSoySnEnWRP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5M81kJXqW4CYM1GPI7NCrt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>vienna indie <a href="https://everynoise.com/engenremap-viennaindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Austria</td>
+  <td>Germany<br>german indie<br>german pop<br>austrian indie<br>austropop<br>noise rock</td>
+  <td>Der Nino aus Wien &quot;Praterlied&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d452ac1623eda956872181bc3da364342d48bb4e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vienna-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4T0QYGdH6chCQvKJ1MRgUP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0rSYXMt7LzZgQdQuF3X4DK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7gLbCUlppimP1EsQ1LBYGv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0R18ihbtvH5pMDBgaFmd9I" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/53OvlimzVbDS4oMWPaM01z" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>austrian black metal <a href="https://everynoise.com/engenremap-austrianblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Austria</td>
+  <td>Norway<br>black metal<br>austrian metal<br>folk metal<br>atmospheric black metal<br>metal</td>
+  <td>Ellende &quot;Ballade Auf Den Tod&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/10232cf8fa7142e055579e3b6aaf62715d2e138e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3d3U28h978DM3rVw4Iq5bT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/37On3yaaDFnjKAx93eXHrd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/72WbLLu9lcirAPtj9lSr85" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>austrian stoner rock <a href="https://everynoise.com/engenremap-austrianstonerrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Austria</td>
+  <td>Austria<br>stoner rock<br>sludge metal<br>space rock<br>stoner metal<br>doom metal</td>
+  <td>Savanah &quot;Magellanic Clouds&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c95b09f9dc747ca027e583cc640b3006996dbd6b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-stoner-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0uWF8QV4uD4vFso23XiLrK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ex3MtrvMThnpygNXuecbS" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>austrian hip hop <a href="https://everynoise.com/engenremap-austrianhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Austria</td>
+  <td>Germany<br>german hip hop<br>austropop<br>trip hop<br>austrian indie<br>german cloud rap</td>
+  <td>Monobrother &quot;The Bill Please!&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a6586bf806aa14d03fb7ab2cc3a6cf5b51c65eaa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bK81aHq4bn9l8QbgUmtG6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5HAv8CH53gDzjRHw3s2TFD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7vCZpbisu5r2ebEgFVEi48" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ObBkHulIagaeA6ok0qrHj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7IJQu1ycwboJs1XbmYeZyr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>austrian jazz <a href="https://everynoise.com/engenremap-austrianjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Austria</td>
+  <td>United States<br>free jazz<br>avant-garde<br>jazz fusion<br>jazz<br>nu jazz</td>
+  <td>Wolfgang Muthspiel &quot;Ending Music&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2d6009267cd8b52dc4ba75f2757cdb8b6475f492" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5JiJ6vkBaxeYQYZd74laVG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0l7VGsrww9cdIVKWMqwhf2" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>austrian contemporary classical <a href="https://everynoise.com/engenremap-austriancontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Austria</td>
+  <td>Germany<br>avant-garde<br>21st century classical<br>contemporary classical<br>minimalism<br>free jazz</td>
+  <td>Beat Furrer &quot;Enigma (Excerpts): No. 6, &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5a1060c2cc3803260b8c86feffcb29453b07b169" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/74UKPH86Qmp0bfVzYjAfha" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1JnRJniVHBZsxaxIvmZLad" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>austrian orchestra <a href="https://everynoise.com/engenremap-austrianorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Austria</td>
+  <td>Poland<br>classical<br>opera<br>orchestra<br>chamber music<br>chamber orchestra</td>
+  <td>Wiener Philharmoniker &quot;Symphony No. 5 in C Minor, Op.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2c6373fadfb111b18bdf708d4003a5b92f7df823" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5mO8GMclfAlHGFlueVcjnN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1IOnsLx8RVuGwGVvOZIXhJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5dFHDn1nLfOaqptdzqO5yH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Q2Q03W8rwDSL1Tpj5pSdo" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>austrian choir <a href="https://everynoise.com/engenremap-austrianchoir.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Choir<br>W.Austria</td>
+  <td>Germany<br>choral<br>requiem<br>children\'s choir<br>opera<br>chamber choir</td>
+  <td>Vienna State Opera Chorus &quot;Wagner: Lohengrin, WWV 75,<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b9902e3563b109b11a3671accdbf7a3ebb7a5953" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-choir" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3yeGPrDTfLzGRg5LJleuKM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/28XWNsMFftUZX8IdXdustD" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>austrian classical piano <a href="https://everynoise.com/engenremap-austrianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Austria</td>
+  <td>Austria<br>classical piano<br>chamber music<br>classical<br>avant-garde<br>classical performance</td>
+  <td>Alfred Brendel &quot;Fantasia in D Minor, K. 397&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/31d36178770bbf91924d0ce1215c8294c3ffd628" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2dH8YPzHqdZ5UpZ4O6Vir4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7henJ3D2euaPqsF2zGnkiS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5vY3vbyq6XDPE9qPTUvodw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7DiOxoSKhH4g7bEJNUxNvJ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

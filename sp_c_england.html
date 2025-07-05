@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C.England: (82 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> C.England: (82 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>uk tech house <a href="https://everynoise.com/engenremap-uktechhouse.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>House</td>
+  <td>House:18<br>C.Latino:4<br>Electronica:2<br>C.England:2<br>Funk:2<br>Techno:1<br>Synth.Electronic:1<br>C.Brazil:1<br>C.Dutch:1<br>C.France:1<br>C.Germany:1<br>C.Italy:1<br>Disco:1</td>
+  <td>Iglesias &quot;Fusion&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dc1ca66a65c067f479058344b1f945a99b71c32e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-tech-house" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2dJiqY6e5cvgwc0GCkHX8W" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/69gaT6mNkTzauMVmtUqc6c" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6QOQbhz4AafcSnq5qK94Kf" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2MZrLAvyzllA2vmiKzPhSM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>uk house <a href="https://everynoise.com/engenremap-ukhouse.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>House</td>
+  <td>House:14<br>Synth.Electronic:3<br>C.Brazil:3<br>C.England:2<br>Techno:1<br>C.Germany:1<br>Dubstep:1<br>Instrumental:1</td>
+  <td>WEISS &quot;Feel My Needs&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7c8b4ef99a875abe96a9bb48e7260eee449a62e7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-house" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6MylRBnwQpJ7KlEnCQgSpd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6kGaF3tICgOyC5rxN2iWTm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5hUMhjSDsOa9NC8gDToLiz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1GQW8sgTGwTWAcyYk7o4CU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>uk dnb <a href="https://everynoise.com/engenremap-ukdnb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Drum and Bass</td>
+  <td>Drum and Bass:11<br>Breaks:2<br>C.England:2<br>Funk:2<br>House:1<br>C.Belgium:1<br>C.Brazil:1<br>C.Dutch:1<br>C.France:1<br>C.Germany:1<br>C.Russia:1</td>
+  <td>T&gt;I &quot;Dye Migration - Serum Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bd11813b73f3adc93cd553bb71576c3ac9f34b05" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-dnb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/65UofZd1pC3HdvIXQzYC62" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2M1fwGNtBjBGhLc9FuCI70" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/03in8DM2di2GfHAGdDrTts" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Z9Jxg9Zjnj88agSAcHBWK" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>uk dance <a href="https://everynoise.com/engenremap-ukdance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Dance</td>
+  <td>House:8<br>Dance:5<br>Synth.Electronic:2<br>Pop:2<br>C.England:2<br>Pop.World:1<br>Vocal:1<br>C.Belgium:1<br>C.Germany:1<br>C.Spain:1</td>
+  <td>Nathan Dawe &quot;21 Reasons (feat. Ella Henderson)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d156060faa3d61d5fa3ea817f7ebc4008a954549" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-dance" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5kDzf9eWk24U16EBkTDdpb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2j8n4bukCIYy8vnVWbAExn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1xjYim3Vd0C4RGTC7YyQao" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/15ddo5F2Ann1rK3HdZInJW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>britcore <a href="https://everynoise.com/engenremap-britcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>House:4<br>C.England:4<br>Synth.Electronic:2<br>Pop.World:1<br>C.Africa:1<br>Dubstep:1<br>Hip Hop.World:1</td>
+  <td>Killa Instinct &quot;The Bambi Murders - Vocal Mix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c4cfb23299c6339280bc11d47ca3a5a7db90399d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/britcore" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Ku6x4O3yZobgHR8y6KSnq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4G0ZpTjxeBUV6qJBlGuZfA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0cnK2qSkYA2hk4RJK8hFvz" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>uk bass <a href="https://everynoise.com/engenremap-ukbass.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Synth.Electronic:8<br>Techno:3<br>C.England:2<br>Dubstep:2<br>Psy.Goa:1<br>Breaks:1<br>C.Africa:1<br>C.Indonesia:1<br>C.Irish:1<br>C.Latino:1</td>
+  <td>An Avrin &quot;Paticake&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9b7cad3cd47a7991c1d167d24aa63017dbfae060" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-bass" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0I8grtFFc4NxQ28GwWDCsW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0TbY4dwRJzlcH59RkPi3xz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2qYbitPdEBVr1dV7mNiAQJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZyGzyoKAsmqxX8EmnqFuG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>uk garage <a href="https://everynoise.com/engenremap-ukgarage.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>C.England:5<br>House:3<br>Synth.Electronic:2<br>Funk:2<br>Breaks:1<br>Vocal:1<br>C.Africa:1<br>Dubstep:1<br>Hip Hop.World:1</td>
+  <td>Architechs &quot;Body Groove - Mix Mc Version&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d4ecd2007b270cfa3a4ef9721662da7e478c626c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-garage" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/62PxpGVt45pYZ8O66VVZWP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/04YH1VeFoeTWHOEpndFqvn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6IFHIsLl7M7TztHR3qMb17" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0bkmm8p9pdDNRvXZRvIVYB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>old school uk hip hop <a href="https://everynoise.com/engenremap-oldschoolukhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Hip Hop.World</td>
+  <td>C.England:4<br>Curated.life:3<br>Hip Hop:3<br>Hip Hop.World:3<br>House:1<br>Pop.World:1<br>Rap:1<br>Dubstep:1<br>Disco:1<br>Blues.Soul:1</td>
+  <td>Hardnoise &quot;Untitled&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fd87456438fb4da9bd7a567b6a4c5e9595b9b820" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/old-school-uk-hip-hop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ZtDa9oO5dpvF5L5dE977c" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/02aNiKrogXDFckVbKGjqB2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3okLoZF99tKiRBKUCV1cNX" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>uk funky <a href="https://everynoise.com/engenremap-ukfunky.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Funk</td>
+  <td>House:4<br>Pop.World:3<br>C.England:3<br>Funk:3<br>Synth.Electronic:2<br>Electronica:1<br>C.Africa:1<br>C.Dutch:1<br>Dance:1<br>Instrumental:1</td>
+  <td>Donae\'o &quot;Gone in the Morning - Tough Love Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cfc31c9c4637f3e6bd6df0a4b28eb9e69a86ff12" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-funky" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4lK54lu5nxD3iMlCXMIQwx" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/22xqPEtJOcOTbCS8EfUHoT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1gpE3uE0QlW5Y29VPbZOHy" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5aGoZ4dDWxOiaN5BHnwnsr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>bmore <a href="https://everynoise.com/engenremap-bmore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England &#x2380;</td>
+  <td>C.England:4<br>House:2<br>Synth.Electronic:2<br>Chill:1<br>C.Africa:1<br>C.Dutch:1<br>Dubstep:1<br>Funk:1<br>Hip Hop.World:1</td>
+  <td>DJ Sliink &quot;Break From Jersey&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dcbbe437ca12661a1301d27cb7bd06740661f323" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bmore" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0BucwX8Ux9HWxDYgbI445d" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2gCUZ85vEdqo39YwjX9bEZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Ag70mCONA41afzGrC4BJk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5POUj27iWdCd4rbmZMpAEW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>uk dub <a href="https://everynoise.com/engenremap-ukdub.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Reggae</td>
+  <td>Reggae:11<br>Synth.Electronic:3<br>C.England:3<br>Electronica:2<br>C.Brazil:2<br>C.Latino:2<br>Chill:1<br>C.Africa:1<br>C.France:1<br>Jazz:1<br>Traditional:1</td>
+  <td>Murray Man &quot;Come Ina the Dancehall&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cdf1d577ea96fb2188cbcf43c297da492dd92cbf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-dub" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/73BLB2ZMlXTieOIXEeOVDY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/41XTNqyoB4cXtgbvON6Z9w" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7I7PWSQVhcvSiAfnrsVZfd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/26WyOzMUEyRwNa5IXheb8h" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>trival <a href="https://everynoise.com/engenremap-trival.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England &#x2380;</td>
+  <td>C.England:3<br>Synth.Electronic:2<br>Pop.World:1<br>C.Africa:1<br>C.Brazil:1<br>C.Dutch:1<br>Dubstep:1<br>Funk:1<br>Hip Hop.World:1<br>Reggae:1</td>
+  <td>El Pel del Mikrophone &quot;La Cumbia Tribalera (feat. Edw<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0fecab7f9171dd00fa8490ff5922cf186a7c5303" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trival" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2yF75EnQd9BoJyqWrBnQQB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0mdhMezVp3Ie1N6O03uLTi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7cHfLHj30b8mWs391HzRt5" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>kuduro antigo <a href="https://everynoise.com/engenremap-kuduroantigo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England &#x2380;</td>
+  <td>C.England:2<br>C.Dutch:1<br>C.Latino:1<br>Dubstep:1<br>Funk:1<br>Hip Hop.World:1</td>
+  <td>DJ Malvado &quot;Que Nada nos Separe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2f00d72ddc1cfac3e2604dfedb3d7c3a8a744bc6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kuduro-antigo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/01glKSMaMIShSMgPwkVD3p" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/75OOYMGB4AUTiC0BwFKZbc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5dSsfGDd3KCaHOVySHtw0t" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/14hjt72Zy0tWZxSFnsh9J2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>uk pop punk <a href="https://everynoise.com/engenremap-ukpoppunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Pop.World<br>Punk</td>
+  <td>Punk:8<br>Rock:5<br>Pop.World:3<br>Pop:2<br>C.England:2<br>Gospel:2<br>Metal:1<br>Goth:1<br>Emo:1<br>C.Canada:1<br>C.Latino:1<br>C.Taiwan:1<br>Party.Festival.Band.Cheer:1</td>
+  <td>ROAM &quot;Playing Fiction&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9983957b0b3cab90c7b7b4e9d3b74b1b4574336a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-pop-punk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/36ixGm7UcqjpBUEHmAY1R1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/22RUzcFd7DZD1O6m0oNAtk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0BBgWUDMS1s7ioS2nFbR5k" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1w1hV7gRrAXR0Qf8Kfp5Kg" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>uk reggae <a href="https://everynoise.com/engenremap-ukreggae.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Reggae</td>
+  <td>Reggae:11<br>C.Africa:3<br>C.England:3<br>Blues.Soul:2<br>Hip Hop.World:2<br>Punk:1<br>Rock:1<br>Rap:1<br>C.Brazil:1<br>C.Latino:1<br>Dance:1<br>Traditional:1<br>Disco:1</td>
+  <td>Jah Shaka &quot;Jah Shall Reign Dub&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e7d34836eba2dc4fb455db6b1190c0cab22c5ade" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-reggae" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/76KkfFSYNWSYHwnhRBxUDq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3TSdLbO8nwgzdc21IGoXHz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0fTO4yW8vjV69lzOVkAx3m" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Nf563On92v0iHiDN0WRzK" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>british power metal <a href="https://everynoise.com/engenremap-britishpowermetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Metal</td>
+  <td>Metal:19<br>C.England:3<br>Hardstyle:2<br>C.Sweden:2<br>Synth.Electronic:1<br>C.Brazil:1<br>C.Germany:1<br>C.Italy:1<br>C.Japan:1<br>Gospel:1</td>
+  <td>Memories Of Old &quot;Some Day Soon&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5b55d3c860299f97ea1d78223858e7c00b9143c7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-power-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3RXQ3Vu6OkKnehN0QE0H2F" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3XykeAybw40TGIYvCghGWU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3QG1PvV8roKBdPfTxdmXUe" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1OtAYecN2m6BI0sp5JBNeG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>brit funk <a href="https://everynoise.com/engenremap-britfunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Funk</td>
+  <td>Funk:7<br>C.Latino:4<br>Synth.Electronic:2<br>C.England:2<br>Dance:2<br>Disco:2<br>Reggae:2<br>C.Africa:1<br>C.Russia:1<br>C.Turkey:1<br>Jazz:1</td>
+  <td>David Joseph &quot;You Can\'t Hide (Your Love From Me) - Or<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/76e904103a8e55d207465f7b1467bb091ed16127" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brit-funk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4rAO16HPp9ZQZ4bvclqVWe" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4iPJHsdgCBTdQ0IXYELnNW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7dwX6i3reWmP5CcerKFzXk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2pdDWliYsxOEs9iY6kxzwB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>britpop revival <a href="https://everynoise.com/engenremap-britpoprevival.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Pop.World</td>
+  <td>Rock:10<br>Emo:5<br>C.England:3<br>Indie:2<br>Pop:2<br>Pop.World:2<br>C.Latino:2<br>Gospel:2<br>Punk:1<br>C.Sweden:1<br>C.Taiwan:1<br>Party.Festival.Band.Cheer:1</td>
+  <td>Columbia &quot;This Life&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/81e541db1645ca53878db677ea38c879e5b5ec0d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/britpop-revival" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6jOp6WuIpRNcUXOVDrIqTm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7BlYgej7VJz90NKeTqgxKC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1JAaYUAnDdy0hFQ3KHZN7E" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4NbknS0Dk6r0g2r23kCUbq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>zouk riddim <a href="https://everynoise.com/engenremap-zoukriddim.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Reggae</td>
+  <td>Pop.World:6<br>C.Latino:5<br>Reggae:5<br>C.England:2<br>Rock:1<br>Pop:1<br>Trap:1<br>Rap:1<br>Rap.World:1<br>C.Africa:1<br>C.Japan:1<br>Dance:1</td>
+  <td>Datcha Dollar\'z &quot;Tek it to dem&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/30b0592f9f6874ef6405f66f781d4278130da497" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/zouk-riddim" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6vkcfCa0G2qHz5CogrViSl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1CNCH5VugAdNhPOMvVlJGm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/76gyWS1NrryGTvpwruvo1I" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/30S8Kvds1Te0JkjPRRrJKR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>uk dancehall <a href="https://everynoise.com/engenremap-ukdancehall.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Dance</td>
+  <td>Reggae:7<br>Dance:5<br>Pop.World:2<br>Rap:2<br>C.England:2<br>C.Latino:2<br>C.Sweden:2<br>Hip Hop.World:2<br>C.Africa:1<br>C.Germany:1<br>C.Italy:1<br>C.Spain:1<br>Curated.life:1<br>Hip Hop:1</td>
+  <td>Kojo Funds &quot;Check (with RAYE)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3fdbf33d61385c878c4f95f032a745b89bab1e9c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-dancehall" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0vcUt06PMmyZUJ9BlAu1Xp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66rZONZbRcta1QH0k9jXsC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1CQunuSgEbNLR3PJuqwZQ4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1wa2QEaxiCriGc02zVctvx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>uk metalcore <a href="https://everynoise.com/engenremap-ukmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Metal</td>
+  <td>Metal:19<br>C.England:3<br>C.Germany:3<br>Progressive:2<br>Hardstyle:2<br>C.Brazil:2<br>Gospel:2<br>C.Italy:1</td>
+  <td>While She Sleeps &quot;Silence Speaks&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d07d041e6882504c93433806e2adb9e50a919e1c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-metalcore" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/65cw6LKvXQFFHR2iwNjZHY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3M2RsHaKNRVDIof2v37TvY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1XS1KNrZRa7iwlADaFu8KE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5eRpR48DzeWsc5GdohOzvY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>british alternative rock <a href="https://everynoise.com/engenremap-britishalternativerock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Rock</td>
+  <td>Rock:9<br>Emo:5<br>C.England:3<br>C.Latino:3<br>Hardstyle:2<br>Indie:2<br>C.Russia:2<br>Progressive:1<br>Metal:1<br>Pop:1<br>C.Brazil:1</td>
+  <td>Lower Than Atlantis &quot;I Would&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/49c04f8ed7c97ad751b244032e441febf984fd7a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-alternative-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/05orH2qSCaMxEhFeaND3Yh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5gKUJzqKpHsEynz4Sqtt51" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wl11LquT093dhOgl3wtti" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0zECPL3bPvGkSqGFim06Yr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>british indie rock <a href="https://everynoise.com/engenremap-britishindierock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Indie<br>Rock</td>
+  <td>Rock:17<br>Indie:6<br>C.England:3<br>C.Japan:3<br>Rave:1<br>Punk:1<br>Pop:1<br>Pop.World:1<br>C.Canada:1<br>C.Indonesia:1<br>Dance:1</td>
+  <td>The Maccabees &quot;Toothpaste Kisses&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8535ebeaad36ca58303d220561f1d7e9a32afa86" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-indie-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0ARblR7ZK5o8QPd3dNnjqr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7GdWQodCnuQXTNjUn2ogHp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/03qPmtHZW23NgQn7eQlF57" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4CQqrfOuQ6IZsZlfY8zewY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>uk post-punk revival <a href="https://everynoise.com/engenremap-ukpostpunkrevival.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Punk</td>
+  <td>Punk:10<br>Indie:5<br>Rock:3<br>C.England:2<br>Synth.Electronic:1<br>C.Brazil:1<br>C.Germany:1<br>C.Japan:1<br>C.Spain:1<br>C.Sweden:1</td>
+  <td>Egyptian Blue &quot;Nylon Wire&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2d4594d2571d39e73f36720e80e1d3b93d9b1f5b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-post-punk-revival" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4sFHOe1hDHoSURA28xL9SJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7fOTv1atmejuwF7IQyDV4n" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4aygsGwLvbJtAsFcqfxSJB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7o6lWl8faqfNtOxNEue3l2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>uk post-hardcore <a href="https://everynoise.com/engenremap-ukposthardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Hardstyle</td>
+  <td>Metal:16<br>C.England:4<br>Progressive:3<br>Hardstyle:3<br>C.Italy:3<br>C.Brazil:2<br>C.Germany:2<br>Folk:2<br>Rock:1<br>C.Latino:1<br>C.Russia:1<br>C.Spain:1<br>C.Sweden:1<br>Gospel:1</td>
+  <td>Hell Is For Heroes &quot;I Can Climb Mountains&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0289eb0d73a602ffc11e4f4461f62efabae15351" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-post-hardcore" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/13iX2jp2aqqMlnF9j81MbY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6cu1FII5S3kPisvqtkCbjt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4oelabVwXt8kSr4GNmu6LF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3eVH2mav13gi8haEBqhhu8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>british soul <a href="https://everynoise.com/engenremap-britishsoul.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>C.England</td>
+  <td>Pop.World:9<br>Blues.Soul:8<br>C.England:2<br>C.Japan:2<br>C.Latino:2<br>Pop:1<br>C.Belgium:1<br>C.Germany:1<br>C.India:1<br>C.Korea:1<br>C.Sweden:1</td>
+  <td>GABRIELLE &quot;Out Of Reach&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7c85f376ca9618554d26d16c4768431da5ce20af" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-soul" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Ar1S6TuqmS0R2RV59AR1k" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6WBMq41pkjpjlLBCCTS2SX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4WZFBGnlYz4vvEGZql02PY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3gGWauwiK5WsoZHZWHU5VU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>britpop <a href="https://everynoise.com/engenremap-britpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Pop.World</td>
+  <td>Rock:9<br>Indie:7<br>Pop.World:2<br>C.England:2<br>C.Indonesia:1<br>Dance:1<br>Curated.life:1</td>
+  <td>The Bluetones &quot;Slight Return&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/965410f1ef2fedb9474077ae8c6f4de167493863" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/britpop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5H4y9vLqOhWGn0xsExGxKb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/027sUIKR9p32i1YitEJnUb" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3dSDip8Jr7smldOrvb34bb" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/22OjDeDG9z72P0lCxPJBTd" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>uk alternative pop <a href="https://everynoise.com/engenremap-ukalternativepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Pop.World</td>
+  <td>Indie:8<br>Pop.World:7<br>Pop:3<br>C.England:2<br>C.India:2<br>C.Latino:2<br>Synth.Electronic:1<br>C.China:1<br>C.Japan:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Taiwan:1<br>Gospel:1<br>Instrumental:1<br>Curated.Eyedress.Era:1</td>
+  <td>James Blake &quot;Mile High (feat. Travis Scott &amp; Metr<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5c70671d300023689f92f565aa23cfa82c6daf39" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-alternative-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5sD1aSVv0KWgbGHo8GYKMC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0DtUX1slcCrDsrYjgxl6rt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2QKI7ebcoPCFd1P1wLRot7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4YRqNIPxC3t6zDX9qpfHZf" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>uk drill <a href="https://everynoise.com/engenremap-ukdrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Rap:5<br>C.England:3<br>Hip Hop.World:2<br>Viral:1<br>Rap.World:1<br>C.Africa:1<br>C.Dutch:1<br>C.Germany:1<br>C.Irish:1<br>C.Latino:1<br>Gospel:1<br>Comedy.Storytelling:1<br>Hip Hop:1</td>
+  <td>Y.cb &quot;No Hook&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8c5401706350e8ee53e84b031f02004ed79d1ec0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-drill" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/685ydTa5UXcEU5NZbLJCy7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0LQ1A0JvmSM18gnXAdh6Ed" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZdlMnjRCOwqElZxx0xHm0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZccjjP89CXACQ6GlMyzxi" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>uk post-punk <a href="https://everynoise.com/engenremap-ukpostpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Punk</td>
+  <td>Punk:10<br>Rock:4<br>C.England:2<br>Indie:1<br>Pop:1<br>Goth:1<br>Emo:1<br>C.Japan:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Sweden:1<br>Experimental:1<br>Curated.life:1</td>
+  <td>Magazine &quot;Shot By Both Sides&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1a024b6c942ed5535bbdfb2ec076fd40a16968b6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-post-punk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0PdixUwE2t9E4ehH6TaTyi" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZiIdjiG4jhqxu6qjf9FGx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/46jR7rZQJa27zkmAgGoAvh" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6aJsZuVquPdfIS407meDGU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>uk pop <a href="https://everynoise.com/engenremap-ukpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Pop.World</td>
+  <td>Pop.World:8<br>Pop:7<br>C.England:2<br>C.Latino:2<br>Indie:1<br>Viral:1<br>C.Dutch:1<br>C.India:1<br>C.Italy:1<br>C.Thai:1<br>Folk:1<br>Gospel:1<br>Party.Festival.Band.Cheer:1</td>
+  <td>Griff &quot;Vertigo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/28f56f19466d4fd09f4e791e0f40bd694c5c6cf9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0OGpuF8rnCzlcjJLsdywny" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1y3xutKspHqFSvEpL8GD5N" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0YqU5nKvW037W4RkqpnKvx" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2q08jpLvsSd0s1C4ZJZl4j" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>uk diy punk <a href="https://everynoise.com/engenremap-ukdiypunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Punk</td>
+  <td>Punk:17<br>Rock:2<br>C.England:2<br>C.Latino:2<br>Hardstyle:1<br>Metal:1<br>C.Dutch:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Sweden:1</td>
+  <td>Pizzatramp &quot;My Back\'s Fucking Fucked&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/657639a3119ffc85df36757e6d5c296315cdd6c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-diy-punk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6m7ilZfojjvq5MaPmDOoDp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Zk5eC01BU30OurfOEnxyA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3JSW2sbltvumN0FsmBP9AE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Pp0oekGD92jQ5CrgLCZHU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>luk thung <a href="https://everynoise.com/engenremap-lukthung.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Pop.World:7<br>Gospel:4<br>C.England:3<br>C.India:3<br>C.Thai:3<br>C.Indonesia:2<br>Folk:2<br>Rock:1<br>Pop:1<br>C.Belgium:1<br>C.China:1<br>Country:1</td>
+  <td>Kowtip Thidahdin &quot; &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/30e564b734a25facf4d405c6831e69911f4cae3c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/luk-thung" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1rdqGPtCn0Tgdl5gjw8RkO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1kqev7ERI75M5AekTSHmBL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6MslyOrYueYGlzlUsxJqSP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/29CxOvVxPjpT1VShQkJAIE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>uk experimental electronic <a href="https://everynoise.com/engenremap-ukexperimentalelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Experimental<br>Synth.Electronic</td>
+  <td>Experimental:8<br>Synth.Electronic:4<br>C.England:4<br>Industrial:1<br>C.Africa:1<br>C.Brazil:1<br>C.Native.Tribes:1<br>C.Poland:1<br>Ambient.General:1</td>
+  <td>Lee Gamble &quot;Blurring&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f9f1b2bfa5251b435acba4b98556991cb7f68bdb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-experimental-electronic" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7nC4B9gtrOBQ7aT1J7FiOt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07LgyO7TxxOkkNRK5PMHVD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/17UMTEypbl2l0Xgda0Asgx" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3l8irLmOY5pSqDsDGXo93p" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>uk desi rap <a href="https://everynoise.com/engenremap-ukdesirap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>C.India<br>Rap.World</td>
+  <td>Rap:6<br>Rap.World:4<br>Hip Hop:4<br>Hip Hop.World:4<br>Trap:3<br>C.England:3<br>C.India:3<br>C.Africa:1<br>C.Belgium:1<br>C.Dutch:1<br>C.Latino:1<br>C.Pakistan:1<br>C.Sweden:1<br>Gospel:1</td>
+  <td>Sparkaman &quot;Kahin Deep Jalay&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/728ddbf5b8904f7c17240dcc8a20705c91a69c63" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-desi-rap" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1L8b3rshioVsle9aLhnOBn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18ZKp5o8vIQwINFBeAipNf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7g2laQge9BSivy9stDf2oB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/48lVhrk1wIbb8C9Xyxnjx9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>british industrial <a href="https://everynoise.com/engenremap-britishindustrial.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Industrial</td>
+  <td>Experimental:6<br>Industrial:4<br>C.England:4<br>Psy.Goa:1<br>Techno:1<br>Synth.Electronic:1<br>Indie:1<br>Metal:1<br>Pop:1<br>C.Brazil:1<br>C.China:1<br>C.Taiwan:1<br>Jazz:1<br>Ambient.General:1<br>Reggae:1</td>
+  <td>Test Dept &quot;Fuckhead&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5da2b6aebe6028e831017c54d48569ff068afc6a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-industrial" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2w6OEmFNpIydAbrB8m0DIX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2thEs36dFE5sVXXj4KXt2C" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7iMqaTeb92ctyaGtPGmTt4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3ygJBX7KODIkiKHfPD4lT8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>uk contemporary r&amp;b <a href="https://everynoise.com/engenremap-ukcontemporaryrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>C.England</td>
+  <td>Blues.Soul:12<br>Pop:5<br>C.Latino:5<br>C.England:2<br>Indie:1<br>Viral:1<br>Pop.World:1<br>Chill:1<br>C.China:1<br>C.Canada:1<br>C.Dutch:1<br>C.Italy:1<br>C.Portugal:1</td>
+  <td>Jaz Karis &quot;THERAPY&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6a52d94723c825a92f1198a294694bcf304a2b16" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-contemporary-r&amp;b" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5kdP7VQedYdDzhTvfovu0u" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1FTw3W00kXWL3Bm9zPUwhg" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ctsIngLJWIbyHlmA1at79" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1yS2q1mEDc0KYkpDByfBRx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>uk worship <a href="https://everynoise.com/engenremap-ukworship.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Gospel</td>
+  <td>Gospel:15<br>Indie:2<br>Pop:2<br>C.England:2<br>Rock:1<br>C.Brazil:1<br>C.Canada:1<br>C.Latino:1<br>Party.Festival.Band.Cheer:1</td>
+  <td>Soul Survivor &quot;Build My Life - Live&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9c846d4ce94e57ab609536759e60d2f814a73f74" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-worship" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2MxKA7QOz7cY1HiaURHCFV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3d6IulQbSvfnZDdVPil2jK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2VMxnEbMSABqFciJl4g1Eu" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/60LjQgb7Mih4qQjMCF8XEa" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>british black metal <a href="https://everynoise.com/engenremap-britishblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Metal</td>
+  <td>Metal:20<br>C.England:2<br>Progressive:1<br>C.Brazil:1<br>C.Italy:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Sweden:1</td>
+  <td>Ninkharsag &quot;The Dread March of Solemn Gods&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4691156d54ddaac0a9c19ae388164ac4df2e42db" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-black-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3OBMtOkVBAydo8hxzubKJp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Wxyhkt2746uhCEvMIhvRG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0WkZ5pCDvvLA1RQs0NdtzA" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/10GHJFNi3gythKEw7yxn3f" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>uk post-metal <a href="https://everynoise.com/engenremap-ukpostmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Metal</td>
+  <td>Metal:14<br>C.England:2<br>Psy.Goa:1<br>Rock:1<br>Emo:1<br>C.Brazil:1<br>C.Italy:1</td>
+  <td>Conjurer &quot;Endeavour&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/77a7b9d82b1ce61c47edff9988bc070519a78059" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-post-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ls1UJ1dPxJh3t0W7C8m6R" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>uk noise rock <a href="https://everynoise.com/engenremap-uknoiserock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Rock</td>
+  <td>Metal:16<br>Rock:3<br>C.England:2<br>Punk:1<br>C.Italy:1<br>C.Latino:1</td>
+  <td>USA Nails &quot;Feel Worse&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d129a64c87087b7da38b43ba78dd197f9ebfa7fd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-noise-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3mIhbXZ9SxkUok4IxLBxZk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ovdRqTPc84voU67HUiPrb" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>uk rockabilly <a href="https://everynoise.com/engenremap-ukrockabilly.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Rock</td>
+  <td>Rock:8<br>Pop.World:5<br>C.England:2<br>C.India:2<br>C.Latino:2<br>Punk:1<br>C.Afghan:1<br>C.En.Espanol:1<br>C.Germany:1<br>C.Italy:1<br>C.Pakistan:1<br>Folk:1<br>Gospel:1<br>Ska:1</td>
+  <td>Bob &amp; The Bearcats &quot;Hold on Tight&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a448b7a228fb4ad4f3d94d5bfc40e8661fbcdbf1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-rockabilly" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Irmgvta0tsUY1iKDxLrlq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ckIXt4UBNFpUU8FQmraaF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5GIBYZArv1XZn4QFBoQI7r" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ElzLtgIyZblQPZF7goyUG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>uk beatdown <a href="https://everynoise.com/engenremap-ukbeatdown.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Hardstyle:9<br>Punk:3<br>Metal:3<br>C.England:2<br>C.Belgium:1<br>C.Irish:1<br>C.Islands:1<br>Gospel:1</td>
+  <td>Splitknuckle &quot;Gutter Thoughts&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f54493caf5bc5877a7c60f852171993f467e6712" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-beatdown" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0glh6jk9qJ2Ibuz3qbERLu" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4yv496dKsHPKOLFIQoaaNk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5szPCajFUJOHWzwM2ItR5u" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Z5bBjeo1tMaQzUuDzbN8d" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>uk hip hop <a href="https://everynoise.com/engenremap-ukhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Hip Hop.World</td>
+  <td>Hip Hop.World:9<br>Rap:4<br>C.England:4<br>Hip Hop:4<br>C.Africa:2<br>C.Germany:2<br>Rap.World:1<br>C.Sweden:1</td>
+  <td>Sneakbo &quot;Love Is A Gamble (feat. Kida Kudz)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f337aef4bda66c39b5405c5b67a968bc40d2e4e0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-hip-hop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Ek92zIh4Sq5IVU9Mgv7d6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/356nBN3REHiQ2gM1jWlSeK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7l9g24XB8DcjsN0vMMmesj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3XLI4w74aUhbcAnoYFgxve" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>nottingham indie <a href="https://everynoise.com/engenremap-nottinghamindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Indie</td>
+  <td>Indie:22<br>C.England:2</td>
+  <td>Do Nothing &quot;Handshakes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/94f932f8508f34d6b7f43f552d84f49a74898a24" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nottingham-indie" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/48mDWXE7pJuczyu4xEDoOM" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4xVy3ylMqf5sdzr5IZ1kiF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1KQAOPXVVEZBd8fsnbmgqp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>british math rock <a href="https://everynoise.com/engenremap-britishmathrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Rock</td>
+  <td>Rock:9<br>Indie:5<br>Psy.Goa:3<br>Punk:3<br>C.England:2<br>Instrumental:2<br>Pop:1<br>Emo:1<br>C.Belgium:1<br>C.China:1<br>C.Latino:1<br>C.Spain:1<br>Curated.Eyedress.Era:1</td>
+  <td>Alpha Male Tea Party &quot;Have You Ever Seen Milk&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4cdc55a7f7304bc067a3363283dc0cc0221c915b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-math-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4A25PQ7cmCfzglHhmU6dGW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5HBVibzgTEuwL3v1quGzpQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MgI5vhDrENE21vfzP0oZO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4hXR33WkVV6l0O5YD6g7jm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>british death metal <a href="https://everynoise.com/engenremap-britishdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Metal</td>
+  <td>Metal:15<br>C.England:3<br>C.Brazil:2<br>C.Dutch:1</td>
+  <td>Benediction &quot;Stormcrow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4b029a5e29b381c2e73706f2c55c5df66badddb9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-death-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0CxGe6CAsVFQ36LNkTA54T" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7C3vB0IlhPTGeMpdwZqMFf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1yNr2meGQpkTvZ0viSdoV7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mIevszidJ7EyP61NQgdqc" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>british country <a href="https://everynoise.com/engenremap-britishcountry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Country</td>
+  <td>Pop.World:4<br>Indie:3<br>C.England:3<br>Gospel:3<br>Country:3<br>Pop:1<br>Americana:1<br>C.India:1<br>C.Indonesia:1<br>C.Korea:1<br>C.Russia:1<br>C.Taiwan:1<br>R.Jewish:1<br>Folk:1</td>
+  <td>Jade Helliwell &quot;Smoke&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b7877bd0c57a78b4a0474aa02ccd993732d09234" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-country" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/45GY1sw2pj0LitunAGcMz6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/699URHs7HJ704jhjxrwbcR" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3YheoR5ALLDQqICvfuORJr" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4X7IK4V9nslD3txosS4UL3" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>nottingham hip hop <a href="https://everynoise.com/engenremap-nottinghamhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Hip Hop.World</td>
+  <td>Hip Hop.World:10<br>Rap.World:4<br>Hip Hop:4<br>C.Brazil:3<br>C.England:3<br>Rap:2<br>C.Germany:2<br>C.Canada:1<br>C.Irish:1<br>C.Sweden:1</td>
+  <td>Shxdow &quot;Blxck Genie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/536db54b350acf11659086e532df03f1524132a9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nottingham-hip-hop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7aZwQ2AfYB26031fLdyL5w" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2UP34ZpOeib9h37jy5oeNq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0DpHTDtYH95jFGtFWjAOuS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>british grindcore <a href="https://everynoise.com/engenremap-britishgrindcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Metal:6<br>C.England:3<br>Punk:1<br>C.Brazil:1<br>C.Sweden:1</td>
+  <td>Anaal Nathrakh &quot;Forward!&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ba5497a5e2267824a5a642722138325139cf235e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-grindcore" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7hPv9n2p7juD8FpGxnvQpX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4IlXBFaQzzmIORxHmRjaUK" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>51</td>
+  <td>british post-rock <a href="https://everynoise.com/engenremap-britishpostrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Rock</td>
+  <td>Rock:19<br>C.England:2<br>C.Italy:2<br>C.Latino:2<br>C.Native.Tribes:2<br>C.Poland:2<br>Psy.Goa:1<br>C.Belgium:1<br>C.Brazil:1<br>C.Canada:1<br>C.France:1<br>C.Portugal:1<br>Experimental:1<br>Instrumental:1</td>
+  <td>Maybeshewill &quot;He Films The Clouds Pt. 2&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/941a2f1852d4c550697a15bdff97c0cc0c4559e0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-post-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Ccp38dYsbJlU0FvQjjadQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5XCMyOavRe0Bs7QzhfibSZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7u4izG7xNDcyDYtrNcyO9X" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3hds08trVaar0lSyc3sN2Z" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>52</td>
+  <td>uk stoner rock <a href="https://everynoise.com/engenremap-ukstonerrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Rock</td>
+  <td>Rock:10<br>Metal:7<br>Psy.Goa:4<br>C.England:3<br>C.Sweden:2<br>Emo:1<br>C.Canada:1<br>C.Dutch:1<br>C.France:1<br>C.Germany:1<br>C.Italy:1<br>C.Latino:1<br>Gospel:1</td>
+  <td>Elephant Tree &quot;Echoes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0bfd1a2117810c9f3aefe8fabc7823ff2b79c2da" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-stoner-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6D5Jw413HjEVU0GBcNUoXT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3qQZyYpRAnRrg9md6ZVLb7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0z5NFrqEGEljmvemERbvBe" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Ifakbfbf0L8p6edHQtfA2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>53</td>
+  <td>uk melodic rap <a href="https://everynoise.com/engenremap-ukmelodicrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Rap.World</td>
+  <td>Rap:6<br>C.Africa:5<br>Hip Hop:5<br>Rap.World:4<br>C.England:3<br>Hip Hop.World:3<br>Pop.World:2<br>Trap:2<br>Indie:1<br>C.Belgium:1<br>C.India:1<br>C.Sweden:1</td>
+  <td>38 Shamz &quot;Diamonds&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f216907d5c907f2f60cb5819c0050925c6f439c6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-melodic-rap" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7iUYGZURZOX9qhZbICjihp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5UQjVxrAReLrgbpBgY4uHa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1H4d8D208PlzeHIWe9rHuu" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3fEJFCZdlQusxEsQVnnH2T" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>54</td>
+  <td>uk doom metal <a href="https://everynoise.com/engenremap-ukdoommetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Metal</td>
+  <td>Metal:11<br>Rock:5<br>Psy.Goa:4<br>C.England:3<br>C.Italy:2<br>Progressive:1<br>C.Brazil:1<br>C.Dutch:1<br>C.Latino:1</td>
+  <td>Slomatics &quot;Seven Echoes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7e6c349684540bd20f9b9812a32542f7218ea904" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-doom-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5FJqBWsK43TUQp0Jqzj0w1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7bALlMl5yb4KqWLkkuJIv8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5GHrGZZT88pltxlKVFwEXw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6OUrOxQ2tJggQGIubQLDUi" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>55</td>
+  <td>uk contemporary jazz <a href="https://everynoise.com/engenremap-ukcontemporaryjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Jazz</td>
+  <td>Jazz:10<br>Experimental:6<br>Indie:3<br>C.Japan:3<br>Synth.Electronic:2<br>C.England:2<br>C.Brazil:1<br>C.China:1<br>C.France:1<br>C.Italy:1<br>Folk:1<br>Gospel:1<br>Blues.Soul:1</td>
+  <td>Golden Mean &quot;Orbit Trip&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/df0377a14fa380ade596603ffbe5e1a1282d6459" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-contemporary-jazz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5PbFpGjcgYEyyJvl6Z2wt4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3bK61cSWKheeCSRipAiVDK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3QMwnWdVyXv6sJZBWJO0Fa" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4j3RSRZjMJCJBNAq0mGRBH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>56</td>
+  <td>classic uk pop <a href="https://everynoise.com/engenremap-classicukpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Pop.World</td>
+  <td>Pop.World:7<br>Rock:3<br>Pop:2<br>C.England:2<br>C.Brazil:1<br>C.Dutch:1<br>C.France:1<br>C.Sweden:1<br>Folk:1<br>Country:1<br>Blues.Soul:1</td>
+  <td>Gallagher And Lyle &quot;I Wanna Stay With You&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0852bd01eb654f9c9e93c76bd889edb45f94643a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-uk-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1a8bmZL1UIDLb9XqSfgtws" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4JADbLElsGmqjEJBRHc77Y" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0UosDmXYbSetrg4quwyIXw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/34MqX7k1tyBndVj5B4ZOYE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>57</td>
+  <td>british blues <a href="https://everynoise.com/engenremap-britishblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>C.England</td>
+  <td>Rock:12<br>Blues.Soul:8<br>C.England:3<br>Psy.Goa:1<br>Progressive:1<br>Punk:1<br>C.Dutch:1<br>C.Japan:1<br>Curated.life:1</td>
+  <td>Savoy Brown &quot;Hellbound Train&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7158555616ff08c18b474500d258817bde01c08b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-blues" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5gYoPWpfoYkFxdS7a15WBO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3VDhtZLezgGD1ZGVRFxDtt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6wMGnUiQD1yf3G9Ft0f3rD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7tThsZHhTchl076akfI1DJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>58</td>
+  <td>uk alternative hip hop <a href="https://everynoise.com/engenremap-ukalternativehiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Hip Hop.World</td>
+  <td>Hip Hop.World:9<br>C.England:5<br>Rap:4<br>Rap.World:4<br>Hip Hop:4<br>C.Latino:3<br>C.Sweden:2<br>C.Belgium:1<br>C.Canada:1<br>Gospel:1</td>
+  <td>Finn Foxell &quot;Cool Bless Safe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e9542e1c30f3446c5e1af4bf801548f669e53a00" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-alternative-hip-hop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1KJB07h1cyZlw6I6sHAide" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6dVI8NNn1SDmB3T8B9OGba" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/02xjkhygb5dtiYhBMA05uk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0DbnbDVamaiKo9QEu660AM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>59</td>
+  <td>uk christian rap <a href="https://everynoise.com/engenremap-ukchristianrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Gospel<br>Rap.World</td>
+  <td>Rap:6<br>Rap.World:5<br>Hip Hop.World:5<br>Hip Hop:4<br>C.England:3<br>Gospel:3<br>C.Sweden:2<br>Indie:1<br>C.Latino:1<br>Blues.Soul:1</td>
+  <td>Still Shadey &quot;Wait and See&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ff1198a8a115ce2edbf99991e100c6106c7eba5f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-christian-rap" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7uiDWyPL9wjqAeu0xizq1f" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6WHa0S18fTjdPOa0SvLn9X" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5W07gBsiwr5br0FUeTotih" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5vQx1wr27Iy18pmdvLoHbu" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>60</td>
+  <td>british children\'s music <a href="https://everynoise.com/engenremap-britishchildrensmusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Kids</td>
+  <td>Kids:6<br>C.England:2<br>C.Belgium:1<br>C.Latino:1</td>
+  <td>Zingzillas &quot;Do You Didgeridoo?&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4e74972d417bfbdf873259d680dc1050b1ace38a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-children\'s-music" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6CXOnBtD2z6rNI9G6APj8X" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1slv7fOXQqZAVaJe05ebd4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1zi2jgjvbzhxdEX16oDXzs" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6DdbD36Mlyw56N4f8Ejnys" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>61</td>
+  <td>british invasion <a href="https://everynoise.com/engenremap-britishinvasion.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Rock:8<br>Blues.Soul:7<br>C.England:3<br>Psy.Goa:1<br>Punk:1<br>C.Belgium:1<br>C.Brazil:1<br>C.Canada:1<br>C.Japan:1<br>C.Korea:1<br>Folk:1</td>
+  <td>Billy J. Kramer &quot;Bad to Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e9ef32f32f8ecd35001b0d4a9edcbf992330094e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-invasion" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4UptWIEPwIimCpCHayG4yZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Mflsbsobx8NvRVblGi4RT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2884AlchLX6yoeX2L7wb5g" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6qqjaVROHRh5KYjeOM0aL4" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>62</td>
+  <td>british experimental <a href="https://everynoise.com/engenremap-britishexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Experimental</td>
+  <td>Experimental:12<br>C.England:4<br>Industrial:3<br>Synth.Electronic:1<br>Metal:1<br>Rock:1<br>C.Africa:1<br>C.Brazil:1<br>C.China:1<br>C.Korea:1<br>C.Latino:1<br>C.Portugal:1<br>C.Taiwan:1<br>Ambient.General:1<br>Reggae:1</td>
+  <td>Coil &quot;Tattooed Man - Remastered&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c617d7c4e5b3e66570dd20a46751ad518bebaa59" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-experimental" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7yYi9aJirMqgnn5XlqOkZp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5TOFICm4VIVwfDeWb2eUiQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2pgHFrrIxnT0tP3CzwaMh9" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ysQvEPc8dlKmF4A1XChiw" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>63</td>
+  <td>classic luk thung <a href="https://everynoise.com/engenremap-classiclukthung.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Pop.World:5<br>C.England:3<br>C.Thai:2<br>Folk:2<br>Gospel:2<br>Country:2<br>Americana:1<br>C.Cantonese:1<br>C.Canada:1<br>C.India:1<br>C.Indonesia:1<br>C.Irish:1<br>C.Latino:1</td>
+  <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4b1e46fd801115aef7b649c5d5ed73d6d47e6fa0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-luk-thung" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5J6tUHPxVyzd4jRgIat5uc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7dK9Sek6aRojsq9PkmPvLx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18CN9irMVmxgAdiAWjjRUk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2dbu3AcMnvly0CcmeRYNOT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>64</td>
+  <td>uk americana <a href="https://everynoise.com/engenremap-ukamericana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Americana<br>C.England</td>
+  <td>Americana:7<br>Indie:3<br>C.England:3<br>Country:3<br>Folk:2<br>Gospel:2<br>Rock:1<br>C.Brazil:1<br>C.Dutch:1<br>C.Latino:1</td>
+  <td>Bear\'s Den &quot;Above The Clouds Of Pompeii&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5ff8ed0a8779b44aaa6040a16fce9cd8c92a1a2a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-americana" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1fy3ClO9H8sOTy5ij9H5DC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5zcF9qkjyrUIwyWbv4OXXz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1blaf9VNQ3cZkgxKf0oooQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7aZTWkBe5YB9CJqb8cu2V1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>65</td>
+  <td>british singer-songwriter <a href="https://everynoise.com/engenremap-britishsingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Folk:11<br>Indie:5<br>C.England:2<br>C.Sweden:2<br>Pop:1<br>C.China:1<br>C.Canada:1<br>C.Indonesia:1<br>C.Irish:1<br>C.Japan:1<br>C.Portugal:1<br>C.Taiwan:1<br>Party.Festival.Band.Cheer:1</td>
+  <td>Billie Marten &quot;La Lune&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/de82ae7b724ff7944682a2b0f531619c6076af14" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-singer-songwriter" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6lEM8mYvo3M5ntO3FAiIvt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3aCdx2Xnayamf5ZCvrJBEo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4y1rNYY6XRVkwVv3tLJMmY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4L03x7PXcUZG07nHjvL6x8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>66</td>
+  <td>slam poetry <a href="https://everynoise.com/engenremap-slampoetry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England &#x2380;</td>
+  <td>C.England:2<br>Comedy.Storytelling:2<br>C.Africa:1<br>C.Belgium:1<br>C.Latino:1<br>Folk:1<br>Country:1<br>Traditional:1<br>Blues.Soul:1</td>
+  <td>Phil Kaye &quot;Succulent&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0461f47ed2c43f81808f683d6170bb3c9c5261f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/slam-poetry" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/02OGpAADCHQbMhxilfo320" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0VZWdAevfS3W0wBG8PQEaR" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5TiPjFerQ5oQAZ46bIfCll" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KGqJIel7pZNobrpmGvNiM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>67</td>
+  <td>cocuk sarkilari <a href="https://everynoise.com/engenremap-cocuksarkilari.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Jazz:6<br>C.England:3<br>Instrumental:3<br>Folk:2<br>Traditional:2<br>Pop.World:1<br>Kids:1<br>C.India:1<br>C.Irish:1<br>C.Islands:1<br>C.Latino:1<br>C.Portugal:1<br>C.Taiwan:1<br>C.Thai:1<br>C.Vietnam:1<br>Holidays:1<br>Choir:1</td>
+  <td>Sihirli Grup &quot;Ya Satar Bal Satar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5372f7104cb12483ffab768ca855f4a3e91ab2d3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cocuk-sarkilari" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/18R3qeUAGv24F7ZGZlCR6W" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7kvWhGR6m24DJmUu6rLC73" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3vZSOmTcbGZFoLuetVXry5" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4RuGCQIHfoYmakHnBkKSAr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>68</td>
+  <td>british jazz <a href="https://everynoise.com/engenremap-britishjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Jazz</td>
+  <td>Jazz:15<br>C.England:2<br>Traditional:2<br>Pop:1<br>C.Africa:1<br>C.Belgium:1<br>C.Dutch:1<br>C.Islands:1<br>C.Japan:1<br>C.Latino:1</td>
+  <td>Ezra Collective &quot;What Am I to Do?&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4ffa7e0b768e1ab5d17d078df367f74f199f3a49" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-jazz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0LCXuAqnGnHjIORznov5OB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6MJhTUy3UaMsxbevLGQQ8x" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Dyd0TP1BWNWhhC4er5U18" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0sj4OSIKzx8A6yYLldvU8g" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>69</td>
+  <td>british folk <a href="https://everynoise.com/engenremap-britishfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Folk</td>
+  <td>Folk:13<br>C.England:3<br>Traditional:3<br>C.Latino:2<br>Jazz:2<br>Psy.Goa:1<br>Pop:1<br>Pop.World:1<br>Vocal:1<br>C.Brazil:1<br>C.Dutch:1<br>C.France:1<br>C.Irish:1<br>C.Japan:1</td>
+  <td>Sandy Denny &quot;It\'ll Take A Long Time&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ed51c02cb2e8fc384dfc838869c9ec364d8eac3a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-folk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1m7KQp2pFxqhVvXnde3nNe" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/77dgUUwRvE0V7aZbhmudWF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4AxQk5bkwLZgZntotwwA8w" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZZpCP6Boe2FHVCfDsz0d1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>70</td>
+  <td>british soundtrack <a href="https://everynoise.com/engenremap-britishsoundtrack.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Soundtrack.New.Age</td>
+  <td>Soundtrack.New.Age:13<br>Ambient.General:6<br>C.England:2<br>C.Latino:2<br>C.China:1<br>C.Canada:1<br>C.France:1<br>C.Germany:1<br>C.Italy:1<br>Classical:1<br>Country:1<br>Experimental:1<br>Instrumental:1</td>
+  <td>Ilan Eshkeri &quot;47 Ronin&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5a2b99a8876a41c334c35755c45d3267b0ebeb93" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-soundtrack" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7jcM11GE25u4XbhzuU7wYv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2FUFtLUwtfKiBwInFxcoTo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7KW4OTzJKFz9l6MWMRdylz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Ohr9QLLpwoOYcZTenNR1V" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>71</td>
+  <td>cocuk masallari <a href="https://everynoise.com/engenremap-cocukmasallari.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>C.England:4<br>Kids:2<br>Folk:2<br>Blues.Soul:2<br>Comedy.Storytelling:1</td>
+  <td>Derya Baykal &quot;Kahraman Pinokyo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0ebed57e1c83e2cb69a3f731cc0e7289b3fcca90" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cocuk-masallari" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5q4rTwMeNVX8aSaVzig01o" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0vCavjswFgGzV8XEwlRw9D" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4CK0ZCK1yh8xugvIXozywe" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>72</td>
+  <td>traditional british folk <a href="https://everynoise.com/engenremap-traditionalbritishfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Folk<br>Traditional</td>
+  <td>Folk:10<br>Traditional:4<br>Vocal:3<br>C.England:3<br>Jazz:3<br>Pop:1<br>Pop.World:1<br>C.Brazil:1<br>C.Dutch:1<br>C.France:1<br>C.Irish:1<br>C.Japan:1<br>C.Latino:1<br>C.Portugal:1</td>
+  <td>Jon Boden &quot;How Long Will I Love You&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d72dee794a983dac12fb446a87b6d3107bae1306" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/traditional-british-folk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Tqsr2oxmvcAecCQ4CKXyK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3wCVgkfPuKIW0am5r6n3fY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0qzWhZenDMV8W6GMyszPR3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KfLEfcxcyEXF4dQejl3ta" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>73</td>
+  <td>british electroacoustic <a href="https://everynoise.com/engenremap-britishelectroacoustic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Synth.Electronic</td>
+  <td>Synth.Electronic:4<br>Classical:4<br>Ambient.General:3<br>C.England:2<br>Pop:1<br>C.Dutch:1<br>C.Irish:1<br>C.Japan:1<br>C.Latino:1<br>Country:1<br>Soundtrack.New.Age:1<br>Experimental:1</td>
+  <td>Delia Derbyshire &quot;Pot au Feu - BBC Version&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cde93f8f44ebc8c165167bb7eedf03d5c3569e1b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-electroacoustic" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1IxeQOKZy4mzWWSTyEIPAC" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>74</td>
+  <td>british comedy <a href="https://everynoise.com/engenremap-britishcomedy.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Comedy.Storytelling</td>
+  <td>Comedy.Storytelling:4<br>Blues.Soul:4<br>C.England:3<br>Kids:2<br>C.Canada:1<br>Folk:1</td>
+  <td>Andy Parsons &quot;Bus Whisperer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/28961fc2c64785a32c30e7787798e1397d34815e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-comedy" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6N4OIZFag86xkAX8mtAdgs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1h41uBuEyVe1kEvz1RSEfV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ObD24JsxGhi2fLHIXGoL4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/16t9nXGOi0hvTCT7bwyhgX" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>75</td>
+  <td>british orchestra <a href="https://everynoise.com/engenremap-britishorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Classical</td>
+  <td>Classical:12<br>Soundtrack.New.Age:5<br>C.England:2<br>Synth.Electronic:1<br>Pop:1<br>C.France:1<br>C.Irish:1<br>C.Italy:1<br>C.Japan:1<br>Ambient.General:1<br>Experimental:1<br>Instrumental:1</td>
+  <td>Royal Liverpool Philharmonic Orchestra &quot;Cavalleria ru<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a9328ebab3b3a8e505c7f8c597ce3652fd84d6ac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-orchestra" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Mo9RKaNJKLiaTwmEifJmh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1v7c7xon6Wd1YNFlHFWGQU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/69pFSK1V0aWFzG4O8594lt" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6GQVK441dTzSQ5bkW46Knp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>76</td>
+  <td>british dance band <a href="https://everynoise.com/engenremap-britishdanceband.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Dance</td>
+  <td>Traditional:3<br>C.England:2<br>Folk:2<br>Dance:2<br>C.Africa:1<br>C.Ethiopia:1<br>Jazz:1<br>Classical:1<br>Blues.Soul:1</td>
+  <td>Henry Hall &amp; The BBC Dance Orchestra &quot;I\'m Putting<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2b29852938826ff5966b00b454502e92e72f6edc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-dance-band" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0siH6CPssx5JoGoqfz5ahx" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6NHJ2NYBOzwXGRG5SsnyFZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3UqK3ejomxITxRvK9N0Mhn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3xbA3cT13ZX5QxLQPtpPdX" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>77</td>
+  <td>british brass band <a href="https://everynoise.com/engenremap-britishbrassband.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Classical:13<br>C.England:3<br>C.Brazil:2<br>Instrumental:2<br>C.Belgium:1<br>Baroque:1</td>
+  <td>Brighouse And Rastrick Brass Band &quot;The Floral Dance&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fea4bd160e782139378784dce8e4d708120e6777" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-brass-band" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0ccmoySgXs0AELQNSidOup" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4XbPUefQNS4WiflodB6328" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1H6hK0HTpAIg2nHNjAMYvG" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/40q1D8JThLbGb8VEx9LGct" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>78</td>
+  <td>british classical piano <a href="https://everynoise.com/engenremap-britishclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Classical<br>Instrumental</td>
+  <td>Classical:20<br>Instrumental:12<br>C.England:2<br>C.Japan:2<br>C.China:1<br>C.Italy:1<br>C.Korea:1<br>C.Spain:1<br>C.Turkey:1</td>
+  <td>Paul Lewis &quot;Sonata No. 14 &quot;Moonlight&quot; in C-<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4423bbe58e0471b17db02036ac93f9e1696dc663" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-classical-piano" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1B6F2FbtDNniCVjROeU0ga" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2nHgdLOws07MjsE7rmYJ5U" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6HNMbVGTJb73PV53yUHTHN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7z0a6r27PRCwctqrgzhAzq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>79</td>
+  <td>british choir <a href="https://everynoise.com/engenremap-britishchoir.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Choir</td>
+  <td>Choir:17<br>C.England:2<br>C.Native.Tribes:2<br>C.Poland:2<br>C.Canada:1<br>C.Hungary:1<br>C.Sweden:1<br>Gospel:1</td>
+  <td>Gloucester Cathedral Choir &quot;God Save the Queen (Arr. <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a87a643ff80858b652135129620f062f40779519" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-choir" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/06Bclwc54xNjzibZZKl6KX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7EcDDrK7duBRqKMQncEeCu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6DaWLIW6SjK2PJ0uw3hgou" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0dUOZjJHf3GxRyo0F53Gnn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>80</td>
+  <td>british contemporary classical <a href="https://everynoise.com/engenremap-britishcontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Classical</td>
+  <td>Classical:20<br>C.Canada:2<br>C.England:2<br>C.Irish:2<br>C.China:1<br>C.Italy:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Russia:1<br>C.Spain:1<br>C.Sweden:1</td>
+  <td>James MacMillan &quot;O Radiant Dawn&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/26e278189bdbc93a2472245102699efb546ac462" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-contemporary-classical" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/191fWkH2OE2jHsG0o2zxAP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4kcDQ5lMIqpsSljhipCrJp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0xBjPJvSkwJncLZlHlrNJI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/10iRzdRU7mtoIhA85H8t6k" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>81</td>
+  <td>victorian britain <a href="https://everynoise.com/engenremap-victorianbritain.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England</td>
+  <td>Classical:14<br>C.England:4<br>C.Canada:3<br>C.France:1<br>C.Irish:1<br>C.Korea:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Russia:1<br>C.Sweden:1<br>Choir:1</td>
+  <td>Samuel Sebastian Wesley &quot;The Church\'s one foundation&<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/aa0edaab9e5530206e284f596196776bdd601c90" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/victorian-britain" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/35phkNovnV5dsBwKpBHUuI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Hclj1fr16WS6wHauiYtpu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4lAjNzYSY4NwdfLK9lS8Pa" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>82</td>
+  <td>british modern classical <a href="https://everynoise.com/engenremap-britishmodernclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.England<br>Classical</td>
+  <td>Classical:17<br>C.England:4<br>C.Canada:1<br>C.France:1<br>C.Irish:1<br>C.Korea:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Russia:1<br>C.Sweden:1</td>
+  <td>Frank Bridge &quot;Berceuse (Arr. For viola and piano)&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3bb747f15bb86577a37f1bc47c34815a40dd0f63" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-modern-classical" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4HozwtuUKoDxCR0GrX7o8L" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2AOAv9Lk3LOpVYI9GsO0BI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4avRqhGq5bxwjpkQlt80ie" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/57hVgO4E59eTl8rdqIYRyM" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
+
+</body>
+</html>

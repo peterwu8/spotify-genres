@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Native.Tribes: (13 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Native.Tribes: (13 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Native.Tribes is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>native american metal <a href="https://everynoise.com/engenremap-nativeamericanmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Native.Tribes</td>
+  <td>United States<br>native american music<br>native american black metal<br>black metal<br>thrash metal<br>folk metal</td>
+  <td>Under Exile &quot;Convalescence&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5fe5384e0d1d80fa95baa7806093c7dc119bf453" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/native-american-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5FbSMzcru7eCyRW8hW53nS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0vG94HgHG3UD4kmxft0uMe" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Dn2oX6MifyDcdf5rTeCGF" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>native american hip hop <a href="https://everynoise.com/engenremap-nativeamericanhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Native.Tribes</td>
+  <td>United States<br>native american music<br>native american roots<br>horrorcore<br>alternative r&b<br>christian hip hop</td>
+  <td>Nataanii Means &quot;Eagle Feathers&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2c017d8002ff0a34906c9dff55d3129c984eff1f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/native-american-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/39vcZ1GIftcH9bntOAoCnn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1pLIhrmDfoUGF3cAAa0aMd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6s2L8ysUacEE5QNWoARl2h" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5FkX0iAzIU8eaMDwaub76G" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2jQWU0LS5Vogjzd6uhd0WS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>native american black metal <a href="https://everynoise.com/engenremap-nativeamericanblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Native.Tribes</td>
+  <td>United States<br>black metal<br>folk metal<br>native american metal<br>mexican black metal<br>mexican metal</td>
+  <td>Pan-Amerikan Native Front &quot;Battle of the Wabash&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/36c3cdf5748c0443b87dbc638270ec0c9cbba91a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/native-american-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1soolx64kYXJORntXZCkgK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/11T12xBrL6y7iPW3YUYfFm" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>native american contemporary <a href="https://everynoise.com/engenremap-nativeamericancontemporary.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Native.Tribes</td>
+  <td>United States<br>native american music<br>native american traditional<br>blues<br>blues rock<br>rez country</td>
+  <td>Keith Secola &quot;NDN Kars&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9c61314795f294d5c2d525404be2934ecda22093" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/native-american-contemporary" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2c4MjBlGo7dQVGe22LUh2D" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0MWd2kxEaYwZ2REf6yD5fQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2my8DmBFQyI7j6mfv5dLiv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2TMe9M4m4tBZbm7Fg5jmto" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>powwow <a href="https://everynoise.com/engenremap-powwow.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Native.Tribes &#x2380;</td>
+  <td>United States<br>native american music<br>traditional music<br>native american traditional<br>canadian indigenous music<br>rez country</td>
+  <td>Little Island Cree &quot;Remember Me, I\'m The One&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d31059716e00dbb43dd7ddbb49e1f06d94844f10" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/powwow" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Cicdsk1DoXBMxM8jeEPEG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5lbGsHhaPmrtQ05JdPPVR2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4RQcRTAeHlKeWgIfAIpBsQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1cvGEH65fSl2twWrH8zXYa" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0aZIgHFnvm1ckpryuYZ1Xk" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>panpipe <a href="https://everynoise.com/engenremap-panpipe.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Native.Tribes &#x2380;</td>
+  <td>Ecuador<br>native american music<br>folclor andino<br>huayno<br>musica andina<br>romanian folk</td>
+  <td>Orchestra Panpipes Gold &quot;Take My Breath Away&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/aa45a1c31ca588b6449c3bd080e0a38efa7b472a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/panpipe" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ODmeGWHMFxblKJM91uUN2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5B3UjHWa4cJ3pYd8dIiOKy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5L6Cdy2pXBPJE3l0zNlgFh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/078Y3qRfZrLd6JdZmaHw1t" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>alternative americana <a href="https://everynoise.com/engenremap-alternativeamericana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Americana<br>W.Native.Tribes</td>
+  <td>United States<br>americana<br>gothic country<br>southern gothic<br>black americana<br>alt country</td>
+  <td>Angel Olsen &quot;Shut Up Kiss Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2e7e3f3f700e3df1c97f1cf58086449cf91e523d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/alternative-americana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2lOuU4ZLPN0byJO0Wqc4d9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3C2FLsEbuhOQ2lUDdc7IyF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/06kgsxIwSA5USN5Y4dctkO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rnPchE6mj3i1atefD7AWE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5nA6Hf3yTJNILHO4MS15CT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>metis fiddle <a href="https://everynoise.com/engenremap-metisfiddle.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Native.Tribes &#x2380;</td>
+  <td>United States<br>polka<br>native american music<br>chanson quebecoise<br>old-time fiddle<br>traditional folk</td>
+  <td>Reg Bouvette &quot;Red River Jig&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/01c1902eacd34568b875a12a868f1da398c5566d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metis-fiddle" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/34T6hUvUhuJzTww8OlHtck" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5IbOdfnqpUIOnO0xdH11pQ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/79YB2Y8qtKld3gKDWTfauw" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>native american spiritual <a href="https://everynoise.com/engenremap-nativeamericanspiritual.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Native.Tribes</td>
+  <td>Mexico<br>native american music<br>navajo<br>native american traditional<br>traditional music<br>musica indigena mexicana</td>
+  <td>Lance Crowe &amp; Edmond Poochay &quot;Straight Song 5&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ef2606a06a17e041decd88da3b0ac3cd69387fc5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/native-american-spiritual" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0ueJ8rYpuET3RivEaJnhY4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0q8tZkSf7dCPWPyrGsDsNt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1uv6d8hnBxbF4HaodyYEW6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Gx4NAvMGiiyEwSpnU5HZH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/725aZ1SZjBCWysJfVwyvv4" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>shamanic <a href="https://everynoise.com/engenremap-shamanic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Native.Tribes &#x2380;</td>
+  <td>Ecuador<br>high vibe<br>kirtan<br>world devotional<br>axe<br>devotional</td>
+  <td>Shimshai &amp; Susana &quot;Abuelito Fuego&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f890e6c9f55519d494a83ccd8523518f37172be1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/shamanic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6HfVqL6ED4eZmtiZHQlAh4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2gmlwXEHmmvxTG6JZN5uBQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6sA9Q5yU6ZRUjIJ3YXXSRJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3DK1OmBKnmPHARx0DolN6k" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Ee1MEpPwfcWfghbC8mzVn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>native american traditional <a href="https://everynoise.com/engenremap-nativeamericantraditional.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Traditional<br>W.Native.Tribes</td>
+  <td>United States<br>native american music<br>native american flute<br>new age<br>navajo<br>native american spiritual</td>
+  <td>Keith Bear &quot;Hidatsa Garden Song&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/63b85aa0273ccbdf349d6cca71d044c5081cae0e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/native-american-traditional" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3k3Yveh9aU1YhEGx7LYQRZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/68rmL0aONaVZnsaa3v9aec" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4fCT6DYuicKnPQPtqiEAYM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/314ItpGNBtmgsSgiISJtcH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Ed0EdK2kEDnsAn4bzAzu3" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>kapa haka <a href="https://everynoise.com/engenremap-kapahaka.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Native.Tribes &#x2380;</td>
+  <td>Polynesia<br>waiata maori<br>native american music<br>polynesian traditional<br>traditional music</td>
+  <td>St. Joseph\'s Maori Girls College &quot;Te Hokinga Mai&quot<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8c8f57a4e77b363ebfce1ffa4b91efac46ae2b60" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kapa-haka" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/68zImd70db9Z5hLqsoqIe0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2zVryf7Hg7btu7fMo8cAaZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7LzHSLuyk8eAPcxp31hd90" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1njap5wO2E7CXmJ3nMvhZS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>native american flute <a href="https://everynoise.com/engenremap-nativeamericanflute.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Native.Tribes</td>
+  <td>United States<br>native american music<br>native american traditional<br>space music<br>native american contemporary<br>navajo</td>
+  <td>Hovia Edwards &quot;Song of Friendship&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/791eded570ac7f090cdbe60e84bac8be9081d34b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/native-american-flute" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7duVWjKaLnrIRtBfYxgsjw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5rQtlZ3zEXGxBm5ZpyNPPL" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6PL7GxUb8P8DkdXE51rV9D" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3PS0PHNny7C4CLx5cC53Ik" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1OMVpNOXJCk8YHvGjxDfgz" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

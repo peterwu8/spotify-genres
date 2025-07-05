@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Switzerland: (26 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Switzerland: (26 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Switzerland is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>swiss house <a href="https://everynoise.com/engenremap-swisshouse.html" title="&#x2306;">&#x2306;</a></td>
+  <td>House<br>W.Switzerland</td>
+  <td>Latin America<br>melodic techno<br>tech house<br>deep house<br>melodic house<br>afro house</td>
+  <td>Adriatique &quot;Miracle - R DU SOL Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c000683fff86da6a295e552ab59fef6e8005b5dd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-house" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2bbMT1IYk3ZC7skA3RBcsN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3GrPSi790vyzZOp5KlrWex" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6O1m26xR13wZPNi4QGfIHu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/58C4Tsf3SoFIKncfj1iFUm" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>swiss techno <a href="https://everynoise.com/engenremap-swisstechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Switzerland</td>
+  <td>Germany<br>minimal techno<br>melodic techno<br>melodic house<br>techno<br>acid techno</td>
+  <td>Lilly Palmer &quot;The Violator&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e864afc98438d8a3af161537b8e4179c451d49ca" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0GU4V0ervfDPkVOL5hh7Rx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5MScpF1soeUbcrlZk14uMo" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>swiss pop <a href="https://everynoise.com/engenremap-swisspop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Switzerland</td>
+  <td>Switzerland<br>swiss indie<br>tropical house<br>swiss hip hop<br>swiss rock<br>deep house</td>
+  <td>jan SEVEN dettwyler &quot;Kurz auf Stop&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/89c637542e866829aa063294f67a5c6daaa3c1d7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2024RpmnRmPpMYk0rSx3jL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/18cADc0sGSv5mLQlZzX0YO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Kzn2sZhVG3WSyt8LZWK0N" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ZMSnTGqDFSr3wOrFK8wL7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bg2S33sKMTZmnNOvazuaO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>swiss reggae <a href="https://everynoise.com/engenremap-swissreggae.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Switzerland</td>
+  <td>Switzerland<br>reggae<br>swiss hip hop<br>ragga<br>roots reggae<br>dub</td>
+  <td>Phenomden &quot;Stah da&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5ebf8a69affd4c2d9359deb0af81aa8d89f3e01f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-reggae" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ZFSpJMUcBB93LnKz6Cvzm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3BMqtY6C1ZQaS7LbanRysj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/69EmqYpZ8LcG8CaIH9aEx8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7lyKB8w8Qaxr20D3qg4xr2" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4KvI3gUQhZ1JTY0YU60TC6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>swiss trap <a href="https://everynoise.com/engenremap-swisstrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Switzerland</td>
+  <td>Switzerland<br>schweizer rap<br>swiss hip hop<br>kosovan pop<br>moombahton<br>cloud rap</td>
+  <td>DAWILL &quot;Mi Veneno&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4cd9724138b614dc1d108f2919671f5ed3b9e7b2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-trap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3wRYIksWM4P0dC3VbygKKt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ZPDke7UK4y0Ms8I1ldDQG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1UjdCE7U1Z4ynL8aGnjz1G" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/378ZeB3WDcNdb1WG5e7wea" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3N7BuNZPn17oUD7q0UbW3z" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>swiss metal <a href="https://everynoise.com/engenremap-swissmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Switzerland</td>
+  <td>United States<br>black metal<br>thrash metal<br>death metal<br>swiss black metal<br>melodic metal</td>
+  <td>Comaniac &quot;Desolation Manifest&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/479059fd22756ef4aa4994fa0ebccd1ae92dec91" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/01LWFLQhQMQG6YaQDDuoZF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6TDadUNwdzYI5gwc2AkQzW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6rFdl6mD5BTbBgd7evhssU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Ek000BVR5qUfFoU7dINjV" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>swiss punk <a href="https://everynoise.com/engenremap-swisspunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Switzerland</td>
+  <td>Switzerland<br>hardcore punk<br>skate punk<br>hardcore<br>punk<br>ska punk</td>
+  <td>Kn &quot;Achtsamkeit und Harmonie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5b97f1f53890234ba7d9a869ab1bd902cf1d5854" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6cEG3XdKWgFxkYrR5eIXG8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ylxNfVL2l80wWwdnhcGLQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/10dEGXAINdPrkJkveIY8Sf" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>swiss alternative rock <a href="https://everynoise.com/engenremap-swissalternativerock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Switzerland</td>
+  <td>Switzerland<br>swiss rock<br>swiss indie<br>stoner rock<br>swiss pop<br>mundart</td>
+  <td>Velvet Two Stripes &quot;Boots Walkin\' All over You&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e67f995fa2b3c90e0811e3fa9da4402b5ed07405" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-alternative-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/11DGHPoxwTNeJVcqVBvpHb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4HbPdWQOaZo2nokBecGMhb" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1xtM5tjzcbxb2U4mYiQ4kk" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>zurich indie <a href="https://everynoise.com/engenremap-zurichindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Switzerland</td>
+  <td>Switzerland<br>swiss indie<br>swiss indie folk<br>swiss singer-songwriter<br>synthpop<br>sovietwave</td>
+  <td>Black Sea Dahu &quot;In Case I Fall for You&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e11f69cfb0f5710f0604c0a4d86acf500facc975" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/zurich-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/77sDvZipcMTL518N9gJnLt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0jNHdwA4dCJkYmPBHlt4r2" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>swiss black metal <a href="https://everynoise.com/engenremap-swissblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Switzerland</td>
+  <td>Germany<br>black metal<br>swiss metal<br>atmospheric black metal<br>voidgaze<br>doom metal</td>
+  <td>Aara &quot;Phthonos I&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/127731a9d841087227af698081769b63f907dc14" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4t4QxZBq1Q3s6y1OomQnEX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3es9dCYSTrK0eqLSTOP2QM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/100ByUbe6AfB2F262uM2eC" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>schweizer rap <a href="https://everynoise.com/engenremap-schweizerrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Switzerland</td>
+  <td>Switzerland<br>swiss hip hop<br>swiss trap<br>bern indie<br>kosovan pop<br>german hip hop</td>
+  <td>Jamal &quot;Back 2 Back&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4613d4d8f390defc1707cffe3ce9b1a0b34ca23e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/schweizer-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3qeTbemZJxxpVOOKuah3fk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7xONzzkvidW4GhBPWmrgD6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7C83C66xH3mz5yDblvFmnT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3poTDxRSyspWQ5xRqOgboQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6tg3Iy9ugHkay6bke4fbyt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>swiss hip hop <a href="https://everynoise.com/engenremap-swisshiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Switzerland</td>
+  <td>Switzerland<br>schweizer rap<br>mundart<br>swiss trap<br>swiss reggae<br>swiss indie</td>
+  <td>PVP &quot;Zr zum Gl&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7230f519a6d260f64e663fe2f23409cc5f74c49c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0jVQDbsuL3I0Ir1LACFptP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0C6FPUvOGv3GEXpMaGxwpK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7M2xVP9VhPvVlYwhGkOCIy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6olbDt1pVbVjsG0q4PwEAI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5t2e3WnbP0uNrtadESMgx2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>swiss worship <a href="https://everynoise.com/engenremap-swissworship.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>W.Switzerland</td>
+  <td>Germany<br>worship<br>german worship<br>christian<br>german ccm<br>cedm</td>
+  <td>Upstream &quot;So liebt wie du&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d95bc730cea5d280062c94ce91d16d22ad55d2dc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-worship" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5okE09oFksT1Swb5Iwml1F" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bbNyU2ArtAlvyXRglev4y" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1QnkYv9rIRl75ICijehy5C" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3jQtI2RpkcCtOM2SZdN3Gm" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ifTz4afiyYt5bLjv8Crtx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>swiss indie <a href="https://everynoise.com/engenremap-swissindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Switzerland</td>
+  <td>Switzerland<br>swiss pop<br>swiss rock<br>german indie<br>swiss hip hop<br>bern indie</td>
+  <td>Jeans for Jesus &quot;Wosch no chli blib&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cae16e6b52e35f910ab6b8c14f2d18e1507f34ab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1daLH3EEGobT1oQYMFf9RH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5pz9R983fOY5AKNpEl7OJk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0fpuTd0YdujYprHEXhqOt4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4adpk9wQmXF1WpSOdT04lN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2UL8TKB8e7BCQnKTHcfRPi" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>swiss rock <a href="https://everynoise.com/engenremap-swissrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Switzerland</td>
+  <td>Switzerland<br>swiss indie<br>mundart<br>swiss alternative rock<br>swiss hip hop<br>basel indie</td>
+  <td>Z West &quot;I sch dr mis H&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3f09362f81a53e5c0e9caf21af54ce73a3fda2db" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/18hmuGmdOdCPkD2t37xpmE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5uM73LuSChLxZIKzTqvwUb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7tMAsYhPoHEsS0XVggxN9R" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1m2sU1toMh8gZGtZPSsrnt" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/38WlH0NphxMuGkq8aN5ocZ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>basel indie <a href="https://everynoise.com/engenremap-baselindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Switzerland</td>
+  <td>Switzerland<br>swiss rock<br>swiss indie<br>experimental<br>space rock<br>action rock</td>
+  <td>Audio Dope &quot;Absence of Gravity&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9222673ba99f3c7dbb2eb0b0f740047ffc4be1c3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/basel-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3r9ffcg471g83TCSkZgSJz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4nwdZdimMWgw2evDDGtQ6I" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>swiss country <a href="https://everynoise.com/engenremap-swisscountry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Country<br>W.Switzerland</td>
+  <td>Switzerland<br>honky tonk<br>country rock<br>bluegrass<br>newgrass<br>schlager</td>
+  <td>Polo Hofer &quot;Alperose&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fcfa1d73481400871dbfaed25f13fedea2cfc491" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-country" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1VRAJmBuvcQBpTq1WXw032" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5fkSaHCkIJjZxl14up4NSh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/38y9M5gw2I45WkkwK05NiC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/62GcMzMPCIwSLjMVstCkZo" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>mundart <a href="https://everynoise.com/engenremap-mundart.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Switzerland &#x2380;</td>
+  <td>Switzerland<br>swiss hip hop<br>swiss rock<br>schlager<br>swiss indie<br>schlagerparty</td>
+  <td>Baschi &quot;Ehrlich&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c6f32ca86b5fbb8809d8034a08b0d32e4a8a85d5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mundart" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3m8zX9rdJuLB4fFznkwTFP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0jRf2cuzt0bLNhZZsLFiGg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/231EfQ4gb9QXvYH0pMj8sD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0krto8yUlJisGETLQkg0oH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5dQC5aduoU9TIAufKBpDZW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>swiss singer-songwriter <a href="https://everynoise.com/engenremap-swisssingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Switzerland</td>
+  <td>Switzerland<br>swiss indie folk<br>swiss indie<br>singer-songwriter<br>europop<br>german pop</td>
+  <td>Marius Bear &quot;Boys Do Cry&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4c6831b35544c27011ad7f7175f7e6dafa20e653" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-singer-songwriter" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/44BG3zQLUClmFECPJsXwUk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/39fDLM4s1IyMlxDLLRFpkX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4qw9uYDidFfWPjMfuGGS7h" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0oV9NjMkKyAJsxFrytTCdY" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>swiss experimental <a href="https://everynoise.com/engenremap-swissexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Switzerland</td>
+  <td>Switzerland<br>experimental<br>avant-garde<br>drone<br>dark ambient<br>minimalism</td>
+  <td>A Devi &quot;Immortelle&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d318a618d37b1b1f407cf4897a9983ade4923c2c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5SIb3OFb97AErfCYhhlPnx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7d9YLozBOYeouQ0UyKPUpZ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>swiss indie folk <a href="https://everynoise.com/engenremap-swissindiefolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Indie.World<br>W.Switzerland</td>
+  <td>Switzerland<br>swiss indie<br>swiss singer-songwriter<br>bern indie<br>swiss rock<br>zurich indie</td>
+  <td>The Gardener &amp; The Tree &quot;Postcards&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/66fad6aa8995ca641f15574062a92538b9c1b040" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-indie-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6EpIFXBW728qiqalKY6Nnq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0hm17FJIGZ2AzX3QCExv9R" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5yx1sOj8wG3mpZUJUkfmJ0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18ix0wwjvAsfexZMCLZ5WQ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>schwyzerorgeli <a href="https://everynoise.com/engenremap-schwyzerorgeli.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Switzerland &#x2380;</td>
+  <td>Slovakia<br>swiss folk<br>polka<br>landler<br>traditional music</td>
+  <td>Schwyzer Schmid-Buebe &quot;Urchige Muotathaler&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/771022826d98015feb98832d23caecbd9f602131" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/schwyzerorgeli" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0J6L67dadO0ems84GTbXmw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5X9EYWYljr2BUBQy4mdIgI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mrCfz3IQhKXsFr82ZdOv1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ZFLSYbcfBBzqMdo6Gt5Ys" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>swiss folk <a href="https://everynoise.com/engenremap-swissfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Switzerland</td>
+  <td>Germany<br>polka<br>schlager<br>traditional music<br>schwyzerorgeli<br>landler</td>
+  <td>Engadiner L &quot;Malojawind&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cafdf37f369cc744fff1f75370205a56c1d6f02d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Jzw4AG7PI3Sq7YKE5wMVg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/623xipOO67LZgslyiF58Mt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/00Ay9gpvAXWp989kpQk5HV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6usBcw7sBfbKlgFoUv9G00" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Dfj4xwKscqUvcfDhy6UdE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>swiss jazz <a href="https://everynoise.com/engenremap-swissjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Switzerland</td>
+  <td>Switzerland<br>avant-garde<br>free jazz<br>jazz<br>nu jazz<br>french jazz</td>
+  <td>Erik Truffaz &quot;In Heaven&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b26de951e3e2edbf798b62c2636aea48bd481c66" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4s4jaGcMPmqaTERS41pqzR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0qP3XxRkbgMXA62pA1N0oR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/42M7YDevskagllMaF3lrWI" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>swiss contemporary classical <a href="https://everynoise.com/engenremap-swisscontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Switzerland</td>
+  <td>Switzerland<br>avant-garde<br>21st century classical<br>chamber music<br>contemporary classical<br>minimalism</td>
+  <td>Michael Jarrell &quot;-R: I. &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/30ce12b032e2a2bcaadbf6b97dd1750c1fef4d48" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ZUnpE690qkjT02Z07UEG4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6WerM05v6Nw7rAFpjWRk7C" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>swiss classical piano <a href="https://everynoise.com/engenremap-swissclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Switzerland</td>
+  <td>Iran<br>classical piano<br>chamber music<br>classical<br>avant-garde<br>historic piano performance</td>
+  <td>Francesco Piemontesi &quot;Preludes, L. 123, Book II: V. B<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cccec55972dcaf6237df6289fbfe0e5f6c215efb" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3JA1ioHSLxoZO5Fj4cPrQI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/38R6g7ojpzP4weT7JspODa" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

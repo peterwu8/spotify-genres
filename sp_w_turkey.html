@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Turkey: (48 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Turkey: (48 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Turkey is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>turkish edm <a href="https://everynoise.com/engenremap-turkishedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>slap house<br>g-house<br>deep house<br>turkish deep house</td>
+  <td>Luwian &quot;In The Morning&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8794d51b0f61a742b337138cfe0bd12bd223a0ad" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/42wq1tIqLzx1CMNFpqLOYe" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6kTzDCR055zwKksH44tCyF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/216raBgRbiufgGOPK91ss1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1IOqSFNVqiscP8FQA0k8uK" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3ioHKABBuDIiKBc3V0Balr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>turkish deep house <a href="https://everynoise.com/engenremap-turkishdeephouse.html" title="&#x2306;">&#x2306;</a></td>
+  <td>House<br>W.Turkey</td>
+  <td>Turkey<br>deep house<br>turkish pop<br>turkish edm<br>t-pop<br>organic house</td>
+  <td>Hakan Akkus &quot;I Can\'t Be - Radio Mix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6db32520762de550558be53884c3b3d5d6a91861" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-deep-house" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6hXw16YTjITzilvwXLQBBC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0vIkzx3mKL65T3gR48Bph2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2t0BYTsz7oO2FfMrbKTHLm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4CEH9iCGFlRBNntr9P4p1b" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2puZkKQIdBfm26wGDEHSFF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>turkce remix <a href="https://everynoise.com/engenremap-turkceremix.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>arabesk<br>oyun havasi<br>kurdish remix<br>turkish edm</td>
+  <td>Furkan Demir &quot;Sana Yanar - Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bf62e1fe623dffbe1bcc5c58a08dedf0c6c3dcca" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkce-remix" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4EWcdPiuxZebVA4SdEeCWG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6bVYXFAfDGQZ1sZYVVIleo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Qhi9esu6FVyRl9gyVAm4t" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6omzCK81Kmi0Uqu9pkjHoz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0tn0wTYI9VVGo9ONDgw0GQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>kurdish remix <a href="https://everynoise.com/engenremap-kurdishremix.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey &#x2380;</td>
+  <td>Turkey<br>arabesk<br>oyun havasi<br>turkce remix<br>kurdish pop<br>beats</td>
+  <td>Etd Produktion &quot;Karacada 2 - Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8b1872d028e0aadc7ff148f7315c72b9c9d568b3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kurdish-remix" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1WopvOxSKAAvz7MRav3u24" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5vLkPTGIeKJXEiesWgr7Tw" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ICBMGHQ5vtAsEGpGULhCh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1CObn2m0qNaXmmeuQbVJfI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Q4T480YwCO08ljl2SQukU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>turkish electronic <a href="https://everynoise.com/engenremap-turkishelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Turkey</td>
+  <td>Turkey<br>darkwave<br>organic house<br>cold wave<br>post-punk<br>downtempo</td>
+  <td>Hedonutopia &quot;Bil ki&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7aae6a13a3a22d265681f7b4a59789d6838b1f61" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ALCOek5BEKP7kPV8hLLrJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6FS4N9H4Kc4VSNGiK8vZPH" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6bdbm80MbZI3qcNyRIfTnq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7eAFivmev2FdH5he0yhI2c" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3tPnjabpHtQghoxPLvvXAn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>turkish reggae <a href="https://everynoise.com/engenremap-turkishreggae.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Turkey</td>
+  <td>Turkey<br>turkish hip hop<br>anatolian rock<br>turkish alternative<br>turkish jazz<br>turkish rock</td>
+  <td>Komik G &quot;Kanayana Kadar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a2b5d92cb72479ba9b148e390dcf2a805e94ca29" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-reggae" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0CXStZi7zhahv2LMioDHsn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2hvyyGRqfKVFvowDHFLcVk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1anDeWXC7ppDq6g3QffXWk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0WE3ALBuz0GPq0JkE0ye4k" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Nu26vtN9pJTjScDCokaQy" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>turkce trap metal <a href="https://everynoise.com/engenremap-turkcetrapmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>Trap<br>W.Turkey</td>
+  <td>Turkey<br>turkish hip hop<br>trap metal<br>dark trap<br>turkce drill<br>phonk</td>
+  <td>7ER0 &quot;Benim &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/63199ec0e345e01a17a9aeb38ea950db5ed2a289" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkce-trap-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6PB3y4XrawWAnZijqe1YJX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/25ggwZmMC245VCZxV9PTYQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2souSMqZhaujoySPGi296t" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/10li4oheDe648icXrg9MHW" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2zbwP4yx2pGKXtoQVE5toV" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>turkce drill <a href="https://everynoise.com/engenremap-turkcedrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey</td>
+  <td>Turkey<br>turkish hip hop<br>drill<br>new school turkce rap<br>turkish trap<br>turkish pop</td>
+  <td>Organize &quot;Yolunda &quot;pavyon<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d9e3fbc77d24aae1b5c53221a21dc32e5b769c6a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkce-drill" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/56J8xVRRR8llQjxrG0KIFC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6MEN9TKQR1RQXEAgtPAmav" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4774u8gI1o6QxcwWvRjuWz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66ZWLzyUX5wnjjBMJL057e" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5hHgKrqIGhlmcrGgBE8HX0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>deep turkish pop <a href="https://everynoise.com/engenremap-deepturkishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>arabesk<br>t-pop<br>oyun havasi<br>karadeniz folk</td>
+  <td>Ye Er &quot;Banane&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8a3e540648ac0b817be3de813c796937c25f95a1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-turkish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2912XdHEbZHDcYCHPE6Tbq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ML7JSFmkkJipKldJqZGbN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4xJ5vyOVI60357henNW9ET" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1anCzWNRtwNqKtkU3HJHGQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/251uv1TeImLXZHZjzkAGt8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>turkish trap <a href="https://everynoise.com/engenremap-turkishtrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Turkey</td>
+  <td>Turkey<br>turkish hip hop<br>turkish pop<br>turkce drill<br>drill<br>turkce kadin rap</td>
+  <td>Tepki &quot;SONSUZA KADAR&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6af23872e06cd6d8b7e8af8cf987982020b0583d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-trap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3EK9qhVDfkjGkKhmYGZWwt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5HmIKVhLNyi6CLopqdLJVU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ElIMByeOtFVJAIaY0xL3F" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Vi4W16faIfFQybSDk63fW" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/73HEjL7u01P0hPytHbAty8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>turkce kadin rap <a href="https://everynoise.com/engenremap-turkcekadinrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Turkey</td>
+  <td>Turkey<br>turkish hip hop<br>turkish pop<br>turkish trap<br>t-pop<br>deep turkish pop</td>
+  <td>Derya &quot;Tarikat&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/acd3b31ddd8df154c60f6fb39dde5ce61eb6fce3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkce-kadin-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2AmykYtn1wg1ww4BbT1znM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0kZ1wslMrw89kqzywLPtQc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2odkFzyIiLvNRdlyS8jXex" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1rxw9x9OIJs0cVa5JVdTTa" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1NofQ0XVJMZV2idXppbzXx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>turkish trap pop <a href="https://everynoise.com/engenremap-turkishtrappop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>Trap<br>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>turkish hip hop<br>arabesk<br>german hip hop<br>oyun havasi</td>
+  <td>6iant &quot;Bulutlara &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/50dfcb70c06e4f8222b4a115f6c1e9f9004287ab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-trap-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Jmy0uS8Ej8oS4dL0TRbV7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6O8py1VYpktcoAnKP3Qj0w" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/25x3IfhKUtYRQijChzr6ud" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2WjJMaGmVEYuk8P1B36SRO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/36aubN6fjNfedyqH5ABte7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>turkish hip hop <a href="https://everynoise.com/engenremap-turkishhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>turkish trap<br>arabesk<br>new school turkce rap<br>drill</td>
+  <td>Sansar Salvo &quot;Dum Taka Dum&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/202637ec2c18111a4ce5c5c141e9270b3af029fe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3x8ee8t8xgJATaSJxMcBdE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4t5PSWEsLQeZ4i90PEpW9i" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/37Fmtr4QHt5zHrOzyfpFQV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2vDIE6EVSKn6USHOfZQoXS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3HH0YgIqZMYvRRdFc9Xt1Z" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>turkish metal <a href="https://everynoise.com/engenremap-turkishmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Turkey</td>
+  <td>Turkey<br>anatolian rock<br>turkish alternative<br>turkish rock<br>turkish death metal<br>death metal</td>
+  <td>Asafated &quot;Bileklerimi Keserken&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e527499785f8ad95a19173c0f4fbee02184c60be" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1bMQg4sxBloJCyR22amu4H" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/44bPq4GzXmjPqkVyGDpAo5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/29iJVAXlPyzjhPhhv3NYv2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ekvgojhm4pYCtKkS0FVSa" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1EYuPhTsHOifcuywgPalM2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>turkish pop <a href="https://everynoise.com/engenremap-turkishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Turkey</td>
+  <td>Turkey<br>arabesk<br>t-pop<br>turkish hip hop<br>turkish rock<br>anatolian rock</td>
+  <td>Burcu G &quot;An Yak&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0402af5596e6ca5b7a9dbedc81b0621e2fbd13d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0y66x6mgzYM2lKWkds3Bxq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4oKodlbJBRKSssO8LhsisY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0pVSTHqupQnwktZQfl8dqX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7aubHoEG57rbIubTn70rQF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/39TYBHt3gyuhBcP3nbY2cQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>turkish post-punk <a href="https://everynoise.com/engenremap-turkishpostpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Turkey</td>
+  <td>Turkey<br>darkwave<br>post-punk<br>cold wave<br>gothic rock<br>deathrock</td>
+  <td>Apartmanlar &quot;Son R&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/33b349b8ac11e779766381b66b6ed8727c939254" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-post-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0JOX16xUXpliqL9hsYl08w" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2I9YaBNikRc9qAxiYnTDqn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1htmqxYqugZd7R0TT9JKj4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4uIOq1GnshhlxOS2wWRbh4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3NXC4ZKMREHokRQfP6O4q1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>turkish death metal <a href="https://everynoise.com/engenremap-turkishdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Turkey</td>
+  <td>Turkey<br>turkish metal<br>death metal<br>grindcore<br>turkish black metal<br>melodic death metal</td>
+  <td>Suicide &quot;Suicide Pact&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9aaf3aeed195d14b10cee66a0df2aca7f83d0662" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4y381xEW3Jv8Szp8ppegbv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Nq3VKfylddr8Ujj7sOvY8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4zEjbYkHNOlSNXd6vRorYR" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6qPArNgEb0G9qlvRxTRjAd" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>turkish alternative rock <a href="https://everynoise.com/engenremap-turkishalternativerock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Turkey</td>
+  <td>Turkey<br>turkish rock<br>anatolian rock<br>turkish alternative<br>turkish pop<br>turkish metal</td>
+  <td>Yok  Kararl  &quot; &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a9fb9ce35ac1875262fb4b9c8a385453533579cc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-alternative-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2faXErrqQoHFzoenIB8QBf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6jBRajLOpvvOZYDDAnfaPg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7HHR5TRyZwACMN8Oeqeccn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1OAcUVhKMFoxYvn4PtPv5n" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Ag1KjmN9c8n5zLxBkxH2P" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>turkish punk <a href="https://everynoise.com/engenremap-turkishpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Turkey</td>
+  <td>Turkey<br>punk<br>turkish metal<br>turkish hardcore<br>anatolian rock<br>turkish alternative</td>
+  <td>deney &quot;5500 TL vs Ben&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ae6556101bf1a84fcc64e078f9d339d954df24fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6fvsetKrZWBWZxr1BfJr5T" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0ZJAsa6M7ro0Y5BoKV9R2x" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/33FEBWZHQO2Fi5ugOui4sS" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0AGMyq5fGESlEcYG4V0KCU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6LKR0zMByo8ktgjbSUitgj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>speed up turkce <a href="https://everynoise.com/engenremap-speedupturkce.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey</td>
+  <td>Turkey<br>turkish hip hop<br>arabesk<br>turkish pop<br>funkot<br>lagu jawa</td>
+  <td>HQE 20 &quot;k speed up&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/052eafd3dd71385583e9414555a5b801c3e27eb6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/speed-up-turkce" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/01rj6JHgHVWwKvhtM02xDr" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3EVIId7wC6mMqfgabmnGov" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/76nyjvaRNLUjeNg9R5JOCo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4tplEz3fa28ZRKmbnrAQaD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6M0DGjjpZ0JWZOn2MiZ8IT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>turkish alternative <a href="https://everynoise.com/engenremap-turkishalternative.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey</td>
+  <td>Turkey<br>anatolian rock<br>turkish rock<br>turkish pop<br>turkish metal<br>turkish jazz</td>
+  <td>Objektif &quot;Mutlu &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6421603f01a115882a70b8400550aff329d13498" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-alternative" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1bvQvUa4zLtMdusigdQxUk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2atTNlZQfTUpZcmRzf9xRb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ozgaSaMGuUgCoKjoz3gKb" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3NZ2FLGMm90lREVx8fehYG" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ktVLjlkSC4T1BUUMQLryz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>turkish black metal <a href="https://everynoise.com/engenremap-turkishblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Turkey</td>
+  <td>Turkey<br>black metal<br>turkish metal<br>death metal<br>turkish death metal<br>grindcore</td>
+  <td>Ohol Yeg &quot; Orman&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7ae350838c471b1caaafb18b051a3b5dd8d9f3b6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5DF5YolBblqJ9ks65mfQoT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7CPFCGaO2YcRhD0707yyYM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0fYZtdY6efoh9rCh7MM5ig" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4DyQ9kkISo4iHmFiS550k4" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>turkish hardcore <a href="https://everynoise.com/engenremap-turkishhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Turkey</td>
+  <td>Turkey<br>turkish metal<br>turkish punk<br>punk<br>hardcore punk<br>screamo</td>
+  <td>ria &quot;Yap&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/34e39a995f8c44d8b31ef5099f5d83ae6e88399b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0hrYhPqv6bpPGfEiE3yivP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1oTfnmfJwvQT8CEk8kEkxR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Duaf7mJbyTp1mzOZtEjDa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4gFW6f4BcyYUvPp9vwk95L" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>turkish alt pop <a href="https://everynoise.com/engenremap-turkishaltpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>turkish rock<br>turkish hip hop<br>turkish alternative<br>arabesk</td>
+  <td>Canozan &quot;A ben a&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bd94aa5536d6f13bb64d016692be73fe475199c9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-alt-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4xQcdMrY7n9sLvwmyqCbYK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7u11wOJGQMZuMQufJB5hYG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4BzeBCFaFHAm1Nwk2iMBg4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3hoAzsCsHdf8NHJWen723M" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18zGhrwFpSSA5HkJAAbQHk" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>karadeniz pop <a href="https://everynoise.com/engenremap-karadenizpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Turkey</td>
+  <td>Turkey<br>karadeniz folk<br>oyun havasi<br>arabesk<br>turkish pop<br>karadeniz turkuleri</td>
+  <td>H Polat &quot;Sen R Bende Yaprak - Pavri&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/47b4a533c4977867dc9691e32fac5993f8500e71" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/karadeniz-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0wIMZm0FG8FzFe8aHGqzGV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4EOruafleTkYnL1IAaevvk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3qOPwRnVvsB99zwGtKywpT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/76tNjmY3TViDkNCT4IgUq0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0e6wL1cEg2e5b2qsVIdVCt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>new school turkce rap <a href="https://everynoise.com/engenremap-newschoolturkcerap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Turkey</td>
+  <td>Turkey<br>turkish hip hop<br>drill<br>turkce drill<br>arabesk<br>trap metal</td>
+  <td>Batusyex &quot;Ben&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d3a30e7b5d73d109e3b669518315c1db5e41bf93" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-school-turkce-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2eNojSNrz5sSbRK1D95SJV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6JwEzg4dQvtHCqRZlOIgsZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4H1utauHNhrfyYfIhPh33h" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2tOECBL1CMiVRPtKeTsTmq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3IbmrI49CfaUnAaQnJ9xZs" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>turkish rock <a href="https://everynoise.com/engenremap-turkishrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>anatolian rock<br>arabesk<br>turkish alt pop<br>anadolu rock</td>
+  <td>Gece &quot;Ben &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3fd76c35dd584858b3506d00b2b6106340411d10" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1SnGcWFlv6NW17CKxiBalR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0aOQSNOuSE84kP4epEGVou" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4qCzuNB44VzrzGmZLTBvnU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5jGD6rOTNyCI6bAADtM3if" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Z8gx0HPL0VZF1HbFnOLTM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>turkce slow sarkilar <a href="https://everynoise.com/engenremap-turkceslowsarkilar.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>turkish hip hop<br>deep turkish pop<br>turkish alt pop<br>turkish rock</td>
+  <td>Furkan Olga &quot;Benim   Seni&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/63e1b700442046def43915730998af6bb1627b0d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkce-slow-sarkilar" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3K8HZMt4LHgccnL8Ghv7tK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6YId5TJbwalucavwCbkZvI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2G2aFOoHfaIDQ0TEVsn7fb" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7MPNBHSA2V0axtRZDBOCDD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3L99L1Z1b70Qbs6ByDOpIF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>huzunlu sarkilar <a href="https://everynoise.com/engenremap-huzunlusarkilar.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey &#x2380;</td>
+  <td>Turkey<br>turkish hip hop<br>turkish pop<br>turkce slow sarkilar<br>arabesk<br>turkish trap pop</td>
+  <td>Bazen U  &quot;Bana Kahve Yapsana&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/997082d59a134bdc36143d971dde14331640624a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/huzunlu-sarkilar" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6atw6GLPPBW9CaLbbDGDrp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Ek20wpQqKamII0X4lPhpA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4vM6SJHtSrmkPmdOLFK5B3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1vJDwCZluYB9I0gcG4ca7L" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3wGJp0WkwK8FY4gCYhGZLS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>turkish singer-songwriter <a href="https://everynoise.com/engenremap-turkishsingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>turkish rock<br>arabesk<br>anatolian rock<br>turkish alternative</td>
+  <td>Jehan Barbur &quot;Selvi Boylum Al Yazmal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/095c59ead9778487d200e9a2edb551f7a7b93843" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-singer-songwriter" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1n0NNxuasI6NjKAmO9YLUj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4tenLyP9rbOA9oI4ZA2hwB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/61ejeVAdUXtvIq0kDrvGhl" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/53AoqxylgarEX38zIs3b65" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2eAx0B4vZRVhQiDY8Z7bZw" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>karadeniz turkuleri <a href="https://everynoise.com/engenremap-karadenizturkuleri.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey</td>
+  <td>Turkey<br>karadeniz folk<br>oyun havasi<br>arabesk<br>turkish pop<br>karadeniz pop</td>
+  <td>Sel Balc &quot;Deniz  Fener&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b30fcd5356d3f8267e78beddf2144bbcbee4f596" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/karadeniz-turkuleri" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ZQkSv7bC2O4DdrTRCrEPP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6nAOWmyYPXdqQtAJ8AdpwX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4GUGr1swZlSBsDoLOmeDwe" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4tCkEBlZsUeC5BcugLtEgp" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6JIMdPT3m6mKwvIJbwbCZQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>turkish experimental <a href="https://everynoise.com/engenremap-turkishexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Turkey</td>
+  <td>Turkey<br>experimental<br>avant-garde<br>anatolian rock<br>turkish electronic<br>turkish alternative</td>
+  <td>Replikas &quot;Ya Elli&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/21f4483a14173cfbb87d128fe2e966669b3aa597" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6xe9bmkArp9ONMbGGLa0xC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/45AtGBDEqhtRHNflon49pO" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>ulkucu sarkilar <a href="https://everynoise.com/engenremap-ulkucusarkilar.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey &#x2380;</td>
+  <td>Turkey<br>arabesk<br>oyun havasi<br>turkish folk<br>turkish hip hop<br>azeri traditional</td>
+  <td>Atilla Y &quot;G Mar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/360bc0ab66cdc775ed7d8b26cc0e9a9d5342f91e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ulkucu-sarkilar" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/479gfdBDvnMfGmGvcdyXBJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4lLbuMCdRlia25u4RwuiXz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2bNgckbuxrPpmTVVYhHOFr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4cDyLQ0JPjWni84x7nLYY7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2CuGg7F5fzLwbJBumQkmmJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>turkish soundtrack <a href="https://everynoise.com/engenremap-turkishsoundtrack.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Soundtrack.New.Age<br>W.Turkey</td>
+  <td>Turkey<br>arabesk<br>turkish pop<br>karadeniz folk<br>anatolian rock<br>oyun havasi</td>
+  <td>Cem Tuncer &quot;Y Tut (feat. Eylem Akta)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9c30837af7b845015114486299909110023301d1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-soundtrack" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2pu3A4hkUqZhDIpRt8qLBN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5sSUx1Z8LMMPNY6JtWRQ6r" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0MTBA9WbWyst9kqaLtsg7z" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1EKRgCLugY9mBrzYieyilN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0iWbJZ0sBeO4HxawlzMmks" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>rumeli turkuleri <a href="https://everynoise.com/engenremap-rumeliturkuleri.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey &#x2380;</td>
+  <td>Turkey<br>oyun havasi<br>arabesk<br>karadeniz folk<br>anatolian rock<br>folk pop</td>
+  <td>G &quot;Varna&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a3ef8efa2ad8b73f126c286275256e150179a46d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rumeli-turkuleri" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6SwUolJKh0s3YvjIRootoQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1woJstwVhgJ0W2JvhsvaTq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4IrfqZ5bPfYfPQVW1wySGP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2tlV906w07hV5EUOixjvZX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Arfl35X9O5RRK5sQkiax1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>turkish psych <a href="https://everynoise.com/engenremap-turkishpsych.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Psy.Goa<br>W.Turkey</td>
+  <td>Turkey<br>anatolian rock<br>anadolu rock<br>classic turkish pop<br>arabesk<br>turkish pop</td>
+  <td>Sel Alag &quot;Malabadi K&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/74f69159e122c895ea0facb070996dd205221f40" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-psych" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/00mEbq1lOpdUnqrUlJB6rF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3hihfADumZ3RhH627kV7Jm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ARDMl1yBxuECtXlYIC4hp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/13SHsESvP5AcrAocyeweRH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Qf55qGrrFgjY08oieOon8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>turkish instrumental <a href="https://everynoise.com/engenremap-turkishinstrumental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental<br>W.Turkey</td>
+  <td>Turkey<br>sufi<br>arabesk<br>oyun havasi<br>turkish jazz<br>qanun</td>
+  <td>Tolga Sunter &quot;Dilek Ta&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b03198ec1171eb7668b3c65bbd437c7120de1c69" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-instrumental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7y0utdzXqgZLpzLrqgHYfZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5RlrJbvsNxoGvxAbXhzjYQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5O4gTyXnWMIx4DIqdtXvWk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2stNQT1azl3jvxH6Y60Q97" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3CoyHSIPJpG150On5kHtCZ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>turkish modern jazz <a href="https://everynoise.com/engenremap-turkishmodernjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Turkey</td>
+  <td>Turkey<br>turkish jazz<br>turkish pop<br>anatolian rock<br>classic turkish pop<br>turkish rock</td>
+  <td>Ediz Haf &quot;K&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9ac368fffd089ac5133dd897c82d4891c6758df9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-modern-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0qJ4axfFjUAgRloGEoMqmg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1jfoRuFq7k7f5ZBEaninHm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1wx3QWQhDHWoVBGEYXp3KU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0a6ekeZbYUrBvNzAH01bDs" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/67nJqCgt8ydLRqhSsHbdP5" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>turkish jazz <a href="https://everynoise.com/engenremap-turkishjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>anatolian rock<br>turkish rock<br>turkish alternative<br>turkish folk</td>
+  <td>Birsen Tezer &quot;Sanki R&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c2a93d9790458a32a9b28cbe100a1e7583f9cba0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2rf44aCzsWQW02wr0bNuvk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2XWuLY8J7ViTQ7Gl3ZV9KV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/79BTiQgmxY4wXciTeEI1Jn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1MAbB3XvfbOpxvCki3j5Yl" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4UH5rRqYXVBsMg9J0BF9l1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>classic turkish pop <a href="https://everynoise.com/engenremap-classicturkishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Turkey</td>
+  <td>Turkey<br>anatolian rock<br>turkish pop<br>arabesk<br>turkish psych<br>anadolu rock</td>
+  <td>Rezzan Y &quot;Bu Gece&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2e0e5e48cde9048675e54b4440029774a29fd179" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-turkish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/06VQt0fSkxBcpLltPG1QkS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6NVtU9wDVVEjDooOWjCFGU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/64myIfn3OqY2VLcL0ixCm2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6TTcTVQOY2Cqn7P5utlMBO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3vGPFw61oCpbNAYaE3CJXa" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>turkish folk <a href="https://everynoise.com/engenremap-turkishfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Turkey</td>
+  <td>Turkey<br>arabesk<br>karadeniz folk<br>oyun havasi<br>turkish pop<br>anatolian rock</td>
+  <td>H Turan &quot;Edremit\'in Gelini&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8a34e5df38d6d6d255373f2dd026f536982cb5b8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7gMKS7eWD7W3IZAizFmHub" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/23w9QtY1mUO3j1sij0NORp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/79Xwl1wLLyuG4f4DaYAmvx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2XEHwhldSfkFimgObb1M07" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/126ZBFwMGD436lMCTDO3hI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>baglama <a href="https://everynoise.com/engenremap-baglama.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey &#x2380;</td>
+  <td>Turkey<br>turkish folk<br>arabesk<br>oyun havasi<br>karadeniz folk<br>japanese vgm</td>
+  <td>Cem Dogan &quot;Melullenme Deli G&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/825252ac370846dd8c2d1f104705501095cdf79a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/baglama" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Sc1OOREfWeligAAU3SOeU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4b1bpJSbQCFhWMAMxnX1Ua" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/59DWOdOTCPXKHFNBDHVO7W" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66N0M1gPRtxdzyiewzjovE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/49yzTdMhSZWzKUnkyzkpVn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>qanun <a href="https://everynoise.com/engenremap-qanun.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey &#x2380;</td>
+  <td>Turkey<br>turkish instrumental<br>turkish classical<br>sufi<br>arabesk<br>traditional music</td>
+  <td>Aytac Dogan &quot;Al - Live&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/00d09701c4e738766049a5909a0443663d58f80b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/qanun" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3WerbkTQ4ftynWF2QBGLpp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2F5lFpyiAqk9JmhCnA5DHr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4hPPdbxJxPufdJEpkPO4lH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2wkPdJW6atmvsLJGDkh8Kx" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>bozlak <a href="https://everynoise.com/engenremap-bozlak.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey &#x2380;</td>
+  <td>Turkey<br>arabesk<br>oyun havasi<br>turkish folk<br>karadeniz folk<br>baglama</td>
+  <td>Bahri Alta &quot;Kozan Da&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c0a19791f0d392db07293e8467cd48dd2ed51166" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bozlak" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7nvpPz7p8mJAxhIjFsdysQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/35qTca30VI81L6lzyZFLXH" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ykVKA7ku6kNnm63FWDdrT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5t2NFm4zD8mer2v9fpvgKr" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ISnQh74X11HOjfKpJBCfk" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>mevlevi sufi <a href="https://everynoise.com/engenremap-mevlevisufi.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey &#x2380;</td>
+  <td>Turkey<br>sufi<br>turkish classical<br>ilahiler<br>ney<br>traditional music</td>
+  <td>S Erguner &quot;Bu Akl Fikr &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3d44292a070c33429be5de485592dfd923cc48de" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mevlevi-sufi" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6K4lcIqQ90YL35ynUw3kbN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6IIzecv9ksn3wZtoYUxwue" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6hkDfZMkqOpr5NNcsRIImD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6NgHZgNUVZ0lFqS2GMezMg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5XwojcYTT22eo0o4B0zl1Y" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>ney <a href="https://everynoise.com/engenremap-ney.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Turkey &#x2380;</td>
+  <td>Turkey<br>sufi<br>turkish classical<br>mevlevi sufi<br>karadeniz folk<br>traditional music</td>
+  <td>Salih Bilgin &quot;Neva Pe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a3e3b58bfb1af4ad47376540390116d087f26a0c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ney" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1U8HL6r7BKZYeXEUawHoQC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1lJpIVTf08jy5MGQnLjhE2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0OTFhr0wLQ4tyVaGLagU4f" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Nrana5rMWI6sf52fybFHW" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>turkish classical <a href="https://everynoise.com/engenremap-turkishclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Turkey</td>
+  <td>Turkey<br>sufi<br>mevlevi sufi<br>ney<br>traditional music<br>turk sanat muzigi</td>
+  <td>Ihsan  &quot;Hicazkar Pe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1a6e0ee8a75497b5b94358f71f4fec59dfc40ef1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3SO1ieAkIsOmQj8WycUlLD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/508OlaD8prowe8kNe3TFYu" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6hiUkZXX7OQtFbZm5gPxJ6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3EfHe5gmYJbGDTiGCuNHqq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1yWPUgt1d2kV2k0efE9F7F" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>turkish classical performance <a href="https://everynoise.com/engenremap-turkishclassicalperformance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Turkey</td>
+  <td>Turkey<br>classical piano<br>opera<br>classical<br>chamber music<br>turkish jazz</td>
+  <td>Idil Biret &quot;16 Waltzes, Op. 39 (1867 version): No. 3 <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fb85fa10218d658df5ead1996255c02ff4e416a5" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-classical-performance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2zBEpTpYffEOfLTPSTq9KA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3YB2rIYxSoAgs3WsgCFVOj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rHTY0TdSTeVVJJY9WIUjM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/30ZtPGw9fjSlNDBhS380IC" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

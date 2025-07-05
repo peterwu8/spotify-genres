@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Jewish: (8 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Jewish: (8 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Jewish is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>1</td>
+  <td>jewish hip hop <a href="https://everynoise.com/engenremap-jewishhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Jewish</td>
+  <td>United States<br>israeli hip hop<br>mizrahi<br>jewish pop<br>quebec indie<br>southern hip hop</td>
+  <td>DeScribe &quot;Set Me Free&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/38788b4d560bcaf0183e71b9fd052612a391f451" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jewish-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7wCpTOjPXTSfCSIQVd8niq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0fzLtBcW9USatoZ5U3b0Bc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2pgeurQBfKhPWvLNkSapz9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5dWKu3sVQRS41SJi1yR4gB" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>jewish pop <a href="https://everynoise.com/engenremap-jewishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Jewish</td>
+  <td>Israel<br>chasidic pop<br>mizrahi<br>jewish a capella<br>judaica<br>israeli pop</td>
+  <td>Tzvi Silberstein &quot;Poseach&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/02765bc4ad60d0a4c48b9a03a2556974d74d11e1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jewish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6LXR4kCtbXWdHLlIpzOMwJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6CwZnd7cgbJzStHKhbUbnX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0d5gzVbdfLpXb4iQI3gLOw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4VF3yDaqCVyGtNK9Fz6Z23" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/49t3XtG47IXcRrhzMPdaTB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>chasidic pop <a href="https://everynoise.com/engenremap-chasidicpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Jewish</td>
+  <td>Israel<br>jewish pop<br>jewish a capella<br>mizrahi<br>chabad niggunim</td>
+  <td>Yisroel Werdyger &quot;Nigun Simcha Chabad&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/842ac23abe8774a5f479f8000939ac8e92196b1e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chasidic-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5QG9x3YixAxNcqC0Jyn8hf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/75uAzOEJH0LyH5uDvOCOBJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6BDrFEXgNFR313yXKR7YYy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/63jaIMKrvlO1047He6Sqc6" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2CuEqpPEQd0jJsScQKSYPk" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>kol isha <a href="https://everynoise.com/engenremap-kolisha.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Jewish</td>
+  <td>jewish pop</td>
+  <td>Moussia &quot;Sibat Hasibot - Remix Version&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3fce77c22b96cfdd13eb53f3d6377a7b5254c30a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kol-isha" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3tLBmOFoo5uTwYoccBELr8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1tbSAdjTEHbpLzFoam6IJI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/382emNug8YXBhPcZbzMocP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2g0Y8ei2q1BN1ooLOn3pee" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7hIUSFeiRA27yC260v0bu6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>jewish a capella <a href="https://everynoise.com/engenremap-jewishacapella.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Jewish</td>
+  <td>United States<br>jewish pop<br>chasidic pop<br>judaica<br>college a cappella<br>chabad niggunim</td>
+  <td>Kol Zimra &quot;Achenu&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/25db880e2f6e0a27480890385197ca1819f08b2b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jewish-a-capella" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0FQfRLjmSnQPVLgurk0a1x" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Xi5KEHqUQjAtHF1BOqfX8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1fvuaSLfpmnl4pyXBpxCxs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/057kr5M19EN0fbnOl1uPX5" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4T25G9vwJIdRsgizBh66M8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>college a cappella <a href="https://everynoise.com/engenremap-collegeacappella.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Jewish &#x2380;</td>
+  <td>United States<br>a cappella<br>jewish a capella<br>christian a cappella<br>lds<br>finnish choir</td>
+  <td>Tufts Jackson Jills &quot;Misery Business&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1f3269639a08136c6428a7484c7ed8631989f50d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/college-a-cappella" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/46edHMlm2PFgylbzh42Drd" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2A5eo4AGjzJfiLHNSvlr1x" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1PZ8lpo5FzBhKoyHTDNlQd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Ru9RkgwqgqNlmnJ4AIMA5" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2DKjlOvjSWabBA0eErqZMe" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>judaica <a href="https://everynoise.com/engenremap-judaica.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Jewish &#x2380;</td>
+  <td>Israel<br>mizrahi<br>jewish a capella<br>jewish pop<br>kirtan<br>new age</td>
+  <td>Craig Taubman &quot;Hashkivenu&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b34cf447db5f42e21268c280501bef65e099dbca" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/judaica" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1RSDBtwW83jG63uuu1vzf7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/57Y2FWpsh8Rw8nrPFatqCY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rX0CFaPxl1ji1je0BOcRo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/57n2H5yElXfrezsOb8FgN9" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4oAbeazaCVXY6kx3Diu312" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>jewish cantorial <a href="https://everynoise.com/engenremap-jewishcantorial.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Cantonese<br>W.Jewish</td>
+  <td>Israel<br>mizrahi<br>traditional music<br>opera</td>
+  <td>Leib Glantz &quot;Shema Yisrael&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ec87047720df83c2411928e406c7a1de24746852" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jewish-cantorial" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/75haSfjuztrTNP1UaH5uAJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2S05LDuOXuV9m0OI1ttTrd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/50FH3ICEjE9NUCRTEL3CXQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/36igEnFcXwI6LQUPNXDjHf" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

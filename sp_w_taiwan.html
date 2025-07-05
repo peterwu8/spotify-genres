@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Taiwan: (20 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Taiwan: (20 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Taiwan is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>taiwan punk <a href="https://everynoise.com/engenremap-taiwanpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Taiwan</td>
+  <td>Taiwan<br>taiwanese indie<br>chinese rock<br>chinese indie<br>taiwanese pop<br>taiwan indie</td>
+  <td>EmptyORio<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/20ee4ded0efe907316922318eb9afbb1afd30262" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4YeeiZIVEDkdQWXheIUQpL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0KFA1EhvZjMISnKhtzbSiE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7hPuiQyAVeI9lteQo0UvFo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4XN4Z324nVd9gNMLMUjdWg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5onJ2MrzDsV5pPzuhdyEMT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>taiwan electronic <a href="https://everynoise.com/engenremap-taiwanelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Taiwan</td>
+  <td>Taiwan<br>taiwanese indie<br>chinese indie<br>taiwanese pop<br>chinese rock<br>taiwan experimental</td>
+  <td>Lujiachi &quot;Flames&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cd794c4bedd67f7f3c69a7c53500810db6b24c22" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2p81p0MlIwSzPzmdSjaaeJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6SJYnl1cN2w1vGOQFZIBYq" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>taiwan idol pop <a href="https://everynoise.com/engenremap-taiwanidolpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Taiwan</td>
+  <td>China<br>taiwanese pop<br>mandopop<br>c-pop<br>t-pop<br>taiwan pop</td>
+  <td>&quot;Touch me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ba8316abd078e816e7b74f28e880e337b454892a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-idol-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7nUFNGBIeXocZRyeBv7Mgu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3T7fgs4KaPs3HUbhHBizyb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/73AvwFVOazqpMfBRxnTXo7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7vjMiKdcJsfN6YHEaNfzaN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1rrD4DG60PQJRjgJd67C7O" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>taiwan metal <a href="https://everynoise.com/engenremap-taiwanmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Taiwan</td>
+  <td>Taiwan<br>taiwanese indie<br>chinese rock<br>deathcore<br>grindcore<br>folk metal</td>
+  <td>Infernal Chaos &quot;Return Of Chaos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bb75d9328cfea72271bbe834c4c0d7e0e3f58693" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6T6b5Hx6bV3R6sinnI8oXQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Q9cpdmMDXzc76i8nFbNTS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/42eVMUAYGWiwi2c4UGFsPX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2qV54REFDJD69AAtfJsOsB" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>taiwan hip hop <a href="https://everynoise.com/engenremap-taiwanhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Taiwan</td>
+  <td>China<br>chinese hip hop<br>taiwanese pop<br>chinese r&b<br>chinese indie<br>taiwanese indie</td>
+  <td>BG8LOCC &quot;Uncrowned&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/607234e0e7d1e051f7a016d91564e74990041de1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7jBeJyy1Os2yscZn0Yv5hr" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5BicL5AIoYYtnKzLo8IEhf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4bbmAjr29IAfrrnPheb9LJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/45pLbqa5FErfknLWFoMx8b" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7fw0fFWVnWeJ0xEj0AWnNL" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>taiwan rock <a href="https://everynoise.com/engenremap-taiwanrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Taiwan</td>
+  <td>Taiwan<br>taiwanese indie<br>chinese indie<br>chinese rock<br>taiwanese pop<br>taiwan pop</td>
+  <td>SADOG<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e046669c9db4b7ee8d8a63761988c95bd03ac9e8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7n3C6iqkDG4MLf501kOexJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/04oO8fvjG3alSM9OcEfT3y" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4M7kii3icFwq7F5QZscHBy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1LLvRwCjBIw14spX4NE3Ur" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1KbaxlpBarvqtefhyg471n" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>taiwan pop <a href="https://everynoise.com/engenremap-taiwanpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Taiwan</td>
+  <td>Taiwan<br>taiwanese pop<br>mandopop<br>c-pop<br>chinese indie<br>taiwanese indie</td>
+  <td>Quarterback<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a8cb1bdc83782deb3844b6ba7c66c41d0e0906e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3VNbpHACJASvdvhcNMQ5aA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/33blltDYieR1hn462m5JqR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6doHvdBUkIUsZUfLTj3SBi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0H3l3yI7mmUUn3xFMcU15l" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6jEUegyRTkAvGFfowoELko" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>taiwanese indie <a href="https://everynoise.com/engenremap-taiwaneseindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Taiwan</td>
+  <td>China<br>chinese indie<br>taiwanese pop<br>mandopop<br>c-pop<br>chinese rock</td>
+  <td>Lilium &quot; Saturday&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/285fb9f97f8439c0d732b458bce32ac6bf718be5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwanese-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1FeLtmCoHVRwVT2RU5x8Tg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1VeXCbhw7LZfOlrwzCc3O9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6icyuKwSO8IRVg6hc9Kk59" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6E7uPlPq54t5t5JP533sWg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0dWA7ygLhNzaVL4brT7bOn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>taiwan indie <a href="https://everynoise.com/engenremap-taiwanindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Taiwan</td>
+  <td>China<br>chinese indie<br>taiwanese indie<br>taiwanese pop<br>chinese rock<br>mandopop</td>
+  <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d847e13dbad2a8b23ff5093d25e3cf86993997c8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6oQffPm1y8844P0pN8iVm9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0m7Exsm8SA079gMp7eec04" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6V23tLzr5oUgVfxHKNbjpQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2XYerfsh9IIcU7uFRbAzBG" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3nwEvzSi6pq7xKN9dFGHI9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>taiwanese pop <a href="https://everynoise.com/engenremap-taiwanesepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Taiwan</td>
+  <td>China<br>mandopop<br>c-pop<br>chinese r&b<br>cantopop<br>chinese indie</td>
+  <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9e2b101db00a286573b1f830ffe70d5134c57bdf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwanese-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3WMvRnnzZGSfOrzWbOHC1z" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6b7wTToYe47ONWngJFcHwF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7D7E4FhqLDdEvaZ22f2k2S" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5gVaCDvWzWkpqn7cUdF2ZK" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6G6oLBIAeDPlzAlWKmJEF6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>taiwan post-rock <a href="https://everynoise.com/engenremap-taiwanpostrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Taiwan</td>
+  <td>Taiwan<br>post-rock<br>taiwanese indie<br>chinese indie<br>math rock<br>southeast asian post-rock</td>
+  <td>Pleiades<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ab19f2c150a3a53cda877e5fc37a15038d65bd3b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-post-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/679HsEtJpmIrqH4dW61Ym2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4oPolfh8FnsAavGG0gvIW1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5OzQv31W9006iNvYDP4Yaa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6uH2tOFbwbyXFR05qTUE05" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>hokkien pop <a href="https://everynoise.com/engenremap-hokkienpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Taiwan</td>
+  <td>Taiwan<br>taiwanese pop<br>enka<br>classic mandopop<br>mandopop<br>choral</td>
+  <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c34da331c545ed2737f9fd9280d973848a5322f1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hokkien-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3hTtazPGtNTXioRILEQS2n" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2VG2vSR5cA2UOgHWwzRpP4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/11ccQeKS9X1DG5eflY1PQu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0VgcMX1wxvFezEAuzT8B1C" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MOFbmtoSqcR5Kj8u3RfVe" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>taiwan singer-songwriter <a href="https://everynoise.com/engenremap-taiwansingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Taiwan</td>
+  <td>Taiwan<br>taiwanese pop<br>mandopop<br>chinese indie<br>c-pop<br>taiwanese indie</td>
+  <td>Sandee Chan<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d2182ca36e14b745de5aeaedc5910b65617f8953" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-singer-songwriter" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2406f6JhJiRf7R4M8yIi7W" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6f3URcUAIeraG7jHhVq3C7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6RLNrcxTDti3clajP1ttT5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/25ytOxfp8X5MWs578oMux1" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5vPLGSb27DTw4lpp5Vpz15" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>taiwan graduation song <a href="https://everynoise.com/engenremap-taiwangraduationsong.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Taiwan</td>
+  <td>China<br>mandopop<br>taiwanese pop<br>c-pop<br>kayokyoku<br>chinese indie</td>
+  <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a96b96447385c4a5d35edae0cbf51fcbbd05b43c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-graduation-song" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4O6qV56srxsOb8lRIy8fC6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1bjImUCghMROYHtjnUTi66" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Ty5weMgotNieliVSLgexY" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>taiwan experimental <a href="https://everynoise.com/engenremap-taiwanexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Taiwan</td>
+  <td>Taiwan<br>taiwanese indie<br>experimental<br>drone<br>taiwan electronic<br>chinese indie</td>
+  <td>Mong Tong &quot;A Nambra&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c01bf5ffe926a200e5940f381d8fa9b3c01b8bdd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7iQaizKGnAAEDE7MSnXrtm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/14iJpIFvqItkSS8jsq5sKB" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>taiwanese indigenous music <a href="https://everynoise.com/engenremap-taiwaneseindigenousmusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Taiwan</td>
+  <td>Taiwan<br>taiwanese indie<br>taiwanese pop<br>chinese indie<br>taiwan indie<br>taiwan singer-songwriter</td>
+  <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cbc2418df6c69712a5650c50d56b6db735b55bbb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwanese-indigenous-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/77hagnsOBppfaaexsxq1jd" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1uBO9XBBQE2fkXNjD0Zllm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7kdor8D8E9Q7UAQelsMkIM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4BruOCb7HeHfDXTleZ0cxn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0PjgNhPoOy8wBedX2FBqKg" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>taiwan campus folk <a href="https://everynoise.com/engenremap-taiwancampusfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Taiwan</td>
+  <td>China<br>classic mandopop<br>taiwanese pop<br>mandopop<br>c-pop<br>cantopop</td>
+  <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/696fe90c73216b3c5d5a92504bb11c060e72b380" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-campus-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3d4ZeN7SpNMUVMMeI0nohO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6WUctoZjaabTMH16DrsnXZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/16PBUW8JquBR1RMHE74QlP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4qlUaT7gWo4e49KuQCXfSt" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3o97sq01VPlV5YyhkpwVn8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>taiwan instrumental <a href="https://everynoise.com/engenremap-taiwaninstrumental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental<br>W.Taiwan</td>
+  <td>Taiwan<br>gufeng<br>taiwanese indie<br>chinese indie<br>post-rock<br>chinese bgm</td>
+  <td>Ken Yang &quot;() Journey at Sunrise (Starlit Night Versio<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dc31b3a23db7515a112fd430f0fe93025648a7ad" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-instrumental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2yYe3jYr2Y9ekeH3jN9OLN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ktUoxOwva0xzMLV6HrR2g" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/36JkMNPAmJhgxmlFUkPqlz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ctlr4Qjojye3HYbZh8ulQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6OZi52hB82Z2SAvEtoUkhn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>vintage taiwan pop <a href="https://everynoise.com/engenremap-vintagetaiwanpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Pop.World<br>W.Taiwan</td>
+  <td>China<br>vintage chinese pop<br>enka<br>taiwanese pop<br>mandopop<br>c-pop</td>
+  <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/33131f69443a573f60cc2fa8804c026aefd043ae" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vintage-taiwan-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ESzk2WbM72S3uSm0AlESX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0lXwRRAsp3EUFdH5ynbVZc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/15vcycNAjg1DCfdBJKoHYH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7eQ91OA0kB1R3jp0REvWdp" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>taiwan classical performance <a href="https://everynoise.com/engenremap-taiwanclassicalperformance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Taiwan</td>
+  <td>China<br>classical piano<br>chamber music<br>violin<br>traditional music<br>classical</td>
+  <td>Ray Chen &quot;Violin Concerto No. 3 in G Major, K. 216: I<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/aae9bf51fecb3731b1f3f07fe88bab0e7f933dfd" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taiwan-classical-performance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ieUz7VFx4SIFDAMUYxGvz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/69Vpu8wWrHTQvBA1hzndZW" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

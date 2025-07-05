@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Australia: (58 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Australia: (58 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Australia is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>australian techno <a href="https://everynoise.com/engenremap-australiantechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Australia</td>
+  <td>United Kingdom<br>acid techno<br>breakbeat<br>acid house<br>dub techno<br>minimal techno</td>
+  <td>Nite Fleit &quot;Parallax&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/081226097e5b2bb52e695b523f632291c7093659" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3dALzjTXPf1oGk3EmVCgIR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7ozIF2Sgxba6PB8VHTjsUC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7kvaZNUbI3ODXgVK0kj25F" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4jYXKcOrcWbirLmynaKmrH" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>australian house <a href="https://everynoise.com/engenremap-australianhouse.html" title="&#x2306;">&#x2306;</a></td>
+  <td>House<br>W.Australia</td>
+  <td>Australia<br>tech house<br>progressive house<br>nu disco<br>g-house<br>organic house</td>
+  <td>Torren Foot &quot;Candy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0323c427543b7edc219184e687f1721c3cda89cb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-house" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4JYxVFpgO9JEekEyPMakMK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6pt4hCDsGV4O1xEBGhaiLI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6IJ9q0Yh07GzYgSfLliUsH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3EbKfGKufvgC3LBDnkgsLA" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/11obQEANxZWvud2TZvdA33" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>melbourne bounce <a href="https://everynoise.com/engenremap-melbournebounce.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Australia</td>
+  <td>Australia<br>big room<br>electro house<br>dutch house<br>progressive electro house<br>edm</td>
+  <td>Slice N Dice &quot;Open Your Eyes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/49af36d94b286199669efc1bf96091097af27eee" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/melbourne-bounce" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/03DfF1suCuCyHFe6yQjMuI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5juwTItf3H3eQuzrGiKwf9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/52gJh1KYDwvs3BEZi6E1Ah" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ekBDTA4sIesjeXANDOuef" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/62Oh2nWRvXOEmWeYzt8y0V" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>melbourne bounce international <a href="https://everynoise.com/engenremap-melbournebounceinternational.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Australia</td>
+  <td>Australia<br>melbourne bounce<br>bounce<br>slap house<br>big room<br>epadunk</td>
+  <td>Krunk! &quot;With You (feat. Kelly Matejcic)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/15be7afe26255754dcf7a6e61a8a2e8a96cf88a7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/melbourne-bounce-international" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5kpbOPPftgjxA8hWwVA33g" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3hVFk3uqdqUey1yX2fzSXr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/553ejEj2wIR6GmTpEmYgiz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Kvavn488IXKlwKWv6KQUX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/43vJtbC7iU3HhDvRFnbGvT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>australian dance <a href="https://everynoise.com/engenremap-australiandance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance<br>W.Australia</td>
+  <td>Australia<br>australian pop<br>melbourne bounce<br>indietronica<br>alternative dance<br>australian indie</td>
+  <td>The Presets &quot;My People&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0a867948616af8b4ac128bcf2010f03a3bdbdaba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-dance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6OJTphbUEHxcJZOo0E6VD2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3iiCEjJsCfkP18Xfqv9fZi" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5UeKJJ9ZHnkss8yeY2I6jD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/48mZMy2thegwbMfm1wLvIv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/23aWhYiGHP815CGYrJNItx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>australian post-hardcore <a href="https://everynoise.com/engenremap-australianposthardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Australia</td>
+  <td>Australia<br>metalcore<br>melodic hardcore<br>deathcore<br>post-hardcore<br>djent</td>
+  <td>Diamond Construct &quot;Jynx&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fd1d1a75de07066df116b9069b4ca8872be8e2b6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-post-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2cAbjwJyqGS5IdeQzJYLgO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1FVDUHQtMQJG35Ym31BnDr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5wzLlEEulKCOmMzFFIRvzv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rcQZIUof2Zr0Xl6LjWMgi" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0uqaAkKsbJKWC6L1oWTqBN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>australian electropop <a href="https://everynoise.com/engenremap-australianelectropop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Australia</td>
+  <td>Australia<br>australian indie<br>indietronica<br>australian dance<br>australian alternative pop<br>neo-synthpop</td>
+  <td>Alice Ivy &quot;Howlin\' At The New Moon (feat. Mayer Hawth<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c3de48fdc9db2bf298b2facff073fd1dcc11ffe7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-electropop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7w9YVsJsc3p63UhpfNHX7R" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6TEh7sGZj65kb1wKoZMkSU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1qfgvUo00Ontv9YXphRWpa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0GZn5rHheZiyR72beCFBDh" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/48dzI1bdRXZ3roi6AWJahj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>australian metalcore <a href="https://everynoise.com/engenremap-australianmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Australia</td>
+  <td>Australia<br>metalcore<br>deathcore<br>djent<br>post-hardcore<br>melodic metalcore</td>
+  <td>Void Of Vision &quot;Angel Of Darkness&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bc871194ff01247609a4a3cc7156c48571614680" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Mqeb4pNzm9xW9Ha7f1aMt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0HPtrFbEfJh8xp12L2JJR0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1MVbjRGfMBAgBfE2EQNQ4W" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1dWfmStO6rBF8B8me11MU5" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4d9hyurhw9xOIckxI6Feop" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>australian surf rock <a href="https://everynoise.com/engenremap-australiansurfrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Australia</td>
+  <td>Australia<br>surf rock<br>australian indie rock<br>australian reggae fusion<br>australian indie<br>australian garage punk</td>
+  <td>Old Mervs &quot;Out Of Luck&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dcd067ecdd68afc5f7c2e371545b9a48fd1268ff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-surf-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/25AMWRAr2gwxqq1e1aBc6M" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4vMgNE1HNtqzmGr8Qmto06" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4BmnrdDnunU3kAlXx6bFFY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/03NIfshlDgRvtHReyRODxF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3sdsgnqanJmhLNt1ffoY70" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>australian hip hop <a href="https://everynoise.com/engenremap-australianhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Australia</td>
+  <td>Australia<br>australian underground hip hop<br>aussie drill<br>australian trap<br>australian indigenous hip hop<br>brisbane hip hop</td>
+  <td>Spit Syndicate &quot;Starry Eyed&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1862550d000be8350b9046e0f355cb141070b3a6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6C6Ki3e1WAe0f1XaCbIp19" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6wYuYcsFOmTuWnYqEalOhk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3IItdmPO4pV4AA225afmSd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2dQBCyLQY3W0qIwyKBhJlB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1QodBjf5cRjhXGffCbxmkl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>australian pop <a href="https://everynoise.com/engenremap-australianpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Australia</td>
+  <td>Australia<br>australian rock<br>australian talent show<br>australian indie<br>australian dance<br>europop</td>
+  <td>Vanessa Amorosi &quot;Absolutely Everybody&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/803e0b2d3757f214588df21721da58a8425193b1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5o0hmnDdyNgL70iGjcgtLc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/67qIuPZRX12l7yMpxBQpxs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3GKRIrn8L01ncO3UPQ3jBc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2vsszbqO4uMIJykV5VLtF8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6TSe4B3OQ3aALqXf5XoEbS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>aussie drill <a href="https://everynoise.com/engenremap-aussiedrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Australia &#x2380;</td>
+  <td>Australia<br>drill<br>australian underground hip hop<br>australian trap<br>australian hip hop<br>uk drill</td>
+  <td>Hooks &quot;Gang (feat. Day1)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/151d88acdd8e222827901225d44b4a7b06854be6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/aussie-drill" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6bQzjOekTX6xgzBg6ZLMsV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Zmdt7w4HzEAW6IOLa1KKH" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1LYzNamSApcNjp5NaufnYj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3BNgKPJ1plup5Ws9Tds4sx" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4carb0cnth6zjG6IS3C9Ao" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>australian indie rock <a href="https://everynoise.com/engenremap-australianindierock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>Rock<br>W.Australia</td>
+  <td>Australia<br>surf rock<br>australian surf rock<br>australian indie<br>brisbane indie<br>melbourne indie</td>
+  <td>Death by Denim &quot;Cigarettes and Honey&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/12e07d5336a7429893df329d5ccf433ecf065b38" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-indie-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2k5q2OMng3EIIUgjbsoPjI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Ssz7lY65e8egtETVJF2Q6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4sRvv4HxzmYmZkWQDxPt1y" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7bgFV0qZJcdRF5WABy6MFM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7cCxZeukb2ZG8j3dWg4Jgm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>australian r&amp;b <a href="https://everynoise.com/engenremap-australianrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>W.Australia</td>
+  <td>Australia<br>aussie drill<br>australian indigenous music<br>alternative r&b<br>soul jazz<br>australian alternative pop</td>
+  <td>Milan Ring &quot;Mangos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ad47781e5460f9df3ef8d941c786c8e89210b7e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4d6orp6tMd6wzTorFXIl7T" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/78wsjymwVf1xFMm5qJgrRk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5FzabUXhMLxz5ghe6OYoZq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2vIkcKKzcQd9OOCxNlJMOk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7a7QjKjgzAEYYJJpwkTpMY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>australian indie <a href="https://everynoise.com/engenremap-australianindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Australia</td>
+  <td>Australia<br>australian alternative rock<br>australian pop<br>brisbane indie<br>australian garage punk<br>australian dance</td>
+  <td>San Cisco &quot;Awkward - EP Version&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2a7e3619d9d59d98b4d3fa4103a2db4ce69946fe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5c3xq35qda9PtelTuk2izU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Qqc4lX4i4A8uXD9SBQy7S" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pbW8wnoY9KUcoe4hiki9Z" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7K0QhnHAbiuR7cIQsPrgxY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0SXWoOaljJ3TqP2iWJ7AHt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>brisbane hip hop <a href="https://everynoise.com/engenremap-brisbanehiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Australia</td>
+  <td>Australia<br>aussie drill<br>australian hip hop<br>drill<br>polynesian hip hop<br>australian r&b</td>
+  <td>Day1 &quot;MBAPP (Restricted &amp; Sunset Bros Remix) [fea<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fab4008fef20406e3e8646ea275af0e4118460ac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brisbane-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/62oS4X4NiUWX3Qa6lufTrt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1zU9A3egIFexjJqvvAztak" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1X76DcOLl2ERbpfKzkpvSl" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5hWofTOsLAQy9zebWvnxM2" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0gHQlSlCxdmq6qdUNhY3vH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>brisbane indie <a href="https://everynoise.com/engenremap-brisbaneindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Australia</td>
+  <td>Australia<br>australian indie<br>australian indie rock<br>australian garage punk<br>dream pop<br>aussietronica</td>
+  <td>WAAX &quot;Same Same&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ea3f9b4983a98deab408c6194eccfada29572e62" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brisbane-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6JJavbPmDIj8yOFrVTy7UX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7GrVgeOVSntOJRJrzecUl3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0hrwoNpIJBptcgRMwSl0Sm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0AmlajSuGNJkkjqtvoMcaX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bjXLiMRrVIHNnPSS1SJ2g" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>sydney indie <a href="https://everynoise.com/engenremap-sydneyindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Australia</td>
+  <td>Australia<br>australian garage punk<br>neo-psychedelic<br>garage rock<br>surf rock<br>egg punk</td>
+  <td>Crocodylus &quot;My Baby&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/43c1ff14455025b7e57d3ebfa5177f6ad89eba41" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/sydney-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/585hMwwHxoHtZPm2MxyfR7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3QHC3pILgEDrfF8GKslczN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1MVNFuo0KkTEuluHqiFHze" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3a2PmgMgZYAeDDXLE9gSgV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ATd9xukYplfckwKLcWMjX" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>australian alternative pop <a href="https://everynoise.com/engenremap-australianalternativepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Australia</td>
+  <td>Australia<br>australian indie<br>australian electropop<br>australian r&b<br>hyperpop<br>australian pop</td>
+  <td>Sycco &quot;Ripple&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f0aff5f4ec2acbc65127197157cb5bb4dde54c18" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-alternative-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/38jTASNbhMP20lKqbf12gz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7JEBOiPat4SDUDjcGgc4YP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/61cdcaDn6qN3alAJMTitAT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0eusnM2O2lHhzlf8Thmr2h" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Fpcwex4MsqumaEX9wSS7P" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>australian ska <a href="https://everynoise.com/engenremap-australianska.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Ska<br>W.Australia</td>
+  <td>Australia<br>ska<br>ska punk<br>australian reggae fusion<br>rocksteady<br>ska jazz</td>
+  <td>Area-7 &quot;Nobody Likes A Bogan&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/06e37fd75f3711c66c10d650073344ffafc49ec0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-ska" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2sL6IZDo3tn4MhDQDy9alz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1S0CB3Z8Ft2rqf7bTqKhAJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7FOQFfDbNai162RFmMTyW0" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>australian metal <a href="https://everynoise.com/engenremap-australianmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Australia</td>
+  <td>United States<br>death metal<br>speed metal<br>black metal<br>australian thrash metal<br>thrash metal</td>
+  <td>Psycroptic &quot;Ob(Servant)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b704a28539e46b7e321802ee3e0f8ccae676f0dd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4IK8P7Rd9SRNfOG4yUfHAc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/33kqbVFZdUv4JuMUzFctmt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7dPGg6hpwgNfyIVXrBTRQ4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7jRQdUkBB9iV9GJp58SxVP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6lu5gzgqEtASPSUmXLf95C" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>australian garage punk <a href="https://everynoise.com/engenremap-australiangaragepunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Australia</td>
+  <td>Australia<br>garage rock<br>surf rock<br>australian indie<br>egg punk<br>punk</td>
+  <td>Dumb Punts &quot;Chiller&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bbc020d8dde87f21a9212c846ecc8eb249be3c7f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-garage-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4kt7Q3JqpSCDOG2BOIAzLF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ni3hkYRNx5Sn9eX2igLSP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18lopNEUz9zwgMmSCnsbI3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7AQXelrQ7nQzNCp97sMRmN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2NwJyqYtzbAzHoTlWcuokF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>australian trap <a href="https://everynoise.com/engenremap-australiantrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Australia</td>
+  <td>Australia<br>aussie drill<br>australian underground hip hop<br>australian hip hop<br>drill<br>west australian hip hop</td>
+  <td>Mitchos Da Menace &quot;Thoughts&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d3edbd5de2277a5264345eaa3883fa2af1ff6a16" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-trap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0zipHsVr1Ljwph0ulkxo5x" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1MYuhqf2e1fJDlJRvkGfVz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0fWrUoGZBHdwbqtvMLQghm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ieDfyG2dR0L6fGhk1XDMS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2adg9hydtXkolN0wfRVu9S" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>australian talent show <a href="https://everynoise.com/engenremap-australiantalentshow.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Australia</td>
+  <td>Australia<br>australian pop<br>deep talent show<br>asbury park indie<br>nz pop<br>nz christian</td>
+  <td>Jordan Anthony &quot;Praying - The Voice Australia 2019 Pe<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b2d04346648e73864fdf3b379f133ce768114cff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-talent-show" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7dRVVxu8XwawdWzQbivSFR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4HxnIDtqnU3BPh4yVWZg2b" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4FrTQpYeQHaivwjMG9JNwN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/30hOwtj2s1u72gucIdneWS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2iR59omGIy7QPuxLG5skl4" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>australian indigenous hip hop <a href="https://everynoise.com/engenremap-australianindigenoushiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Australia</td>
+  <td>Australia<br>australian hip hop<br>australian indigenous music<br>aussie drill<br>australian underground hip hop<br>west australian hip hop</td>
+  <td>Birdz &quot;Bagi-la-m Bargan&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b9362dda38c259a68a554459cde7d7cb5f627b96" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-indigenous-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4eYAdxoDNFsZ9cF16niX4z" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1tZl3PJhwwZ8HMOUA9mtA7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0bNin0szkABYVOnyOpvP8c" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Fj0kJuxM3D034X87Y0Ylx" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1DsPftAZywc4rQFotgNyDT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>australian shoegaze <a href="https://everynoise.com/engenremap-australianshoegaze.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Australia</td>
+  <td>Australia<br>shoegaze<br>dream pop<br>neo-psychedelic<br>slowcore<br>psychedelic rock</td>
+  <td>Flyying Colours &quot;Long Holiday&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e5b39e5927ec551a1ac726e05341bdd51ede26f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-shoegaze" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2mIuniICU4feWIQMlYoBtF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4SraIxQeuuXNWKokMAZvhl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1uoB6GpRdrll1tqJThjJYc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Lt699srpTuBuuq1It54Lz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KDj3p7v2ZKMXh7GzmC26I" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>brisbane punk <a href="https://everynoise.com/engenremap-brisbanepunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Australia</td>
+  <td>Australia<br>australian garage punk<br>punk<br>egg punk<br>skate punk<br>brisbane indie</td>
+  <td>Flangipanis &quot;High, Drunk, Loose&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/80f909f510c8b5084aba9b5852e1fb32f94dc8ef" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brisbane-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4js2yc7aOCrz11XE6qWIea" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7p0kJWBVE4VFrVW6zs25kC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0T58d6nc6PrgxFWSJDYwYs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6GoIHnkdSwctaHnAcVmRL1" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7nSYFvlpaYsvghmMX1GoTk" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>australian death metal <a href="https://everynoise.com/engenremap-australiandeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Australia</td>
+  <td>Australia<br>death metal<br>deathcore<br>australian metal<br>grindcore<br>melodic death metal</td>
+  <td>Disentomb &quot;Collapsing Skies&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eb42ca2b16ce787ba1d0926e3c582ec10c12bced" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6RTMrEGfoGL7odNro45wEt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4qIzqV9I7DTV6uWxeqNUDC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07Tq4twkCbEVfZpXROyaFX" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>australian reggae fusion <a href="https://everynoise.com/engenremap-australianreggaefusion.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Australia</td>
+  <td>Australia<br>surf rock<br>australian ska<br>australian surf rock<br>dub<br>australian indie rock</td>
+  <td>Kingfisha &quot;Left It&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6e51356d2db91a5e012b7d63642235201e1e2dc7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-reggae-fusion" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2NZplQd4SNJd7PWIlCBC4t" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2tPZzJ3n0CO4JJpCuRhFTM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7B6HW6IjvQ4IXEwu3MQ2Ep" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3O2pr1cqwxkZIxbvARLVSo" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7aMqYaSAKqFg9RiicfDo4U" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>melbourne punk <a href="https://everynoise.com/engenremap-melbournepunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Australia</td>
+  <td>Australia<br>egg punk<br>post-punk<br>melbourne indie<br>noise rock<br>garage rock</td>
+  <td>Dr Sure\'s Unusual Practice &quot;Outside Looking In&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/15ce93cc3fa56fc87004d9fc5eb9a00d2ca27e77" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/melbourne-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/40eiMVgDDRPiESVIbku1Gb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Eoy7gxvTDmoEmT4fu6yt6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/325r05fWvIBg4WAjQ2ZGLF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/41Y0VcC9qyObjUi17NXS80" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7qWt9V8vI85iGBw2fimZES" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>australian thrash metal <a href="https://everynoise.com/engenremap-australianthrashmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Australia</td>
+  <td>United States<br>thrash metal<br>speed metal<br>australian metal<br>groove metal<br>death metal</td>
+  <td>Hidden Intent &quot;Dead End Destiny&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9ee232c9423be707ec3795290868851d143b3795" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-thrash-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Ukpp4DZ24yau4PPiELHJx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4vQygUErCC4v1vBZ5zkxvN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4kJtqf0VwvFWszzsq8fRU2" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>australian rock <a href="https://everynoise.com/engenremap-australianrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Australia</td>
+  <td>Australia<br>australian alternative rock<br>australian pop<br>new romantic<br>australian indie<br>surf rock</td>
+  <td>Mental As Anything &quot;Live It Up - Remastered&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fa455b5b7cbb1d8346f3225579ec23b43e98301c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4EeS4AAhYXC8CKB1KsNMLr" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0D5WxMvZQ7kZJCgF0xu2kJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5DB2LTfrLXZfTyekL2FuEg" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5QC9xCJEY3QDOFeAnwHxiX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3iqukOOKFKGyh17jrPaG0w" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>west australian hip hop <a href="https://everynoise.com/engenremap-westaustralianhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Australia</td>
+  <td>Australia<br>australian underground hip hop<br>aussie drill<br>australian hip hop<br>perth hip hop<br>australian indigenous hip hop</td>
+  <td>Sever &quot;Doused&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f2999c7f9180de0f83b49aaeb47e2d5443727bb2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/west-australian-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3lBKoN1GcCh0WB7ZAhlLAH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ZcmhA3Jydo599FFbUzn5i" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2tL010djlhgnP8JHU6rw2d" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5oZUzWQpmLBJRQ8Y2FQTdd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4nOsK20UtmicYiAqrCCG2k" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>australian psych <a href="https://everynoise.com/engenremap-australianpsych.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Psy.Goa<br>W.Australia</td>
+  <td>Australia<br>stoner rock<br>sludge metal<br>space rock<br>stoner metal<br>doom metal</td>
+  <td>Jack Harlon &amp; the Dead Crows &quot;The Magnetic Ridge&<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3c94979af4fb63b224eaf55e0a0d23ec8e7cca8b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-psych" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4UGc5oDdov1ZjX6iCq2Btg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3qC7RPr0QzkFKAE1nuSAx4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/541prAGwFUNuclih9EsQw0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07gyT5lvXTwkL239u690X1" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Gg68FkoshUU1zla1et98l" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>australian underground hip hop <a href="https://everynoise.com/engenremap-australianundergroundhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Australia</td>
+  <td>Australia<br>aussie drill<br>australian hip hop<br>australian trap<br>west australian hip hop<br>australian indigenous hip hop</td>
+  <td>Ciecmate &quot;What It Look Like/focus&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2a0fed76303b239f198f14248e627d01bf2332fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-underground-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2nMJn1fRTz8htS40gW7ZDf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3RnjdCOpB2uSOQlHin0YZr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Agx9R5DZxcoFyHCVE6oOV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0xZJrMs91jGTRuYgrohQkc" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3IAFHFDa0HXDctn1Dxe7WY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>australian country <a href="https://everynoise.com/engenremap-australiancountry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Country<br>W.Australia</td>
+  <td>Australia<br>australian americana<br>country<br>australian indigenous music<br>country dawn<br>bush ballad</td>
+  <td>Amber Lawrence &quot;We Live in a Zoo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/071c01bb08ca4df9c84898a01ad0f7270029dc33" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-country" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6NhzTtVsVtkSrP93aLEUdI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1hseduxVpn5p3ukaREgsSi" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0I6zCUW3zD3YVoFGuNreEk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZwXszrHoWwtTEv2oySUcR" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3eYCbrRGHUC9uWylO1UPu1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>australian alternative rock <a href="https://everynoise.com/engenremap-australianalternativerock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Australia</td>
+  <td>Australia<br>australian rock<br>australian indie<br>perth indie<br>jangle pop<br>power pop</td>
+  <td>The Fauves &quot;Dogs Are The Best People&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fe58590017388ccf22be40e632672fa453551599" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-alternative-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7tPFf5jsEyyAILcJCOdUCE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/62Mjfl6ctnwHXAgiT6cQwI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/44sboIb0bm5eNpYUjGSfl9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5aWfOc1al2iKuxCZpVpll4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ugFSqdT8seVzMN3IgxlxG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>australian hardcore <a href="https://everynoise.com/engenremap-australianhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Australia</td>
+  <td>Australia<br>hardcore<br>hardcore punk<br>egg punk<br>melodic hardcore<br>metalcore</td>
+  <td>Iron Mind &quot;Assume Your Ultimate Form&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d1a7dcaeecbbac76d516747dc9b814e0018d3c21" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3C6xek1Zqh6RHGKpXYOuVf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2rC5y63rN8vpDKbYSD8ykd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Pfxr3mXAhnBpTkn6tDbwO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mXcPnujrQzx8EBIvmLcmO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7JlVj46Ce14ylHSvwFDf5X" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>melbourne hip hop <a href="https://everynoise.com/engenremap-melbournehiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Australia</td>
+  <td>Australia<br>aussie drill<br>australian hip hop<br>experimental hip hop<br>drill<br>zim hip hop</td>
+  <td>Eco$ystem &quot;OFF MY MIND&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/50b9653f14118365af4eeeb974ce8676686f6f46" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/melbourne-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2HxyjIcsJgdNbSR4gv4ppn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0P2DCD9GpYL4UCnepHIIGj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5SR19vKda1UYH2hyofiVKw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/14DUertiTtWUpAAWkf4wWY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3s35YJ1YyCSzbUqI4GVt1k" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>australian post-punk <a href="https://everynoise.com/engenremap-australianpostpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Australia</td>
+  <td>Australia<br>post-punk<br>cold wave<br>deathrock<br>darkwave<br>gothic rock</td>
+  <td>HEXDEBT &quot;Covenant&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/196ead719c20d5edac34c7422e0204e2e2c103d1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-post-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0M8Ytpd2QqxMuPS2gq62Vt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1TTeHpttiwkV4CRbU3lDxr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/01QxawDqruL8uMPmZYUSBr" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>australian indigenous music <a href="https://everynoise.com/engenremap-australianindigenousmusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Australia</td>
+  <td>Australia<br>australian indigenous hip hop<br>australian pop<br>australian country<br>australian r&b<br>surf rock</td>
+  <td>Warumpi Band &quot;Blackfella/Whitefella&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a3b3a9463a8f56183fb5b043d657b196de451afe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-indigenous-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3vjbp9QNq1xMe77M4IwpdT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6B9CpGm9IBQJzncRCPw0dG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3uXGZjDtdt70dCfdjEpcBn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bUJRjQCgAYVhVPmQ1zQSj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4vndvoZWVbCqxVk8lVAxJS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>australian black metal <a href="https://everynoise.com/engenremap-australianblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Australia</td>
+  <td>United States<br>black metal<br>australian metal<br>death metal<br>speed metal<br>depressive black metal</td>
+  <td>Gospel of the Horns &quot;Powers of Darkness&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/879648ab839a70d7cec2ff88bb312236d4133747" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Fzh999HJUOIgKxOPIrNP1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3u2VWLXqFGfp3YHZNsFZvn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6eCzJ7a6QJJoYuy1Q5OcCE" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>australian post-rock <a href="https://everynoise.com/engenremap-australianpostrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Australia</td>
+  <td>Australia<br>post-rock<br>instrumental post-rock<br>math rock<br>atmospheric post-rock<br>space rock</td>
+  <td>sleepmakeswaves &quot;It\'s Dark, It\'s Cold, It\'s Winter&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3a9371e0b8cd5eb28f2594629ae4bdec60498574" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-post-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4SsylEFjGgtSB0km14ipVU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Eavu4IrTnwmZZQbAM18KO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2GyDcsYw8WUaCI2yrc8QX2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7oS5n6Hx66wfiD03v8yePh" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7J2KYcDsBVYyxEGqQucXf7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>australian rockabilly <a href="https://everynoise.com/engenremap-australianrockabilly.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Australia</td>
+  <td>United States<br>rockabilly<br>psychobilly<br>neo-rockabilly<br>horror punk<br>boogie-woogie</td>
+  <td>Pat Capocci &quot;Slave for the Beat&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/348ad81adfcb4fa2af0677283992473464631e40" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-rockabilly" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3KI3Zd1rsnpKYi5mbXwqhl" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1EuHYJcuErzxWqILkcK3Sq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1n7R28Ex0pcSDSkfgSfdqc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1q7b58fw0GyHg3YTPffhRQ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>melbourne indie <a href="https://everynoise.com/engenremap-melbourneindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Australia</td>
+  <td>Australia<br>jangle pop<br>australian indie<br>egg punk<br>post-punk<br>melbourne punk</td>
+  <td>Scott &amp; Charlene\'s Wedding &quot;Don\'t Bother Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f7521cecb91f7c40504e4be1161ad51ce606e5ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/melbourne-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5vHsrUS548OeRhn9FKqNwX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2V5cDE76iiL5Gm8vdbHePQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Wb44bAb8ALG98zDbQkJG6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0efIg1qwegIZvdbKxVh8Rq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2tcDsdLBZtr5pNbtdIHVhL" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>australian indie folk <a href="https://everynoise.com/engenremap-australianindiefolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Indie.World<br>W.Australia</td>
+  <td>Australia<br>indie folk<br>australian indie<br>indie anthem-folk<br>modern indie folk<br>chamber pop</td>
+  <td>Kyle Lionhart &quot;Sorry I\'m Gone&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/36958794d2804e76d7a72066be3bc3b5f366113d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-indie-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7qD8GmUGkUCCjnNXi3bwO5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2a4AkEFVA2nSuddrYs5Xfr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ppDJCweRPScZ50CfUKpYz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3MdQw07sKqdka4TWSUkTZo" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/67GY6HfBpcKzWT8M53tf4J" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>australian americana <a href="https://everynoise.com/engenremap-australianamericana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Americana<br>W.Australia</td>
+  <td>Australia<br>alt country<br>australian country<br>australian alt-country<br>americana<br>indie folk</td>
+  <td>The Weeping Willows &quot;Black Crow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/baad64ea3c21f0fc9d4e9961a3abb914ba96b358" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-americana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/06dkbkLzZM6xJCyIhgyVav" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4cavePoqp7tBZ8FYfZaDlf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1X21E6puTkvNgs7YkCZ4du" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6QlFXELZAX5pYgAGlAR1wp" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6OqTSKGfwtDSvJe3WetR6L" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>australian blues <a href="https://everynoise.com/engenremap-australianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>W.Australia</td>
+  <td>Australia<br>blues<br>blues rock<br>modern blues<br>roots rock<br>country blues</td>
+  <td>Lloyd Spiegel &quot;Let Your Love Lie Down&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/47a4476d37840fa599eec44605fa330966e835f7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5IHw6gYsVzVinzEMx5PE4a" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7kQSXw1ezgx6LowSSqyWsy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bTdp3epVuBxov9orErZiI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/74I88AYGSsTDCXFGndlU2l" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6UmUEnHRDJZEp0wR7SmYOW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>australian children\'s music <a href="https://everynoise.com/engenremap-australianchildrensmusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Kids<br>W.Australia</td>
+  <td>Australia<br>children\'s music<br>lullaby<br>children\'s folk<br>christmas<br>bluegrass</td>
+  <td>Jay Laga\'aia &quot;Lion Sleeps Tonight&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7f3ddcdae27b4b38474bae0b21986596c9ac3a20" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-children\'s-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5I0LftQVFQfrUx1uw7ooqu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3bp89ywbzSH01Sn5xuH2i6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/36BW291GgdAISYQXVeeYKh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/45u7EGLPFBWalHGGZoVvoi" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2unfd2qqNZjDgtLJdZabTc" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>australian experimental <a href="https://everynoise.com/engenremap-australianexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Australia</td>
+  <td>Australia<br>experimental<br>australian ambient<br>ambient<br>drone<br>dark ambient</td>
+  <td>HTRK &quot;Bio&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4bd2b8df7632137467f534620de695f0dd07ebe1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/775sv5kUplDr6UzFIoCnWw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/40JvmtDltgFju6fGoscWlJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3WSlRAX47xpkQmaZts2MyQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Xw0yxBC43LqCWbiLQguWU" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>51</td>
+  <td>australian singer-songwriter <a href="https://everynoise.com/engenremap-australiansingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Australia</td>
+  <td>Australia<br>australian indie<br>australian alternative rock<br>indie folk<br>roots rock<br>jangle pop</td>
+  <td>Dan Sultan &quot;Fortress&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dfc0fc3affd5bc64cc452b0913a9a76aab89f7ce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-singer-songwriter" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/01TitGKQmfTCCWGaEBQCpZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6vSum4taH9WNA7QD6dEGUt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0N483U80KNi8ZUXqrL86OX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4lZ0f1bJOv83WNsG5mSgyN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2rVQz69cwsoyscQuyzjxJs" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>52</td>
+  <td>classic australian country <a href="https://everynoise.com/engenremap-classicaustraliancountry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Country<br>W.Australia</td>
+  <td>United States<br>australian country<br>yodeling<br>christian country<br>traditional country<br>rockabilly</td>
+  <td>Reg Lindsay &quot;Armstrong&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f12109d1c5efce4f9ae213819ce66eccde16d655" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-australian-country" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6y5FcjyhoHyVOw9AUQz9bR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3s3zindCeXj6wbEpjlP6xX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4FkivGG254aMtiNMs1XaDL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1HKACRS70TbuGP704h8tXP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5hc4JaSKhj7MlvBcEtLQYr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>53</td>
+  <td>australian ambient <a href="https://everynoise.com/engenremap-australianambient.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Ambient.General<br>W.Australia</td>
+  <td>Australia<br>ambient<br>australian experimental<br>drone<br>experimental<br>dub techno</td>
+  <td>Alex Albrecht pres. Melqu &quot;Forest from the trees&quot<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4b340067c78299dd861d2c44b305c761a65e0a52" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-ambient" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1G6Nbv9VrM2rmeLiiqGkCW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ZcuWr2KzhRzpIEPIopriM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7fo7TbZGZ1XTMHkuWrAWQm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3kOBviyJDDNVFIrlTSRrEN" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>54</td>
+  <td>australian comedy <a href="https://everynoise.com/engenremap-australiancomedy.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Comedy.Storytelling<br>W.Australia</td>
+  <td>Australia<br>comedy<br>comic<br>new comedy<br>comedy rap<br>british comedy</td>
+  <td>Carl Barron &quot;Burps and Farts (Jfl 2000)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c746f212eb1bdc676e376f07d69339048455081b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-comedy" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2mpps4gnMINC7SnANeRRxc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1pPP4qxa52IibyFV6oTfJ1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7yw70MbTQHNRxVLDjpn2xF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3BUGdP8DYQBciY14JaApM4" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>55</td>
+  <td>australian jazz <a href="https://everynoise.com/engenremap-australianjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Australia</td>
+  <td>Australia<br>vocal jazz<br>jazz<br>free jazz<br>big band<br>jazz fusion</td>
+  <td>Barney McAll &quot;Sun Always&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7a71fdab12cc7fd5b5eadeefe69d676c275eb20d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7g5Rr9KpBQovjU2JoCeFyf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/38AKUxCXckgIaEY0QwDj1q" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5gKZUPsiPdBJGacHAi5D4v" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4MNAWnzhOxTcKw3nQBpYPS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>56</td>
+  <td>australian classical <a href="https://everynoise.com/engenremap-australianclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Australia</td>
+  <td>Australia<br>chamber music<br>avant-garde<br>early modern classical<br>classical piano<br>oceania soundtrack</td>
+  <td>Nigel Westlake &quot;Miss Potter&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5d73a48fb91c84f276d00a5bfeb86bfe8628b172" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6QMvRok9OEYAExKahboLpw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2nFuScPV8hjI2hVOpJsHvN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0DV2XzntVHiUdAZFH6YS6M" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1UjqcKcxExAHVtra7ck0Cu" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>57</td>
+  <td>australian classical piano <a href="https://everynoise.com/engenremap-australianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Australia</td>
+  <td>Australia<br>classical piano<br>classical<br>chamber music<br>australian classical<br>ukrainian classical piano</td>
+  <td>Elena Kats-Chernin &quot;Lullaby for Nick&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c2a5e2552c767f04250325c53699ffea80064592" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3KUNdN2hG0NSlDcGOqH7Ky" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5C9kvuGBcAUNipqfGNmq83" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Eb0tIkyst9ntCRn22pNQF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ln002EmgaSQClTZoLeORG" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>58</td>
+  <td>australian choir <a href="https://everynoise.com/engenremap-australianchoir.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Choir<br>W.Australia</td>
+  <td>Australia<br>choral<br>children\'s choir<br>classical piano<br>medieval<br>university choir</td>
+  <td>The Choir of Trinity College, Melbourne &quot;Be Still, My<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f69dbb37625429d9f0077d3abc0f3c07a73733bd" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-choir" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2dOKdLuqImfutPykUMb2ra" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4IYqxUG3ZZ5bWN2WxEZ7cp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2DuK2Eak1FA3QNmlvLE6x1" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

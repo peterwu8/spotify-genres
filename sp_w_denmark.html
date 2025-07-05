@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Denmark: (29 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Denmark: (29 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Denmark is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>danish techno <a href="https://everynoise.com/engenremap-danishtechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Denmark</td>
+  <td>Denmark<br>techno<br>acid techno<br>dub techno<br>experimental techno<br>melodic techno</td>
+  <td>Sugar &quot;Candy from Strangers&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f915bae496e5e39161818045c775703c5d2ef7e0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Jl4P2gHLQGtV95Wzj0X9N" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6kL5ZTbRK4ckbI9eobGbO8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4m8obPpjHmrXz9JyfE2SeC" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>danish electronic <a href="https://everynoise.com/engenremap-danishelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Denmark</td>
+  <td>Denmark<br>nu disco<br>minimal techno<br>disco house<br>danish pop<br>indie dance</td>
+  <td>Morten Hampenberg &quot;Easy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5dba0d704dc36acbe60347b6bef82775f46f2f74" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6s5a66qHlB1YKwUXtH6K1o" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/50gbwtczrJEW7WRaI9077I" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0BdEELKMpkrO8xxGvs4Nog" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ImIvvt5SuSuNEmkIZXs4D" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1JdujQsHDVgAvqk4yZG4O7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>danish electro <a href="https://everynoise.com/engenremap-danishelectro.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Denmark</td>
+  <td>Denmark<br>ebm<br>industrial<br>synthpop<br>darkwave<br>deep neo-synthpop</td>
+  <td>Lights Of Euphoria &quot;Puppeteer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8fea112832f099ba6ed57ba509f5648728fc3397" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-electro" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0jcs3oRNKs7Z99H4wQ3qLR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4rXWPJ6CfNeKj2MrXcsACW" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>dakke dak <a href="https://everynoise.com/engenremap-dakkedak.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Denmark &#x2380;</td>
+  <td>Denmark<br>danish hip hop<br>danish pop<br>melbourne bounce<br>danish electronic<br>big room</td>
+  <td>Johny Cola &quot;Hvorfor G Louise Til Bal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/44a8c3a03487eeebca95a89044420eb55e2962a3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dakke-dak" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1UKc3bSuemXfmj3bQ5uN8t" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0fmxVcIZCywEvv7zXPjFPA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1TkK6vDTKqFrKLurAy3AIm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4U12x9iI5LJyNMcJMwRtQg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3xSg9Z2yKH7Wy2v9uirpYm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>danish electropop <a href="https://everynoise.com/engenremap-danishelectropop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Denmark</td>
+  <td>Denmark<br>dansktop<br>danish pop<br>danish indie<br>danish electronic<br>stutter house</td>
+  <td>Liss &quot;Vibrations&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0e36cb0063e062f6993401a8ef0c4c6d854634dc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-electropop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6apZOO6rPg1phKHYD3ovDo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/32NHjtLnDaq2cH4ruoZ8pH" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2U56L3UWaNIeZuWewMTJYp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3G4tlHAMXgWSSp2K963j4m" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7H1mUyatfEMQsoRmw25D5I" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>danish pop <a href="https://everynoise.com/engenremap-danishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Denmark</td>
+  <td>Denmark<br>dansktop<br>danish hip hop<br>dakke dak<br>scandipop<br>danish rock</td>
+  <td>NOAH &quot;Over Byen&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/49e4e7640f6c5d17821bb68a869dbde3bfe6df43" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Cn9mpXEPmh6KCTSQEsYjA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2d4TUfOahHzSBYo0zm8mnV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1zQv0ffg2K39sECKhC2pHv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3bXXTmtkmZSqj4e8jAwZPn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3SFSBqV06U3CcYQkU6zufD" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>danish rock <a href="https://everynoise.com/engenremap-danishrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Denmark</td>
+  <td>Denmark<br>danish alternative rock<br>dansktop<br>danish pop<br>danish pop rock<br>glam metal</td>
+  <td>Spleen United &quot;Spleen Utd.&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d07466d0ad72dab615402f321a0a94dfa29ecda1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3c5Dz5BRGH829TCw1amPs1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0MITgTVdGQEYvGl3zSonPE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4l4h5VJgQFNmqyUqL6ZPdx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2poeyyKgA8O79XJgPgvKXV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5OQsji24iveK35yDc8GVil" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>danish metal <a href="https://everynoise.com/engenremap-danishmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Denmark</td>
+  <td>Denmark<br>danish death metal<br>death metal<br>melodic death metal<br>groove metal<br>black metal</td>
+  <td>LIVL &quot;The Purest Black&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ff603264bf7ec7ed2172bd6f2ea6ac95baa30caa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3A0ZqEfrCUZAGq3kW1wr0y" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1DqTDBqyLLsMCGvqvf3QLY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6nRTp6j5jEKKAGV4TQRrbM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3pY1lZCPBC3LfGmc5VzZnT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3HRWQzj67mKcj9ftW91HSG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>danish hip hop <a href="https://everynoise.com/engenremap-danishhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Denmark</td>
+  <td>Denmark<br>danish pop<br>dansktop<br>dakke dak<br>dancehall<br>danish electronic</td>
+  <td>MellemFingaMuzik &quot;JUNGLE&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cbdfa4c47e9d6c4f88d800582a86a79ececa0551" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0RINrLZ5DL15aQnKDF8qCh" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Ye9vt7btK1lJgJ7zw6xRJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2T6HO3QGBXbmtG05sPFOyE" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5uJ8Nyrk04bApoFxajCq2u" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6dhYuJ3otU3n2R7SuJKA7i" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>danish death metal <a href="https://everynoise.com/engenremap-danishdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Denmark</td>
+  <td>Denmark<br>death metal<br>danish metal<br>melodic death metal<br>grindcore<br>groove metal</td>
+  <td>Illdisposed &quot;I Believe in Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/950f66f35ca73e4d712e815dbd7f4c010906839e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2SoCEaLKXRWCbo8KGV1b6Q" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6BjJc4ZLAzVIRzsMnyEefc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1YURg2lqDPGwLQGsYVogjh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4u4ZSEDaTz6U5vxtX0LD1y" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0MMQubkhm8m0vi8kiTDsPt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>danish pop rock <a href="https://everynoise.com/engenremap-danishpoprock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>Rock<br>W.Denmark</td>
+  <td>Denmark<br>dansktop<br>danish pop<br>classic danish pop<br>children\'s music<br>danish rock</td>
+  <td>TV-2 &quot;De F K P M&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/47c61fab1ed4067b5d9ca9dc3708d4e2106175cb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-pop-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7ufBmeWEK4MmaVpnM5hEeJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/21sN3UTzKhWo4jg5YNWEuK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3TFDSbKCQ8EMc6Czunl74B" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Kort6XM14VJAMhfcwb6Jq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/17NQTrPZwZvpTEdYoObDLy" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>danish post-punk <a href="https://everynoise.com/engenremap-danishpostpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Denmark</td>
+  <td>Denmark<br>post-punk<br>cold wave<br>darkwave<br>deathrock<br>danish alternative rock</td>
+  <td>Marching Church &quot;Heart of Life&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6b64ace869fb90548c8e9e77503263a328f6fa3a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-post-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1iqDUYVtIpoyDUL9Tpe0Ww" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4AppOssLEUy97dUJ4GZG7g" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2tEulGiIsxXWe6tCRyjrp8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2aBHwSE2b0F1Q99rSbXsSY" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>danish alternative rock <a href="https://everynoise.com/engenremap-danishalternativerock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Denmark</td>
+  <td>Denmark<br>danish rock<br>dansktop<br>space rock<br>psychedelic rock<br>danish post-punk</td>
+  <td>Bisse &quot;Seks Hjerter&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/29775e2e471f611413e253207c69bd1af55aaa3f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-alternative-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3XSInmMYjj3TsNJtnXWGP3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3elrAXLuJ0nSNMSAhbDnqN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0koX0EuFDUn0N9fvIhGFWy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3HRzUQzw6S6w8QJUdXeeOG" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7nfQLe6RSIkX54iruCn7jt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>danish hardcore <a href="https://everynoise.com/engenremap-danishhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Denmark</td>
+  <td>Denmark<br>danish punk<br>hardcore punk<br>grindcore<br>mathcore<br>hardcore</td>
+  <td>ROT AWAY &quot;Swing the Hammer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/583db00728362948906090d8f6f5a055b3d5b898" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/237w3McjPuSbmQjyIysCd6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1lZ2ChtHbod1f4N78xULHb" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>danish punk <a href="https://everynoise.com/engenremap-danishpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Denmark</td>
+  <td>Denmark<br>hardcore punk<br>danish hardcore<br>psychobilly<br>dansktop<br>danish post-punk</td>
+  <td>Sods &quot;Pathetic - 2011 Remaster&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1788f4971acd5a6ca9211b96e2fd04acc524fd5a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3bwsEAUgAVvEuRyKQ7bZlG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2xoMr4AFEWPA5kYWSzjxfY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KV3FrnEVr6AUJcuIhwbu7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4jjKk6GoaXiKQB5qtNNlKD" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>danish indie <a href="https://everynoise.com/engenremap-danishindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Denmark</td>
+  <td>Denmark<br>dansktop<br>danish alternative rock<br>danish electropop<br>danish pop<br>danish hip hop</td>
+  <td>Mellemblond &quot;Et &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dea99f5a36b375863efbc6e6bbb66d0a48d6d750" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4KARfPSmM6iQTKPT1bQpWh" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0KffTRrFZAKlhoEhdUREpV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0zd6pzWg6d0RsigK5FyOty" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6M8bpCkpK9UWYSPnfqgdWA" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/27NX1lXCLYH5yXQskTvtDN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>danish black metal <a href="https://everynoise.com/engenremap-danishblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Denmark</td>
+  <td>Denmark<br>black metal<br>danish metal<br>sludge metal<br>post-black metal<br>folk metal</td>
+  <td>Afsky &quot;Altid Veltilfreds&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b3663265821b764222442ed902d31fd1939b84b7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2jebAz1TMNouAWStXkp4sX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/750qjatdMZy9qcRCIMJ0Bs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4zsc9mW6QxOqruPHh8KPVw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5iLrHbvxrKzEn1xaxjmIHQ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>classic danish pop <a href="https://everynoise.com/engenremap-classicdanishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Denmark</td>
+  <td>Denmark<br>dansktop<br>danish pop<br>danish pop rock<br>christmas<br>dansband</td>
+  <td>Teddy Edelmann &quot;Himmelhunden&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e6ba7c15a366b2e035eb71cda6593e41cd9bc132" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-danish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5fJAsqWOhjh3FARSvRmFaV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6uRm8wS0P52MoXspeFSJul" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pqDLjzhL4i4WGyfEazztO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5EwZlXl5pSLiXiLQ8cc55D" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3FTu3uTNJBtltB9cQCs3AY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>aarhus indie <a href="https://everynoise.com/engenremap-aarhusindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Denmark</td>
+  <td>Denmark<br>dansktop<br>danish alternative rock<br>danish modern jazz<br>danish indie pop<br>post-rock</td>
+  <td>Lowly &quot;baglaens&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/350d7dcef0f7f9e978e4f4cd9f97b0151e1ee0c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/aarhus-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2bD0tI4rPEjkLiN97LrnYZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6tBMqR2dxCAe8PytK9cKcf" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2z0MM1cdNeMkc7ktOzy08V" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>classic danish rock <a href="https://everynoise.com/engenremap-classicdanishrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Denmark</td>
+  <td>Denmark<br>dansktop<br>krautrock<br>progressive rock<br>classic danish pop<br>blues rock</td>
+  <td>Alrune Rod &quot;Natskyggevej&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f0c76bc08b00ef8c7a7a939e2d35032e6f5703b9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-danish-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2htv2NWgQSJLSvCh472kI5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4n4AQMO9DUYVE1ARtMe1Id" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2V2dcbU6wAkMh6v11dYqeL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ZYBFPO2ZTHNGn838MmlaC" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>danish indie pop <a href="https://everynoise.com/engenremap-danishindiepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Denmark</td>
+  <td>Denmark<br>dansktop<br>danish modern jazz<br>danish pop<br>aarhus indie<br>dream pop</td>
+  <td>Ganger &quot;Elsker Dig For Evigt&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9d3236c10480d4aeee0a6a26b730dbd04079214a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-indie-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7kLo8H2f5vDVvRXO4H3iDl" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1yVDbtMMff20mrratUXuSc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0kFdJ7zCDF62cnYKUyJ7p6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2tIRdDSiodbmVOARv2z1zk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/13yNUpyEKAe5w7RpwRVawf" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>danish singer-songwriter <a href="https://everynoise.com/engenremap-danishsingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Denmark</td>
+  <td>Denmark<br>dansktop<br>danish pop<br>danish pop rock<br>spoken word<br>classic danish pop</td>
+  <td>Claus Hempler &quot;Op&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0c5a5d9c36ceecefe9ba0f5f09eaecb6c66b789a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-singer-songwriter" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5LnsEEt8VzHo7kM0W5b6lJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5EdLPXxNnAvxoKXni4M5IN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0h5SXubFTWKdOxzYPzdcZ5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZsIakbmP3osMLAKfarzxo" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/46RpYpeLvD1DF9mn5SOAKV" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>danish experimental <a href="https://everynoise.com/engenremap-danishexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Denmark</td>
+  <td>Denmark<br>experimental<br>new isolationism<br>drone<br>dark ambient<br>ambient</td>
+  <td>Croatian Amor &quot;LA Hills Burn At The Peak Of Winter&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cdf8a9b0d1fefa5de548a5a872515eea619b7e73" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3IgH5l5xPn8tVNaV2zP9gb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0SUatsZp7U7k1VgYcY1j5K" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6iGe25ABzmoHyOqzhvebtM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0lLTAeUn2sXch458BkwxXi" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6eYML6crDitGrJcVaLzkjK" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>danish modern jazz <a href="https://everynoise.com/engenremap-danishmodernjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Denmark</td>
+  <td>Denmark<br>jazz<br>danish jazz<br>nu jazz<br>danish indie pop<br>dansktop</td>
+  <td>Bremer/McCoy &quot;Massiv&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f56fd3987701ad17d138ada454ce95e882a410d7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-modern-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5uocET0I9F7rehhu5fHkgP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2q8VWIvm8iU5OkP0ITRfVF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07RbrdRKcgOiNmmkjRcNQt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4JFGYjUaeIpw2oRAl1zpF0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1mOzanFFmALJnIBvJZ5Jil" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>danish folk <a href="https://everynoise.com/engenremap-danishfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Denmark</td>
+  <td>Denmark<br>folk<br>traditional folk<br>polka<br>nordic folk<br>folkmusik</td>
+  <td>Rannok &quot;Pr Polka&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/605f87cc681c16190e2fb03e275464fda81e71d7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0YYoaREP5kI6HHmLhayTKw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0WVDWzuPGZQCeFZ1DDMDN6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5VM91ZOHLh2kib1sJJE8to" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2d9dOO1dnpiBc5FhoALPth" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4CFhAwWD0rDuAXtoZeFpRs" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>danish jazz <a href="https://everynoise.com/engenremap-danishjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Denmark</td>
+  <td>Denmark<br>jazz<br>danish modern jazz<br>vocal jazz<br>free jazz<br>dansktop</td>
+  <td>Hans Ulrik &quot;A Nightingale Sang In Berkeley Square&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a10d55a91e114dfda007a35c1b88f4cf2ba13e85" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4bXaVeioba5Ru7wegjS6lQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2XFrsvPGbamN9w2C57a9hg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3XhpcFWes5zrkExjrvWNXY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1vFIWTm9mJ4onX1WPtNsZB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6p23OZqE10oqZkLt9Ci7WI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>danish contemporary classical <a href="https://everynoise.com/engenremap-danishcontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Denmark</td>
+  <td>Denmark<br>nordic contemporary classical<br>avant-garde<br>contemporary classical<br>21st century classical<br>chamber music</td>
+  <td>Per N &quot;3 Magdalena Songs: No. 2, Dr&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/768645d8a5fc9c830644c3523d342d40df2ac625" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7agxHZpsEVkIvAsYVNdk2T" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4LmqkRtYmylQxZZbflivFF" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>danish choir <a href="https://everynoise.com/engenremap-danishchoir.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Choir<br>W.Denmark</td>
+  <td>Denmark<br>choral<br>chamber choir<br>requiem<br>contemporary choir<br>opera</td>
+  <td>Ars Nova Copenhagen &quot;I lie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f0a4b70b4b0648aad738de6fa10319d720608b2d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-choir" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7JDkz1w9qtj6hqdQPPRais" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4OiGOl4fr9CWcZnnYPZelX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3S3ZN8izgWGdfClUb1HrcS" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6UDALqCnXIggyOXnyRTYFd" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>danish classical <a href="https://everynoise.com/engenremap-danishclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Denmark</td>
+  <td>Denmark<br>early modern classical<br>post-romantic era<br>late romantic era<br>early romantic era<br>classical era</td>
+  <td>Friedrich Kuhlau &quot;Piano Sonatina in C Major, Op. 55, <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c93c3d6b4653f9835f10295848a54776f7b1a27d" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2acA7IkpR4FWW5Uy6SO6CM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3u0sfPBO7pfMn3FKWPWAKq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/62WNkmaT9MM1CA1ja3gY9S" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7d759Gy6OzQNxcMtpCDT8o" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

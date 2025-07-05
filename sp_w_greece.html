@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Greece: (24 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Greece: (24 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Greece is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>greek techno <a href="https://everynoise.com/engenremap-greektechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Greece</td>
+  <td>Greece<br>acid techno<br>techno<br>dub techno<br>melodic techno<br>hard techno</td>
+  <td>Nick Devon &quot;Spectra&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/afdefbcf1551ddae92ed4a0d35be52f783eb5a0f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0OG2xt6KhVFQDnBBQUdr1H" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7chfLI5b4xLB4V1JWaDKv7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3WQV9L2pMqHw6dzCoPujb5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7d0ncclCp10Gz9mfFCXdWx" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>greek house <a href="https://everynoise.com/engenremap-greekhouse.html" title="&#x2306;">&#x2306;</a></td>
+  <td>House<br>W.Greece</td>
+  <td>Greece<br>progressive house<br>melodic techno<br>organic house<br>melodic house<br>indie dance</td>
+  <td>Christos Fourkis &quot;Lonely Dance&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/532216708f41ffb87bf13fb9c08480e07a933db2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-house" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3t3XQVC2JfHYjPbJkG8nv6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5OdDSF7xtSO7aE15YUecGm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3wRe1jM5Jwkqy6BNt9dbgP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7z1PpbnurIMUTHz6hhBLav" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7kjPEC04biRLBm7mMmf0UY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>greek downtempo <a href="https://everynoise.com/engenremap-greekdowntempo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Greece</td>
+  <td>Greece<br>trip hop<br>nu jazz<br>lo-fi beats<br>jazz beats<br>downtempo</td>
+  <td>Kill Emil &quot;Lala&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9ca57cf661b97e4957c197c0ce68e7155faf669b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-downtempo" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6vHkM1WWxjeycNLSw5BCrc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/28qCNYcXyBvppVKPpZNfdd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ce6qibq12czHuKrqrLvWH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1b2kHB91BJevkQ3pc8ICHd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mgAVTmwMUedrJ2HkvQW6K" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>greek hip hop <a href="https://everynoise.com/engenremap-greekhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Greece</td>
+  <td>Greece<br>greek underground rap<br>greek trap<br>laiko<br>entehno<br>greek pop</td>
+  <td>Taki Tsan &quot;Allos Enas&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7d89310c14a6b7b146e85c58dccc63572cf3fbec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6H1McfFFHZAgtGSIOwa0Ec" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0NcAnGFICl7Oj202HLzPpf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ZqdYOeyrhtWlEcRc8IwJo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1NRTglSlMWYF1NFIT69qcx" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4QOcLMa3z2ZGuIJBuHgpHS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>greek rock <a href="https://everynoise.com/engenremap-greekrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Greece</td>
+  <td>Greece<br>stoner rock<br>space rock<br>greek psychedelic rock<br>stoner metal<br>greek metal</td>
+  <td>Puta Volcano &quot;Dune&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2d1bcfd4fef0c084d489f973b4d10ffae30487cc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Ss8rPIGwieyOmrbHp8vPD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4FGSq8L27DzNOAv63DbBSV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2p205OmqxSscUXrdpZSYO5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/601tRGgDl30S8AIfg1Be87" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5T7VBOf0e0gFv5ldcJBOcQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>greek trap <a href="https://everynoise.com/engenremap-greektrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Greece</td>
+  <td>Greece<br>greek hip hop<br>trap<br>greek drill<br>greek underground rap<br>laiko</td>
+  <td>Dirty Harry &quot;Zero&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/920b6e629ac5604e44f9489f86921d3e02e02752" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-trap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4XBfVwXZwyhQ54OFYEbUfB" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/38cq1JOTwmZbNcv3SwXuoa" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MrvLYi1MBmQCg3BjSbwni" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7MTDdFJ0rSpNZiExtEehNA" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7IzHpSdI9z4uzercZrFPFv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>greek punk <a href="https://everynoise.com/engenremap-greekpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Greece</td>
+  <td>Greece<br>punk<br>entehno<br>skate punk<br>greek rock<br>darkwave</td>
+  <td>Oldschool Rednex &quot;Oso Menei Kairos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/86f6a7881b8136e81582fdef002fcd520a185228" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2GBiMVYCWAPV25oNSPv5p4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Hi36iC4WJj9tr7pqGUvp0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5DxnyfuUDsRY5hE8M77T5Y" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7lzMyQkMIX3uhobtAKij2W" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0oDHJtm9VKhgdRdU1BQ4XB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>greek metal <a href="https://everynoise.com/engenremap-greekmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Greece</td>
+  <td>Germany<br>black metal<br>power metal<br>greek black metal<br>symphonic metal<br>melodic metal</td>
+  <td>Varathron &quot;Flowers of My Youth&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b499387bad86b43f71326a4c4d4df2b690e295b2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1WMmn3qzoTLB28wYu5hXBL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/40SU6Jnb1f0fYjpN1bmhjP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4dKF7xyTmKWLUaprNTdRS7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/50g0pafJgun35YsyE436fU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1G4syy2lqM04qJENKcawLZ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>greek indie rock <a href="https://everynoise.com/engenremap-greekindierock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>Rock<br>W.Greece</td>
+  <td>Greece<br>greek indie<br>cold wave<br>darkwave<br>greek psychedelic rock<br>post-punk</td>
+  <td>Bazooka &quot;Exailosou&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/15b5beda879b398b495c53b2069f5a2c657906ef" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-indie-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2wHnB4lLq7hkUGwUZeimVu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ZZhBbWXrnDizlASsfDH1N" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/358v97Mt29ihjjjbBfUWNx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5gUaBdkfVGmTmUPfYdUeIa" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>greek pop <a href="https://everynoise.com/engenremap-greekpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Greece</td>
+  <td>Greece<br>laiko<br>entehno<br>cypriot pop<br>greek hip hop<br>europop</td>
+  <td>Vasilis Dimas &quot;Ragizei I Kardia Mou&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/56191c0af625985156d4bb7da7077c86b81af504" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6P28qXfeajaEByL98wfART" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0sqLM1ijAdKHSh2iHNv5He" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6xZYWzUr95IiHhgaolxNZF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0bloLs6tJSdKJcmsu2dypC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Dsf6OTUOkyH0hymH4pzY9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>greek drill <a href="https://everynoise.com/engenremap-greekdrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Greece</td>
+  <td>Greece<br>greek trap<br>trap<br>drill<br>greek underground rap<br>aussie drill</td>
+  <td>TAFF &quot;DONNIE DARKO&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d4b2b4544de0bc88e42dbfbc5444c1403e2a4fd3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-drill" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/29RpHY4fxbClvb96Snk15y" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0lhbQQ7YzbK8iyifsXwiAK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0dTYkVQswror3TfymvExa4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1kdg37R0SatOXUPhY1yTZZ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5C3sgYBFeqTb7xE1ZZUqJm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>greek indie <a href="https://everynoise.com/engenremap-greekindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Greece</td>
+  <td>Greece<br>entehno<br>laiko<br>darkwave<br>greek swing<br>post-punk</td>
+  <td>K. BHTA &quot;Tyxero Asteri&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/99ec3f20eec16fe10702e74a8fa2b2d85d4c405f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1pMH3NBQ4m7UUMs3s368Wl" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5UMnYHbk0p2Ng3lCiVosMZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0VPP9Tk9gP7JNdK6ePgfS3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0TPXMa29FW1r6O5sWMjq8M" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4zOPDSqeV9dXk70BaYj1J1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>greek black metal <a href="https://everynoise.com/engenremap-greekblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Greece</td>
+  <td>Norway<br>black metal<br>greek metal<br>death metal<br>symphonic black metal<br>voidgaze</td>
+  <td>Acherontas &quot;Lucifer Breath of Fire&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2240f6150858457f3ad748a1441cc015d31ca567" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1K8mWwbCmubMf5cnYvVO5s" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5G5uiaaU1lfD7ztyzQfGKs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5wsJBo3Gk8gFMTKQDycgKy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4H6uwo2ZcCFE7m0xvgZG0m" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>greek fem rap <a href="https://everynoise.com/engenremap-greekfemrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Greece</td>
+  <td>Greece<br>greek underground rap<br>greek indie<br>laiko<br>spoken word<br>greek hip hop</td>
+  <td>SAW &quot;La Fama&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/85446c208dd4a6db575828107d2c2db0c25ed0a5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-fem-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0XWiDVGiKjIUA1bZAA256K" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1bKNhIGs1PB3kPZvhT09Vw" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0h4j4kaSRbda9uRXXqHb5l" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2m2doGTW3ZO9ENHNE5bVV7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2og2KKCWprZawHonJEn79U" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>greek psychedelic rock <a href="https://everynoise.com/engenremap-greekpsychedelicrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Psy.Goa<br>Rock<br>W.Greece</td>
+  <td>Greece<br>space rock<br>stoner rock<br>greek rock<br>stoner metal<br>psychedelic rock</td>
+  <td>The Steams &quot;Fjordian Blue&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/702d03e017feafb3ffa8af056a65f87c580a9bd3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-psychedelic-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6lLcp5G65wgOXcQIwzBytM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1TRSWLf7DyPgpmsyJXaYQT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wG7KxdWS8SjPxG69TkTXX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7fsAOROoThIn4lyxM0NOY8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7HhQbwTqJHIYwvZCL2bjQI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>greek underground rap <a href="https://everynoise.com/engenremap-greekundergroundrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap<br>W.Greece</td>
+  <td>Greece<br>greek hip hop<br>greek trap<br>entehno<br>greek fem rap<br>greek drill</td>
+  <td>Sadomas &quot;Hardcore&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/93f65eec14b9a35dd822682e5efd93868b9d7db6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-underground-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3zSf8RT2J8CHyvfOjuDAXi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2zrc4XH6zCkuYIHjs3DM5F" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1teeftKdSACJ6avwDsa3en" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7zSmuIl1xwoKCK5crtWiOI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/68xShwxwn4D4UB08SR4oVM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>classic greek rock <a href="https://everynoise.com/engenremap-classicgreekrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Greece</td>
+  <td>Greece<br>entehno<br>laiko<br>classic greek pop<br>greek indie<br>greek punk</td>
+  <td>Lakis Papadopoulos &quot;Ta Isiha Vradia - Live&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/30c214cb01bd5006c2b241fda662aefd9d0e3b49" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-greek-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2RyjnVr8BGPGceSKLGni0U" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3yO7yAkgfetYQ2hpYb2AJX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4uC8pkLUuYqam68CkNMpSK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6eyb0T2ubWgNgqT6vl9yNi" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Eahf3lWfm34QrPFZrmfBm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>greek swing <a href="https://everynoise.com/engenremap-greekswing.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Greece</td>
+  <td>Greece<br>entehno<br>laiko<br>greek indie<br>swing music<br>rebetiko</td>
+  <td>Rena Morfi &quot;Otan Sou Horevo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/790b50471aca8c44e8017f557c9127c2c54b821b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-swing" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2nyQtixJX29iSHL0QyYKj9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/428kqH5lzImD4NkPLoZSrv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7hYNvmckwhAbDIl56NHOdM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2752U1UpjIgS4otqt26UoO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2PnlDQDETkWRuz3IQLjzEy" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>classic greek pop <a href="https://everynoise.com/engenremap-classicgreekpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Greece</td>
+  <td>Greece<br>entehno<br>laiko<br>rebetiko<br>classic greek rock<br>neo kyma</td>
+  <td>Dakis &quot;Tosa Kalokeria&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0d35b23c56128df2a306d706ddeb91f9b0f8fe73" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-greek-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1k7uynxyxuDUWHGZMQz29t" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1pVzzHXNtFHgSkvvuGaraS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7HjFpGICUNeDYdJrU8gucr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/44pcK83Ik9jkD47wNrEwgO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4yDFsvKq4hLePhYcQu2sUG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>greek folk <a href="https://everynoise.com/engenremap-greekfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Greece</td>
+  <td>Greece<br>traditional music<br>entehno<br>laiko<br>nisiotika<br>greek clarinet</td>
+  <td>Christos Tsiamoulis &quot;Edo Ine O Kosmos (Here\'s the Wor<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b8a766057441bcd5a0edb1dbd8028b85a1e2e734" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5sIYFyTFQRyTxcpZPkI9FD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6QmEJ46xBnlEcm4k9CstVu" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4emNotVCczVyN1O2kYlYsQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2pwTBm8SDOH0HcTfgel5Pc" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5rQYqxIu3sKry3O9TpEpaM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>greek clarinet <a href="https://everynoise.com/engenremap-greekclarinet.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Greece</td>
+  <td>Greece<br>traditional music<br>laiko<br>greek folk<br>traditional folk<br>tropical music</td>
+  <td>Petroloukas Halkias &quot;Skaros&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/14dc47fe35a8d5a5b63a230fde1098054d303800" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-clarinet" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6NoXPJYLVWkHR7eUviGQEg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/75AdiuZcTyPaChb4c6BH5G" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2OGItWOuQSGvPRP7lUhNdh" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>greek jazz <a href="https://everynoise.com/engenremap-greekjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Greece</td>
+  <td>Greece<br>entehno<br>jazz fusion<br>greek indie<br>laiko<br>jazz</td>
+  <td>Babis Papadopoulos &quot;Spring&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2959b6936601855909e990e5ba90e79ab073a341" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3kQbOXMDpAwBp9Qh10Sq9o" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4oHKn8uS4GzQIpUAgJNP78" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5xiG1KDOYrlp6v7Ftpoh4P" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>greek guitar <a href="https://everynoise.com/engenremap-greekguitar.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental<br>W.Greece</td>
+  <td>Greece<br>entehno<br>laiko<br>rebetiko<br>bouzouki<br>classical guitar</td>
+  <td>Mikis Theodorakis &quot;Horos Tou Zorba (I) / Zorba\'s Danc<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/66b8c32cd55d71a815ae2690a50c12743f98830c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-guitar" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0h00lMNEpFWImvcH62Uu70" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5DOjUjlPPDjf6BOY7kiVX4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5p9sIvt2qChYtOEOmllWvV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/008ASRSwjWPbOR306Kb3M0" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>greek contemporary classical <a href="https://everynoise.com/engenremap-greekcontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Greece</td>
+  <td>Greece<br>laiko<br>avant-garde<br>entehno<br>bouzouki<br>classic greek pop</td>
+  <td>Eleni Karaindrou &quot;The Weeping Meadow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/687e3f20d7cb81fda00b6eca94c1e033e8f50a9e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/70AZJKZ1Uunq518QmKOChZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5P8tTd1cQWuX5toG2oVCh5" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

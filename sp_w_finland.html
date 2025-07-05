@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Finland: (50 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Finland: (50 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Finland is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>suomisaundi <a href="https://everynoise.com/engenremap-suomisaundi.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Finland</td>
+  <td>Japan<br>psytrance<br>psychedelic trance<br>goa trance<br>dark psytrance<br>big beat</td>
+  <td>Lemon Slide &quot;Magic&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f3572977a2bd1ac6a95ce73505a6812d3a2cc210" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/suomisaundi" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/34TXIeVpnBC3QSd2doTUQi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2oDlfDr6DS4hmKtIkLjdTf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/62JQVp790oALiDdVuMFtqL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5lq6QRi7FpGiVprBErpDJc" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>finnish techno <a href="https://everynoise.com/engenremap-finnishtechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Finland</td>
+  <td>Finland<br>acid techno<br>minimal techno<br>finnish electronic<br>techno<br>dub techno</td>
+  <td>Sansibar &quot;Liquid Programming&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1773b6d38a945bf411df026fe097fde5a17a32e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7jmG3dRIke8z1vwGUKIJPO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5HV5mTZCAuvBlRKvuNxAFu" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>finnish edm <a href="https://everynoise.com/engenremap-finnishedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Finland</td>
+  <td>Finland<br>progressive trance<br>trance<br>progressive house<br>nu disco<br>melodic house</td>
+  <td>Joonas Hahmo &quot;Y&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a12057c9e108f768e3208b748625dc681b59840d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/25gyzJDH9VJff2TtZI5JAt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4PRZ9KAdx0LySGaCA45AtW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5htcg03sDVjEhDXZwDyi69" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/49wJ44ThvVbhpVRgKkKcqY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/02YHUG83AC2mT2Y9fMEN6M" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>finnish metalcore <a href="https://everynoise.com/engenremap-finnishmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Finland</td>
+  <td>Finland<br>metalcore<br>melodic death metal<br>deathcore<br>finnish metal<br>melodic metal</td>
+  <td>Horizon Ignited &quot;Equal In Death&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bb42a7ec4a93408e202b74e16052b694ca6a8b06" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4JyiMCQ18jKlAZvixKbTst" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4E95uV8A7beH7t5SolOBjX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3rpDotSebqQs0mXgm2MD7X" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4kGjfZjyLTEsaC2L0Smnt5" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2TniHhMpUxyNQ6OwiWyImH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>finnish electro <a href="https://everynoise.com/engenremap-finnishelectro.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Finland</td>
+  <td>Finland<br>finnish pop<br>finnish indie<br>finnish rock<br>suomi rock<br>cold wave</td>
+  <td>Ruusut &quot;Alku (feat. Paperi T)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dfa18df1a8e4dfc53f945c9f27ce54a46731015f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-electro" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5HJYWkhS1nQAEPqAPGHX9f" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6kWL50uF6lux1Jiw9M5yhW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5HL2OEkbLXf3Y8raumju1r" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/45ax5lEHdkSod0z6eMtmjB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/24NEXnDUd2SH8wXhh0xq90" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>finnish electronic <a href="https://everynoise.com/engenremap-finnishelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Finland</td>
+  <td>Finland<br>idm<br>finnish techno<br>acid house<br>minimal techno<br>breakbeat</td>
+  <td>Morphology &quot;Vector Plant&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4bcf4d42c4838976188517744b440834798c1cd5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0POKngq0ng95DJndL8sfv5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1thKr5e2Vm58eAyvPU6Uoh" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>finnish trap <a href="https://everynoise.com/engenremap-finnishtrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Finland</td>
+  <td>Finland<br>finnish hip hop<br>finnish pop<br>finnish drill<br>suomirap<br>finnish dance pop</td>
+  <td>Turisti &quot;Kiireinen nainen (feat. ibe)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8fc681ebb63714069383fc469e5d4a1143f8e7d2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-trap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7pPv7mv8MOKUwa9zTFkuda" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2qIykQqS2iwSA4lkVUR48b" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2qxMBxLrkuRi8hMozt6OjQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rtAb5UY99HubTq0EhxZ3C" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7bjAxeKczRNaMSHUGyM8L9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>finnish dance pop <a href="https://everynoise.com/engenremap-finnishdancepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance<br>Pop.World<br>W.Finland</td>
+  <td>Finland<br>finnish pop<br>iskelma<br>finnish hip hop<br>finnish rock<br>suomi rock</td>
+  <td>Nikke Ankara &quot;Rikkin Prinsessa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3d71cd86a965444675ef4e25196591d638dfd238" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-dance-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0AuBqHQDvYOlDb1gwxSewp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/18sKpIGOaFlR5256AqCh2E" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6cPCwRGHX7TBm2aED9DI1y" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5r3IYZTOfh5kUzBLJyw2GY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7mv2EtulUPBBoNmRMUjkwE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>finnish drill <a href="https://everynoise.com/engenremap-finnishdrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Finland</td>
+  <td>Finland<br>finnish hip hop<br>finnish pop<br>finnish trap<br>finnish dance pop</td>
+  <td>Madboiali &quot;Allez Allez Allez (feat. SHRTY, Blacflaco,<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2ff4a4b29844f9c845d6f6f5e9cd6b5169613e93" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-drill" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5KLc05lgSG0insWWU3KIgk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4AJ7AKAVHpeY9DRDEctqYy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Xkdu6jagH2hBwvTHWuXZn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07IPwqzCkhwI7Zv5rJUEKD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2SZWB21Ys5uDKf3TAKR6DZ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>finnish power metal <a href="https://everynoise.com/engenremap-finnishpowermetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Finland</td>
+  <td>Finland<br>power metal<br>melodic metal<br>symphonic metal<br>speed metal<br>symphonic power metal</td>
+  <td>Thunderstone &quot;Tool of the Devil&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9da12aa9436a2e9b733cd661499b8f571eeff0a3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-power-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5chT4nyIhvoYKjV76HPmrm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/33KhDl0itx7zYyzuEhwDQA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MiMmHUf0jzgYmV3UJwe96" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/38K0Ndsq8KmFQ6zmINyU5W" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6c7S0ivFNfYmerFQYegt7j" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>finnish heavy metal <a href="https://everynoise.com/engenremap-finnishheavymetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Finland</td>
+  <td>Finland<br>finnish rock<br>power metal<br>melodic metal<br>heavy metal<br>speed metal</td>
+  <td>Stam1na &quot;Vereen piirretty viiva&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/82d3aff95d9d699a22a44b4dcd935f7aa1512cee" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-heavy-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6uXn0dJYOqm8UjxPsgd8Tc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1UJTujbW6NmQ1xqzNcDaY7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/26ekYF8vwVecUVgCYo79hN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3dciBqWcHv61jqBYETj53c" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Ke01S9ZpyWtdrvZJaHx9H" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>finnish melodeath <a href="https://everynoise.com/engenremap-finnishmelodeath.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Finland</td>
+  <td>Finland<br>melodic death metal<br>melodic metal<br>finnish death metal<br>death metal<br>doom metal</td>
+  <td>Before The Dawn &quot;Deadsong&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/94d52b2b7fe9dea03cbbece64ad0e73f68bd68f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-melodeath" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/52XAD6fFDcSXUwPsMccCkP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1h7iHbS21hpvGF5ZnzLN3Q" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Lu5Khgj8zObjJTSLjR5Gk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3VRB6xU4TvDx5uHySCr2gC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4KZUZKEl1VPNwOcNGaecYE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>finnish hard rock <a href="https://everynoise.com/engenremap-finnishhardrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Finland</td>
+  <td>Finland<br>finnish rock<br>album rock<br>arena rock<br>finnish pop<br>aor</td>
+  <td>Peer G &quot;Backseat&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/67936aaa431e22c980510d0b1f560b9e0452d984" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-hard-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6mByErbai6FtYBjajkv3un" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6o5FOjzzal4sPtjeonHloI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3iVnSbOrWOIpzmNqZAoNbk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2q5xQLhdevGpdjOPYgTTxX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7hSA2ufvd72cKJtxN0OfB5" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>finnish metal <a href="https://everynoise.com/engenremap-finnishmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Finland</td>
+  <td>Finland<br>melodic metal<br>melodic death metal<br>finnish rock<br>folk metal<br>death metal</td>
+  <td>Kaunis Kuolematon &quot;Surussa Uinuva&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9dd7b1a37049d6fe7846fe73310978274f08f5e1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5PFcd2ATPKbFMxoYTuFCDK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/18oX7hhCoQ3AIQyBmtD6Fn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5SsKhhiFFIl1NczIgVZBNb" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4mRYJGH5DH3EjiLBcFoR6Y" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6S9wDyOBBLXoHw5AOolIk0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>finnish alternative rock <a href="https://everynoise.com/engenremap-finnishalternativerock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Finland</td>
+  <td>Finland<br>finnish rock<br>finnish pop<br>suomi rock<br>iskelma<br>finnish metal</td>
+  <td>CMX &quot;Ruoste&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e5726cacc55be7817ebe5566653c1579a92df85b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-alternative-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7G9HA8QmfQFWV5kTqA4BfK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1cxkt9NI4V0glkXJsY0eMo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0oKxBrELBQjkd7Mh04z3tG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/179C8MKnjMaijoMkIKgRHv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7KSORPT52tGJkf5FuHfBZx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>finnish reggae <a href="https://everynoise.com/engenremap-finnishreggae.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Finland</td>
+  <td>Finland<br>finnish hip hop<br>finnish rock<br>finnish pop<br>iskelma<br>reggae</td>
+  <td>Raappana &quot;Chilii (feat. SINI YASEMIN)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/51939515cc2d7882b3a6f20da74ec4ed6da1d001" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-reggae" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/65y2A9bPBaQC1b77m0uhvc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1htrcOgeBDoRSY5QvBW1YW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1pX7mV88tc1qRU7Cc1Sji5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0EHH5waYpVm2H1QVRvKMf7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3iOmxgqW31ErxoAqnmZxko" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>finnish pop <a href="https://everynoise.com/engenremap-finnishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Finland</td>
+  <td>Finland<br>finnish hip hop<br>iskelma<br>finnish dance pop<br>finnish rock<br>suomi rock</td>
+  <td>Jannika B &quot;Paras osa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/848d042ad4698aaf51f82f8e9e8c47a89dcadbab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6TWIjy7KDgCgRAtnfCKCBo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3rjPCrrCjMZwWDlAIRu44q" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1vtTt1eLsev1JL6k6s7h9w" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/16nMSxq0SFe3pwrQAXVexg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2MXesHwMsnEwYiv1fhItKo" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>finnish progressive metal <a href="https://everynoise.com/engenremap-finnishprogressivemetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>Progressive<br>W.Finland</td>
+  <td>Finland<br>progressive metal<br>melodic metal<br>djent<br>power metal<br>progressive rock</td>
+  <td>Wintersun &quot;Beyond the Dark Sun&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9c212f73c3034ad836fd24f404345b26e05163f2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-progressive-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5I3xTV8P5mVG5aDGhvy7mi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1B8OWWOqc7hn1ajJpv4768" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>finnish hip hop <a href="https://everynoise.com/engenremap-finnishhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Finland</td>
+  <td>Finland<br>finnish pop<br>finnish dance pop<br>iskelma<br>finnish rock<br>finnish trap</td>
+  <td>Heikki Kuula &quot;Kaksi karamellia&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a6fd31894c8c2fef07afb03b64c72629de438902" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0VGUSieiAtrf2uHl83L6XF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1YGvJM20VrskrnSGuT0V2W" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/324UX24tYc5PWK52zMnUlx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0fkrlyCBjnDzfSNhdLks5f" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4FsGNrnJq1udBYxOW51wk8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>finnish death metal <a href="https://everynoise.com/engenremap-finnishdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Finland</td>
+  <td>Finland<br>death metal<br>melodic death metal<br>finnish melodeath<br>melodic metal<br>doom metal</td>
+  <td>Eternal Tears Of Sorrow &quot;Sakura No Rei&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7e97625f5302e18c3090d7a6031f1fdf3e354d58" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7pA4fGbmVuMA6boUdmuRBO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Ky7mnFOobBYJMFnNtLN8O" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2DovM8uUlXWpZUJtLYQwYc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ABQmVNPJi3rSJYTzDtwPk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2PN1GY09PKrBSQPfaQ36fI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>finnish pop punk <a href="https://everynoise.com/engenremap-finnishpoppunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>Punk<br>W.Finland</td>
+  <td>Finland<br>finnish rock<br>finnish pop<br>finnish punk<br>iskelma<br>suomi rock</td>
+  <td>Juustop &quot;Voit s lopettaa?&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ae890fd52f0acf56dfd0365a59aa3892a2af650c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-pop-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1CCvOZQ09Q7NpUutXVMi2R" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5AnKiIswDra20Mmmoe4aPs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2qL24xHqBjU2aV1JhRAiGl" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3xWlBkkbzbvQHncOgBQacM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6WRUTOcpT6kvXaa98Mi67h" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>finnish post-punk <a href="https://everynoise.com/engenremap-finnishpostpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Finland</td>
+  <td>Finland<br>post-punk<br>deathrock<br>gothic rock<br>finnish rock<br>darkwave</td>
+  <td>Musta Paraati &quot;Romanssi&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/000be65c4785bc68a10578c5e5695ced72c7972e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-post-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6TBAn1Qs11cQTpzxef2aZN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/72rILJ1Fw18i5bRYWoOuhd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0H3REHofUNFGwy06HpcaAJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3mGYXS56oVILyJ7UCy8pcu" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>suomirap <a href="https://everynoise.com/engenremap-suomirap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Finland</td>
+  <td>Finland<br>finnish hip hop<br>finnish pop<br>finnish dance pop<br>lapland hip hop<br>finnish trap</td>
+  <td>Joku Roti Mafia &quot;Sw kakskyt&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ca36b322031c5d73afca632180f9b5430137a174" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/suomirap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/32vOftXttUMo9RPcTQSfpZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0ocYi6NbDWukYi59kxyepA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7g9GDkPksjZlHufSCugF2C" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6PwacDx311RmyQD3WWa6ry" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4m2nbP1z4G14ZNsXedrDg3" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>finnish indie <a href="https://everynoise.com/engenremap-finnishindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Finland</td>
+  <td>Finland<br>finnish rock<br>finnish pop<br>suomi rock<br>iskelma<br>finnish punk</td>
+  <td>Kynnet &quot;Helpommin sanottu kuin tehty&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/af39bba99f6f5649f1aef44dafb89e986c7d9335" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5RXWPcWQupEDdZDzlPIeKw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6c1jaXKDRjxRN9X2NumZ3g" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Lt9nrfD7ZLByZyKgh8Vpm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2hnB25Lc35wnV4QSJk1EM4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6HhQxagxNbeUUSQzlnhuRi" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>finnish idol pop <a href="https://everynoise.com/engenremap-finnishidolpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Finland</td>
+  <td>Finland<br>finnish pop<br>iskelma<br>finnish rock<br>christmas<br>laulaja-lauluntekija</td>
+  <td>Antti Railio &quot;Vahvoja syd&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a06577bb29bc5fddf1a41b3b6496815ffec315aa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-idol-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/00qxymkbgFSqoDVW6E8A7k" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2XFcxayFDZXADbCqlSfSjK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0bR4rdFdXFBzK83ftYDr1j" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5HV9MSLyejaCizHya5jlGu" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>suomi rock <a href="https://everynoise.com/engenremap-suomirock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Finland</td>
+  <td>Finland<br>finnish pop<br>finnish rock<br>iskelma<br>classic iskelma<br>finnish dance pop</td>
+  <td>Ismo Alanko &quot;Taiteilijael&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cbdf284169459662d42bdb6a244dcaed53fe7029" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/suomi-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7LiXCUpaxRI6q0wWJvOMka" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7aINHNJg40REiMEP6G2Zdq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2MqaSbvOASmoX6XUcg3UpL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4AcSQkDzNqLf5NziK6CkVb" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/77qlKykEFsulmoehcHDXZX" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>finnish worship <a href="https://everynoise.com/engenremap-finnishworship.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>W.Finland</td>
+  <td>Finland<br>gospel<br>finnish rock<br>finnish pop<br>iskelma<br>christian rock</td>
+  <td>BROS &amp; SIS &quot;Valtameret&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3b20462a138925bbdca58baf89653b4856863f6b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-worship" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2KY210njESBfle21UawSsj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4uYiWvGxE9KuBnhBGiaiKF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4RdLGWLphtWdaf5RCGzWhc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66hkq7B0dJOk4aLA0M3I7i" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7cCe3vE37IwR7WYw4dHdvx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>finnish black metal <a href="https://everynoise.com/engenremap-finnishblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Finland</td>
+  <td>Finland<br>black metal<br>metal<br>folk metal<br>death metal<br>war metal</td>
+  <td>Sarastus &quot;Open The Noxious Veins&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ee0c612474090c7a613503ac53fe532e2608d0c9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/05XO6lsFXTzimvJYvYAleP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0VIFRdDKyTqPghiYUu191o" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3jMoH1Sb1pGP38rs9ijv2g" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2yqePS6sTEWyVxGYLrMc1z" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66tFh07JryNxD9JVm1irjb" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>finnish punk <a href="https://everynoise.com/engenremap-finnishpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Finland</td>
+  <td>Finland<br>finnish rock<br>finnish pop<br>punk<br>suomi rock<br>iskelma</td>
+  <td>J J &quot;Kela meid pelastaa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/63dfcd218e79c8b86ee63605ec8e2e3342a03b13" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3fuvAGGprMS5XuuhwQlIMf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3JICuz8Q3T8mtXBYNIxwcd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2DibTwQFHQfNjdAVk8ijdP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6OFnGfaMUjTcT5C9LzIdOY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7DfFsNOdmfMcc9RUndtlXl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>finnish new wave <a href="https://everynoise.com/engenremap-finnishnewwave.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Finland</td>
+  <td>Finland<br>finnish rock<br>finnish pop<br>iskelma<br>suomi rock<br>classic finnish rock</td>
+  <td>Ratsia &quot;Lontoon skidit - Single Edit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6672d368743f959cce512fe013127855a436f090" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-new-wave" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/496QUZEpw4t3jS1k9IndC3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6yjR6aJHgo1U4xZtCfnnpI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4sSrL6t287AccOwLTWYZp0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/396t1UaoekFyE45c7FpWl9" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0df9HXtH2OEr8SKLAEE9h4" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>finnish doom metal <a href="https://everynoise.com/engenremap-finnishdoommetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Finland</td>
+  <td>Finland<br>doom metal<br>sludge metal<br>gothic metal<br>stoner metal<br>drone metal</td>
+  <td>Red Moon Architect &quot;Dethrone the darkness&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c965339fc81b314fa8ab983cbf3e7516300f3442" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-doom-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5RvMHn4adolG9s2BG1Uw0b" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4PjGW8CyIEts0ZsMkVWou9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ep0KAZ8s7x3ODKMB6IXCa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7fN88MV86GRJ65ETVyclgD" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>finnish soul <a href="https://everynoise.com/engenremap-finnishsoul.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>W.Finland</td>
+  <td>Finland<br>finnish pop<br>iskelma<br>finnish rock<br>finnish blues<br>classic iskelma</td>
+  <td>Sami Saari &quot;Ainutkertainen&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d549b12837028be173b916985a2c2127e472fb30" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-soul" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Qj3B1xL4hacqMTSAyHPoc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/70P0tTdAfXkHX7gqIl8qdA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2qB7hkhl3ZKJgnO743Edt3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3fttymh1RU66QrK6u0J3f1" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3SNERX3NsLSxpKhcgfNMll" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>finnish rockabilly <a href="https://everynoise.com/engenremap-finnishrockabilly.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Finland</td>
+  <td>Finland<br>rockabilly<br>psychobilly<br>finnish rock<br>neo-rockabilly<br>iskelma</td>
+  <td>The Slippers &quot;Goose Bumps&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/154158adc6706499c71b767823772a78a9b56c31" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-rockabilly" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4VervHrkYci7LMFgIeJ2Tw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0NpfMj7fmwjbNa3DBI7zIg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1NlO2sHWPpjdgwXrGR4bQ4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0QJAO83eYSBNMQYwjroWbI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1MI1PsNvz4IRzJam1HsMaN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>finnish hardcore <a href="https://everynoise.com/engenremap-finnishhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Finland</td>
+  <td>Finland<br>finnish rock<br>finnish punk<br>hardcore punk<br>punk<br>hardcore</td>
+  <td>Aivol &quot;S&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/15e83322acdb4bcc086fe7fc05942b707aa76259" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6oJtTmaSXjoZvSHG4R0fWK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6WlczMff7aDWRAux11Pj9M" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1r7mo09nsiPXNPyGYr6g0a" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Jx1v7N3vsoHezSy8CVW2u" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/78mO5qhuHJqMKMnUckLQoP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>finnish experimental <a href="https://everynoise.com/engenremap-finnishexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Finland</td>
+  <td>Finland<br>experimental<br>drone<br>glitch<br>idm<br>ambient</td>
+  <td>Pan Sonic &quot;L / Transmission - Mixed&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e20612d25e702760c2243d3e5bc7665a98b2b17c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3R9wkqJqPI92cVOLkiEuI5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3jyyfQn4I5SOTmaOZQ1NSK" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1CWxZCQn0BgigT9C0UR9yB" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>finnish blues <a href="https://everynoise.com/engenremap-finnishblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>W.Finland</td>
+  <td>Finland<br>finnish rock<br>blues rock<br>finnish pop<br>blues<br>iskelma</td>
+  <td>Dave Lindholm &quot;Annan Kitaran Laulaa Vaan&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/870af922845fe57449a9f2867ddb7b9def892c2f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/41JDGsHaVLZksV7vRUFnfu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2MZlB7n6QqUMbSTne8xIxM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/49o6qQIlaLmff4a0fHnQbH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MsVcIbWcpv5EqRMC019XJ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>finnish psychedelic rock <a href="https://everynoise.com/engenremap-finnishpsychedelicrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Psy.Goa<br>Rock<br>W.Finland</td>
+  <td>Finland<br>stoner rock<br>sludge metal<br>doom metal<br>space rock<br>stoner metal</td>
+  <td>Death Hawks &quot;Black Acid&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/680f945d946b56c1a65bf535a32fb3420802cdfa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-psychedelic-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/13zTNHLhDL3yWhaAN9QcHY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3YYCtoClqVQZxgvG3nzVLH" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2uMreRAID2Uu4QMsDC6iWK" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>finnish progressive rock <a href="https://everynoise.com/engenremap-finnishprogressiverock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Progressive<br>Rock<br>W.Finland</td>
+  <td>Finland<br>progressive rock<br>finnish rock<br>classic finnish rock<br>space rock<br>finnish pop</td>
+  <td>Kingston Wall &quot;Shine On Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/751599387e241cd59fd9105dda589f4fa8127a7c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-progressive-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/39Gs0eLUi6AB0LEu3AqvOL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/26rQLpFzrmqS9ZvfBsLUZm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Y1XrBogr9y5sy6xizNJUu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6l9MzhpPoIkNUuJMEcHQNV" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>classic finnish rock <a href="https://everynoise.com/engenremap-classicfinnishrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Finland</td>
+  <td>Finland<br>finnish rock<br>finnish pop<br>iskelma<br>suomi rock<br>classic iskelma</td>
+  <td>Blues Section &quot;Hey Hey Hey&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f5584bb62e448fa2d14b6c74754efa2b7787ebed" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-finnish-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/34LcMaXJd0BONxhSfMMSVj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0qm7fXxjgQ8pQc6WpRE3yD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4E5bMnn4M5ky7jGbJ00jIx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1YCVBMYa6vKTM90x6uoLFN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RR71Ya3bHfjwAzhgz6DOB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>classic finnish pop <a href="https://everynoise.com/engenremap-classicfinnishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Finland</td>
+  <td>Finland<br>iskelma<br>finnish pop<br>classic iskelma<br>finnish rock<br>suomi rock</td>
+  <td>Lea Laven &quot;Ei oo, ei tuu&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6064684d529e353c7080a6c398b7a0ea7d47f1ba" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-finnish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0TmiVNiBhC6Y2J1K9rqi8k" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4SkgzC5qxNelXWo3zJsP5J" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0yYjgrZ0WO18IrOfGBJgg4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7lRzv8fnBMDxxGxGNiBMNv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7jwDjJnjuZy6gsj6W0oZxY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>finnish folk <a href="https://everynoise.com/engenremap-finnishfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Finland</td>
+  <td>Finland<br>traditional folk<br>folk<br>finnish pop<br>nordic folk<br>finnish rock</td>
+  <td>Puhti &quot;Jumala Rankaisee&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/900155408150baacc1908e401b13a598df06cc9b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4hlkhHMbUTQutCJNsyLkl3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4whPdnPMrHNeuHtDyyNWjY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MJKDwSIswMPEIzhM5376M" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4HFQJh1ys9ugpFFWHQiOwo" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0bRRi40plgDitE1ZlIUALC" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>finnish jazz <a href="https://everynoise.com/engenremap-finnishjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Finland</td>
+  <td>Finland<br>finnish modern jazz<br>finnish pop<br>finnish rock<br>nu jazz<br>iskelma</td>
+  <td>Verneri Pohjola &quot;Of Our Children&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9213dba825453fc2e37a7b76f7e4403cf664a237" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ARE5PGU7d1OlhrCqxLk6N" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6WxllqF4D8Gj8Veg1WBY0r" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0xD3QMBxDYwD6i7jiWN5b0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/78HOuCWViRPaGy0TemsP3Q" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66haLTE5C93fHZCxWvoxHL" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>finnish modern jazz <a href="https://everynoise.com/engenremap-finnishmodernjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Finland</td>
+  <td>Finland<br>finnish jazz<br>nu jazz<br>jazz<br>iskelma<br>finnish hip hop</td>
+  <td>Linda Fredriksson &quot;Nana  Tepalle&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4443f84fed6d3c98b5b3ae6b8bfa3730166c7463" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-modern-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ogJ8qNR8Yosy0PPPimbah" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0347Gq2PVivirfybqYlvcf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2bN7k21rIWAIo6enXpPhkZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6EjTApueuoEoJJO4mE5MRm" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7MAnUsjVvufWIQI2KCt91C" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>finnish tango <a href="https://everynoise.com/engenremap-finnishtango.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Finland</td>
+  <td>Finland<br>iskelma<br>tango<br>finnish pop<br>classic iskelma<br>classic finnish pop</td>
+  <td>Teuvo Oinas &quot;Kulkurin Saappaat&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/468a2a2a242b12dbcfa44b9189c7d813e897f0ce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-tango" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2OuNsSi75TpGRc2uFB2a3T" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3UKdkSRc7cRlLvSH9EPyC2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5zmEBvP0y988hEaSLSqjH2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2iBr66MJWdnGr6YgGEaPAZ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2pdDb67ocdoLJ3YHmk1ZV7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>kantele <a href="https://everynoise.com/engenremap-kantele.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Finland &#x2380;</td>
+  <td>Finland<br>finnish folk<br>musiikkia lapsille<br>traditional folk<br>traditional music<br>ambient folk</td>
+  <td>Maija Kauhanen &quot;Sinisilm&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9b58474a946c05d3a0c7746bb62d008a41dc0a5b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kantele" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3jX2sR5CziN4mWrueHNiEj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Hq2IbgsGDBMUNJP0ksfVs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2zGhmGw23eGoge89EBii1U" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7929uWA0RsN1G9y6iPukAm" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>vintage finnish jazz <a href="https://everynoise.com/engenremap-vintagefinnishjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Jazz<br>W.Finland</td>
+  <td>Finland<br>iskelma<br>classic iskelma<br>finnish rock<br>finnish pop<br>classic finnish pop</td>
+  <td>Eugen Malmst &quot;Sillanp marssilaulu&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9511b4d98abdca809bf67d04cb764ae78a7f02da" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vintage-finnish-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5uahShLLTJjBSugV1R15VK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6QTnfYqEOcwk1sMqp2lRIY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1l4inMWk4totHz0hPYIbnw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0aJEsuXg4JtCO7tbMXctTs" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>hengelliset laulut <a href="https://everynoise.com/engenremap-hengellisetlaulut.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Finland &#x2380;</td>
+  <td>Finland<br>finnish choir<br>swedish ballads<br>finnish classical<br>children\'s music<br>christmas</td>
+  <td>Anna-Mari Linna &quot;Siionin laulu 244: Niin monta kysymy<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e14564b62471257164bbaa1c8111871f8b1b07e5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hengelliset-laulut" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6EVUtcXjsWE9kMRQrzUptD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Aj2JlruKOsx7VrFYI90kF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3eIRc8ri3VuLvhIgtnTtAr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6jqey3PPM6LmQARGDZU4fx" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>finnish contemporary classical <a href="https://everynoise.com/engenremap-finnishcontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Finland</td>
+  <td>Finland<br>nordic contemporary classical<br>contemporary classical<br>avant-garde<br>finnish classical<br>xenharmonic</td>
+  <td>Einojuhani Rautavaara &quot;Thomas: Act I: Soma, Soma  (Ch<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a5a214e96588ab7aac595f80dba7581c853681e3" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6QrKL3Th1Y5Jro6DQ2fFVX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6tDtq3CEyXbQVmJ5xaPHDC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/189431buOTVBwZ0EUU0dex" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>finnish classical <a href="https://everynoise.com/engenremap-finnishclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Finland</td>
+  <td>Finland<br>early modern classical<br>hengelliset laulut<br>finnish contemporary classical<br>nordic contemporary classical<br>post-romantic era</td>
+  <td>Oskar Merikanto &quot;Kesaillan idylli (Summer Night\'s Idy<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/877a5bcfd8a4459a7f0bade3f096a77d63508fce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1RM1IzV3Fev6Y2Wuxqsfm0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/24b96cJDoOKjQBeHGCLoH5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7i2AbyvmLWmkhGcywaYVsY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4LP1WoAwGmQLww5WtRsxlx" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>finnish choir <a href="https://everynoise.com/engenremap-finnishchoir.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Choir<br>W.Finland</td>
+  <td>France<br>hengelliset laulut<br>choral<br>university choir<br>chamber choir<br>ccm</td>
+  <td>SRK:n kamarikuoro (Kuopio) &quot;Virsi 178 My is uskoivat <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/643ab19e92f761d199aa69dca12673b97fd6d343" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-choir" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1cMqEbnEk15K9jstCxFWC2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1o2j62emAHuERgjPZaI362" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4mJXKiqKVfCvYqkpWrI62T" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/51aRt7fiGk3U9n2b4sw5DL" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

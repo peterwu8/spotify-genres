@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Spain: (88 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Spain: (88 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Spain is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>spanish techno <a href="https://everynoise.com/engenremap-spanishtechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Spain</td>
+  <td>Spain<br>techno<br>acid techno<br>minimal techno<br>dub techno<br>tech house</td>
+  <td>Exium &quot;Time - Oscar Mulero Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/90f92fa57cc09f2908db70bdf82e5ddaeed593ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2zhyNrZzY66eB6VVhrN5lS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4eIEk9563Yr14VCgOjnJsv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RwkxOtqqvezcDOZfRNYKi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZM6DJZTs7j7ZtABNpuSUy" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Re482RP3hSat3tGlHSA4D" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>spanish electropop <a href="https://everynoise.com/engenremap-spanishelectropop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Spain</td>
+  <td>Spain<br>electroclash<br>spanish synthpop<br>electropop<br>spanish indie pop<br>synthpop</td>
+  <td>La Prohibida &quot;Baloncesto&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/85913f754c81b42818780105d02d7d4a44169cc3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-electropop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/44uu6KxgDjRpL0AM3AiNrE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5mfWjY87onijayclKZSR6l" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/22PP80xxmgTLbEqnFPZRdV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1vFOOYqgTmgaUyaC8oJJnw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bzEBvq06W5L3LYIkaATt6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>spanish synthpop <a href="https://everynoise.com/engenremap-spanishsynthpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Spain</td>
+  <td>Spain<br>electroclash<br>synthpop<br>spanish electropop<br>spanish indie pop<br>spanish new wave</td>
+  <td>Chico y Chica &quot;Mosquita muerta&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a7e816b9d62ec546dd4365b36aa4d970c9f2a45e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-synthpop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1gyDfm7Rw59hrOpoweYNNT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3i8QudYaXilRrGFzIw1Z4y" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4dYKQSt3lycKKnvKpOGT5c" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/21QMZjwbu4tBmg25apZ1b6" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6z4zoBjktNeM4PbY22C7EN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>spanish electronic <a href="https://everynoise.com/engenremap-spanishelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Spain</td>
+  <td>Spain<br>idm<br>ambient idm<br>indie dance<br>flamenco<br>breakbeat</td>
+  <td>Pional &quot;A New Dawn&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6da4f128059522fe0db84d0c90cd228aebaf707a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0YCMHoEspNZ9AufKDU8pya" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0iGGWpXCPFb1W6N32iAPmO" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>mestissatge <a href="https://everynoise.com/engenremap-mestissatge.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>rock catala<br>reggae catala<br>musica catalana<br>ska punk<br>ska</td>
+  <td>Auxili &quot;Rude Girl&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f8054312e339e010f1fbe21d0c133d1824986c9f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mestissatge" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0uNRBkQbhiGOX5vrgBEuIx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4mP5F204pWRtMTznnfHVhr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7JIdus9Eke8O4YrJmNjcgl" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/41ahrDHtvddWN1aJIdKO2l" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5W2kEDMUXtuGEbg6cO4cEL" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>rap metal espanol <a href="https://everynoise.com/engenremap-rapmetalespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>Rap.World<br>W.Spain</td>
+  <td>Spain<br>rap metal<br>nu metal<br>spanish punk<br>spanish metal<br>groove metal</td>
+  <td>Hamlet &quot;Irracional&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4ad104fcfe18051530774bab0880e1f05ae08638" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-metal-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0VQFmNUB0d40Vo862rGvFD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5TixDd5uNtIrG0mua54Bt5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3QQofUPEcV9It6IgLe1dyM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Od5nIgRXejLqqCHfWWbNp" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/01n0LC7JQf15EBixOT1tdR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>spanish modern rock <a href="https://everynoise.com/engenremap-spanishmodernrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Spain</td>
+  <td>Spain<br>spanish indie pop<br>indie<br>murcia indie<br>spanish noise pop<br>tontipop</td>
+  <td>Maga &quot;Diecinueve (feat. Iv Ferreiro)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a995118f6ce0e8b075adb87a11bfb588f10eca2c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-modern-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4VbqrKD50YBhDfW51SpHew" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6n2KfHmhzxgfssyfKwnk6d" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Qojg5oDEecefJrJEVFh3A" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4oI06JtTXG2U832gq6TPI8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1tSkjfVYpeSGCDnDvKXwnd" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>ska espanol <a href="https://everynoise.com/engenremap-skaespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Ska<br>W.Spain</td>
+  <td>Spain<br>ska<br>ska punk<br>rocksteady<br>ska catala<br>spanish punk</td>
+  <td>La Gran Orquesta Republicana &quot;Vida De Colores&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b21ed251ffae78d87d59e8f17731c5fc462202aa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ska-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3TlWw6B0EFd5HrYwVe0XzG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4F2G9hHuRT4T6wWwELOhHI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1YXhZTqfyB4mznNRHVdXp1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4n448Kku4bpIOh7MKsr5iP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/43y7dWwK9ilyosE5PLJiDt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>reggae catala <a href="https://everynoise.com/engenremap-reggaecatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Spain</td>
+  <td>Spain<br>ska<br>rock catala<br>ska punk<br>ska catala<br>mestissatge</td>
+  <td>Pirat\'s Sound Sistema &quot;Poemes i can&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8ca824a4be79eb1e929a4a386898ffe1bf262e3d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/reggae-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0XUo9RX6cnZpVFPPjHehwM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6JeKLouon03R3B5yaGJIVw" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Iw7ekAfk5RkAxCJmRRQdM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Yja5v3uEprBGxiDOZvnpn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5kO9Fujw5kXLCbZyS5oala" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>tontipop <a href="https://everynoise.com/engenremap-tontipop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Spain</td>
+  <td>Spain<br>spanish indie pop<br>latin indie<br>spanish noise pop<br>electroclash<br>indie punk</td>
+  <td>Confeti de Odio &quot;Viernes Siento Amor&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/511d9e0ca8b9f79fda50bcafb80138a1b8e3f03b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tontipop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3EmMj9xHGzmImuSYivTtfF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1xfanFjPCS1Ok3pcXYu1N6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1So4NKcUr3dPRqyg2sD2nk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rKtQ3dASjQYpnvMcAKi89" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0K4Xb8gpx9UAfBFDV7r3bP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>ska catala <a href="https://everynoise.com/engenremap-skacatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Ska<br>W.Spain</td>
+  <td>Spain<br>ska<br>ska punk<br>rock catala<br>rocksteady<br>ska espanol</td>
+  <td>Atzembla &quot;El Teu Viatge&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a414c4244d3890921c0c269b56c0f3e7e123a025" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ska-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2S0bzMrBKo59bTIMgZClBE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ZyeermhUwIuF91S800w89" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/685OasoTjkpqlkN50mMXUa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5xhYSO711AUsPHHgWSnmnL" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/03miiUc0xj3cFuQL8GyLpF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>metalcore espanol <a href="https://everynoise.com/engenremap-metalcoreespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Spain</td>
+  <td>Spain<br>metalcore<br>spanish metal<br>deathcore<br>melodic death metal<br>hardcore</td>
+  <td>Brothers Till We Die &quot;Hand to Hand&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/06e0a3c429be9f606424217a44b8b40ead6bb212" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metalcore-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1WTatVGE0m7qrSrWxsAk0O" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Wnz6gX1qZXacmvCXX86xH" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>sevilla indie <a href="https://everynoise.com/engenremap-sevillaindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Spain</td>
+  <td>Spain<br>latin indie<br>flamenco<br>rock andaluz<br>shoegaze<br>spanish noise pop</td>
+  <td>Derby Motoreta Burrito Kachimba &quot;Las Leyes De La Fron<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c859f7dab9b6175aafcb93ab1e28ee0046191228" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/sevilla-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Iv88nruJ0deGYVohiEahH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3HfxvJRQRL9VfuDq4Pw2w2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/24MZhrZY115OzZHIQYOpqy" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>spanish reggae <a href="https://everynoise.com/engenremap-spanishreggae.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Spain</td>
+  <td>Spain<br>spanish-language reggae<br>reggae<br>ragga<br>reggae en espanol<br>roots reggae</td>
+  <td>Lasai &quot;Healing Of The Nation&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e4467128adcf650655e07f9f393ccf520b9c20e5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-reggae" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2dgpB2qN68JPMIbPRKOMeQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1INVDvnPWXU4tJBxQzVhbe" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6e3Vmm28r1NnFxW1lTDVis" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4V32QZPpBJH2h5d03agdjI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5mdvLgGVH6onVSoijeYPiv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>spanish metal <a href="https://everynoise.com/engenremap-spanishmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Spain</td>
+  <td>Spain<br>folk metal<br>power metal<br>celtic rock<br>spanish punk<br>heavy metal</td>
+  <td>Sylvania &quot;Vivo en tu Memoria&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1040c4f003ddf0325ca6a7aaf079329fc45d4df5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5VaH5kF6IE14pjUTZwKSBe" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2khJPxCAK41z7bhSqRsNEd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7mgR7sIhMpbyemFAf1fugJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0OihtJIOW0Y4AWhLajo8bB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2caAV0UsRvJpb9tDaUy5qt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>rock alternativo espanol <a href="https://everynoise.com/engenremap-rockalternativoespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Spain</td>
+  <td>Spain<br>spanish indie pop<br>spanish modern rock<br>spanish metal<br>indie<br>power pop</td>
+  <td>Viva Suecia &quot;El Bien&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/35df9b4b336f80faefcc4697c9afcd9da3546f2e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rock-alternativo-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3l3HRw7H9jTKDpJjHrhBRl" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Y9tU2Zb0Nj3uyvpZPUE9i" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4sad5iQwN4h2XhhQfNqm57" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4TMvzV46ex7Mi4wOOGMy4E" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2oISxBgRSScbLqhnnZ0igU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>spanish pop rock <a href="https://everynoise.com/engenremap-spanishpoprock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>Rock<br>W.Spain</td>
+  <td>Spain<br>spanish pop<br>flamenco pop<br>latin arena pop<br>flamenco<br>latin pop</td>
+  <td>Efecto Mariposa &quot;Por quererte&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/377f528abd1f70073fe882d9655f017c0c41e965" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-pop-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4i7X66vCVM27oihQbxghG8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Z07gmQdxcSmwR1iVNK1Yk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7rVLlPPxY88pVn97MkfgvB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Fpb065lm0UTAaXhDUse10" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5iC3eTzWQXdodCAUNzBnRR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>punk catala <a href="https://everynoise.com/engenremap-punkcatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Spain</td>
+  <td>Spain<br>punk<br>ska punk<br>rock catala<br>ska<br>melodic hardcore</td>
+  <td>The Anti-Patiks &quot;No estic preparat per ser normal&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dd7d3aa2ce57fd2b459173536e0adc00d6c82df8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/punk-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/348Hbepa9gw6JQA17tCRWQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3IEqWeu1yUOkPhAH9h2iyr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5G3D5eh0Vk3UXEcQOEpyxq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1xrTgCIpWgGdrkhizrtt84" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6m0exFOoIClz91V4h0PtO8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>spanish post-punk <a href="https://everynoise.com/engenremap-spanishpostpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Spain</td>
+  <td>Spain<br>post-punk<br>spanish noise pop<br>darkwave<br>cold wave<br>deathrock</td>
+  <td>Antiguo R &quot;Anoche Escupi Azul&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8aa723740c3f95c0dabebf1f3834c9470fb9ce24" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-post-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Z3y1ONKkhjPcLQCNjKHJ0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0qBmyqsTcbWc8QnW8mKLek" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4VrUA7CpUOgGXZKLnVMpu3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4FnRIicvFlLhEdtnNfGOf9" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66dicxTEx3os4VMujj49nW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>spanish new wave <a href="https://everynoise.com/engenremap-spanishnewwave.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>spanish pop<br>cantautor<br>rock en espanol<br>rock urbano<br>latin rock</td>
+  <td>Pistones &quot;El Pistolero&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/711afb883860695137a7de0df19aad3bb67b9a69" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-new-wave" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1aF9yG7GkqBNlT5VnoBBNF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1pujdlFcV8pY03jkhbkmvN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3pNH5sByAgXmM3UThaox7d" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/37KQ0iBvpwQlYc6eUQR5E2" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0smVqg4gBTF2Y5eVxaSBuQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>metal catala <a href="https://everynoise.com/engenremap-metalcatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Spain</td>
+  <td>Spain<br>spanish metal<br>power metal<br>speed metal<br>thrash metal<br>melodic death metal</td>
+  <td>Crisix &quot;Ultra Thrash&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c28e78dfa5194677e310d54f3bfe1020a0921a67" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metal-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3IwXweBAJnbKfUPiHcj91P" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Cn5vRU5a4k86RkDUAFQiH" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5BgczHWeTyGWT5meMLNAwy" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>indie extremena <a href="https://everynoise.com/engenremap-indieextremena.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Spain</td>
+  <td>Spain<br>rock urbano<br>punk urbano<br>polka<br>spanish punk<br>singer-songwriter</td>
+  <td>Sinkope &quot;El Carro de la Vida - Versi Ac&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/76d32896255e365def993c8271a99af0e32eb55a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-extremena" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ID5VvHteEmpmBljDPThsP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7zekdC0ZlzBDImLpbbzQuJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3nN39kBL4VaWzGiA8DbBkx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5yW3ZhAm8WdEayxJyaCxSw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3MdXpM6KHiesYNY2DSogdM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>spanish noise pop <a href="https://everynoise.com/engenremap-spanishnoisepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>/Eyedress.Era/<br>W.Spain</td>
+  <td>Spain<br>spanish indie pop<br>post-punk<br>latin indie<br>spanish indie rock<br>tontipop</td>
+  <td>Futuro Terror &quot;Precipicio&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4c1cd5dac5c3c78853609d8ba80d2e12a3198185" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-noise-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3jeflG5atFJAu7DRhOtgeU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3EY7xTU1vqV2Mow231iuZ4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3hWpiCpcb4ut5HOrLoDNnM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5kryYl3Lyuf3Pod6WRPxtu" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rY9SJFNcbuiqVOUGwP2Ft" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>spanish pop <a href="https://everynoise.com/engenremap-spanishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Spain</td>
+  <td>Spain<br>cantautor<br>flamenco<br>flamenco pop<br>latin arena pop<br>pop flamenco</td>
+  <td>El Canto Del Loco &quot;Zapatillas&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/73b5ecb7b405bb04a7add957841a43022d4bf9aa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2HJvdz009RuJbzy7HJ8e7C" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/40auwv5lX0xeL2w7Kr6BoT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/48Gg7ZVRZtIT8oiyIKziPB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/22yqT3KNV74swnTZnCLqBe" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0n4fHXNvNXJ8nHSxDvYByL" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>metal galego <a href="https://everynoise.com/engenremap-metalgalego.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Spain</td>
+  <td>Spain<br>spanish metal<br>power metal<br>spanish black metal<br>black metal<br>galego</td>
+  <td>Arrhythmia &quot;A Cea Dos Malditos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9da630fc5e96165f45b279bdaa2c88e3603c7147" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metal-galego" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3CtbOVD3yyWri2OOEwNYDm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5JlAxfks8WrtOW60uXc5Nj" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>galician rock <a href="https://everynoise.com/engenremap-galicianrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Spain</td>
+  <td>Spain<br>galego<br>punk galego<br>celtic<br>rap galego<br>spanish new wave</td>
+  <td>Os Diplomaticos de Monte-Alto &quot;Gaiteiro&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/02ae26518bef87eca30cef59a61810bd8b2f1483" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/galician-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5KZF9CzReK1eAnjRy6L9QC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0MGqujmWRe9njHpDUoIFGq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7wOLCVMPBPK5CcpaY3sc1q" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7LYEm6sadpW0Tqh87bHjzw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7BpgBsexhYeytV346vQukE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>punk galego <a href="https://everynoise.com/engenremap-punkgalego.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Spain</td>
+  <td>Spain<br>galego<br>galician rock<br>ska<br>spanish punk<br>ska punk</td>
+  <td>Tecor Societ &quot;Velhos Contos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8e0a02cae4b128ce07c85e015dbbc944558d80ff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/punk-galego" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2sjL0AZISs1LLcO5rGfFD4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/14JdnNWjAC67mTeMtQvVQU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5R4nHSIxAFN1s3cxZm0cTm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4yVtHZboENj2dEkzi8JNPz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6sDAOCpxh1zD5TYkId7so3" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>spanish punk <a href="https://everynoise.com/engenremap-spanishpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Spain</td>
+  <td>Spain<br>ska punk<br>punk<br>ska<br>punk urbano<br>rock urbano</td>
+  <td>Segismundo Toxic &quot;Por Ti&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/88392f747558a8a7efd4fe12bf054e0482636d9a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1nMUs8pKGcwHIX3FjLAKku" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6GsfAMPH5NWV1LfJtGWrI8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Jc9wQhohPaqXdI10e4Uuy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18H8NS9mPfMKdjENAaOCLI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Y1L9mJ5ZBHyV8rQyzkVjb" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>musica catalana <a href="https://everynoise.com/engenremap-musicacatalana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latino<br>W.Spain</td>
+  <td>Spain<br>indie catala<br>rock catala<br>mestissatge<br>reggae catala<br>trap catala</td>
+  <td>Roba Estesa &quot;Una Altra Ronda&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/de3844c0b513934afef97c0b0b028994278efb15" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-catalana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4jXEEwN5HfNxsokMYYV7Oz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Y51KuTG9GMPB96cq5OZEj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4buePcXFOJu1LRyTpkGe2b" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5mgSi80YnVc0T3vh62EDmP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/14VfwBS0H5nEY6AI0n3UJl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>indie valenciana <a href="https://everynoise.com/engenremap-indievalenciana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Spain</td>
+  <td>Spain<br>rock catala<br>spanish modern rock<br>ska<br>egg punk<br>post-punk</td>
+  <td>Tardor &quot; aix el que ens fa grans&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1dd1ea68e86f3add8c02eca5f2ce886d058452b0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-valenciana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7K6RgPOqjrRA3VOET5RunZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bmbsNdDlNDr3LEDPt1JYK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/05KCRSuONZhMNO6YT9MF17" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0yW5BIJaVHv6lZL6uBHtRb" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1wp6qYjJUEmRmllx4XVsDu" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>spanish indie rock <a href="https://everynoise.com/engenremap-spanishindierock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>Rock<br>W.Spain</td>
+  <td>Spain<br>emocore<br>spanish noise pop<br>post-hardcore<br>math rock<br>spanish indie pop</td>
+  <td>Nueva Vulcano &quot;Te Debo Un Baile&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/93a09257ff49abd5e40625533291147b939a5e16" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-indie-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4QlR3r8AQh8REGAwv9AePq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1JCf4NGHq2nC3CrtaGY9Go" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4jnQWHxrfhxjdKxa3XwASP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6e8wquqBnks4e912QUpeJ7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6BtXrJSGwoCaGEJ5Ft3TAP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>granada indie <a href="https://everynoise.com/engenremap-granadaindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Spain</td>
+  <td>Spain<br>spanish indie pop<br>latin indie<br>flamenco<br>tontipop<br>spanish noise pop</td>
+  <td>Ni Mutantes &quot;Errante (Canci Mutante)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0ffea8f3039d153a5f4976785f6fe549f67f8027" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/granada-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0GnZRGQrdpWCcFkxRs8HR5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/39NBwMJuLtBrOtISWj64Dg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Mr847RX5SP4mkzBwiyCIG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/51Tzwtn2JiV0Rdqf2Ya9FD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZW9tynxIa808AkiHG2ZVP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>spanish indie pop <a href="https://everynoise.com/engenremap-spanishindiepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>/Eyedress.Era/<br>W.Spain</td>
+  <td>Spain<br>spanish modern rock<br>indie<br>cantautor<br>spanish noise pop<br>tontipop</td>
+  <td>Los Planetas &quot;Un Buen Dia&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/114f2bcd2d72b304ae7b1e5d5a8a52654fcd445f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-indie-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7wpnTIkWwgnwXG3kqOBinu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6s8I7kVZ8phbFuXcFJmaQV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1nDAVY8OFdsG8d2ehbFrTW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/254HhHH36uxyv9qpiGFlNJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6UoGIaOLByTmD2qi1NdK1q" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>spanish rock <a href="https://everynoise.com/engenremap-spanishrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Spain</td>
+  <td>Spain<br>spanish pop<br>singer-songwriter<br>cantautor<br>spanish indie pop<br>latin rock</td>
+  <td>Pereza &quot;Princesas&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f4b7a980c526d552da9d1c6e192b053e3b011d87" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5BVq9bnEOWNraT1SqtWgS9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0tcS9Y1tCt0Ffh2CdTXybt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3lQ9N8RrFoOtH3Xo7XcD64" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07t3FE7qLHcqh9KiWxWb17" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0vAkPx09QuF6o4LbdvopzF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>rap galego <a href="https://everynoise.com/engenremap-rapgalego.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap<br>W.Spain</td>
+  <td>Spain<br>galego<br>galician rock<br>spanish hip hop<br>rap metal espanol<br>punk galego</td>
+  <td>Rebeliom do Inframundo &quot;Bachata da morte&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9ca11033919ab0e41166397ef444db1b08b401cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-galego" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7wP1ReR272nFx3P9htkzxa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6dVFOCFp6Hoa0pVPbmRm0q" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2E6CilhRZyeAAOXftGKzjA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5kUNWVYJU3f1VmLCNavJFJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4OEDQ1G9YNjLnxp8DQHeYz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>spanish folk metal <a href="https://everynoise.com/engenremap-spanishfolkmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Metal.World<br>W.Spain</td>
+  <td>Spain<br>folk metal<br>spanish metal<br>celtic rock<br>pirate metal<br>medieval metal</td>
+  <td>Salduie &quot;Los Fuegos de Belenus&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3edc97340e7b73ddad2e9552a699be57c47cf8e1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-folk-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/75m2PqrOrQxkWz4CSG2oLY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0iFBtJuqERDcTtFuhqQGbG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6tgzlPQaazXfc9ICmqlCAK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RcWuqJvkq8M7EQsTRfPUS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/14hurMc74rRL9DeAlTxnCO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>spanish stoner rock <a href="https://everynoise.com/engenremap-spanishstonerrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Spain</td>
+  <td>Spain<br>stoner rock<br>sludge metal<br>space rock<br>stoner metal<br>doom metal</td>
+  <td>Bala &quot;Agitar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2c6c9a219337f8d94338f35777b289cc0ef0a088" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-stoner-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2vrGtjlNQLW9eS884NUpwg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/12fprWREYfIx1l0tG63nv4" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>street punk espanol <a href="https://everynoise.com/engenremap-streetpunkespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Spain</td>
+  <td>Italy<br>punk<br>spanish punk<br>ska punk<br>punk euskera<br>ska</td>
+  <td>Subestimados &quot;Siempre Libres&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0edb858e7bb5980585becb7cf229e641a2d1d012" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/street-punk-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7vyckMYCv1AKK63AEKuJ3h" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3h7fF8ZzUWCYL5lJWSuEfp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/28Fzp6cAwDBKaj1rzWRKse" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6b9LzKOBAHitm1jmgQ4A7W" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/24LC7yPBWP4N230jZdwpuz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>drill espanol <a href="https://everynoise.com/engenremap-drillespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>drill<br>urbano espanol<br>rap underground espanol<br>argentine trap<br>spanish hip hop</td>
+  <td>BobbyBlock &quot;Air Force One&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0535f5a9e06dab18727f5a9e1bbe0ef9c6e0bbe1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/drill-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0RF4c3nMX2k273666j0vWN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0fsiAxyZJMMQ3TFa4b8enY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2hSZ4mlxv17lOv1vJcuE5W" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0507dftwMzJvdE36tgksYQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6jf8LYulNxgdXr1ixl3nf0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>spanish death metal <a href="https://everynoise.com/engenremap-spanishdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Spain</td>
+  <td>Spain<br>death metal<br>melodic death metal<br>grindcore<br>metal catala<br>melodic metal</td>
+  <td>Avulsed &quot;Vile Evil Rotted Over&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/876c244d7b4661ce4d5d146b06d00cfbe86f4c8c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2fUPFsiAPc4MvWgUFR59KY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4GYN0nIrGTKLWpPRnQ1ukH" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>trap catala <a href="https://everynoise.com/engenremap-trapcatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Spain</td>
+  <td>Spain<br>rap catala<br>urbano espanol<br>neoperreo<br>rock catala<br>musica catalana</td>
+  <td>Teuma Thug &quot;Supergl&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4d5c3dd0791cc864c95122f820acfdcb07e7e390" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trap-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2VFVospg3f3kwlIb02hvaW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3thu60HX18eO30w3A8AOqX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/08sJShSkuyW7IsS1C3j389" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5PZVOYqhoW5zN5sfBk83R4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/106xoIJzFuUElfXfq6CCWK" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>spanish post-rock <a href="https://everynoise.com/engenremap-spanishpostrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Spain</td>
+  <td>Spain<br>post-rock<br>spanish progressive rock<br>space rock<br>instrumental post-rock<br>post-hardcore</td>
+  <td>Viva Belgrado &quot;Perfect Blue&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/697182f0299b45bf392be06f6464db10c8e99f95" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-post-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/33gsuyCAQWsf8tDJ5q4Eli" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6G9ArXMsllECGSMB2BuG5Y" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4TH9mu2cGzYdYrplN9I0Ze" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0blaDMK7zGHiDavrprmctE" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>galician indie <a href="https://everynoise.com/engenremap-galicianindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Spain</td>
+  <td>Spain<br>galego<br>spanish indie pop<br>singer-songwriter<br>anti-folk<br>brazilian jazz</td>
+  <td>Grande Amore &quot;Esta Pena Que a Veces Te&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/19c01b0477721a77d2a2269da5d4953202e480bc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/galician-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/25mSWuRgoU8LjZhkPmtnHG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1nJv9YpODF9VdIg4zpHPGl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4c8ahjzRbScsNcktt8P1Na" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2zobmqOtRvJImG7r1qvvcJ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>spanish rockabilly <a href="https://everynoise.com/engenremap-spanishrockabilly.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Spain</td>
+  <td>Spain<br>rockabilly<br>psychobilly<br>rockabilly en espanol<br>neo-rockabilly<br>spanish new wave</td>
+  <td>56 Hamburguesas &quot;Lo pensar una vez m - 2016 versi rem<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/14fd3280e6850066f7dc5a0ae7969bc0d9904624" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-rockabilly" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7CmRdTvSmFBcGhpdSlUItS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7n8jgo5lx7XUOQXC0Vaqu8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6vt5jGVGXRUHxVUzu5xR43" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KQ10d4aSwJwTqpo6H0jgB" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>spanish progressive rock <a href="https://everynoise.com/engenremap-spanishprogressiverock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Progressive<br>Rock<br>W.Spain</td>
+  <td>Spain<br>post-rock<br>spanish post-rock<br>progressive metal<br>progressive rock<br>space rock</td>
+  <td>Toundra &quot;El Odio. Parte I&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5d4674656637822ddf007dd211057f6740fb0a85" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-progressive-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7uQs0QyPckEERLv8Q7XNrS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6YG4bN7FzZ562wTF5Cx0zC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18dYEGE8InBDN2UHueLIVv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2fIZv5BEWsRzuA4BQtu9VR" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>spanish psychedelic rock <a href="https://everynoise.com/engenremap-spanishpsychedelicrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Psy.Goa<br>Rock<br>W.Spain</td>
+  <td>Spain<br>psychedelic rock<br>space rock<br>stoner rock<br>stoner metal<br>neo-psychedelic</td>
+  <td>Los Estanques &quot;Tu Pelo de Flores&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/490fdd06acd0038df41dacd4bd2cdd5fc316e64e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-psychedelic-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/74I7M6HC5O21kFlQz9GU6C" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3c509AUJy6c6iovHuRcffO" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>spanish black metal <a href="https://everynoise.com/engenremap-spanishblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Spain</td>
+  <td>Spain<br>black metal<br>cryptic black metal<br>metal catala<br>metal galego<br>death metal</td>
+  <td>Cryfemal &quot;Necrocaina&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ce65ea013a790bf611abfabb9df54909675e52e9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5MyyMHqCiDfJPia9IoEr7s" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0vcTxhqUCmJxMUGcEmyubI" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>urbano espanol <a href="https://everynoise.com/engenremap-urbanoespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>spanish hip hop<br>rap espanol<br>neoperreo<br>flamenco urbano<br>drill espanol</td>
+  <td>Soto Asa &quot;Smartphone&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/37c30a46efb9e88375f5b4c38345dd29ae423dd4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/urbano-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ekcLsTPlv4ENBCaOU2gaD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6gpELhsiYJyaL13srOlTMQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/70GykMCqlHOMur317ZDVDv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6sgLOkdIEGKGHgaNcJ7rir" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3seBzzVrh9LmnTeOM2XiQM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>rap catala <a href="https://everynoise.com/engenremap-rapcatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Spain</td>
+  <td>Spain<br>rock catala<br>spanish hip hop<br>rap politico<br>reggae catala<br>rap latina</td>
+  <td>Senyor Oca &quot;Al Teu Niu&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0a466f1aa4238b2b6882a1901f8a8d4e0e6f6f37" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1XefLrjXJuCwCr9hDGyp5a" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1nkHFez6zemBRJZxY1ocjC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4w1cOxnZBYj8ikWTsBL2ws" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7CI8vOUOC8fulGqF3KycGS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0phxXB0FwTaxuSZvTYumjT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>spanish folk rock <a href="https://everynoise.com/engenremap-spanishfolkrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Rock<br>W.Spain</td>
+  <td>Spain<br>singer-songwriter<br>cantautor<br>spanish indie pop<br>spanish noise pop<br>country blues</td>
+  <td>Quique Gonz &quot;Charo (feat. Los Detectives)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/809ae80af9de1fec4b680b5aefc8d057c7f7d2fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-folk-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6M4MuyESDkHjdH5ycdq6Qk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/48tTg9E77wOTUn8P66xenP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2WLc0GrKZBIz5KLzoM2PjG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3A4j49rKAK8ArQbCzjLtwr" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/51Q64OwlXDMkkfVQxJJbGS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>51</td>
+  <td>hardcore punk espanol <a href="https://everynoise.com/engenremap-hardcorepunkespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>Punk<br>W.Spain</td>
+  <td>Spain<br>hardcore punk<br>punk<br>spanish punk<br>ska punk<br>hardcore</td>
+  <td>Petra de fenetra &quot;Maldito Homenaje&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/53f190e1e76fa38ae5995be474541f4f51de48d6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hardcore-punk-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7qv4OhCth686MK4Ks9ogvF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3uDcb9aPKm610tkqbIw6fG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0e7eTsZdzgwMhcD2KkGWb8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KCgsUPw4nuxxDkNJASjkm" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3HmV3i67c6L7RlPvDo0aXe" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>52</td>
+  <td>galego <a href="https://everynoise.com/engenremap-galego.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>spanish folk<br>galician rock<br>traditional music<br>celtic<br>galician indie</td>
+  <td>Ataque Escampe &quot;Noites de agosto&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9b1cb4ce94d2a19beedc96f2b4081a2cf6690392" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/galego" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3qQXS3jcbD5M9eeZc17wQK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/035cW9UWTFa3Hzo6Ssao4x" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1C0OukBE7fbjlluS5Mut09" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MiWpxJOqm7HuV93OtFqZW" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/55TI0gktExIvOMvda3DBTo" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>53</td>
+  <td>indie catala <a href="https://everynoise.com/engenremap-indiecatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Spain</td>
+  <td>Spain<br>rock catala<br>cantautor catala<br>musica catalana<br>musica mallorquina<br>cantautor</td>
+  <td>Mishima &quot;Qui m estima&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9e3403bba0698fe87fa60271035d78881bd97647" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0UnW2v1TioRNBL1DJ7BmJR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5TKXMbSNXIpHqO3Jxd9esh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/50mqGgs78Kz5udZZxMztAr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1tAGV0jVG5czXWpTOdybNx" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0wcSEsSCDUXLPTsZHkfdsp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>54</td>
+  <td>rock catala <a href="https://everynoise.com/engenremap-rockcatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Spain</td>
+  <td>Spain<br>indie catala<br>cantautor catala<br>mestissatge<br>musica catalana<br>cantautor</td>
+  <td>Gossos &quot;Corren&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e167bc842fc3bfd750c7cc0aa726c73f6b0c856e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rock-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7M0I2N59AGzFlyerPnb3TK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/047iNw5YrSgTaRG2yTaTYV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6rNmKesKA93T1eF9AHNPob" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7wEF0RKTg6UkACDn8D8mfP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Ws6S09VEIW2j8yK0lVcRF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>55</td>
+  <td>spanish blues <a href="https://everynoise.com/engenremap-spanishblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>W.Spain</td>
+  <td>Spain<br>blues<br>blues rock<br>modern blues<br>harmonica blues<br>boogie-woogie</td>
+  <td>The Limboos &quot;Big Shot&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/49c84822da33c0a48e340dadc426a05f5fb5edc0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7y5gt2exwjP7cJvGpzFQae" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0dRQr3bESvbQL1opUmEXlY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/11iNDWz3SdHTRZOtHYDowE" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6L5d0CRk9PHxWFeG3U5nHh" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>56</td>
+  <td>spanish hip hop <a href="https://everynoise.com/engenremap-spanishhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Spain</td>
+  <td>Spain<br>urbano espanol<br>rap underground espanol<br>rap conciencia<br>rap politico<br>latin hip hop</td>
+  <td>Capaz &quot;Lemmingz&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c83540ca17405c55686d13453d2fc8576a440cbb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7KITKMVTisZzloefS11eA3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3WLnRqmW5IZOATVCnNqZk5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3L07FMWBJjAVP7SeGpLY3l" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/20noOja5srzq8SUXksp50v" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ezrgIrCMoL8bN84B5PNMC" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>57</td>
+  <td>rap politico <a href="https://everynoise.com/engenremap-rappolitico.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Latino<br>W.Spain</td>
+  <td>Spain<br>latin hip hop<br>spanish hip hop<br>rap conciencia<br>rap chileno<br>hardcore hip hop</td>
+  <td>Los Chikos del Maiz &quot;Para Artificiales&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/81ef61df4144c658bb60edb8abed72756fd3cae7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-politico" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7KL2mPhTmt3XcIqkqZx9wU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/22tWyViRQaeYzqY7m346k4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0bfVfjyDNI9UK1lb95mMht" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0i9KJHSa7opE54jVLZlMqL" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4hL1lv0ysgmMGNECV2r08M" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>58</td>
+  <td>rap underground espanol <a href="https://everynoise.com/engenremap-rapundergroundespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Spain</td>
+  <td>Spain<br>spanish hip hop<br>boom bap espanol<br>latin hip hop<br>hardcore hip hop<br>urbano espanol</td>
+  <td>Lone &quot;Powermoves&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/749496a5cdb775f40dbaddc91c2eb6e0247325d0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-underground-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5o2isJirHSKhBXiEehlQLW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Uhh3P5G0IYxqgySvKviHm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7tupzBXsAuEXmY7q4gAu4O" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7JJniz3eo5mLZheobCSZY3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5nNTDPnhanUh4aSFkarGkg" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>59</td>
+  <td>indie asturiana <a href="https://everynoise.com/engenremap-indieasturiana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Spain</td>
+  <td>Spain<br>musica folk asturiana<br>neofolk<br>rock en asturiano<br>celtic<br>folk</td>
+  <td>Pablo Und Destruktion &quot;Limonov, desde Asturias al Inf<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b869375216850cc9a679abfe8f105281b1127972" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-asturiana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7gGwU91dhVFQjLPNZyKCEP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4C0nRMvjDfbzWVNh2jXRGD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3em6rOsNIOCq8WTfXr8TFf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5TngUOi2kSiGe2dYGD6LSU" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>60</td>
+  <td>rumba catalana <a href="https://everynoise.com/engenremap-rumbacatalana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latino<br>W.Spain</td>
+  <td>Spain<br>flamenco<br>flamenco pop<br>rumba<br>rock catala<br>villancicos</td>
+  <td>Ai Ai Ai &quot;Dimanche Aux Goudes (Remix Ai Ai Ai)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e368d88518b492730c0e26178ae72fd5df6350f1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rumba-catalana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/04QIlOdIYzE2r3DXBotB1s" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4s63F0tPbBZFctstOgQ6dB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3tP1wYagM0jiCr37mMiNux" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5xisb9FY2bzpwlrn6sc7Uj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3PWozEodXe0WzViET1LCal" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>61</td>
+  <td>rap conciencia <a href="https://everynoise.com/engenremap-rapconciencia.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Latino<br>W.Spain</td>
+  <td>Latin America<br>latin hip hop<br>spanish hip hop<br>rap politico<br>mexican hip hop<br>rap chileno</td>
+  <td>Rapsusklei &quot;Dando y Perdiendo (Remix)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/598fb8caa87492846bd12346c56d4fa5c734c7e4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-conciencia" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2pqREDA5AWy5F0OyYQkMqR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6vfVdOzLUYpG9z9wE0Icjx" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1p7eiO4SvN3C8F7y3D5VPF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3mT8A1XsNIeJ3TRcaVG2k6" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0AUDHI1WuHzAgWb7MEZn9r" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>62</td>
+  <td>boom bap espanol <a href="https://everynoise.com/engenremap-boombapespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>latin hip hop<br>spanish hip hop<br>rap underground espanol<br>boom bap<br>rap underground argentino</td>
+  <td>N-Wise Allah &quot;Marginal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4bfc5c58b5e03e6ddd436b34315631b6548535de" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/boom-bap-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0NuomcSTAXJHEoKSMfSyHk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6fqRJtaRT3sx0FZrrzGLST" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6unkv7dE3jY5UdvBwRpFXP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6x3qROtwtXVj3BxGNJbllp" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7GPS3VWnBBV4Be6SyKsFtv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>63</td>
+  <td>sevillanas <a href="https://everynoise.com/engenremap-sevillanas.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>flamenco<br>villancicos<br>flamenco pop<br>pop flamenco<br>cornetas y tambores</td>
+  <td>Los Del Guadalquivir &quot;A cantar, a bailar, a reir&quot<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/80bdf4dd909f9433f4db7e950e3755f43368a8ea" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/sevillanas" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0J7pWWIwq0SHjIwO1zWdij" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3eM7CzQvStWUs8B9XJTGbM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Uiw3d7oFtdGpQZqeWa5yf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1WLaB2QTlawvNS0ygbluhd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3mbyyTF4UJJCIlPZcFF0SN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>64</td>
+  <td>musica folk asturiana <a href="https://everynoise.com/engenremap-musicafolkasturiana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Latino<br>W.Spain</td>
+  <td>Spain<br>celtic<br>folk<br>traditional music<br>indie asturiana<br>gaita</td>
+  <td>N\'Arba &quot;El Cura Ta Malu&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d16ef6a0d77d1f649408c766485e14fd4f2d90dc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-folk-asturiana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4EbCI7IpybosNkzxZGD6U5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6f7Oxx42lZDo9zQlKS2xWp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5yPYtumuMBy6LJAt3bXQvU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Wx8Lq3momzz7yK6px1O0W" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4LH49McwlNvMxeOHCwSyIL" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>65</td>
+  <td>spanish prog <a href="https://everynoise.com/engenremap-spanishprog.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>progressive rock<br>symphonic rock<br>rock andaluz<br>flamenco<br>jazz fusion</td>
+  <td>Gualberto &quot;Terrapl (feat. Enrique Morente)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d85d0f922473f49ea29141f0bf8f8aa0936ed0ad" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-prog" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1pgbYrzwgvzctR3ULamTAs" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2UOmTYokX462wwAMx687SQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7np9sHsai4u7XlhjKAh6eJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6hOvf0tfMbOAgxz0C8g1x8" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>66</td>
+  <td>spanish indie folk <a href="https://everynoise.com/engenremap-spanishindiefolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Indie<br>W.Spain</td>
+  <td>Spain<br>spanish indie pop<br>indie catala<br>euskal indie<br>murcia indie<br>spanish noise pop</td>
+  <td>Anni B Sweet &quot;Take on Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/076ed69c1f1160108b7e6ecea97134c742d8a8f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-indie-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1aJGxXEcCVIlhLbQupOGGo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4bhPRYjwT2iUjeaKWHJZYa" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6PQDqqAHv13bxRBUqBV30y" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0w7cfc5poYzcB0yiT5DVnq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3e3247JvPxBz7wXprtXhVF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>67</td>
+  <td>galician folk <a href="https://everynoise.com/engenremap-galicianfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Spain</td>
+  <td>Spain<br>traditional music<br>celtic<br>gaita<br>spanish folk<br>folk</td>
+  <td>SonDeSeu &quot;Amence no cami - alborada de Pontecaldela&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7c383ad8921dc28b7faecf62ea9b1c42e881c0d6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/galician-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4aqFqllGENd717u3L9O5s5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3qQsWDM8bFCBictfEk3mva" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4zoqM1G2VVeVKYudEI9yMe" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/41uSSKwetiUcVmXzKsteJI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/72BKyYAauILVyySR6TUufN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>68</td>
+  <td>rap espanol <a href="https://everynoise.com/engenremap-rapespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Spain</td>
+  <td>Spain<br>urbano espanol<br>flamenco urbano<br>spanish hip hop<br>drill<br>spanish pop</td>
+  <td>Selecto Picasso &quot;Voy a Poner a Madrid a Llorar - Remi<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b43b549aa71e941bddf7415212843fe3f9f697a0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5mxJKaFqOa58LwRtKHDvi6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6PyV0jFaVWhEKdjscMtiAU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bxVWswM0YfIGzyYxNuNWq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5CqP2NGNI80jwOw8nX0BDn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1nipTbzdOR6HJAmC2PpfU1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>69</td>
+  <td>musica valenciana <a href="https://everynoise.com/engenremap-musicavalenciana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latino<br>W.Spain</td>
+  <td>Spain<br>traditional music<br>rock catala<br>ska<br>cantautor catala<br>folk</td>
+  <td>Pep Gimeno &quot;Botifarra&quot; &quot;Malaguenya de Barxe<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/19ea00c132792ba3e1d524f5c4e06ffe83b6d673" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-valenciana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3L3D7gV6x0tl5etOvxg9FA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/409FnGPho9uuF3kuESudPh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6aRhHbj7JvoWlJqu1eAV0c" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/13uEQ7nMa7ydIsVcfBjl9G" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5736OJDJ6TxmLr8umZDGJO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>70</td>
+  <td>musica infantil catala <a href="https://everynoise.com/engenremap-musicainfantilcatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latino<br>W.Spain</td>
+  <td>Spain<br>lullaby<br>children\'s music<br>villancicos<br>traditional music<br>kizomba</td>
+  <td>Pep Puigdemont &quot;Sol solet&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/28f343a00399636b7c6b240951ceaa1473b05079" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-infantil-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5qqtLJ8kayG9c2oQ7xqBy8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7N3i9JZpLjqtWIyPHkD8LM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6W8PNLFgsves8RBXVaX34k" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2cX2VCNGwlkBWE6JsFEcAK" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ayBdS6LsKTgwZxNYxqYVq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>71</td>
+  <td>cantautor catala <a href="https://everynoise.com/engenremap-cantautorcatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>rock catala<br>indie catala<br>singer-songwriter<br>cantautor<br>nova canco</td>
+  <td>Roger Mas &quot;Jordi&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ad10495beda6897696ccf5cfb2127a91634be7cc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cantautor-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5AP60tPLYXHpDFRVFtBFzT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0SljFhF4AFN2i1Ntyfq1st" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0DLCzhh8fw72AJ7vDn2Ws9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0LDETJN9Y3jl1njlRWCygC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1gWUI5BHTlcac1cWWuK9P1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>72</td>
+  <td>spanish folk <a href="https://everynoise.com/engenremap-spanishfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Spain</td>
+  <td>Spain<br>traditional music<br>celtic<br>folk<br>galego<br>galician folk</td>
+  <td>Leilia &quot;Verde - Gaio&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a799333c848ec416cda8fd6f68810e261af284a4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3GZ8Mh8QTzjPwjO67l1WRF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3jTCa2KKw5uBzOcQWs1560" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5cSJ398tkGPiaimbjdAUuH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1PLzsWqZJxrQKYhxVms6iV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6VvC8KZLfLE36ONzASUMxS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>73</td>
+  <td>spanish invasion <a href="https://everynoise.com/engenremap-spanishinvasion.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>pop romantico<br>cancion melodica<br>cantautor<br>singer-songwriter<br>baroque pop</td>
+  <td>Los Stop &quot;Tres Cosas (Salud, Dinero y Amor)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bb934a28be4af8bae7bb2b1615f932b0d5b703d4" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-invasion" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4MGAOTGUWuM5321vWSWYfn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1VNvyyyQvTlmRax4cicUK3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/77lxIYZ69ILpDV4ESybhTv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0be1zuxl1N8bL85ERi52ws" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5aVDjiDdlTGKRG8cH7a761" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>74</td>
+  <td>spanish experimental <a href="https://everynoise.com/engenremap-spanishexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Spain</td>
+  <td>Spain<br>ambient<br>drone<br>experimental<br>dark ambient<br>space music</td>
+  <td>Suso Saiz &quot;Looking You In Silence&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/37ac60b441063f60f591f8efb86f04ec07035ebb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0V81aCSbUz1nP3ib6yGH3g" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5NInEvlgKr6MTytu7av3e3" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4hWYYNJ95yEa8FOyqVGmIO" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>75</td>
+  <td>galician jazz <a href="https://everynoise.com/engenremap-galicianjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Spain</td>
+  <td>Spain<br>cool jazz<br>celtic<br>spanish jazz<br>psytrance<br>latin soundtrack</td>
+  <td>Sumrr &quot;Johannesbourg&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b8e5af555697b2f9a36baf2f789c218ae727e24e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/galician-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7fAnP7Gf61bEgBusliPIlH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7iDIPfDUgSE0pHSngz8wsf" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>76</td>
+  <td>pasodobles <a href="https://everynoise.com/engenremap-pasodobles.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>France<br>cornetas y tambores<br>chant basque<br>banda militar<br>candombe<br>mariachi</td>
+  <td>Soria 9 Sevilla &quot;Paquito Chocolatero&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a14214047ba0c034275a2122c60f4e3adeebeb52" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pasodobles" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bJgMGUl6P1XNAn10zGoV2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2zuQnlTbp8h0ZW6VPk0SOs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4e45yejim4qUuUP5kro7Tu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1MrIY4BjMikbyJZxGXrYhf" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>77</td>
+  <td>catalan folk <a href="https://everynoise.com/engenremap-catalanfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Spain</td>
+  <td>Spain<br>traditional music<br>exotica<br>rock catala<br>folk<br>bolero</td>
+  <td>Cobla Barcelona &quot;La Santa Espina&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0bb91a2fc03a94f7be2096f02b9649dc2aceba85" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/catalan-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4JKWDS56E3YKtuiYMLSPfl" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5u9pZQoofDO0UjHvSplvoO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0h9MEvhMwWNqXczcvi4IOQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Fhbar4eC0IXMLB7T2cMFV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/52lPXpoQ7eWkriROt8RoND" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>78</td>
+  <td>jazz catala <a href="https://everynoise.com/engenremap-jazzcatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Spain</td>
+  <td>Spain<br>jazz<br>spanish jazz<br>jazz blues<br>swing music<br>big band</td>
+  <td>Rita Pay &quot;Algo contigo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/97f00e16f7395d39b7a3502afe9e9997beb62305" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jazz-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5RGaId8Y07WogZwsPPS0wJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5bHs8IoVwwBRssDvGEYnwb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4pd2DEcoo3mnSddCN0PDal" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2OJtY6IZowis2jshy6R7eo" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>79</td>
+  <td>spanish jazz <a href="https://everynoise.com/engenremap-spanishjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Spain</td>
+  <td>Spain<br>flamenco<br>latin jazz<br>jazz<br>jazz catala<br>vocal jazz</td>
+  <td>Chano Dominguez &quot;Ol y Ol&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dd1a3f3d8743953dd0cf3a65f839dd799524de13" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6dUwqahPVECmOAeNRrWaFy" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4sff5BasdWwxgAW2B6pW0U" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3xMHLJ5HQ9hTXaYUwiTpt5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0fkreqWQKiDpXA806cYOgT" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>80</td>
+  <td>cornetas y tambores <a href="https://everynoise.com/engenremap-cornetasytambores.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain &#x2380;</td>
+  <td>Spain<br>pasodobles<br>banda militar<br>villancicos<br>flamenco<br>carnaval cadiz</td>
+  <td>Agrupaci Musical Ntra. Sra. de la Encarnaci &quot;Presenta<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/674e358fc31ffae6b314f80463aab8256c5fe99e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cornetas-y-tambores" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/43SIrOaMvp1MnilNaBaKL9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6B85dQKzhxzy3UJZ88L1fu" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/11W6AeEeU6EMssvT5lx5UJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6IsMHOjZvudaQ6aBPk7pnw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7xuYaOPuBnOoOzsjgbzRmH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>81</td>
+  <td>trad jazz catala <a href="https://everynoise.com/engenremap-tradjazzcatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Spain</td>
+  <td>Spain<br>swing music<br>bolero<br>ragtime<br>jazz catala<br>french pop</td>
+  <td>Orquesta Gran Casino &quot;El Fantasma del Castillo - Rema<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/217b941856d3e6f8dccaa504a831dc3e7c6bb4e8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trad-jazz-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2rXyPxfu4x1TztyCylnlPP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Xml88s6LENWLR7I7lSGs2" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>82</td>
+  <td>vintage spanish pop <a href="https://everynoise.com/engenremap-vintagespanishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Pop.World<br>W.Spain</td>
+  <td>Spain<br>bolero<br>flamenco<br>exotica<br>son cubano<br>tango</td>
+  <td>Rina Celi &quot;Mi Beb - Baby Mine de la Pel \'Dumbo\' (Canc<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f81997e879258b84b7f7137240abf56b41cdf237" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vintage-spanish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/47wlHARTsPfmD6mNNRBDfI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/74D9iMeeq2odsGd6r6i68D" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3ovx4NjlcEUwQ8BThWsr6e" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Eh6ap7NUjUK0eeJAqxv1g" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>83</td>
+  <td>spanish baroque <a href="https://everynoise.com/engenremap-spanishbaroque.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Baroque<br>W.Spain</td>
+  <td>Mexico<br>medieval<br>baroque<br>latin american baroque<br>choral<br>galante era</td>
+  <td>Gaspar Sanz &quot;Canarios&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/094deba0e505215d6a89c8ed0fa00342362c88c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-baroque" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0h5ISCOmi916f5sAilsOwC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0VnmxIGhsByRdLmRtRaOus" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5mzNr9RYUFxI6WkvxnwWsM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Eh5BHu5YWOMwb1aC2w0Lr" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>84</td>
+  <td>spanish contemporary classical <a href="https://everynoise.com/engenremap-spanishcontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Spain</td>
+  <td>Spain<br>21st century classical<br>avant-garde<br>chamber music<br>choral<br>latin soundtrack</td>
+  <td>Alberto Posadas &quot;Liturgia Fractal (2003-2007) - Cycle<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c08e52cc09cc1c325021cbad8b21c22bd23f16dd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4q93UsUWJChnkYh8sxLaqs" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3R0cCFr2WTRnMH63bYR1qM" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>85</td>
+  <td>zarzuela <a href="https://everynoise.com/engenremap-zarzuela.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain &#x2380;</td>
+  <td>Spain<br>operetta<br>spanish classical<br>opera<br>classical<br>historic orchestral performance</td>
+  <td>Amadeo Vives &quot;Do Francisquita, Act III: Fandango&quot<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/74339797fe00de740bf8cdf8db83fc109557b190" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/zarzuela" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3f3wpUPDIN8D7H2zjfjLdP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0pMsLV9uQUZtDGyPYVIeAt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/487GPsF0rNw71bVB15TCAB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6sMjpZKNFTVjngUXbbquxO" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>86</td>
+  <td>spanish classical piano <a href="https://everynoise.com/engenremap-spanishclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Spain</td>
+  <td>Spain<br>classical piano<br>classical<br>neoclassical<br>chamber music<br>kuduro</td>
+  <td>Javier Perianes &quot;Lyric Pieces, Book 1, Op. 12: I. Ari<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/283ed15b648b25b3ca364a7cc556d97c3094fbab" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/20BdAQNETyGLE4WSMfcKi7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/22p4K2fHv3OEmaAQeXFs8y" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>87</td>
+  <td>spanish renaissance <a href="https://everynoise.com/engenremap-spanishrenaissance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Spain</td>
+  <td>Spain<br>medieval<br>renaissance<br>choral<br>early music<br>gregorian chant</td>
+  <td>Juan del Encina &quot;Todos los bienes del mundo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e31bb8c2dadd946f87e897865ec4daf4a88575ea" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-renaissance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0KMe9qjXR1DWbPe6tHjCPk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5eFPh3ZaaYwaUFQsZ5sioE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3vbI4zrwepiKKo83jawRwX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/04hma6EFkmV9IBrbgwLLoj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0wIFcbngulo2bPpPIqrOKQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>88</td>
+  <td>spanish classical <a href="https://everynoise.com/engenremap-spanishclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Spain</td>
+  <td>Europe<br>classical<br>classical guitar<br>zarzuela<br>early modern classical<br>post-romantic era</td>
+  <td>Enrique Granados &quot;Oriental (Arr. for Harp &amp; Guita<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a7c73c803c0777c91cc5bb13cf59b9607e40c570" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ZRpFQ5EchbLc4LmZtaEeF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2SkLB5UGwScR0IVAMX048A" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4il3a6YK5wM4bOCWlIemKS" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0L0OdmxigQ8llLvTRcl5u1" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/04httdBlS7Dspz2pIFwFRK" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

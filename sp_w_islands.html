@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Islands: (25 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Islands: (25 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Islands is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>solomon islands pop <a href="https://everynoise.com/engenremap-solomonislandspop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Islands</td>
+  <td>Pacific Islands nations<br>melanesian pop<br>reggae<br>kaneka<br>nz reggae<br>lagu timur</td>
+  <td>Trabol Sum &quot;Confirm&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/185121068602121de962a7ce88127fd0a069e07e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/solomon-islands-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3lrbfCRyjNAMLLerJLKKTJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/54Pv4pq3UwpbH05O14Gu1X" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3BomrGBysEAB7ReDsyqyDj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6nHqgn2fH2yu3gcxL9LGfP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4G7RzRXjUU01m2TLPw6FVE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>pacific islands pop <a href="https://everynoise.com/engenremap-pacificislandspop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Islands</td>
+  <td>New Zealand<br>nz reggae<br>reggae<br>samoan pop<br>classic nz pop<br>jawaiian</td>
+  <td>Three Houses Down &quot;Love &amp; Affection&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/71e150e447a14816db0e28ddf11d265ab9b82ad7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pacific-islands-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4cj2xo9jNJjJj3t5v837F3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/45anIT1Lg5xrUsgkznbwzm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2wD8qUwesJCV3SJlIj20LJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5PDOJqwOakZNCUidj95wIz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Qe8ztCLn6mFJ3VFBHw55w" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>cook islands pop <a href="https://everynoise.com/engenremap-cookislandspop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Islands</td>
+  <td>French Polynesia<br>nz reggae<br>melanesian pop<br>musique tahitienne<br>fijian pop<br>pacific islands pop</td>
+  <td>Tina Koronui &quot;Maine E Maine&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4e9b47579fa78d7270c37308cbb2c25155e0bd98" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cook-islands-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1KCgldtCTevInMLzo1qkSt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Crcxm95FskXZEEGh38gaU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4lTRmn4K2h8SPnT1nRDQ85" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7FxG1q6snX163mHmLfthAR" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/56Ul77zubjaTZyU6GdYo9w" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>faroese rock <a href="https://everynoise.com/engenremap-faroeserock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Islands</td>
+  <td>Faroe Islands<br>faroese pop<br>folk metal<br>melodic metal<br>nordic folk metal<br>power metal</td>
+  <td>T &quot;Blood of Heroes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5b7e4ba31ea656ca8e4c99f948ddb4bccaf1b9cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/faroese-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7mkZ4m9r3y6o5aWJ9HycJl" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4MdZYecJOgWqR3vkRl6Fvy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5NblejhGxjJuQ5bjThZFYf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3lQ3hXqSFuvt8TBm5owETC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Ipmc2ZJY926pG6rb2pGg9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>rap canario <a href="https://everynoise.com/engenremap-rapcanario.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap<br>W.Islands</td>
+  <td>Spain<br>urbano espanol<br>latin hip hop<br>boom bap espanol<br>spanish hip hop<br>latin r&b</td>
+  <td>La$$ Suga\' &quot;Sue&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/de6c5b302fc1c645535d20fc39fc8205b2cf63d8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-canario" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/71zzlhdzh7bbYe7lpVfj3V" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/05DEKeFlMuXhfxk1CpjD7b" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Sy5CEXCp0gw4cObcgNO2z" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/49EjHu19bzGDTe4puZwkwB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3wpq3bzJO7VZYfMMfjsEKt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>antilliaanse rap <a href="https://everynoise.com/engenremap-antilliaanserap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Islands</td>
+  <td>Netherlands<br>moombahton<br>dutch hip hop<br>ritmo kombina<br>dancehall<br>dutch trap</td>
+  <td>TitoRasz &quot;Movementu&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/056dd2bdd279162d7d9689c501e4e64ac6e194cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/antilliaanse-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/07vxZXJaHFUUb8nWzPgLc1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1f0lQFiKVA5j6DwdmCfGCr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7zJwmx42ecihXlHALBxLuK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/11WSmt2ViRJl3cKjH2jmet" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3kJS1FLHNVHhqO0tmLi3lJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>surinamese hip hop <a href="https://everynoise.com/engenremap-surinamesehiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Islands</td>
+  <td>Netherlands<br>surinamese pop<br>moombahton<br>nederreggae<br>drill<br>dutch drill</td>
+  <td>King Koyeba &quot;Wini Man&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7f418a2243cdbdf8b4a71ce396c37efa93d58350" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/surinamese-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6zSJ00UipItjqXByagrqtY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5QVCFHi3JSGOzmHXSArH5S" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1IYdTOAw2TkbnmkhqT6f3c" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wrHFBrNqNGAFQDvPXkpih" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6UseSdyrX7aEnON91IuE9S" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>vanuatu music <a href="https://everynoise.com/engenremap-vanuatumusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Islands</td>
+  <td>Indonesia<br>maluku<br>pacific islands pop<br>reggae</td>
+  <td>Naio &quot;A New Day&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c686109bf8f8bfdb10e01205515b1a84585a54bd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vanuatu-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2KVSEKJOSJjcmUlqdQhY8f" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7inTFRfISVdiJzduMwRw5X" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>trap antillais <a href="https://everynoise.com/engenremap-trapantillais.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.French.World<br>W.Islands</td>
+  <td>France<br>shatta<br>rap antillais<br>zouk<br>dancehall<br>zouk riddim</td>
+  <td>Wylix &quot;HAINE&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ce0407ad555e19f078da5482d6df3497eb39db9d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trap-antillais" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ZR7k7IdfmU2BnvjiZAy0x" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0xnpiHFeCrlMrXeuvOKXqg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0dm1kzxKPhZpJK9ZKtCMdc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6bl6yhRl1zrU073MNOdBDT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3VANShzIGMkgvmdTBAcumT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>pacific islands gospel <a href="https://everynoise.com/engenremap-pacificislandsgospel.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>W.Islands</td>
+  <td>Pacific Islands nations<br>gospel<br>samoan pop<br>pacific islands pop<br>nz reggae<br>worship</td>
+  <td>Ruth Sekilevuka Turagabeci &quot;Jisu Au Gadrevi Kemuni&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/958204f5944f0a64388371f020afac568c13ac9d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pacific-islands-gospel" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2z2HGcs0cI8WL5iT7dhQ53" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0WQtakNFg4V8bkFG8S3taF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ECuOCTGwTsYMHNTlQgznO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1UzCTIBxb92TVCVDsU4VjM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5JHwkULXZam9jpUIklTjqC" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>polynesian hip hop <a href="https://everynoise.com/engenremap-polynesianhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Islands</td>
+  <td>Australia<br>aussie drill<br>nz reggae<br>nz hip hop<br>g-funk<br>nz gangsta rap</td>
+  <td>POETIK &quot;ALL IN.&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/171dfb741302f5260d1f58eab2efdc75fe6cba4b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polynesian-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6QpiVZsR1PIuX2cXboJ6Bc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0hg5dozYN1rvZP2k0udqgP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4M4ZstgWoQ9lfLJAXTDgRT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4dLoG9MOWJZ8r1qjmLkAzf" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/73Nnqy8H6fwhrbXafEAjeW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>virgin islands reggae <a href="https://everynoise.com/engenremap-virginislandsreggae.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Islands</td>
+  <td>Latin America<br>roots reggae<br>reggae<br>traditional reggae<br>ragga<br>dub</td>
+  <td>Danny I &quot;Inna De Battlefield&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/546ed0d61a0da99c28660a88e31c10c6ac13b726" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/virgin-islands-reggae" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6km6CVOYOWHQEXml06rbGF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4QO5FPI0JxcUzJhGU4i8rI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7g62Ty4x1JnNnwaD2SluBv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0fUTSZL2x2PpTBYOEdzIrG" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5bDEFodwpW1rGkNxwueaSW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>indie canario <a href="https://everynoise.com/engenremap-indiecanario.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Islands</td>
+  <td>Spain<br>musica canaria<br>singer-songwriter<br>cold wave<br>spanish indie pop<br>rock alternativo espanol</td>
+  <td>Los Vinagres &quot;D&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c01482b61b23f0e13233962c8685e77af50d2b26" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-canario" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/04wCVIsFOghnqB48qbix5G" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/70C6u0olQKvzu0wTCul2dj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/73ic5nQiihzBTFpthoMcyV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1DlCdMblG5w5qz9YVTH95h" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>caribbean metal <a href="https://everynoise.com/engenremap-caribbeanmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Islands</td>
+  <td>Dominican Republic<br>rock dominicano<br>death metal<br>puerto rican metal<br>reggae rock<br>rap metal</td>
+  <td>AntiHippie &quot;Chucky @ 42&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/42db5f9af7195b58e84c33149564fc82bcea7964" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/caribbean-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Pyyj6l1WihM9in23JvdQn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0QGrJitFBXUOFPICc94OlJ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>rap antillais <a href="https://everynoise.com/engenremap-rapantillais.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.French.World<br>W.Islands</td>
+  <td>France<br>shatta<br>zouk riddim<br>zouk<br>dancehall<br>kompa</td>
+  <td>Nicy &quot;Avion de chasse&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/40598f58b5595db124f41f9d84bd993a8e774f54" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-antillais" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7K6fqobOmPbfb0B7I5Rc78" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4BuLTQu4yFpMRmIwK2tXvy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0F6MeTc8TNSnAhsF56LvmG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0z7zJCCZwBO4z3qG6GC2Mk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0bVU6cUAqD9T2KQ8xXPF6A" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>musique tahitienne <a href="https://everynoise.com/engenremap-musiquetahitienne.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Islands &#x2380;</td>
+  <td>French Polynesia<br>polynesian traditional<br>exotica<br>cook islands pop<br>go-go<br>tahitian traditional</td>
+  <td>Royal Kikiriri &quot;To Reo Iti Maru&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e31a5507cb81cbe1b8321569c702ca3fd8ae8c0a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-tahitienne" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5g6dJ2T4mzrKDg6Qo2lAfC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0b4lkZqMBUrVjMQTlLTSMK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6knRQIVQU68WrhFD8PnCKG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6e6lMY9HXhge1ggkYJzlrd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5WFnspxgEXFonaa2C80Gma" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>channel islands indie <a href="https://everynoise.com/engenremap-channelislandsindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Islands</td>
+  <td>United Kingdom<br>doom metal<br>stoner metal<br>sludge metal<br>stoner rock<br>space rock</td>
+  <td>Buffalo Huddleston Band &quot;Chillin\'&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/10dcb3719076436859800aa22bf86da05b8114c7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/channel-islands-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5WzspL8WVlWs2XVBq318h8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5vc8iHgY8M9XyaKFOfWIil" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>surinamese pop <a href="https://everynoise.com/engenremap-surinamesepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Islands</td>
+  <td>Netherlands<br>kaseko<br>surinamese hip hop<br>zouk<br>moombahton<br>nederpop</td>
+  <td>Tjatjie &quot;Kon Go&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a7ba147c22144ada5b53725ed124e96a3c2a5cfa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/surinamese-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6bTlvzXvwntG6GzloTlz6W" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/27DZhqwvuoNKv6gZDVonz1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1wdbzONCsWqJwuEDPjAZDs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5OniQvravU1ynGmUQpYVTL" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4IS7DJBBd31nPOzq0PAyMt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>faroese indie <a href="https://everynoise.com/engenremap-faroeseindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Islands</td>
+  <td>Faroe Islands<br>faroese pop<br>neofolk<br>viking folk<br>christian country<br>faroese rock</td>
+  <td>Eiv &quot;Tr&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b48b3f2767994f0d6779470dcf2e7f6578527780" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/faroese-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7udpLkjY5SpeoAaYkP7HGG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/54r2OpIsl3hhvSpEDIZesr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0tRFGDvIUkklzBfmtkiwbL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2jRp9IxtTfjZGnlJ2j0rRT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1M7zZXK0TtQl32Tj09XcgM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>faroese pop <a href="https://everynoise.com/engenremap-faroesepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Islands</td>
+  <td>Faroe Islands<br>faroese folk<br>faroese indie<br>christian country<br>faroese rock<br>norwegian pop</td>
+  <td>K P &quot;Villar v&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bc6dbcd7a77993c88ccc96fbdc11f5d332aca9ff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/faroese-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Eiwzw8WoDy7uVSNsHLUt6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2i2FDkvTFSKP0D68hXwqNm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Rcc8A66JBS36QtDeoyOK6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0DyxFgZD4EmwVWXgBBPstU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/22DyS50JjgQ76yxAmEGUjJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>antilliaanse folklore <a href="https://everynoise.com/engenremap-antilliaansefolklore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Islands</td>
+  <td>Cuba<br>ritmo kombina<br>soca<br>cha cha cha<br>salsa<br>son cubano</td>
+  <td>Grupo Di Betico &quot;Paranda Arubiano&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f069b0c693249de06263db1ce0f1e8f0bd2e3eab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/antilliaanse-folklore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1fTpCykrztNEkgwrVhWhuo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3X2kDSCnsGUQ6BwrcUnr76" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2h9SdDAb89f0S9cw9EIygj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7e5fd7unE70OxqnqjklsYK" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>faroese jazz <a href="https://everynoise.com/engenremap-faroesejazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Islands</td>
+  <td>Faroe Islands<br>big band<br>faroese pop<br>free jazz<br>faroese folk<br>folk metal</td>
+  <td>T Big Band &quot;Rasmus  G&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1979793de65f73e87759e5ae9f28d92f69329b6c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/faroese-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7a4Z3xjHzSX873M844q7iJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2cEtqSZ5rvZH6yvzqyLgFE" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/02c6Z0cwtn2KR3jB59Kb95" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1M8QhX0OL6H6dITwllHjEA" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>faroese folk <a href="https://everynoise.com/engenremap-faroesefolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Islands</td>
+  <td>Faroe Islands<br>faroese pop<br>christian country<br>honky tonk<br>folk<br>folk metal</td>
+  <td>Annika Hoydal &quot;Aldan&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e09b10610bdf09f3fff7433b36db75d52708c17a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/faroese-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0fpbvl7ftMqAymDxYHFHzo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/09doQtFZ7g2HTJzmGEYC9l" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/463NsMpbx9kSw5txLyzWPi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7lNkFQ42MNuyB3k25m6G3E" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2jrwFDifvVLaG9HfSjCaxN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>polynesian traditional <a href="https://everynoise.com/engenremap-polynesiantraditional.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Traditional<br>W.Islands</td>
+  <td>French Polynesia<br>traditional music<br>musique tahitienne<br>exotica<br>tahitian traditional<br>go-go</td>
+  <td>Coco Hotahota &quot;Faa Ieie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/92258b128cf85ccf147c130e32ccf03be67eeab3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polynesian-traditional" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Jar85IrluWsi8aGZTzOdg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4vO3Vvrd8i0blcpXf7SpRd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ZaKE1Tu8NtikdniuFuQcQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ekTArkB2kSo8vE9gPjNQV" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>himene tarava <a href="https://everynoise.com/engenremap-himenetarava.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Islands &#x2380;</td>
+  <td>Polynesia<br>polynesian traditional<br>polyphony</td>
+  <td>Archipelago of the islands Tuamotu Gambier Ru\'au Group &qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/49cd762019c23c3af1e744cee0a6c8b8976ef27e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/himene-tarava" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3rtWr8M45Nbbxowq1YCq1o" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6N3gRB6GTGmmLAAYe86ntl" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

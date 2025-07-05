@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.French.World: (21 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.French.World: (21 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>French.World is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>musique mariage algerien <a href="https://everynoise.com/engenremap-musiquemariagealgerien.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Africa<br>W.French.World</td>
+  <td>Algeria<br>rai<br>moroccan chaabi<br>algerian chaabi<br>moroccan pop<br>deep rai</td>
+  <td>Djamila &quot;Zawali ou f\'hal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a593f206aa010e8d0b7a22b20160750731148176" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-mariage-algerien" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7eCY7dJl4nFQOEIv7yPosj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4lSVAANT2LfdYn6UxvtKsy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4R9Uhl0Xa9xB8imyjFHIB0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6iA2UnI7jtOTN2Y0gx9rhO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0eqkF4neH5PahXwrBEQGOu" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>trap antillais <a href="https://everynoise.com/engenremap-trapantillais.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.French.World<br>W.Islands</td>
+  <td>France<br>shatta<br>rap antillais<br>zouk<br>dancehall<br>zouk riddim</td>
+  <td>Wylix &quot;HAINE&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ce0407ad555e19f078da5482d6df3497eb39db9d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trap-antillais" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ZR7k7IdfmU2BnvjiZAy0x" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0xnpiHFeCrlMrXeuvOKXqg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0dm1kzxKPhZpJK9ZKtCMdc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6bl6yhRl1zrU073MNOdBDT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3VANShzIGMkgvmdTBAcumT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>musique mahoraise <a href="https://everynoise.com/engenremap-musiquemahoraise.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.France<br>W.French.World</td>
+  <td>Comoros<br>musique comorienne<br>zouk<br>kompa<br>pop urbaine<br>kizomba</td>
+  <td>Djavera &quot;Bugatti&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a54abc51bd6c67d0a67663674832fadb9841c9ea" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-mahoraise" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/60VN5fFFtpu3JKTPFpWh5W" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ySmBKFuuAazwoX8YefEQV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1DYmrnGKMLkuP94w5sUaVy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2m4IfK0mkhIzvCwfhKncJh" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2pTdHvPlqVpd6FzX7KkvSn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>rap antillais <a href="https://everynoise.com/engenremap-rapantillais.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.French.World<br>W.Islands</td>
+  <td>France<br>shatta<br>zouk riddim<br>zouk<br>dancehall<br>kompa</td>
+  <td>Nicy &quot;Avion de chasse&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/40598f58b5595db124f41f9d84bd993a8e774f54" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-antillais" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7K6fqobOmPbfb0B7I5Rc78" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4BuLTQu4yFpMRmIwK2tXvy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0F6MeTc8TNSnAhsF56LvmG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0z7zJCCZwBO4z3qG6GC2Mk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0bVU6cUAqD9T2KQ8xXPF6A" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>musique comorienne <a href="https://everynoise.com/engenremap-musiquecomorienne.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>France<br>musique mahoraise<br>zouk<br>kompa<br>musique traditionnelle comorienne<br>pop urbaine</td>
+  <td>Dievil Genius &quot;Choisi&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f979ce33aa16145d565d8701d80567da9efd228c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-comorienne" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1TThldzNwJ0qivirkgkgoc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Cjw8xL6od1fUWcKJHCHxW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/52DeaKCAMKEMX8JrL9iuDM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/140hZVTA7athCpI6n6AW8z" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4C4THeiBBB1rsErG8X4SOC" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>musique tchadienne <a href="https://everynoise.com/engenremap-musiquetchadienne.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>Spain<br>flamenco<br>flamenco pop<br>kwaito</td>
+  <td>Mawndoe &quot;Woyo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/efad20210e1fcbd627f26d40144b43b7784d05dc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-tchadienne" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2zxLedGeaKzbFAaNg1sRtr" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4id4jU46jt19nZAiUoM24X" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>musique urbaine brazzaville <a href="https://everynoise.com/engenremap-musiqueurbainebrazzaville.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>Congo<br>rap congolais<br>rumba congolaise<br>rhumba<br>afro r&b<br>afrobeat</td>
+  <td>Tidiane Mario &quot;Mokili&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c39519cca5eb7d66f59a7851016763199ab23ec1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-urbaine-brazzaville" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0bNfLZfFpZmCi1eZfY3emj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6dyVV8d7TTJmws5jFNJHX9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1KWmw7npipLcaWuNstTTtV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0tdLfptf3oXJPLTnsTud8r" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2t3bVMfx56QZOzoftci14Y" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>musique nigerienne <a href="https://everynoise.com/engenremap-musiquenigerienne.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>Niger<br>tuareg guitar<br>gnawa<br>desert blues<br>ethiopian jazz<br>afropop</td>
+  <td>Les Filles de Illighadad &quot;Imigradan&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c710f8d945e596ba6fb08e8f061bd7c6f594cda5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-nigerienne" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2w7xLhYszO5gfunYAh40j9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3S0yyrqZAIXvLhT02kfkYQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Mwba3FIlUeHF49LCQdLKu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/62zoXTiXR3VUS1DBLc9iop" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>musique mauritanienne <a href="https://everynoise.com/engenremap-musiquemauritanienne.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>Morocco<br>hip hop mauritanien<br>gnawa<br>moorish traditional<br>khaleeji<br>griot</td>
+  <td>CeePee &quot;Peace&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/930ea8a5e66fd9bd79c561eb7bfa625082e93308" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-mauritanienne" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6XC2xxy9PjX3YaAqFI83u8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6tgiE2xPOzneF0huD1G1eu" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Z2eK2HbKSaynkCmcoEACi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4b6BIR0tWp8iDdPTams7g8" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>musique urbaine kinshasa <a href="https://everynoise.com/engenremap-musiqueurbainekinshasa.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>Congo<br>rumba congolaise<br>rhumba<br>afrobeat<br>rap congolais<br>azontobeats</td>
+  <td>GAZ FABILOUSS &quot;Caler Son&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/50875c35412c55ae4c3e314dd4698fcef086b8c4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-urbaine-kinshasa" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5r7aN2PT9Zg1g9jI2b1x48" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2AKq0Z7RkcTnueNFramScl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1lWMg4I0jlJ0RoOJmByXC8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7kvCTQMO3l7oUvoUJ46G8q" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1iCnhbuFxIkxzFjsHXXOvu" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>musique traditionnelle comorienne <a href="https://everynoise.com/engenremap-musiquetraditionnellecomorienne.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>Comoros<br>musique comorienne<br>musique mahoraise<br>tropical music<br>traditional music<br>khaleeji</td>
+  <td>Maalesh &quot;Mambo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b48691de1e28c26b977a6028355d7d4bd66ee1ee" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-traditionnelle-comorienne" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6m67KxB7JVBG7Elj2Htvbz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7ksXAyS1ZxTrof1TxTF6wZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/201yD0HEDRNATQsb5U6cdW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4BfSCaSWfZmywyaPjcXTi9" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>musique centrafricaine <a href="https://everynoise.com/engenremap-musiquecentrafricaine.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Africa<br>W.French.World</td>
+  <td>Central African Republic<br>pygmy music<br>afrobeat<br>rhumba</td>
+  <td>Enigmatik Music Family &quot;Sango&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bd0cb64cdeb9f6abdf5a6fa89f1be4c9c6b5625e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-centrafricaine" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ETuJzwRy77snQyYo44SW8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Wd7ru6M2A4bqzvCTUtQ3Z" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>musique mandingue <a href="https://everynoise.com/engenremap-musiquemandingue.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>Mali<br>mande pop<br>wassoulou<br>west african jazz<br>desert blues<br>malian blues</td>
+  <td>Ramata Diakit &quot;Deri Faramandi&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2c4ca05ac85dd8093b8caf32a3b3baa744c0645c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-mandingue" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3gK8VnJDUfRm7sykoQfNv6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1VnuSBQ2H3KMRLGVTpUqk6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/124YTGOqHKD2LyVO6eCd9P" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5tgj8aafsPkDKwa3fUsXqW" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>musique peule <a href="https://everynoise.com/engenremap-musiquepeule.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>West Africa<br>mbalax<br>gnawa<br>desert blues<br>traditional music<br>griot</td>
+  <td>Baaba Maal &quot;Traveller&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e5126102dfe143d35ed11e42a6c150b7c66fcebc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-peule" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5YbEQTETcKkqrJ31gSb4NO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3PyovaGk3JYKMA4cwp2ppU" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>musique pour enfant quebecois <a href="https://everynoise.com/engenremap-musiquepourenfantquebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada<br>W.French.World</td>
+  <td>Canada<br>chanson<br>lullaby<br>canadian children\'s music<br>musique pour enfants<br>children\'s music</td>
+  <td>Henri Godon &quot;Halloween&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/30325e60c91ac60ae2ba87b092c13f738d451dfa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-pour-enfant-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/28YM9w9eqy0RavsJcfUeFv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2c8ynEyyWccPS7FTsB3dEC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/22kSo36nBJ7MXvJxLIXafZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/41Kg30ObA0DT9rhmqPWrfL" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>musique traditionnelle congolaise <a href="https://everynoise.com/engenremap-musiquetraditionnellecongolaise.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Africa<br>W.French.World</td>
+  <td>Congo<br>rhumba<br>rumba congolaise<br>champeta<br>african electronic<br>soukous</td>
+  <td>Mbongwana Star &quot;Malukayi (feat. Konono N)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/314311b0eda90c79cae2b8c787b06d9373e3ec15" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-traditionnelle-congolaise" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3tYInaZYeEg0ExBVW2nQwD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0rvR2tjFUlz37sgKpbbkpd" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>musique soninke <a href="https://everynoise.com/engenremap-musiquesoninke.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>South Africa<br>musique mandingue<br>amapiano<br>venda rap<br>traditional music</td>
+  <td>Soninkara II &quot;Sandian&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e131127ffd15b3c85bf03caea80d9370864fe2f7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-soninke" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2R99Ff7ipOChBpq5mRZZW5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/74Us8kcNh8ptwnaieyKQua" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4lvIeAQjP6ql6YFZav7SM4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wVAlTiVjDH6T6JJDWy47w" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>musique touareg <a href="https://everynoise.com/engenremap-musiquetouareg.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>Mali<br>gnawa<br>desert blues<br>tuareg guitar<br>afropop<br>reggae maghreb</td>
+  <td>Tinariwen &quot;Toumast Tincha&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/71d548eda4af558762bfe421263879a77ff18689" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-touareg" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ZgSUOxwFsnQ0cFlALkno3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7L6dt5tqw1XTbf5ez1b76m" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>musique pour enfants <a href="https://everynoise.com/engenremap-musiquepourenfants.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Kids<br>W.French.World</td>
+  <td>France<br>lullaby<br>chanson<br>comptine<br>children\'s music<br>comptine africaine</td>
+  <td>G Dalton &quot;La sorci Grabouilla&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4f7a2bc7f7e7fc214598f711a212d5920b3b81b6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-pour-enfants" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3yb93g3RWQxRdxv5Ddmcjj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3938nta3dDXu0lhuB4Szzh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5wFGtw59KjueJFX2vPlArI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Yyg1u7zMnB1y4JvPDiZw9" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6BO21Klne8bQuvzftln5fS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>musique concrete <a href="https://everynoise.com/engenremap-musiqueconcrete.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>France<br>avant-garde<br>experimental<br>acousmatic<br>electroacoustic composition<br>dutch experimental</td>
+  <td>Pierre Henry &quot;Messe pour le temps pr: 2. Psych rock&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/af16d538bad6b366ec21a609121156a6a091b498" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-concrete" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ajL9yj6gSnCNOI89l5ick" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1G3qplfcVYzG0Z4XRASdks" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/68kXuT2vMuJlwEUJkyZyHG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6u2H6xLDuef1LFmVu3xEKb" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>musique ancienne <a href="https://everynoise.com/engenremap-musiqueancienne.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.French.World</td>
+  <td>Europe<br>baroque ensemble<br>opera<br>medieval<br>chamber music<br>requiem</td>
+  <td>Ensemble les Surprises &quot;Canzoni overo sonate concerta<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d6cab26a8aac1cf031183b8982794132c535e647" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-ancienne" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3VruEWN4WUDDGfrVNBAS4o" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3dkvfaZqToI9kSpSDolutm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7r5jHaPjxqVCPkV325x419" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/68eRritXy9khNPDoAH0zmU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7fpOj1Miol01FrN8EwK7AA" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

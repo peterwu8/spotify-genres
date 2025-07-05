@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Metal.World: (98 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Metal.World: (98 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>cyber metal <a href="https://everynoise.com/engenremap-cybermetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Italy<br>industrial metal<br>industrial<br>melodic death metal<br>melodic metal<br>industrial rock</td>
+  <td>Sybreed &quot;Doomsday Party&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d7ac1613356dd328bfb551a086b10108ec8b58c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cyber-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Q58GHq3RFOe61D4moppo9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3tBFVR4AL91lnjtkPrfsPa" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3vNUmoUjsSaYyRASXsYxOU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6gprdO47kmUZp4Pquzx6bs" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0S1WclFUXmuAaPBc5ZeYcr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>swedish metalcore <a href="https://everynoise.com/engenremap-swedishmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Sweden</td>
+  <td>Sweden<br>metalcore<br>djent<br>melodic death metal<br>deathcore<br>melodic metal</td>
+  <td>dEMOTIONAL &quot;Boiling Point&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/efd9ca73cffbe06f19e21557b5786ec91973d200" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6zbnSgigPLBDFE6cC4d2mA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/73wlrju5qMPbYENDR1CW92" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4AP1JKOqIRJy0BL2MlBBMu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5pEC1DrIZ6x6vFYD1XXRTT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07woOzv8E0XU1U9qMtyTmE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>vocaloid metal <a href="https://everynoise.com/engenremap-vocaloidmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>Vocal</td>
+  <td>Japan<br>vocaloid<br>kompa<br>visual kei<br>anime<br>japanese indie</td>
+  <td>&quot;Hot Milk&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4a60567079a5e4a56d0db5cfd9280ef058f9832d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vocaloid-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bg71ZbAsd3jsDAccnYuwv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7HoucTIMv5vuyQDKHVUlBT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5FEuYjqzYgQ9aXPHUlS9IW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7hNj9zO4mZs6wluDOFUdDq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7tbYrP7aRM5eQ38m4EnNEi" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>ukrainian metalcore <a href="https://everynoise.com/engenremap-ukrainianmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Ukraine<br>metalcore<br>ukrainian emo<br>ukrainian metal<br>mathcore<br>deathcore</td>
+  <td>Sick Solution &quot; &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8a18a4fe21d3ec337044e0e12c9bdfa4e9662a49" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ukrainian-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5WVPsGwtomHTE143ZinA6m" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0W9zWriThPyQw3kmq6xJ1e" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4bs84meAaqWMbjm91NfJuS" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1OCBT3eE8kH7ODJwNMbUBj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ohU2Nl6TqrIOoHyApY0Uk" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>new wave of glam metal <a href="https://everynoise.com/engenremap-newwaveofglammetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Finland<br>glam metal<br>sleaze rock<br>arena rock<br>album rock<br>aor</td>
+  <td>Lipz &quot;Dangerous&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5e3c080b352353144d5612e502a62613d91329fe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-wave-of-glam-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/78nmHR3Fe3lrW1pSfvls0J" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3o7Cu2rwpygk6zJiCqE0Z7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0EEtnvwz2pwYpDxcVDYYf7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Dqqa5PA1QMg0Q6S1fVdCA" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6IpMjrUiib61coL0kl7wYl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>kawaii metal <a href="https://everynoise.com/engenremap-kawaiimetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Japan</td>
+  <td>Japan<br>j-rock<br>idol rock<br>visual kei<br>j-pixie<br>japanese power metal</td>
+  <td>TELECiDE &quot;Cycle of Addiction&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f4db0a629d010ac31c6089d8803e1028f7cb3ccf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kawaii-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ILYr2jVdnQEKaoMl2wkYf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5sLhmwkeZsqxUfx1871zjC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZYZZx2cXt0i1nATwXpYhw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/43dT8IIFvrrJzlXD2Q74Se" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4w2PnyTaPVhz69PpwMXjgh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>russian metalcore <a href="https://everynoise.com/engenremap-russianmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Russia</td>
+  <td>Russia<br>metalcore<br>emocore<br>post-hardcore<br>djent<br>deathcore</td>
+  <td>&quot;Smack My Bitch Up&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ba60aec68f2f92ef6641e0ab7a901908afb6d28e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/russian-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/04aee2s7AXpFtmKAof18bu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6NLtxoSHgVwYSgaaqsh1ff" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3gZ7d6spYMxKUol1mFXr2V" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1eePiW5avJUeRw3cpMtGt3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ms0lg7PuqzOG9bbUsc0HW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>finnish power metal <a href="https://everynoise.com/engenremap-finnishpowermetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Finland</td>
+  <td>Finland<br>power metal<br>melodic metal<br>symphonic metal<br>speed metal<br>symphonic power metal</td>
+  <td>Thunderstone &quot;Tool of the Devil&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9da12aa9436a2e9b733cd661499b8f571eeff0a3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-power-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5chT4nyIhvoYKjV76HPmrm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/33KhDl0itx7zYyzuEhwDQA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MiMmHUf0jzgYmV3UJwe96" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/38K0Ndsq8KmFQ6zmINyU5W" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6c7S0ivFNfYmerFQYegt7j" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>melodic metal <a href="https://everynoise.com/engenremap-melodicmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Sweden<br>metal<br>power metal<br>symphonic metal<br>folk metal<br>gothic symphonic metal</td>
+  <td>Veonity &quot;Altar of Power&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f648aa7336ad4684af910a5d59baed2c4babf339" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/melodic-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7uC0Ymt42Jg9A5do7V7Rc0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/20iIYgQhyO7JlYOGsFYu0h" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5TOLv1TUvYWEh5mhmpwQ1u" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wq4c1MkQ0hJKFVyu7wDVq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0lKzgGsLuGDfIL6oob9olN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>polish metalcore <a href="https://everynoise.com/engenremap-polishmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Poland</td>
+  <td>Norway<br>metalcore<br>deathcore<br>djent<br>mathcore<br>electronic djent</td>
+  <td>The Materia &quot;Fire&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fea1c524cf63c885ec60ef8fed9dca43a88d2de2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6CKkzIgioaeXfrikEBuGF2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7BbCYGsbE3F7stw0OOEVJM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5mjUHO3UMw36Kky5ZnKrHy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4yQWunQmFEmRUwqL57SC8O" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/47biFEXCf3LTXegy5PcN66" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>symphonic melodic death metal <a href="https://everynoise.com/engenremap-symphonicmelodicdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Finland<br>melodic death metal<br>symphonic metal<br>melodic metal<br>death metal<br>symphonic death metal</td>
+  <td>Brymir &quot;Wings of Fire&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/276ce294594d368f2d1579a5ef027659459467fd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/symphonic-melodic-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1YNcfIiHQI4tVTBkCi2VZJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/41CIPcZqdtvb5gm5J5RPk7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4R4Y2LQrG7whUPxWJmOzWn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ulAB48pYlYtIVb6POls5M" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>japanese metalcore <a href="https://everynoise.com/engenremap-japanesemetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Japan</td>
+  <td>Japan<br>j-rock<br>metalcore<br>visual kei<br>deathcore<br>djent</td>
+  <td>Foad &quot;Wheel of Life&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/361330df2cbe44057dc8ec787060bedc5a2d7fc3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0OyP6UcYbYVUurFtnhfgvm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7uYRzhR9AcsXvPj89OYX9d" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ilYiYkALVDkTy88XFMxmV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0OrYn4Q5gDmZDuo1DD56cX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6WZ5sDQyeAKrPdXGde85Wp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>brazilian metalcore <a href="https://everynoise.com/engenremap-brazilianmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Brazil</td>
+  <td>Brazil<br>brazilian post-hardcore<br>metalcore<br>brazilian rock<br>brazilian hardcore<br>deathcore</td>
+  <td>John Wayne &quot;Reconectar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bf33f88eebafe0daca07cd841cb8e43dc91ca238" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5pNDRYrFvNy0dy04A75nkq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2lybnXPgntmfOoxDm31UQR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7DOQjxQ5yPgCDb0WvThAW9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ECbzDrvzuCh0XErPVoqrt" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>swedish power metal <a href="https://everynoise.com/engenremap-swedishpowermetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Sweden</td>
+  <td>Sweden<br>power metal<br>melodic metal<br>symphonic metal<br>speed metal<br>symphonic power metal</td>
+  <td>Crystal Eyes &quot;Starbourne Traveler&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/138d9df2b064747f6f93a12357568d4f6d8eef72" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-power-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5eB5KjDfJdRg74zCBNzhRR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4vTdyEz1xpzPJ45jfFHWYl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6gbPPFhEqRqYZLBc86Bblk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3RK5eBU0KA4b0ns5L97sok" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3hkehhSPI4Txy7FarYosrU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>canadian metalcore <a href="https://everynoise.com/engenremap-canadianmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Canada</td>
+  <td>Canada<br>metalcore<br>deathcore<br>djent<br>canadian metal<br>post-hardcore</td>
+  <td>Structures &quot;6&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d131414caf342e2d4e932d64b02a284052883573" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6c7f9HAjZeRfWTbsLQt2oO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2C7ZlaZapi5PJTbg3H48kZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1wnMKciglIlbumR1b6rj5L" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Gmf59PxzGQCX8Ty8JB5Pj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7aWa5un56Ln56Axhl7Ly8Y" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>italian folk metal <a href="https://everynoise.com/engenremap-italianfolkmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Metal.World<br>W.Italy</td>
+  <td>Italy<br>folk metal<br>medieval metal<br>pirate metal<br>melodic metal<br>power metal</td>
+  <td>Kanseil &quot;Antares&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/de7cf0ffc8facda126dedcbbc2db1b693080b049" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/italian-folk-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6S3oXFxqKeqG3tAlefQI7m" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/26advC90paRzW89GH6WeKU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/10nQk7Oz8NsnvufH5GGsgC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Kiw0uF4lHIyy9jC7WbU0g" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>rap metal espanol <a href="https://everynoise.com/engenremap-rapmetalespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>Rap.World<br>W.Spain</td>
+  <td>Spain<br>rap metal<br>nu metal<br>spanish punk<br>spanish metal<br>groove metal</td>
+  <td>Hamlet &quot;Irracional&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4ad104fcfe18051530774bab0880e1f05ae08638" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-metal-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0VQFmNUB0d40Vo862rGvFD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5TixDd5uNtIrG0mua54Bt5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3QQofUPEcV9It6IgLe1dyM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Od5nIgRXejLqqCHfWWbNp" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/01n0LC7JQf15EBixOT1tdR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>croatian metal <a href="https://everynoise.com/engenremap-croatianmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Croatia<br>doom metal<br>djent<br>croatian rock<br>gothic metal<br>sludge metal</td>
+  <td>Manntra &quot;Ori Ori&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0ed49140a29f970e83f76d5ded2e4746d4e38e43" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/croatian-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6SuFK3PXIuzMjaF4dGFexb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2gQSoiXsgD9wpAp9aSdfMd" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>nordic folk metal <a href="https://everynoise.com/engenremap-nordicfolkmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Metal.World<br>W.Sweden</td>
+  <td>Sweden<br>folk metal<br>pirate metal<br>viking metal<br>black metal<br>melodic metal</td>
+  <td>Svartsot &quot;Gravollet&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/91e7e3c08f67fa241f0f3e4159f95b65fe402e92" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nordic-folk-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1mgnsEh2c0PI0Mz9Rib2If" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5pTlHziwBE6lzIvpBvjfnL" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4xmdIh3MHhiHGG2SqUq1tG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7EqGk12yiBcA9mnKS7VfM3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/20P1MayypimSFYBEe3IaxB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>thai metal <a href="https://everynoise.com/engenremap-thaimetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Thai</td>
+  <td>Thailand<br>thai rock<br>mainland se asia metal<br>thai pop<br>phleng phuea chiwit<br>death metal</td>
+  <td>SUDDEN FACE DOWN<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/07f71375982fca4a9d25161071bac79cc2da7ccf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/thai-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5WlRJo7EU8tGw0q5QHJk24" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4zkz0xTiMoXFzbpTz112Rr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2eOnmJPfbI65B32jxFNdr6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7a61Nkr17yrdOTgyrCNPYn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3GbdGdvvIGm2zrGT7lPF6X" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>fallen angel <a href="https://everynoise.com/engenremap-fallenangel.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World &#x2380;</td>
+  <td>Norway<br>symphonic metal<br>gothic metal<br>melodic metal<br>gothic symphonic metal<br>symphonic power metal</td>
+  <td>Elegy Of Madness &quot;Hybrid Love&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2df99daeea1879545fce3fef01c7a67f352d9ff0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fallen-angel" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Wr2GTAslMKTu68T9MSPGY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Voot6Qf3OJX5KukZ1dn4n" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZZ2CcPfzrpYwsICyRiINb" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5XLjEHGiIxbuyklFzqP4QE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2fxGAz2DGX3Tdl7emj0AND" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>japanese power metal <a href="https://everynoise.com/engenremap-japanesepowermetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Japan</td>
+  <td>Japan<br>j-rock<br>power metal<br>visual kei<br>symphonic metal<br>kawaii metal</td>
+  <td>CROSS VEIN &quot;TRUE CASTLE&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6d8401c0eb3d2fbded5e50acb9f46fbc19f396c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-power-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/65Rsk9FL6GCdZodERsK8wT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/45zrIOyjGiR04qvOUBhltM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wOMnS3fXsKWWQ8I7pb1Oo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/54ATTqhPsQrPMqkmv3b5Fd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1VdABEkCZCrVs8xXfg5nEb" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>glitch beats <a href="https://everynoise.com/engenremap-glitchbeats.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World &#x2380;</td>
+  <td>Netherlands<br>glitch<br>idm<br>space music<br>downtempo<br>sludge metal</td>
+  <td>Rykard &quot;North Cormorant Obscurity&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3b0721a7586d8aa5e6fe59fd4690067820aaf3da" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/glitch-beats" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2CicsTe6Y59vmhTRVgs9m6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6s0bhopje9j3s2JiTHtLlx" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>fantasy metal <a href="https://everynoise.com/engenremap-fantasymetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Germany<br>power metal<br>melodic metal<br>symphonic metal<br>speed metal<br>symphonic power metal</td>
+  <td>Marius Danielsen &quot;Temple of the Ancient God&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9fe25c73a71d2d5cdc46c47992d95ad774aea0bd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fantasy-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0hqCdxR1fBccA1DYLeuoL9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Ny1iKKUSQteHqrGDyQrmT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7nAq8sgfoC9z9sWRx92In6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7FuuI5fJstBhBAncsPA1KX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2fogLXehsdIyPlgF9WAhpa" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>metalcore espanol <a href="https://everynoise.com/engenremap-metalcoreespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Spain</td>
+  <td>Spain<br>metalcore<br>spanish metal<br>deathcore<br>melodic death metal<br>hardcore</td>
+  <td>Brothers Till We Die &quot;Hand to Hand&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/06e0a3c429be9f606424217a44b8b40ead6bb212" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metalcore-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1WTatVGE0m7qrSrWxsAk0O" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Wnz6gX1qZXacmvCXX86xH" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>melodic progressive metal <a href="https://everynoise.com/engenremap-melodicprogressivemetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>Progressive</td>
+  <td>Brazil<br>progressive metal<br>progressive rock<br>power metal<br>melodic metal<br>neoclassical</td>
+  <td>Lost In Thought &quot;Seek to Find&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2445f3d281509644da8993d6fe16e6ec7c9485e7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/melodic-progressive-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/646WOXsDLAv4yLJJ1C0CK7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6fvk63guE3C9CwuBHTnELe" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5bzFQgXV2Pqy6n0OQVdWy3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0f38OLJEbftZjiBvcsfrk4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7HLr9jWfju448TigXFKaHf" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>power metal <a href="https://everynoise.com/engenremap-powermetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Sweden<br>metal<br>melodic metal<br>symphonic metal<br>folk metal<br>heavy metal</td>
+  <td>Edguy &quot;King of Fools&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0dc965881b0f62cb47a2d2620b2018860fb48226" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/power-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7zzeQVN8GwGmPkirevLx7b" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1sy0OGu2TTXLTiZ7zMdcoB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Mj1lzH1IHwCOoxwobMFeo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4C3Nr8AhQ5LXOnt6l1g3PJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/56VwVqqPuRTEw6fxOU0O4G" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>finnish progressive metal <a href="https://everynoise.com/engenremap-finnishprogressivemetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>Progressive<br>W.Finland</td>
+  <td>Finland<br>progressive metal<br>melodic metal<br>djent<br>power metal<br>progressive rock</td>
+  <td>Wintersun &quot;Beyond the Dark Sun&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9c212f73c3034ad836fd24f404345b26e05163f2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-progressive-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5I3xTV8P5mVG5aDGhvy7mi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1B8OWWOqc7hn1ajJpv4768" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>german pagan metal <a href="https://everynoise.com/engenremap-germanpaganmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Germany</td>
+  <td>Germany<br>folk metal<br>black metal<br>medieval metal<br>melodic death metal<br>viking metal</td>
+  <td>Gernotshagen &quot;Blinde Wut&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4947110383c558fd6dd3f5e416e97866d77d34fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/german-pagan-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2jUywegsZ05aCXG9hz8ztb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1FmlTJhvVot4ctN0pThgMx" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7HoQbOEE5OQoDrV6SKNsRM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4N8n9m1PR8cnZUtWDIz728" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4MuDlOOq5yehpGGc45CShq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>german metal <a href="https://everynoise.com/engenremap-germanmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Germany</td>
+  <td>Germany<br>power metal<br>melodic metal<br>speed metal<br>heavy metal<br>metal</td>
+  <td>Iron Savior &quot;Heavy Metal Never Dies&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f6857a2ec6f8e6d5950c8a93e956b04cc653e6a2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/german-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2caQpCjBanLdmkW0Z63Mwj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Mcit79QvE6BdMXZ03eamN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/70Gxq0Kph6PB5xWRawYham" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4H6FZR1BXtOkbeOZztbmRU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bNVWaEieLppqfkzab91PN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>gothic symphonic metal <a href="https://everynoise.com/engenremap-gothicsymphonicmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Goth<br>Metal.World</td>
+  <td>Finland<br>symphonic metal<br>melodic metal<br>gothic metal<br>power metal<br>symphonic rock</td>
+  <td>Amberian Dawn &quot;Lay All Your Love On Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5f11c5a8f84a1ec2204500cece832cfc313b81c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gothic-symphonic-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/49QTCHLU9NwSIPt0zB9sNW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/61BVo2kYujeavfw38gf5rm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Cs9cO4EAjtHxDIk6WCG8L" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2TvqQHwF28f8AFmBIyIcns" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/04mxzr7kYqI6qrUTBQVLXC" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>spanish metal <a href="https://everynoise.com/engenremap-spanishmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Spain</td>
+  <td>Spain<br>folk metal<br>power metal<br>celtic rock<br>spanish punk<br>heavy metal</td>
+  <td>Sylvania &quot;Vivo en tu Memoria&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1040c4f003ddf0325ca6a7aaf079329fc45d4df5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5VaH5kF6IE14pjUTZwKSBe" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2khJPxCAK41z7bhSqRsNEd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7mgR7sIhMpbyemFAf1fugJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0OihtJIOW0Y4AWhLajo8bB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2caAV0UsRvJpb9tDaUy5qt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>brazilian power metal <a href="https://everynoise.com/engenremap-brazilianpowermetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Brazil</td>
+  <td>Brazil<br>power metal<br>melodic metal<br>brazilian metal<br>symphonic metal<br>speed metal</td>
+  <td>Symbols &quot;Eyes in Flames&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/29008cb80668938e49bb0dfd0c82ba566f79bb07" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-power-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/21IHQto5rREUneUNsaxKoX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3l3PfTmx8jHrp0NeeEDkLt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7zsixQj8nz9TzKXduUdfIe" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5bYDQVoLcoo154WBGJn7nm" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6gcUThJkKnaPI3mx0GzsxG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>russian nu metal <a href="https://everynoise.com/engenremap-russiannumetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Russia</td>
+  <td>Russia<br>nu metal<br>russian punk<br>emocore<br>russian rock<br>alternative metal</td>
+  <td>##### &quot;   &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/71e234b6c7d5a5fb237c64d2e41a19e91709d9df" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/russian-nu-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Z70ZXRfljFjmlxKGsoxtM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Zbmyw9ZX9aEvLMoMwBjEM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/60xdlIgZaS2E3J3WpmMuy2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5AiEgUN516VSG7jS2lanFN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6JeLh0eB8C9bEKRRB4ewSL" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>russian folk metal <a href="https://everynoise.com/engenremap-russianfolkmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Metal.World<br>W.Russia</td>
+  <td>Russia<br>folk metal<br>slavic folk metal<br>slavic metal<br>pirate metal<br>russian metal</td>
+  <td>- &quot;-&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ded5ecf2b0708cd23179209b9398086541bc2ace" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/russian-folk-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2oo5fOy2d6VDI2cUbTtkoX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0FwI8YSp47qXoeuxJChIfC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/39CKnza8xUp2xK5im64gG3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66QPUaxjXZknMcIooCt6pI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6W21hqsAHDqF1sLOEoNnKr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>symphonic deathcore <a href="https://everynoise.com/engenremap-symphonicdeathcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World &#x2380;</td>
+  <td>China<br>deathcore<br>death metal<br>progressive deathcore<br>djent<br>blackened deathcore</td>
+  <td>The Archaic Epidemic &quot;Annihilation&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bf97cfa3e9e0ffedd82a0e30b0c1a40b2f40f6fa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/symphonic-deathcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0sTddlGdVdXish90fLeeVK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ZabhuUR9u23fPqnORS5sk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1EMnbewD1Jpfd9QgufYSAr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6jK2oj5riTC55LYDSBiG55" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Iyr8kuv66kn5EP7riD9tn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>belarusian metal <a href="https://everynoise.com/engenremap-belarusianmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Belarus<br>black metal<br>folk metal<br>death metal<br>grindcore<br>sludge metal</td>
+  <td>Gods Tower &quot;People in the Swamp (Belarusian Version)&<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e01b76a71b5e8baa9c1a343e36abe3a1719b7aa4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belarusian-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3wtRhm7BWDp7lLDYG277UK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4CVeMaTHVqnDs13oYp0Hs6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3f7hGQQ8i721hIqb3sK8m3" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>symphonic metal <a href="https://everynoise.com/engenremap-symphonicmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Finland<br>melodic metal<br>power metal<br>metal<br>gothic metal<br>folk metal</td>
+  <td>Edenbridge &quot;Higher&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/775dd0346e770ded19dc7228efd9c2e3552e5e08" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/symphonic-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7h68oUfLWbJQstgZA9B3Iu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5sodadTxPhNX9LAxyd03DJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4hVtKm0E3t4ljSsimprujf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7KniMmJUbuUCiUsAm5uzXn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ZjRLLQNDZV9RgTLXLe1W7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>russian metal <a href="https://everynoise.com/engenremap-russianmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Russia</td>
+  <td>Russia<br>folk metal<br>symphonic metal<br>melodic metal<br>gothic metal<br>russian folk metal</td>
+  <td>&quot;  &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b0280f682d6d9fcf264495bf850dce4f6ecf763f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/russian-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/06UH3GPiCmT73b46hZfP6e" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6FxYPsQA6ZUzOHvwCpBzGC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0FQobdrzmuHS6VLKcwQ0qW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/15gOSZWj08xVC3ThbiV20h" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6IYha5VyP6yenWlYOkjiad" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>italian gothic metal <a href="https://everynoise.com/engenremap-italiangothicmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Goth<br>Metal.World<br>W.Italy</td>
+  <td>Italy<br>gothic metal<br>symphonic metal<br>italian metal<br>doom metal<br>melodic metal</td>
+  <td>Theatres Des Vampires &quot;Figlio Della Luna&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/35ec729232d6f451be9fc3e1a0d78e1c30c81815" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/italian-gothic-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1nWXVpG3YrvVCoooqCCdlL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2AC2tTYulJO3e4IQkPZndE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5T9XbA5lPLz85S7IzkgVIn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4pY4bfqm7eDXMCRRBUwBNQ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>metal catala <a href="https://everynoise.com/engenremap-metalcatala.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Spain</td>
+  <td>Spain<br>spanish metal<br>power metal<br>speed metal<br>thrash metal<br>melodic death metal</td>
+  <td>Crisix &quot;Ultra Thrash&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c28e78dfa5194677e310d54f3bfe1020a0921a67" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metal-catala" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3IwXweBAJnbKfUPiHcj91P" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Cn5vRU5a4k86RkDUAFQiH" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5BgczHWeTyGWT5meMLNAwy" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>slavic folk metal <a href="https://everynoise.com/engenremap-slavicfolkmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Metal.World</td>
+  <td>Russia<br>folk metal<br>russian folk metal<br>slavic metal<br>pirate metal<br>polish folk metal</td>
+  <td><br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/73c52e695fe89142f113a2cb85370966b1f4ccbe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/slavic-folk-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/28rMmt5KcJN7QnRjzbiJ3r" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6pi3rdg7ArZGMT62FzattB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1QIMf2LpsqVHrzniqQYzLh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Qjn4CzfIcCaEBSa4ILrnV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6kTPMPdReGromMiqUBAR84" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>viking metal <a href="https://everynoise.com/engenremap-vikingmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Sweden<br>folk metal<br>pirate metal<br>melodic death metal<br>black metal<br>melodic metal</td>
+  <td>Thyrfing &quot;Mj&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f3441c219c3a5bba38565f917c5edb8a62b6b927" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viking-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/43wQOzMw7Ve6K9Z8ihA5ia" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/21dqo7wC7PMnraXfbuapQ7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5R9bFlSVR75vsWXTKI49q3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6NqEJjfagRDzgL23cUkZbT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3wmf8py4PQ3qna6w1CeI37" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>greek metal <a href="https://everynoise.com/engenremap-greekmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Greece</td>
+  <td>Germany<br>black metal<br>power metal<br>greek black metal<br>symphonic metal<br>melodic metal</td>
+  <td>Varathron &quot;Flowers of My Youth&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b499387bad86b43f71326a4c4d4df2b690e295b2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1WMmn3qzoTLB28wYu5hXBL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/40SU6Jnb1f0fYjpN1bmhjP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4dKF7xyTmKWLUaprNTdRS7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/50g0pafJgun35YsyE436fU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1G4syy2lqM04qJENKcawLZ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>brazilian progressive metal <a href="https://everynoise.com/engenremap-brazilianprogressivemetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>Progressive<br>W.Brazil</td>
+  <td>Brazil<br>progressive metal<br>power metal<br>brazilian metal<br>melodic metal<br>brazilian power metal</td>
+  <td>Almah &quot;Breathe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d5e31c56621378aee7902a7caa880b7eadc0d23b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-progressive-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4F46dVLAjLQa3wHFbMsHgY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1kymVzLVYVIaSutk4cwaRX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6uSK66KbAHvvk1qKVVOOPz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1OxjamLa4RB8W3LzqrhNmT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6O3tz9BwobtuQz9yNndTpF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>metal uruguayo <a href="https://everynoise.com/engenremap-metaluruguayo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Uruguay<br>rock uruguayo<br>murga<br>black metal<br>dark ambient<br>deep symphonic black metal</td>
+  <td>Reytoro &quot;Sol&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2bbd676065c486ddbcd1b1fd2e021cf3a420aae5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metal-uruguayo" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4lzRqHUbTBqkTwmHsWjOHf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/62PHV1LLPUMERqxHsti032" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>korean metal <a href="https://everynoise.com/engenremap-koreanmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Korea</td>
+  <td>South Korea<br>k-rock<br>korean hardcore<br>metalcore<br>black metal<br>j-rock</td>
+  <td>Remnants of the Fallen &quot;Hel&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ce17cd93ba8b9eff2d5e5514300ed9d086cae67e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0r32ieZQyZMmnEZWNWq4v1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7JMWNzG2Av3PkWgZmUO5x9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1F6UcpSHfwpq4Ix6PqakSs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/16MGM6Dn93dtQGgcd01UUH" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>turkish metal <a href="https://everynoise.com/engenremap-turkishmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Turkey</td>
+  <td>Turkey<br>anatolian rock<br>turkish alternative<br>turkish rock<br>turkish death metal<br>death metal</td>
+  <td>Asafated &quot;Bileklerimi Keserken&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e527499785f8ad95a19173c0f4fbee02184c60be" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1bMQg4sxBloJCyR22amu4H" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/44bPq4GzXmjPqkVyGDpAo5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/29iJVAXlPyzjhPhhv3NYv2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ekvgojhm4pYCtKkS0FVSa" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1EYuPhTsHOifcuywgPalM2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>venezuelan metal <a href="https://everynoise.com/engenremap-venezuelanmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Latin America<br>sludge metal<br>latin metal<br>symphonic rock<br>neoclassical<br>speed metal</td>
+  <td>Cultura Tres &quot;The World And Its Lies&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d57afebdcfceb4e549c747bf84cda86e67ee9cca" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/venezuelan-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5SUD3Cjel8vySLuxtZvfin" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3dcYLsaZ5ZrjU7BCYa84zW" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>mexican power metal <a href="https://everynoise.com/engenremap-mexicanpowermetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Latino</td>
+  <td>Mexico<br>power metal<br>mexican metal<br>mexican rock<br>symphonic metal<br>latin metal</td>
+  <td>Saga Heroica &quot;A Tu Nombre&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9aed1a55ac5ed882daa0c21924daa84364b93dbf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mexican-power-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2SfuOv9kMOOQCnlpFaKjVE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4dOuUV8PDgcjacbQ3FPheh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4G30YbfHh2w194WX3fMtBj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/68xgjiCflU9ll6QFTDGHLs" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>51</td>
+  <td>gothic black metal <a href="https://everynoise.com/engenremap-gothicblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Goth<br>Metal.World</td>
+  <td>Norway<br>gothic metal<br>black metal<br>doom metal<br>symphonic metal<br>symphonic black metal</td>
+  <td>Siebenb &quot;Rebirth of the Nameless&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ebe33de0dceda0217150352704a02572e33e7175" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gothic-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4bqEXuaUeNCadkV2xhp0X3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0xSpQ9AtQX8YjgYBVYHLll" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2P4fOxLoSIcrxHpb0YETqH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1PfRoK2tR6DQ0fms9z9pdV" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>52</td>
+  <td>oulu metal <a href="https://everynoise.com/engenremap-oulumetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Finland<br>melodic metal<br>gothic metal<br>death metal<br>black metal<br>melodic death metal</td>
+  <td>Sentenced &quot;Mourn&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6332302dd1d5e662d4b2ea3ab263dd15f94eaaf6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/oulu-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3l08npADdLvrEHspnh2lRt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ug6sQX1AJOzv3bfxDp58g" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/218RJkcQvrvbX7ISickFf2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2aJfwO1dWC4jL3Leu4qXei" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>53</td>
+  <td>trap metal italiana <a href="https://everynoise.com/engenremap-trapmetalitaliana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>Trap<br>W.Italy</td>
+  <td>Italy<br>trap metal<br>italian trap<br>hyperpop italiano<br>hardcore hip hop<br>horrorcore</td>
+  <td>Reakira &quot;Blackout&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9ac7c753868a9d96abcf6e0917e82f4557b71146" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trap-metal-italiana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/58oGe3U9fDt1xtHMizMqNZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1QdpuPWvKE55QcNJZWAjSU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0PggsXWHkRToaZlcP8QpMU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5jRFXtc69apsNAAxo2jqrY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4FWOvLigVyxY8ocnsWS6pv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>54</td>
+  <td>deep folk metal <a href="https://everynoise.com/engenremap-deepfolkmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Metal.World</td>
+  <td>Norway<br>folk metal<br>pirate metal<br>black metal<br>melodic death metal<br>melodic metal</td>
+  <td>Vanir &quot;Raise Your Horns&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/78f0164bf4ec0dbe8bab1d0d315908c3662b75ad" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-folk-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Dlutn8d4ATpVogwhyR4aF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1yPm6jjucp6JfQfglsZKfj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Fzgwac2rpXoxjRjBcoNOd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3nBYVEfV8HzTa8VYHkeL31" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4srB1XaWxxiX56VaLRwv9F" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>55</td>
+  <td>welsh metal <a href="https://everynoise.com/engenremap-welshmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>United Kingdom<br>doom metal<br>black metal<br>sludge metal<br>grindcore<br>death metal</td>
+  <td>Skindred &quot;Nobody&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cbd4808277ab41fa02f6f90c2b0b9e3b0f15572a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/welsh-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5WogzJi6ahPA31m7TKl7Xq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0K0Nr4kOt76ScRRAJtE43R" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>56</td>
+  <td>balkan folk metal <a href="https://everynoise.com/engenremap-balkanfolkmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Metal.World</td>
+  <td>Greece<br>folk metal<br>romanian metal<br>black metal<br>romanian black metal<br>bulgarian rock</td>
+  <td>An Theos &quot;Noaptea S&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ffcd1600457b55f1e2f06745e3503b3c375f7eb6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/balkan-folk-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3suZEGq5SIQ8neIYsRuoLl" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6F0DBsxGTwJ2nysdf3t2ka" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3u2ZoE6mEkFrpfv7zcP2Ad" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5a4e7gs22XRS5ewf6WdI23" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>57</td>
+  <td>prog metal <a href="https://everynoise.com/engenremap-progmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Poland<br>progressive metal<br>progressive rock<br>djent<br>power metal<br>melodic progressive metal</td>
+  <td>Kingcrow &quot;The Moth&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2cd2f43c23f6ee7e91bdf8c06d0b4cb94359b2ef" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/prog-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6USKlXdo9wmrlDIcqH5e5l" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7B3rUVfCVpOmeezMZ5cJEk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Ist7kAiSCydJ4WAlg2qeZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0s95BbdtSMRmiGaCitQWei" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1LfUWMYWYq4cajjiAKZPgw" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>58</td>
+  <td>celtic metal <a href="https://everynoise.com/engenremap-celticmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Spain<br>folk metal<br>medieval metal<br>celtic rock<br>power metal<br>celtic</td>
+  <td>Cruachan &quot;The Marching Song of Fiach Mac Hugh&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/93a24cafadad8f15c254a70189e96ec392a9850a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/celtic-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2e1HbgT4JL2qlA6MRpTaHd" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6PrgksnXDw8GYVs2JE3Kuq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ytewOWBxE64u3y36SUnwM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Ap4Jt9gWBdWMskvn90fHQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7bN0rwOptjqmD8doKDYRDp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>59</td>
+  <td>mainland se asia metal <a href="https://everynoise.com/engenremap-mainlandseasiametal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Vietnam<br>thai metal<br>thai rock<br>rock viet<br>vietnam indie<br>indie viet</td>
+  <td>Ng Cung &quot;Tuy Tr &amp;  Quy &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4822f9c30c0534863f5f714d6975a9f94a550a0b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mainland-se-asia-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/15qTIeTDKPaHPuMMTN6125" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/665CMYY9uSX9PEACXwQuXY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3cVIDPcGfp7dSg1JzDWvCd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7iDrZyBY0WKyxHqPMM5jL4" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>60</td>
+  <td>swedish progressive metal <a href="https://everynoise.com/engenremap-swedishprogressivemetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>Progressive<br>W.Sweden</td>
+  <td>Sweden<br>progressive metal<br>progressive rock<br>melodic metal<br>power metal<br>melodic progressive metal</td>
+  <td>Darkwater &quot;Alive - Pt. II&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5433ffe57ff36440968922d14f888fc1b0be5ef8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-progressive-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ycNeLDcdqxaQ6nmLTVj9Z" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3QwSD9T1GukGSbjQAzGYEr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2C3YTx3DYrc2zLvJmeEdrP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4NrCJVeUwche2vVtE45bs7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2TYjEGcfYquTIfFfforV5z" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>61</td>
+  <td>metal gotico <a href="https://everynoise.com/engenremap-metalgotico.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Mexico<br>gothic metal<br>symphonic metal<br>gothic rock<br>folk metal<br>mexican rock</td>
+  <td>Nuits Eternelles &quot;Ars y Encaje&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/54b505d097fadd430527d4b78723ae274a8f8edc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metal-gotico" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4cyb4DeHzy6MpJf1PPTkvP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0NEoudfcNeCkeULzX7co9e" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/04l2Ncv35q3iYorGy0NQH2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0RVLPJYmBRYUIeCysaFMby" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/75RHA4mcTK3YyHLv3VEIsn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>62</td>
+  <td>slavic metal <a href="https://everynoise.com/engenremap-slavicmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Norway<br>folk metal<br>black metal<br>slavic folk metal<br>russian folk metal<br>deep folk metal</td>
+  <td>SatanaKozel<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/14e6776d2f00df66ef7598e7f933442f9268f87b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/slavic-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/46T0uijDmdSuQI52JuDv0c" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6WYLegi5QthJ5ivzNnz4wM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/71NqpZvu3tzvjAeMRlZ5m7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1KC6p1bRimi7nNanzbddhD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5GA6GWeDaU2B2OyT3rYojq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>63</td>
+  <td>serbian metal <a href="https://everynoise.com/engenremap-serbianmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Balkan countries<br>speed metal<br>black metal<br>thrash metal<br>power metal<br>gothic metal</td>
+  <td>Mortal Kombat &quot;Papu&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/21dadb9e8f679371242bea72b2facecaef3b1e49" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/serbian-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/46Sf8YnjCvoarS8Py0LVBw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7wTrCsonTWgiD38rsyTXc0" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>64</td>
+  <td>argentine metal <a href="https://everynoise.com/engenremap-argentinemetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Latino</td>
+  <td>Argentina<br>argentine heavy metal<br>groove metal<br>thrash metal<br>death metal<br>speed metal</td>
+  <td>G &quot;Traidores de Mierda&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9d58ff0b56a81456942da80f370c3c15840d8c7f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/argentine-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5SvQz7PbXVq4Cniv7hsvFq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6rUKKXL8dj1grd1jrmpZ3G" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4HIg8tiOYDhM2xvfES9DCb" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0hLx7zZQGHlYLWVZdt7GMg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1NHjGQajNwyf3QVORnb7ZP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>65</td>
+  <td>israeli metal <a href="https://everynoise.com/engenremap-israelimetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Germany<br>progressive metal<br>doom metal<br>death metal<br>melodic death metal<br>folk metal</td>
+  <td>Sinnery &quot;The Burning&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ba8aa6b245953eb3e68a739b21661187e8055bd7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/israeli-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ZcZ3z1bLxOiWclJD7cyD9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3tB6NrKiyxGGwmze1JhAaM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6MS4RH7EuEf6mhADDqNRVi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7JQOkHHsnyCypSJuVJcNC5" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>66</td>
+  <td>spanish folk metal <a href="https://everynoise.com/engenremap-spanishfolkmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Metal.World<br>W.Spain</td>
+  <td>Spain<br>folk metal<br>spanish metal<br>celtic rock<br>pirate metal<br>medieval metal</td>
+  <td>Salduie &quot;Los Fuegos de Belenus&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3edc97340e7b73ddad2e9552a699be57c47cf8e1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-folk-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/75m2PqrOrQxkWz4CSG2oLY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0iFBtJuqERDcTtFuhqQGbG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6tgzlPQaazXfc9ICmqlCAK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RcWuqJvkq8M7EQsTRfPUS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/14hurMc74rRL9DeAlTxnCO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>67</td>
+  <td>romanian metal <a href="https://everynoise.com/engenremap-romanianmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Romania<br>romanian black metal<br>folk metal<br>black metal<br>balkan folk metal<br>romanian rock</td>
+  <td>Breathelast &quot;Monstrul&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a478b7ae6b1f05495c1cc6bff1b45f934fcf29c4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/romanian-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6P1s3i7YJB3YhsoAzoKlBO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/69gDbw6nnW6DRhaCmsNwQf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7IBaNw8MuxHnK6oltzfP4d" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3BOyTsZmEnzXlOiLZRLjRG" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2IwTQlY7nUO2mZQcLbnr0w" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>68</td>
+  <td>argentine heavy metal <a href="https://everynoise.com/engenremap-argentineheavymetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Latino</td>
+  <td>Mexico<br>argentine metal<br>argentine rock<br>latin metal<br>power metal<br>heavy metal</td>
+  <td>Tano Romano &quot;Te Quiero Contar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b5810f8c8e051a631c4ab378c1f3cf5741478ad2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/argentine-heavy-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ydxS3S8F22Ykl4gbNvRhL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5WLL1Lse5Juik9bTGbj1f1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Ddnxt7k9u3niElKmmHKQ8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2T8GQ01hgUXEhHoRxjoN1x" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/71U0pmQT1vfhIFCwkvGgAR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>69</td>
+  <td>chinese black metal <a href="https://everynoise.com/engenremap-chineseblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.China</td>
+  <td>China<br>black metal<br>chinese rock<br>chinese metal<br>folk metal<br>chinese indie</td>
+  <td>Zuriaake &quot;River Metempsychosis&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a1d1e05b7255902b9b49e4bba33e70df1f813c64" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1CI2ZDqsPaAYplrNhTRLqV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0L7bHV0lbJioaqp5SuHPrc" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>70</td>
+  <td>spanish death metal <a href="https://everynoise.com/engenremap-spanishdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Spain</td>
+  <td>Spain<br>death metal<br>melodic death metal<br>grindcore<br>metal catala<br>melodic metal</td>
+  <td>Avulsed &quot;Vile Evil Rotted Over&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/876c244d7b4661ce4d5d146b06d00cfbe86f4c8c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2fUPFsiAPc4MvWgUFR59KY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4GYN0nIrGTKLWpPRnQ1ukH" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>71</td>
+  <td>epic black metal <a href="https://everynoise.com/engenremap-epicblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Norway<br>black metal<br>atmospheric black metal<br>tolkien metal<br>folk metal<br>voidgaze</td>
+  <td>C Bardd &quot;Une couronne de branches&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8b2e5b0e28dbe662ba36921894142e95e99405dd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/epic-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4fBpMD6o0URxXStnClW3lm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6QktX5Zs5mYhB9ckTVAlY5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2IwajArmHlToRRH6KSBkoy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3F1ryol3TLmJY9mdefNJZM" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>72</td>
+  <td>mexican metal <a href="https://everynoise.com/engenremap-mexicanmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Latino</td>
+  <td>Mexico<br>mexican rock<br>mexican ska<br>death metal<br>mexican death metal<br>mexican hardcore</td>
+  <td>Lethal Creation &quot;O Sordos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/deb3c86c1f72f85a20f5b96b2308183492fcdaea" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mexican-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4LkbCD2PVi50iXsAvLAIyK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5RmdN1TuYgoPmnQmMYE9X6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5JT2SQZFonilT59MeJzYRj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Ob2IIiUxJBxSQyuZ6JcJf" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6GwM42j7UCt4oSNyMeg24L" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>73</td>
+  <td>greek black metal <a href="https://everynoise.com/engenremap-greekblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Greece</td>
+  <td>Norway<br>black metal<br>greek metal<br>death metal<br>symphonic black metal<br>voidgaze</td>
+  <td>Acherontas &quot;Lucifer Breath of Fire&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2240f6150858457f3ad748a1441cc015d31ca567" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/greek-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1K8mWwbCmubMf5cnYvVO5s" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5G5uiaaU1lfD7ztyzQfGKs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5wsJBo3Gk8gFMTKQDycgKy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4H6uwo2ZcCFE7m0xvgZG0m" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>74</td>
+  <td>viking black metal <a href="https://everynoise.com/engenremap-vikingblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Sweden<br>folk metal<br>black metal<br>viking metal<br>pagan black metal<br>norwegian black metal</td>
+  <td>Windir &quot;Journey to the End&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/35f701eb5af62221a6ab423bfaaf9dcd7a7bd372" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viking-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1P8NyE9k78d8nIW6NjvEV5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6PpCm99AoagOn6HoVIy3ZP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2GLzctdqYPwYgUGMBsPZvW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0CKkoX3OSwQnEWe12og0R8" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>75</td>
+  <td>folk metal latinoamericano <a href="https://everynoise.com/engenremap-folkmetallatinoamericano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Metal.World<br>W.Latino</td>
+  <td>Brazil<br>folk metal<br>power metal<br>mexican metal<br>melodic metal<br>celtic metal</td>
+  <td>Cemican &quot;Itlach In Mictlantecuhtli&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c44004e8752188db56b664035f317e669cc67bad" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/folk-metal-latinoamericano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/51ZYI8ewogQgWL0HvSDE5g" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1dB6n4Nqw4Di2OseuSOFuA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/32pnnSt1ZubFuSS8rRdxfd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mwU7hFhn7dzJKfyXL2Hh6" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>76</td>
+  <td>hel <a href="https://everynoise.com/engenremap-hel.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World &#x2380;</td>
+  <td>Germany<br>symphonic metal<br>gothic metal<br>melodic metal<br>symphonic rock<br>power metal</td>
+  <td>Anette Olzon &quot;Lies&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1be00a28aec3376a32ec3ec8bceacf714edc7fbc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hel" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1yzRcFAfn31iMz3JA6dfc7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5kZ8kGO9umgnkB3kICpTsI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7vHqBFIYMj919BHhmQUY2s" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0JbIOVv5XQbMyIldlTZpdz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7GCAyOrC1P1PrzqRKZXf4Y" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>77</td>
+  <td>australian death metal <a href="https://everynoise.com/engenremap-australiandeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Australia</td>
+  <td>Australia<br>death metal<br>deathcore<br>australian metal<br>grindcore<br>melodic death metal</td>
+  <td>Disentomb &quot;Collapsing Skies&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eb42ca2b16ce787ba1d0926e3c582ec10c12bced" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6RTMrEGfoGL7odNro45wEt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4qIzqV9I7DTV6uWxeqNUDC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07Tq4twkCbEVfZpXROyaFX" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>78</td>
+  <td>black metal argentino <a href="https://everynoise.com/engenremap-blackmetalargentino.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Latino</td>
+  <td>Japan<br>black metal<br>argentine metal<br>symphonic metal<br>pirate metal<br>medieval metal</td>
+  <td>Wolves\' Winter &quot;The Splendour of Sulphurous Knowledge<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e6708e9ac38a487acbe4eb674d0cda5e4f1b20f7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/black-metal-argentino" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7y6kgPjhqucEN7GtfJeHHU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7mO5q3hzRCrtC8HKPsitzQ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>79</td>
+  <td>icelandic black metal <a href="https://everynoise.com/engenremap-icelandicblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Iceland<br>black metal<br>icelandic metal<br>voidgaze<br>atmospheric black metal<br>drone metal</td>
+  <td>Sinmara &quot;Apparitions&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/28ff369c9914eae73633def9db6566de5cdf279d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/icelandic-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ZtZumZLz3GzlCCz5n3ER2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4jfHKgbEhoROTsvGffMoMq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2RMjYhVZawF1hIqH9mKTuk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/135G7O4gd4XUhGUmjIVTNV" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>80</td>
+  <td>bleakgaze <a href="https://everynoise.com/engenremap-bleakgaze.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World &#x2380;</td>
+  <td>Brazil<br>black metal<br>depressive black metal<br>atmospheric black metal<br>brazilian black metal<br>shoegaze</td>
+  <td>Noirgale &quot;Angst&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3aabec6ac49a5606c6df11277faeafc78db45480" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bleakgaze" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7IWy9YDcbq9q30cglctQKw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3n0cDB9weAiKtsTDXDayb5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3clvQXy2FtteLSwu3bmIrc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2gAW1iGihLsnimKBSYLlty" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/48qDOqVPFyjLy1TCkS2Hny" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>81</td>
+  <td>romanian black metal <a href="https://everynoise.com/engenremap-romanianblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Romania<br>black metal<br>romanian metal<br>folk metal<br>balkan folk metal<br>blackgaze</td>
+  <td>Martolea &quot;Vine Muma P&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cc49d99d998d41b6d9871e339cc193b59f8b119a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/romanian-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2AcrRBIs66XdfTETtFCf8R" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7gT5cBwsoy4EkaHNtxLKRt" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>82</td>
+  <td>baltic black metal <a href="https://everynoise.com/engenremap-balticblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Latvia<br>black metal<br>lithuanian metal<br>latvian metal<br>slavic metal<br>folk metal</td>
+  <td>Dissimulation &quot;Sliundra&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6ce81c2ef0550f2f5538d42918f85273058ed88d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/baltic-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bCh8XS2HSMjkPaaTMGvwC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2OePO9GaqliMNHU4npmPs4" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4lBtivwj8d1xjCk1stbHNQ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>83</td>
+  <td>czsk black metal <a href="https://everynoise.com/engenremap-czskblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Czech</td>
+  <td>Czech Republic<br>black metal<br>slovak metal<br>doom metal<br>melodic death metal<br>folk metal</td>
+  <td>Stiny Plamenu &quot; Kanaliza Sb&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/77e8ee899f159746e203eac17bdfb590efbd24c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czsk-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7G0SdaGq14uIEGuZAMV69h" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7c6gSnRdFCpm3G1VdYUTuR" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>84</td>
+  <td>caribbean metal <a href="https://everynoise.com/engenremap-caribbeanmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Islands</td>
+  <td>Dominican Republic<br>rock dominicano<br>death metal<br>puerto rican metal<br>reggae rock<br>rap metal</td>
+  <td>AntiHippie &quot;Chucky @ 42&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/42db5f9af7195b58e84c33149564fc82bcea7964" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/caribbean-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Pyyj6l1WihM9in23JvdQn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0QGrJitFBXUOFPICc94OlJ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>85</td>
+  <td>icelandic metal <a href="https://everynoise.com/engenremap-icelandicmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Iceland<br>icelandic black metal<br>black metal<br>voidgaze<br>atmospheric black metal<br>folk metal</td>
+  <td>Mis &quot;H&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4bc40f4c493297bd6dbda71f9040d0dd4325a2c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/icelandic-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3BWP7ke3lO7X1wt5Bit4oA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7KvHsZlWBcDNpi5eaZkijY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/76cStRapaXNL9Er0IMvWUN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3R9WwDW3gakFzSd7ctWNqM" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>86</td>
+  <td>swedish doom metal <a href="https://everynoise.com/engenremap-swedishdoommetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Sweden</td>
+  <td>Sweden<br>doom metal<br>sludge metal<br>stoner metal<br>stoner rock<br>drone metal</td>
+  <td>Candlemass &quot;Solitude&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5bdcd9fff485e92695412131edd097c8dc8d321c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-doom-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0rHO0zUgGwhk03uj1soiE7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4OEl8ZiR5J1tfNVCfPugP5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0bQWjVqWFMI378gbwD0a10" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1dHqUfBQfLFzzrXOaJvSNt" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/09z3Bg8SNgLogy2ICbWwg0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>87</td>
+  <td>turkish black metal <a href="https://everynoise.com/engenremap-turkishblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Turkey</td>
+  <td>Turkey<br>black metal<br>turkish metal<br>death metal<br>turkish death metal<br>grindcore</td>
+  <td>Ohol Yeg &quot; Orman&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7ae350838c471b1caaafb18b051a3b5dd8d9f3b6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5DF5YolBblqJ9ks65mfQoT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7CPFCGaO2YcRhD0707yyYM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0fYZtdY6efoh9rCh7MM5ig" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4DyQ9kkISo4iHmFiS550k4" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>88</td>
+  <td>uk post-metal <a href="https://everynoise.com/engenremap-ukpostmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.United.Kingdom</td>
+  <td>United Kingdom<br>sludge metal<br>stoner metal<br>post-rock<br>doom metal<br>drone metal</td>
+  <td>Conjurer &quot;Endeavour&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/77a7b9d82b1ce61c47edff9988bc070519a78059" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-post-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ItTMTDmH52gHrSGuW9Yip" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ls1UJ1dPxJh3t0W7C8m6R" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>89</td>
+  <td>canadian black metal <a href="https://everynoise.com/engenremap-canadianblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Canada</td>
+  <td>Norway<br>black metal<br>death metal<br>voidgaze<br>atmospheric black metal<br>doom metal</td>
+  <td>The Ruins Of Beverast &quot;Surtur Barbaar Maritime&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1ab8ff37e2184ca5f5147600e2677fa924f8f7b9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4nVW9xzYypGA0exDTQ5eYB" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/688ZLt1Od5gnavxSBSNifA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4BRrXvnxgYjdaO9UdmeZTM" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>90</td>
+  <td>avant-garde black metal <a href="https://everynoise.com/engenremap-avantgardeblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Norway<br>black metal<br>avant-garde<br>avant-garde metal<br>progressive metal<br>mathcore</td>
+  <td>Ved Buens Ende &quot;I Sang for the Swans&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b66c75f1fb67cc09bba98ac763deab93d6864be4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/avant-garde-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1HmOnrEugSwm2nhUMY5xmS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/57Ns5VoHxZQPQ374ebMZf5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1FvDaZ0kzEXXlXibevVju1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Zg7t9qocGM5sXMQnNNHm4" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>91</td>
+  <td>cosmic black metal <a href="https://everynoise.com/engenremap-cosmicblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Norway<br>black metal<br>atmospheric black metal<br>voidgaze<br>sci-fi metal<br>ambient black metal</td>
+  <td>Midnight Odyssey &quot;A Death So Pure&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0ea04bb69f1e3b0bfa55066f0ec6c97a9d4f8c81" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cosmic-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7zmwyuCpBNExWwTBeCFL05" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/57BiSOFDoNQ9Kw1sCx0qGZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5i2NVkghkagWP0tYWgWW9Z" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2xJTKxYN00L0gkf9focM3i" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6bI51qPzgjqt2eWoNOo3CO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>92</td>
+  <td>cryptic black metal <a href="https://everynoise.com/engenremap-crypticblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Iceland<br>black metal<br>norwegian black metal<br>finnish black metal<br>spanish black metal<br>war metal</td>
+  <td>Unhuman Disease &quot;Darkest Night&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e5f648a052112b9d425fcfd8fe738cb7301702cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cryptic-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/07srEMRGIUCj53o3IGolam" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4P9bwV4vyjup4LWUj2iMUc" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>93</td>
+  <td>medieval black metal <a href="https://everynoise.com/engenremap-medievalblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval<br>Metal.World</td>
+  <td>Norway<br>black metal<br>medieval metal<br>medieval<br>atmospheric black metal<br>melodic black metal</td>
+  <td>Ungfell &quot;De T und s W&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e775db4076f6fef3367ae58aaa6d7bb451583737" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/medieval-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7oJw5SRD0Tk6VV0lUGtnQI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/11PrZxDi2KqPruwPVOqgAc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4zQE9Xw0OZBo0lgLsOETp2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7cqGAt7B4YlmgzFI60XaD0" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>94</td>
+  <td>colombian death metal <a href="https://everynoise.com/engenremap-colombiandeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World</td>
+  <td>Colombia<br>death metal<br>grindcore<br>metal colombiano<br>slam death metal<br>brutal death metal</td>
+  <td>Suppuration &quot;Divine Punishment&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/00e15721bec4158239c839f964b585aad4f97c9b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/colombian-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/26UQZ2Dw0XyM50AYBtX3q2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6TW50etX8zrpUNH7OOMHnf" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>95</td>
+  <td>danish black metal <a href="https://everynoise.com/engenremap-danishblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Denmark</td>
+  <td>Denmark<br>black metal<br>danish metal<br>sludge metal<br>post-black metal<br>folk metal</td>
+  <td>Afsky &quot;Altid Veltilfreds&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b3663265821b764222442ed902d31fd1939b84b7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danish-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2jebAz1TMNouAWStXkp4sX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/750qjatdMZy9qcRCIMJ0Bs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4zsc9mW6QxOqruPHh8KPVw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5iLrHbvxrKzEn1xaxjmIHQ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>96</td>
+  <td>brazilian doom metal <a href="https://everynoise.com/engenremap-braziliandoommetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Brazil</td>
+  <td>Brazil<br>doom metal<br>gothic metal<br>sludge metal<br>drone metal<br>stoner metal</td>
+  <td>Mythological Cold Towers &quot;The Lost Path to Ma-Noa&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/775e9446385e0f49c2bc7e3eac2a760c4a78ccc2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-doom-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0w0wU7SbtA5kQUzj9gS53j" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/45hFa5uFEeE5MMWJ6ycGzL" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>97</td>
+  <td>ambient black metal <a href="https://everynoise.com/engenremap-ambientblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Ambient.General<br>Metal.World</td>
+  <td>Norway<br>black metal<br>atmospheric black metal<br>dark ambient<br>voidgaze<br>cosmic black metal</td>
+  <td>Lunar Aurora &quot;Im Gartn&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/64ff1446bf68186d82aa575f28be747f08781057" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ambient-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3IlDpaaZ6H2uuBubvafry1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1F4wNx9h2luKTSc1Tvx6fv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3kD5H3uSmCvLF5lamlANLp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3n7CeZ9mO1yieiao6qWdM3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0MyqoO3kg0qgWSpG9VleCx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>98</td>
+  <td>liechtenstein <a href="https://everynoise.com/engenremap-liechtenstein.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World &#x2380;</td>
+  <td>Germany<br>gothic metal<br>symphonic metal<br>gothic rock<br>new age piano<br>fallen angel</td>
+  <td>The Beauty of Gemina &quot;Rumours&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d1dfc362b6a6bd7f641341df9bc5a733d9fdb31c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/liechtenstein" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4lrCuafGxw6VIfSBssYbiS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3AxSX3HPwdYS7HWJOlTUnt" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

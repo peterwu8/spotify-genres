@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Bangladesh: (6 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Bangladesh: (6 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Bangladesh is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>1</td>
+  <td>bangladeshi rock <a href="https://everynoise.com/engenremap-bangladeshirock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Bangladesh</td>
+  <td>Bangladesh<br>bangla pop<br>bangladeshi indie<br>bengali metal<br>south asian metal<br>classic bangla pop</td>
+  <td>Conclusion &quot;Porinita&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d5625da6db2d35648f4f3880932a78190f35d81d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bangladeshi-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6yG26AwLy0EYBr6jVNhwLt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7yrj1xq9wOYCwUjwBAOQH1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ItOmbu2Aydj9p4JuNIjr9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4FL7qDKEo0K6xYLEiQPVbZ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/142hEaI9OxkWL0xf0FFIFO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>bangladeshi hip hop <a href="https://everynoise.com/engenremap-bangladeshihiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Bangladesh</td>
+  <td>India<br>bangla pop<br>desi hip hop<br>hindi hip hop<br>classic bangla pop<br>indian indie</td>
+  <td>1230 Klassick &quot;Marattok Madarchod&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/83226b3c3dc54f35c294ac8e4230a61937195748" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bangladeshi-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7xLRDmWvEoxple1mORtdpR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6PbOwNcgDKomwkNOzpiA3M" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Deg5KdQNhgMGR79IS5c9Q" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/69M1qlrsvgJTEQG7vu4Izg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/51nvHtzLWoE1PdrvrKD0rN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>bangladeshi indie <a href="https://everynoise.com/engenremap-bangladeshiindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Bangladesh</td>
+  <td>Bangladesh<br>bangla pop<br>bangladeshi rock<br>indian indie<br>bedroom pop<br>drone metal</td>
+  <td>Arekta Rock Band &quot;Eden&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7939de06a0a16ac9d79f0d8f03959728bcc3b7ab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bangladeshi-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4AcISya4f5wsHXqn87tZXL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6UoFptna0FeYqzMeOR8SVr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3LAD4KLfjspFbCVqCmZdUL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2cf9b76aGNExVkT9Ynl1R2" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0FvUjZkhl9LmpeajxWMCZ3" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>bangla pop <a href="https://everynoise.com/engenremap-banglapop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Bangladesh</td>
+  <td>India<br>filmi<br>bollywood<br>hindi pop<br>modern bollywood<br>west bengali pop</td>
+  <td>Minar Rahman &quot;Karone Okarone&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/58462fda8cd5e55cf399a4a60a5157656c2fe95a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bangla-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7gkcXcdS1VNUscNIoG3Zy8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/44EBmsbBkN77OkwLNVvYGe" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2JWD0NkCvRJalWZHcTvvk8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5AzYWoJVBBcLVlt9zTLgtF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/74WE5LlXCLumqi9DTcfdO9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>classic bangla pop <a href="https://everynoise.com/engenremap-classicbanglapop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Bangladesh</td>
+  <td>India<br>bangla pop<br>devotional<br>bhajan<br>ghazal<br>rabindra sangeet</td>
+  <td>Partha Barua &quot;Mon Shudhu Mon Chhuyechhe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d7e529d95ac865c5dac36a02c4d9549e3610740a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-bangla-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/66A5ArlCCX36y6UrS1tYBR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5dGF6rhQja0vlPM2w90775" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5NVpwmuJePGQZrr7vIujDt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4hWXn8kgKNNfvPqu10zBjn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2l892umr8bh4Mb6Ry1eDFj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>bangla gojol <a href="https://everynoise.com/engenremap-banglagojol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Bangladesh</td>
+  <td>Bangladesh<br>ghazal<br>qawwali<br>bangla pop<br>sufi<br>sholawat</td>
+  <td>Mahfuz Kalarab &quot;Kalima Nosibe Mor Dio&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3c47d97adcc50c7f275fd3f21acb4247e6beefd6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bangla-gojol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2DXeJFldLgF40jcrvfZNSt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4l9Au9k4gNnPq5curJUKRz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Ncevy1gH1XOv8cYorYciB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2gZiyyiEVC5kPo63MVEjMw" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

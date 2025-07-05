@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Canada: (82 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Canada: (82 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Canada is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>canadian house <a href="https://everynoise.com/engenremap-canadianhouse.html" title="&#x2306;">&#x2306;</a></td>
+  <td>House<br>W.Canada</td>
+  <td>Canada<br>lo-fi house<br>dub techno<br>canadian electronic<br>float house<br>breakbeat</td>
+  <td>Priori &quot;Think Not&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/912015e3a5356ada9266f96d34c3fba87c741479" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-house" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0TeXwAe7KVd40kxEkW6rts" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1VUoju1Asynop6UWLSOTqM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2hf0Ll4XT82xPPQqSRurlJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1fTljCTZ2loHd4a1mNdkq8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1IjTQUfAhFA8IWzdZtjqvb" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>canadian electronic <a href="https://everynoise.com/engenremap-canadianelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Canada</td>
+  <td>Canada<br>dubstep<br>edm<br>electro house<br>future bass<br>brostep</td>
+  <td>Zeds Dead &quot;One Three Nine&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/16a85b6dfa325f9e56d90784fef549e3cd02d04c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ZSrHwZrdlymb3orA3Fq9U" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0x6JnrpfyrnhzXzMZXSGe7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1KNzrf3JlarWLgK6Aprp0m" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rNSddlxPepJjhM93JOw6y" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4FT85I14xly9gEOjFMTPJv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>canadian electropop <a href="https://everynoise.com/engenremap-canadianelectropop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Canada</td>
+  <td>Canada<br>metropopolis<br>neo-synthpop<br>art pop<br>indietronica<br>synthpop</td>
+  <td>Purity Ring &quot;fineshrine&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0c04cc1ac1b382d93f0b2321c50b6a7975eda527" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-electropop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5RkdO8NdoJXHxZBk9Porko" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3PjSViYxygIzwIDO2dPkyW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ayuiH7x7IOW7A5O6yNYha" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7jeKOROSKHOZrfzuw1XYyV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2nltp4pXfRJcPIYC6Ri9tm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>canadian pop punk <a href="https://everynoise.com/engenremap-canadianpoppunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>Punk<br>W.Canada</td>
+  <td>Canada<br>pop punk<br>skate punk<br>canadian punk<br>anthem emo<br>easycore</td>
+  <td>Chief State &quot;Team Wiped&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/90ac549b1bffbe49d851d29215a15dffa69f1cad" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-pop-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6RsEShdvsmFcoabliO8oaI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2n39wrdsYsdsEUrzMRYVdo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Xx2PfZHoIRzxg9EComaO6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3lyEulqt9W8GnUsRFk3ODJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Aml9u0W9PMjk4fj7wVrFx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>canadian latin <a href="https://everynoise.com/engenremap-canadianlatin.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada<br>W.Latino</td>
+  <td>Latin America<br>latin hip hop<br>urbano latino<br>latin jazz<br>timba<br>cha cha cha</td>
+  <td>Boog &quot;Wow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eea85766bf660bae4eab51468cc78bb2540e7edf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-latin" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0AOno4MAmqBmgBHfBJf4BE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/51DX7TssPZBQ3WEtBIQD56" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5VcknNFHiLEcVQLDr7bHUE" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>canadian metalcore <a href="https://everynoise.com/engenremap-canadianmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Canada</td>
+  <td>Canada<br>metalcore<br>deathcore<br>djent<br>canadian metal<br>post-hardcore</td>
+  <td>Structures &quot;6&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d131414caf342e2d4e932d64b02a284052883573" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6c7f9HAjZeRfWTbsLQt2oO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2C7ZlaZapi5PJTbg3H48kZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1wnMKciglIlbumR1b6rj5L" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Gmf59PxzGQCX8Ty8JB5Pj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7aWa5un56Ln56Axhl7Ly8Y" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>canadian trap <a href="https://everynoise.com/engenremap-canadiantrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Canada</td>
+  <td>Canada<br>canadian hip hop<br>toronto rap<br>melodic rap<br>dark trap<br>cloud rap</td>
+  <td>APBabyyy &quot;Company&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cb3b1c7669323d89a63f8861beeff6a9412a4374" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-trap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3FuleFMpUi0Glng5FV1upJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3m7nHC50zcjP8v1HRaDd8f" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2uw7FLhFrG4GDf4djoLEjr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0VEqcwwskrSrSLE6xXXYup" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2TsY39IS2iIjQ40DTB8rBw" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>canadian indigenous hip hop <a href="https://everynoise.com/engenremap-canadianindigenoushiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Canada</td>
+  <td>Canada<br>native american music<br>native american roots<br>winnipeg hip hop<br>canadian indigenous music<br>atlantic canada hip hop</td>
+  <td>Drezus &quot;Warpath&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7c56ee59546d8a47d55d7ad736431977ff75dc6c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-indigenous-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/35TnZfw8DWde9y78lPSSYj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6SW6yY3dGizTklZ4w3zqhN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0izhsPgHJKocbt09Xlqe5X" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MV9BXN8eYms7I0qi9HYRv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4p3HVxaHBsTL5N6no2BhuB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>kelowna bc indie <a href="https://everynoise.com/engenremap-kelownabcindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Canada</td>
+  <td>Canada<br>post-hardcore<br>metalcore<br>canadian post-hardcore<br>melodic hardcore<br>screamo</td>
+  <td>Youth Fountain &quot;Roses In My Backpack&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/853c9f3c6276bf94ef1e21194ecbd57fb68a1b1f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kelowna-bc-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6uMIR9UwPpBSejvbS2Hv9r" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7M46fyHKJg7TGS5J2OTB9I" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>canadian contemporary country <a href="https://everynoise.com/engenremap-canadiancontemporarycountry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Country<br>W.Canada</td>
+  <td>Canada<br>canadian country<br>country<br>alberta country<br>country pop<br>country road</td>
+  <td>Chad Brownlee &quot;Forever\'s Gotta Start Somewhere&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8bcf775a2227ad498914cfcc1a53e93fec6d6237" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-contemporary-country" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7GvvTDodEqlre9vvjReaGk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Q21zPND8PRlf6boARmyX5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3cwySOP8ECWQJmgvtAZky2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4eb8mdtcy8XseT4DgjmrXz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0e5IIB5o4gsnxJelNE5qK9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>canadian rock <a href="https://everynoise.com/engenremap-canadianrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Canada</td>
+  <td>Canada<br>canadian indie<br>post-grunge<br>alternative metal<br>power pop<br>canadian indie rock</td>
+  <td>Headstones &quot;Tweeter And The Monkey Man&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/57c64f81c911bcc5ab8bf5061c95f18e69f6b54d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7z4uB7vb4QXVSCVaCjwzah" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4STQEZTDt5QijuCxmg3DpB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6hiTLnvnTv53cwsHweYiHd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7q63U3ANMLK7U1qwvvKpa2" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3cCZiDHNgvUmbszX6XUEhf" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>quebec metal <a href="https://everynoise.com/engenremap-quebecmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Canada</td>
+  <td>Canada<br>deathcore<br>thrash metal<br>rock quebecois<br>metalcore<br>death metal</td>
+  <td>Last Dance Among Wolves &quot;Werewolves&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/074fcab7b56b53d6ac73cbcea470ecb55afbe4a6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/quebec-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7cTGAJrCP13ZWesHSGNApu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2t7PKO3CCmlch3IaqxUiKz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18dYExuUvGmeTP76lD7FRy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6rGo3BObNlgMAMHXW1NnY4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0NpI7tSPo3jbpVEYQxA1WM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>canadian drill <a href="https://everynoise.com/engenremap-canadiandrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>drill<br>canadian hip hop<br>toronto rap<br>alberta hip hop<br>tamil hip hop</td>
+  <td>Lnc Capo &quot;Bottom of the Bottom&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2c82cefd8ebce6e8d67af545ee1b26e1f684d15b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-drill" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/78SYqGrtRw6kzjkGnQWgDO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7angZSrbo9ShAe1q06i2OG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/29ZcW7kVMxRPkuh5OAgscB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0pmJfrzVnVLiiov42od6cS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7rpCYYkksM1GYPul4CNpKh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>quebec punk <a href="https://everynoise.com/engenremap-quebecpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Canada</td>
+  <td>Canada<br>skate punk<br>rock quebecois<br>punk<br>chanson quebecoise<br>melodic hardcore</td>
+  <td>Rouge Pompier &quot;VHS&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b91a43f0d3916c94564ab251519a26d1ed092990" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/quebec-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/07D6RTCN57QsSwdYGHpMwB" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5vd5RRHykVvzcnZDXnRt2H" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2xBmMaPYjwzxhEBrIXf7sx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/34EEKsS3GsglwCxkYBTMR9" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1gZHyn1F5ISyjKen0FXq7O" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>toronto rap <a href="https://everynoise.com/engenremap-torontorap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap<br>W.Canada</td>
+  <td>Canada<br>canadian hip hop<br>canadian trap<br>indie hip hop<br>rap montrealais<br>viral trap</td>
+  <td>Acerrr &quot;Don\'t Panic&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d5616a721294f20a1894fe2c6fe8436b3be0239c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/toronto-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/27J6BVW4H0heiB61Y09hgS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5dNwPmkdZFN0PBpWnke6pp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7hHaAQSxXFa7uBo5dC9ccj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2uP17BxyBMgQFg0fg0uIws" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rWKa1xudGqkLIdF3HxpXH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>canadian post-punk <a href="https://everynoise.com/engenremap-canadianpostpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Canada</td>
+  <td>Canada<br>post-punk<br>darkwave<br>cold wave<br>deathrock<br>noise rock</td>
+  <td>Crack Cloud &quot;Drab Measure&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e4f133a5b6ba367e352d18ec15bb24fa089558a0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-post-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5eOpDyMhfKtZB8WKndcpag" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/58WrgIM3fXQiX0oOSQ9tFz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Cn7C0rcwBhxSI5Fa1swMw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3YK6TcBj8SqgcdAazKFvHE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7epTiOeqfsODpue9At3Elm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>canadian death metal <a href="https://everynoise.com/engenremap-canadiandeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Canada</td>
+  <td>Canada<br>death metal<br>deathcore<br>melodic death metal<br>technical death metal<br>grindcore</td>
+  <td>Eye Of Horus &quot;Modern Meat Grinder&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f7c10b3d4b2daca636c65d20ade6402f7f6fad92" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ckqXN01eh4It6Wtb2LFN2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/69aXiyCYRhFqDvHCwuxXEV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5SkJMK5ErXjMnLcMh8LorT" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>canadian punk <a href="https://everynoise.com/engenremap-canadianpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Canada</td>
+  <td>Canada<br>punk<br>skate punk<br>hardcore punk<br>canadian hardcore<br>melodic hardcore</td>
+  <td>The Flatliners &quot;Fred\'s Got Slacks&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/885da2d988f70504fd9b275a721bb81f6d8fc60c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1uvqoQGOSdziNUbEXhgQso" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5OcvKHhsBhDH7rSq7ZrhUK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5LesMrYM0lPPVG6XElAhk0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0SJ6KpkeEpKNeCvPcBcbYL" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2fG6bbqmAsGusteNbT0BMY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>ottawa rap <a href="https://everynoise.com/engenremap-ottawarap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Canada</td>
+  <td>Canada<br>canadian hip hop<br>canadian indigenous hip hop<br>native american music<br>christian hip hop<br>gospel r&b</td>
+  <td>Night Lovell &quot;JOAN OF ARC&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dc9fd356dc865a6ec0aecf4e5aa2e8a2040ada7f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ottawa-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3bkpRsT9uw3JsxBBmfg9Is" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5wxM3elzbLxczas9whcYyR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6TNBTg6Iwq0qceWCK3Iw0S" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>canadian ccm <a href="https://everynoise.com/engenremap-canadianccm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>ccm<br>christian alternative rock<br>christian<br>christian rock<br>worship</td>
+  <td>Hawk Nelson &quot;Sold Out&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3aa430fafb7622bce677d7e7fe4dab00fd54a4ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-ccm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/42AgpZnA8q8DZ55X0iHMpL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/76NdMW8Bc6zGErS8armzrF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/23WJQqbRCq77hZGWPOQDcn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4h2uiSEuwkUErmN8s8PfpF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3PyzCjqE2Gt0QI3nBeTfVv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>canadian post-hardcore <a href="https://everynoise.com/engenremap-canadianposthardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Canada</td>
+  <td>Canada<br>post-hardcore<br>metalcore<br>screamo<br>emocore<br>mathcore</td>
+  <td>Alexisonfire &quot;This Could Be Anywhere in the World&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8e209c97865906ffe3f30a9da185d1e652d7a5ab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-post-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7zdeU7linq2JmIIojiwCwc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2wQtdyeWff2hxvQBfuJU0k" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/58b7c2A4tAYVQRBv3n9VeI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5wzUBTZqdmiQuyO1WsJ9wK" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>quebec hardcore <a href="https://everynoise.com/engenremap-quebechardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Canada</td>
+  <td>Canada<br>hardcore punk<br>hardcore<br>canadian hardcore<br>quebec punk<br>deathcore</td>
+  <td>SCARAMANGA HC &quot;Nothing Changed&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/770ace52c6da1cca2c29b258451ab7b12e609473" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/quebec-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2dpybmah7CQKnbS7Wx46WN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5QfnA78JvJkwlV0IHJSYrA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2wj1Lvm7LkK3XCkRy72kHk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7LPX29QMyibTotpAmfvUtj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0IzeF4ujxyeyucI29RY3SA" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>canadian metal <a href="https://everynoise.com/engenremap-canadianmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Canada</td>
+  <td>Canada<br>metal<br>death metal<br>metalcore<br>glam metal<br>thrash metal</td>
+  <td>Beyond Creation &quot;Omnipresent Perception&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2a9701ee77a836a0e77310babdc7b3899dabd6a4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2GJ0cppkcXKywsjvNbiwQX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5gZ3OHKBftwK36rncggUxx" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2jua1ftr3wxdQalBxtfUsL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/22AEOAX3zSxKggWOazxZJq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2kRFIyTbcXypo3D1EVg7aF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>canadian shoegaze <a href="https://everynoise.com/engenremap-canadianshoegaze.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>shoegaze<br>dream pop<br>slowcore<br>space rock<br>cold wave</td>
+  <td>No Joy &quot;Hare Tarot Lies&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/575468d349d43d767a6d9b5648b41bb71b27053c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-shoegaze" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7hHb7F4iTC74ke7H66dzCZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3htnWU03tCAZxRKAo5EUqR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/42ndmQvzEXryhoDv47Ln4u" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3etmEPNTMQ9f55uDDg9nq8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2OQpcxbYo7TZkHW85hoGzI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>quebec death metal <a href="https://everynoise.com/engenremap-quebecdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Canada</td>
+  <td>Canada<br>death metal<br>melodic death metal<br>canadian metal<br>deathcore<br>grindcore</td>
+  <td>Quo Vadis &quot;Silence Calls The Storm&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e0646e161ee0487ca806dd66207b2efdd215df74" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/quebec-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1lmcbpSOEVcmNpxe5uQfV2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ozgCnrW1PNZxpkVkazhtT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1JlrADIcVfm8pRceGrDIG0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1f3PVdDADO6CK6ta8Ifj1U" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>ottawa indie <a href="https://everynoise.com/engenremap-ottawaindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Canada</td>
+  <td>Canada<br>ontario indie<br>canadian indie<br>dream pop<br>garage rock<br>power pop</td>
+  <td>Hollerado &quot;Juliette&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/aab5ed3febbad25697ba92a0e40f7d4edb8500ca" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ottawa-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2cPxLuGLtYFjEsXW2OsOa4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7BFR05F5w1mWHYrnknDd4m" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>canadian hip hop <a href="https://everynoise.com/engenremap-canadianhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Canada</td>
+  <td>Canada<br>canadian trap<br>toronto rap<br>underground hip hop<br>trap soul<br>canadian contemporary r&b</td>
+  <td>Puffy L\'z &quot;Have It&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cbf610556381f840a007e22c3464c49101f0e41c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1CRXzxZK2ir9rMictK2KEg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5e1PICDGQN7VplhLeKVATy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Gs5tDRk2WVhQ7v8sPNG06" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1IepFnTHSGgNoU6JM824lk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4pW1TNkUD7ymFGmkwh0PfA" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>rap montrealais <a href="https://everynoise.com/engenremap-rapmontrealais.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Canada</td>
+  <td>Canada<br>rap quebecois<br>hip hop quebecois<br>french rap<br>canadian hip hop<br>new beat</td>
+  <td>Le Ice &quot;FILATURE&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/865702cb1209142941cb3df8eed4b81f141e22f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-montrealais" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4czGp6RxJe3Kxa4tjqzJbX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/44KYQhtliTmBgCLjYHNfVv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0kKGdWVIzUFV21sRxJyEYy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/54WT0sQiVhJVnkbx7hhkFP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/00CcZGjafZKWIFRdS1fQcJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>canadian hardcore <a href="https://everynoise.com/engenremap-canadianhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Canada</td>
+  <td>Canada<br>hardcore punk<br>hardcore<br>canadian punk<br>melodic hardcore<br>punk</td>
+  <td>Gavel &quot;Hold Me Down&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8d914bb5d05adcb83d6fc3b9ad4f160a1881f593" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0MpdsW4Ihswwb9wZzFqFsb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/56AfuCaxyHLtpd3kZWQgay" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6DA5iPWbAZaaAl3P9itbw9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/29aftLzZN0ZOIEmOEyXlSo" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5IEYaFueChVlkEJ9vw8edT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>metal noir quebecois <a href="https://everynoise.com/engenremap-metalnoirquebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Canada</td>
+  <td>Canada<br>black metal<br>quebec death metal<br>voidgaze<br>melodic death metal<br>atmospheric black metal</td>
+  <td>Spectral Wound &quot;Frigid and Spellbound&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0288dbcd5ff2d9a7505a83a8e367433d06caf001" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metal-noir-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3tVUNhMwC5Jn82GtdJqrZ0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/74dQ0Y7bPu5J1PCKmdJNWN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mJjDNO6jPTjOTiwDoG3bC" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>pop quebecois <a href="https://everynoise.com/engenremap-popquebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Canada</td>
+  <td>Canada<br>chanson quebecoise<br>rock quebecois<br>chanson<br>folk quebecois<br>french pop</td>
+  <td>Andr A. Malette &quot;Fou&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4271d79c7be5804465165ba95edc622b1e9b8863" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pop-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3tJKuZ6888nK1MLOONOjNT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7HGA0EtEFyFOySfH2j9LGm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2RNRu5dZ5KWiwepFSm36Xd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6XfsBLVj4WvrtmOnwSTZ2Q" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Mk3e7tw2omNIsqzxyiU9l" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>canadian old school hip hop <a href="https://everynoise.com/engenremap-canadianoldschoolhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Canada</td>
+  <td>Canada<br>underground hip hop<br>canadian hip hop<br>boom bap<br>bc underground hip hop<br>deep east coast hip hop</td>
+  <td>Swollen Members &quot;Reclaim the Throne&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/156afd43edea8573c79006430ec08144102447ee" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-old-school-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5WyEVUOOuVVhjjTBa3EO5X" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2G7aAKvWj1lPSvfb1DhOpB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1W30RtsGMdBrxYpjNiMNJt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0vj878GtIp1zjqGg1jpFNg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07wxgDtT0ZQWuTF5yATVSu" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>canadian pop <a href="https://everynoise.com/engenremap-canadianpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Canada</td>
+  <td>Canada<br>pop<br>canadian contemporary r&b<br>alt z<br>pop quebecois<br>neo soul</td>
+  <td>Shawn Desman &quot;Electric&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/be044054206fc8cfabbcf3689f5cbbba32aabf76" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/11tlxAPrRJqHdo7E6pcIhS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4GdH9Ia0enMmulZlKOt9n4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/72xnjcLpxkRc8PMhoPRnMR" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4C0N5tJlayKoMjZIQuaaru" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1YA4XU08MjOqMJ9W5FkmuJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>quebec indie <a href="https://everynoise.com/engenremap-quebecindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Canada</td>
+  <td>Canada<br>indie quebecois<br>canadian indie<br>canadian indie rock<br>space rock<br>shoegaze</td>
+  <td>Wolf Parade &quot;I\'ll Believe in Anything&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6a3db4fda408335a9dd9d27db248217fbd9786c8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/quebec-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5zaUhhoTa1lkKYrKHtMNf1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4uRfUMUWYXOtFiSD4pFfbn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6kEpbXb3r2nNDPYpbRHpPC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5bJ1r3BzsvlAGOUAJ0q0ho" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4I7eRwKpSGGU4q6kI5rJup" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>edmonton indie <a href="https://everynoise.com/engenremap-edmontonindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Canada</td>
+  <td>Canada<br>folk punk<br>neo-psychedelic<br>space rock<br>canadian indie<br>skate punk</td>
+  <td>Scenic Route to Alaska &quot;Love Keeps&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ed3c14456957606eab7464734c0784d102e7f7e4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/edmonton-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0aYFwgj0Xwo1d2g4G9XNDN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0EmrOr9gdxrcM2y3khh72k" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5rmdBXFb3PTDT6VB9PGvRJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3xSFphjmpvWUwfwLlDzlje" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>canadian contemporary r&amp;b <a href="https://everynoise.com/engenremap-canadiancontemporaryrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>W.Canada</td>
+  <td>Canada<br>trap soul<br>indie r&b<br>canadian hip hop<br>dark r&b<br>alternative r&b</td>
+  <td>Savannah R &quot;Last One&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0c441d7b02032c2ef15cd36d5ee1ce4ad1139e5d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-contemporary-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2eoEQiEd9FByvSrGApxbs9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5wJb9tgSkHYu8lIXzallgA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Jqt48wvwZFwelDEhijhDC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3eCruz8RTZVrBPIdShyLKl" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5I3JdQUefvetIFFGoONuE6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>canadian psychedelic rock <a href="https://everynoise.com/engenremap-canadianpsychedelicrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Psy.Goa<br>Rock<br>W.Canada</td>
+  <td>Canada<br>neo-psychedelic<br>psychedelic rock<br>space rock<br>stoner rock<br>post-punk</td>
+  <td>Hot Garbage &quot;Sometimes I Go Down&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/681c1dd2fb39b64fac754058a98677fff2d5b1a8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-psychedelic-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Ypc9TuBeYisOcPh3hkxxJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ixAwRgbvuIF9Fa0gnuC0u" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7DyREzI3sxQFSk3IxOuG3Y" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Qmh2v1xYrIKz3jN4eBoAo" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>montreal indie <a href="https://everynoise.com/engenremap-montrealindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Canada</td>
+  <td>Canada<br>indie quebecois<br>pop quebecoise<br>chanson quebecoise<br>rap quebecois<br>canadian contemporary r&b</td>
+  <td>Laurence-Anne &quot;Polymorphe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6f42d02b060c72f3cc7847d73f4d86355fa0a793" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/montreal-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5R774hLLwmFgi2V3DRx4dl" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/37oFD4hWQa1RBG9xSi39R6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6BGP3Vd6I8sjFxVE1JxxhE" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3ZVjJNNlWbbU89uiqACE9f" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mxgC5v83v4UjwdH9dp9nF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>toronto indie <a href="https://everynoise.com/engenremap-torontoindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Canada</td>
+  <td>Canada<br>canadian indie rock<br>canadian indie<br>chamber pop<br>canadian garage rock<br>alt country</td>
+  <td>The Beaches &quot;Blame Brett&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d46b76a3887bc80ea67b6eeeb51c532405ba9f18" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/toronto-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2pHIezTRG6luuLocd2g3Tj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1UPXWrG5mDHMbiBHSxmT7k" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1sgYDpwfBIo63QlD48rpdZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mIPDUGdMZ0PeNV68hYMoI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1OahvYbnWRO97os8uhshWQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>rock quebecois <a href="https://everynoise.com/engenremap-rockquebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Canada</td>
+  <td>Canada<br>chanson quebecoise<br>pop quebecoise<br>folk quebecois<br>chanson<br>indie quebecois</td>
+  <td>Vilain Pingouin &quot;Le train&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/20376c1473927ea6a36c9ee9c8c397c9cf02c514" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rock-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7JRAIc3wbUMZ3CL291HGvJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5PU59fME6qieTTZZkomRbr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5vuvAoyJfi7K18NmsrQl9G" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0B8Fg3aWghvq4uDc6vByiO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2onXiL0PdLcVZXMYAtwe9B" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>canadian indie <a href="https://everynoise.com/engenremap-canadianindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Canada</td>
+  <td>Canada<br>canadian singer-songwriter<br>canadian rock<br>indie rock<br>chamber pop<br>stomp and holler</td>
+  <td>Hawksley Workman &quot;Jealous of Your Cigarette&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cb7b63d0a19596bde811d5936955472cc5fe177e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7jKdKSrBPuzuvDarsFCVT0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4mw6VuwMrkxqVkkjrmkGAF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0LXUrmMW4wfZXRePuPLiuS" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6hlP7nzj7eWmZdvRYG5cMj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4okDjvqmQX0r10vsny5U8u" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>canadian black metal <a href="https://everynoise.com/engenremap-canadianblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Canada</td>
+  <td>Norway<br>black metal<br>death metal<br>voidgaze<br>atmospheric black metal<br>doom metal</td>
+  <td>The Ruins Of Beverast &quot;Surtur Barbaar Maritime&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1ab8ff37e2184ca5f5147600e2677fa924f8f7b9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4nVW9xzYypGA0exDTQ5eYB" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/688ZLt1Od5gnavxSBSNifA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4BRrXvnxgYjdaO9UdmeZTM" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>atlantic canada hip hop <a href="https://everynoise.com/engenremap-atlanticcanadahiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Canada</td>
+  <td>Canada<br>halifax indie<br>underground hip hop<br>native american music<br>nerdcore<br>canadian indigenous hip hop</td>
+  <td>Classified &quot;Inner Ninja&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/52c4700d07b6aca98309337d348878202cb1df48" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/atlantic-canada-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1YB8WXKzQiIHdhdPq1OK3P" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ejtAuKEfG1fLSDPjWm0WG" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>hip hop quebecois <a href="https://everynoise.com/engenremap-hiphopquebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Canada</td>
+  <td>Canada<br>rap quebecois<br>chanson quebecoise<br>french rap<br>rap montrealais<br>pop quebecoise</td>
+  <td>Rymz &quot;Kr&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/43cb80c1f720285e7841ce83f33b0e2b9b575a27" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hip-hop-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1WbJ1imFscSCkwuXnP9h70" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/773SD6gBu3yZrbUyBu3DG4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5OpuHcxpuD7YdEIN1TzkyV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0wn8V6wUUliXRkbOz6rDqt" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/05bcnLhndSDfUAnuctLn9n" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>canadian garage rock <a href="https://everynoise.com/engenremap-canadiangaragerock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Canada</td>
+  <td>Canada<br>garage rock<br>garage pop<br>egg punk<br>toronto indie<br>vancouver punk</td>
+  <td>The Spaceshits &quot;Can\'t Fool With Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/09828267d4f05cf0dc5c9001daa7ab8a9fdbccfe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-garage-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3wJCUdt7z5ce5IhseZVlCo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/73V6wOBfxqKIuhvUJAGOXc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Jifi6VSgDhJothB4lLt6A" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6uOdHHkUbyOEqjJk3dOJVE" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>canadian indigenous music <a href="https://everynoise.com/engenremap-canadianindigenousmusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>native american music<br>inuit pop<br>canadian indigenous hip hop<br>canadian folk<br>folk quebecois</td>
+  <td>Quantum Tangle &quot;Tiny Hands&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4ff94bb4a05bded491ae3602f744aa31fb10b945" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-indigenous-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5de4nGYbrOO7pRkIAzv5Qe" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6auaeyb8nkpRdYdJ9UFxcO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3AeHMxYwWf1EHP7W3RBxZG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0dpwCGsori1gLW3whpFHo9" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7bDko3JL1bOhIlk6Uve25T" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>classic canadian rock <a href="https://everynoise.com/engenremap-classiccanadianrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Canada</td>
+  <td>Canada<br>album rock<br>aor<br>classic rock<br>arena rock<br>glam metal</td>
+  <td>The Payolas &quot;Eyes Of A Stranger&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d52ce440040e1a18adcdd48342cf9e99095e3599" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-canadian-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4hNdrUvM99tynWreDAWGh9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7kkQw6YiSBhHmKK1B9ePYq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4SrDBIe32cpvb9uGQSPsvP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rqiT1tYMUHNXbKX58vRfo" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0EdTOgMfCZEJmksm2N6gaq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>country quebecois <a href="https://everynoise.com/engenremap-countryquebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Country<br>W.Canada</td>
+  <td>Canada<br>chanson quebecoise<br>chanson quebecois<br>rock quebecois<br>pop quebecoise<br>chanson</td>
+  <td>V Labb &quot;Fermez les Honky Tonks&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4ee16beb7b74787a30f05727cf8b2a8390b85609" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/country-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5UZsNX8mdBi52NDhvh4LGa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0H51A6nNghqfiLc9wm47xR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2kM1OqtvkFOlT2Y04Eb74F" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3RiYiImiiyhonUdaRkWS82" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4CiEDwnOjd43sIcAUAYxgz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>canadian stoner rock <a href="https://everynoise.com/engenremap-canadianstonerrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Canada</td>
+  <td>Canada<br>stoner rock<br>stoner metal<br>sludge metal<br>doom metal<br>space rock</td>
+  <td>We Hunt Buffalo &quot;Heavy Low&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/13352737f769256f0545814d6d4042140c248f0f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-stoner-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/01OVkiPUte3sPo6xxOvQTl" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7cxq7g4KHWS9lalpMowhEJ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>musique acadienne <a href="https://everynoise.com/engenremap-musiqueacadienne.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada &#x2380;</td>
+  <td>Canada<br>cajun<br>chanson quebecoise<br>country quebecois<br>chanson quebecois<br>folk quebecois</td>
+  <td>Acajun &quot;Le frolic&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2ab38045a5907c7f6e2ed50c37eed226c7c80a53" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-acadienne" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5SryADLKPs21LwEUNDB569" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3sj7RfY30P0ZOuzu69iAgt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5GWtf1ZqB1hRy1sJx3DieY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/58GPnzrg6RC5rfdsoLfgNw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3qr0pipQkPw4Srcon7xOBh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>51</td>
+  <td>canadian underground hip hop <a href="https://everynoise.com/engenremap-canadianundergroundhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>/Rehhab/<br>Hip Hop<br>W.Canada</td>
+  <td>Canada<br>underground hip hop<br>bc underground hip hop<br>boom bap<br>hardcore hip hop<br>horrorcore</td>
+  <td>Junk &quot;Make a Million&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6f7eec9b5870e7e4be98b526975f091c42fddb1e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-underground-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6LadS7my32E49vm9Zfj6GZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7tLRdtCzB4SZrBDf5Y39Hq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6QOTGT28j8ZjPyiV824coq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZO9pcEQ9GUW3X72E2mA9Q" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0FsFdxjs526a8XGdvZtHKf" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>52</td>
+  <td>indie quebecois <a href="https://everynoise.com/engenremap-indiequebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>/Eyedress.Era/<br>W.Canada</td>
+  <td>Canada<br>chanson quebecoise<br>pop quebecoise<br>rock quebecois<br>folk quebecois<br>chanson</td>
+  <td>Philippe B &quot;Explosion&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/14088ae72905a6910814ede2f9c36ccfb6574d7c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4vXD4hpz0sQgBQ6D7Puc2V" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2i2T2aO3SnyzstYOrLALW7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7nVloph89bqFBtvukVex8R" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Ij45KVHZXdX3ixtHynM3Y" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Oe3TnwuZGbM2uwoDCezEz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>53</td>
+  <td>canadian country <a href="https://everynoise.com/engenremap-canadiancountry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Country<br>W.Canada</td>
+  <td>Canada<br>canadian contemporary country<br>country<br>canadian singer-songwriter<br>alberta country<br>country dawn</td>
+  <td>Doc Walker &quot;Rocket Girl&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2f5a72773338caa03932db37f382755db0ae2a2e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-country" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0mPbmGGIovfGCPOCHpjTku" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/72nKBOJxfLUr3iuUUMn2nV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6wzh4l2LqOBEiDoCwp93XN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5fV9VZLTH8sFoUsLgrnMSF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mvWLOZALW5sXFSaGKAoCo" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>54</td>
+  <td>calgary indie <a href="https://everynoise.com/engenremap-calgaryindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Canada</td>
+  <td>Canada<br>canadian singer-songwriter<br>neo-psychedelic<br>cold wave<br>post-punk<br>nu metal</td>
+  <td>Wyatt C. Louis &quot;Bobtail Road&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2aa7cffe7a733f180cbadaf1bc5e6dc74c296735" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/calgary-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2S6dRhuFMn2UEw9dLdY4rO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3WZXxt7kTxNE2oyASosEm4" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3GPLNG7hHwIlaeudwo72Iw" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>55</td>
+  <td>new brunswick indie <a href="https://everynoise.com/engenremap-newbrunswickindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Canada</td>
+  <td>Canada<br>pop quebecoise<br>chanson quebecoise<br>indie quebecois<br>cajun<br>roots rock</td>
+  <td>Les Hay Babies &quot;Fil de t&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6cd98a551f55034f7e8447da71f3b8d15c19ca04" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-brunswick-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2USzrAKAQc9gdONwailxQx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3F82ezKwcNctesxcgvlL5x" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2oKmaf2GY5Zg8v8BQl8kou" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7zug2fokiZhb4VSzlBfzww" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>56</td>
+  <td>saskatchewan indie <a href="https://everynoise.com/engenremap-saskatchewanindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Canada</td>
+  <td>Canada<br>canadian singer-songwriter<br>canadian americana<br>americana<br>alt country<br>southern gothic</td>
+  <td>Megan Nash &quot;Salted Salamanders&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/73f7db7d6693a9bbc75b0d4de6ca89eb767e790a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/saskatchewan-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/68pwajOug2cvb9TTZCbVJt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2RQbcW330llRqm8BdqCO3c" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5znqt9ft46wEoSiXzR0erE" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/654E8Eqz5CI4lig7MlLXzt" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>57</td>
+  <td>newfoundland indie <a href="https://everynoise.com/engenremap-newfoundlandindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Canada</td>
+  <td>Canada<br>nl folk<br>canadian singer-songwriter<br>canadian folk<br>canadian celtic<br>sea shanties</td>
+  <td>Rum Ragged &quot;St. John\'s Train&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/082e08804be551ceb306d6b8ec5e040378f94b1e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/newfoundland-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4z3VQU57TWlpUcBwvL9bSk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2GA6waoTYbDuJM8c066jXu" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/54jYvMHLpYb2XU2MHPaolt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4s8YkYuacb0q5PAFXBvdbR" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6SctzHGx2twVCuzwCTIPvL" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>58</td>
+  <td>canadian blues <a href="https://everynoise.com/engenremap-canadianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>W.Canada</td>
+  <td>Canada<br>blues<br>blues rock<br>modern blues<br>roots rock<br>boogie-woogie</td>
+  <td>Colin James &quot;Five Long Years&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0198805eb216d53199db6bc4c921bfcfb5f45be2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3IT0eBy8XDdwoWrMs9Qdfj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6SYXRmFXeBduajHIzs2J4O" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wsVE19xtxQL3BybjFf73z" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5i1wQ6Mz6RlpkzGGZY2vil" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7LwTweUCDMqxlLgVGW7eNv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>59</td>
+  <td>trad quebecois <a href="https://everynoise.com/engenremap-tradquebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>traditional music<br>folk quebecois<br>chanson quebecoise<br>chanson<br>canadian celtic</td>
+  <td>Le Bal  L &quot;Daniel Boone&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0492b5d28c505fbbacb6a306d90e5b03af4459a7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trad-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Pro7ipfdRKg0czsYl64kD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2SB4tyblu4sx1ZJ4A8xrXE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Hu3GzE4jJEEBp1TcK7jEe" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2H9i4mjigSFrTkSvEgC4Po" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6q7a6TDB1ovzHLhzz8VAL0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>60</td>
+  <td>canadian post-rock <a href="https://everynoise.com/engenremap-canadianpostrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Canada</td>
+  <td>Canada<br>post-rock<br>space rock<br>slowcore<br>math rock<br>shoegaze</td>
+  <td>Silver Mt. Zion &quot;13 Angels Standing Guard \'Round The <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0b4eb44227102cd41c22246fa61baab019835e5c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-post-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5lgaWMJxZiuBETanazw9It" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1GqhHpCewFOcxp53xEHmJI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ysGAR6bHDtqjCIh37bzph" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>61</td>
+  <td>canadian psychedelic <a href="https://everynoise.com/engenremap-canadianpsychedelic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Psy.Goa<br>W.Canada</td>
+  <td>Canada<br>acid rock<br>psychedelic rock<br>psychedelic pop<br>classic psychedelic rock<br>garage rock</td>
+  <td>J.K. &amp; Co. &quot;Fly&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f013e4854d8f387baf4ab35a5f4a1ec57d139644" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-psychedelic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3lXmKE8oNDs2a7flfBXrJz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/47LhiUm1avz2fugpFxjw5Y" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/46qQw1cMTPZkO7QqeaWqNf" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>62</td>
+  <td>canadian celtic <a href="https://everynoise.com/engenremap-canadianceltic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>celtic<br>celtic rock<br>sea shanties<br>traditional music<br>cape breton folk</td>
+  <td>The Barra MacNeils &quot;Banks of the Roses&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/412c99303f6a0a4be9d31fa51b913f989ad90edb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-celtic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6StJ4is17j7uKwwxvFRonm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3xEJhFDLGO8n5MYNE8vjjg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0xk0Y9DH399qOsNuajRQiq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2w6SqGkTIUjNmHVAZWS2tQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4RlWQRPG3K3FlQERvTs2Dm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>63</td>
+  <td>canadian singer-songwriter <a href="https://everynoise.com/engenremap-canadiansingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>canadian indie<br>canadian folk<br>americana<br>alt country<br>canadian americana</td>
+  <td>Sarah Harmer &quot;Basement Apt.&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bd186b39fb5d9d15960c09962e6e00b20afd53f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-singer-songwriter" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5d79LPjcv4jbLZSg0xtml3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2IBJxQyIykOBbtKZosjNvI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4OR6Rem90GMTdn7ahSioGL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5wM0rbdSIrKieV40rjWdDS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0F8Cw5duxA8d7B7LxvUpyw" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>64</td>
+  <td>canadian folk <a href="https://everynoise.com/engenremap-canadianfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Canada</td>
+  <td>Canada<br>canadian singer-songwriter<br>indie quebecois<br>chanson quebecoise<br>canadian americana<br>americana</td>
+  <td>Catherine MacLellan &quot;Water In The Ground&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4ee816ab7b94f6423a0fc2c2eb1e31b3aa8d545c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0wXYnPHECIbO8IbgcMSIPF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/72tMdtrWPl1PXHYk3Y0gRf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2wOnXLGWPQK6qH7iiYmrKK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/315ISZjyOrAJn0xa5Km9jC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1YWsSssyVxANSaawPzCENt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>65</td>
+  <td>prog quebec <a href="https://everynoise.com/engenremap-progquebec.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>progressive rock<br>chanson quebecoise<br>rock quebecois<br>folk quebecois<br>art rock</td>
+  <td>Octobre &quot;La maudite machine&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2f2175c6ccbce4039837ab3d7f62a864fe37ab3f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/prog-quebec" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/007czzsntkyE2pxkaGa4sR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/38aa26lM0hNnfD09Yjk84t" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2IqygUigiEvuccdi5yTywg" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6LiD15RBeBAipjfTcxZWTS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>66</td>
+  <td>canadian children\'s music <a href="https://everynoise.com/engenremap-canadianchildrensmusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Kids<br>W.Canada</td>
+  <td>Canada<br>children\'s music<br>children\'s folk<br>musique pour enfant quebecois<br>canadian folk<br>kindie rock</td>
+  <td>Raffi &quot;Baby Beluga&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/989982b1fc482cdd1b18a323cd618831bbcc315b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-children\'s-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Cm1xbjP0vXICHEDwhAPNg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6DRCAxWCNveFsISnkmlaSa" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6sC0fvfMVCwQew1qzoUeOs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6146KkuhNAtEZAH68SWGVH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2TxhLFSlvTccTBydz08lPg" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>67</td>
+  <td>musique pour enfant quebecois <a href="https://everynoise.com/engenremap-musiquepourenfantquebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada<br>W.French.World</td>
+  <td>Canada<br>chanson<br>lullaby<br>canadian children\'s music<br>musique pour enfants<br>children\'s music</td>
+  <td>Henri Godon &quot;Halloween&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/30325e60c91ac60ae2ba87b092c13f738d451dfa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musique-pour-enfant-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/28YM9w9eqy0RavsJcfUeFv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2c8ynEyyWccPS7FTsB3dEC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/22kSo36nBJ7MXvJxLIXafZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/41Kg30ObA0DT9rhmqPWrfL" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>68</td>
+  <td>canadian indie folk <a href="https://everynoise.com/engenremap-canadianindiefolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Indie<br>W.Canada</td>
+  <td>Canada<br>indie folk<br>ontario indie<br>anti-folk<br>folk punk<br>toronto indie</td>
+  <td>Andy Shauf &quot;The Magician&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3fac91472b22c2b2ffdddb3ec63b448ff9b48d8b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-indie-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2bX43rjYDfSR5iSR6mDaRp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5cJZSH78SbIbw5vdPia24j" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5zaYNXOnHe0c3HGLCE5rSk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6xWoLnS5gVak5hSo1fic2i" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>69</td>
+  <td>canadian rockabilly <a href="https://everynoise.com/engenremap-canadianrockabilly.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Canada</td>
+  <td>Canada<br>rockabilly<br>psychobilly<br>horror punk<br>traditional rockabilly<br>neo-rockabilly</td>
+  <td>Gutter Demons &quot;Till\' the End&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5cfbfd20c6722679af4a5931dc412431a4850b2c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-rockabilly" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2OSROQaZzeFhpZaKa8lfJZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3vrzz6K23Zlcm0oTLtCmy3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/034p9BQ3fEYXC38vyrHR7y" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/58JvGYgcjq1QIkQ0TJSDME" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>70</td>
+  <td>chanson quebecois <a href="https://everynoise.com/engenremap-chansonquebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>chanson<br>pop quebecoise<br>rock quebecois<br>country quebecois<br>auteur-compositeur-interprete quebecois</td>
+  <td>Dany Aub &quot;Ma casquette&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/64def099aa81479e09efbf17732f028110eb3905" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chanson-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5en5ADXwovSybBMHIshhWz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1LKnSH3ee7Lv4AU6cohnTO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6SoY3jParwpSvuB0JrKLSb" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7qwf3NZa0tt1ES8uYMabMq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Xb4SAHgdUXH7rw3Z5unSg" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>71</td>
+  <td>canadian americana <a href="https://everynoise.com/engenremap-canadianamericana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Americana<br>W.Canada</td>
+  <td>Canada<br>americana<br>canadian singer-songwriter<br>alt country<br>southern gothic<br>canadian folk</td>
+  <td>Old Man Luedecke &quot;I Quit My Job&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/122d5d0a2abf70109e38965067ebec0fc20bd187" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-americana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7lbImXcgd8o6ZH1EOmNNb1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1UiJjWUShOuChiHEzF4w1x" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Sqf13vO7V3zcjF8Ia5QEH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/23oW5cOVP91qeqrodYlAKI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3sRwyhIn6jiTBmQZyCw1VM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>72</td>
+  <td>noel quebecois <a href="https://everynoise.com/engenremap-noelquebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>christmas<br>chanson quebecoise<br>chanson<br>chanson quebecois<br>folk quebecois</td>
+  <td>Johanne Blouin &quot;L\'enfant au tambour&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e69934599c5fa85a4a6a78660d3947ea40887389" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/noel-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4JTqc5aoyjbMZxqGhk92F1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Chjl8czlf7DntIDZJXgSv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6RgBRG9dd2dKyCjmC1agT5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/01SAaZbxQiCikfg3Ae0GCP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5qhBqrAbyYetkLXX8l8wzR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>73</td>
+  <td>canadian experimental <a href="https://everynoise.com/engenremap-canadianexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Canada</td>
+  <td>Canada<br>experimental<br>drone<br>post-rock<br>ambient<br>dark ambient</td>
+  <td>Frankie Sparo &quot;See My Film&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/19561ee33aaff84dfadba4bba6e41cdf08776408" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5DNTfTDqq5SvOkEj2vskDa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/46vWzFtJUqX1PZHoQswUuR" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>74</td>
+  <td>auteur-compositeur-interprete quebecois <a href="https://everynoise.com/engenremap-auteurcompositeurinterpretequebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Canada</td>
+  <td>Canada<br>chanson quebecoise<br>pop quebecoise<br>chanson<br>rock quebecois<br>folk quebecois</td>
+  <td>Luc De Larochelli &quot;Si fragile&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3be61150517df9cc879c86883764090564a2db36" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/auteur-compositeur-interprete-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4bM2fCGlTzq59AxRBsD8my" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/52imK8Ok1NBfMljKJK0sA9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6FCLQaOirpy2h6iZn8VKqu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1oMHdvM7GmmL8S9V7ykcOP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3SeOEMGKMiCQRcRVmHefI6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>75</td>
+  <td>folklore quebecois <a href="https://everynoise.com/engenremap-folklorequebecois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Canada</td>
+  <td>Canada<br>traditional music<br>chanson<br>folk quebecois<br>chanson quebecoise<br>chanson quebecois</td>
+  <td>Oscar Thiffault &quot;Y mouillera pu pantoute&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9c69e91d2a2d215d890b4f45e41e398c1836899a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/folklore-quebecois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5DYZyavqaz4rlCb0GyxCsq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1dYPwHG9KYpf9sYClhTC2k" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6FR0eRNKQzDaElhfnc2aF4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5SbWT9lnINa56PfbTPlrwh" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>76</td>
+  <td>canadian soundtrack <a href="https://everynoise.com/engenremap-canadiansoundtrack.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Soundtrack.New.Age<br>W.Canada</td>
+  <td>Canada<br>soundtrack<br>video game music<br>orchestral soundtrack<br>scorecore<br>avant-garde</td>
+  <td>Mychael Danna &quot;Tsimtsum&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a1b7b322f51ca7d2818236d584a0e88a9b430469" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-soundtrack" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5kg1sCFtDGliRZebNPV0Qv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3k2Tj2Fu7Hu4tJcdFvpgUc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4YtmLHpLjeT3JOrPbhJcGh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5kbBnEWp3ILkdyILiCFUyv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ylpQyMuSMb6uGQm8twOIw" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>77</td>
+  <td>canadian modern jazz <a href="https://everynoise.com/engenremap-canadianmodernjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Canada</td>
+  <td>United States<br>jazz<br>vocal jazz<br>jazz fusion<br>latin jazz<br>big band</td>
+  <td>BADBADNOTGOOD &quot;Time Moves Slow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ee0fb5520ad237f8d4675b8b0a44e9977c040414" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-modern-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6klt8mDlFj3pvFCql1KD5O" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3JyntNJlx2qCSFZlol9fA6" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>78</td>
+  <td>canadian comedy <a href="https://everynoise.com/engenremap-canadiancomedy.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Comedy.Storytelling<br>W.Canada</td>
+  <td>Canada<br>comedy<br>new comedy<br>deep comedy<br>spoken word<br>comedienne</td>
+  <td>Ryan Belleville &quot;BONUS TRACK - Covid 19 I\'m Starting <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6aaf94a4b18c0b709a66c2ed2db254dcef532472" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-comedy" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3oDwMf4D8lSIxxUUuViHsu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7JncFH6GAjyAobbWbIF2Qh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/44krdzVgytwmlnUUnxKN4O" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1mOMI2t7Bs2r1sZOobIWYE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6BSbrfYfMGQRwlRtavKJp2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>79</td>
+  <td>canadian classical <a href="https://everynoise.com/engenremap-canadianclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Canada</td>
+  <td>Canada<br>canadian contemporary classical<br>contemporary classical<br>21st century classical<br>avant-garde<br>choral</td>
+  <td>Jocelyn Morlock &quot;Halcyon&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/658ac43bd5b153c75eeb104fbb67a5f0498b4762" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/18gFHQexu5UTv7NHSpVEV5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2I60Jc6u9Wu0Qbtjwh6Oos" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>80</td>
+  <td>canadian contemporary classical <a href="https://everynoise.com/engenremap-canadiancontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Canada</td>
+  <td>Canada<br>canadian classical<br>avant-garde<br>21st century classical<br>contemporary classical<br>minimalism</td>
+  <td>Marjan Mozetich &quot;Violin Concerto &quot;Affairs of the<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6536dbd02d921f03eae803007388c5ba5a5d77fa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4FWZiCNk05qR4xoFCOnLzo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2gG8QC6Ussvl4gYskxRN8y" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>81</td>
+  <td>canadian classical piano <a href="https://everynoise.com/engenremap-canadianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Canada</td>
+  <td>Canada<br>classical piano<br>classical<br>chamber music<br>minimalism<br>avant-garde</td>
+  <td>Glenn Gould &quot;Goldberg Variations, BWV 988: Aria&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fadbeb4f372bd288505f0d9c2d4462d83fffb510" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/164jD829bL6Li6axDe3Zta" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5U3GNko34JUJg2j4sTQpGb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3aUk5ENcILXzlN0sD2LoPl" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3sW1dooth5cGxvfANYNIT2" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>82</td>
+  <td>canadian choir <a href="https://everynoise.com/engenremap-canadianchoir.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Choir<br>W.Canada</td>
+  <td>France<br>choral<br>chamber choir<br>gregorian chant<br>women\'s choir<br>christmas</td>
+  <td>Phoenix Chamber Choir &quot;When the Earth Stands Still&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f4ed15e4d628d9dd36f97376184b515fe7cc8c82" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-choir" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1wvBerY5ymQBcyAiC4EVdO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1qxy2wp8KHkhXHoKLSyfDF" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/50tG2j5yexkHi1ipSyTd5w" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C.Sweden: (65 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> C.Sweden: (65 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>swedish ebm <a href="https://everynoise.com/engenremap-swedishebm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Industrial.Punk.EBM</td>
+  <td>Dance:6<br>Synth.Electronic:5<br>Industrial.Punk.EBM:4<br>C.Sweden:3<br>House:1<br>Trance:1<br>Breaks:1<br>Hardstyle:1<br>C.Belgium:1<br>C.Canada:1<br>C.Latino:1<br>Gospel:1</td>
+  <td>Dupont &quot;Behave&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/02aeeab2447248bab9d630af78bca24e3579c0c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-ebm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Cc9X1cxRIn1WJuLTGrcju" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5YJR8lPEbBQRO3GoB4PcDR" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1NBMgD6LstAeBxgwkWXYlR" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7h1HxpFoCwneUrmhqa4Xwq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>swedish techno <a href="https://everynoise.com/engenremap-swedishtechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Techno</td>
+  <td>Techno:18<br>Synth.Electronic:3<br>C.Sweden:3<br>C.France:1<br>C.India:1<br>C.Irish:1<br>C.Japan:1<br>C.Latino:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Russia:1<br>Ambient.General:1</td>
+  <td>Evigt M &quot;H&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/db45843c890d30b1a3952422f17a2b9c30db2907" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-techno" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Oal0SFrp5aZoXlEaD8PQ4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1iYOntzeIIOepTH0g8lESO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0O0nnvpOS92rrT8tUIFWRa" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3GZbhaUPoGiIEsdLN9rtzl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>swedish electronic <a href="https://everynoise.com/engenremap-swedishelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Synth.Electronic</td>
+  <td>Techno:12<br>Synth.Electronic:5<br>House:4<br>C.Sweden:4<br>C.Japan:2<br>C.Indonesia:1<br>C.Irish:1<br>C.Native.Tribes:1<br>C.Poland:1<br>Ambient.General:1</td>
+  <td>Axel Boman &quot;Hello&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e8fd3bb7b7ab677483a945e148989cdfb5829e65" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-electronic" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5CkBV1eSxFpDKCjPhu5MGq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/30bmGFLZA3UulcJDdQlix8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1FoiezZhNvIVDif6VdCTxD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0T8T82NWfzKOPyGLbdXlzR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>swedish house <a href="https://everynoise.com/engenremap-swedishhouse.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>House</td>
+  <td>House:10<br>Synth.Electronic:9<br>C.Sweden:3<br>Techno:2<br>C.Germany:2<br>C.Africa:1<br>C.Canada:1<br>C.France:1<br>C.Japan:1<br>Jazz:1<br>Disco:1<br>Blues.Soul:1</td>
+  <td>Korn Kov &quot;Szikra&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6f5ff735f85005af4aa85b80f855a6db1f445f0e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-house" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5i7nNkeKMubSAhFDPhIeYv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2eyhpMP5Wtu32iK1vxlqEd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2G7K70Wu8NeGzkNuV6FT1h" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ei58FOJpSnUrX84hWc6nC" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>swedish synth <a href="https://everynoise.com/engenremap-swedishsynth.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Synth.Electronic</td>
+  <td>Synth.Electronic:12<br>C.Sweden:4<br>Dance:2<br>Psy.Goa:1<br>Rave:1<br>Trance:1<br>Industrial.Punk.EBM:1<br>Rock:1<br>Pop:1<br>C.Russia:1<br>Gospel:1</td>
+  <td>Train To Spain &quot;My Spirit Is Free&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0e1db8322584dbfe4c7aada524283d24eb5c24c4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-synth" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4JVSAJQ38YCyCQvdOAGjI4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7xOlItSsmkZHmbspV4vRkL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6xnxc3QS1rVgRQsfUTZgp9" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4mkJuVCqowwcbcKz2gD74J" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>swedish tropical house <a href="https://everynoise.com/engenremap-swedishtropicalhouse.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>House</td>
+  <td>House:5<br>C.Sweden:3<br>Electronica:2<br>Synth.Electronic:2<br>Trap:2<br>Trance:1<br>Pop:1<br>C.Belgium:1<br>C.France:1<br>C.India:1<br>C.Indonesia:1<br>C.Vietnam:1<br>Dance:1<br>Hip Hop:1</td>
+  <td>Ludvigsson &quot;Globetrotter&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d6c7f625e502c1e5fde4a710dd764aac22e9892f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-tropical-house" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4D7xfG82EyEq3BWglKNS6A" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1IDIkODguYXwxPd85YOO3e" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6hAtYIUujBinJdnbBiPXrs" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pr9wEtzjSVCEjOLRxV2n9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>swedish eurodance <a href="https://everynoise.com/engenremap-swedisheurodance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Dance</td>
+  <td>Dance:7<br>Pop.World:5<br>House:2<br>Synth.Electronic:2<br>C.Russia:2<br>C.Spain:2<br>C.Sweden:2<br>Rave:1<br>Punk:1<br>Pop:1<br>Vocal:1<br>C.England:1<br>C.Germany:1<br>C.Hungary:1<br>C.Korea:1</td>
+  <td>Discocrew &quot;Pilsnerh&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/288ff45af6d0b14ce33a04806e07c8bef0ad5d6d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-eurodance" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3smhgA5tMEWCfjqB6WF54r" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Mfigr3ADcwYIReYDx07ni" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/20OjKHosX8vjALpH6Z7UJR" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0gQ5XALx3GZyDt25kXL4uH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>swedish synthpop <a href="https://everynoise.com/engenremap-swedishsynthpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Synth.Electronic</td>
+  <td>Synth.Electronic:11<br>C.Sweden:4<br>Indie:2<br>Pop:2<br>Dance:2<br>Psy.Goa:1<br>Electronica:1<br>Trance:1<br>C.Canada:1<br>C.Japan:1<br>C.Russia:1<br>C.Vietnam:1<br>Gospel:1</td>
+  <td>Mr Jones Machine &quot;Augustiljus&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f98bc590b4eaf9070462946798197fbadcf6fea3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-synthpop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3VgX2GJWjSN7rW70g70ZCf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/42TmBaWL8LEDw9j6hiOC60" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1noZiF7XIXJm9l6cSYDOZg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0jJhdTlSR9Xlt9RV9DPAA5" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>swedish metalcore <a href="https://everynoise.com/engenremap-swedishmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Metal</td>
+  <td>Metal:17<br>Hardstyle:3<br>C.Sweden:3<br>Trance:1<br>Synth.Electronic:1<br>C.China:1<br>C.England:1<br>C.Germany:1<br>C.Italy:1<br>C.Japan:1<br>C.Russia:1</td>
+  <td>dEMOTIONAL &quot;Boiling Point&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/efd9ca73cffbe06f19e21557b5786ec91973d200" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-metalcore" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/73wlrju5qMPbYENDR1CW92" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4AP1JKOqIRJy0BL2MlBBMu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5pEC1DrIZ6x6vFYD1XXRTT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07woOzv8E0XU1U9qMtyTmE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>swedish electropop <a href="https://everynoise.com/engenremap-swedishelectropop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Synth.Electronic</td>
+  <td>Synth.Electronic:9<br>C.Sweden:5<br>Pop:2<br>Pop.World:2<br>Dance:2<br>Electronica:1<br>Trance:1<br>Indie:1<br>C.Canada:1<br>C.Russia:1<br>Party.Festival.Band.Cheer:1<br>Curated.Eyedress.Era:1</td>
+  <td>Little Jinder &quot;S mig var du st&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e769e43b715b75d65b8a0c6a7bd11369c345b903" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-electropop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/33fyWhh6amFf9SQi1EILdm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2FvR8rRDZEH5LU5fIoCEtU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0tzhiEaqJf7jAyUsfnWapv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2irsTGQGKowjPqLagJyzIQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>swedish alternative rock <a href="https://everynoise.com/engenremap-swedishalternativerock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Rock</td>
+  <td>Rock:8<br>Punk:5<br>C.Sweden:4<br>Indie:3<br>Pop:3<br>Pop.World:2<br>C.Japan:2<br>Metal:1<br>Goth:1<br>C.Germany:1<br>C.Indonesia:1<br>C.Latino:1<br>C.Taiwan:1<br>Curated.life:1</td>
+  <td>Takida &quot;Master&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9d470db3b0782d8eda2db032b2a25996d0c1b4e7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-alternative-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/42I35nX6LVqu5PqNj8824b" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0SGfAuua846acq8G7PJawE" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/24nCk1CMwuIQBGJstOe0J4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0vDnyNZacZeueM78Gwswai" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>swedish melodic rock <a href="https://everynoise.com/engenremap-swedishmelodicrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Rock</td>
+  <td>Rock:8<br>Punk:4<br>Pop:4<br>C.Sweden:4<br>Emo:2<br>C.Latino:2<br>Indie:1<br>Pop.World:1<br>Goth:1<br>C.Taiwan:1<br>Gospel:1<br>Party.Festival.Band.Cheer:1<br>Curated.life:1</td>
+  <td>Palace &quot;Way up Here&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b99d70d77f0655a796a71731391852896d485583" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-melodic-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1nqvj06t4SEP57pxFuga0D" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7BMahNZdRfYiHZmTDJWZU1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/08c8xnZhIxnJraqVFGQFNP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Kv5UYXryXCIA6dZOZIrum" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>swedish power metal <a href="https://everynoise.com/engenremap-swedishpowermetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Metal</td>
+  <td>Metal:21<br>C.Italy:3<br>C.Sweden:3<br>C.Germany:2<br>Progressive:1<br>C.Brazil:1<br>C.England:1<br>Folk:1<br>Gospel:1<br>Classical:1</td>
+  <td>Crystal Eyes &quot;Starbourne Traveler&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/138d9df2b064747f6f93a12357568d4f6d8eef72" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-power-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4vTdyEz1xpzPJ45jfFHWYl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6gbPPFhEqRqYZLBc86Bblk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3RK5eBU0KA4b0ns5L97sok" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3hkehhSPI4Txy7FarYosrU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>swedish idol pop <a href="https://everynoise.com/engenremap-swedishidolpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Pop.World</td>
+  <td>Pop.World:15<br>C.Sweden:4<br>Rock:3<br>Pop:3<br>C.Latino:2<br>C.Spain:2<br>Rap.World:1<br>C.China:1<br>C.Italy:1<br>C.Japan:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Taiwan:1<br>C.Thai:1<br>Curated.Eyedress.Era:1</td>
+  <td>Albin Johns &quot;Din soldat&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7ce295e225863f22f904ff71672556c88ff3412c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-idol-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/70jdWG9sLb0vAWuAXuiDbX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/77e4NC3hEEIIMkm423Eh7A" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wXJqIDDuQuXpAJW4ljlEg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7KOXSOowav6aGba57uRLHh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>swedish dancehall <a href="https://everynoise.com/engenremap-swedishdancehall.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Dance</td>
+  <td>Reggae:13<br>Pop.World:5<br>C.Sweden:5<br>C.Latino:3<br>Dance:3<br>Trap:1<br>C.Africa:1<br>C.En.Espanol:1<br>C.Dutch:1<br>C.England:1<br>C.Germany:1<br>C.Spain:1<br>Traditional:1<br>Hip Hop.World:1</td>
+  <td>Kaliffa &quot;Helt seri&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/24cd5adb4a252e6b037fa034777bccb55d3b09d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-dancehall" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6gXVFkNldt9IAzv1U5YSaj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4YwseAx1X3ziGkdv0Wnn6s" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3smXIZg9aRDU4b7aBUPpWg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6zusXeQK57mFC2ROrmusW2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>swedish heavy metal <a href="https://everynoise.com/engenremap-swedishheavymetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Metal</td>
+  <td>Metal:16<br>C.Sweden:4<br>C.Japan:3<br>C.Germany:2<br>Hardstyle:1<br>Rock:1<br>C.Brazil:1<br>C.England:1<br>C.Italy:1</td>
+  <td>Air Raid &quot;Entering the Zone Zero&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cfb1cfbcc213765543ab1fac512d6abd01632735" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-heavy-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7x9EiG52OyQd4MkoE7QKtp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/59E6E34r2Jn9oUhNBQ6Xjp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0IjViVVfRX9m7v0RO2VSyU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4VeZ3Z4WG3nTOJtavV7D2l" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>swedish melodeath <a href="https://everynoise.com/engenremap-swedishmelodeath.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden</td>
+  <td>Metal:15<br>C.Sweden:4<br>C.Germany:2<br>Gospel:2<br>C.Canada:1<br>C.Native.Tribes:1<br>C.Poland:1</td>
+  <td>Nightrage &quot;Affliction&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/958dafa4ee8ad60485dc39b2726ac760b23ae850" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-melodeath" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5t9JNFZ4IK0asQ2DqcCmbJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2kUv9WrKc29xiXy9dJ2zRJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0xovlU8yqfbh1Dj2ip2t4h" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1brbHErJUGAIuHYBhcviMN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>swedish hard rock <a href="https://everynoise.com/engenremap-swedishhardrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Rock</td>
+  <td>Rock:9<br>Metal:7<br>Punk:5<br>C.Sweden:5<br>C.Japan:2<br>Pop:1<br>C.Belgium:1<br>C.Canada:1<br>C.Germany:1<br>C.Italy:1<br>C.Spain:1</td>
+  <td>Pretty Wild &quot;Meant for Trouble&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/21ad4b125847294ef24a1a53445a668c89e63410" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-hard-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1U7Vxyzrqtj2XlPrWoj5DC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4651KqSyirg2UNdOBNMs6q" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4YLE34ftLTuenWbZ0Rglid" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Cz2XcRxgEunuluAiYPGrA" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>swedish reggae <a href="https://everynoise.com/engenremap-swedishreggae.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Reggae</td>
+  <td>Reggae:17<br>C.Sweden:4<br>C.Latino:3<br>Dance:2<br>Pop.World:1<br>C.Africa:1<br>C.En.Espanol:1<br>C.Dutch:1<br>C.England:1<br>C.France:1<br>C.Germany:1<br>C.Islands:1<br>C.Spain:1<br>Traditional:1<br>Hip Hop.World:1</td>
+  <td>Slag Fr Hj &quot;Reggaebilen&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/72581ea1218d4b1a1f52abec131b867689629dbf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-reggae" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bjXSDjoTaZ8UiUf66U75i" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rjOUIKVCgqD4OwIyaPOYN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/03ftmfQJDl9OokEtZQJKRa" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/06IoKF2nK0cV6H3BQzmGaa" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>swedish pop <a href="https://everynoise.com/engenremap-swedishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Pop.World</td>
+  <td>Pop.World:12<br>C.Sweden:6<br>Indie:3<br>Rock:3<br>C.Italy:2<br>C.Latino:2<br>Curated.Eyedress.Era:2<br>Synth.Electronic:1<br>Pop:1<br>Rap.World:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Spain:1<br>C.Thai:1</td>
+  <td>Miriam Bryant &quot;Under n ny&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/36cf13b4e5318f5e11e4fcd3f62db48468379492" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6mvBNM74d828wcEy9Bpb46" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2lWGLuRIe7iCmmx28V5SkZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5LwqbxIDeIEUkfzvJISv6F" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/09QZcayL3bWQxQM8lJhbq5" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>swedish soul <a href="https://everynoise.com/engenremap-swedishsoul.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>C.Sweden</td>
+  <td>Pop.World:10<br>Blues.Soul:7<br>C.Latino:3<br>C.Sweden:3<br>C.India:2<br>Rock:1<br>C.Africa:1<br>C.Belgium:1<br>C.England:1<br>C.Germany:1<br>C.Japan:1<br>C.Korea:1<br>Jazz:1</td>
+  <td>Kaah &quot;Fst du?&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1323275c9bbada938ff7c2ff8689bd2f14f42d0f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-soul" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3BSDQ6LVGNSTf3Ty8ilFK5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5dgtj0AVdIL0oYBo580Ubl" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3mI0zDIcIm2u41GNcSV7QT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3t3PJeF9Kmsqy3dKfRvueJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>swedish post-hardcore <a href="https://everynoise.com/engenremap-swedishposthardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Hardstyle</td>
+  <td>Metal:13<br>Hardstyle:5<br>C.Sweden:4<br>C.Canada:2<br>C.Japan:2<br>Progressive:1<br>Emo:1<br>C.England:1<br>C.Latino:1<br>Folk:1</td>
+  <td>Aim For The Sunrise &quot;Wear The Crown&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8bf3ce137623eb195c8abce25efab1db983efc3e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-post-hardcore" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7ouqnbBBJVTn2ekY2Us9rA" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>deep swedish rock <a href="https://everynoise.com/engenremap-deepswedishrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Rock</td>
+  <td>Rock:14<br>Punk:4<br>Emo:3<br>C.Latino:3<br>Indie:2<br>C.Sweden:2<br>Pop.World:1<br>C.Brazil:1<br>C.Canada:1<br>Gospel:1</td>
+  <td>Grande Royale &quot;Brake Light&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/78c03cdb0aba5806d39fb0401a689b4f9eb56d78" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-swedish-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1sJYqW3R1pN0urpF6BPDNj" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>swedish progressive metal <a href="https://everynoise.com/engenremap-swedishprogressivemetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Metal<br>Progressive</td>
+  <td>Metal:17<br>Progressive:6<br>Rock:3<br>Goth:2<br>C.Italy:2<br>C.Latino:2<br>C.Sweden:2<br>Classical:2<br>Emo:1<br>C.Spain:1<br>Folk:1<br>Gospel:1</td>
+  <td>Darkwater &quot;Alive - Pt. II&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5433ffe57ff36440968922d14f888fc1b0be5ef8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-progressive-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3QwSD9T1GukGSbjQAzGYEr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2C3YTx3DYrc2zLvJmeEdrP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4NrCJVeUwche2vVtE45bs7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2TYjEGcfYquTIfFfforV5z" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>swedish post-punk <a href="https://everynoise.com/engenremap-swedishpostpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Punk</td>
+  <td>Indie:7<br>Rock:7<br>Punk:4<br>C.Sweden:2<br>Pop:1<br>C.England:1<br>C.Turkey:1<br>Curated.life:1</td>
+  <td>Kai Martin &amp; Stick! &quot;Man ska vara som ett vilddju<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cdb45055aa9b793d55a459956a353d5f7d7235fc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-post-punk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0spsvp2NNHMXDezns2YSGt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7E8Uc7OUiY6QHLH33yLQaV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6vqVbr87nX1nY3axbLQWc8" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>swedish metal <a href="https://everynoise.com/engenremap-swedishmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Metal</td>
+  <td>Metal:20<br>C.Sweden:6<br>C.Belgium:1<br>C.Irish:1<br>Curated.life:1</td>
+  <td>Necrophobic &quot;Black Moon Rising&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b50626139688fb2d89577134403b88f96607c41d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2VLJNrld3b2lqbb0N4mDZs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7tGCGteDXIQLrLoh9d0H2y" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5dKMj0dC5oAI8uMzkojaFk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1NzoSALiZGxEHFaid4jVtY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>swedish drill <a href="https://everynoise.com/engenremap-swedishdrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden</td>
+  <td>Trap:7<br>C.Sweden:6<br>Rap:5<br>Hip Hop.World:4<br>C.Latino:2<br>Hip Hop:2<br>Pop.World:1<br>Rap.World:1<br>C.Africa:1<br>C.Brazil:1<br>C.Pakistan:1</td>
+  <td>2M &quot;Oppboy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fc33949ab5f1ea3d666a78e2207089d8a487415c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-drill" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7DZuCNqo9DfOPX7RUOCIYQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0gKw72zplHDjRSDH7ssXf7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0u73ZDpelcoDnt8YsC6Lpe" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6FJQnpcS55bl5K9MVxFHeH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>swedish trap <a href="https://everynoise.com/engenremap-swedishtrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Trap</td>
+  <td>Trap:8<br>C.Sweden:6<br>Rap:4<br>Hip Hop.World:4<br>Hip Hop:3<br>C.Latino:2<br>Psy.Goa:1<br>Pop.World:1<br>Rap.World:1<br>C.Africa:1<br>C.Brazil:1<br>C.Dutch:1<br>C.Pakistan:1</td>
+  <td>Aden &quot;Kasse&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9f36fda8f613b458641d4558feaaa36de5fb801a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-trap" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ID0zU2K42h2pRR6yZqmDB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Llffw8t5X75poH6ZndFh4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/68eIBBdWbJQJaBANzMAR9F" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0frdJMhjD87QcJFz7xRxSK" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>swedish death metal <a href="https://everynoise.com/engenremap-swedishdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Metal</td>
+  <td>Metal:20<br>C.Sweden:4<br>C.Belgium:1<br>C.Canada:1<br>C.France:1<br>C.Japan:1<br>C.Portugal:1<br>C.Spain:1<br>C.Turkey:1<br>Curated.life:1</td>
+  <td>Desultory &quot;Life Shatters&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/28188fe75b8550b089b59c9ba9d92fff7bfcbae3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-death-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3GZ4ki70GCmF8up0dcjAW4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Is585whvwbyhS2mHGZdoW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4eigx220XR63j8eyovbDdD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2jUqhInV6fqywrr9FhJE57" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>swedish indie rock <a href="https://everynoise.com/engenremap-swedishindierock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Indie<br>Rock</td>
+  <td>Indie:15<br>Rock:8<br>C.Sweden:3<br>C.Indonesia:1<br>C.Irish:1<br>Curated.Eyedress.Era:1</td>
+  <td>Broder Daniel &quot;Shoreline&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7f694b866c507d3bb6d237055c246c433d7589f7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-indie-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4MitOn8IVtRjmWWUiSHAQo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5GFtWLPI5EgydWi722RBvr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6FbXgqeAxOmyniKW7XhhGr" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2m7dKMuE4cN5l8rwYNAYY6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>swedish garage rock <a href="https://everynoise.com/engenremap-swedishgaragerock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Rock</td>
+  <td>Punk:16<br>Rock:5<br>C.Sweden:5<br>C.Latino:2<br>Indie:1<br>C.Dutch:1<br>C.England:1</td>
+  <td>The Sewergrooves &quot;Ain\'t Coming Home&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0adbc42e51449532aa8d6eba0b01766f007e1fdd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-garage-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5AP63WH8Zqcm9PhRruSrXI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wDUzbAvCgic7pTxSiQ3Jm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1EwbaRXTF3udEK9uonQt3Z" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6K8q1s8fWwYijt1sYsiWld" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>swedish indie pop <a href="https://everynoise.com/engenremap-swedishindiepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Curated.Eyedress.Era</td>
+  <td>Indie:16<br>C.Sweden:3<br>Curated.Eyedress.Era:3<br>C.Indonesia:2<br>Synth.Electronic:1<br>Rock:1<br>C.Belgium:1<br>C.China:1<br>C.Germany:1<br>C.Latino:1<br>C.Taiwan:1<br>C.Turkey:1<br>Gospel:1</td>
+  <td>S! &quot;Vi kommer att d samtidigt&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b3365560ce1e3cbc19c6b7fe41cd2a8baa2da726" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-indie-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Z41nmNKq6E8nBQqRQheTZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2bHZtJhskluidQCnsHpc7h" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2BsdNlewZQbdiLaLVVPzfk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mI3wlGrjB9wdK0Ik225iZ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>swedish pop punk <a href="https://everynoise.com/engenremap-swedishpoppunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Pop.World<br>Punk</td>
+  <td>Punk:12<br>Hardstyle:7<br>C.Sweden:3<br>Rock:2<br>Pop.World:2<br>C.Brazil:1<br>C.Canada:1<br>C.Native.Tribes:1<br>C.Poland:1</td>
+  <td>Trubbel &quot;Inget har h sedan sjuttiosju&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/380a18b3fa91b6fa83143b816c724a01b37ae335" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-pop-punk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Icn89sdB2RaEILOgMxyON" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0jeGdDknx2nK4i6NdFCKfs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7afGxh7zbzNEPmdR5B6WUl" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7temGS0c8EgpcWc2Kkj29k" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>swedish punk <a href="https://everynoise.com/engenremap-swedishpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Punk</td>
+  <td>Punk:17<br>C.Sweden:5<br>C.Latino:2<br>Hardstyle:1<br>Rock:1<br>Pop:1<br>Pop.World:1<br>C.Brazil:1<br>C.Dutch:1<br>C.England:1<br>C.Germany:1</td>
+  <td>K &quot; Mig&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6aefc99f47943a46273a34938c87efe4ae3f7d17" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-punk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ng2topoxV6TEuDgm2Ai90" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/38XVlBRgzIlQD6a6pixbZN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/03B7hg37ptbrwfyj6dxIwT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3nPmyiwD7tXtGJ20SGxi5A" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>swedish doom metal <a href="https://everynoise.com/engenremap-swedishdoommetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Metal</td>
+  <td>Metal:14<br>C.Sweden:5<br>Rock:4<br>C.Dutch:2<br>Gospel:2<br>Psy.Goa:1<br>Progressive:1<br>Emo:1<br>C.Belgium:1<br>C.France:1<br>C.Italy:1</td>
+  <td>Candlemass &quot;Solitude&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5bdcd9fff485e92695412131edd097c8dc8d321c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-doom-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4OEl8ZiR5J1tfNVCfPugP5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0bQWjVqWFMI378gbwD0a10" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1dHqUfBQfLFzzrXOaJvSNt" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/09z3Bg8SNgLogy2ICbWwg0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>swedish country <a href="https://everynoise.com/engenremap-swedishcountry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Country</td>
+  <td>Pop.World:8<br>Country:5<br>C.Sweden:4<br>C.Canada:2<br>Indie:1<br>C.Germany:1<br>R.Jewish:1<br>Folk:1<br>Gospel:1</td>
+  <td>Mats R &quot;Du kan alltid lita p pojkarna  35&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/923cad344e8b41e1305c942f3cbce04e4c86fb67" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-country" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4StF9VDinlQNwMPcWhAfjz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3o5bcsHVAq6RLShKsNgw2w" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/03Hw6cRcCiy5xKhBqNdJAo" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4gZq9XPkZthyck1E1w4Au2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>swedish rockabilly <a href="https://everynoise.com/engenremap-swedishrockabilly.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Rock</td>
+  <td>Rock:14<br>C.Brazil:4<br>Pop.World:3<br>C.Sweden:2<br>Ska:2<br>C.En.Espanol:1<br>C.Germany:1<br>C.India:1<br>C.Italy:1<br>C.Japan:1<br>C.Latino:1<br>C.Spain:1<br>R.Jewish:1<br>Blues.Soul:1</td>
+  <td>The Jetaways &quot;Rockin\' the Night Away&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/140e101783e5dc426e84b2a180fbe3d4ca8cbfe1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-rockabilly" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/27xmS6EueK1bODxW6rrdJ7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6yE1Iis19PaGVTi5HuzYLG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6YIXbl4ITri2tht9e2nb9x" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4NHSp7129qtbX3PjEYCoAj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>swedish emo <a href="https://everynoise.com/engenremap-swedishemo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Emo</td>
+  <td>Metal:11<br>Rock:4<br>C.Sweden:4<br>Emo:2<br>C.Dutch:2<br>C.Latino:2<br>Psy.Goa:1<br>Progressive:1<br>Hardstyle:1<br>C.Belgium:1<br>C.England:1<br>C.France:1<br>C.Russia:1<br>Folk:1<br>Gospel:1<br>Classical:1</td>
+  <td>Shirokuma &quot;Black Lungs&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3a7b4862a1ffcf1c622be0368846b1a9710945f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-emo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2aIwwGSay614PUmlynXBt1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6oxs0uFlgtq451j75QMhFk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/36CMjyZNKqz9OSIBhifYB3" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>swedish black metal <a href="https://everynoise.com/engenremap-swedishblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Metal</td>
+  <td>Metal:22<br>C.Sweden:3<br>C.Canada:2<br>C.Belgium:1<br>C.Brazil:1<br>C.England:1<br>C.France:1<br>C.Germany:1<br>C.Japan:1<br>C.Native.Tribes:1<br>C.Poland:1</td>
+  <td>Funeral Mist &quot;Naught but Death&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a61cc8331d3c6e98662334ae84f8d0a754fd9f9d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-black-metal" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5FVe9WkNb8luUlA4481SUW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4jVoXBilRxH6cAaG52zJ0s" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5TjM9KVgF070OZRA14coLJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Rp8a6ySTFhCr8D4O4twzw" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>swedish trap pop <a href="https://everynoise.com/engenremap-swedishtrappop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Pop.World<br>Trap</td>
+  <td>C.Sweden:7<br>Hip Hop.World:5<br>Trap:4<br>Rap:4<br>Rap.World:4<br>Pop.World:2<br>C.Africa:2<br>Dance:2<br>C.Belgium:1<br>C.England:1<br>Hip Hop:1</td>
+  <td>Blizzy &quot;No Way&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8656328d51c31dfbecc5df829c958aedf62829ba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-trap-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6U6G6gOdXrrSIvQEsM4fsf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6kIGjceghE6Zx2VfSLxwTT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6fXmEhsO3h7bt2l8yMlu0G" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2HGSDcRs5zXuJpdeUSRiJ6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>swedish hip hop <a href="https://everynoise.com/engenremap-swedishhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Hip Hop.World</td>
+  <td>C.Sweden:10<br>Hip Hop.World:9<br>Rap.World:6<br>Pop.World:2<br>Trap:2<br>Hip Hop:2<br>Rap:1<br>C.Africa:1<br>C.Canada:1<br>C.England:1<br>C.Germany:1<br>C.Latino:1<br>C.Native.Tribes:1<br>C.Poland:1<br>Reggae:1</td>
+  <td>Dani M &quot;Palmerna&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/23397ee12fbd05c00b3f76b2802f12bafecdccd6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-hip-hop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3NfxAsLjZmCpQIlytSFiMB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Y8JsYqSUtT3WUP5RrKAV1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Kdy00zhL9P3ilaorXtDVw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/24ldcMxcszHbxvBQO106Nj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>swedish hardcore <a href="https://everynoise.com/engenremap-swedishhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Hardstyle</td>
+  <td>Hardstyle:9<br>Metal:5<br>Punk:4<br>C.Sweden:3<br>C.Brazil:1<br>C.Japan:1</td>
+  <td>Anatomi-71 &quot;Sgt peppers loser hardcore band&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9a9055c00e347ace6ff4f2a8577b62091ef2d7c8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-hardcore" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/06nltIE2BZRD4KtSZ0Scnl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0So1paobyf0e6rV3hfxdxY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7t3s6wmX3ky8FKbD9d81FJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1kmPW9gXn71zDZHtABxPHH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>swedish grindcore <a href="https://everynoise.com/engenremap-swedishgrindcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden</td>
+  <td>Metal:7<br>C.England:2<br>C.Sweden:2<br>Punk:1<br>Hardstyle:1<br>C.Brazil:1<br>C.Dutch:1</td>
+  <td>Gadget &quot;Intenso&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b8638db23fb37f4750e779a7f9ecd5863b3520dc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-grindcore" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4CaaYZw34flhRgIUy2JPpl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/30pKtafvqMLZ2ytTV7enZ0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4MsI9O4MB049pzkDlTJOnp" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>swedish pop rap <a href="https://everynoise.com/engenremap-swedishpoprap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Pop.World<br>Rap.World</td>
+  <td>Hip Hop.World:9<br>Rap.World:6<br>C.Sweden:6<br>Pop.World:5<br>C.Africa:2<br>Hip Hop:2<br>Rap:1<br>C.Canada:1<br>C.Germany:1<br>C.Latino:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Russia:1<br>Reggae:1</td>
+  <td>Lokal &quot;Ditt r jag&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/23f9172714539f1b601279623741a28df43f82f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-pop-rap" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0J5wtQ0UNsi3GsBqx7RsEb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Kl9pIDdL6LbxoirLxbKae" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7gXN81FyvzVnKOxbVBje3R" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0R2PpEPYGRfCxeDl7oDnif" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>norrlandsk hip hop <a href="https://everynoise.com/engenremap-norrlandskhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Hip Hop.World</td>
+  <td>Hip Hop.World:10<br>Rap.World:6<br>C.Sweden:5<br>Hip Hop:5<br>Pop.World:1<br>Rap:1<br>C.Africa:1<br>C.Canada:1<br>C.England:1<br>C.Germany:1<br>C.Irish:1<br>C.Native.Tribes:1<br>C.Poland:1<br>Gospel:1</td>
+  <td>Erk &quot;Bagheera&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3e3f1ebee28378ce1daeb593d7948fcf139f891a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/norrlandsk-hip-hop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7hAIuKrOHFR2bJx811NzAR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5bSwYH1VDmJraibhFgcwA5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3TEqkUxn9sTTexwZoa3bRZ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4oQmpgSFuYYEbVmgmLGT5E" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>swedish blues <a href="https://everynoise.com/engenremap-swedishblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>C.Sweden</td>
+  <td>Rock:11<br>Blues.Soul:7<br>C.Latino:3<br>C.Sweden:2<br>C.Brazil:1<br>C.France:1<br>C.Japan:1<br>Gospel:1<br>Curated.life:1</td>
+  <td>Louise Hoffsten &quot;Fr himmelen fallen&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8ceddf383d3e5d9e7e97d2613325238f1e572dc7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-blues" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2EFrUVussxCgKmqowB6BmS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7iu7Lqr34RO4Olu5qqcm3f" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mJwEqeUcnQclpH2bTa5CR" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>classic swedish pop <a href="https://everynoise.com/engenremap-classicswedishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Pop.World</td>
+  <td>Pop.World:7<br>C.Sweden:6<br>Folk:3<br>Rock:2<br>Country:2<br>Pop:1<br>C.Canada:1<br>C.England:1<br>C.Italy:1<br>C.Latino:1<br>Jazz:1</td>
+  <td>Marie Fredriksson &quot; doftar k&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/82fd5159ca860623c820b252b2643087a4b4adf2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-swedish-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5sjIhYs9VdRLVRwQimhRq6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0QLVehareDunIu41VvZMGF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/290TY4PSTwhNUUvL9XFaY4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Zg7Z33HXykNnwmZzGSvd7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>swedish underground rap <a href="https://everynoise.com/engenremap-swedishundergroundrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Rap.World</td>
+  <td>Rap.World:7<br>Rap:6<br>Hip Hop.World:6<br>C.Latino:3<br>C.Sweden:3<br>Hip Hop:2<br>C.Dutch:1<br>C.Germany:1<br>C.Hungary:1<br>Gospel:1<br>Curated.life:1</td>
+  <td>Martin Zamora &quot;Sk Loser - Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/358e8f81f41a291da91a5025ec5e3d0f486fdcac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-underground-rap" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6IOOniQzgJeOfvfRmnRBGq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0apxbv29AblpnQVpvwIpR8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5z8bZ1aGyVaY5KVT8fVaRi" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ULQhVqw0g82gAoQFkQVXz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>swedish stoner rock <a href="https://everynoise.com/engenremap-swedishstonerrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Rock</td>
+  <td>Rock:9<br>Metal:5<br>C.Sweden:4<br>Psy.Goa:3<br>Punk:3<br>Emo:2<br>Hardstyle:1<br>Indie:1<br>C.Dutch:1<br>C.England:1<br>C.France:1<br>C.Germany:1<br>C.Italy:1<br>Gospel:1<br>Curated.life:1</td>
+  <td>Horisont &quot;Electrical&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/84393a9ca25d077a7e55ae9080c25704318a7107" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-stoner-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5l5jOUgJm8gedEcYijsBcK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7FRJnQS4pUn2BaHFanB4s5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0UaYFu3LZOE7mGG0hXWCaH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1WIP2FNVMsMsSVEz0eocns" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>swedish psychedelic rock <a href="https://everynoise.com/engenremap-swedishpsychedelicrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Psy.Goa<br>Rock</td>
+  <td>Rock:14<br>Psy.Goa:9<br>C.Sweden:4<br>Indie:2<br>C.Brazil:2<br>Pop:1<br>C.Canada:1<br>C.Germany:1<br>C.Japan:1<br>C.Native.Tribes:1<br>C.Poland:1<br>Instrumental:1<br>Curated.life:1<br>Curated.Eyedress.Era:1</td>
+  <td>Den Stora Vilan &quot;Stockholmsnatt&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b9f75a83a4aed5732165db8037e5bcba28170011" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-psychedelic-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4kKTvW0AL08Gdvb3wbpfCY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6RLYgLWFJuBV3Y8bQrh1Zn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ifwVs60LsQbRhRtM0giYL" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>51</td>
+  <td>swedish gangsta rap <a href="https://everynoise.com/engenremap-swedishgangstarap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Rap.World</td>
+  <td>Hip Hop.World:8<br>C.Sweden:6<br>Rap.World:5<br>Hip Hop:4<br>C.Africa:3<br>Trap:2<br>Rap:2<br>Indie:1<br>Pop.World:1<br>C.Brazil:1<br>C.Canada:1<br>C.England:1<br>C.Germany:1<br>C.Latino:1</td>
+  <td>Rami &quot;Buzz Down&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ddc97b13f52d557b9e96ecc9797388d7e054b4c0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-gangsta-rap" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6HO4BNXiFyRCFlgbnyPQkD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4RSfVIli55ETsIfr9MWrVF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/77iON7dgGSXLIjp9e2EphP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6z4WVdb9BnACqR88XLstWu" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>52</td>
+  <td>swedish rock-and-roll <a href="https://everynoise.com/engenremap-swedishrockandroll.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Korea<br>C.Sweden<br>Rock</td>
+  <td>Rock:10<br>Blues.Soul:5<br>C.Korea:2<br>C.Latino:2<br>C.Sweden:2<br>Punk:1<br>Pop.World:1<br>C.Afghan:1<br>C.Africa:1<br>C.Brazil:1<br>C.England:1<br>C.France:1<br>C.Italy:1<br>C.Spain:1<br>Gospel:1<br>Instrumental:1</td>
+  <td>Shanes &quot;Vem f f dig hem&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a47314cf5bd73efa80aa0c647c3b43373e5f777c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-rock-and-roll" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4v8JY0sgEEtXgp4bpq64w3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3BxTFtHtoN29fSYdLPswan" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/625olPVhduu9ebdCrq6e9U" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>53</td>
+  <td>swedish folk pop <a href="https://everynoise.com/engenremap-swedishfolkpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Folk<br>Pop.World</td>
+  <td>Folk:8<br>Indie:7<br>Pop.World:4<br>C.Sweden:2<br>Americana:1<br>C.China:1<br>C.France:1<br>C.Germany:1<br>C.Islands:1<br>C.Latino:1<br>C.Spain:1<br>C.Thai:1</td>
+  <td>Sara Zacharias &quot;B Om&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0fa8b005c4b158f84b76c206b917bfbb4deb7c17" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-folk-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6tA81ejhPK3Df3xrDsHnIG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7jWKwB07LWTwH2oepQ5EqU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1tU2mMNzoL7ZXKhPHrYW6O" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0xtcGelKxdfpUnNwflZC3M" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>54</td>
+  <td>swedish americana <a href="https://everynoise.com/engenremap-swedishamericana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Americana<br>C.Sweden</td>
+  <td>Indie:6<br>C.Sweden:4<br>Americana:3<br>Pop.World:2<br>C.Korea:2<br>Folk:2<br>Pop:1<br>C.China:1<br>C.Canada:1<br>C.England:1<br>C.Latino:1<br>Gospel:1<br>Country:1</td>
+  <td>Christian Kjellvander &quot;Disgust for the Poor&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/940b47ac359f1be27a841f244fdb73ed9e910d1f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-americana" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5XyX3dS27WbXZLiWoJNsdM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2eFhodoLhJ2xGkThkdf1Ja" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1yGZJqLeCLGNytTT4S1XrC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0CuAgDDZWMZCRqeNv7fT4y" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>55</td>
+  <td>swedish singer-songwriter <a href="https://everynoise.com/engenremap-swedishsingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden</td>
+  <td>Folk:8<br>Indie:6<br>C.Sweden:4<br>Americana:2<br>C.Canada:1<br>C.Indonesia:1<br>C.Irish:1<br>C.Japan:1<br>C.Latino:1</td>
+  <td>Frida Hyv &quot;Terribly Dark&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cffd42bc15158b32760f40fd628e6c972b667a62" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-singer-songwriter" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0JoAW036eAXnmlz2NrzW0E" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3lA8Szi5tVnizpdI5BBXpc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ndWlDYZ43ID9wgDu63YfF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/27qiw5ZQ1H1rHpiGlTBkRi" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>56</td>
+  <td>swedish prog <a href="https://everynoise.com/engenremap-swedishprog.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden</td>
+  <td>Folk:4<br>Psy.Goa:3<br>Indie:3<br>Rock:3<br>C.Sweden:3<br>C.Latino:2<br>Progressive:1<br>C.Canada:1<br>Country:1<br>Blues.Soul:1</td>
+  <td>Kebnekajse &quot;Barkbr&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c20c454c685682f6192e7e885340f5f5c8bb72bc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-prog" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Knuekk6Ztk9rAqOqsuYn7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7FbcxNVFRUI6jyl9ao7dIi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4uiRq7a27T1JnTxfw41JC0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1nb7jhfl0dbIrVVtbi1Vp7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>57</td>
+  <td>swedish indie folk <a href="https://everynoise.com/engenremap-swedishindiefolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Folk<br>Indie</td>
+  <td>Folk:11<br>Indie:6<br>C.Sweden:4<br>Gospel:2<br>Pop:1<br>Americana:1<br>C.Cantonese:1<br>C.Canada:1<br>C.England:1<br>C.Japan:1<br>C.Korea:1<br>C.Portugal:1</td>
+  <td>Jos Gonz &quot;Heartbeats&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/608e7ed762960e7af6714a2411203f26487ce4b9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-indie-folk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4RAPHABokGFKIujJvYgPkS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5mZ9LmTDg7vBSGHVzePkm4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0gBWXPn0MoGACyb0FEaWG1" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/47s27mTzQ0ZP6yqvCj4L2V" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>58</td>
+  <td>swedish experimental <a href="https://everynoise.com/engenremap-swedishexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Experimental</td>
+  <td>Experimental:7<br>Ambient.General:5<br>Industrial:3<br>Synth.Electronic:2<br>C.Sweden:2<br>Punk:1<br>C.Canada:1<br>C.Dutch:1<br>C.Spain:1</td>
+  <td>Deutsch Nepal &quot;Carrions Still Walkin\'&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c86896045c77b27391890be3a04257b49cce5dbb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-experimental" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0vMO95PHDDpR99ysMzuxj5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4U0mDZpdqZqQveVDC8cOJY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6AZG7PLbPjkRb4EudFXBG1" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>59</td>
+  <td>vintage swedish pop <a href="https://everynoise.com/engenremap-vintageswedishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Folk<br>Pop.World</td>
+  <td>Pop.World:4<br>C.Sweden:4<br>Folk:4<br>C.Irish:2<br>C.Latino:2<br>Country:2<br>C.Cantonese:1<br>Gospel:1<br>Blues.Soul:1</td>
+  <td>Bertil Boo &quot;Violer till mor&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3b1906b1c16978c0369e285b67861557a1542c01" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vintage-swedish-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5oCactm6pHarGVJwbE0yaO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5689OCGtDJTnALUlK4cZds" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6sImZBeejsFJmSj3VWPLTi" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1lLshxrpoXoVw67INT4AVl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>60</td>
+  <td>swedish jazz <a href="https://everynoise.com/engenremap-swedishjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Jazz</td>
+  <td>Jazz:17<br>C.Sweden:3<br>Folk:2<br>Pop.World:1<br>C.Belgium:1<br>C.Dutch:1<br>C.Germany:1<br>C.Irish:1<br>C.Italy:1<br>C.Portugal:1<br>C.Vietnam:1<br>Traditional:1</td>
+  <td>Esbj Svensson Trio &quot;Where We Used To Live&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a1a7acbbbdb7399646f5a00c3e5d7c5ec03d173b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-jazz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/066Ws83mBgawkpYWWvjmp6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/59CfjLMocEcygpoTMlDu5B" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0eIHWyC3kxCGGXVP7xV9Vs" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3QyL1G2k7nBwgJnNPKbNix" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>61</td>
+  <td>swedish jazz orkester <a href="https://everynoise.com/engenremap-swedishjazzorkester.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Jazz</td>
+  <td>Jazz:10<br>C.Sweden:2<br>Traditional:2<br>C.Africa:1<br>C.Ethiopia:1<br>Folk:1<br>Classical:1</td>
+  <td>Sonya Hedenbratt &quot;Kn dig in&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/86e918d519f54986ee1dbcc5a7fe32fd8dc4568c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-jazz-orkester" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2lsqobg83L55zSnJ8z7MuV" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2RdJsT5UwMfXToyju1OVmK" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>62</td>
+  <td>swedish fiddle <a href="https://everynoise.com/engenremap-swedishfiddle.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden</td>
+  <td>Folk:3<br>C.Sweden:2<br>C.Turkey:1<br>Classical:1</td>
+  <td>Bj St &quot;Leksands sk&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a8225a0665ccac6099e378ae160ee17f67684b69" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-fiddle" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7KqcX5BTL17wPsP7Aq0rN3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5FbKoMbHPZaUSeCVUd4c6P" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3xpns9ZTzbNVcC8Q7kCDFu" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>63</td>
+  <td>swedish classical <a href="https://everynoise.com/engenremap-swedishclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Classical</td>
+  <td>Classical:13<br>C.Brazil:2<br>C.Sweden:2<br>Baroque:2<br>C.China:1<br>C.Germany:1<br>Instrumental:1</td>
+  <td>Wilhelm Stenhammar &quot;S, Op. 44: Interlude&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/37b649a6cf184e6da48cec08a0a5c4c0b436afb0" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-classical" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Q8FKBZzN91orolWx5NalN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7p13aS2w8SzvbHyzGzvCL9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2qWW4C3vfJOqPi26Tmay0J" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>64</td>
+  <td>swedish contemporary classical <a href="https://everynoise.com/engenremap-swedishcontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Classical</td>
+  <td>Classical:20<br>C.England:3<br>C.Canada:2<br>C.France:2<br>C.Sweden:2<br>C.China:1<br>C.Korea:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Russia:1<br>C.Spain:1</td>
+  <td>Sven-David Sandstr &quot;To See a World&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f5dca0b284219ddb5b5d62642dfe51efcfa14c67" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-contemporary-classical" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6a9wcpR5AqYMVe1bNO2LP9" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>65</td>
+  <td>swedish choir <a href="https://everynoise.com/engenremap-swedishchoir.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Sweden<br>Choir</td>
+  <td>Choir:15<br>C.Native.Tribes:2<br>C.Poland:2<br>C.Sweden:2<br>Vocal:1<br>C.England:1<br>C.Hungary:1<br>C.Italy:1<br>Classical:1</td>
+  <td>Orphei Dr &quot;Du vilar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6b120fe324ff08827e41aa4bf7eb2364b646a517" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-choir" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/03Kzx4JpyGKAbhmLSF96Kk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2da2tVcgvSl0cgCYtPiVyj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7GIhxQmBJ4zXIGzckmWBRx" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
+
+</body>
+</html>

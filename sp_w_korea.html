@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Korea: (56 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Korea: (56 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Korea is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>korean electronic <a href="https://everynoise.com/engenremap-koreanelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Korea</td>
+  <td>South Korea<br>experimental<br>korean experimental<br>future bass<br>hypnotic techno<br>melodic bass</td>
+  <td>Closet Yi &quot;POH (Point of Hue)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a05aaf582dd5d4203cbf418dd6cf2895ffc10cab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2aUFUSmSUqz83oCKU8ucM0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1jVq5hfumPrlKudzlaQ0Iy" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>k-pop girl group <a href="https://everynoise.com/engenremap-kpopgirlgroup.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Korea</td>
+  <td>South Korea<br>k-pop<br>bubblegum pop<br>classic k-pop<br>5th gen k-pop<br>noise music</td>
+  <td>FAVORITE &quot;Loca&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f31c5d3f900f3ce6a17768be01511f3bb6f88ce4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/k-pop-girl-group" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4k92GTFlD1FTQmb34JqBLp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/64KEXfUapxhkmiqKDsBrbN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ieY8kcW5MuCtJIWf9vX96" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3x3FIw2B4TpvfM7dw6lI74" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/45sCL3EvfrJUKgGTROqIC7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>k-pop reality show <a href="https://everynoise.com/engenremap-kpoprealityshow.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Korea</td>
+  <td>Japan<br>k-pop<br>j-pop<br>k-pop boy group<br>k-pop girl group<br>c-pop girl group</td>
+  <td>PRODUCE 48 &quot;NEKKOYA (PICK ME)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ecbbaf9a50df5b8ff5a50debbfc4c977d2a54abd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/k-pop-reality-show" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4W92xBMEZa4X9TpmvPK3en" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/19xCJGwHkNsJkIweqKNPR4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2vASjKmnWtgb2k848HEoEs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6MqbfNzsG7WwGt51xA9ahO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/46Et6hUnSib2jRcEQni41n" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>k-pop boy group <a href="https://everynoise.com/engenremap-kpopboygroup.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Korea</td>
+  <td>South Korea<br>k-pop<br>noise music<br>k-rock<br>5th gen k-pop<br>k-ballad</td>
+  <td>NOIR &quot;Airplane mode&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8142182f260301c7bd47fd24003558307e114e80" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/k-pop-boy-group" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6eZxlLoLDBzaDO7KKJG9CC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7jGzify69eicmfL77zOGbm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1xt6K8nYVtqzleTDH2LpBk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3sdumc7gqOViCbmESNXEJv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3tahPulVUyRgmTEEqz1s2p" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>korean hyperpop <a href="https://everynoise.com/engenremap-koreanhyperpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hyperpop<br>W.Korea</td>
+  <td>South Korea<br>hyperpop<br>k-rap<br>j-rap<br>korean trap<br>korean underground rap</td>
+  <td>Yes Junior &quot;Spotlight (feat. Effie)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7d35c91ea9ab04725ff1bcbd8d02742ee58e1dd0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-hyperpop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7MQT0NWorCtx36nUXiXTVn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/41BSPX8BOIC56WbTjJc06M" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0cGH82h0k8SM64uSPw5JTm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1qLlp2VoxVyXB9OWvp81eU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2keSnIOKDetwgSMe2vtDsA" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>classic k-pop <a href="https://everynoise.com/engenremap-classickpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Korea</td>
+  <td>South Korea<br>k-ballad<br>k-pop<br>k-rap<br>k-rock<br>korean pop</td>
+  <td>Roo\'RA &quot;3!4!&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/47bb320edb53b8a3faacd7632f39916303730f0d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-k-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6LOTYZDZ1DAdPZY85mocKK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3VHoSzjyYpM4sVrfQqdHd5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3RJZqQ6CinjbsiebLKGW9e" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ehD1a8qOdSBgaTS6cafuj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6WCi7dAOcncuQDZv49l1nP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>k-pop <a href="https://everynoise.com/engenremap-kpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Korea</td>
+  <td>South Korea<br>k-rap<br>k-ballad<br>korean r&b<br>noise music<br>pop</td>
+  <td>EXID &quot;Up &amp; Down&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/33e5ec94a2f425d6b83a045a760be6bc90bba335" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/k-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6PEWqRHajQ7X8SDhlEnNSk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3T1Rft817cZ3pguTvaWaz3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3bhrok1Una2nXdycR0LekC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4E0GF2qVgPyMllZ3iAZwgn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Imh39ElzkkIHVIzm0wA4u" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>korean old school hip hop <a href="https://everynoise.com/engenremap-koreanoldschoolhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Korea</td>
+  <td>South Korea<br>k-rap<br>k-ballad<br>classic k-pop<br>k-pop<br>korean underground rap</td>
+  <td>Garion<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c49754b5933933420e341c3774e159925e9f505f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-old-school-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2v9YpfFpVzFbXSkbEk0f7c" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5VAMd4pUDoAW3dJS0FZyyo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1GTbztrramVGWexy5EAueT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/48EI6fzLVQYtPL9ZG3oib5" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7v14jTHlyzsFvzcO3LGQQ1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>korean trap <a href="https://everynoise.com/engenremap-koreantrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Korea</td>
+  <td>South Korea<br>k-rap<br>korean underground rap<br>korean drill<br>korean hyperpop<br>korean r&b</td>
+  <td>ZENE THE ZILLA &quot;Nowadays (Feat. ASH ISLAND)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/11298b45249a9733494ad2d73d11f1a22dc0fb77" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-trap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7HVet7CkX2oP2VW8paAkGB" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1x5KJwBNPIy3bYltlNaNDK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3LGKeLmFcE5b8SiSqPW2hF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5QQXb5ZcjPlwOXsIn7QWRQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6aBtTXREypxYBWy6b6jxtP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>korean drill <a href="https://everynoise.com/engenremap-koreandrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea</td>
+  <td>South Korea<br>k-rap<br>jersey club<br>korean trap<br>drill<br>k-rock</td>
+  <td>RB NINE &quot;Benchpress (Feat. Don Mills)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/861c3efef1199ddb7d2d9b826418dda75376d19a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-drill" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6jX7XirNa4J6kGVgvM7IHS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6bzbflYnlDXfX2PhXpALNg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1vqQazIXwdeL5hAUT9qDc1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3g6USjMTyih1VWb1gL8MyO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rsQvH8flKKBSvAPgkIOem" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>korean electropop <a href="https://everynoise.com/engenremap-koreanelectropop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Korea</td>
+  <td>South Korea<br>k-indie<br>k-rock<br>korean indie rock<br>city pop<br>korean r&b</td>
+  <td>OOHYO &quot;Dandelion - single ver.&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/aa0d629bdda2da4c364aab3287e567ca4be1fddb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-electropop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/05gMl5M3Bnq2ZQ1oL2mqzD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5vIBFEypI86kgUNJJBCmbN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/55wQtqlizTV1oVhOympvml" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1g2j8xHoqJr4iCOTQHXWqy" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6w9jUrs1VgVjHHO9MFLX3S" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>k-rap <a href="https://everynoise.com/engenremap-krap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Korea</td>
+  <td>South Korea<br>korean r&b<br>k-pop<br>k-ballad<br>korean underground rap<br>korean old school hip hop</td>
+  <td>Paloalto &quot;Turtle Ship (Feat. G2, B-Free, Okasian &amp<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f9d587a28cc9380560b75d4cd94d7189f796228d" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/k-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0oSufuoGIk96VlPD34gr1r" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0thomPcNswX7vGOyBvHxMQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1w0OTX0kiLVzxlcSCcxEIt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6exivmHRcJFHmAB4KLKmuY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0vqtjhBr8gBvc8Oi4CVQh3" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>korean metal <a href="https://everynoise.com/engenremap-koreanmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Korea</td>
+  <td>South Korea<br>k-rock<br>korean hardcore<br>metalcore<br>black metal<br>j-rock</td>
+  <td>Remnants of the Fallen &quot;Hel&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ce17cd93ba8b9eff2d5e5514300ed9d086cae67e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0r32ieZQyZMmnEZWNWq4v1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7JMWNzG2Av3PkWgZmUO5x9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1F6UcpSHfwpq4Ix6PqakSs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/16MGM6Dn93dtQGgcd01UUH" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>korean punk <a href="https://everynoise.com/engenremap-koreanpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Korea</td>
+  <td>South Korea<br>k-rock<br>skate punk<br>korean hardcore<br>hardcore punk<br>punk</td>
+  <td>CRYING NUT &quot;  Oh! What a Shiny Night&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f2db92fc1838cd24405c7aa9290c19b23b9c69b2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ZTstLbRZsDl8uzjtek9cX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2P0CxBuS2D0BuqbEIrvvAV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0B61eUfpEffKfTBdOAsZzN" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>korean indie rock <a href="https://everynoise.com/engenremap-koreanindierock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>Rock<br>W.Korea</td>
+  <td>South Korea<br>k-rock<br>k-indie<br>korean shoegaze<br>korean dream pop<br>shoegaze</td>
+  <td>Life and Time &quot;Light&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/013ad52eebc910736b992768521eb2eb91ce3b22" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-indie-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2KkPJjfPBKSUTr0TqL853Q" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/11i3s3ZVQ0lUEwsA7MFRVf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2lpodmoRqDFOo7IR5AcRsO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0REzdq4GZCrchw6nG8f31N" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wMKvOrx696q8vVif5tVDe" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>k-rock <a href="https://everynoise.com/engenremap-krock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Korea</td>
+  <td>South Korea<br>k-ballad<br>k-indie<br>k-pop<br>korean pop<br>korean indie rock</td>
+  <td>No Brain &quot;Your Crush On Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/417bdb903836f9a1c9321faf022f36057565c36c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/k-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/16jfxifo6wFCGrOdH4PGLo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1uFmFdP4khly2qaImrnOz0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/254KivRvdYPNa9ivuZXDHW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/40lGvkV7SEfqKM6pL7g4tA" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/61dzrovf273RMBdqUyXih4" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>korean city pop <a href="https://everynoise.com/engenremap-koreancitypop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Korea</td>
+  <td>South Korea<br>city pop<br>k-indie<br>k-ballad<br>k-rock<br>k-rap</td>
+  <td>uju &quot;  Give Me The Light&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1de77f1ab1cc3e123888bebe34643618c655d546" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-city-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2fsXvnwiBfI0r4CQtwSJfz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7nUK6pM5Viwp3Ah6Ybh0ED" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0lLUX1GncZ6te4AoDtGujz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1FLcWDa6GBRMDeSAnxyhlH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2EGt79LVMmnrvZ4o6S2Fmy" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>musik anak-anak <a href="https://everynoise.com/engenremap-musikanakanak.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea</td>
+  <td>Indonesia<br>children\'s music<br>sholawat<br>malay<br>lagu jawa<br>batak</td>
+  <td>Icha Imut &quot;Bunda Piara&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/df097fa53550856e01c3795aaab43d92bfe6b226" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musik-anak-anak" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/36EseO4MYWWJtLASURzrER" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/32uPxKFfDNzcRHWxYhvF6S" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6EijdGgUeF6qaMmSce8fx4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/36yeF5C9nCEcj7Zqan9mlb" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2TABroNZh5FDBoHdN8fVRj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>korean underground rap <a href="https://everynoise.com/engenremap-koreanundergroundrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Korea</td>
+  <td>South Korea<br>k-rap<br>korean trap<br>k-ballad<br>korean old school hip hop<br>korean hyperpop</td>
+  <td>kitsyojii &quot;Stand Up Remix (Feat. Blase, ChaMane, Mckd<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/899139ef021e3dd3a572d5ef0f1e2c8ac285ff62" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-underground-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0FWUbyoyD7xxaNh6P8qNlW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0XeoMjDv09XMDKrfpJargo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/724in7OwOBM0GcnIvi5AqU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/13eeedqRsFyppTkK04AhKN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2dOgSXniJHyHjZmMXZa54f" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>korean r&amp;b <a href="https://everynoise.com/engenremap-koreanrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>W.Korea</td>
+  <td>South Korea<br>k-rap<br>k-pop<br>k-ballad<br>korean electropop<br>korean pop</td>
+  <td>punchnello &quot;doodle (Feat. Yerin Baek) (Prod. by WOOGI<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2ec1eca78e7feedd9cfdee7531eb00f37a465546" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3o1RqU7nmjke5Zi4Ty0dbX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2TJHOlrTUoLMHs9CTyxN9n" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rMqy15lXOUK1WTfbBjEw5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6njRxcyIgIIYcGcWTTDcQL" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4cmbpduWxckKSyIWP4iuD0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>korean hardcore <a href="https://everynoise.com/engenremap-koreanhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Korea</td>
+  <td>South Korea<br>k-rock<br>korean punk<br>korean metal<br>hardcore punk<br>hardcore</td>
+  <td>VASSLINE &quot;Dawn of the Apocalypse&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/56ec0c694901ffc5353371e3b6e811419836bf3f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2eUGIdjC4WZ7LzbX3cWTxw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6eJzG35mKPGsGvFcZJ39rP" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>korean shoegaze <a href="https://everynoise.com/engenremap-koreanshoegaze.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea</td>
+  <td>South Korea<br>shoegaze<br>k-rock<br>dream pop<br>korean dream pop<br>korean indie rock</td>
+  <td>&quot;  &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6b4cb949b56b7a575ee3aea4d3a5ed275a57801f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-shoegaze" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4dTXpSoLFqLaYDFSFDtaJv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4v5KD4M6FjBqWn5Re3hjTl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RKEFGJhjMlUHfpEnjUFnQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5UiYcjhOT7yMg9XRAyj6wq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7rAgO86CzpyARR80Jfv32p" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>korean bl ost <a href="https://everynoise.com/engenremap-koreanblost.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea</td>
+  <td>South Korea<br>k-ballad<br>soundtrack<br>indie folk<br>modern indie folk</td>
+  <td>Ji Seunggyu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/adf4a6fac0d8f62356870610925e320c87e6a36f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-bl-ost" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5jLkHtGgULnQpsU2k7q9h9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2M3L8vM7lYRSzDtDu8zv3z" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4giV4asUwwFa1GjRi6JJ96" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2rhengd8A5kfJTITajTe0D" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/37JEJRYJ0IkAenMf6XaDeS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>hk-pop <a href="https://everynoise.com/engenremap-hkpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Korea</td>
+  <td>China<br>cantopop<br>c-pop<br>taiwanese pop<br>hong kong indie<br>chinese indie</td>
+  <td>ONE PROMISE &quot; - Duet Version&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a700773bbb9a0f13115feefd92a834926d702d5d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hk-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/67i4yfziOuqCepNFmVqZEF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5z1A6hdw1MJrmZzDusE4Q6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1cZAAal3SuYjX5r7iEhupa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/77cbnvPRjohO478IjFTudW" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3N1IsiQMPsxdyI1WTIxGlu" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>folk-pop <a href="https://everynoise.com/engenremap-folkpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Pop<br>W.Korea</td>
+  <td>United States<br>folk pop<br>indie folk<br>stomp and holler<br>acoustic pop<br>new england americana</td>
+  <td>The Head And The Heart &quot;Rivers and Roads&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/91913c54e76ab68663419c0710d9fba7e2e9c82e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/folk-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2xDeDJFh1VEhpvPDcP9DNb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1RWc3d424qgjr8HTwCVh6A" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6d48sKbCGZM5aOJlXlGHLn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Rt7M9ZfoA6fVu8EniQASz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2aDrZAZ1UeWo33uWaDvcJN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>korean dream pop <a href="https://everynoise.com/engenremap-koreandreampop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Korea</td>
+  <td>South Korea<br>dream pop<br>k-rock<br>shoegaze<br>korean shoegaze<br>k-indie</td>
+  <td>Jowall &quot;Suddenly&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4fbd34895eb75e3e488721972b0fa69080a32ee6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-dream-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5e6d78gYCQyRDpsWCga6cE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5JurKzRB8hvNgb62HpYjFB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6LGkq6xwa5L5gm6Nv6qReA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1CRUq6laxAqBAl6D78KB2K" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66s1GscDa6ieturWhrVCNz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>k-indie <a href="https://everynoise.com/engenremap-kindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Korea</td>
+  <td>South Korea<br>k-rock<br>k-ballad<br>korean pop<br>korean indie rock<br>korean city pop</td>
+  <td>Zitten &quot;I\'ll Be There&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/856a79ad51277c14778593dccc705891ffddb294" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/k-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5U0r2QlBIqIeMjNi4HqhN7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3P4E2aY9cPJSpu35WUxyFk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7Bl2oE778pqN8KM5QjGoVL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ilcgL3XJafBPJV3xT5JZg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1arEMQlYkFlFinY7SJVW76" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>trot <a href="https://everynoise.com/engenremap-trot.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea &#x2380;</td>
+  <td>South Korea<br>enka<br>k-ballad<br>k-pop<br>k-pop ballad<br>classic korean pop</td>
+  <td>Jin Sung<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3c22600e842f547a7c4ee034c9830b829812671e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trot" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6mufWTdTuU9bG7ytf4lbyW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0VOsr8ByGRlLwZSfB9lpQ8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4hIkmGxz6tSsK9b8u7fVOU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2sh18WRLxLI7LRgG2Db5pe" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6aUTSHHYwp6V292EUfnEeJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>swedish rock-and-roll <a href="https://everynoise.com/engenremap-swedishrockandroll.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Korea<br>W.Sweden</td>
+  <td>Sweden<br>dansband<br>swedish pop<br>rockabilly<br>swedish ballads<br>garage rock</td>
+  <td>Shanes &quot;Vem f f dig hem&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a47314cf5bd73efa80aa0c647c3b43373e5f777c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-rock-and-roll" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1LQ5rHpJzHSEAEovcZ80xd" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4v8JY0sgEEtXgp4bpq64w3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3BxTFtHtoN29fSYdLPswan" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/625olPVhduu9ebdCrq6e9U" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>korean superband <a href="https://everynoise.com/engenremap-koreansuperband.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea</td>
+  <td>South Korea<br>k-rock<br>k-ballad<br>korean ost<br>korean pop<br>soundtrack</td>
+  <td>Ha Hyun Sang &quot;3108&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/87702282362d1bec601fed48f2e2c337f207e080" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-superband" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7FuM9vZV9cCMyao2N43MwA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/13bL7PwSrXJ09yfBcq1f4c" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Fwl3X1FfrVFSRxOrFkzt9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3VbP4I2noyIWr6uYwIvhCZ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bR5kNY9HG72FU408Bu00V" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>korean pop <a href="https://everynoise.com/engenremap-koreanpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Korea</td>
+  <td>South Korea<br>k-ballad<br>soundtrack<br>k-pop<br>k-pop ballad<br>korean ost</td>
+  <td>Shin Yong Jae &quot;Feel You&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ccc098aeb267eb51d53751553ed23e86398585fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3hHbMpmSdEJsYFvRknnZqQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6tc3J6NhFZJkw0n7ix0w5l" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7KZ1WZD2LxQSXayUpvNWZk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5RwsX3UEX6vMCxBYLZ2TPv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2lhKsWFjNZPvIeiSMm3eBa" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>korean experimental <a href="https://everynoise.com/engenremap-koreanexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Korea</td>
+  <td>South Korea<br>experimental<br>avant-garde<br>korean electronic<br>idm<br>chinese rock</td>
+  <td>250 &quot;Royal Blue&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b5d8f5ca142a712a7da3f7aa740f0a8075e0b142" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4eZEEkFMxHVxoSxQN8lp33" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ld6kktsIosfOrMt3AVPiU" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>korean singer-songwriter <a href="https://everynoise.com/engenremap-koreansingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea</td>
+  <td>South Korea<br>k-ballad<br>korean pop<br>k-indie<br>k-rock<br>soundtrack</td>
+  <td>Lee So Ra &quot;Song Request (feat. SUGA of BTS)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4d2ec7484aa07163a7edb9fb9865def1431f9e3f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-singer-songwriter" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3exQ9XaQybO0guqB9ud9VG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0F5v9iMoWvTJVQLrYIH5Xb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6GXgfhJ6lOobJLCtL2mQm4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0hRbpKQd1sphvPEkbdCZAB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Mcmv6UF87dO3v0PL1XXmW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>korean ost <a href="https://everynoise.com/engenremap-koreanost.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea</td>
+  <td>South Korea<br>soundtrack<br>k-ballad<br>korean pop<br>k-pop<br>k-rock</td>
+  <td>Sondia &quot;Grown Ups&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0f86c5cb3bd89160dd2880d30490a7181535113d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-ost" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3BGB7FNfuGnwFYOIu7PcZ9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3IYiaXY49BlwvlBaFcFvbb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6CvrQOW72TjjFpi5mUOyCO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1cjEmU2RatSjSxxECJGyoD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/44XXZcDjpUWI3Wm3Q0lEuU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>classic korean pop <a href="https://everynoise.com/engenremap-classickoreanpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Korea</td>
+  <td>South Korea<br>k-ballad<br>city pop<br>k-rock<br>korean singer-songwriter<br>korean pop</td>
+  <td>Kim Hyunshik &quot;  &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bd81cbbc0f1386216a73249b15e1e4852ad6054e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-korean-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/56Pc5fOUIcCocNUDl5iII8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ExXGTiMvClWNT017QIUo2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1gblvQeL3WX9tkA4hLELxI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5t8n6NOucxuPtsufJlOWm6" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/533rgznUVFvgPhM30RhqYT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>truck-driving country <a href="https://everynoise.com/engenremap-truckdrivingcountry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Country<br>W.Korea</td>
+  <td>United States<br>classic country<br>honky tonk<br>rockabilly<br>classic country pop<br>christian country</td>
+  <td>Dave Dudley &quot;Six Days on the Road&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8a9d5ea2a483015a463eb3ad3a960f28c5afda10" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/truck-driving-country" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3TzuwLgwgCFWJO5fuDC7wK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Vdljk27QABnI9Ca5TefAj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6rDZySrcnQFKujmNLrW2gK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5zL71dPlFxOneDODBdYDMK" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>korean talent show <a href="https://everynoise.com/engenremap-koreantalentshow.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea</td>
+  <td>South Korea<br>k-ballad<br>korean pop<br>k-rock<br>korean musicals<br>k-pop</td>
+  <td>Edel Reinklang &quot;La vita&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c28844569e62c9cad23fbc0a162e4e2c46a1cdd3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-talent-show" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7cmOLowMmJ0sgFT6LnG12x" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0HDsBBxxbv2TkKpIZX2Ac0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0CVLz5vTnnj8w0T2P4i7R3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0J5R4RqQqOWtZogVVGM95a" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/52qdEcNlAwuHDZ7ypCX7Hy" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>k-pop ballad <a href="https://everynoise.com/engenremap-kpopballad.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Korea</td>
+  <td>South Korea<br>k-ballad<br>korean pop<br>korean ost<br>k-indie<br>soundtrack</td>
+  <td>05 &quot;Let\'s break up before autumn is over (feat. dawon<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b37b360f0e98177c1fb4da6ada35072a549a80f2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/k-pop-ballad" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0meGk3Ka9VIg1CJrYRxwus" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6WWiU8KPlDraBdf1tXifrS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2GHwziBybZJUzpy6w1MyVN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/27UqBwMMuHVK1OF3Drbhkn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2RC0D5j2XllJnIfn62n60z" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>joseon pop <a href="https://everynoise.com/engenremap-joseonpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Korea</td>
+  <td>South Korea<br>k-indie<br>k-ballad<br>pansori<br>korean minyo<br>traditional music</td>
+  <td>Ahn Ye Eun &quot;Night Flower&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/94fd69d33f35bf974dc7428a49302d1bfe7b33da" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/joseon-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2VsNMwa0xB4J2NwfFOVDid" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6WrINwVridztoRz2Vq7iIo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2VS1fXVhO1Lnl6E2Vj5QBh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3qfAfQ78ST7twRbe3EWqwZ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>korean soundtrack <a href="https://everynoise.com/engenremap-koreansoundtrack.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Soundtrack.New.Age<br>W.Korea</td>
+  <td>South Korea<br>soundtrack<br>korean ost<br>cha cha cha<br>k-rock<br>taiwanese pop</td>
+  <td>Kim Jun Seok &quot;Flower of Evil&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fe49677b759bfcd6bf5e75a6b02ac376829529d8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-soundtrack" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/725vjesETWKEv5JyrpWAO2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1kRWLtBz2L8PM8iTdvngqo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1w9m7fJQvWWtRlzGlvlVeQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/00oXAYom2Cwtdh4xwPIAWg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZYxA4QGyAIIPihKiI2bIo" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>korean worship <a href="https://everynoise.com/engenremap-koreanworship.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>W.Korea</td>
+  <td>South Korea<br>ccm<br>world worship<br>k-ballad<br>dong-yo<br>chinese worship</td>
+  <td>&quot;  (Feat. )&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bf749d7189aee8dc80fd9ca5660c9180bf94ea6c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-worship" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0jSQiVOESOqH9ulSyeQqFc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7JPyMYqSoFAS2pKMOZomDO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Fn21D2qReyiSMd1XrqRRL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/050iVxxaMAE9mJwjcowlHX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6s0hijawsEiKzWaiNMCeuk" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>mexican rock-and-roll <a href="https://everynoise.com/engenremap-mexicanrockandroll.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Korea<br>W.Latino</td>
+  <td>Mexico<br>bolero<br>ranchera<br>grupera<br>mexican rock<br>rock and roll</td>
+  <td>Los Johnny Jets &quot;Es Lupe (Hang on Sloopy)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/19cb27ebb3b7df384dbc78d0ceec695ba8b09873" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mexican-rock-and-roll" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0zCQhW6xqFUdMRHrOAzvFd" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1GSjqBHH85Hv1aoHd0qfRG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0SsyvEpXFZc6o3nuGRuJgB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0BqaCwjSIOppWyw5LFcOp9" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0TYQDXCMsZjq9TbatpOlTv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>french rock-and-roll <a href="https://everynoise.com/engenremap-frenchrockandroll.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.France<br>W.Korea</td>
+  <td>France<br>french pop<br>chanson<br>classic french pop<br>ye ye<br>variete francaise</td>
+  <td>Danyel Gerard &quot;Butterfly&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ea124e446cb0bd2e383f60b97931362aaa5110e8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/french-rock-and-roll" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/26t9TJ7JMI7hKQFloAmnPc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7rgZxT8hUhdyyhHSPjOiwx" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/52rfEHbTwgIqhL9Xkciihc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1hNaH39LpDdX9wPpLUHkxl" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>korean indie folk <a href="https://everynoise.com/engenremap-koreanindiefolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Indie.World<br>W.Korea</td>
+  <td>South Korea<br>k-indie<br>k-rock<br>k-ballad<br>korean dream pop<br>dream pop</td>
+  <td>Siwa &quot;   Gently, By Your Side&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7466f0e1f434900775cd44b337fedc7a45c15fb2" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-indie-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3NBXcFbFReRaoizLZqNbbn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0AOmr6B5BlVubtXNOM5JfO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1TeP3zTyiVa9fWC4EzXkZA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/06dG0zltr9SyF7f8Xwni3B" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5tC233PVUQnEcl1gLsu9yh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>korean musicals <a href="https://everynoise.com/engenremap-koreanmusicals.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea<br>W.Latino</td>
+  <td>South Korea<br>k-ballad<br>soundtrack<br>dong-yo<br>korean talent show<br>musicals</td>
+  <td>Kai &quot;With My Heart&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0e625915afcdd0e39b98749f3622dd667f6f42cd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-musicals" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7AGzclq6Jz7XfZMBukchPU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2cmWfmFv9yR7BDVhoKPZGZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5tnloJPxV979qZNE39ouIB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6SE2XjfWcWFpaNtJteHDs1" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>rock-and-roll <a href="https://everynoise.com/engenremap-rockandroll.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Korea</td>
+  <td>United States<br>doo-wop<br>rockabilly<br>bubblegum pop<br>rock and roll<br>adult standards</td>
+  <td>The Big Bopper &quot;Chantilly Lace&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9ec42ccff69fddc168527bbb16e7aebf2d4e3476" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rock-and-roll" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6eFXQejmveGc61Rvtnowda" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/34bhxCaWrYi4kF67mNYiXW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5GvnBcTx6FXNXSpYHpXySW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2AYgyd1pLdz8ZAAexRJ4jj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0b3k7DaTgyt5nLEha55XFJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>ukulele <a href="https://everynoise.com/engenremap-ukulele.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea &#x2380;</td>
+  <td>United States<br>exotica<br>hawaiian<br>slack-key guitar<br>jawaiian<br>reggae</td>
+  <td>Jake Shimabukuro &quot;A Place In The Sun&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d08429b6dfb67b00a397f2423b0724225b3c8554" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ukulele" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0e4zkNLILTo04aLBtG2a8A" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7gWXMsnp6meAp5LFCkUQ22" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/08FqQYol7KUofHMdtoIbzK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/29iea8Sh1XG2V0rHVEcb3C" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0pJdcQ4S8Wxsl008Q5uyCH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>hawaiian <a href="https://everynoise.com/engenremap-hawaiian.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea &#x2380;</td>
+  <td>United States<br>jawaiian<br>slack-key guitar<br>exotica<br>ukulele<br>go-go</td>
+  <td>Hi\'ikua &quot;Ka Pili Oha&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/56538f52f2000d7a17c3ac7f4f9a61c90719d610" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hawaiian" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1pFMcUoleX5jtFVlb0gHWb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2cmBKubFYRJ8QfvqJibiTS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Fjk7ZshQDypafQyFM3GEj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1NbqVqHSLvPaR9sA0nk4UC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Xqhphf8pXKiucRYiG1cx9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>korean jazz <a href="https://everynoise.com/engenremap-koreanjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Korea</td>
+  <td>Japan<br>vocal jazz<br>k-ballad<br>bossa nova<br>smooth jazz<br>album rock</td>
+  <td>Ju Yoon Ha &quot;Quando Quando Quando&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a09e7f2ad279253cac7ac42ee32f96c0f0e1346e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0tes866v1e7R1pFFy47dU9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0s5kSVps4n8Gxi1I4444LZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Z1LiCO9BgnvHHgR2BLaWs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/28TAYCMtZgtoavYlR9QESl" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>slack-key guitar <a href="https://everynoise.com/engenremap-slackkeyguitar.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental<br>W.Korea</td>
+  <td>United States<br>hawaiian<br>exotica<br>ukulele<br>bluegrass<br>country blues</td>
+  <td>George Kuo &quot;Waik Hula Medley&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/557c2ad4f00bcb2fbdc9d9dfb1fa3ad749645df2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/slack-key-guitar" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7hADARPB7L0RFXi78aNfD3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3AcB5ov4dAX8jddis4Bafm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Q8wdO4sIQGbwk6iwCjW1r" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18wdjIXcwyuhSZ5BLkuN5b" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/28zPj8MtrmubK9KE7fsBbG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>51</td>
+  <td>korean minyo <a href="https://everynoise.com/engenremap-koreanminyo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Korea</td>
+  <td>South Korea<br>joseon pop<br>nu disco<br>traditional music<br>k-indie<br>korean traditional</td>
+  <td>Song Sohee &quot;Sunshine in the rain&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0e0de99aa42d08b8b1d888c84069410c1d719e79" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-minyo" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5pkprRk8U2spjXDswwWtA0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/06btQ33Qu07ozASdizbTkO" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>52</td>
+  <td>korean traditional <a href="https://everynoise.com/engenremap-koreantraditional.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Traditional<br>W.Korea</td>
+  <td>South Korea<br>traditional music<br>gayageum<br>japanese classical<br>korean minyo<br>chinese traditional</td>
+  <td>Seoul Music Ensemble &quot;The Blue House&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d816dffb18db0c87b4dcfaaf9c74844fd26d0f48" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-traditional" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0zInQ7BDWAuiOrT07gcpco" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/52Z6bV877kg1F0DvGzmdAw" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0kCtkBIqHOrHm5b4qacOqr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/28PI9wC2aJZ3zrICaCixSY" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>53</td>
+  <td>korean instrumental <a href="https://everynoise.com/engenremap-koreaninstrumental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental<br>W.Korea</td>
+  <td>South Korea<br>k-ballad<br>piano cover<br>neo-classical<br>neoclassical<br>new age piano</td>
+  <td>Alves &quot;Beautiful (From  [Original Soundtrack])&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9a2136d02eac044d9b2f93480bd145f1aed2eda1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-instrumental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2SIrVoakdP5Xj3akLC0rD7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2zoo13IlfY1VrvdX9NfePC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ENRl2ulG581JNyI0YayyO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1L4N2a3vtl2xVmkML4b2GB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3glZ4gtVtn0wgyKXvgI4C6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>54</td>
+  <td>korean classical performance <a href="https://everynoise.com/engenremap-koreanclassicalperformance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Korea</td>
+  <td>South Korea<br>korean classical piano<br>classical piano<br>classical<br>chamber music<br>opera</td>
+  <td>Kyung Wha Chung &quot;Vivaldi: The Four Seasons, Violin Co<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/52c7d1530837026d66b4727df34449ec9b94a9dc" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-classical-performance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1RN7xzyYdkLzrg7sP4fwHf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ILgcuCSyGWNY1RejVHgiN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6b82wF0elhzMveagO6hqKw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1HJOUxt1d1q9Fs2lM73QZU" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>55</td>
+  <td>korean classical piano <a href="https://everynoise.com/engenremap-koreanclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Korea</td>
+  <td>South Korea<br>classical piano<br>korean classical performance<br>classical<br>neoclassical<br>chamber music</td>
+  <td>Seong-Jin Cho &quot;Suite bergamasque, L. 75: III. Clair d<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9ed82399ca9f16b38db2d5b39d77d59dc864822c" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/46w9Q2OzIJe3v0uIjFq0y0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Bb1Rfc7TbQOHCMm4MHgCj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2POyo3s40N7s4qUrv1WJgY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RTiUN1RXrvcvutMz6ehdt" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>56</td>
+  <td>korean contemporary classical <a href="https://everynoise.com/engenremap-koreancontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Korea</td>
+  <td>South Korea<br>contemporary classical<br>21st century classical<br>avant-garde<br>korean experimental</td>
+  <td>Unsuk Chin &quot;Piano Concerto: III.&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/468390dfbd86d759fe87edcbd1607b4fc35719bf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2xzbAWC0hEkcj0yHalsCTz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3BD1sI4da2uZZd2uQ90Ttk" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>C.Pakistan: (8 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> C.Pakistan: (8 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the given genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>1</td>
+  <td>pakistani electronic <a href="https://everynoise.com/engenremap-pakistanielectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Pakistan<br>Synth.Electronic</td>
+  <td>Synth.Electronic:10<br>C.Pakistan:3<br>Hip Hop:3<br>C.France:2<br>C.Latino:2<br>Reggae:2<br>Psy.Goa:1<br>Indie:1<br>Trap:1<br>C.Belgium:1<br>C.India:1<br>C.Korea:1<br>Dubstep:1</td>
+  <td>Rovalio &quot;Iraaday&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6692bc18252380cf993f2169390bac538dc85902" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pakistani-electronic" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/25WUrbL32sptDy2WqzfL87" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Ak38dht6lisoGU2ic5Ivn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/54agAirZVWBwR7eqLFrxLd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7g1wgCEJDDura3Z5VCJdoy" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>pakistani hip hop <a href="https://everynoise.com/engenremap-pakistanihiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Pakistan<br>Hip Hop.World</td>
+  <td>Trap:8<br>Hip Hop.World:6<br>C.Latino:4<br>Rap:3<br>C.India:2<br>C.Pakistan:2<br>C.Sweden:2<br>Hip Hop:2<br>Psy.Goa:1<br>C.Brazil:1<br>C.Dutch:1</td>
+  <td>Hashim Nawaz &quot;Aik Bhai&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8dbba9ea0cecfc5dd5a0d9463bd1ef9cfd9d9117" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pakistani-hip-hop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0xHKr5eH5yHr55hPSbsWc0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5whUHDaHLA2mioNHdWSB3J" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1pJXb5Joz3maEZsTnVBIDw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3ykc3ZjoQM8d4faHfUOVnE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>pakistani rock <a href="https://everynoise.com/engenremap-pakistanirock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Pakistan<br>Rock</td>
+  <td>Indie:15<br>C.Pakistan:4<br>Rock:3<br>Pop.World:2<br>C.Cantonese:1<br>C.Dutch:1<br>C.Taiwan:1<br>C.Turkey:1</td>
+  <td>Karakoram &quot;Ye Dunya&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dd0ef4cafacb3d9281d3390610b1f30e7eb60d62" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pakistani-rock" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4D6h4h29rGjq8k7anBIl1O" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0cZEbx5OOLtKCJGCiZ34MQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/54Ks5rMpYlWg8DmiyyYNox" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Wl0Cw0PTK10kVbKFcqn0R" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>pakistani indie <a href="https://everynoise.com/engenremap-pakistaniindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Pakistan<br>Indie</td>
+  <td>Indie:16<br>C.Pakistan:4<br>Synth.Electronic:1<br>Rock:1<br>Pop.World:1<br>C.China:1<br>C.India:1<br>C.Native.Tribes:1<br>C.Poland:1<br>C.Portugal:1<br>Experimental:1<br>Curated.Eyedress.Era:1<br>Blues.Soul:1</td>
+  <td>Talal Qureshi &quot;Kali Raat&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d31d117288607d28dbda944a5d27c91e30d00ff7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pakistani-indie" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6THzRYh7cRGUHAxQjkqKT8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/34sSKMpn4f3GCU1Wpz8TBq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Xekz8GbXAtodvYZz6RK12" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2RE7L4eepfGhBeHsR8e5Bo" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>pakistani pop <a href="https://everynoise.com/engenremap-pakistanipop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Pakistan<br>Pop.World</td>
+  <td>Pop.World:11<br>C.Pakistan:4<br>Rock:2<br>C.France:2<br>C.India:2<br>C.Latino:2<br>C.Belgium:1<br>C.Hungary:1<br>C.Sweden:1<br>Folk:1<br>Gospel:1<br>Blues.Soul:1</td>
+  <td>Nabeel Shaukat Ali &quot;Bewajah&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/77dcff4cb6b389554b245cb2785aa0650e4d9ae8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pakistani-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6LCUot3Rae69MN9sZzBr3s" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4q8EdrXEg1xoyb97AdZ8jW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3fupHpbPjnpo6UrTYv2xR8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/39amUZ2Ymw8NEANrPe60ZK" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>saraiki pop <a href="https://everynoise.com/engenremap-saraikipop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Pakistan<br>Pop.World</td>
+  <td>Pop.World:8<br>C.India:7<br>Rock:6<br>C.Pakistan:2<br>C.Afghan:1<br>C.England:1<br>C.France:1<br>C.Germany:1<br>C.Latino:1<br>Folk:1<br>Gospel:1</td>
+  <td>Wajid Ali Baghdadi &quot;Sone Di Chori&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/862f481712e93c325ef33f6a4483498b22bfab34" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/saraiki-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/198sP5On6NnvbwsTpN9KDz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6nQkcWbJia5AXuk1LM6fno" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZxzyskXuxe9chS9OGUh83" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0tQ05PALmKkZPLa444ithP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>classic pakistani pop <a href="https://everynoise.com/engenremap-classicpakistanipop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Pakistan<br>Pop.World</td>
+  <td>Pop.World:4<br>C.Pakistan:4<br>Rock:3<br>Blues.Soul:2<br>Pop:1<br>C.Canada:1<br>C.India:1<br>C.Korea:1<br>C.Spain:1<br>Folk:1</td>
+  <td>Abrar Ul Haq &quot;Chamkeeli&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/576519e9ba85e5e0149ff4486efb0e6e9c05de6e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-pakistani-pop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ur6DACA2GqkuZyJVMtwsp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3zzvb7oXB2AUIb0reOieAx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/02dIcMN4sgGtTqDmOKIdh1" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4HcZXJxOiuyJUFHkvuK8fb" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>pakistani folk <a href="https://everynoise.com/engenremap-pakistanifolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>C.Pakistan<br>Folk</td>
+  <td>Rock:5<br>Blues.Soul:4<br>C.India:3<br>C.Pakistan:3<br>Folk:3<br>Pop.World:2<br>C.Korea:2<br>Psy.Goa:1<br>C.Canada:1<br>C.France:1<br>C.Thai:1</td>
+  <td>Reshma &quot;Lambi Judaai&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/270dbd77939ad806293166d28bdb39fe75188dd2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pakistani-folk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4L1EM7qJVxlMg06KVPB8CW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0INw0RVOQpZvWJVe8Z8zhb" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6nrMNxiOFsUziIh4AEHmEg" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+  }
+</script>
+
+
+</body>
+</html>

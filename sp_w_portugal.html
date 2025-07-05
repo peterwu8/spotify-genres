@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Portugal: (43 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Portugal: (43 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Portugal is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>portuguese techno <a href="https://everynoise.com/engenremap-portuguesetechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Portugal</td>
+  <td>Portugal<br>techno<br>acid techno<br>minimal techno<br>hard techno<br>portuguese electronic</td>
+  <td>The Advent &quot;Stronger&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c43a4a9c8abd2a3a1aa4276508dff4de793a5a70" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6FNcLTXD3V9rA0Xa3AvMqs" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0CTd4Z6oTkyeVD394QZ5cw" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Ti5iJaENcP7mzbUjR7YRL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Pg3cyqpaB9Z7x928OkCK1" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>reggae tuga <a href="https://everynoise.com/engenremap-reggaetuga.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Brazil<br>W.Portugal</td>
+  <td>Portugal<br>dub<br>portuguese hip hop<br>reggae<br>roots reggae<br>portuguese rock</td>
+  <td>Kussondulola &quot;Perigosa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/da9c5b4d1e9d01e45935f0630432f66aedda32d2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/reggae-tuga" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5qs1dTlLMvJH5vUKLNPgjE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1WnFoROuRDgngEYyU1D2rI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3u8T9YvEibxi6eIxHlGHNq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1eEgkGNH287jYEEbRj0NzQ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>classic portuguese pop <a href="https://everynoise.com/engenremap-classicportuguesepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Portugal</td>
+  <td>Portugal<br>kuduro<br>fado<br>traditional music<br>portuguese rock<br>kizomba</td>
+  <td>Broa de Mel &quot;O fim de uma vida a dois&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cd69b0680a347016b38aa669930d9929e932d2ce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-portuguese-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6DqfgangOfKxeEeWJvuVAT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/196T2qP29EjWxI1x6oSiXa" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1XXnxf0aveYhHgmgkctUjt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6uhW7n4Pxy5HKOnd4uqadI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1eqh3Y7yCxSRNYa3KKiCH6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>rock cristao fluminense <a href="https://everynoise.com/engenremap-rockcristaofluminense.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>Rock<br>W.Brazil<br>W.Portugal</td>
+  <td>Brazil<br>christian rock<br>brazilian evangelical music<br>brazilian gospel<br>metal cristao<br>gospel</td>
+  <td>Folhas de Outono &quot;Onde a Realidade Se Transforma&quot<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3779c322e3021535778ef9f4cb349a5460df68c6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rock-cristao-fluminense" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5kVtCvwWnQfCQPytyNtUc6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/144jJIiJ1sVSlU1anED49d" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>portuguese metal <a href="https://everynoise.com/engenremap-portuguesemetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Portugal</td>
+  <td>Portugal<br>thrash metal<br>portuguese death metal<br>groove metal<br>speed metal<br>death metal</td>
+  <td>Revolution Within &quot;Pure Hate&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6fd133934145538ad8fafc8d6addfbc22d874fde" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0tAK8J51cyWGQz1OVrSqjb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5DcksqG6G4xJ9nu1t15wEQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0pqJv6eRZmbIFmvSW1INyu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0VWOPzsuv83szAPg4jJRwt" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>portuguese death metal <a href="https://everynoise.com/engenremap-portuguesedeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Portugal</td>
+  <td>United States<br>portuguese metal<br>death metal<br>grindcore<br>doom metal<br>groove metal</td>
+  <td>Sacred Sin &quot;Darkside&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/42abcecd6b2ae0c0a85f1532ef4ea606ca9b118c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6CdnLHgqSO6OFACjgqZLMx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0LcFA2C9lH8yfRXt8S2N3R" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>reggae cristao <a href="https://everynoise.com/engenremap-reggaecristao.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>Reggae<br>W.Brazil<br>W.Portugal</td>
+  <td>Brazil<br>reggae<br>brazilian gospel<br>gospel<br>brazilian evangelical music<br>roots reggae</td>
+  <td>Ato Roots &quot;Tudo Ele V&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3bc7cb951aef15891481f48a458012cc9fb22f79" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/reggae-cristao" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1las3sGu1aP5rnqUqosvdH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4BPmThDHR47PaOqWnG3igj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0USyyCQiaScdyQ9Oh17ki4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5mOi21ggIhZ4iaTUKXy2Q1" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Pqg6LP8ioTU19FKP00XeV" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>punk tuga <a href="https://everynoise.com/engenremap-punktuga.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Brazil<br>W.Portugal</td>
+  <td>Portugal<br>portuguese rock<br>portuguese hardcore<br>hardcore punk<br>portuguese metal<br>hardcore</td>
+  <td>Trinta &amp; Um &quot;Coma 85&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/188c2e449558866f085833dbf01383a139c55896" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/punk-tuga" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6W1YdGLXnyOzGAdL4kkSiz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Rc2TBXWekRzcu21vwlYS2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/48rBxifGex8huD6AK5CvqG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4WsEmgOIuPLh8XuO64r41O" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1aHfPxjUu93pfk7DNBoxtm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>rap portuense <a href="https://everynoise.com/engenremap-rapportuense.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Portugal</td>
+  <td>Portugal<br>portuguese hip hop<br>hip hop tuga<br>portuguese rock<br>portuguese indie<br>reggae tuga</td>
+  <td>Enigmacru &quot;Morfologia das Consequ&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9a5423db6b573a8104c116716c98e4a7df06f1df" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-portuense" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5EXIZnrzrt0c6iHQMcKU3H" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7vNJd1Kg4UrCwPK3nZryvq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5oQXvFeeZ1zMGWQv5mArMK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6WnheFy3Z3OqjDixfhVMmv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2TgdHbmh6B2AI0HtYZCm9T" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>portuguese indie rock <a href="https://everynoise.com/engenremap-portugueseindierock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>Rock<br>W.Portugal</td>
+  <td>Portugal<br>portuguese rock<br>portuguese indie<br>portuguese post-rock<br>post-rock<br>proto-punk</td>
+  <td>Ganso &quot;Sorte a Minha&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a4025704e3b2688bcf04368278cc431de57a7215" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-indie-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4kZN7m8MB48NJ5uvSR2v9p" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0RcObnwNtF2QxFx5hFSLJv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Ab3FLwHYkAc6TbAIgMith" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ocU7dlACXnZA72lMerxeN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3RRknaii64HVnMTgWQKLVS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>metal cristao <a href="https://everynoise.com/engenremap-metalcristao.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>Metal<br>W.Brazil<br>W.Portugal</td>
+  <td>Brazil<br>christian rock<br>brazilian gospel<br>death metal<br>metal mineiro<br>unblack metal</td>
+  <td>Implement &quot;Pentecostal Insanity&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ee0e07ab00d2d922016231edbe55dab4c310b422" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/metal-cristao" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6qF0322p4cbtyWH4bjoKKn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7BAkBfgas8V5uEHj5laJGI" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>portuguese hardcore <a href="https://everynoise.com/engenremap-portuguesehardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Portugal</td>
+  <td>Portugal<br>hardcore<br>hardcore punk<br>punk tuga<br>portuguese metal<br>grindcore</td>
+  <td>Deadly Mind &quot;The way of the brave&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bee690566e5155b924185c53ddbdc23888b8dcd7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/77CnwjMhSAzqc3JG19P38a" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Rcb7ssxQppghsnMG37D8s" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KzJ53tSgJvtOG8gtQgBJN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1t9CH3JIgVomaF9IUHH4oD" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>portuguese black metal <a href="https://everynoise.com/engenremap-portugueseblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Portugal</td>
+  <td>Portugal<br>black metal<br>portuguese metal<br>avant-garde<br>gothic metal<br>cryptic black metal</td>
+  <td>Morte Incandescente &quot;Diz N a Vida&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f791c18d8508fcd39720878b8037db93c8e7578d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6VY7MVmycLuAxxb6A892AC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4PKY5a2HVsjJDCJ6nbT3k0" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>trap cristao <a href="https://everynoise.com/engenremap-trapcristao.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>Trap<br>W.Brazil<br>W.Portugal</td>
+  <td>Brazil<br>brazilian gospel<br>gospel<br>christian hip hop<br>brazilian evangelical music<br>christian pop</td>
+  <td>Felipin &quot;Alian&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/75ed42eb5a6f89aac8ab1de5d16fab0e9c8d0e90" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trap-cristao" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Cn6zEHqlmJM7jLbnvYGsc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/58YRfR5mNZGK7nwIEKayTf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5VlxAoJV4tDLuPDg8BePpr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1DcPEipP5chM5xGE5bKDr3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6aZZ61nSOM1aiZmbi9bnEE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>portuguese pop <a href="https://everynoise.com/engenremap-portuguesepop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Portugal</td>
+  <td>Portugal<br>portuguese hip hop<br>kizomba<br>fado<br>kuduro<br>zouk</td>
+  <td>Virgul &quot;Rainha&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e86894e695e533d633cce240c2c3b93f8b0cd02a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6QwaC8zFuGRhqHTJwxv1uA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Rn01P3YPioy5QRQoo32Lv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/54h7oZ0QLTufJvVb1k5f6H" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3reLD18lScUAtwuLxsnW8e" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7G2GBz9lWPI7lnLXM7J5wO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>rap cristao <a href="https://everynoise.com/engenremap-rapcristao.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>Rap.World<br>W.Brazil<br>W.Portugal</td>
+  <td>Brazil<br>christian hip hop<br>brazilian gospel<br>brazilian evangelical music<br>gospel<br>brazilian hip hop</td>
+  <td>Mano Sass &quot;Ele Pagou o Pre&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/26098b331e3a0836a41a797471d439e604d66ad5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-cristao" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2hl4cDJqphv0sBh2uj1uWW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5pLrIA7efzz23RMrQUiMFt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/697Fh8Z95u4pACgM41GTY7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07YyMVGYdivKtmtcrLWZa3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5m5kmeSokkae6cwib35xVx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>portuguese indie <a href="https://everynoise.com/engenremap-portugueseindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Portugal</td>
+  <td>Portugal<br>portuguese rock<br>fado<br>portuguese post-rock<br>space rock<br>musica portuguesa contemporanea</td>
+  <td>Glockenwise &quot;Besta&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dca6c2027fbda25cfee4177c7a5c1f5fae6d4456" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/35tUnc00ejtL0mBXF0A1vs" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6iwoiGbEuqmejpaGrxJWiT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2hE2dHDMR3G7lRsn7w2Yj9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ucYJThpwq5LnFKyxyJXKj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1fxbvyeEzOUbVs1sBjXXgG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>drill tuga <a href="https://everynoise.com/engenremap-drilltuga.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Brazil<br>W.Portugal</td>
+  <td>Portugal<br>portuguese hip hop<br>drill<br>rap criolo<br>trap tuga<br>hip hop tuga</td>
+  <td>PML outlaw &quot;Tl Step&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/00962a163e015d4524adfc337292f3fe66c1711e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/drill-tuga" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6sUF7iL0W8v7uOh1w9gysV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1L5MigE9vLvXw3IuRMqST9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/32IhviGDHA9MUaSuB12NdS" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5qNy0jrsaIbcFKG0sq2MBQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4At7532YABSBUShMrf4yXz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>portuguese rock <a href="https://everynoise.com/engenremap-portugueserock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Portugal</td>
+  <td>Portugal<br>fado<br>portuguese indie<br>portuguese hip hop<br>punk tuga<br>portuguese pop</td>
+  <td>Virgem Suta &quot;Linhas Cruzadas&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/19c08a489b3c7b2d4772d3fd2efef1fb0e4bfb9a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2NXI3TqnPG08EE3BaNwR6W" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6k201S3pA59wTeZ9NZ386Y" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3N4BnQq8QIbIFg46oF0ToE" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5qH7JHTyygYsbS2P2DDOhj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/486DynZf7N3FKt1ho5479X" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>indie cristao <a href="https://everynoise.com/engenremap-indiecristao.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>Indie.World<br>W.Brazil<br>W.Portugal</td>
+  <td>Brazil<br>brazilian gospel<br>brazilian evangelical music<br>christian rock<br>gospel<br>christian folk</td>
+  <td>Hipona &quot;Gra&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/08a8b5eaa69e4f7f7e57b58001c9acf8fdd934ef" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-cristao" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0RHYIwMBN9lDkxEKgbcJur" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Ly1Hq4HqgMOtjLjjzOgXO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5dicgPwpWiVgmuBeCfE59g" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6UitqESQWp2Q3exOxfNkkU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6dd7IcUIyRKUGYfUy33gMI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>hip hop tuga <a href="https://everynoise.com/engenremap-hiphoptuga.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Brazil<br>W.Portugal</td>
+  <td>Portugal<br>portuguese hip hop<br>kizomba<br>trap tuga<br>rap criolo<br>kuduro</td>
+  <td>XEG &quot;Os Mais Pesados da Capital&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8f915dded771697892f936a5b6b78cef385ee170" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hip-hop-tuga" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7wGJpFYv9Ga1qCoTkUGPLe" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0x84YFPn4ct9Wvaix9icxJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ikblV8NWt6MIXKthY1sQu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2TRsBxfD6yYDDMVduBQFYj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3VvWtrPfgLRiIZv2zpkQel" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>portuguese post-rock <a href="https://everynoise.com/engenremap-portuguesepostrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Portugal</td>
+  <td>Portugal<br>post-rock<br>portuguese indie<br>math rock<br>space rock<br>portuguese rock</td>
+  <td>Surma &quot;Maasai&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0c0b770db2287ddae0c22ff510e8c7e0b91489f2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-post-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3gIaygnVLMLLDEK0J6BlW1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/31adiB2neUkKBC43IBDeXA" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>gaita <a href="https://everynoise.com/engenremap-gaita.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Portugal</td>
+  <td>Spain<br>celtic<br>traditional music<br>galician folk<br>spanish folk<br>musica folk asturiana</td>
+  <td>Susana Seivane &quot;Sabelina&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/da5a58e5cd2ac7b8b0cf176a886a21695a585c00" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gaita" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3XiY9sIddvkEVYp4OHeF6c" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0QOMzxeAATjlhQSckJMqhR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2PuCg0wfhj1R5LM9lgpzHA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Pmh2mFpL21zv7QbBj8xTh" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1D4jKEc4hvnkDP4gzhBsdY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>trap tuga <a href="https://everynoise.com/engenremap-traptuga.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Brazil<br>W.Portugal</td>
+  <td>Portugal<br>portuguese hip hop<br>hip hop tuga<br>drill tuga<br>rap criolo<br>drill</td>
+  <td>Dero Vibez &quot;Andamento&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8df5b00a0051a7dbf5d84dcdf8bef88ddf453ed1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trap-tuga" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3f0v1f0qnwRwjcrsMeT2qu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7t4tzhzcgMECBO6RaUEYiD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5eP4T8bW2Bh3eoQeLU0sa0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5khSisa7Y5v4BOAcjAg7of" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2FTpFfisG0HSUyafwD9mDi" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>rap criolo <a href="https://everynoise.com/engenremap-rapcriolo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Portugal</td>
+  <td>Portugal<br>portuguese hip hop<br>kizomba<br>drill<br>hip hop tuga<br>drill tuga</td>
+  <td>Mini God KK &quot;Cora Congelado&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bae3253eb6c94724b8128dbb0716c0c31a7aa8b6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-criolo" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/36G6jSDBFVWu4AJ6Tb0T2H" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3WimcdcNdj9vhbL0jd5l0f" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/45c449ehHEEZ46FW5uScl8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4UyBUXOSreYoGHfMK8Y6wC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4eiNhRCMAnLpyPQKkuCP9y" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>rap tuga underground <a href="https://everynoise.com/engenremap-raptugaunderground.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Brazil<br>W.Portugal</td>
+  <td>Portugal<br>portuguese hip hop<br>hip hop tuga<br>kuduro<br>edm trap<br>jazz rap</td>
+  <td>Sensei D. &quot;De Sol a Solo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2feffc95eae3e6889000c983cfd33a830a102893" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-tuga-underground" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6IMkXsUN5R9VOCyZC6w4hw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4gfHmDnWsC0r6wwvv9ilni" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3YdCp26GRltIHsrGL7B0EM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6FW2vXFCuSOrimjC1zd8x5" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6NwmqbnKcYj9kS3JQ9I5Fh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>gaita zuliana <a href="https://everynoise.com/engenremap-gaitazuliana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Portugal</td>
+  <td>Venezuela<br>classic venezuelan pop<br>merengue<br>musica llanera<br>traditional music<br>villancicos</td>
+  <td>Rincon Morales &quot;Orinoco&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/91e96543daf651206c923bd8cc4e777746c1871f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gaita-zuliana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0KXOkRH3KQSuGZ8HHptZsE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3s9WQKVA4PGM3fE2XgT4TK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/11SI1oZcajP8VU73SRGm0J" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/23JaXB1BUXOejLag8vFMjv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KQKY3fLj8mOwfZd21M3qn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>morna <a href="https://everynoise.com/engenremap-morna.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Portugal &#x2380;</td>
+  <td>Cape Verde<br>kizomba<br>fado<br>zouk<br>musica cabo-verdiana<br>cape verdean folk</td>
+  <td>Ildo Lobo &quot;Alto Cutelo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/813bddac22e9bb2f99f9bdfd728e26d0dc7130a8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/morna" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/03z0OnnGWcvc2QlYliXUYK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6khu4gXbpy8qG2GW1UWLlI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5OYeC7MAWshpNhMW0N2ESx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/43FgxBWNeEzVA6QFdznqJ5" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/42HFPAIUdoPxaiW1zHOHLl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>folclore portugues <a href="https://everynoise.com/engenremap-folcloreportugues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Portugal</td>
+  <td>Portugal<br>traditional music<br>fado<br>portuguese folk<br>classic portuguese pop<br>cante alentejano</td>
+  <td>Rancho Folcl Divino Salvador de Del &quot;Malh da Nossa Te<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ff8ec46b82b28824f305d9cdc8b1eb85e9f628d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/folclore-portugues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1UE6uiJjsfTTZgddWZROZh" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3weJSiTAEBXFb2GGzQdzDH" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Vdu9Vz84HiU0VmYy8zZKv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0h9h98z006UdgUEn2izVPk" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>portuguese experimental <a href="https://everynoise.com/engenremap-portugueseexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Portugal</td>
+  <td>Portugal<br>experimental<br>avant-garde<br>kuduro<br>drone<br>free jazz</td>
+  <td>T Trips &quot;Tango Surdina&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3297a5c0f99453517ddfc6b044133e0d16baa532" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1VS6fsjHwhSgoHa3mKKOhp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0ju49bDfuL4CUqVhqna7s8" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>musica portuguesa contemporanea <a href="https://everynoise.com/engenremap-musicaportuguesacontemporanea.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latino<br>W.Portugal</td>
+  <td>Portugal<br>fado<br>portuguese rock<br>portuguese jazz<br>portuguese indie<br>latin folk</td>
+  <td>Samuel Uria &quot; preciso que eu diminua&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3f90e1bac403a31ef4d6433c1efd170bc4b47461" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-portuguesa-contemporanea" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Hk7NzaF1qlL1EZBXP5Zf7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0rEVT4ZihSorrk2EwgmP63" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0jegkxZFcxZfM38aRhY8xo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3RPCTrya96OSsi6KWeAD3d" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1kU962b00OedIbgt3trLkJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>tuna <a href="https://everynoise.com/engenremap-tuna.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Portugal &#x2380;</td>
+  <td>Portugal<br>fado<br>portuguese folk<br>musica acoriana<br>traditional music<br>portuguese hip hop</td>
+  <td>Tuna Universit do Minho &quot;Adeus  Sempre Adeus&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e7efb86ad2fb7c3d875ee945b25cd05eaaf417f5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tuna" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3GmitYrbpInef9kltHEyfM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2GvK28xdNdKftHJ2hL2lTm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bnsMV4kdWBB2nSkb4vnJ8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5mhk2CDmEEHjz2E1iP39oX" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>portuguese folk <a href="https://everynoise.com/engenremap-portuguesefolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Portugal</td>
+  <td>Portugal<br>fado<br>traditional music<br>folclore portugues<br>musica de intervencao<br>tuna</td>
+  <td>Julio Pereira &quot;Bai do Mar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e6a19acbf26cbf343da0d6595507d78c6a785d98" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7GCdSrnhWicID1LgzDnjDJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4sg2LK8vl8utC7ug4xPknT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0G029eLq4j5hLKQz7S2a0d" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6USfz7MesmEN0ZsM5uBBsz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5YitU9dH4hKXlMCYTZlTxg" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>fado instrumental <a href="https://everynoise.com/engenremap-fadoinstrumental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental<br>W.Portugal</td>
+  <td>Portugal<br>fado<br>guitarra portuguesa<br>fado de coimbra<br>traditional music<br>fado antigo</td>
+  <td>Francisco Carvalhinho &quot;Fado can&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b5cd78bba0d157f8ffb6116bf519d9b831ca1ff6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fado-instrumental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Z5B8uj41oTxIGkll2c0as" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2w0tfXHDvjHmSqZ3Pi1OuJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/37VdasuGfSsqf4zjfvlsxA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3cbir82REgmBiABDuZZSYV" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>fado <a href="https://everynoise.com/engenremap-fado.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Portugal</td>
+  <td>Portugal<br>portuguese rock<br>portuguese pop<br>morna<br>classic portuguese pop<br>portuguese indie</td>
+  <td>Maria Da F &quot;Divino Fado&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/908d5103de6e77db69c17c0c6112002a1d724fed" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fado" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4pJkCtJ1dCwnvu36BMyfeC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5yLmmznzjfw9EnWo1MFtdL" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4kOYEVelZpQ2VyUWaTLn86" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6MnvScsakQ1RlDtY2FdnrR" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/08O8nhbdqcfOGM1DtdcTFh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>portuguese jazz <a href="https://everynoise.com/engenremap-portuguesejazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Portugal</td>
+  <td>Portugal<br>fado<br>free jazz<br>brazilian jazz<br>vocal jazz<br>musica portuguesa contemporanea</td>
+  <td>Bernardo Sassetti &quot;Reflexos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/150832a10c72bb70d1cced91e2b86cb03d8b9fb3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/54NEUlIWqakaPScE9vOmOy" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2NXy82Atoz6QzvmxQ0rir3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ANyb64ptFxBpwpK5yqfxs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rPjmyHFELN1hpMOkxLKJF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2awZtDpNbZ7PQ4bQ2uDF8o" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>guitarra portuguesa <a href="https://everynoise.com/engenremap-guitarraportuguesa.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental<br>W.Portugal</td>
+  <td>Portugal<br>fado<br>fado instrumental<br>fado de coimbra<br>traditional music<br>fado antigo</td>
+  <td>Carlos Paredes &quot;Can verdes anos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7f6fe5e52d9abaf810af80d4f25bda660a19e2f9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guitarra-portuguesa" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2C3apP7uxeKIHTIoJIpvXK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0kxFR8tp2YZ8BsAvRpaSDl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Hc0XfVoiO1YV9GtJ1L0wg" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/334Ea4OG3NGHtYtdzbazNy" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>fado antigo <a href="https://everynoise.com/engenremap-fadoantigo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Portugal</td>
+  <td>Portugal<br>fado<br>fado de coimbra<br>guitarra portuguesa<br>fado instrumental<br>cante alentejano</td>
+  <td>Fernando Farinha &quot;Menina do R-Do-Ch&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/43d5cc1b8fee96ace70882e143a7567cac33f62c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fado-antigo" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7uAtGYi42yWyjASjKS8rzZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6kMd7pDwtSA0F7b0RrvsSe" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/15X7d1iAiErPdCjymAfNdt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/01uYCaqKLVOObJfoZdUbHX" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>cante alentejano <a href="https://everynoise.com/engenremap-cantealentejano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Portugal &#x2380;</td>
+  <td>Portugal<br>fado<br>traditional music<br>folclore portugues<br>fado antigo<br>opera</td>
+  <td>Grupo Coral de Cantares Regionais de Portel &quot;Eu Ouvi <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f906beeaff7097b882234e2acacb649cfa480918" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cante-alentejano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6HNRCdSanoA4j7vEjPHe7X" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6gbXFwyN4DFGTeFysOYiCn" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/51zLkm1mEZJfibYNeRoLW4" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>fado de coimbra <a href="https://everynoise.com/engenremap-fadodecoimbra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Portugal</td>
+  <td>Portugal<br>fado<br>guitarra portuguesa<br>fado instrumental<br>fado antigo<br>traditional music</td>
+  <td>Luiz Goes &quot;Fado Do Estudante&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0b47476ab85ae6abe0317c255a298d2fd4321836" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fado-de-coimbra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1F0BmLdhWKjBFzzM183uf0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/24ThUsj0I1BHKdVe0oIbJS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Zwhcci8WPzB3JQSIgZHXy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07rzC2le8n8eSFJ1h4DyAX" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>portuguese contemporary classical <a href="https://everynoise.com/engenremap-portuguesecontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Portugal</td>
+  <td>Portugal<br>portuguese classical<br>fado<br>portuguese jazz<br>avant-garde<br>neoclassical</td>
+  <td>Eurico Carrapatoso &quot;Lla, contradan e descantes: No. 1<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fe7b9725052f9a0275880b3cabe97a6ec37486b2" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6A2umsv2kIcAoV2dynVhuM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6VoRk8kuJy99zXhIxdjwqt" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>portuguese early music <a href="https://everynoise.com/engenremap-portugueseearlymusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Portugal</td>
+  <td>Portugal<br>galante era<br>portuguese classical<br>gregorian chant<br>spanish renaissance<br>minimalism</td>
+  <td>Francisco Ant de Almeida &quot;Il trionfo d\'amore, Introdu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/130881a588ddf6dde606f76e57cb40a571829589" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-early-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2qfZvPDjGOTZl8dZBG4KzX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2WWDUDxy1PCo3bonaDqe6A" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>portuguese classical <a href="https://everynoise.com/engenremap-portugueseclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Portugal</td>
+  <td>Portugal<br>portuguese contemporary classical<br>fado<br>portuguese early music<br>galante era<br>brazilian classical</td>
+  <td>Jo Domingos Bomtempo &quot;Bomtempo: Requiem to the memory<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7f217eb5abd997b8cc57711757cb2a0b4ffb3d72" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/portuguese-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6fcnAWOD27fd33kJqVAhkT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6fFdKNug4QTsmBT6vX8Axr" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

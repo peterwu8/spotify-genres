@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Ireland: (45 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Ireland: (45 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Ireland is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>irish techno <a href="https://everynoise.com/engenremap-irishtechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Ireland</td>
+  <td>Ireland<br>techno<br>acid techno<br>dub techno<br>irish experimental electronic<br>minimal techno</td>
+  <td>Matador &quot;Apollo 11&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/18ac923cffc90af7d5ec9af984864b06400cf49a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/16vdqGuEcL99q2OGQ4PFIB" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4DQTzDMn0qfHZRt1NMk5A3" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>irish electronic <a href="https://everynoise.com/engenremap-irishelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Ireland</td>
+  <td>Ireland<br>acid house<br>lo-fi house<br>techno<br>breakbeat<br>tech house</td>
+  <td>KETTAMA &quot;Fly Away XTC&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e19dc292882d3f79a415446e3be09c4eae8c5ed5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Z4M2ghfpaq5flM15pOvOX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7vtKvrXpzwYH31cDsCSL5z" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/68p215DVVqdg6wmv3ZU8M4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0GH8mo6I0GTSE4UdO9uATP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2nOD8KyogpqnRSwt9yRaDf" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>irish experimental electronic <a href="https://everynoise.com/engenremap-irishexperimentalelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>Synth.Electronic<br>W.Ireland</td>
+  <td>Ireland<br>idm<br>irish techno<br>dub techno<br>experimental<br>glitch</td>
+  <td>New Jackson &quot;There Will Always Be This Love&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7a6ea858bd98b64c83bd813d694bdc79182be09f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-experimental-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/74cCmCHw8oySqkOt4oE1Wo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/24RLueVXOuPDMBFnTTBogj" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>northern irish indie <a href="https://everynoise.com/engenremap-northernirishindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Ireland</td>
+  <td>United Kingdom<br>derry indie<br>belfast indie<br>northern irish punk<br>british alternative rock<br>indie folk</td>
+  <td>Brand New Friend &quot;Talk It Out&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/debd7b34ecf7a150c86db1dd58dca6afbc819de9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/northern-irish-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5j85QYSHLZ1smeO2CNvriD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1fe9VfOKBZBwKQtblm4Ceq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5mRwpEkpFhhzYjwCRxz9sC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7myd0pHkRYkcnZcEzyOO4n" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6BWlQV9uFKQyxUpsUI97wC" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>irish trap <a href="https://everynoise.com/engenremap-irishtrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Ireland</td>
+  <td>Ireland<br>irish hip hop<br>afroswing<br>afrobeats<br>alte<br>emo rap</td>
+  <td>Evans Junior &quot;Movie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/79dbf2d815041d4b4e6d98207677885c2271e67e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-trap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Prkf0Mk4H2fUmxlgTZ0tr" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1u5mmyg0iXNefdvJnyYxR1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ov6iaDedJaiYbPVi9Lfpc" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>irish drill <a href="https://everynoise.com/engenremap-irishdrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland</td>
+  <td>Ireland<br>drill<br>uk drill<br>irish hip hop<br>grime<br>anime drill</td>
+  <td>Av9 &quot;Sasuke&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d5f86bf2f63ef0e13adc6c2cc90f70f1148b2180" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-drill" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/69jCZRRirDAdrtbJPzeXgA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6CDATmLv64et9BPZMpUspM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5WiP24jAVM5qpFylncdbja" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2gPzt3vPnbDlExaSUlz2UO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1f1nzbNwd9i12tsZ2A7wPE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>irish indie rock <a href="https://everynoise.com/engenremap-irishindierock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>Rock<br>W.Ireland</td>
+  <td>Ireland<br>irish rock<br>irish post-punk<br>post-punk<br>crank wave<br>shoegaze</td>
+  <td>THUMPER &quot;The Loser&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c97174a7c48ae2c9e36e7db764030197961f99b1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-indie-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3hceqBVg2TnXLMH1NzuNQn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7BIh11WdlHdXCweFeyjmJ6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7AL3HE74ZrsAqWzcHS7RST" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2GtnpfCCl2KsRUTZqDrzDP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6FuemQ8zrBv63dALrAdk9H" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>irish post-punk <a href="https://everynoise.com/engenremap-irishpostpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Ireland</td>
+  <td>Ireland<br>post-punk<br>crank wave<br>irish indie rock<br>noise rock<br>darkwave</td>
+  <td>SPRINTS &quot;Up and Comer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5966b77ca2c6d81b4a81077fec3f34969ebaadb8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-post-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3xPsrBDxphB2O3YZza4Gk3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ppMC4JfzbAFlIVXLQHT2v" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4VvIEcggVY4uOhUgT1DcFD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1qw0EYPj9495lc49wB2WMy" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4uoKd85m1EgfU1teUxukB2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>belfast metal <a href="https://everynoise.com/engenremap-belfastmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Ireland</td>
+  <td>United Kingdom<br>doom metal<br>uk doom metal<br>power metal<br>drone metal<br>death metal</td>
+  <td>The Crawling &quot;March of the Worm&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dc8e484f9d092467322eab4f842f8095511bfaeb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belfast-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4IDbhqh1NhsMhcPKT9Ln6D" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1YoMpI53tJdZYGpjplRNhC" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>irish metal <a href="https://everynoise.com/engenremap-irishmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Ireland</td>
+  <td>Ireland<br>irish black metal<br>sludge metal<br>black metal<br>irish death metal<br>doom metal</td>
+  <td>Ten Ton Slug &quot;Matriarch of Slime&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a656526d15fb6347c2a272910ed242255b52ed7e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5fBXthdMj4HWF75hvy6BJC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3rm5ycg2D4VayBq52p478N" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pevZpHOWbV3zX9t1qqLT9" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>irish death metal <a href="https://everynoise.com/engenremap-irishdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Ireland</td>
+  <td>Ireland<br>irish metal<br>death metal<br>irish black metal<br>melodic death metal<br>doom metal</td>
+  <td>Mourning Beloveth &quot;I Saw a Dying Child in Your Arms&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c1f54fcb6ab30e6a2bd18508e0c1605d2bdbca79" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7tLHHi5zC5Jw5TP4CWCmEV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1l68udGkykRW1ROitwX0DZ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>limerick indie <a href="https://everynoise.com/engenremap-limerickindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Ireland</td>
+  <td>Ireland<br>irish post-punk<br>irish indie rock<br>post-punk<br>irish punk<br>irish rock</td>
+  <td>Anna\'s Anchor &quot;Hotel Dom Pancho&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dc4454fa5e6d87381481bb4d1808203f1c638073" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/limerick-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0fp7NkpycfnsplnSFtg84f" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3NjB4oamzRkLEKzAOATcVW" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>belfast indie <a href="https://everynoise.com/engenremap-belfastindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Ireland</td>
+  <td>United Kingdom<br>northern irish indie<br>space rock<br>shoegaze<br>irish punk<br>post-punk</td>
+  <td>Wynona Bleach &quot;Drag&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/643bf41871dcc73bdb156bd8c2f044036df912db" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belfast-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3iIa5HIiK8HzV7F1RRyWg2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2yCU7LgE1wtFLeAyXMpN8v" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>irish hip hop <a href="https://everynoise.com/engenremap-irishhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Ireland</td>
+  <td>United Kingdom<br>irish underground rap<br>irish drill<br>drill<br>uk drill<br>irish trap</td>
+  <td>Kojaque &quot;WOOF&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/64e4e65e3ea2a22f89718bc19aeaf6dceb39a8a3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1DCPBdNAMxJa1exzhveKmk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7yawHmXHreTbNJ9wu1UBs7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6D8IUL0MzLrRf2M9RYPV5a" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4KVo9anXSNopHwP7KElCB6" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7zb9XCr9UFFiJvNfHN0S6s" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>irish punk <a href="https://everynoise.com/engenremap-irishpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Ireland</td>
+  <td>Ireland<br>punk<br>hardcore punk<br>irish hardcore<br>celtic punk<br>proto-punk</td>
+  <td>The Nilz &quot;Class War&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f4005dfc93cc4fde4274187669c94d18c072bdff" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/78arEJXg8DhqN1LaagfM6o" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5NiqVWMIAbKPchF0UebEsC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4afmv0bzY9DGCIKxMGPdzs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3TDnreblokN11BALJA64o9" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>dublin indie <a href="https://everynoise.com/engenremap-dublinindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>Reggae<br>W.Ireland</td>
+  <td>Ireland<br>irish indie rock<br>irish post-punk<br>irish rock<br>jangle pop<br>proto-punk</td>
+  <td>Pillow Queens &quot;Suffer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8b488d76c12c2ef1bb39eadec2a4c3ab32e95c2c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dublin-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2tZv3suOJ8v9Nz2g1wSyxb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0hsjAeUWjYIr7sospfADJk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5L4Rpg3DGxKR9uS5fCa2PM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7zOV4bAxsBDGtHpHLcRQ2L" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>northern irish punk <a href="https://everynoise.com/engenremap-northernirishpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Ireland</td>
+  <td>United Kingdom<br>power pop<br>punk<br>irish punk<br>celtic punk<br>proto-punk</td>
+  <td>The Undertones &quot;Teenage Kicks&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9b526996182979825a0613cb8765e2795712c012" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/northern-irish-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7gxkvXqQ14zNtFLBzoP04V" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/53XJjU20RldmQHpuxGzGzw" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2xE66mVh07EGeUpLHG7jO3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2kCEXrlTkbPmKl5WEIvZgh" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>irish hardcore <a href="https://everynoise.com/engenremap-irishhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Ireland</td>
+  <td>United Kingdom<br>hardcore<br>hardcore punk<br>irish punk<br>irish metal<br>belfast metal</td>
+  <td>Bitter Pill &quot;Dog Days&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cc9cef1e9e92334800d1fbaf716adb3be725a069" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2jQWbUhKa4nlW44G4XWdzT" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3I1xZDsmVVyEVV0Qe9HiqG" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>irish rock <a href="https://everynoise.com/engenremap-irishrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Ireland</td>
+  <td>Ireland<br>irish singer-songwriter<br>irish folk<br>celtic<br>celtic rock<br>irish indie rock</td>
+  <td>Bell X1 &quot;The Great Defector&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c544ab744cbf6ac2d9bde244e45b224072620b8c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ZN4gAeMu83xPOzA8B7WUp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2CBHXjkBbHfiKcKIHesfbC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7FOgCarflRn9fkiTmP1hqe" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4AZLXWgUzoaH5zSA0XqXv5" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1vPgX9ixy1Rmt8ICZZJGmU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>irish pop <a href="https://everynoise.com/engenremap-irishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Ireland</td>
+  <td>Ireland<br>uk r&b<br>irish rock<br>derry indie<br>irish indie<br>cork indie</td>
+  <td>Le Boom &quot;Friday Night - Radio Edit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3862746d97a0e7344d0a5206e61dd2289ae27afb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5P7T8wmUUWvvS7l72mgaDW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0aMVUw2FEVxBCFUZVxTt5u" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0dwqho8WrrK8KcF8mumWlF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2io4ce3hpXGsudbcjdShTS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4LKtopPzMDhoiE21wLJPMR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>irish black metal <a href="https://everynoise.com/engenremap-irishblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Ireland</td>
+  <td>Ireland<br>black metal<br>irish metal<br>celtic metal<br>folk metal<br>folk black metal</td>
+  <td>Primordial &quot;How It Ends&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5ef7357cb3f95db2c0150dd516475ed01d423c98" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3E0ZSCIf2Wf83Lr2QoOdUB" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3vtNM3t1XaVyyu38aY7r8m" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>irish dance <a href="https://everynoise.com/engenremap-irishdance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance<br>W.Ireland</td>
+  <td>Ireland<br>celtic<br>traditional folk<br>irish neo-traditional<br>irish folk<br>folk</td>
+  <td>Christopher McGrory &quot;Reels 3 (113) Twigs &amp; Bark&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/66999a3d818cd3fa6e81ef42ed82c5a6d2a8237b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-dance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7dr9pNdKose2Qoacd4IFb6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2vx6eFsG12cuB7SfTHJWdz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1MVb0LtPTfZtBygzVMdKds" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Aw2TlcDFwKYw5rWNNFpuc" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>irish underground rap <a href="https://everynoise.com/engenremap-irishundergroundrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap<br>W.Ireland</td>
+  <td>Ireland<br>irish hip hop<br>new rave<br>alternative hip hop<br>jazz rap<br>drum and bass</td>
+  <td>Lethal Dialect &quot;Beast-Mode&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/288a4f10795cdcd2b80ace8f27a4e3da75ee73b8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-underground-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4wDgDMbvZrGcrWh6Z7jWN9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/49HaUMpoVqCFErbqVmiiLU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7qTd3Zp22kJGubNVpsJbus" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6gr8KLaxfwZakh32SnduCU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2uA4R6GuAYEuK3OyUlyT98" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>irish indie <a href="https://everynoise.com/engenremap-irishindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Ireland</td>
+  <td>Ireland<br>irish singer-songwriter<br>indie folk<br>lo-fi indie<br>irish pop<br>dublin indie</td>
+  <td>Saint Sister &quot;Eternal Flame&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/18fc78f1173a00be8c5ac019d81b3cc1afb2e0f4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3b8fdMcD9B0roFUiruXW63" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Yk4pcyhMTdt3M4oThvYD1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7MDDDRC0Q9V6xtwW2RpzXl" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>accordion band <a href="https://everynoise.com/engenremap-accordionband.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland &#x2380;</td>
+  <td>Ireland<br>polka<br>irish accordion<br>celtic<br>exotica</td>
+  <td>Albertbridge Accordion Band &quot;Billy\'s Boys / No Surren<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/90520b4c8cc260935bfa64c0b4b5b0d02064a4fe" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/accordion-band" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5724waCxUbFBwVmrijifY0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4uyu1mcpvAixF1jhrCYM0P" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2WNG5qQ2ZVpt6G2pDBrY47" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>irish country <a href="https://everynoise.com/engenremap-irishcountry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Country<br>W.Ireland</td>
+  <td>Ireland<br>celtic<br>irish folk<br>christian country<br>irish pub song<br>sea shanties</td>
+  <td>Larry Cunningham &quot;Lovely Leitrim&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/14aeaa05b0945e28c00e5f2ab69b7105b12aee82" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-country" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/38MD8RrQUNkUp1HdEedtsb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ZoVYWfvloSUP0sYwAk0Eg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1k4EtRn9I4sOU7TKtL9LpG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1fNvswqo7PVsrjQfF8qsDz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1h4OZhzBGWrBbbg5HiBi0A" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>irish singer-songwriter <a href="https://everynoise.com/engenremap-irishsingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland</td>
+  <td>Ireland<br>irish rock<br>celtic<br>indie folk<br>chamber pop<br>irish indie</td>
+  <td>Declan O\'Rourke &quot;Galileo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e73fdfee386c9d09d47a58155d83fd235ab6cb89" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-singer-songwriter" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4XqXf73ghfDY8TldiA19ts" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/67ljvMZzzG7KNJkCH7hY6z" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0eO2mllRha2mdi0t1FZhK1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1hXwTVquP37kiEehzfU090" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3AiCcw8d9S3gWBKw6rJrwj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>irish rebel song <a href="https://everynoise.com/engenremap-irishrebelsong.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland</td>
+  <td>Ireland<br>celtic<br>celtic punk<br>sea shanties<br>celtic rock<br>traditional folk</td>
+  <td>Terry O\' Neill &quot;Something Inside So Strong&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/25690b8a07e72aac6e5387685ba78bf659813d22" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-rebel-song" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/32VqNDdq9peqNzyFs946nZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4YTLyNGigTUxRK2VOKBGPM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2McH06Tbp5YzcBOmEBGXf2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3lQOHDCum3lnqsmq4hGdib" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/58H0JccYibHLAX4J6g0RYK" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>irish experimental <a href="https://everynoise.com/engenremap-irishexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Ireland</td>
+  <td>Ireland<br>drone<br>experimental<br>post-rock<br>avant-garde<br>irish contemporary classical</td>
+  <td>Roger Doyle &quot;Spring Is Coming With a Strawberry in th<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/950514fc924b0da53f0f441df48ded81b10bc98d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7x9qc6gDSlIxZbM5bKwu6B" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4iLweHFQ2lFWihZk6J22Na" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>draaiorgel <a href="https://everynoise.com/engenremap-draaiorgel.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland &#x2380;</td>
+  <td>draaiorgel<br>old-time fiddle<br>irish accordion<br>ballroom<br>band organ<br>bluegrass</td>
+  <td>Draaiorgel Theadora &quot;Second Waltz&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/118d7a3a815b4a3e4fee8d10e2d05e77eda9eb11" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/draaiorgel" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5KwZFkx12Vo8RcijEF5xce" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Jw47hdV6OqSfXh5z0HvZJ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KaBBaLMubIyF0U7UbXbYQ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>irish accordion <a href="https://everynoise.com/engenremap-irishaccordion.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland</td>
+  <td>Ireland<br>celtic<br>traditional music<br>traditional folk<br>jig and reel<br>irish folk</td>
+  <td>Jackie Daly &quot;Ashoken Farewell&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/efbd80e14b46f0eb36d0da57ea1631c766afdeb7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-accordion" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/06oQFOtyRUPo5ytnGmNaQy" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2YLa9JlRnHaBVG5cSWxdyY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1g6V1FwH5auwg4Sk9nUMC9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4IpoT8qutpn7oU3iRaMoZO" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>irish neo-traditional <a href="https://everynoise.com/engenremap-irishneotraditional.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Traditional<br>W.Ireland</td>
+  <td>Ireland<br>celtic<br>traditional folk<br>traditional music<br>concertina<br>jig and reel</td>
+  <td>T &quot;R Liatroma / The Green Cockade / The Mourne Mounta<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8ad55243f9e4abf6ef40d7574338aa7b8e42c86a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-neo-traditional" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/08HDLpXBZbKs6zFmuKD3av" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3hlXbOQHxy81Epj5j9ZAPE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6KJqbIoVbQBjgPvSJX0JMx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Sm7TKkQUhUyFFy2XdPijZ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5bjvh3awrwi4AdK0O82DeN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>irish pub song <a href="https://everynoise.com/engenremap-irishpubsong.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland</td>
+  <td>Ireland<br>celtic<br>irish folk<br>celtic rock<br>sea shanties<br>canadian celtic</td>
+  <td>Cu Chulainn &quot;Ramblin\' Rover&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fa03b1f67b6a13e969628fb2f8ca6adb07f677ce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-pub-song" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0C0ZaGBHyKTSqBxaXC8k52" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/31kp3FbHcLyawjY5YWDkHb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3ksNoT5l8GsXpknG5TEwJf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5gMRTUilWxuNTpe41asFWM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4HwM5WoJn22KxQf3PGwHj5" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>irish modern jazz <a href="https://everynoise.com/engenremap-irishmodernjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Ireland</td>
+  <td>United Kingdom<br>math rock<br>drone<br>flamenco<br>spoken word<br>belfast indie</td>
+  <td>Robocobra Quartet &quot;Wellness&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3aa65af3d69399bb9af1ce563aef2d0e77253945" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-modern-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4nit80NbOmqPgKX7KMPVSI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5cCSALXlXRj6q2FO947V8m" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>irish banjo <a href="https://everynoise.com/engenremap-irishbanjo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Bluegrass<br>W.Ireland</td>
+  <td>Ireland<br>celtic<br>irish folk<br>traditional folk<br>jig and reel<br>banjo</td>
+  <td>Peter Carberry and Angelina Carberry and John Blake &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/231f587acca7bb0621307cf5623969f124c55993" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-banjo" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/50mvD4vGSLdToUy8If175m" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2wL2qCBk0diEm7vQEEx9Qa" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/609lX5ih12R7qS6fgEwB5P" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1oI8fMEa0HUb9hpTRR8UeW" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>irish folk <a href="https://everynoise.com/engenremap-irishfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Ireland</td>
+  <td>Ireland<br>celtic<br>traditional folk<br>celtic rock<br>folk<br>traditional music</td>
+  <td>De Dannan &quot;The Wren\'s Nest&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/53722244dc40c8dd95aed37eded2a3c604b31b0c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7ehgBbHjbbE0ZfZHyNNqwJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5VedI2ZC26yEKJ8JTA7OuW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4kjrmjVIrrO7TrBaZTySUY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/64p4YbsKAEENKDHyrhqT8g" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7vUfn2x5ffFumWczLXPwxI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>pibroch <a href="https://everynoise.com/engenremap-pibroch.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland</td>
+  <td>Scotland<br>bagpipe<br>celtic<br>scottish smallpipe<br>philly soul<br>scottish fiddle</td>
+  <td>Roderick J. MacLeod &quot;6/8 Marches: Pipe Major Donald M<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/19d98c6f36b30481a9e2c2ace4132a85f8f66648" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pibroch" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2mV6wKZnYqMDnJAWHizpas" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1VUKmy5qSzD3KJQU0SA3ku" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5vH8mnFZ2f9kr71yAdGBb4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5qcowrJwq8WXhp75OPs1YS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>irish flute <a href="https://everynoise.com/engenremap-irishflute.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland</td>
+  <td>Ireland<br>celtic<br>traditional music<br>traditional folk<br>jig and reel<br>irish folk</td>
+  <td>Catherine McEvoy &quot;Rolling in the Ryegrass/The Travell<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fa9000075ff0628a4f163b88f1f4bbeb59cbf2d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-flute" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3facAd8R5s4SoJcDkbxqQp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2jZIFXAzpHGKquLdfC7bs3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0YMJlQYnG87zcwRYzakCyM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3hEQz36tBuElI7yYrq6Jth" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>irish fiddle <a href="https://everynoise.com/engenremap-irishfiddle.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland</td>
+  <td>Ireland<br>celtic<br>traditional music<br>traditional folk<br>jig and reel<br>irish folk</td>
+  <td>Brian Rooney &quot;The Godfather / John Brennan\'s (feat. J<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/85d8d9cd3a8c8a242a3439669be914101151e514" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-fiddle" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3BrJNzVxLBPGpB3WNcjB41" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2xqUVVwHeAeyl8PvtPPcFm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/591gcnswcrswyzqM3DZ7Ws" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/74erdXw9wIV4CIuJzw4vDV" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>irish contemporary classical <a href="https://everynoise.com/engenremap-irishcontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Ireland</td>
+  <td>Ireland<br>avant-garde<br>british contemporary classical<br>celtic<br>21st century classical<br>irish experimental</td>
+  <td>Michael McGlynn &quot;Where All Roses Go&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3c01e1f2836854f5f9824cfa4fd6d31e28d1abe0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Ca1HBBWRbgW06AQb5QSqf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/69AS6y3vT3IRvzBiPwvqP9" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>irish gaelic folk <a href="https://everynoise.com/engenremap-irishgaelicfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Ireland</td>
+  <td>Ireland<br>celtic<br>traditional folk<br>sean-nos singing<br>traditional irish singing<br>traditional music</td>
+  <td>Lasairfh &quot;Casadh an tSug&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d74feb31613d349a2d999872c3d72093f25f0d3e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-gaelic-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4cF2AaGFJWbwDfhgkkna86" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4T7aBqQkKYQesg9BiDG0FD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ks3NBkFmBR35DCClEPDLD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0lHKWADkjKYPhlP8WQmxNq" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>sean-nos singing <a href="https://everynoise.com/engenremap-seannossinging.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland &#x2380;</td>
+  <td>Ireland<br>celtic<br>irish gaelic folk<br>traditional irish singing<br>irish folk<br>traditional folk</td>
+  <td>Seosamh  h &quot;Eilean Na R&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/40418b057b8ab5058b49f491bc59a2c2ccac42c2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/sean-nos-singing" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2FD8rNmqillir6y4Aq7fsn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5h3UFJ2jRZG2vF5eVGaNGq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/467liCN6fm2FhDXa5fBEts" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1tVYWot9DF3KNgvT7vjGQG" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>irish ballad <a href="https://everynoise.com/engenremap-irishballad.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Ireland</td>
+  <td>Ireland<br>celtic<br>sea shanties<br>ragtime<br>vaudeville<br>vintage classical singing</td>
+  <td>John McCormack &quot;It\'s a Long Way to Tipperary&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/37d3935270e3ea9d5bf50215627a88e352ef67c4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-ballad" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7b5cJqBAIOLowOFVhPtCac" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5FDzNJpE1HyIV5Q5AqVvCR" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>traditional irish singing <a href="https://everynoise.com/engenremap-traditionalirishsinging.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Traditional<br>W.Ireland</td>
+  <td>Ireland<br>sean-nos singing<br>celtic<br>irish folk<br>irish gaelic folk<br>traditional music</td>
+  <td>Joe Heaney &quot;The Rocks of Bawn&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3841a5ba232e3ad746d09d768c73d45bf7ba9c24" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/traditional-irish-singing" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5I8JpxAhR39l2fzYz95Y9b" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2psBm18i8yELM0SUBhYLJL" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>irish classical <a href="https://everynoise.com/engenremap-irishclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Ireland</td>
+  <td>Ireland<br>early modern classical<br>victorian britain<br>celtic<br>post-romantic era<br>anglican liturgy</td>
+  <td>John Field &quot;Nocturne No. 2 in C Minor&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fd0593c5de6c785e64725cfd36b87733615aad2a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/irish-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4BwAkyZV6A6mjY9krHI19z" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4DbSZoIbHauAhoZl2oAKmo" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Poland: (50 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Poland: (50 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Poland is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>polish techno <a href="https://everynoise.com/engenremap-polishtechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Poland</td>
+  <td>Poland<br>dub techno<br>techno<br>acid techno<br>minimal techno<br>melodic house</td>
+  <td>VTSS &quot;Atlantyda&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c890e164a3cc058db7dc6b2e89cbe209790f151f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2vnjabswmqb8U0SwKuYPZU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4E7Z0VZyLAY2U5Z4AqJwJr" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>polish viral pop <a href="https://everynoise.com/engenremap-polishviralpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Viral<br>W.Poland</td>
+  <td>Poland<br>disco polo<br>polish viral rap<br>polish pop<br>klubowe<br>polish hip hop</td>
+  <td>Przemek.pro &quot;Akropol&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8453e6fb490182f2b7eeee7dd32964a8f25a31f4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-viral-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ovvfIuEjDwcWASTgVJwGQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5b0iTcDchorEjIxvQHZqvY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4XW2e8ELq99DpE0uldWhTK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ZQVjQRRcelipycqy4BL3G" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/73zh50oD2OueyhL7gqjk9Y" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>polish electronica <a href="https://everynoise.com/engenremap-polishelectronica.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Electronica<br>W.Poland</td>
+  <td>Poland<br>polish synthpop<br>polish alternative<br>dub techno<br>polish indie<br>witch house</td>
+  <td>RYSY &quot;88 - Prometh Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d267ec3b5dad0269a464532ee458e28803fa5876" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-electronica" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6sCFQ7m2WF5HxwoscGfT5f" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4GKXtm314aU5k54qyleKIs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2CMSFBj89otqObu4S4Tpr4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Ax19g7jqeL3zSe6JRSIQ8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3hxVtt3NLgiXnOBJppuig6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>polish metalcore <a href="https://everynoise.com/engenremap-polishmetalcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Poland</td>
+  <td>Norway<br>metalcore<br>deathcore<br>djent<br>mathcore<br>electronic djent</td>
+  <td>The Materia &quot;Fire&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fea1c524cf63c885ec60ef8fed9dca43a88d2de2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-metalcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6CKkzIgioaeXfrikEBuGF2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7BbCYGsbE3F7stw0OOEVJM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5mjUHO3UMw36Kky5ZnKrHy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4yQWunQmFEmRUwqL57SC8O" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/47biFEXCf3LTXegy5PcN66" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>slaskie piosenki <a href="https://everynoise.com/engenremap-slaskiepiosenki.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Poland</td>
+  <td>Poland<br>disco polo<br>schlager<br>trance<br>akordeon<br>nu jazz</td>
+  <td>Nas Troje &quot;Zawsze kochaj mnie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/661f8cdbe44570d2a3b4d0f90be5944da433631d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/slaskie-piosenki" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1pOUsmET8gI6AF3wJxPylP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5b5lszUTvnII9ZRsF8478s" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1041lEOGH66PJFg3vQ2cM0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4oD9yEJMtSdtp9HDfTu2bP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Jn2V1jt4A56HphFPjlZKC" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>polish reggae <a href="https://everynoise.com/engenremap-polishreggae.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Poland</td>
+  <td>Poland<br>reggae<br>polish punk<br>ragga<br>ska<br>ska punk</td>
+  <td>Habakuk &quot;Mury&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/07d9cd777be69c200e0e93bf56ff61cf9f0ea523" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-reggae" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0V0dN3CTZRTeZ3BiExf8XO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6K2BkmRqPQggCGu81OCyAl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/749GnHvbdfOVH3W5pby7oR" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/03fcCL7uBgD1NiuqF4Jdkb" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZlV7qYZy1gjn0sAVHVa25" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>polish synthpop <a href="https://everynoise.com/engenremap-polishsynthpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Poland</td>
+  <td>Poland<br>synthpop<br>cold wave<br>polish electronica<br>polish indie<br>classic polish pop</td>
+  <td>Niemoc &quot;Wyspy Ch&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9a6fa5fce0b0d130631872f05c0ae159fd0fc99f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-synthpop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0aWkkpBNxM3zNfZDMPJX54" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5S3xWhvZFcXKOogUjkb8od" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4dRUx4YGbPBzOPn2kiQDPK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1swITR5B9y28Oxs3WpZyMM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2DQWEmLbZhjOUl6OIAqRk9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>polish old school hip hop <a href="https://everynoise.com/engenremap-polisholdschoolhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Poland</td>
+  <td>Poland<br>polish hip hop<br>polish alternative rap<br>disco polo<br>polish reggae<br>rap motywacja</td>
+  <td>DJ 600V &quot;Ja Si Wcale Nie Chwal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a1a7ba7878f38490fef3bea813529dfe347a594f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-old-school-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/11gXoKbWZvtwC7TaGcUq2d" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6aX6hpDdfZa2zVfEv82Yzr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0NQzZ6ONau0IeunhyMGYXe" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1eZVTJ09JGQjgy8SkFoI9E" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ekmAlWgyWmriGmzUBAz5u" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>polish viral rap <a href="https://everynoise.com/engenremap-polishviralrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>Viral<br>W.Poland</td>
+  <td>Poland<br>polish viral pop<br>disco polo<br>polish pop<br>polish hip hop<br>smutny rap</td>
+  <td>Cezary Nykiel &quot;Jeste Ty&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/607036c65fcda0551a46f003e19cb337493ecb48" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-viral-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0dOn4gcdBzrPBwSKlSGbzj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1pk59BcOiRwpMVttf3NVLK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/23Zh9uSvn3tYaufHyzwgdd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0s5XhV836wMAkEIeIUbSsc" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6vAxH4iy9YHoZwR9hpOn5v" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>polish pop <a href="https://everynoise.com/engenremap-polishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Poland</td>
+  <td>Poland<br>disco polo<br>polish viral pop<br>polish alternative<br>polish rock<br>polish reggae</td>
+  <td>Lanberry &quot;Dzi,  jeste&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7805c378138d8f17f152771b933e5ba9b2fc0240" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5wjqZWUeYj2P29BpM2iZh0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/40uOIq5lmbAApQTlleiVp0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5UNaVoOQrX7yZLnk1vluGx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6q0s7FO31q2PSuNryKg1JM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1LWNiedxuSf1jgFZzrUnxE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>polish trap <a href="https://everynoise.com/engenremap-polishtrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Poland</td>
+  <td>Poland<br>polish hip hop<br>polish underground rap<br>polish alternative rap<br>polish drill<br>disco polo</td>
+  <td>Deemz &quot;Eldorado&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/252de4a2ccc52eca5e9e49d4d1a61fad5643bfe7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-trap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Ta1EOQK9Zt3bavSVEs6FN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/78dAycV2sXjUhhhCrmgalT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0HoiAlNv4kMrr2N8M4h7CT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3pydkHMDmYpz0TcaxkJr0x" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6w4MOxh3UcLwtpssOvESSn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>polish underground rap <a href="https://everynoise.com/engenremap-polishundergroundrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Poland</td>
+  <td>Poland<br>polish drill<br>polish trap<br>polish hip hop<br>rage rap<br>polish alternative rap</td>
+  <td>Pazzy &quot;NIE POTRAFI PORADZI SOBIE PO STRACIE&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f5f18bf75c2f85ac55e4f233a3132581bb23417e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-underground-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4fhntb4Y8oCiSrpfCeF201" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0RTY8qHkDwxKLsrUUbPQ71" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ExVkWu3BIi1ZTlvgM0WYT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6w7L8dEaOftPS5IhzEJ7RT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3nG0LruSg8OaLmffK6G9lN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>polish indie rock <a href="https://everynoise.com/engenremap-polishindierock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>Rock<br>W.Poland</td>
+  <td>Poland<br>polish indie<br>polish alternative rock<br>polish post-punk<br>cold wave<br>polish noise rock</td>
+  <td>Myslovitz &quot;Dlugo d samotno&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e8819332c7be8007c70dcea1abaa8ad1a440da47" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-indie-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0bycuU9irx5UX6hNY0s76z" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/54kgZCCHhUPnQWU0T8aHb8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3UtXNXSs5WfbG0oXyQ8pAZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1VmP9vdtuh1uV37M0MEpwE" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>rap motywacja <a href="https://everynoise.com/engenremap-rapmotywacja.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Poland</td>
+  <td>Poland<br>polish hip hop<br>rap uliczny<br>polish old school hip hop<br>polish trap</td>
+  <td>Dixon 37 &quot;Pozdr z betonowej d&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/36b792f6d71512e9b4b8466902cc0dc4f2be60be" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-motywacja" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6YqvNQPdSBAin8evwhcYH2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7v1g6rtKTLmVoVDDzFv9qP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4513Sab725DZF0PEoMRwIU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5cKYNr3ojldRZl6fJu0H1I" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2izUpax4NueYL2NzQWm9J9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>polish alternative rock <a href="https://everynoise.com/engenremap-polishalternativerock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Poland</td>
+  <td>Poland<br>polish punk<br>polish indie rock<br>polish indie<br>polish rock<br>polish post-punk</td>
+  <td>Lao Che &quot;Wojenka&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eb99755b2394c4ae9952ea730e01a5aa1815d482" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-alternative-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2QmkttbVAkWgboN53HUv3V" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/76e35fRM2OVKekQGqb8BuL" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5WklxtUXRxviknrVAUKDkH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4guyRT2GJpnt7MZQcooCCc" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3fvVK36a7Jdm6GIobyruhT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>poznan indie <a href="https://everynoise.com/engenremap-poznanindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Poland</td>
+  <td>Poland<br>polish indie<br>polish post-punk<br>polish emo<br>cold wave<br>polish indie rock</td>
+  <td>Muchy &quot;22 godziny&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/526d2aacb0db3d7a007d3c793a8de319a21b1eac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/poznan-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6QSNdJwrn82d27fgGGLATv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3EFKSGzCh0NNWHWqs0lXsH" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>polish punk <a href="https://everynoise.com/engenremap-polishpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Poland</td>
+  <td>Poland<br>punk<br>polish rock<br>cold wave<br>polish hardcore<br>polish reggae</td>
+  <td>TZN Xenna &quot;Dzieci z Brudnej Ulicy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c56679f961f5afc259c767c6e481f9c2dde9d470" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4tD5JgK98dIByvCtMZEla5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2UCsDf7DroMDIIL4SPIfO7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3PAIIJ7DExdXQYG3Ly8EhZ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2CRWnVPLCE02QBPGkaQDtw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4NVAn2My6gBSAMxytSKDDh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>polish thrash metal <a href="https://everynoise.com/engenremap-polishthrashmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Poland</td>
+  <td>Poland<br>thrash metal<br>speed metal<br>polish metal<br>polish punk<br>black metal</td>
+  <td>Turbo &quot;Doros dzieci&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8937c46a8dcd01b537c0b6fb41b9b0970ff93b87" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-thrash-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/44lSmTGFGxyjZotJfg2Smr" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/73F0Ck1aBETZBJzIEg0leI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0HbKBB4xtt2J2LzPdEKq4R" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1vWlxW2zwoLCNb9nL2gB7c" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>polish drill <a href="https://everynoise.com/engenremap-polishdrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Poland</td>
+  <td>Poland<br>polish underground rap<br>polish hip hop<br>drill<br>polish trap<br>aussie drill</td>
+  <td>Francuz Mordo &quot;TIKI TAKA&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e1772f9b71933926dd8c2f95844d3177f729d5cd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-drill" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4aXQhwoYd3t0leRB8NTOeU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3hWzvzMYrXLwrlazz9CJx3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2uyCINv3hJvWJvFfiCdOcH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5tr7E829z5CHntELZJLLBy" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1WhgUVjxahAIq1wW0fetUF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>polish indie <a href="https://everynoise.com/engenremap-polishindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Poland</td>
+  <td>Poland<br>polish alternative<br>polish synthpop<br>polish alternative rock<br>polish electronica<br>poznan indie</td>
+  <td>SKUBAS &quot;Co i tak nadejdzie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1348edc3a54bbe963e0ec509c48cf6954e1ca43c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2GxRAI2BfyfVtU430F6q09" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5BIwaSlscQM2LmYTV8VtZ9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/17ssOJKBnLvJ2SmmvgPmAh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2j0bPXdqvnleWD4dRhzgUV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0GJu3nA5nY0T5Zq0maeEXH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>polish post-punk <a href="https://everynoise.com/engenremap-polishpostpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Poland</td>
+  <td>Poland<br>cold wave<br>post-punk<br>darkwave<br>deathrock<br>gothic rock</td>
+  <td>Klaus Mitffoch &quot;Jezu jak si ciesz&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3cddff6b7c5c037e178af06ea26988bf3f081134" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-post-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/164tVi1E3OE7ayOiaq1Gps" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0LV0cIIM4nRjBdq0A0EBKn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7IyzO13qye5tcJRypvAaOm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0CSpbOd5jkpxxbN1Mf09vS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5dYowd0pVaV9GSfduO4Xbt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>polish metal <a href="https://everynoise.com/engenremap-polishmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Poland</td>
+  <td>Poland<br>black metal<br>symphonic metal<br>polish punk<br>polish black metal<br>thrash metal</td>
+  <td>Kat &amp; Roman Kostrzewski &quot; dla cieni minionych&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/01ddbd0991e9928e345e54df07a0c81af424cb65" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5vjxjLEQzBt9Q5qQnYl39n" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4h57lcwyBn5d5qSP7MchDj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0PahvDwmIXrSCIvas1LgBs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3nEBTGmZSpN655jn1UjTZg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7AdFhHTpFZ0tNzwvFhzMKX" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>polish hip hop <a href="https://everynoise.com/engenremap-polishhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Poland</td>
+  <td>Poland<br>polish trap<br>disco polo<br>rap uliczny<br>horrorcore<br>polish drill</td>
+  <td>Solar &quot;Intercontinental bajers&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3b612c95da130182200549e5a4ca758077f64c71" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/05eYv8bW0t2D6Zbthm8XMv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1DXuK8SBX4BNVEkZ4ifHBJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Jr4mTgfzIUProdB4q7wYT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ApjOsEpKhIE3IeDiRL09C" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2bpOdbLYc0dpoh5KkM9Jxo" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>polish rock <a href="https://everynoise.com/engenremap-polishrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Poland</td>
+  <td>Poland<br>polish punk<br>disco polo<br>cold wave<br>polish post-punk<br>polish reggae</td>
+  <td>Ch Z Placu Broni &quot;Kocham wolno - Live&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b42d0776b46e00916e30b50022dd5b43277aeaed" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7ADxGlmMg0eNCYckiQr2dY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4GYAqL5PGmNFqf1MuTYtwv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pTLPC08SW12b7QflnYWRM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6wLPmvhpVqos7XJDlNttSG" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Zmbf81T5lXXGqpmohBKaW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>polish hardcore <a href="https://everynoise.com/engenremap-polishhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Poland</td>
+  <td>Poland<br>hardcore punk<br>polish punk<br>punk<br>hardcore<br>black metal</td>
+  <td>CASTET &quot;Robota To G&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e4e8e57c1f9de1bf274ef7dfdc409a9d20adfc22" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0vrHwQRNzo9QIfcbz7Q4e2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5eWxTPyskEqSRgBMVgNFLa" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1cbz2wOe4tGcFeBOFdj0vQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/655W70My3y4uwjdLSB8Wqq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2a1PNyaq5JHRet7UXaW65X" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>rap uliczny <a href="https://everynoise.com/engenremap-rapuliczny.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Poland</td>
+  <td>Poland<br>polish hip hop<br>rap motywacja<br>disco polo<br>horrorcore<br>polish old school hip hop</td>
+  <td>Kafar Dix37 &quot;Jest p ni Ci si wydaje (feat. Gibbs)&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a54af702764209394e5157d9da4215233ef20b93" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-uliczny" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Js5djL15sF1kN8oPMji5Q" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0xJ8SgqYzJC79eu4JmfXN7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/79Sb0HbKgrqc6BeMgnrqKc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6kG0aYTj3XsiQK4SrrINTQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6JQerFLSx1aJIzTnJNfaVQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>polish death metal <a href="https://everynoise.com/engenremap-polishdeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Poland</td>
+  <td>Poland<br>death metal<br>black metal<br>grindcore<br>melodic death metal<br>polish black metal</td>
+  <td>Azarath &quot;Praise the Beast&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/38e5725adae74aab5eb999bc9a75e659dc7d9164" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2XnEENnKaZ8gVCxvtcIgeK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/39v3x0pnnnKizjsCpvwd0p" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0TUra5hDBBMDSsPBwp7pfd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4EqB19TSDZGabsJkBzAJ9F" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>polish post-rock <a href="https://everynoise.com/engenremap-polishpostrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Poland</td>
+  <td>Poland<br>post-rock<br>space rock<br>instrumental post-rock<br>poznan indie<br>djent</td>
+  <td>Spoiwo &quot;Skin&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ab65aa0d96f0a95174a975066d7196c74ff18a86" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-post-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/38MqBMO8v6y9y75zxBVld6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2zPhIrBINowwbkxiGkdrec" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0qKQMl9o42cKI2qElcKOZb" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6jKf5ZnKHoCYyxAJqcxtUZ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>polish alternative <a href="https://everynoise.com/engenremap-polishalternative.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Poland</td>
+  <td>Poland<br>polish pop<br>polish indie<br>polish electronica<br>poezja spiewana<br>polish blues</td>
+  <td>KARA/ROGUCKI &quot;Kilka westchnie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/297dc9c87811577a708e9f244b82bf7a23434da4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-alternative" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bg6BsVB0UC3fpgmT0HX8d" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Ilk2BZa7OWZziZgcBAQlR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6jnnZ1j5vpzQX3utumYCHj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/766PqOos96nDaqFf7pW0Pn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/00lo5sFhJ0mcIVWWGZoDFS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>polish black metal <a href="https://everynoise.com/engenremap-polishblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Poland</td>
+  <td>Poland<br>black metal<br>polish metal<br>death metal<br>metal<br>speed metal</td>
+  <td>Martwa Aura<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c3ef79def8921e958a019524cea2bcb84734bc48" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3NCjFvn6KVtuucF84vVnau" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3kheZGEwRSAPqiMqZL5heK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/76TGFsrN3cnFtHAckghnGA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3VGQZI5512aLiMxfTGjz8y" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1e9XUL8zwIg0KFOJgzQJgj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>polish folk metal <a href="https://everynoise.com/engenremap-polishfolkmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Metal<br>W.Poland</td>
+  <td>Poland<br>folk metal<br>slavic folk metal<br>folk<br>neofolk<br>polish metal</td>
+  <td>Othalan &quot;Czarnob&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c96c20069de75a994a1a5348a7f750d2813de1c3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-folk-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5eEnnFDwAG8MHHX1pqp02J" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4iy738QjI4zidzPOjhbLgp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/59AA1N09VLDvWf1HwWTtOs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5XeQahntw1GL0RUIXLs3kc" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>polish experimental electronic <a href="https://everynoise.com/engenremap-polishexperimentalelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>Synth.Electronic<br>W.Poland</td>
+  <td>Poland<br>drone<br>dub techno<br>experimental<br>polish ambient<br>polish contemporary classical</td>
+  <td>Zamilska &quot;Delusion&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5a514109775da856a45ea036e1424dfeb976528d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-experimental-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0KytMfpyj59UYkErvqBz0x" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7C8E5QgIfbJXb55XOrhe3b" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>polish prog <a href="https://everynoise.com/engenremap-polishprog.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Poland</td>
+  <td>Poland<br>progressive rock<br>progressive metal<br>art rock<br>symphonic rock<br>modern progressive rock</td>
+  <td>tRKproject &quot;Twelve Spaceships&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f46cf35ace1027223d1357592073fd3b57dfdf82" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-prog" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/529cGG6P3HYHW6MCQmml6f" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2kOqWrWGa7WGJV7RGEG5nI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4OMIBVs3AjBXMaqQQJ02IF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ZrMx5lJZDi4VGYFaKnSeG" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3elKEx5YUdloxHavjp6BFm" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>polish alternative rap <a href="https://everynoise.com/engenremap-polishalternativerap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Poland</td>
+  <td>Poland<br>polish hip hop<br>horrorcore<br>polish trap<br>polish alternative<br>polish old school hip hop</td>
+  <td>Laikike1 &quot;M Dyspstryk&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c2c1d18a9b462509cc5bc3174f76e63e0919afd9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-alternative-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0HR72OrMGHRfdCSrzNvRvk" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1cddL8bN1CIRCz6RW8uxVX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4mD9QdBCPuPT7LYLTmYr1O" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4HTPNMpvhmK8jjg7hVggtT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ch4MfhhMU1OvfpgnP9AYI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>polish blues <a href="https://everynoise.com/engenremap-polishblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>W.Poland</td>
+  <td>Poland<br>blues<br>classic polish pop<br>polish jazz<br>blues rock<br>big beat</td>
+  <td>Kasa Chorych &quot;Blues chorego&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c40d78cf5c2f273bf7d62eedfe46aaca47c11039" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/24TgYVaDv2EDTFUOYNqn4H" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6GM80waFvLZoWUIAcFE9ZB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6zIepBVDfDZOrx0LJOZF7O" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ZjU9nATHTm2tX0idNhcqu" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1iXnlwRJKMQWOam96omw4h" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>polish noise rock <a href="https://everynoise.com/engenremap-polishnoiserock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Poland</td>
+  <td>Poland<br>noise rock<br>polish post-punk<br>polish psychedelia<br>polish experimental<br>cold wave</td>
+  <td>Zesp Sztylety &quot;Blask&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a9ca77a8231b14840bfc441f8bc0ccdc79cd0756" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-noise-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2V27M5tE7ak8gLv3IcfzkF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6rV941EQPPJiWJiMbEIXUB" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/583hPK6OFN5R9mwLDAvyZB" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>polish psychedelia <a href="https://everynoise.com/engenremap-polishpsychedelia.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Psy.Goa<br>W.Poland</td>
+  <td>Poland<br>space rock<br>polish noise rock<br>stoner rock<br>stoner metal<br>psychedelic rock</td>
+  <td>Lonker See &quot;3-4-8&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e2ae96cb2be93901c107c0c79e0461e98ac09c26" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-psychedelia" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4D4h6LgDL6sx5tru6dUltf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0HoVEyV8Ywr90Wysl8PGJP" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>polish experimental <a href="https://everynoise.com/engenremap-polishexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Poland</td>
+  <td>Poland<br>experimental<br>polish noise rock<br>avant-garde<br>drone<br>space rock</td>
+  <td>julek ploski &quot;Bigger Crimes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/250eedddd45756c93d519f5b560670f114a36993" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1iUCikKLbriWbiDiuxVjj9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5mJMwtywZacymdtdT21ABQ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>polish ambient <a href="https://everynoise.com/engenremap-polishambient.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Ambient.General<br>W.Poland</td>
+  <td>Poland<br>drone<br>ambient<br>dark ambient<br>dub techno<br>polish experimental electronic</td>
+  <td>Wac Zimpel &quot;Fen&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6709f31d582cfcacbea3c73ba1c5dd83da21fbc7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-ambient" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3z8EXMge8QTgHjCDCtYxnv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7pG25ZvJoouVIKkbGoA4kT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6skjfFKLphZafC79GfJHs9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0AyRT8pRKBB1bq1O7B3Lba" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>szanty <a href="https://everynoise.com/engenremap-szanty.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Poland &#x2380;</td>
+  <td>Poland<br>sea shanties<br>polish folk<br>polish blues<br>polish jazz<br>big beat</td>
+  <td>Brasy &quot;Szanta Oliwska&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f15a7e63817e1a60cd7432485494c2292dd2ae83" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/szanty" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6dU4PggbyDxaHnaC1Ko47x" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6HwS9JJsya66GMP23r4VP7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4xojSEv1RWdoGBx1YlwcuT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6zPaVZ3TqlF65BMmyVNiCv" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>polish folk <a href="https://everynoise.com/engenremap-polishfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Poland</td>
+  <td>Poland<br>folk<br>traditional folk<br>polka<br>traditional music<br>szanty</td>
+  <td>Kapela Malisz &quot;Zielona Lipka&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2e7e6958864f58b80f68c5599056b5ad2d04e99d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5XqRxuS9KdDFsQiOVB1Zzq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2EIFvjN0Z1AYk4rtCBo0JK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3FVrmQn660dBzEVfrw5KGv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7iC2ovi8spgd8orrsfKXOC" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>classic polish pop <a href="https://everynoise.com/engenremap-classicpolishpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Poland</td>
+  <td>Poland<br>sung poetry<br>poezja spiewana<br>disco polo<br>big beat<br>polish pop</td>
+  <td>Zbigniew Zamachowski &quot;Kobiety jak te kwiaty&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a9726889a2ff87b640b0d70fbea1a0df858fcbdd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-polish-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6sAkBTaS3rjYDsoKirviRC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4mAsd6ureHB80hRk5b4Ni4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4JSOnEEiFQaoZwdZdadywt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3bAI0K9kdDoUNXkPEkr3MI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Tfu8VLwGpSIadKqMsWwQv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>polish jazz <a href="https://everynoise.com/engenremap-polishjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Poland</td>
+  <td>Poland<br>free jazz<br>jazz<br>nu jazz<br>jazz fusion<br>polish modern jazz</td>
+  <td>Zbigniew Namys &quot;Very Sad Bossa Nova&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c4d579f428b11dd861a4649e3644344749d3ad01" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4myuhCXuELUt8At87NNbTD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7wx58jJTsUZs2EIzNfGHth" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3k3AxGQi4EB4rP12sIR5vS" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4e26YdM8wX4G1a7es5hFG4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6JUbcnaxMZwJeQMZcqX4DO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>polish modern jazz <a href="https://everynoise.com/engenremap-polishmodernjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Poland</td>
+  <td>Poland<br>free jazz<br>nu jazz<br>polish jazz<br>jazz fusion<br>soul jazz</td>
+  <td>Marcin Wasilewski Trio &quot;Riders On The Storm&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bf7322187cb1603b746e806f43da689c83d72ed5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-modern-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5LSVkdRNFSqthB3c2ZQZCW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/178sTCIthFi5cU2KQNK4QD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1zpep3gZhYOSUCCaG3wxkz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/22PB5r0skNPcVWgHq3Yi6P" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>polish free jazz <a href="https://everynoise.com/engenremap-polishfreejazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Poland</td>
+  <td>Poland<br>free jazz<br>polish modern jazz<br>requiem<br>avant-garde<br>polish jazz</td>
+  <td>Mi &quot;Luke the Skywalker&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5f34ce215887d8ba85c84a19ad6ca009a83c0d38" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-free-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4MjDEpVkduWz2QGDPczRrp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5scILYXkjOSPXJVC494rCD" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>polish contemporary classical <a href="https://everynoise.com/engenremap-polishcontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Poland</td>
+  <td>Poland<br>avant-garde<br>contemporary classical<br>choral<br>polish experimental electronic<br>requiem</td>
+  <td>Henryk G &quot;Symphony No. 3, Op. 36: II. Lento e Largo -<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c538ab94dc8f6eafcba186a7b56ecfa357de4d3d" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4rJSb5YDTZqPpJq4EzVC6A" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0jniswZ8mF0KAGP07FKFel" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>polish choir <a href="https://everynoise.com/engenremap-polishchoir.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Choir<br>W.Poland</td>
+  <td>Poland<br>choral<br>gregorian chant<br>contemporary choir<br>requiem<br>opera</td>
+  <td>Dominika O Liturgiczny &quot;Hymn na cze Eucharystii&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d59d13531ad943eaa60a1b45bdfe6527b2dd5ca1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-choir" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Dv5xIH7lg64KdkCryoQSa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0wSQP0F0vvybBZ279QaVur" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>polish early music <a href="https://everynoise.com/engenremap-polishearlymusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Poland</td>
+  <td>Italy<br>italian renaissance</td>
+  <td>Miko Ziele &quot;Benedicimus Deum Coeli&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/572d27d3220a845c83156ca40b9ad2070418273f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-early-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/12wLF2NL5grpuXi6zOT6ZO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ii48Dby3vvKXtswT9sRjA" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>polish classical <a href="https://everynoise.com/engenremap-polishclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Poland</td>
+  <td>Europe<br>classical piano<br>post-romantic era<br>classical<br>early modern classical<br>late romantic era</td>
+  <td>Stanis Moniuszko &quot;Ten zegar stary (Skoluba/Maciej)&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3e3fc5e1d26155d11d378c3773b6ed8c8bd509be" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4NArLmIzkdJ9ukDAGPVvnp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5c33S502HNpzP1AxJqS6La" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0IfHjTomjmb178zSF3oeNx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3dnqH2Sr7i89S94QqyfiKP" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>polish classical piano <a href="https://everynoise.com/engenremap-polishclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Poland</td>
+  <td>Poland<br>classical piano<br>classical<br>historic piano performance<br>chamber music<br>neoclassical</td>
+  <td>Krystian Zimerman &quot;Ballade No. 1 in G Minor, Op. 23&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bcb93bf6a61dbdeb0067f537e91880f394078a66" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3o9Oe3WvFWK4kedUKvB6Eu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2YxhESpDtgBdXr2AkOouvv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1rye8EODl6PI0GxbxJGgCy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3mEP5ewpqLvjk3gduGrSN8" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

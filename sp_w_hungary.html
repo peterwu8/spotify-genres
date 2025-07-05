@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Hungary: (20 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Hungary: (20 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Hungary is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>hungarian techno <a href="https://everynoise.com/engenremap-hungariantechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Hungary</td>
+  <td>Hungary<br>minimal techno<br>techno<br>hard techno<br>acid techno<br>melodic techno</td>
+  <td>Jay Lumen &quot;Ode to Earth&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5f2afba4070196b0d95a4e078eb0f57ed775b7c0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4gQRR2UTqbLaflZruZDVQA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1F7iSW32d3WByKSeWzb7mb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Idm6mVdrTkww8k0Sw0nJi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ctZ0Y6PpgmxbZ0K09TpBq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2YXLA3fTwhTeCJuLdzpl00" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>hungarian edm <a href="https://everynoise.com/engenremap-hungarianedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Hungary</td>
+  <td>Hungary<br>minimal techno<br>hungarian pop<br>tech house<br>g-house<br>hard minimal techno</td>
+  <td>Bricklake &quot;Big Band 2020 - Radio Edit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/31f58c437b3fd22e2fb5375e5ffcc35e1a516943" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0u11sFzzWzcHn8H8nSG0M0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2g646JKBsJaDrJkZ4JJwgl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Jnu6FWQd0OHxaJFX3ctGs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4aZr3ssKRHoqMwPSQoYNYU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0a6fEQxKZNUK2kE8clrXds" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>magyar mulatos <a href="https://everynoise.com/engenremap-magyarmulatos.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Hungary</td>
+  <td>Hungary<br>hungarian pop<br>hungarian rock<br>musik anak-anak<br>chicago house<br>freestyle</td>
+  <td>Roberto &quot;Nem Kell P - Any Dal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/aa71200551e5526e17e00b828d7bb9e3a2015f2e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/magyar-mulatos" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/42OCNQKfN2VlR339GaHr2P" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/55v6fRnQDki7tGhsfpScvm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ghmA6msDMSyYRTCxLrjy6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4eQrU5cRd7I0HYkJ4I4qdt" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6czFqlHcVvVPEl5JS1Cgtu" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>hungarian metal <a href="https://everynoise.com/engenremap-hungarianmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Hungary</td>
+  <td>Hungary<br>hungarian rock<br>magyar alternative<br>groove metal<br>folk metal<br>thrash metal</td>
+  <td>Akela &quot;Rockernek Sz&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/838318fff9c8a4480a7acd82f8e2423e0f6e0c1f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ftKwft19ypbwzF06n0ABw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4vpfMnKhs2KHHrCPzfhh3Q" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/05n5bKPrdoeOHdbQ9KB7lA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6yXJmJTX9t41QRr5M3MEvu" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bsYjX8Fgry3xrk7BXPTEW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>hungarian punk <a href="https://everynoise.com/engenremap-hungarianpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Hungary</td>
+  <td>Hungary<br>hungarian rock<br>magyar alternative<br>hardcore punk<br>punk<br>skate punk</td>
+  <td>Macskanadr &quot;R mindenki&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4e56f96b3607cf69fd3d8ab575609f28c601e690" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4rMbbnTiieQNPuwZOTNJoX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0ILJS3YPBHOUQteHkaRVp6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2XYsXxk9SWKyZRnt8dBFmT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/776ReF5oJYJvDhzFY2y6ws" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/69c0AZ8FGZWkyrQzz2BNfr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>hungarian pop <a href="https://everynoise.com/engenremap-hungarianpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Hungary</td>
+  <td>Hungary<br>hungarian rock<br>hungarian hip hop<br>magyar alternative<br>magyar trap<br>hungarian edm</td>
+  <td>D Heni &quot; Veled&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3f0d89c56f1a6d4359e11ed9b0b1356c05978375" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3jZ5cuj9zDXXvpdhDP0F6B" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1wwnwY4WnbBfQ77U3r4ccj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4sLQ8047lMNq7G1PEz53fM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/29CZCOjByhlU11cG4eZRSv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/60mjT6gII8eOpJnDKXgdEF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>hungarian rock <a href="https://everynoise.com/engenremap-hungarianrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Hungary</td>
+  <td>Hungary<br>magyar alternative<br>hungarian pop<br>hungarian punk<br>hungarian folk<br>hungarian metal</td>
+  <td>Fish! &quot;Ne Is Figyelj R&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1b877a584eb1b7e60eeda8ce2523c92233b6ec34" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4J7cPnv7T55LDGY7p6QAuz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4HwajiqdbPNfRcd0BcD2zc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3dGhuskWL6pJrJemEBQhRx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2OIGjh8z0CqimsMEjoaOzu" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5yNiVkZdzp0Ub2kZnoE3rw" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>hungarian indie <a href="https://everynoise.com/engenremap-hungarianindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Hungary</td>
+  <td>Hungary<br>magyar alternative<br>hungarian rock<br>post-rock<br>space rock<br>hungarian pop</td>
+  <td>Bark No &quot;K A Nappaliban&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2f7a11a6bd6b64627b598df88490d7e7e5487a91" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7iDaJBxIo1WXmKmPMyxjW6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6IbzEpJ0swzazw9HEFMKb7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0D0RQJOj3CAzV1EBL7Imt5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/24n7jchXSkysd2EZ7wYO5o" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1C7WaJIzMfLOnyHNvpVPF1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>hungarian black metal <a href="https://everynoise.com/engenremap-hungarianblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Hungary</td>
+  <td>Hungary<br>black metal<br>hungarian metal<br>atmospheric black metal<br>slavic metal<br>death metal</td>
+  <td>Christian Epidemic<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b6381dca376d79e1124dd71d32d7d33c7cc3d87a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/67VtNTOKdwYdDnUGrlbyPE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1QBLSc8zkQXQnYHGlGM1mS" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>classic hungarian pop <a href="https://everynoise.com/engenremap-classichungarianpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Hungary</td>
+  <td>Hungary<br>hungarian pop<br>classic hungarian rock<br>magyar retro dance<br>hangoskonyvek<br>polka</td>
+  <td>Marta Zaray &quot;Homokora&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f96e7524598fa4859f0c1e22696a3198917d0e78" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-hungarian-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6t34DFkJNo29TwQQy1NEcz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4DIc6FvplSlgKjH67THmX7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2EjlbQWnbjXrrK2ZPQ7TDp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Z0Mm9JIXdm0eQvXDNsIDm" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1z6Ziw27CHvi284q6E37ya" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>hungarian underground rap <a href="https://everynoise.com/engenremap-hungarianundergroundrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap<br>W.Hungary</td>
+  <td>Hungary<br>hungarian hip hop<br>underground hip hop<br>hungarian pop<br>lo-fi<br>lo-fi beats</td>
+  <td>Bankos &quot;A V - A Bankos Mappa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/aaecec9d50a60f62a204fec1462eaba4172f78d7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-underground-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6WtNfjGSAHmYlrMgj4IWeo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1OWRJAfbP0IrKgJYO4jlsE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/13n85ouIa1jCazfIjmPFrc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6px1XLtDTGMQkf9IvozsL3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2c1QZH6qGsFrw9Ci0qstlB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>hungarian hip hop <a href="https://everynoise.com/engenremap-hungarianhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop<br>W.Hungary</td>
+  <td>Hungary<br>hungarian pop<br>hungarian underground rap<br>magyar trap<br>underground hip hop<br>hungarian edm</td>
+  <td>V\'j &quot;L   N&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/94782d9731d426020392cf3db567040ea24756a6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1TvKMyojqg2FI7ZcSg20dN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1BPFKmeIcqzGOU43oA3rAg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/710hSTMaj2Z3S1ZZQLZjWc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4gNlPS4GlfkXggVUvGvuiu" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/78hYQAvHzBNUiWZ2aD8lFi" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>classic hungarian rock <a href="https://everynoise.com/engenremap-classichungarianrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Hungary</td>
+  <td>Hungary<br>hungarian rock<br>classic hungarian pop<br>hungarian pop<br>hungarian metal<br>magyar alternative</td>
+  <td>V\'Moto Rock &quot;T&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/749684a002f9c26a61ddca6a8d6b8de8d9c15d1b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-hungarian-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ahapGggNZJfMCpLp4WfgU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2cIvk9rAmvHalsN9f1NeHJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4GUI1X0tYJtXUSRuxsdC7v" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4vTasXQzLHmZwD9LmwK9FH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ywKbaGiAo7RLCImrQxRD7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>hungarian folk <a href="https://everynoise.com/engenremap-hungarianfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Hungary</td>
+  <td>Hungary<br>magyar alternative<br>traditional folk<br>hungarian rock<br>folk<br>hungarian punk</td>
+  <td>Seb egy &quot;Rejtelmek&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ba7b51e932a28d2b0ee2c893848207348946b8e2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0O72Lwqx0KHQ88xdfeFx8q" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/76cCPFZYhAISV0seUjoBHy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1hi1CThKuffsuodAj08UbM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6veUksAzM6uiGtOtTunj8O" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7MyOl5NaH2XevxX4rqD8nE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>hangoskonyvek <a href="https://everynoise.com/engenremap-hangoskonyvek.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Comedy.Storytelling<br>W.Hungary</td>
+  <td>Hungary<br>classic hungarian pop<br>magyar musicalek</td>
+  <td>Laszlo Csakanyi &quot;S, a s:  vagyok a j kir&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/25304fa17fbfe0bc6be706f29f8bb90a82e24b93" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hangoskonyvek" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/29mkpCsACPWxyXmbiCLvBr" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2BiLkczPTyfOtJx04FCdKn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/154WJ5s2X33OL7dnELXQ9i" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7snA2VubCKyRPOTcp1UuHz" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>cimbalom <a href="https://everynoise.com/engenremap-cimbalom.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Hungary &#x2380;</td>
+  <td>Romania<br>hungarian folk<br>traditional folk<br>romanian folk<br>muzica populara<br>muzica lautareasca</td>
+  <td>K Balogh &quot;Bulgar Cigany Horo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b6f9238ee41557d50b20af8ea314079d0155d406" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cimbalom" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Hjr6ejNPLah7ZHHu8lIik" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0XTK7eBNmxIP5aVMmqOiiC" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>hungarian choir <a href="https://everynoise.com/engenremap-hungarianchoir.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Choir<br>W.Hungary</td>
+  <td>Hungary<br>choral<br>gregorian chant<br>early music choir<br>classical<br>hungarian classical performance</td>
+  <td>Budapest Chorus &quot;Let the Light Shine on Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b23760cd32e9bec81845c783d5107f711c9800b1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-choir" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bGokUZNJmzxZ2pRX7jDY5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2duCf3u7U1iW5LSwQKwwTc" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>hungarian contemporary classical <a href="https://everynoise.com/engenremap-hungariancontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Hungary</td>
+  <td>Hungary<br>minimalism<br>avant-garde<br>contemporary classical<br>choral<br>classical</td>
+  <td>Gy Ligeti &quot;Ligeti: Requiem: II. Kyrie. Molto espressi<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b630ceb551471dc8df7b1ff1662354e07e90afc4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4hyd8kXs6o9W7cBQNRX6Tc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3PQxBteiuz7OJGOvjjj7Lb" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>hungarian classical performance <a href="https://everynoise.com/engenremap-hungarianclassicalperformance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Hungary</td>
+  <td>Hungary<br>classical<br>chamber music<br>opera<br>orchestra<br>requiem</td>
+  <td>B Drahos &quot;Sonata No. 6 in G Minor, Op. 13, RV 58, &qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ea4475d9bffe12f3a3aadbf2f75521fb3c59fb25" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-classical-performance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1erETKIXrNnCBMPYmwa3fu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/01mgpiIC0zDKNAVRouBWZk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1WpKsL9tGGVjzDFLSw2fKH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1PI0HZgZ6hTMV6uANYVONv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4NkED63aVW1ezjN1Gcc3qg" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>hungarian classical piano <a href="https://everynoise.com/engenremap-hungarianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Hungary</td>
+  <td>Hungary<br>classical piano<br>classical<br>chamber music<br>hungarian classical performance<br>historic piano performance</td>
+  <td>Andr Schiff &quot;Piano Sonata No. 17 In D Minor, Op. 31, <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2406f73c8ad7d956cc40a6d05cd9018480a872ef" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3duxBRfkaNp8gCRPEUebej" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5rZ75TobmwrURStRuCfugO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3PaD95cdbLxhFms8yVqBiH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0KfYTnaj3Bvhac4byiYfAS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Belgium: (32 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Belgium: (32 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Belgium is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>belgian techno <a href="https://everynoise.com/engenremap-belgiantechno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Techno<br>W.Belgium</td>
+  <td>Belgium<br>techno<br>acid techno<br>hard techno<br>dub techno<br>minimal techno</td>
+  <td>Charlotte de Witte &quot;Pria&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6859af4e99b6d8f94f0232f750f0f27fd45c976b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-techno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0k8bCFt9Ct1lpeLP6EBHAD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3PBhul1KmVf1JVSErEgypU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4MqigD9C03KBymrtRkaMDi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7gWeqz5ccJMFsonosmAtax" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Bv09WJwCuRaz4CWeqr6S0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>belgian dance <a href="https://everynoise.com/engenremap-belgiandance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance<br>W.Belgium</td>
+  <td>Belgium<br>trance<br>new beat<br>bubble trance<br>eurodance<br>happy hardcore</td>
+  <td>The Mackenzie &quot;Innocence&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b842cd9bb881ea350b1f6c1e21d4d7fd2e20facc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-dance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4bbUkUvThch6nrFUeaUqAQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7LiSIthh02iaUmBElzs3J8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ieAcH4PwdTDnjXnhitx6I" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2DJ4k7k5rqkKa4orKlVGw7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZJ7mZoQzGjJdpqyDLL1ow" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>belgian dnb <a href="https://everynoise.com/engenremap-belgiandnb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Drum and Bass<br>W.Belgium</td>
+  <td>Belgium<br>drum and bass<br>bassline<br>liquid funk<br>jungle<br>drumstep</td>
+  <td>Netrek &quot;Matador&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ef66d8b76c7c40ef5bb870d5a5f104a94ac8641e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-dnb" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2G3RZdob40f6TVT8zZDIim" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1gCKEPHP1xQmIBMqw4aF9M" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ZrxXUzzX2f7AONji6I848" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5E1swHc989yRoZHwi2srOY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/69EU42Gfyjg7iQS0JLeML5" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>belgian edm <a href="https://everynoise.com/engenremap-belgianedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Belgium</td>
+  <td>Belgium<br>big room<br>tropical house<br>drum and bass<br>future house<br>progressive electro house</td>
+  <td>Yves V &quot;Not So Bad (feat. Emie)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c9c9ef1cdeb09385dd876c0b2d52e93e807ec064" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1SM7NENAIonbRpVBbiDhaj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3YjCK5F0D78d0WXHcwQ7tq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0eoOplSKYoicei10nO6BxF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5v9jgAUdJVJAK3znjFWyVg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/52gPoVE9vBn3MPugf34Mxe" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>belgian electronic <a href="https://everynoise.com/engenremap-belgianelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Belgium</td>
+  <td>Belgium<br>indie dance<br>nu disco<br>organic house<br>lo-fi house<br>belgian indie</td>
+  <td>KRANKk &quot;Into My Home&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6ae2f3123b2fddd1d2d8c4def6d5e233f353d3fd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4iULgS8PKwkPvtBgk7zJBo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1n4Q1wbXMA0f5bysyhPrUl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1jvRNyF5YP4V3ferLkQ00u" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07DUvy52XAgOfCmLGvJpJm" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>belgian new wave <a href="https://everynoise.com/engenremap-belgiannewwave.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Belgium</td>
+  <td>Belgium<br>cold wave<br>post-punk<br>new wave<br>darkwave<br>deathrock</td>
+  <td>TC Matic &quot;O La La La&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eb3b616191473ff10eb0cdc0f1496521ba216da0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-new-wave" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1AUgVNG3tsOfZgajNNSKRQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/71INgJXyOMLjW7fexwLSvC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0W399EOPZNEQhZt90iBRpP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6xrRDwrT0CLp0R2oOlwuBL" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/19sGlAYyE7OGwiGJXrXd86" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>belgian punk <a href="https://everynoise.com/engenremap-belgianpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Belgium</td>
+  <td>Belgium<br>skate punk<br>punk<br>melodic hardcore<br>belgian rock<br>fast melodic punk</td>
+  <td>The Priceduifkes &quot;It\'s Raining Shit (Hallelujah)&quot<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/52322740f1aeca59fd8636e6e228782fe8c53788" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bEQwvQ3t24zUgZK8bQ2Sc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4sLca0JgChDj5bhtfPXejv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Mb6v4t6hktjhS5xQ8CRGN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1FQmutEoDArjp7DAxRoxPv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0YRHAetlk1VubgknSewb8o" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>belgian pop <a href="https://everynoise.com/engenremap-belgianpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>W.Belgium</td>
+  <td>Belgium<br>belgian indie<br>belgian rock<br>kleinkunst<br>nederpop<br>chanson</td>
+  <td>Bazart &quot;Goud&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d0e1dd2428b6e8189a804cc2f4104f90f074d4b1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5kV2nfzna11veFsiFEqLjO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/08m9824rPzzzSV8kUNqaJ7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/629rMzdiwdFygYQrGv72QW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6NX5ZnNvtHrdlb16MhaT8l" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5p3ezNROmZj27DzTr7fPXT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>belgian death metal <a href="https://everynoise.com/engenremap-belgiandeathmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Belgium</td>
+  <td>United States<br>death metal<br>belgian metal<br>grindcore<br>deathcore<br>melodic death metal</td>
+  <td>Aborted &quot;Infinite Terror&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/144f94e0d14caa7552c49972d88eb48abe738cbc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-death-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Ioor4OKA2ay9dv5MjyS8D" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5knZIAyIrFjOBLaqaLa5AN" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>belgian metal <a href="https://everynoise.com/engenremap-belgianmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Belgium</td>
+  <td>Belgium<br>sludge metal<br>belgian death metal<br>belgian black metal<br>black metal<br>speed metal</td>
+  <td>STAKE &quot;Dickhead&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/102295f7c5e91caf2da6f8300e6c841a19cec97b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7jLzDkl5ei7srjBflJDWwc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5mCxFsaNdhe4kn7pup1Z5n" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5DwdJGeZRbrtj3GTiS3e9S" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4senx3k7NX6hHFKekh0Ahe" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/119MGl4Gllsqx6E6C7BdPC" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>belgian indie rock <a href="https://everynoise.com/engenremap-belgianindierock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>Rock<br>W.Belgium</td>
+  <td>Belgium<br>belgian indie<br>belgian rock<br>noise rock<br>ghent indie<br>garage rock</td>
+  <td>Evil Superstars &quot;It\'s A Sad Sad Planet - New Version&<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cd120c1b981a89390a46bcf441839d9cf1aeb3a9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-indie-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4QQQyOFuQNsg8tiQr9f1xI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3D833et5AHcMcMApBSml5s" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1xhTJYgiRgXNum8E5svPwd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Hgqhrxqa2z7wWLgrfqBxe" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3YcQ8ou19zyB5PjOyVVrC2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>rap belge <a href="https://everynoise.com/engenremap-rapbelge.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Belgium</td>
+  <td>France<br>french rap<br>belgian hip hop<br>pop urbaine<br>rap francais<br>french hip hop</td>
+  <td>Frenetik &quot;Je sais (feat. Jul)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/415235c912244345e83cd4ef33670ac9fd4dc784" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-belge" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Dt7XrmYwuvdugCdclpOCX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7J5CvtYwIKDFhE2wlBkPUu" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4N7L4NNp5f3tQ0cCV9Hzco" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/17c0LsGTGgo4k8nt8Dpbb2" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0RldZg3w2QZ4fXZhQkZLyE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>classic belgian pop <a href="https://everynoise.com/engenremap-classicbelgianpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Belgium</td>
+  <td>Belgium<br>nederpop<br>belgian rock<br>kleinkunst<br>schlager<br>flemish folk</td>
+  <td>Bart Van Den Bossche &quot;Ga Met Me Mee (Jij Bent De Zon)<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1426ae05f5fec7b7078ed026f7e6211e99b2e016" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-belgian-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7Aolz1KhLjhajWwgC5MuRf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/37RWjxq3PTEw5YRoRfkFQm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0CIfveQSO9MUFV0hhsESO9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ljm6Fl9bBUBsrS3cQtlRv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1f5x8ZPWlrLismi58hWlom" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>belgian stoner rock <a href="https://everynoise.com/engenremap-belgianstonerrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Belgium</td>
+  <td>Belgium<br>stoner rock<br>sludge metal<br>stoner metal<br>doom metal<br>space rock</td>
+  <td>Fire Down Below &quot;Airwolf&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4dcb08fcbb4cf492cdf6900475188bb7f859bf9c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-stoner-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/57KGNfHM5dwN0QdcBwB6TF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6tYftF6cXhtb2UbjhMy2Ad" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2AmcTxUAbIOeENjNQReexb" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>belgian rock <a href="https://everynoise.com/engenremap-belgianrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Belgium</td>
+  <td>Belgium<br>belgian indie<br>nederpop<br>classic belgian pop<br>kleinkunst<br>belgian pop</td>
+  <td>De Mens &quot;Irene&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/40069ac6b1078c090139621a237dc6f92b2eb64d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4fJHOKdFlPtxEhkxxhxFGR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1OXxQpaCXYbPe3lYjUdcuq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4hC6TyoCeTGuOLwJkE0oGl" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mgIaeEtHLOEF4nXKwaPLF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2MeLe3h0zBKlWs8k9SBa2w" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>belgian indie <a href="https://everynoise.com/engenremap-belgianindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>W.Belgium</td>
+  <td>Belgium<br>belgian rock<br>belgian pop<br>ghent indie<br>nederpop<br>noise rock</td>
+  <td>Admiral Freebee &quot;Coming Of The Light&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/47903639a5cc5a1cd69159a16a6e711712d169a2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/006mNxOoWfFZeavAdEPUmY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1W3Jws5GbVKXSS35HmMKnQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4VOfQywSs4Htlf0pzVmDZx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/32Q4Popywr6Ujxsh6tGkzZ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4L1zpVNctUCrnLFqaPWWVM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>vlaamse rap <a href="https://everynoise.com/engenremap-vlaamserap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap<br>W.Belgium</td>
+  <td>Belgium<br>belgian hip hop<br>boom bap<br>nederpop<br>horrorcore<br>meme rap</td>
+  <td>Rian Snoeks &quot;DRUMS (feat. JAZZ BRAK)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/db3a90c3d2baf028e5b47968d44459d48c7bda78" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vlaamse-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2AycepnXLn3uH4batJt2AK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0UoWJA1BHOxBI6dsDDhwts" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2qANijJrFa042p3ZIWC8Q1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2dII36MMtLLo2sxQ90JwxA" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3hcSvvbOsFkmCKotVllWs5" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>rap liegeois <a href="https://everynoise.com/engenremap-rapliegeois.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Belgium</td>
+  <td>Belgium<br>french rap<br>rap belge<br>rap calme<br>belgian hip hop<br>cloud rap francais</td>
+  <td>Moji x Sboy &quot;Ma go&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2e778bb9ddcd50992339890b5a9e55eadfe186bd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rap-liegeois" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/37ygJwB440XYecSK0Kn3OQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Z3XwVYP8GbKCyWdOIy8ug" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mDElC6SCXdzgiDt5IR0WD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6MeBc9wJTQqJZgrAhmRR96" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2cxzQY3AuXqUSmqcEH8qhV" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>belgian black metal <a href="https://everynoise.com/engenremap-belgianblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Belgium</td>
+  <td>Norway<br>black metal<br>belgian metal<br>doom metal<br>sludge metal<br>folk metal</td>
+  <td>Antzaat &quot;Disciples of the Concrete Temple&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7cab1a2f2051a5e3039213648ea454a2e0299c1b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0wVXLuII3I85S807swYOrO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3vN5OnVDvYnm8F2taNk0LL" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>belgian post-rock <a href="https://everynoise.com/engenremap-belgianpostrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Belgium</td>
+  <td>Belgium<br>post-rock<br>sludge metal<br>math rock<br>instrumental post-rock<br>atmospheric post-rock</td>
+  <td>MIAVA &quot;Every Heart Is A Beating Piece Of Shit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1edbd30d980f840337bcdce156c7edc83c1056d1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-post-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/369djgyc1iROD7CiAFbZPH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5JtBncEEG7c7v61vzjlyuW" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4yDDfNyeYhVVcCzMCMdq8b" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>belgian hardcore <a href="https://everynoise.com/engenremap-belgianhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Belgium</td>
+  <td>Belgium<br>hardcore punk<br>hardcore<br>h8000<br>metalcore<br>grindcore</td>
+  <td>Mindwar &quot;Collective Compulsion&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5a04c20df697c7e406d1aaef9fa64910080594ee" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1sfaLLhyATL8CMjS9y2Jzs" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5hne3nEjaQ0BLlU1cy1gSA" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>belgian blues <a href="https://everynoise.com/engenremap-belgianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>W.Belgium</td>
+  <td>Belgium<br>blues<br>blues rock<br>modern blues<br>rockabilly<br>acid jazz</td>
+  <td>Arno &quot;Putain putain - Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4cfdcde4a1ae74e13537c987a83fec2feed6abc0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/50pLf1RcDCIjDAdZLChmfw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/458j2uOah9F6jTXzX0xLtE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rUR2JpSbOkQByFbqCp33v" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0TD3Ydd1WIx3j7FRUdyaI7" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>vlaamse kinderliedje <a href="https://everynoise.com/engenremap-vlaamsekinderliedje.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Belgium</td>
+  <td>Belgium<br>children\'s music<br>muziek voor kinderen<br>classic belgian pop<br>vlaamse cabaret<br>dutch musical</td>
+  <td>Studio 100 &quot;Festival&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c533fbad6ada5e7749c2fc7114b0f6113c72d93c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vlaamse-kinderliedje" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0UNmQ938zF2lzSC9INtUug" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2iNMbY6EAsgBYiCc6TSgvA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2SFQCnZn8dWzFZTUlmQC6P" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/36Jnu4ZLREK3tQzmsDVQSq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4LyQDMgcUPpMmhzSPLXkf8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>belgian hip hop <a href="https://everynoise.com/engenremap-belgianhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Belgium</td>
+  <td>Belgium<br>french rap<br>french hip hop<br>rap belge<br>vlaamse rap<br>rap calme</td>
+  <td>STIKSTOF &quot;AMBRAS&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/29d3a3463e94d19d2b0e0bc9a49141d89e6c79f9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/175B1P6kJsTf9MWBpRrylF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6BxDibVSpcABeoBBo1vToA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7lQdjEDJRx0enKLJXiRPvL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4oCjr5U2RKNKekfbMONqoV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1NXTLYQYrk9ooU5sWS1H3h" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>west-vlaamse hip hop <a href="https://everynoise.com/engenremap-westvlaamsehiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Belgium</td>
+  <td>Belgium<br>belgian rock<br>belgian hip hop<br>vlaamse rap<br>nederpop<br>classic belgian pop</td>
+  <td>Grafgravers &quot;Smoorverliefd&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/95a04f5d99c8b6718e5da9c74b300d5d23f808b5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/west-vlaamse-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1bd2qhtCJjiJM04ptaYID7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7zMCAnsRpDwtuKP0GjmLDr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1X3e7YXLKIy1RsT0fo7hK6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7GH7QPmU4ZrUg6N3kdTMdB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5JiLgtJa7v6dXxg2RlTVoA" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>belgian experimental <a href="https://everynoise.com/engenremap-belgianexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Belgium</td>
+  <td>Belgium<br>experimental<br>drone<br>dark ambient<br>ambient<br>avant-garde</td>
+  <td>Ben Bertrand &quot;The Nixe of John Cage\'s River&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9c8c3f223e26094b14802bda99d2f3a025d5266b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6GsLJIrwt4ku6Ib4Ux8TRi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/21rt1kGjzWvxHSnsrGVA88" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>belgian modern jazz <a href="https://everynoise.com/engenremap-belgianmodernjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Belgium</td>
+  <td>Belgium<br>nu jazz<br>free jazz<br>avant-garde<br>ethiopian jazz<br>french jazz</td>
+  <td>De Beren Gieren &quot;Gentse Leugentjes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/18bf2a990cee01e66d97a5cc2c2f9b41ad70646f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-modern-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1hOVJ5fdRHIZDB7LAO77ms" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3MZ3gpxfiXeyi8k5iEce0w" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6J0Yzn0sIM0fe4o8ZdEWUi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2iWgxgBJaBUNc6LAy184N1" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6bObZJF7UCKPnvpj7a0t9o" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>vlaamse cabaret <a href="https://everynoise.com/engenremap-vlaamsecabaret.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Belgium</td>
+  <td>Belgium<br>comedy<br>classic belgian pop<br>dutch cabaret<br>nederpop<br>kleinkunst</td>
+  <td>Gunter Lamoot &quot;Imitaties&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9b3d8e5139f4164b492d4152136ba3368479d51f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vlaamse-cabaret" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Qetj9ZrNF0zJmvR1S7YoW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5NcfYoFq5Vdz2ESRcEfm0K" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2gkHye7jfaprAUnJv3nC8r" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2rm3czMwxfHQyWwAtXvcpF" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>belgian singer-songwriter <a href="https://everynoise.com/engenremap-belgiansingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Belgium</td>
+  <td>Belgium<br>kleinkunst<br>belgian rock<br>ghent indie<br>nederpop<br>belgian indie</td>
+  <td>Meskerem Mees &quot;Joe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1a945309d451fa89f5a5dbd348b2bfc84ab1bf92" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-singer-songwriter" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1FvQTuUe7eWRRc3ZcwBNop" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0MV4KTW4H2ezI4pKMcFID7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5lXtEgIpCyb4dW1zxpI6yQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0jJBtshYfyI6BPfPOe3stc" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Mnola2BTfytCXSvUbkKZK" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>belgian jazz <a href="https://everynoise.com/engenremap-belgianjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Belgium</td>
+  <td>Belgium<br>jazz<br>french jazz<br>hard bop<br>vocal jazz<br>free jazz</td>
+  <td>Philip Catherine &quot;Je me suis dait tout petit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/621f3d571b76821629ccf38ed244cf07e196c9d1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3neYhlIbjKE0SQd9hn6xw9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7feEEP4MNQEEuxh5oSDg1O" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7CoRpX2bpVezWZC2979F1Z" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1d1O8vyqjglzQWdC6LLY6z" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>belgian contemporary classical <a href="https://everynoise.com/engenremap-belgiancontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Belgium</td>
+  <td>Belgium<br>minimalism<br>serialism<br>acousmatic<br>belgian experimental<br>new age</td>
+  <td>Wim Mertens &quot;Struggle for Pleasure&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f0981d31ceda9815cd3e38917c4e3cd3f81d7973" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Q0TNJBqgSkomlkrAoz8DV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7s30KDxEKODMhyy7rkDmCt" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>belgian classical piano <a href="https://everynoise.com/engenremap-belgianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Belgium</td>
+  <td>Israel<br>classical piano<br>chamber music<br>avant-garde<br>classical<br>historic piano performance</td>
+  <td>Jean-Claude Vanden Eynden &quot; Dolly , 6 pi pour piano  <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e8d282dd013a8cf3b5fa8e3377b0db566243b20e" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2VugjDsyXVP4XEdCVabYll" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4UQti246d8vnBvGLBCaJ2o" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

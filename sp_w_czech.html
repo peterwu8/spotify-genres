@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Czech: (31 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Czech: (31 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Czech is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>czech electronic <a href="https://everynoise.com/engenremap-czechelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Czech</td>
+  <td>Czech Republic<br>czech experimental<br>idm<br>experimental hip hop<br>drum and bass<br>melodic techno</td>
+  <td>Aid Kid &quot;Four Track Recorder&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fe9626f64044864669f659ca0622cd9e9ea41710" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Xxq5jPn4TfFO2J0MDRtNw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2tOnLiRR4UNjLEewu0OEYC" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>czech pop rock <a href="https://everynoise.com/engenremap-czechpoprock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>Rock<br>W.Czech</td>
+  <td>Czech Republic<br>czech pop<br>czech rock<br>czech punk<br>czech singer-songwriter<br>czech folk rock</td>
+  <td>Jelen &quot;Magdal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cb78334eb23bd43bc2d500698a87d764c01100ed" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-pop-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4205hHqdNaQYBhkD9Zwqok" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2WSMpzIwa56YZZwOk8xULn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/44zARWxHh384do6ggOvuTP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2imtjagI2f1BluY6cpYDot" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6vGWDQ4oJf1xp7d6tsy5KE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>czsk viral pop <a href="https://everynoise.com/engenremap-czskviralpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Viral<br>W.Czech</td>
+  <td>Czech Republic<br>czsk hip hop<br>czech pop<br>czech hip hop<br>8d<br>slovak hip hop</td>
+  <td>TVTwixx &quot;Louis Vuitton&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dc4d079ecf851d6861397a65a958e0aa206602e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czsk-viral-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/54mHZnzgQk8m3jwRnNd33b" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1QSrkrMmfEX0V2bYLYSE4h" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7AFPgYI5lK1PZgzvw0ZB6U" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1mb4QCf2ZzOcFWlgbEKMVq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5VaP5hbPGiHNlPSQzcd5K3" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>czsk hyperpop <a href="https://everynoise.com/engenremap-czskhyperpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hyperpop<br>W.Czech</td>
+  <td>Slovakia<br>hyperpop<br>slovak trap<br>czsk emo rap<br>punk rap<br>czech hip hop</td>
+  <td>ph1l &quot;bad b1tch&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/813af2d3692045edba9766daf0b56987bb60d577" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czsk-hyperpop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/32YHp0g2L05KKGJuZ4LYWW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7w7v2NkPKP2EYL17Czpc3D" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/68oBmltDYus0Hx3OTL1JTB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6shge59HXUG7o1uyfs3h64" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6lw4tgc7qjDdfXRxKVtPUt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>czsk electropop <a href="https://everynoise.com/engenremap-czskelectropop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Czech</td>
+  <td>Czech Republic<br>czech indie<br>slovak indie<br>czech rock<br>prague indie<br>czech pop</td>
+  <td>post-hudba &quot;6m16s&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bbc469d92822bda215925ccab913623b58931220" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czsk-electropop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5uEzkIiA76UNaJv7EESDZb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2pIs3tMAUzFEoS30WyUHEG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1iYsUIBLCDtDcTYkefS1PX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4tikfetRaRpeDW44TFPtDC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ZXol90tUuMxkDjk7w2jCg" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>czech hardcore <a href="https://everynoise.com/engenremap-czechhardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hardstyle<br>W.Czech</td>
+  <td>United States<br>rap metal<br>hardcore<br>melodic hardcore<br>hardcore punk<br>grindcore</td>
+  <td>Hopes &quot;Swallow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c07345f00a420156f62ee8c86c3ef58f35225024" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-hardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3bP6MTPSEYT73wYKzu8lON" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0NIUQZCng8iw1JLyT9loOf" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>czsk reggae <a href="https://everynoise.com/engenremap-czskreggae.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Reggae<br>W.Czech</td>
+  <td>Czech Republic<br>ska<br>czsk hip hop<br>ska punk<br>czech punk<br>czech hip hop</td>
+  <td>Coco Jammin &quot;Zahradnick P&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dc1c91eea64a37fc3987329c04229bfca0d304e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czsk-reggae" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5xlO1Pwh38pPdi50D60sLP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3fdYNisJVRz3Gsu8hs8BVt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5CmrlhtKvTf0t3jwUPCHVV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/04KqoPE5BdCGfgfQTrlVS3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7KAzWyBj4FXN0A3Hf9xI4k" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>czech hip hop <a href="https://everynoise.com/engenremap-czechhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Czech</td>
+  <td>Czech Republic<br>czsk hip hop<br>czech drill<br>czsk emo rap<br>czech pop<br>slovak hip hop</td>
+  <td>Hugo Toxxx &quot;Proc Jsi Pro Boha Na Me Tak Zla?&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8eb031def735e239a4f4c76b5a9665e57d2d45d2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1mWFOjbpigCHthXEJDqyYF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2wslUCRwjUEjPkwUw1BTBQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Kd20yvgG7IinNX4AMOQpk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0vF7grlBe68ZmSoppFvB18" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pwWceG8QzUKAtoOWJn3zy" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>czech metal <a href="https://everynoise.com/engenremap-czechmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Czech</td>
+  <td>Czech Republic<br>grindcore<br>death metal<br>czech rock<br>thrash metal<br>black metal</td>
+  <td>Debustrol &quot;Sv co zato s tebou&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/083e6e0b45183415514dbcca2ddf7e9ce99a5fa6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1xdU9JbTsKlAmUPpV4YegS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7HRSLTzbL56l8vneW3mR2w" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6UJYYubxMHiCjlQQEY07qH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/69Sr8byJVgNaltwJafKZjD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1DjxCserHgL4dNebPHcIvd" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>czech drill <a href="https://everynoise.com/engenremap-czechdrill.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Czech</td>
+  <td>Czech Republic<br>czech hip hop<br>czsk hip hop<br>drill<br>grime<br>bassline</td>
+  <td>ERNE100 &quot;BANDO&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/76d40e8c8055d57c0425840f603e0d4c41477882" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-drill" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/239tIdSd59UTdc0tjpKwfG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/12kZsrN8ItaPt5sI5r680Q" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1c2T6F8Oqm7UmCBfGAryr9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6DPzTEqt35xxLBVIdYI9it" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6izOuDpOj6REwItpuqr4fx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>czsk emo rap <a href="https://everynoise.com/engenremap-czskemorap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Emo<br>Rap.World<br>W.Czech</td>
+  <td>Czech Republic<br>czech hip hop<br>czsk hip hop<br>czsk hyperpop<br>hyperpop<br>horrorcore</td>
+  <td>Totally Nothin &quot;10mg freestyle&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c59b33d8c72cac9ea12ae4a108c88f4cd1893a96" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czsk-emo-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4NG5UJWqbdGtiGVSo3cssF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4izm3QhYxFaqBOrYVf0YAJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/58RayEYEjkpq8ESToI72om" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1LXLCQbTsbUvAEIPGSMPZz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/20jXE51dvUGenXMJMCtX2S" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>czsk hip hop <a href="https://everynoise.com/engenremap-czskhiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Czech</td>
+  <td>Czech Republic<br>czech hip hop<br>slovak hip hop<br>czech pop<br>czech drill<br>slovak trap</td>
+  <td>Karlo &quot;Ticho&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cb62c15b2201270ca031b05f284d54f15216a2bc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czsk-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4uoyPOQDUiyKaz9R5D6PzH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3d5jCAj8KI62xVo567NEGn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6fGC3ZkenmH3oj8PjctYes" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6cz4DzJUv9TXsC4MTVb5Mg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6fZC2F5Y63MLSySaoXY98u" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>czech punk <a href="https://everynoise.com/engenremap-czechpunk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Punk<br>W.Czech</td>
+  <td>Czech Republic<br>punk<br>czech rock<br>big beat<br>ska<br>czech pop</td>
+  <td>N.V.. &quot;Modroo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8400ddf7d32b6574de97f61a2ef03e6f0d33ba22" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-punk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5U3f3yNoyeMrVNpPyEcbPz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1IlJGpU4HqNpfuJ0E879Dm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0OnN0RJXazPIae81q0je49" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5gRxSyJjk3rfOQq4MVvU8l" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4iGMVj5Fcaq5AN45GtsPWG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>czech alternative rap <a href="https://everynoise.com/engenremap-czechalternativerap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rap.World<br>W.Czech</td>
+  <td>Czech Republic<br>czech hip hop<br>horrorcore<br>prague indie<br>czsk hip hop<br>balkan post-punk</td>
+  <td>Cringe Prince &quot;Chci t tak moc&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/955f7a1dbc5f0e3ee604eaa5c3eab7daf59aeae8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-alternative-rap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6p3WOmcy1lanbNsLE8SbGu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3QY81cbRYFXTHdTBNVVVb2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4zTcYAsgRuPajFHyYNTyf9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1stOrqhht7YDx7OnuDlChH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2PrrdVW9oVRGAxwqzjsAHc" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>prague indie <a href="https://everynoise.com/engenremap-pragueindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Czech</td>
+  <td>Czech Republic<br>horrorcore<br>czech rock<br>czsk electropop<br>czech psychedelic<br>czech indie</td>
+  <td>Metastavy &quot;N&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2d526286987a8451d0739205b45d4202811151b5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/prague-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/43FCQ38rJMZVQHhZLmT9bD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1cTndib7E5OWbLeESOqBTJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MwTkUKK9FOf2UIgI6Q2Dg" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4RI0Ltey5vLUsx8Ieacczz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1VopKNowFxmR5ErfCkK4el" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>czech indie <a href="https://everynoise.com/engenremap-czechindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie.World<br>W.Czech</td>
+  <td>Czech Republic<br>czech rock<br>czsk electropop<br>czech psychedelic<br>post-rock<br>slovak indie</td>
+  <td>Kittchen &quot;Sudety&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f8a524eb11864be52b1710ee8b9bf52f016f1ea4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1TVHmJdWHLZ48J8zfqlgCN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2bXFADqEjwIUCoCgpSWrk0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7vJeSENz84ond9j5UdyRPu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/72s98CpEtcOGJeRNJ9LpKN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1JYLTMOE8apUUCT5GS9fxX" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>czsk black metal <a href="https://everynoise.com/engenremap-czskblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal.World<br>W.Czech</td>
+  <td>Czech Republic<br>black metal<br>slovak metal<br>doom metal<br>melodic death metal<br>folk metal</td>
+  <td>Stiny Plamenu &quot; Kanaliza Sb&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/77e8ee899f159746e203eac17bdfb590efbd24c5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czsk-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7G0SdaGq14uIEGuZAMV69h" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7c6gSnRdFCpm3G1VdYUTuR" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>czech rock <a href="https://everynoise.com/engenremap-czechrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rock<br>W.Czech</td>
+  <td>Czech Republic<br>czech pop<br>czech folk<br>big beat<br>czech punk<br>classic czech pop</td>
+  <td>Vitacit &quot;Dragon&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7125724b4d260322a87993956f0f55e3efd25e8c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7ceXY8dmlUPipFsNcvLIfh" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/44Jnkh0V8VTCk1hMcCID8Y" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/712IlKeZUnMdvIygok9rV2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mTGVx1wMDUeONbkH0fjhI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4cB52dhljjPjXTf9s0YEmZ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>czech pop <a href="https://everynoise.com/engenremap-czechpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Czech</td>
+  <td>Czech Republic<br>czech rock<br>czsk hip hop<br>czech folk<br>slovak pop<br>czech hip hop</td>
+  <td>Poetika &quot;P&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f565faa968e0554c6e55943c83942d69df7d9221" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/01DShGX3Dhj2jJMlUJd4IC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/05657jnifBqpCQQLDpujE4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rzcLOneGUP9OR7eXtjmfv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1vUKtRCeEd4SrUOBPXBZoT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0fmX9UP6qsGHka4EdwLrTd" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>czech psychedelic <a href="https://everynoise.com/engenremap-czechpsychedelic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Psy.Goa<br>W.Czech</td>
+  <td>Czech Republic<br>brno indie<br>czech indie<br>space rock<br>prague indie<br>sludge metal</td>
+  <td>Madhouse Express &quot;Drip Off&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0e4010c05c6e90ff48f9e62f8afae5c25667d515" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-psychedelic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3k9I7FK9Ft7IdwtzpGyJW7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Jk2MxqakxUysaelPI07vv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/615QyKCnbWFMqfqdfNyrlK" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>czech folk rock <a href="https://everynoise.com/engenremap-czechfolkrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Rock<br>W.Czech</td>
+  <td>Czech Republic<br>czech rock<br>czech folk<br>big beat<br>folk<br>folk punk</td>
+  <td>Traband &quot;S! (Sara!)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6a933ec830882ef29517389c8b23b5c9ddbfdc0c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-folk-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0u6RTb8StUdsTIzENnUSCB" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/52xncL4Lvwl3I9D7V7PK1E" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7zISjd5z0wpGBtayMcQgGL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1aCnf1Cwb08nj9gcpLxIQq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/42GF90I2bVj2GSm7YxPVSn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>czech experimental <a href="https://everynoise.com/engenremap-czechexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Czech</td>
+  <td>Czech Republic<br>czech electronic<br>experimental<br>drone<br>avant-garde<br>ebm</td>
+  <td>Bols/Slob &quot;CARBON&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e0a81868a0eb332d6e1eba387dc1c6cdf0e014a5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7lU8ApjDM0jD0uWK0MRCcs" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0425SqjE9dL7IryiNmSnkp" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>classic czech pop <a href="https://everynoise.com/engenremap-classicczechpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Czech</td>
+  <td>Czech Republic<br>czech folk<br>czech pop<br>big beat<br>slovak pop<br>czech rock</td>
+  <td>Milan Drobn &quot;P Pro Ko&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d09a0a23df4a5c27a05b135bf808f24c4f0f201e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-czech-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4A9smdmgUuD8t7QCpXMPao" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Ktfa2WckhbUbpdSfjl0wT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0wcIvhJ8TJVpI6kP9UZx8a" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2lcCUjPOAUWVsHMLzIwcUE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/56ZMSJtNJVyyG59J0OTrig" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>czech country <a href="https://everynoise.com/engenremap-czechcountry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Country<br>W.Czech</td>
+  <td>Czech Republic<br>czech folk<br>folk<br>classic czech pop<br>czech singer-songwriter<br>polka</td>
+  <td>Mirek Hoffmann &quot;V Do Tennessee&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c1d1b7190700f05b4682891572715f2045c8e704" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-country" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7I6FiH7XE4EF83ehcPHF74" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4aSo2zrj9m9RzjNIwsTJod" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/614i9mmkix7RSFjDMhELZk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/49MQvkxGF1TA3A3cm8ieWk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3cj8xyt2ZPv1ZqJiTyUWsL" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>czech folk <a href="https://everynoise.com/engenremap-czechfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Czech</td>
+  <td>Czech Republic<br>czech rock<br>folk<br>classic czech pop<br>czech country<br>big beat</td>
+  <td>Robert Krestan &quot;Panenka&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6490e69a34d6ea7474b49ee0ddb26fda3eb4594e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7qd26ZLa0cL8kv7tcdEh35" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1PQNGPYni1V1nFdLLyF6D5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2NPtwzrHcjAt5Flbly1Lz0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5XI8ptpn7LUGPkN8JIE8Pw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/52RMC7i8z7RCdUtuHuWKVM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>czech singer-songwriter <a href="https://everynoise.com/engenremap-czechsingersongwriter.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Czech</td>
+  <td>Czech Republic<br>czech folk<br>czech rock<br>folk<br>big beat<br>classic czech pop</td>
+  <td>Jaroslav Samson Lenk &quot;Uz to nenapravim&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9402aac6772dca9fc52bf69e88f7dac66ba5e3db" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-singer-songwriter" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/47UxyjyoszNHu0RwXu5fTX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/16PKet2nwdj5UHMEsVvkS5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0T8WYfNkW7YXJY7Zg6SKOW" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3vJiVb9JJvFc7QvUz8vKuM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3R8FhwNsKKsIrvdzlqidzn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>czech jazz <a href="https://everynoise.com/engenremap-czechjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Czech</td>
+  <td>Czech Republic<br>free jazz<br>nu jazz<br>vocal jazz<br>psychobilly<br>czech rock</td>
+  <td>Robert Balzar Trio &quot;Frozen (arr. M. Williams for orch<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/476658f7eb58053f35ed1407097a3018b7076491" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6VsAuJuAPIJINtoNQHfojz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4XDiTzSCiEBaGpL3haS8Il" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>czech swing <a href="https://everynoise.com/engenremap-czechswing.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Czech</td>
+  <td>Czech Republic<br>swing music<br>spoken word<br>classic czech pop<br>czech jazz<br>soul blues</td>
+  <td>Inka Zem &quot;Slune&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b51dd9667d7cd4344b2d92dafa03b51cdb479ec9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-swing" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2hv0io2pqBdOEPNP54t31s" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5jGdQxtYegtKRvGJqo8315" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2HgoFR5EqSHZM6yUEipHyB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/75yJ1lwa8EuYsGNj9DEWhg" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>czech contemporary classical <a href="https://everynoise.com/engenremap-czechcontemporaryclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Czech</td>
+  <td>Czech Republic<br>chamber music<br>detske pisnicky<br>concert band<br>serialism<br>choral</td>
+  <td>Petr Eben &quot;Two Invocations (1988): I. Moderato&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d8adced547e569723172c58da4a17421b74b239a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-contemporary-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5WhfxcS5CI71DlAGtkFPXS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ScV4ZrFoaQtvw05But2sB" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>czech classical <a href="https://everynoise.com/engenremap-czechclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Czech</td>
+  <td>Europe<br>chamber music<br>early modern classical<br>classical<br>classical era<br>post-romantic era</td>
+  <td>Bed Smetana &quot;6 Album Leaves, Op. 2, JB 1:51: No. 2 in<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dfc42096c5faedf18f2737d90150997dcbdbcbbf" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6UL1AECrq49zed0F28TUY0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1mPHwr7prt7gRHkb7li9SQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/24eesHDrmgnGmS9kHf0S3b" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3b4hbAJHJGOt0uYTmccAz8" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>czech classical piano <a href="https://everynoise.com/engenremap-czechclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Czech</td>
+  <td>Czech Republic<br>classical piano<br>chamber music<br>classical<br>neoclassical<br>czech classical</td>
+  <td>Ivan Klansky &quot;On the Overgrown Path, Series I: No. 1,<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fa1e8f141454e6beae8f9fbfe441895cdf282129" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1K4Hrw4zygQgqsorVpNVE8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4SAT9xwBIpqrUb4s09qrwC" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

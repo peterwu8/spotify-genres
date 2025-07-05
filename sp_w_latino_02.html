@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Latino 02: (5 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Latino 02: (5 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Latino 02 is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>1</td>
+  <td>latin classical <a href="https://everynoise.com/engenremap-latinclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Latino</td>
+  <td>Classical:9<br>W.Latino:3<br>Jazz:3<br>W.Brazil:2<br>W.Africa:1<br>W.Australia:1<br>W.Belgium:1<br>W.Italy:1<br>W.United.Kingdom:1<br>Folk:1<br>Dance:1<br>Baroque:1</td>
+  <td>Camargo Guarnieri &quot;Dansa brasileira&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5ab39045cf6947669f008767ede5cefdcdd5cc70" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/latin-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1HfQgWDUlAKTxq35lCfzXm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7KHzvfzU7SVFsooG7EhsQZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3MGUccAwLvNOzTmZ8Trur4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RvQOm7wo5MKGoT1yuZP0L" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/001AnKT0qjrxUe2X1fSvG2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>guitarra argentina <a href="https://everynoise.com/engenremap-guitarraargentina.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental<br>W.Latino</td>
+  <td>Instrumental:3<br>W.Latino:2<br>Jazz:2<br>Traditional:1</td>
+  <td>Juan Fal &quot;Ya me Voy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f2bce867ecd8830d85a8de5e6f37d2ef8553e313" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guitarra-argentina" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3tlXE7u0qRD3eg39wCqvII" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7AM6up7skBINcBMsC4hcdA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2PF3RJxabqqWX77UxhDprB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4nDjIw2mTkNe8u4a6ikNPf" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0H5MfM67lGytC7E9JBGicF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>latin american baroque <a href="https://everynoise.com/engenremap-latinamericanbaroque.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Baroque<br>W.Latino</td>
+  <td>Baroque:9<br>Classical:5<br>W.France:3<br>W.Latino:3<br>W.Italy:2<br>Gospel:2<br>Rock:1<br>W.Portugal:1<br>W.Spain:1</td>
+  <td>Gaspar Fernandes &quot;Xicochi Conetzintle&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/81153539f8c984d8108f534b07ef2a9989bc7132" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/latin-american-baroque" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0g1UjGDSHuEcFIHLiGgSwp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Y0PsfHwq4EAfoV2CGQI5t" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7KjNwIK0uBrkBeYbozbzzK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5bkR26avOzZGcV59vjaRkw" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>mexican classical <a href="https://everynoise.com/engenremap-mexicanclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Latino</td>
+  <td>Classical:19<br>Instrumental:11<br>W.Latino:5<br>W.Spain:2<br>W.Australia:1<br>W.Austria:1<br>W.Germany:1<br>W.Italy:1<br>W.Japan:1<br>W.Korea:1<br>W.Portugal:1<br>W.Sweden:1<br>W.Turkey:1<br>W.United.Kingdom:1<br>Baroque:1</td>
+  <td>Jos Pablo Moncayo &quot;Huapango (1941)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b41bf51e627d0ae3c5cb45aa3e9975b7cd1d57b2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mexican-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4qMvIThpy1YraD5kbf4HUw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Hw8HTpwKJqXpS7zjSQ0EM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5XL4PCQ70N8pOypVyJ48I8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7564cw1e6raUwkIEgF6cW6" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>latin american classical piano <a href="https://everynoise.com/engenremap-latinamericanclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Latino</td>
+  <td>Classical:22<br>Instrumental:19<br>W.Latino:3<br>W.Spain:2<br>W.Australia:1<br>W.Austria:1<br>W.Brazil:1<br>W.China:1<br>W.Canada:1<br>W.France:1<br>W.Germany:1<br>W.Hungary:1<br>W.Italy:1<br>W.Japan:1<br>W.Korea:1<br>W.Netherlands:1<br>W.Sweden:1<br>W.Turkey:1</td>
+  <td>Martha Argerich &quot;Kinderszenen, Op. 15: 1. Von fremden<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/088b966a7f7db3567e10d1e6bdd7a2923f3ac074" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/latin-american-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/17DcArmt0awFlsgE0c8bfo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7u5l82eY5aEZ2WN4PMxJ6K" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5iHXD4a3cWLLb5y1GiMJT0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5v05UvpVP8hYxOtCM4y3kE" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>

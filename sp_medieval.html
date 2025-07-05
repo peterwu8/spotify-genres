@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medieval: (29 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Medieval: (29 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button><br>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>bardcore <a href="https://everynoise.com/engenremap-bardcore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Europe<br>medieval<br>medieval metal<br>gothic country<br>classify<br>synthwave</td>
+  <td>Joseph C. Phaze &quot;Take on Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1fb9de2857e5bee0ff96833b45af7fdcce2af54b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bardcore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4D0hMNdpkyGYCRQ2Cr5rl9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6TkBKzb8SP3wI1OGi871qn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6H8mce0CHW5OFIifdhMoao" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4NnxoFhxxNUQhMs8ZcG76x" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>medieval rock <a href="https://everynoise.com/engenremap-medievalrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval<br>Rock</td>
+  <td>Germany<br>medieval metal<br>medieval<br>folk metal<br>folk rock<br>celtic</td>
+  <td>Ignis Fatuu &quot;Spiel des Lebens&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/84f91931325703bd63c3997cf7bce807b83da100" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/medieval-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6dIoh9Qbrfuwz2hwPymehs" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3bJfKd60ASF6rRzlcTzF8T" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5m2PHyb8zao7GyH8VKmzE2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7GP2IJ1XyfLfTMVx5yjgrT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4mJm5HbJ4h8rgNPmffGhwn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>hurdy-gurdy <a href="https://everynoise.com/engenremap-hurdygurdy.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>United States<br>medieval<br>folk metal<br>medieval metal<br>celtic<br>folk</td>
+  <td>Faun &quot;Tanz mit mir&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f790c20f998ee11d4b6e5a3a9daf4d0abdebce10" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hurdy-gurdy" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2SxLETpswJGIqRLZEjZ4BY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7GllgsTN71VioHh4ksZnEm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7yFBXpnz0neYhZz6Jm5Z8D" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6VLNqndsV14ENTa2Xu4Val" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2wq6KBpMrvRLHXy5MDlqaT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>medieval black metal <a href="https://everynoise.com/engenremap-medievalblackmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval<br>Metal.World</td>
+  <td>Norway<br>black metal<br>medieval metal<br>medieval<br>atmospheric black metal<br>melodic black metal</td>
+  <td>Ungfell &quot;De T und s W&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e775db4076f6fef3367ae58aaa6d7bb451583737" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/medieval-black-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7oJw5SRD0Tk6VV0lUGtnQI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/11PrZxDi2KqPruwPVOqgAc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4zQE9Xw0OZBo0lgLsOETp2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7cqGAt7B4YlmgzFI60XaD0" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>medieval folk <a href="https://everynoise.com/engenremap-medievalfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>Medieval</td>
+  <td>Europe<br>neofolk<br>medieval<br>celtic<br>neoclassical<br>neoclassical darkwave</td>
+  <td>Qntal &quot;Flamma&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/15163044dda8539cef4040b5e4953d5a3e8dff20" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/medieval-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5SJH8LXhnBM1WYSBLGSfc6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6lVPoAULOMj3SnCgOzkFYI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/70lBPZAaknJeCfhKt2pZq9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2vRJypXZJdns9w78y6FFh0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0jtr2mquJkK34OGv0PkfLD" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>commons <a href="https://everynoise.com/engenremap-commons.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Ireland<br>celtic<br>medieval<br>madchester<br>kizomba<br>kompa</td>
+  <td>Celestial Aeon Project &quot;Misty Mountains (From &quot;T<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8025178a883067a42ab67ff6fdbfa52668a9946e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/commons" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3mPB0zGlRqkFmdSqvcT6I9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3CBfMoFYBPPtZNE3uRlmZi" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>tavern <a href="https://everynoise.com/engenremap-tavern.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Europe<br>medieval<br>celtic<br>medieval metal<br>neofolk<br>folk metal</td>
+  <td>Jessica Baran-Surel &quot;Larid&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d3b01ef0e74587917d34021bb7265ce86715fea6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tavern" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5UcuFXWSta7OpQ2yvsoaTt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3SRTDyQmSdCF3oVfCbsq02" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/05QEoaUwVKLxT5HxiASdvB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5VLHAdpymmtVE0DbwkmGt5" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>fantasy <a href="https://everynoise.com/engenremap-fantasy.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Norway<br>medieval<br>celtic<br>sea shanties<br>medieval folk<br>neoclassical</td>
+  <td>Martin Egger &quot;Laketown Tavern - Traditional Version&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cd9971c2cdd5bcc6be5aeb4da2e3f2902c9ef873" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fantasy" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2C1E3xt9qjkh0KhZBjWueX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7yZS6e9IMeOkEzIydo1FYB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0fihUZCCTETIdHiL7uaNQe" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1zws4Fpet00yiTNaN03V75" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3O92BbVJa5UzJmryM8CT4Q" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>middle earth <a href="https://everynoise.com/engenremap-middleearth.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Italy<br>medieval<br>celtic<br>tolkien metal<br>dark ambient<br>dungeon synth</td>
+  <td>Howard Shore &quot;Concerning Hobbits&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f036e8187a122760cad93a5ec318a596325b9a09" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/middle-earth" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7zqvtBf3VNLXE7Z8T70Yj0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5oCnQo5S6M9850XBP8LTqS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3nY5oq40n7wUEtvGhRhmTB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4y0IH6x5EEfBkd8SoxkG8l" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/17A3c5Na9eBuusmc6P4cml" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>celtic <a href="https://everynoise.com/engenremap-celtic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>United States<br>medieval<br>sea shanties<br>new age<br>folk<br>neofolk</td>
+  <td>Altan &quot;The Gap of Dreams / Nia Jig / The Beekeeper&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9978210220f11fdd2ab9f8240cd7892e267c67c3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/celtic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/34Pov2604VdPKzbwSnLnVa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/652MEBjQfhjqwfoKrlaUK6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6L70580n0rXSIbbEYkLfm7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/02PPD03FMS5JYxkqWBmFQ3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Rxjce0GFPVq2ELAvEUCDq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>poetry <a href="https://everynoise.com/engenremap-poetry.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Cuba<br>spoken word<br>choral<br>medieval<br>drama<br>experimental</td>
+  <td>Robert Frost &quot;Mending Wall&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ca9f409e6e64d9a8bdeafb4987445cf8d5d38c0b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/poetry" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3DofdZQZN3uwb8lUq1w2We" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7f1rBV6PnRYeBkrZKRcgCj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1F8DaoSZGVM4ACM3Yol4qi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Wez7RJESxxujegRDOwjoj" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>sefardi <a href="https://everynoise.com/engenremap-sefardi.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Uruguay<br>mizrahi<br>medieval<br>classic israeli pop<br>traditional music<br>traditional folk</td>
+  <td>Flory Jagoda &quot;Ocho Kandelikas&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2a78f453adb0f6a5d9e06d8ff07f38cac9375554" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/sefardi" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6PqdqN2w2jcea3TACJVHaK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/56tBvLdVfENitF87723bqz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6rxX4eLXstRyX9djoLmSO4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5wqgixX8EqeYSMr6c9hlU2" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>ancient mediterranean <a href="https://everynoise.com/engenremap-ancientmediterranean.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Greece<br>medieval<br>traditional music<br>entehno<br>neofolk<br>arab folk</td>
+  <td>Petros Tabouris &quot;First Delphic Hymn to Apollo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fc496f0c36d3788161217cc6c217d48e87e2feca" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ancient-mediterranean" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4vAexE0pU3CIc17gqo1e69" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3NOxMf5RZTnCXdC3qrqCxB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6B63CF89IcwTSQsD5Uedk2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/58LcEswadjvlIhYGRdUm5x" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>medieval ensemble <a href="https://everynoise.com/engenremap-medievalensemble.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Medieval</td>
+  <td>Europe<br>medieval<br>gregorian chant<br>early music ensemble<br>celtic<br>neofolk</td>
+  <td>Unicorn Ensemble &quot;Ballo \'La Giloxia\'&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3c8552e1f17b6fc99063ab0415c3fd91b1ea820f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/medieval-ensemble" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0gtwF8ODemwUvNyVHXMtzx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/511MabrP35Zp3tqYh2G4iJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5jYyVrxdQ7PvlxYEOcXtoV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/41SETPNuipnm5MtD1W3yZS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>trouvere <a href="https://everynoise.com/engenremap-trouvere.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>medieval<br>ars subtilior<br>early music<br>troubadour</td>
+  <td>Adam de la Halle &quot;Madrigal (Kom, du ljuva hjartevan) <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d22a3d7987c6fe9a3970e0aa93ff4b6d813cdfa2" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trouvere" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6PuHIPMxEbj1N9bG4B4uqc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0nqJegaRD3nkCjyIwg7mry" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4HwEKCfQN7WyVQQ8tKXDpy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/39wuETvp5RVHVgOVdSUr24" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>celtic harp <a href="https://everynoise.com/engenremap-celticharp.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Wales<br>celtic<br>medieval<br>harp<br>traditional folk<br>traditional music</td>
+  <td>Gr Hambly &quot;Sir Arthur Shaen&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4fd82998d2353faadc41d8e0ef8e8db90701cbf8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/celtic-harp" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4OPtMKJ74D913rV9d2JN7k" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7iR72glWFGP5yjf38m6RZe" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5EAvnZAJsw1BfH4pVvCdlw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3UNEs4ozjrnBaUuIPUpxz7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5DJOjJTcKiHqkAMryXD06Z" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>troubadour <a href="https://everynoise.com/engenremap-troubadour.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>medieval<br>minnesang<br>trouvere</td>
+  <td>Bernart de Ventadorn &quot;Can Vei La Lauzeta / La Dousa V<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1f282c5cbbd97b1d8f57e38732ee6cff5249e3e8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/troubadour" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Hux4MRyitBYYlL9xMf70O" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5WjxMg3QfWAmDH7I2MpMoT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1slfjs9xTNyfmt5kaeeoG6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/74csqOKaLfTz3xgLMHXs39" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>early music <a href="https://everynoise.com/engenremap-earlymusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>France<br>renaissance<br>medieval<br>classical<br>choral<br>baroque</td>
+  <td>Johannes Ockeghem &quot;Intemerata Dei mater&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f05d0ddeea2bbc7851327f842d186db8e02ef682" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/early-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ERp4YspJ5OuhFPi8LgXZI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0K86fmE0c0SFgz9GpwhwLm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3RGydDCqUDzI83UJBpM4P1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4HyPvxrbRb1C3LVphYnZnR" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1t9e8Gi9G2BKK3FuYqACJD" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>viola da gamba <a href="https://everynoise.com/engenremap-violadagamba.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Europe<br>chamber music<br>medieval<br>classical performance<br>early music ensemble<br>requiem</td>
+  <td>Philippe Pierlot &quot;Pi de viole, Livre 2 - Suite No. 3 <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/facacdc681032bc694d4052f48fc1860553c22ad" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viola-da-gamba" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2BAveFoj0XHmd3Szro3ax4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7trkrHnBsGGGaQm3KJgVKP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/19C63xx1r880XZsO9BO7Eo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7CW2z4jOkxtV5ii78BHB91" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0HTlYCxYA346QgmDa4TUl2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>minnesang <a href="https://everynoise.com/engenremap-minnesang.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Germany<br>medieval<br>early music ensemble<br>troubadour<br>german renaissance<br>gregorian chant</td>
+  <td>Augsburg Early Music Ensemble &quot;O frondens virga&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/db9dff00f40b05e7487c74d77483d313b6696149" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/minnesang" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6AaaoRAd4DRefMN1WW4HXH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0AVJ1UKXMQf244cvu4np0k" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6DA0xTBsjOwX22e0dz6Hyu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6AoYluv7oZW5PbcdQ47Ac6" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>medieval <a href="https://everynoise.com/engenremap-medieval.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval</td>
+  <td>Germany<br>celtic<br>folk metal<br>video game music<br>folk rock<br>viking folk</td>
+  <td>Guillaume de Machaut &quot;Douce dame jolie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/387189fbcffa8104beff8e5f3f47c0543285be41" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/medieval" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5cG6hZfrYMAfebMVlKX3Pg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ckHBekHAoozIV6ISOmvq1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2z6FM4scrQ5lpsKId0jeki" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Z5SNtd1IWRRw3ESZfJZKe" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2xfCdpmPmRtGgNyuk1zawd" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>lute <a href="https://everynoise.com/engenremap-lute.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>France<br>medieval<br>chamber music<br>classical performance<br>celtic<br>dutch baroque</td>
+  <td>Federico Marincola &quot;2 livre de tabulature de leut: Fa<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a422a50cb23261185cd2d3e672526268707558ec" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/lute" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3KeF8QoHNBiUmQh4S1LuF9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/52VptovPDaoqCMZm1dzIcP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Z50lOYuLuRgUh0l4zp4eH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3eOGSwhl1FaGKU0OvvKWpw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2o2Gcea1Aw5g9fiaakpnNp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>american early music <a href="https://everynoise.com/engenremap-americanearlymusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>United States<br>medieval<br>early music ensemble<br>choral<br>baroque ensemble<br>gregorian chant</td>
+  <td>Piffaro &quot;Si habr en este baldr?&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8f3c864eb9d159305094f3be5ef4278400c73070" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/american-early-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3zQjl0nrwE5qtgUcDIYqLe" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1RatTJrho9K5z9OVCqeU7Z" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6wEiUEOA6j5UGpxAeOX7ud" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1kO5Ms9EamsjcHV2UyEXvC" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>english renaissance <a href="https://everynoise.com/engenremap-englishrenaissance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>United Kingdom<br>renaissance<br>choral<br>medieval<br>anglican liturgy<br>early music</td>
+  <td>Christopher Tye &quot;In nomine: Rachell Weepinge&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7fa1344aecf3ab94d84845db75b14928956f5913" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/english-renaissance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/114dNFeW3hJorDJwJW9593" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ikc7RM2cySIDipaP64KJq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0oK2wjQM2qWC5qNrrVGvk1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4tvxocP51o3obOpvXUmnsK" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1AdGjJT0yzHm6a51diZfFh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>renaissance <a href="https://everynoise.com/engenremap-renaissance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>France<br>medieval<br>early music<br>choral<br>gregorian chant<br>franco-flemish school</td>
+  <td>Jacob Obrecht &quot;Salve Regina&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/54c100ee480cfbf28970502441b02c4042ffbb1c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/renaissance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7BNX396OC9C7sr819t1vFv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0evPZ6WIgSKYY2gnlfXIdA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3vOsJCyqXQS2sM1kh9lhkj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5vS5LEzxYEfbFFjGJnCyI7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4BPv3GEHph0ycJCOnd3Ljh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>madrigal <a href="https://everynoise.com/engenremap-madrigal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Italy<br>renaissance<br>medieval<br>choral<br>italian renaissance<br>early music</td>
+  <td>Luca Marenzio &quot;Basciami Mille Volte a 5 Voci&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1f20f1e09266bf6c3554c84d894a5d05a5e7487c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/madrigal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4HPYpmI2Ecxus7xuTUpVRZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5uQQu2RC80Ku5AjSpCtrJF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0NQVemxAbRNCTF9D3U6oSa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1abh35puMJS3QIxOaLd5JW" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5nbXfTwxsiFwuV1zxmYJBf" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>trecento <a href="https://everynoise.com/engenremap-trecento.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>Italy<br>medieval<br>madrigal<br>italian renaissance<br>ars subtilior<br>gregorian chant</td>
+  <td>Francesco Landini &quot;Angelica bilt&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9e208f950817382c5d50e53a5423179ef78ac481" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trecento" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0safUcZu6lo0jue8UvSjT6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6zc2HFPnDWeqqsBHhYEQER" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5EryjyN5HqT4khCiRsMv2Y" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3818XUQZvYFFYJI8oA2IIz" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>franco-flemish school <a href="https://everynoise.com/engenremap-francoflemishschool.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>France<br>renaissance<br>medieval<br>french renaissance<br>choral<br>early music</td>
+  <td>Heinrich Isaac &quot;Argentum et aurum&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6ec58fd70c0afcc2cd5e4882d0758d6b9bd032e7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/franco-flemish-school" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/61crYekpoLGRyM8Z5QBuRd" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2xtljicTTSctDvj5UUlWCJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1OqtuZw0gZkP9dAZTF45Pe" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5DCYXNXqZVqLXJL9bDZirN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mLE533lTafCsIvCgQxWrw" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>ars subtilior <a href="https://everynoise.com/engenremap-arssubtilior.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval &#x2380;</td>
+  <td>France<br>medieval<br>trecento<br>italian renaissance<br>renaissance<br>deep house</td>
+  <td>Ferrara Ensemble &quot;Tout par compas suy compos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/100209c69e2ed9d5f1bf6ff75f00991c2fb9275a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ars-subtilior" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3sPmdQQ6gp2HD6i5Ao4pkH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2UKjnmVx8ROXrNxIAeaE7M" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3dJw9AZo3SvRk8gcoF3pvJ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after 5 seconds
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, 5000); // 5000 milliseconds = 5 seconds
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+
+  function startAudioScan() {
+    startedAudioScan++;
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+
+  // Set a timeout to pause the first audio after 5 seconds
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, 5000); // 5 seconds
+
+  }
+</script>
+
+
+</body>
+</html>
