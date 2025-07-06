@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><br>
+<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -1333,7 +1333,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>096</td>
   <td>rap antillais <a href="https://everynoise.com/engenremap-rapantillais.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Rap.World<br>W.French.World<br>W.Islands</td>
+  <td>Rap.World<br>W.Francophonie<br>W.Islands</td>
   <td>France<br>shatta<br>zouk riddim<br>zouk<br>dancehall<br>kompa</td>
   <td>Nicy &quot;Avion de chasse&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/40598f58b5595db124f41f9d84bd993a8e774f54" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/rap-antillais" title="info">info</a></td>
@@ -2025,11 +2025,13 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 142 &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
     }
@@ -2046,6 +2048,7 @@ function sortTable_1(n) {
 
   function startAudioScan() {
     startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 142 &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
 

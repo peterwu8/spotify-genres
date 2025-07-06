@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><br>
+<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -322,12 +322,11 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>18</td>
   <td>dutch baroque <a href="https://everynoise.com/engenremap-dutchbaroque.html" title="&#x2306;">&#x2306;</a></td>
   <td>Baroque<br>W.Netherlands</td>
-  <td>dutch baroque<br>english renaissance<br>viola da gamba<br>spanish renaissance<br>viola<br>early music ensemble</td>
+  <td>Europe<br>baroque<br>medieval<br>lute<br>choral<br>early music</td>
   <td>Jan Pieterszoon Sweelinck &quot;Pseaumes de David, Livre 2<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3a74093a22304747b0a23d0882ab5e6805e10558" controls="controls" preload="none">
 <I>Your browser does not support the audio element.</I>
 </audio></td>
   <td><a href="https://www.chosic.com/genre-chart/dutch-baroque" title="info">info</a></td>
-  <td>--</td>
   <td><a href="https://open.spotify.com/playlist/0F51Fqe9uBQUkVMXlpuVOW" title="playlist">playlist</a></td>
   <td>--</td>
   <td>--</td>
@@ -417,11 +416,13 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 18 &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
     }
@@ -438,6 +439,7 @@ function sortTable_1(n) {
 
   function startAudioScan() {
     startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 18 &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
 

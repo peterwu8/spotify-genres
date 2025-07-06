@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Party.Festival.Band.Cheer: (30 genres)</title>
+    <title>Party.Festival.Band.Cheer: (29 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <p>
 
-<strong>Name:</strong> Party.Festival.Band.Cheer: (30 genres)<br>
+<strong>Name:</strong> Party.Festival.Band.Cheer: (29 genres)<br>
 
 <strong>Notes:</strong><br><ul>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><br>
+<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -414,19 +414,6 @@ document.addEventListener("DOMContentLoaded", function() {
 </tr>
 <tr>
   <td>26</td>
-  <td>klezmer <a href="https://everynoise.com/engenremap-klezmer.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Party.Festival.Band.Cheer &#x2380;</td>
-  <td>Israel<br>balkan brass<br>mizrahi<br>yiddish folk<br>traditional music<br>tango</td>
-  <td>The Klezmatics &quot;Come When I Call You&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fce8c6b439bac469e1cc2dbf97d5d83f299c7f95" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
-  <td><a href="https://www.chosic.com/genre-chart/klezmer" title="info">info</a></td>
-  <td><a href="https://open.spotify.com/playlist/0v3ZsG3CeK7cDUG8Vg3o3b" title="chosic">chosic</a></td>
-  <td><a href="https://open.spotify.com/playlist/2Rdu6yaflPFX3lfMewsxKA" title="playlist">playlist</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/6rVD7Idk87SCkebSF4xt5F" title="intro">intro</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/3w5XFIQZIYLZrcDBWPpGiN" title="pulse">pulse</a></td>
-  <td>--</td>
-</tr>
-<tr>
-  <td>27</td>
   <td>college marching band <a href="https://everynoise.com/engenremap-collegemarchingband.html" title="&#x2306;">&#x2306;</a></td>
   <td>Party.Festival.Band.Cheer</td>
   <td>United States<br>marching band<br>concert band<br>military band<br>wind symphony<br>cajun</td>
@@ -439,7 +426,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>--</td>
 </tr>
 <tr>
-  <td>28</td>
+  <td>27</td>
   <td>musikkorps <a href="https://everynoise.com/engenremap-musikkorps.html" title="&#x2306;">&#x2306;</a></td>
   <td>Party.Festival.Band.Cheer &#x2380;</td>
   <td>Germany<br>polka<br>blaskapelle<br>military band<br>oktoberfest<br>seemannslieder</td>
@@ -452,7 +439,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>--</td>
 </tr>
 <tr>
-  <td>29</td>
+  <td>28</td>
   <td>fan chant <a href="https://everynoise.com/engenremap-fanchant.html" title="&#x2306;">&#x2306;</a></td>
   <td>Party.Festival.Band.Cheer</td>
   <td>Argentina<br>football<br>fussball<br>murga<br>voetbal<br>celtic</td>
@@ -465,7 +452,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>--</td>
 </tr>
 <tr>
-  <td>30</td>
+  <td>29</td>
   <td>military band <a href="https://everynoise.com/engenremap-militaryband.html" title="&#x2306;">&#x2306;</a></td>
   <td>Party.Festival.Band.Cheer</td>
   <td>United States<br>bagpipe marching band<br>marching band<br>celtic<br>bagpipe<br>concert band</td>
@@ -561,11 +548,13 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 29 &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
     }
@@ -582,6 +571,7 @@ function sortTable_1(n) {
 
   function startAudioScan() {
     startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 29 &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
 

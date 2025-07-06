@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><br>
+<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -1601,11 +1601,13 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 110 &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
     }
@@ -1622,6 +1624,7 @@ function sortTable_1(n) {
 
   function startAudioScan() {
     startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 110 &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
 

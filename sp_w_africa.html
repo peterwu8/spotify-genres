@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><br>
+<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -608,7 +608,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>041</td>
   <td>musique mariage algerien <a href="https://everynoise.com/engenremap-musiquemariagealgerien.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Africa<br>W.French.World</td>
+  <td>W.Africa<br>W.Francophonie</td>
   <td>Algeria<br>rai<br>moroccan chaabi<br>algerian chaabi<br>moroccan pop<br>deep rai</td>
   <td>Djamila &quot;Zawali ou f\'hal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a593f206aa010e8d0b7a22b20160750731148176" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/musique-mariage-algerien" title="info">info</a></td>
@@ -2085,7 +2085,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>154</td>
   <td>musique centrafricaine <a href="https://everynoise.com/engenremap-musiquecentrafricaine.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Africa<br>W.French.World</td>
+  <td>W.Africa<br>W.Francophonie</td>
   <td>Central African Republic<br>pygmy music<br>afrobeat<br>rhumba</td>
   <td>Enigmatik Music Family &quot;Sango&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bd0cb64cdeb9f6abdf5a6fa89f1be4c9c6b5625e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/musique-centrafricaine" title="info">info</a></td>
@@ -2163,7 +2163,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>160</td>
   <td>musique traditionnelle congolaise <a href="https://everynoise.com/engenremap-musiquetraditionnellecongolaise.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Africa<br>W.French.World</td>
+  <td>W.Africa<br>W.Francophonie</td>
   <td>Congo<br>rhumba<br>rumba congolaise<br>champeta<br>african electronic<br>soukous</td>
   <td>Mbongwana Star &quot;Malukayi (feat. Konono N)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/314311b0eda90c79cae2b8c787b06d9373e3ec15" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/musique-traditionnelle-congolaise" title="info">info</a></td>
@@ -2482,11 +2482,13 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 177 &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
     }
@@ -2503,6 +2505,7 @@ function sortTable_1(n) {
 
   function startAudioScan() {
     startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 177 &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
 
