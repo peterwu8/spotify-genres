@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -2929,9 +2929,229 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["dark post-punk",
+	"modern darkwave",
+	"minimal wave",
+	"punk cover",
+	"italian pop punk",
+	"dance-punk",
+	"post-punk colombiano",
+	"elektropunk",
+	"easycore",
+	"karaoke",
+	"cyberpunk",
+	"post-punk mexicano",
+	"uk pop punk",
+	"pixie",
+	"russian pop punk",
+	"canadian pop punk",
+	"texas pop punk",
+	"deep gothic post-punk",
+	"neon pop punk",
+	"taiwan punk",
+	"pop punk",
+	"coldwave",
+	"malang punk",
+	"ukrainian post-punk",
+	"grave wave",
+	"post-punk brasileiro",
+	"indonesian pop punk",
+	"baltic post-punk",
+	"post-punk latinoamericano",
+	"punk urbano",
+	"austrian punk",
+	"ramonescore",
+	"mexican pop punk",
+	"indonesian punk",
+	"chicago pop punk",
+	"belgian punk",
+	"punk euskera",
+	"russian punk rock",
+	"socal pop punk",
+	"synth punk",
+	"hungarian punk",
+	"german punk rock",
+	"japanese pop punk",
+	"fast melodic punk",
+	"italian post-punk",
+	"dutch punk rock",
+	"gothic post-punk",
+	"south african punk",
+	"icelandic post-punk",
+	"finnish pop punk",
+	"romanian punk",
+	"punk catala",
+	"spanish post-punk",
+	"malaysian punk",
+	"punk rock italiano",
+	"swiss punk",
+	"diy pop punk",
+	"dub punk",
+	"japanese melodic punk",
+	"punk colombiano",
+	"greek punk",
+	"uk post-punk revival",
+	"japanese punk rock",
+	"french punk",
+	"german post-punk",
+	"modern ska punk",
+	"quebec punk",
+	"pinoy pop punk",
+	"chinese punk",
+	"punk galego",
+	"spanish punk",
+	"russian punk",
+	"canadian post-punk",
+	"christian punk",
+	"israeli punk",
+	"japanese post-punk",
+	"korean punk",
+	"post-punk argentina",
+	"canadian punk",
+	"japanese girl punk",
+	"norwegian punk rock",
+	"power-pop punk",
+	"deep german punk",
+	"czech punk",
+	"polish punk",
+	"belarusian punk",
+	"horror punk brasileiro",
+	"j-punk",
+	"american post-punk",
+	"skate punk",
+	"russian post-punk",
+	"crank wave",
+	"chinese post-punk",
+	"singaporean punk",
+	"early french punk",
+	"french post-punk",
+	"chicago punk",
+	"polish post-punk",
+	"punk tico",
+	"finnish post-punk",
+	"punk tuga",
+	"irish post-punk",
+	"turkish post-punk",
+	"celtic punk",
+	"swedish post-punk",
+	"punk rock mexicano",
+	"punk ska",
+	"brazilian punk rock",
+	"danspunk",
+	"uk post-punk",
+	"pirate",
+	"egg punk",
+	"italian punk",
+	"slovak punk",
+	"adelaide punk",
+	"ska punk",
+	"australian garage punk",
+	"german punk",
+	"punk 'n' roll",
+	"punk melodico chileno",
+	"surf punk",
+	"dutch punk",
+	"turkish punk",
+	"street punk espanol",
+	"balkan post-punk",
+	"arizona punk",
+	"uk diy punk",
+	"danish post-punk",
+	"vancouver punk",
+	"horror punk",
+	"queercore",
+	"orgcore",
+	"glam punk",
+	"argentine punk",
+	"nz punk",
+	"gypsy punk",
+	"atlanta punk",
+	"black punk",
+	"brisbane punk",
+	"epunk",
+	"balkan punk",
+	"punk",
+	"american oi",
+	"danish punk",
+	"neo-proto",
+	"irish punk",
+	"oi",
+	"garage punk",
+	"melbourne punk",
+	"swedish pop punk",
+	"german street punk",
+	"punk chileno",
+	"street punk",
+	"deep power-pop punk",
+	"indie punk",
+	"peruvian punk",
+	"post-punk",
+	"northern irish punk",
+	"swedish punk",
+	"riot grrrl",
+	"long island punk",
+	"bubblegrunge",
+	"finnish punk",
+	"trallpunk",
+	"minneapolis punk",
+	"brazilian punk",
+	"texas punk",
+	"steampunk",
+	"skinhead oi",
+	"boston punk",
+	"deep orgcore",
+	"kentucky punk",
+	"chicano punk",
+	"punk ecuatoriano",
+	"new jersey punk",
+	"cowpunk",
+	"art punk",
+	"virginia punk",
+	"norwegian punk",
+	"no wave",
+	"nyhc",
+	"emo punk",
+	"australian post-punk",
+	"chain punk",
+	"icelandic punk",
+	"hardcore punk espanol",
+	"crust punk",
+	"portland punk",
+	"d-beat",
+	"uk82",
+	"neo-crust",
+	"hardcore punk",
+	"deep punk rock",
+	"early us punk",
+	"slash punk",
+	"deep hardcore punk",
+	"thrash core",
+	"crossover thrash",
+	"psychedelic punk",
+	"anarcho-punk",
+	"powerviolence",
+	"punk mexicano",
+	"noise punk",
+	"hawaiian punk",
+	"punk blues",
+	"protopunk",
+	"acoustic punk",
+	"dark cabaret",
+	"folk punk",
+	"dreampunk",
+	"garage punk blues",
+	"cello"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -2939,12 +3159,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 212 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 212: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -2954,17 +3181,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 212 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 212: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

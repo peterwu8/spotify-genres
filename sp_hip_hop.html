@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -2100,9 +2100,166 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["drift phonk",
+	"gym phonk",
+	"ukrainian phonk",
+	"old school uk hip hop",
+	"aggressive phonk",
+	"atlanta bass",
+	"phonk",
+	"anime phonk",
+	"chill phonk",
+	"old school hip hop",
+	"latin hip hop",
+	"memphis phonk",
+	"memphis hip hop",
+	"futuristic swag",
+	"crunk",
+	"golden age hip hop",
+	"old school atlanta hip hop",
+	"south carolina hip hop",
+	"miami hip hop",
+	"atl hip hop",
+	"kids hip hop",
+	"tennessee hip hop",
+	"kentucky hip hop",
+	"bay area hip hop",
+	"turntablism",
+	"southern hip hop",
+	"lgbtq+ hip hop",
+	"canadian indigenous hip hop",
+	"mississippi hip hop",
+	"shib",
+	"minnesota hip hop",
+	"scratch",
+	"beatboxing",
+	"telugu hip hop",
+	"rap",
+	"greek hip hop",
+	"baltimore hip hop",
+	"jewish hip hop",
+	"balkan drill",
+	"arkansas hip hop",
+	"asian american hip hop",
+	"bronx hip hop",
+	"industrial hip hop",
+	"nashville hip hop",
+	"indonesian underground hip hop",
+	"pinoy hip hop",
+	"turkish hip hop",
+	"welsh hip hop",
+	"instrumental hip hop",
+	"mexican hip hop",
+	"hip hop",
+	"chip hop",
+	"chinese hip hop",
+	"ohio hip hop",
+	"rva drill",
+	"serbian hip hop",
+	"maine hip hop",
+	"brisbane hip hop",
+	"deep east coast hip hop",
+	"flint hip hop",
+	"deep flow",
+	"kyrgyz hip hop",
+	"hip hop timur",
+	"iowa hip hop",
+	"winnipeg hip hop",
+	"abstract beats",
+	"alberta hip hop",
+	"abstract hip hop",
+	"deep underground hip hop",
+	"oakland hip hop",
+	"alaska hip hop",
+	"east coast hip hop",
+	"indiana hip hop",
+	"christian hip hop",
+	"perth hip hop",
+	"colombian hip hop",
+	"polynesian hip hop",
+	"scottish hip hop",
+	"flick hop",
+	"seattle hip hop",
+	"maltese hip hop",
+	"underground hip hop",
+	"boston hip hop",
+	"milwaukee hip hop",
+	"bc underground hip hop",
+	"native american hip hop",
+	"canadian hip hop",
+	"virginia hip hop",
+	"ukrainian hip hop",
+	"armenian hip hop",
+	"sudanese hip hop",
+	"psychedelic hip hop",
+	"hamburg hip hop",
+	"outer hip hop",
+	"sacramento hip hop",
+	"wu fam",
+	"canadian old school hip hop",
+	"cologne hip hop",
+	"idaho hip hop",
+	"austin hip hop",
+	"west australian hip hop",
+	"north carolina hip hop",
+	"spiritual hip hop",
+	"queens hip hop",
+	"kansas city hip hop",
+	"hawaiian hip hop",
+	"australian underground hip hop",
+	"harlem hip hop",
+	"detroit hip hop",
+	"buffalo hip hop",
+	"conscious hip hop",
+	"atlantic canada hip hop",
+	"kansas hip hop",
+	"russian old school hip hop",
+	"hardcore hip hop",
+	"hungarian hip hop",
+	"persian drill",
+	"experimental hip hop",
+	"cypriot hip hop",
+	"portland hip hop",
+	"nottingham hip hop",
+	"indie hip hop",
+	"norrlandsk hip hop",
+	"canadian underground hip hop",
+	"drumless hip hop",
+	"alternative hip hop",
+	"cameroonian hip hop",
+	"brazilian hip hop",
+	"manchester hip hop",
+	"political hip hop",
+	"jamaican hip hop",
+	"chill abstract hip hop",
+	"malawian hip hop",
+	"swazi hip hop",
+	"israelite hip hop",
+	"egyptian hip hop",
+	"dutch underground hip hop",
+	"high vibe",
+	"hip hop mauritanien",
+	"brockton hip hop",
+	"persian underground hip hop",
+	"italian underground hip hop",
+	"spanish hip hop",
+	"uk alternative hip hop",
+	"venezuelan hip hop",
+	"birmingham hip hop",
+	"underground boom bap",
+	"hip hop cubano",
+	"lo-fi cover"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -2110,12 +2267,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 149 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 149: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -2125,17 +2289,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 149 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 149: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

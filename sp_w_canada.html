@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -530,7 +530,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>35</td>
   <td>edmonton indie <a href="https://everynoise.com/engenremap-edmontonindie.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Indie<br>W.Canada</td>
+  <td>Edm<br>Indie<br>W.Canada</td>
   <td>Canada<br>folk punk<br>neo-psychedelic<br>space rock<br>canadian indie<br>skate punk</td>
   <td>Scenic Route to Alaska &quot;Love Keeps&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ed3c14456957606eab7464734c0784d102e7f7e4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/edmonton-indie" title="info">info</a></td>
@@ -1214,9 +1214,98 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["canadian house",
+	"canadian electronic",
+	"canadian electropop",
+	"canadian pop punk",
+	"canadian latin",
+	"canadian metalcore",
+	"canadian trap",
+	"canadian indigenous hip hop",
+	"kelowna bc indie",
+	"canadian contemporary country",
+	"canadian rock",
+	"quebec metal",
+	"canadian drill",
+	"quebec punk",
+	"toronto rap",
+	"canadian post-punk",
+	"canadian death metal",
+	"canadian punk",
+	"ottawa rap",
+	"canadian ccm",
+	"canadian post-hardcore",
+	"quebec hardcore",
+	"canadian metal",
+	"canadian shoegaze",
+	"quebec death metal",
+	"ottawa indie",
+	"canadian hip hop",
+	"rap montrealais",
+	"canadian hardcore",
+	"metal noir quebecois",
+	"pop quebecois",
+	"canadian old school hip hop",
+	"canadian pop",
+	"quebec indie",
+	"edmonton indie",
+	"canadian contemporary r&amp;b",
+	"canadian psychedelic rock",
+	"montreal indie",
+	"toronto indie",
+	"rock quebecois",
+	"canadian indie",
+	"canadian black metal",
+	"atlantic canada hip hop",
+	"hip hop quebecois",
+	"canadian garage rock",
+	"canadian indigenous music",
+	"classic canadian rock",
+	"country quebecois",
+	"canadian stoner rock",
+	"canadian underground hip hop",
+	"indie quebecois",
+	"canadian country",
+	"calgary indie",
+	"new brunswick indie",
+	"saskatchewan indie",
+	"newfoundland indie",
+	"canadian blues",
+	"trad quebecois",
+	"canadian post-rock",
+	"canadian psychedelic",
+	"canadian celtic",
+	"canadian singer-songwriter",
+	"canadian folk",
+	"prog quebec",
+	"canadian children's music",
+	"musique pour enfant quebecois",
+	"canadian indie folk",
+	"canadian rockabilly",
+	"chanson quebecois",
+	"canadian americana",
+	"noel quebecois",
+	"canadian experimental",
+	"auteur-compositeur-interprete quebecois",
+	"folklore quebecois",
+	"canadian soundtrack",
+	"canadian modern jazz",
+	"canadian comedy",
+	"canadian classical",
+	"canadian contemporary classical",
+	"canadian classical piano",
+	"canadian choir"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -1224,12 +1313,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 81 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 81: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -1239,17 +1335,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 81 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 81: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

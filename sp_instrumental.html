@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -1855,9 +1855,143 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["amapiano",
+	"piano house",
+	"underground amapiano",
+	"instrumental grime",
+	"gospel amapiano",
+	"instrumental djent",
+	"instrumental progressive metal",
+	"instrumental death metal",
+	"instrumental hip hop",
+	"guitar case",
+	"metal guitar",
+	"instrumental black metal",
+	"instrumental math rock",
+	"indian instrumental rock",
+	"forro instrumental",
+	"instrumental post-rock",
+	"instrumental rock",
+	"blues-rock guitar",
+	"instrumental stoner rock",
+	"instrumental surf",
+	"accordeon",
+	"piano rock",
+	"musica instrumental cristiana",
+	"brazilian percussion",
+	"indian instrumental",
+	"instrumental funk",
+	"tuareg guitar",
+	"instrumental soul",
+	"indian percussion",
+	"arabic instrumental",
+	"viet instrumental",
+	"old west",
+	"turkish instrumental",
+	"musica evangelica instrumental",
+	"musica colombiana instrumental",
+	"steel guitar",
+	"instrumental bluegrass",
+	"vgm instrumental",
+	"palm wine guitar",
+	"experimental percussion",
+	"acoustic guitar cover",
+	"honky-tonk piano",
+	"hammered dulcimer",
+	"ambient guitar",
+	"japanese instrumental",
+	"taiwan instrumental",
+	"greek guitar",
+	"guitarra andina",
+	"guitarra mexicana",
+	"prepared piano",
+	"afro-cuban percussion",
+	"anime piano",
+	"slack-key guitar",
+	"thai instrumental",
+	"japanese guitar",
+	"chinese instrumental",
+	"christmas instrumental",
+	"experimental guitar",
+	"fado instrumental",
+	"african percussion",
+	"instrumental worship",
+	"instrumental acoustic guitar",
+	"carnatic instrumental",
+	"piano mpb",
+	"flamenco guitar",
+	"guitarra portuguesa",
+	"piano worship",
+	"piano blues",
+	"calming instrumental",
+	"mountain dulcimer",
+	"jazz guitar",
+	"hindustani instrumental",
+	"background music",
+	"modern jazz piano",
+	"chill guitar",
+	"classical percussion",
+	"jazz guitar trio",
+	"piano cover",
+	"classical piano quartet",
+	"japanese piano",
+	"instrumental lullaby",
+	"jazz piano",
+	"italian classical guitar",
+	"barrelhouse piano",
+	"korean instrumental",
+	"lds instrumental",
+	"guitarra argentina",
+	"british classical piano",
+	"contemporary classical piano",
+	"american classical piano",
+	"classical guitar quartet",
+	"japanese classical piano",
+	"new age piano",
+	"classical guitar duo",
+	"korean classical piano",
+	"italian classical piano",
+	"german classical piano",
+	"background piano",
+	"classical piano duo",
+	"nordic classical piano",
+	"australian classical piano",
+	"dutch classical piano",
+	"classical guitar",
+	"canadian classical piano",
+	"balkan classical piano",
+	"spanish classical piano",
+	"guitarra clasica",
+	"israeli classical piano",
+	"latin american classical piano",
+	"classical piano trio",
+	"classical piano",
+	"chinese classical piano",
+	"brazilian classical piano",
+	"swiss classical piano",
+	"austrian classical piano",
+	"caucasian classical piano",
+	"french classical piano",
+	"romanian classical piano",
+	"hungarian classical piano",
+	"historic piano performance",
+	"ukrainian classical piano",
+	"russian classical piano",
+	"belgian classical piano",
+	"baltic classical piano",
+	"czech classical piano",
+	"polish classical piano"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -1865,12 +1999,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 126 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 126: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -1880,17 +2021,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 126 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 126: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

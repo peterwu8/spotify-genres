@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -1591,9 +1591,127 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["traditional reggae",
+	"lesotho traditional",
+	"canzone siciliane",
+	"neo-traditional country",
+	"traditional ska",
+	"batswana traditional",
+	"didgeridoo",
+	"traditional funk",
+	"edo old school",
+	"traditional soul",
+	"malaysian traditional",
+	"igbo traditional",
+	"nubian traditional",
+	"gwoka",
+	"neo-traditional bluegrass",
+	"folclore extremeno",
+	"shamisen",
+	"borneo traditional",
+	"traditional bluegrass",
+	"burundian traditional",
+	"ghanaian traditional",
+	"pinoy traditional",
+	"zampogna",
+	"moorish traditional",
+	"traditional scottish folk",
+	"burkinabe traditional",
+	"mexican traditional",
+	"nisiotika",
+	"traditional rockabilly",
+	"ilahiler",
+	"kazakh traditional",
+	"folclore castilla y leon",
+	"bouzouki",
+	"afro-cuban traditional",
+	"irish neo-traditional",
+	"throat singing",
+	"moroccan traditional",
+	"tahitian traditional",
+	"palestinian traditional",
+	"inuit traditional",
+	"marathi traditional",
+	"balafon",
+	"senegalese traditional",
+	"tuna universitaria",
+	"azeri traditional",
+	"malian traditional",
+	"dombra",
+	"native american traditional",
+	"duduk",
+	"vietnamese traditional",
+	"tanzanian traditional",
+	"balinese traditional",
+	"pygmy music",
+	"egyptian traditional",
+	"haitian traditional",
+	"kritika",
+	"sufi chant",
+	"traditional british folk",
+	"ugandan traditional",
+	"traditional country",
+	"coptic hymn",
+	"traditional english folk",
+	"israeli traditional",
+	"tibetan mantra",
+	"kenyan traditional",
+	"yunnan traditional",
+	"gong",
+	"icelandic traditional",
+	"papuan traditional",
+	"tibetan traditional",
+	"navajo",
+	"ethnomusicology",
+	"sundanese traditional",
+	"rwandan traditional",
+	"polynesian traditional",
+	"santur",
+	"traditional blues",
+	"persian neo-traditional",
+	"folclore navarra",
+	"korean traditional",
+	"yemeni traditional",
+	"middle eastern traditional",
+	"thai traditional",
+	"afghan traditional",
+	"japanese traditional",
+	"chinese traditional",
+	"persian poetry",
+	"ethiopian traditional",
+	"cantonese traditional",
+	"cambodian traditional",
+	"tajik traditional",
+	"indonesian indigenous traditional",
+	"tar",
+	"swazi traditional",
+	"traditional folk",
+	"persian traditional",
+	"traditional southern folk",
+	"lao traditional",
+	"syro-aramaic chant",
+	"gayageum",
+	"burmese traditional",
+	"ryukoka",
+	"uzbek traditional",
+	"pipa",
+	"huqin",
+	"jota aragonesa",
+	"kyrgyz traditional",
+	"traditional irish singing",
+	"albanian iso polyphony",
+	"guqin"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -1601,12 +1719,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 110 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 110: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -1616,17 +1741,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 110 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 110: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

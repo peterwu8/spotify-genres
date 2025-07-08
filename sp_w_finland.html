@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>03</td>
   <td>finnish edm <a href="https://everynoise.com/engenremap-finnishedm.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Finland</td>
+  <td>Edm<br>W.Finland</td>
   <td>Finland<br>progressive trance<br>trance<br>progressive house<br>nu disco<br>melodic house</td>
   <td>Joonas Hahmo &quot;Y&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a12057c9e108f768e3208b748625dc681b59840d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/finnish-edm" title="info">info</a></td>
@@ -815,9 +815,67 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["suomisaundi",
+	"finnish techno",
+	"finnish edm",
+	"finnish metalcore",
+	"finnish electro",
+	"finnish electronic",
+	"finnish trap",
+	"finnish dance pop",
+	"finnish drill",
+	"finnish power metal",
+	"finnish heavy metal",
+	"finnish melodeath",
+	"finnish hard rock",
+	"finnish metal",
+	"finnish alternative rock",
+	"finnish reggae",
+	"finnish pop",
+	"finnish progressive metal",
+	"finnish hip hop",
+	"finnish death metal",
+	"finnish pop punk",
+	"finnish post-punk",
+	"suomirap",
+	"finnish indie",
+	"finnish idol pop",
+	"suomi rock",
+	"finnish worship",
+	"finnish black metal",
+	"finnish punk",
+	"finnish new wave",
+	"finnish doom metal",
+	"finnish soul",
+	"finnish rockabilly",
+	"finnish hardcore",
+	"finnish experimental",
+	"finnish blues",
+	"finnish psychedelic rock",
+	"finnish progressive rock",
+	"classic finnish rock",
+	"classic finnish pop",
+	"finnish folk",
+	"finnish jazz",
+	"finnish modern jazz",
+	"finnish tango",
+	"kantele",
+	"vintage finnish jazz",
+	"hengelliset laulut",
+	"finnish contemporary classical",
+	"finnish classical",
+	"finnish choir"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -825,12 +883,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 50 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 50: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -840,17 +905,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 50 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 50: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

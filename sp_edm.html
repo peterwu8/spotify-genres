@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edm: (26 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Edm: (26 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>hungarian edm <a href="https://everynoise.com/engenremap-hungarianedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Hungary</td>
+  <td>Hungary<br>minimal techno<br>hungarian pop<br>tech house<br>g-house<br>hard minimal techno</td>
+  <td>Bricklake &quot;Big Band 2020 - Radio Edit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/31f58c437b3fd22e2fb5375e5ffcc35e1a516943" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0u11sFzzWzcHn8H8nSG0M0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2g646JKBsJaDrJkZ4JJwgl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Jnu6FWQd0OHxaJFX3ctGs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4aZr3ssKRHoqMwPSQoYNYU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0a6fEQxKZNUK2kE8clrXds" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>brazilian edm <a href="https://everynoise.com/engenremap-brazilianedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Brazil</td>
+  <td>Brazil<br>brazilian bass<br>electronic<br>brazilian house<br>tech house<br>g-house</td>
+  <td>Dazzo &quot;Hanging Tree - Short Mix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e30137d137a51d956316ca24bd0740a331619474" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5CWR0kiugsL968JbNvbo2a" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5VJcwlSzgFtpClXb8xtXs6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ubwqSiqgRyAINShjQZx9m" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/14ZPw7QNzmZjQ3iGn4rhxH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7EnGikk7HLyXkjibn3g7DY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>finnish edm <a href="https://everynoise.com/engenremap-finnishedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Finland</td>
+  <td>Finland<br>progressive trance<br>trance<br>progressive house<br>nu disco<br>melodic house</td>
+  <td>Joonas Hahmo &quot;Y&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a12057c9e108f768e3208b748625dc681b59840d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/25gyzJDH9VJff2TtZI5JAt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4PRZ9KAdx0LySGaCA45AtW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5htcg03sDVjEhDXZwDyi69" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/49wJ44ThvVbhpVRgKkKcqY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/02YHUG83AC2mT2Y9fMEN6M" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>russian edm <a href="https://everynoise.com/engenremap-russianedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Russia</td>
+  <td>Russia<br>future house<br>g-house<br>progressive house<br>trance<br>progressive trance</td>
+  <td>Slider &amp; Magnit &quot;Morze&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b5df27da807d60a15cbc7b3ca6d47add3d4de6ea" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/russian-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5LfoPgQLGVMp8iyRfwxOQD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4dS5aqiN32iHnEfPI9XuDu" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/74TuYbPwf5r04PdWM5SOJI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Rox2oqKIsRqxqBUtCqWCk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5A7z2cO4SpsQM0LxeSqS9E" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>ukrainian edm <a href="https://everynoise.com/engenremap-ukrainianedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm</td>
+  <td>Ukraine<br>trance<br>progressive trance<br>ukrainian electronic<br>progressive house<br>future house</td>
+  <td>Artem Pivovarov<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e9084808b492a692cfdce836ba70e94bd1e371bb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ukrainian-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5qqALcmlu3QA27Pqxu43rt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ig0J9VqBXJGDDMftK3l8c" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3ioHvqUiqjjiSRZAk1x0EE" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0pF7oWJ68aIg7u3t3JLe0F" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bYRAv41w0gGkISGoQaXgR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>turkish edm <a href="https://everynoise.com/engenremap-turkishedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Turkey</td>
+  <td>Turkey<br>turkish pop<br>slap house<br>g-house<br>deep house<br>turkish deep house</td>
+  <td>Luwian &quot;In The Morning&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8794d51b0f61a742b337138cfe0bd12bd223a0ad" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turkish-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/42wq1tIqLzx1CMNFpqLOYe" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6kTzDCR055zwKksH44tCyF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/216raBgRbiufgGOPK91ss1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1IOqSFNVqiscP8FQA0k8uK" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3ioHKABBuDIiKBc3V0Balr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>dutch edm <a href="https://everynoise.com/engenremap-dutchedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Netherlands</td>
+  <td>United Kingdom<br>future house<br>bass house<br>big room<br>progressive electro house<br>progressive house</td>
+  <td>Mesto &quot;Leyla&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/80d72fb7608fd4c389aa0dc73b6fab3c8b2ee046" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dutch-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5QDfPxFtLNXJZbtioTVIs3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0DX9WVEaDkEiax6hcVqdaL" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/28rxsAzVZUg00xoLtzrwxI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4h0oT3WIjr1tyTLlCptWEj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7Br2F9DC2NBWRDIby477wt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>mexican edm <a href="https://everynoise.com/engenremap-mexicanedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Latino</td>
+  <td>Mexico<br>moombahton<br>reggaeton mexa<br>latin house<br>dubstep<br>latin r&b</td>
+  <td>Mr. Pig &quot;Bum Bum&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/26d8c1f205bcad8de1bc6e79c869da13e832e280" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mexican-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1bGtbM49ILjFoZCasM3zt7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5OxjA7vwawfL8r1bdCdp2W" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mQPBRtEiuZBLA8Od3nPTQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3nLW6ZXqsOmOZrYSmIxFAa" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0zydP7BAFTEUOuJzHYiVFu" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>belgian edm <a href="https://everynoise.com/engenremap-belgianedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Belgium</td>
+  <td>Belgium<br>big room<br>tropical house<br>drum and bass<br>future house<br>progressive electro house</td>
+  <td>Yves V &quot;Not So Bad (feat. Emie)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c9c9ef1cdeb09385dd876c0b2d52e93e807ec064" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1SM7NENAIonbRpVBbiDhaj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3YjCK5F0D78d0WXHcwQ7tq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0eoOplSKYoicei10nO6BxF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5v9jgAUdJVJAK3znjFWyVg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/52gPoVE9vBn3MPugf34Mxe" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>lithuanian edm <a href="https://everynoise.com/engenremap-lithuanianedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm</td>
+  <td>Lithuania<br>slap house<br>g-house<br>lithuanian electronic<br>lithuanian pop<br>brazilian bass</td>
+  <td>Dan Port &quot;Falling&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a4909cb288924927ea7bb8a8aedf70254c645801" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/lithuanian-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6V6O6LMVzfGj4hR2g64iY8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2HSt4RAoPw18TPri85TJEn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/25e8Fcqif26k0ZxLhsNdmu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rojyw2VG96uF6FuVR6WXH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Ly2Bresoy92bUe0vy4dBB" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>sinhala edm <a href="https://everynoise.com/engenremap-sinhalaedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm</td>
+  <td>Sri Lanka<br>sinhala pop<br>big room<br>progressive house<br>organic house<br>tribal house</td>
+  <td>DJ Mass &quot;Pem Kekula&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a94d49887d1bcaa692d7afc7c2229a188f3c9b85" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/sinhala-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/286ScGRzf0xAl1KOZrQw2d" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ZkLhOcmoFAzSGx5WMiU0I" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Aps26Akn6S4NJb2mNDsbR" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3mJDGeqvjebgfVuq2C3tZm" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/69ZuImMG2xs6rQeLpEEiJ1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>indian edm <a href="https://everynoise.com/engenremap-indianedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.India<br>W.Indonesia</td>
+  <td>India<br>indian indie<br>hindi indie<br>progressive house<br>indian techno<br>desi hip hop</td>
+  <td>Lost Stories &quot;Mai Ni Meriye&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/942137f2c7fab2a5d5b4f85a03904b94279e3f71" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indian-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/21YyeklTFJUUTC1zaxKCUL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/56gW8BV0CNYVMvkbQTy4f7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3CRXdpxReZT6QnFyP5oxPp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/342qZ2xtoySb5WNQ2ucWls" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5NCQv4kHWEOAisF2zTFtNp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>kawaii edm <a href="https://everynoise.com/engenremap-kawaiiedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Japan</td>
+  <td>Japan<br>future bass<br>j-dance<br>speedcore<br>vocaloid<br>happy hardcore</td>
+  <td>tokiwa &quot;Fairydust&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6c606ba89713b368a621a395a8b0baa86eaf91c2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kawaii-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3d1cngLu9TBXOOSsOQaaBL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Y6bL0xU3C0F7QNNATnL6P" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3pVlAapdMvcjf4QSbzsuzt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Bvu5w57m7xEZBZwc5hNX7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rz5VgIiiIGmkfCDOAm2tG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>deep pop edm <a href="https://everynoise.com/engenremap-deeppopedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>Pop.World</td>
+  <td>Sweden<br>tropical house<br>swedish tropical house<br>melbourne bounce<br>progressive house<br>progressive electro house</td>
+  <td>Marcus Mouya &quot;Sweet Insomnia - Radio Edit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f3d2ac30f26f4a02cfc7c38c168c048247bda787" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-pop-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5VCTzRk7kzEaxQiQ6oxOcM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ouQTmehX3Fu4L3JmMsTo3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5iV2WxGuQn4RgbEMW0KtmJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Ev9hG9zdiOcAi2Li5uYUA" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2VSNlyGmfq0fR2LEVJSMxO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>edm <a href="https://everynoise.com/engenremap-edm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm</td>
+  <td>Australia<br>pop dance<br>electro house<br>progressive electro house<br>dutch house<br>progressive house</td>
+  <td>Sebastian Ingrosso &quot;Reload - Radio Edit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/89dff34e3b51bd0aaa6c3910debda6476fe66e4a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5L1xosSKARKvCD5jMNaJwm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3pDxuMpz94eDs7WFqudTbZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Pl3Kahwz3O2ouSYLv2a9h" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2rKMohfPQEvrkY4hVU5XJr" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4aUtBYWsTivkRMhAK1z9c8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>japanese edm <a href="https://everynoise.com/engenremap-japaneseedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Japan</td>
+  <td>Japan<br>j-dance<br>uk garage<br>bassline<br>progressive house<br>j-rap</td>
+  <td>DJ TORA &quot;Sweet Serenade&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/411a4025e7a350ede669cf37f67a905a8d7aaebc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6TKsFiB5e0CZLBZdGWy0Mm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1uzXAb3u2OnBxawF9b2R1B" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5PM9AV2WIacTNyzaM6L3Yr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3I2WR969rfyLEZE0l9Tedj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5QN5emMk7FqVKJwALkwi31" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>pinoy edm <a href="https://everynoise.com/engenremap-pinoyedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm</td>
+  <td>Philippines<br>budots<br>pinoy r&b<br>opm<br>p-pop<br>pinoy hip hop</td>
+  <td>Jenil &quot;Show Me Love&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/506a09eaf69d2359205272f33cedff8e550800be" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pinoy-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3UhlIoHBYlq6hJnvsv9Mdy" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2U0GhswEX2FGGE6tITJg66" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6WkoeXwWHVIhYZ5nvaQ8yc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/26U0WnOzpd3wUXgRaTvDVn" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>indonesian edm <a href="https://everynoise.com/engenremap-indonesianedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Indonesia</td>
+  <td>Indonesia<br>indonesian indie<br>bass house<br>g-house<br>future house<br>trance</td>
+  <td>Osvaldorio &quot;Lotus&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6fccc9e76c6eccb6f8bf46dfa2c7208bb8223637" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indonesian-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1VruYtfZfnGa9uvtpKQxGg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/789X4OqEY89gjusg454KS3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5jDiAELYuldPH7OwYuymIa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2rC3y6I2wOL6wbhpXdkPfJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7J4IG28nDKTJ0piTX54mYG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>viet edm <a href="https://everynoise.com/engenremap-vietedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>W.Vietnam</td>
+  <td>Vietnam<br>vinahouse<br>bass house<br>v-pop<br>vietnam indie<br>riddim</td>
+  <td>DG812 &quot;In Your Eyes&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a2eee407614b7724281323fe5a5b0c566755c42b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/viet-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7gujwEIHRqf7WuqsJ8vsrh" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ue7mRobKgve30zMintxMN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5ELNbro2ZJJxCK1bCzPogP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3oyKkl12X85thSPo6tBMDf" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>gaming edm <a href="https://everynoise.com/engenremap-gamingedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>Gaming</td>
+  <td>Singapore<br>dubstep<br>chillstep<br>drumstep<br>future bass<br>complextro</td>
+  <td>Disfigure &quot;Blank&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ed6d3c21646d88b23ece1465aae99c9570ef79c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gaming-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3X5gapIW9UA4kkMGiWpsfo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5kredHbbKjb6EUN5exsaQh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2vUtlsUkIPfyEo3tMMeDCU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0z3EB1GI05qP9HDq9HT5IY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7yvYfhSrvISTzr1cBivWqt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>pop edm <a href="https://everynoise.com/engenremap-popedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>Pop</td>
+  <td>Netherlands<br>edm<br>future bass<br>melodic bass<br>pop dance<br>melodic dubstep</td>
+  <td>The Him &quot;Always&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0456afe2a4276b3aac6a0d0a67e2c5775dde1885" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pop-edm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2q9mGWZ785460ROMZ4chh8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5OFsiAHgwlYHB6XLK0kJ4p" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2WpexAiDzo15nipr2hN8Tl" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3GmLNuNIuYshtWuDSt2pvv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6vaBrvlmq7r7tifOeTRcXk" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>cedm <a href="https://everynoise.com/engenremap-cedm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm</td>
+  <td>Germany<br>christian pop<br>pop worship<br>christian<br>worship<br>ccm</td>
+  <td>Marshall Marshall &quot;It\'s Your Love&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c5708cd6178bef7231b72524d4414ff00fdc4908" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cedm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3kjJ0otLBuQCSBtZnRWtU9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/53Rj4icQg1wx38THnNcMA8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5kK1Fmw0THqaQkDJDl8SUL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6SkhOwaThWYFFpJOUHG591" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3cUU2QWMp2IIWAyILyWG7w" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>future bass <a href="https://everynoise.com/engenremap-futurebass.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm &#x2380;</td>
+  <td>Japan<br>melodic bass<br>edm<br>pop edm<br>melodic dubstep<br>dubstep</td>
+  <td>VALENTINE &quot;Her&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/099b1cf56d27145061ff9a6506e028773853daeb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/future-bass" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/13WP9oq22H5LxZvABsoT5u" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0HL0ITC4buCPYJaJHqwbMm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pc3DAuxNmB09wnCm5cOLf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0X9Vgj1KScuuaTPI5gpCQl" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0mlljzLstMHJjsqTFNyKVw" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>edmonton indie <a href="https://everynoise.com/engenremap-edmontonindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>Indie<br>W.Canada</td>
+  <td>Canada<br>folk punk<br>neo-psychedelic<br>space rock<br>canadian indie<br>skate punk</td>
+  <td>Scenic Route to Alaska &quot;Love Keeps&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ed3c14456957606eab7464734c0784d102e7f7e4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/edmonton-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0aYFwgj0Xwo1d2g4G9XNDN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0EmrOr9gdxrcM2y3khh72k" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5rmdBXFb3PTDT6VB9PGvRJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3xSFphjmpvWUwfwLlDzlje" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>bury st edmunds indie <a href="https://everynoise.com/engenremap-burystedmundsindie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Edm<br>Indie</td>
+  <td>United Kingdom<br>east anglia indie<br>english indie rock<br>big beat<br>garage pop<br>garage rock</td>
+  <td>KYANOS &quot;Egypt&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e8790a20fd0e9bd6f4ec69b00c323d2f1b2590e3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bury-st-edmunds-indie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4NCN9t43e4CdswnH3NX7KL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3hUSSC8liqZwkDkAKoXEmK" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>piedmont blues <a href="https://everynoise.com/engenremap-piedmontblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>Edm</td>
+  <td>United States<br>country blues<br>blues<br>classic blues<br>ragtime<br>traditional blues</td>
+  <td>Mississippi John Hurt &quot;Coffee Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ea17d69c881f6d14f78ff153a850cbc44215059b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piedmont-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1GZNkrOExHM9AaycgNscFa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2hBQIwJOWzLMWl10enb9uE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1DQHoZ1qed3RDimeMRTR9H" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Cd2uF1f8r9Z7OupQicE18" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0GfoCLKG16xR26vn5J5IFy" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["hungarian edm",
+	"brazilian edm",
+	"finnish edm",
+	"russian edm",
+	"ukrainian edm",
+	"turkish edm",
+	"dutch edm",
+	"mexican edm",
+	"belgian edm",
+	"lithuanian edm",
+	"sinhala edm",
+	"indian edm",
+	"kawaii edm",
+	"deep pop edm",
+	"edm",
+	"japanese edm",
+	"pinoy edm",
+	"indonesian edm",
+	"viet edm",
+	"gaming edm",
+	"pop edm",
+	"cedm",
+	"future bass",
+	"edmonton indie",
+	"bury st edmunds indie",
+	"piedmont blues"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 26: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 26: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>

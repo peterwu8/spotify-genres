@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -1771,7 +1771,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>130</td>
   <td>piedmont blues <a href="https://everynoise.com/engenremap-piedmontblues.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Blues.Soul</td>
+  <td>Blues.Soul<br>Edm</td>
   <td>United States<br>country blues<br>blues<br>classic blues<br>ragtime<br>traditional blues</td>
   <td>Mississippi John Hurt &quot;Coffee Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ea17d69c881f6d14f78ff153a850cbc44215059b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/piedmont-blues" title="info">info</a></td>
@@ -1920,9 +1920,152 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["soulful house",
+	"south african soulful deep house",
+	"deep soul house",
+	"footwork",
+	"post-disco soul",
+	"deep r&amp;b",
+	"backing track",
+	"bossbeat",
+	"afro soul",
+	"rebel blues",
+	"contemporary r&amp;b",
+	"southern soul blues",
+	"smooth soul",
+	"r&amp;b en espanol",
+	"vapor twitch",
+	"bulgarian r&amp;b",
+	"new jack smooth",
+	"japanese r&amp;b",
+	"r&amp;b",
+	"vapor soul",
+	"british soul",
+	"swedish soul",
+	"german r&amp;b",
+	"neo soul-jazz",
+	"australian r&amp;b",
+	"scandinavian r&amp;b",
+	"bedroom r&amp;b",
+	"trap soul",
+	"indie soul",
+	"dark r&amp;b",
+	"japanese soul",
+	"pinoy r&amp;b",
+	"pop r&amp;b",
+	"indonesian r&amp;b",
+	"r&amp;b francais",
+	"dutch r&amp;b",
+	"r&amp;b italiano",
+	"afro r&amp;b",
+	"deep smooth r&amp;b",
+	"neo r&amp;b",
+	"korean r&amp;b",
+	"chinese r&amp;b",
+	"kenyan r&amp;b",
+	"r&amp;b argentino",
+	"soul flow",
+	"indie r&amp;b",
+	"canadian contemporary r&amp;b",
+	"retro soul",
+	"r&amp;b brasileiro",
+	"uk contemporary r&amp;b",
+	"pop soul",
+	"beach music",
+	"bedroom soul",
+	"experimental r&amp;b",
+	"gospel r&amp;b",
+	"finnish soul",
+	"brazilian blues",
+	"brazilian soul",
+	"chill r&amp;b",
+	"alternative r&amp;b",
+	"polish blues",
+	"power blues-rock",
+	"deep northern soul",
+	"quiet storm",
+	"indonesian blues",
+	"south african r&amp;b",
+	"spanish blues",
+	"zydeco",
+	"swedish blues",
+	"psychedelic soul",
+	"blues latinoamericano",
+	"belgian blues",
+	"philly soul",
+	"wassoulou",
+	"modern blues rock",
+	"blues-rock guitar",
+	"finnish blues",
+	"punk blues",
+	"blues band",
+	"british blues",
+	"japanese blues",
+	"modern blues",
+	"motown",
+	"dutch blues",
+	"norwegian blues",
+	"german blues",
+	"traditional soul",
+	"italian blues",
+	"canadian blues",
+	"desert blues",
+	"psychedelic blues-rock",
+	"australian blues",
+	"northern soul",
+	"malian blues",
+	"souldies",
+	"deep southern soul",
+	"blues mexicano",
+	"southern soul",
+	"garage punk blues",
+	"neo soul",
+	"instrumental soul",
+	"memphis soul",
+	"sacred steel",
+	"classic girl group",
+	"swamp blues",
+	"blues rock",
+	"classic soul",
+	"new orleans soul",
+	"deep motown",
+	"gospel soul",
+	"chicago soul",
+	"electric blues",
+	"louisiana blues",
+	"rhythm and blues",
+	"soul blues",
+	"new orleans blues",
+	"harmonica blues",
+	"soul",
+	"chicago blues",
+	"blues",
+	"soul jazz",
+	"jump blues",
+	"memphis blues",
+	"texas blues",
+	"piano blues",
+	"traditional blues",
+	"acoustic blues",
+	"jazz blues",
+	"delta blues",
+	"piedmont blues",
+	"country blues",
+	"gospel blues",
+	"classic female blues",
+	"deep delta blues",
+	"pre-war blues"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -1930,12 +2073,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 135 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 135: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -1945,17 +2095,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 135 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 135: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

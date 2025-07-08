@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>008</td>
   <td>kawaii edm <a href="https://everynoise.com/engenremap-kawaiiedm.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Japan</td>
+  <td>Edm<br>W.Japan</td>
   <td>Japan<br>future bass<br>j-dance<br>speedcore<br>vocaloid<br>happy hardcore</td>
   <td>tokiwa &quot;Fairydust&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6c606ba89713b368a621a395a8b0baa86eaf91c2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/kawaii-edm" title="info">info</a></td>
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>010</td>
   <td>japanese edm <a href="https://everynoise.com/engenremap-japaneseedm.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Japan</td>
+  <td>Edm<br>W.Japan</td>
   <td>Japan<br>j-dance<br>uk garage<br>bassline<br>progressive house<br>j-rap</td>
   <td>DJ TORA &quot;Sweet Serenade&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/411a4025e7a350ede669cf37f67a905a8d7aaebc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/japanese-edm" title="info">info</a></td>
@@ -1028,7 +1028,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>073</td>
   <td>japanese idm <a href="https://everynoise.com/engenremap-japaneseidm.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Japan</td>
+  <td>Idm<br>W.Japan</td>
   <td>Japan<br>idm<br>j-dance<br>j-ambient<br>glitch<br>japanese experimental</td>
   <td>Aoki Takamasa &quot;Fly 2&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/136ef90eec604f0ee2e03b3a8d7417a450330a48" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/japanese-idm" title="info">info</a></td>
@@ -1959,9 +1959,155 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["japanese techno",
+	"japanese progressive house",
+	"j-core",
+	"japanese house",
+	"japanese electronic",
+	"j-pop girl group",
+	"j-idol",
+	"kawaii edm",
+	"kawaii future bass",
+	"japanese edm",
+	"anime phonk",
+	"j-pop boy group",
+	"japanese dance pop",
+	"seiyu",
+	"japanese electropop",
+	"japanese vtuber",
+	"j-pixie",
+	"anime rock",
+	"j-division",
+	"kawaii metal",
+	"japanese old school hip hop",
+	"japanese dub",
+	"j-poprock",
+	"dansei seiyu",
+	"japanese trap",
+	"shojo",
+	"anime latino",
+	"classic j-pop",
+	"japanese viral pop",
+	"japanese metalcore",
+	"josei rap",
+	"anime cv",
+	"modern j-rock",
+	"japanese drill",
+	"j-reggae",
+	"j-pop",
+	"shibuya-kei",
+	"japanese melodic hardcore",
+	"japanese indie rock",
+	"japanese teen pop",
+	"yaoi",
+	"anime",
+	"japanese power metal",
+	"j-rap",
+	"j-metal",
+	"anime drill",
+	"japanese jazztronica",
+	"hokkaido indie",
+	"japanese hyperpop",
+	"japanese ska",
+	"japanese pop punk",
+	"japanese new wave",
+	"okinawan pop",
+	"anime rap",
+	"japanese pop rap",
+	"j-rock",
+	"seinen",
+	"anime game",
+	"japanese r&amp;b",
+	"sound team",
+	"japanese melodic punk",
+	"japanese alternative rock",
+	"japanese punk rock",
+	"japanese shoegaze",
+	"japanese rockabilly",
+	"japanese post-punk",
+	"j-indie",
+	"japanese girl punk",
+	"japanese post-hardcore",
+	"classic j-rock",
+	"japanese heavy metal",
+	"j-punk",
+	"japanese idm",
+	"japanese death metal",
+	"classic anime",
+	"japanese soul",
+	"animegrind",
+	"japanese emo",
+	"japanese alternative pop",
+	"japanese math rock",
+	"japanese dream pop",
+	"japanese chill rap",
+	"japanese indie pop",
+	"japanese screamo",
+	"japanese jazz fusion",
+	"rap anime",
+	"japanese bedroom pop",
+	"mecha",
+	"dessin anime",
+	"japanese underground rap",
+	"japanese boom bap",
+	"japanese black metal",
+	"japanese garage rock",
+	"japanese singer-songwriter",
+	"japanese celtic",
+	"okinawan folk",
+	"japanese hardcore",
+	"japanese vgm",
+	"japanese post-rock",
+	"japanese chillhop",
+	"anime lo-fi",
+	"j-acoustic",
+	"japanese prog",
+	"japanese blues",
+	"modern enka",
+	"japanese experimental",
+	"japanese beats",
+	"japanese psychedelic rock",
+	"japanese worship",
+	"ryukyu ongaku",
+	"japanese psychedelic",
+	"japanese jazz",
+	"anime score",
+	"japanese folk",
+	"japanese indie folk",
+	"japanese soundtrack",
+	"classic japanese jazz",
+	"taiko",
+	"j-ambient",
+	"japanese instrumental",
+	"anime piano",
+	"japanese vocal jazz",
+	"japanese guitar",
+	"min'yo",
+	"bgm",
+	"japanese buddhist chant",
+	"japanese orchestra",
+	"japanese choir",
+	"japanese classical",
+	"japanese concert band",
+	"japanese traditional",
+	"rakugo",
+	"japanese piano",
+	"japanese contemporary classical",
+	"japanese classical performance",
+	"japanese classical piano",
+	"shakuhachi",
+	"koto"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -1969,12 +2115,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 138 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 138: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -1984,17 +2137,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 138 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 138: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

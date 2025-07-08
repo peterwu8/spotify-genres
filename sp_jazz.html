@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -2466,9 +2466,194 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["jazzy dnb",
+	"jazz house",
+	"broken beat",
+	"bboy",
+	"jazz boom bap",
+	"electro jazz",
+	"proto-rap",
+	"acid jazz",
+	"nu jazz",
+	"downtempo fusion",
+	"jazztronica",
+	"japanese jazztronica",
+	"jazz rap",
+	"neo soul-jazz",
+	"bass trip",
+	"deep smooth jazz",
+	"indie jazz",
+	"japanese jazz fusion",
+	"smooth jazz",
+	"german jazz rap",
+	"smooth saxophone",
+	"jazz metal",
+	"jazz worship",
+	"rare groove",
+	"ska jazz",
+	"lo-fi jazzhop",
+	"progressive jazz fusion",
+	"uk contemporary jazz",
+	"south african jazz",
+	"indonesian jazz",
+	"psychedelic jazz fusion",
+	"italian jazz fusion",
+	"lo-fi",
+	"deep jazz fusion",
+	"jazzcore",
+	"experimental jazz",
+	"focus beats",
+	"jazz dominicano",
+	"bossa nova jazz",
+	"jazz cover",
+	"ethio-jazz",
+	"dark jazz",
+	"west african jazz",
+	"eastern bloc groove",
+	"jazz rock",
+	"japanese jazz",
+	"background jazz product",
+	"deep latin jazz",
+	"jazz funk",
+	"hammond organ",
+	"jazz colombiano",
+	"classic japanese jazz",
+	"turkish modern jazz",
+	"nz jazz",
+	"finnish jazz",
+	"background jazz",
+	"chinese jazz",
+	"jazz boliviano",
+	"jazz mexicano",
+	"jazz caraibes",
+	"turkish jazz",
+	"belgian modern jazz",
+	"jazz tico",
+	"saxophone trio",
+	"jazz venezolano",
+	"danish modern jazz",
+	"indian jazz",
+	"electric bass",
+	"modern big band",
+	"finnish modern jazz",
+	"arabic jazz",
+	"jazz pop",
+	"dinner jazz",
+	"jazz accordion",
+	"norwegian contemporary jazz",
+	"south african modern jazz",
+	"galician jazz",
+	"greek jazz",
+	"jazz chileno",
+	"jazz organ",
+	"jazz puertorriqueno",
+	"korean jazz",
+	"faroese jazz",
+	"brazilian modern jazz",
+	"british jazz",
+	"russian modern jazz",
+	"jazz composition",
+	"relaxative",
+	"irish modern jazz",
+	"lithuanian jazz",
+	"jazz fusion",
+	"icelandic jazz",
+	"swiss jazz",
+	"jazz cubano",
+	"polish jazz",
+	"japanese vocal jazz",
+	"estonian jazz",
+	"israeli jazz",
+	"dutch jazz",
+	"austrian jazz",
+	"spiritual jazz",
+	"jazz tuba",
+	"latin jazz",
+	"contemporary vocal jazz",
+	"contemporary jazz",
+	"canadian modern jazz",
+	"polish modern jazz",
+	"classical jazz fusion",
+	"brazilian jazz",
+	"norwegian jazz",
+	"czech jazz",
+	"modern jazz trio",
+	"jazz orchestra",
+	"german jazz",
+	"argentine jazz",
+	"harmonica jazz",
+	"jazz vibraphone",
+	"danish jazz",
+	"jazz flute",
+	"soul jazz",
+	"jazz drums",
+	"portuguese jazz",
+	"swedish jazz",
+	"tzadik",
+	"scottish jazz",
+	"free improvisation",
+	"jazz catala",
+	"russian jazz",
+	"avant-garde jazz",
+	"jazz violin",
+	"free jazz",
+	"australian jazz",
+	"italian jazz",
+	"jazz harp",
+	"polish free jazz",
+	"jazz guitar",
+	"jazz quartet",
+	"modern free jazz",
+	"spanish jazz",
+	"jazz double bass",
+	"french jazz",
+	"belgian jazz",
+	"deep free jazz",
+	"hard bop",
+	"jazz saxophone",
+	"samba-jazz",
+	"jazz brass",
+	"straight-ahead jazz",
+	"modern jazz piano",
+	"deep vocal jazz",
+	"gypsy jazz",
+	"ecm-style jazz",
+	"jazz trumpet",
+	"contemporary post-bop",
+	"jazz guitar trio",
+	"swedish jazz orkester",
+	"vintage finnish jazz",
+	"cool jazz",
+	"jazz trio",
+	"jazz blues",
+	"jazz clarinet",
+	"bebop",
+	"jazz trombone",
+	"new orleans jazz",
+	"jazz",
+	"italian contemporary jazz",
+	"vocal jazz",
+	"big band",
+	"jazz piano",
+	"trad jazz catala",
+	"oratory",
+	"vintage jazz",
+	"harlem renaissance",
+	"stride",
+	"hot jazz",
+	"ragtime",
+	"contrabass"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -2476,12 +2661,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 177 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 177: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -2491,17 +2683,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 177 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 177: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

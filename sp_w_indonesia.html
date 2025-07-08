@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>004</td>
   <td>indian edm <a href="https://everynoise.com/engenremap-indianedm.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.India<br>W.Indonesia</td>
+  <td>Edm<br>W.India<br>W.Indonesia</td>
   <td>India<br>indian indie<br>hindi indie<br>progressive house<br>indian techno<br>desi hip hop</td>
   <td>Lost Stories &quot;Mai Ni Meriye&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/942137f2c7fab2a5d5b4f85a03904b94279e3f71" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/indian-edm" title="info">info</a></td>
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>006</td>
   <td>indonesian edm <a href="https://everynoise.com/engenremap-indonesianedm.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Indonesia</td>
+  <td>Edm<br>W.Indonesia</td>
   <td>Indonesia<br>indonesian indie<br>bass house<br>g-house<br>future house<br>trance</td>
   <td>Osvaldorio &quot;Lotus&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6fccc9e76c6eccb6f8bf46dfa2c7208bb8223637" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/indonesian-edm" title="info">info</a></td>
@@ -2993,9 +2993,235 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["indian techno",
+	"indonesian electronic",
+	"indonesian viral pop",
+	"indian edm",
+	"indonesian idol pop",
+	"indonesian edm",
+	"kinnauri pop",
+	"lagu jambi",
+	"lagu madura",
+	"indian electronic",
+	"rasiya",
+	"marathi remix",
+	"indonesian hyperpop",
+	"balikpapan indie",
+	"malang punk",
+	"indonesian trap",
+	"indonesian ska",
+	"lagu bugis",
+	"south borneo indie",
+	"indonesian deathcore",
+	"indonesian pop punk",
+	"khortha pop",
+	"malaysian tamil pop",
+	"indonesian emo rap",
+	"sulawesi indie",
+	"indonesian punk",
+	"indonesian hip hop",
+	"bhangra",
+	"marwadi pop",
+	"indonesian post-hardcore",
+	"indonesian indie rock",
+	"indonesian shoegaze",
+	"ladakhi pop",
+	"lagu sabahan",
+	"telugu hip hop",
+	"hindi hip hop",
+	"lagu iban",
+	"indonesian thrash metal",
+	"javanese dangdut",
+	"semarang indie",
+	"lagu melayu",
+	"bogor indie",
+	"indian metal",
+	"trio batak",
+	"lagu jawa",
+	"desi hip hop",
+	"indonesian underground hip hop",
+	"haryanvi pop",
+	"indonesian emo",
+	"khandeshi pop",
+	"rajasthani pop",
+	"tamil hip hop",
+	"dangdut koplo",
+	"indonesian rock",
+	"malang indie",
+	"karbi pop",
+	"indonesian pop rock",
+	"lagu timur",
+	"marathi hip hop",
+	"nagpuri pop",
+	"lagu karo",
+	"desi trap",
+	"malaysian tamil rap",
+	"bhojpuri pop",
+	"punjabi hip hop",
+	"bandung indie",
+	"khasi pop",
+	"telugu indie",
+	"lagu lampung",
+	"indian rock",
+	"kokborok pop",
+	"indonesian metal",
+	"malayalam hip hop",
+	"lombok indie",
+	"lampung indie",
+	"bodo pop",
+	"dangdut",
+	"kannada indie",
+	"tollywood",
+	"batak",
+	"urdu hip hop",
+	"himachali pop",
+	"rai",
+	"maithili",
+	"carnaval limburg",
+	"santali pop",
+	"cumbia lagunera",
+	"indiana hip hop",
+	"telugu remix",
+	"lagu manado",
+	"haryanvi hip hop",
+	"campursari",
+	"indonesian r&amp;b",
+	"lagu sunda",
+	"classic indonesian rock",
+	"arunachal indie",
+	"indonesian death metal",
+	"assamese hip hop",
+	"lagu sasak",
+	"dogri pop",
+	"indonesian hardcore",
+	"hindi indie",
+	"northeast indian indie",
+	"indonesian indie pop",
+	"garo pop",
+	"punjabi lo-fi",
+	"kannada hip hop",
+	"indonesian neo-psychedelia",
+	"tamil pop",
+	"lagu bali",
+	"lagu aceh",
+	"indonesian alternative rock",
+	"classic bhangra",
+	"yogyakarta indie",
+	"pontianak indie",
+	"nagaland indie",
+	"modern bollywood",
+	"cambodian pop",
+	"uk desi rap",
+	"indonesian black metal",
+	"malayalam cover",
+	"lagu tarling",
+	"malayalam worship",
+	"northeast indian hip hop",
+	"indian indie",
+	"indian underground rap",
+	"desi pop",
+	"mizo pop",
+	"zomi pop",
+	"rongmei pop",
+	"indonesian pop",
+	"tamil indie",
+	"kumaoni pop",
+	"indian folk",
+	"indonesian psychedelia",
+	"indonesian indie",
+	"kolkata indie",
+	"maluku pop",
+	"manipuri pop",
+	"tamil worship",
+	"indian instrumental rock",
+	"punjabi pop",
+	"malayalam indie",
+	"telugu worship",
+	"lagu betawi",
+	"malayalam pop",
+	"telugu folk",
+	"marathi pop",
+	"indian lo-fi",
+	"chhattisgarhi pop",
+	"kannada pop",
+	"indiana indie",
+	"indonesian blues",
+	"indonesian city pop",
+	"sindhi",
+	"classic tollywood",
+	"hindi worship",
+	"koligeet",
+	"lagu maluku",
+	"indonesian reggae",
+	"odia pop",
+	"keroncong",
+	"desi emo rap",
+	"indonesian jazz",
+	"sambalpuri pop",
+	"kashmiri hip hop",
+	"assamese pop",
+	"mizo gospel",
+	"bhojpuri folk",
+	"gujarati pop",
+	"indian ambient",
+	"indonesian worship",
+	"indian fusion",
+	"garhwali pop",
+	"indian singer-songwriter",
+	"konkani pop",
+	"indian instrumental",
+	"marathi devotional",
+	"classic punjabi pop",
+	"west bengali pop",
+	"indonesian singer-songwriter",
+	"borneo traditional",
+	"indian percussion",
+	"malayalam madh",
+	"indonesian folk",
+	"indonesian experimental",
+	"tulum",
+	"kashmiri pop",
+	"indonesian lo-fi pop",
+	"indonesian bamboo",
+	"gujarati garba",
+	"cambodian rock",
+	"gamelan",
+	"marathi balgeet",
+	"odia bhajan",
+	"telugu devotional",
+	"kannada bhava geethe",
+	"indian jazz",
+	"classic konkani pop",
+	"haryanvi ragni",
+	"punjabi folk",
+	"indonesian folk pop",
+	"kundalini",
+	"marathi traditional",
+	"classic assamese pop",
+	"rajasthani folk",
+	"classic bollywood",
+	"tamil devotional",
+	"nadaswaram",
+	"pune indie",
+	"indian violin",
+	"indian classical",
+	"shehnai",
+	"vintage tollywood",
+	"bengali folk",
+	"cambodian traditional",
+	"indonesian indigenous traditional",
+	"javanese gamelan"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -3003,12 +3229,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 218 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 218: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -3018,17 +3251,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 218 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 218: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

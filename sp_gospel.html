@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -2268,9 +2268,178 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["christian dance",
+	"musica eletronica gospel",
+	"gospel amapiano",
+	"christian rock",
+	"christian hard rock",
+	"wrestling",
+	"christian power metal",
+	"reggaeton cristiano",
+	"christian alternative rock",
+	"christian deathcore",
+	"rock cristiano",
+	"christian metalcore",
+	"rock cristao fluminense",
+	"christian pop",
+	"christian death metal",
+	"thai worship",
+	"christian metal",
+	"gospel reggae",
+	"christian punk",
+	"christian music",
+	"ccm",
+	"kikuyu gospel",
+	"rap cristiano",
+	"pop cristiano",
+	"gospel papiamento",
+	"reggae cristao",
+	"christian afrobeat",
+	"forro gospel",
+	"sertanejo gospel",
+	"trap cristiano",
+	"gospel rap",
+	"ugandan gospel",
+	"metal cristao",
+	"christian hip hop",
+	"christian symphonic metal",
+	"pacific islands gospel",
+	"swiss worship",
+	"latin christian",
+	"latin worship",
+	"anthem worship",
+	"kompa chretien",
+	"christian trap",
+	"rock gospel brasileiro",
+	"trap cristao",
+	"christian thrash metal",
+	"worship",
+	"rap chretien",
+	"deep christian rock",
+	"finnish worship",
+	"malayalam worship",
+	"christlicher rap",
+	"gospel drill",
+	"world worship",
+	"zambian gospel",
+	"rap cristao",
+	"christchurch indie",
+	"igbo worship",
+	"christian hardcore",
+	"ghanaian gospel",
+	"pop worship",
+	"uk worship",
+	"swahili gospel",
+	"adoracion",
+	"gospel r&amp;b",
+	"zim gospel",
+	"groove gospel",
+	"vbs",
+	"adoracao",
+	"tamil worship",
+	"jazz worship",
+	"christian doom metal",
+	"telugu worship",
+	"ceske chvaly",
+	"samba gospel",
+	"christian uplift",
+	"adoracion pentecostal",
+	"apostolic worship",
+	"haitian gospel",
+	"congolese gospel",
+	"indie cristao",
+	"brazilian gospel",
+	"nz christian",
+	"hindi worship",
+	"yoruba worship",
+	"christian indie",
+	"louvores pentecostais",
+	"african gospel",
+	"deep ccm",
+	"german worship",
+	"contemporary gospel",
+	"rwandan gospel",
+	"naija worship",
+	"french worship",
+	"roots worship",
+	"gospel antigas",
+	"papuri",
+	"mariachi cristiano",
+	"corridos cristianos",
+	"mizo gospel",
+	"praise",
+	"afrikaans gospel",
+	"uk christian rap",
+	"myanmar gospel",
+	"pinoy praise",
+	"south african gospel",
+	"indonesian worship",
+	"bisaya worship",
+	"gospel italiano",
+	"coral gospel",
+	"messianic praise",
+	"deep latin christian",
+	"slovenske chvaly",
+	"muzica crestina",
+	"classic praise",
+	"japanese worship",
+	"christian lo-fi",
+	"family gospel",
+	"louvor icm",
+	"chinese worship",
+	"spoken word",
+	"adventista",
+	"southern gospel",
+	"uwielbienie",
+	"christelijk",
+	"mpb gospel",
+	"quarteto gospel",
+	"norwegian gospel",
+	"korean worship",
+	"ambient worship",
+	"gospel",
+	"zcc",
+	"cantonese worship",
+	"taraneem",
+	"hard motivation",
+	"tagalog worship",
+	"gospel soul",
+	"bluegrass gospel",
+	"psalms",
+	"christian a cappella",
+	"rosary",
+	"gospel singers",
+	"country gospel",
+	"instrumental worship",
+	"bible",
+	"lds",
+	"baptist gospel",
+	"piano worship",
+	"clap and tap",
+	"chant religieux",
+	"canti alpini",
+	"gregorian chant",
+	"gospel blues",
+	"bells",
+	"psalmen",
+	"orthodox chant",
+	"byzantine",
+	"vintage gospel",
+	"kerkkoor",
+	"muzica bisericeasca",
+	"cathedral choir",
+	"convent"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -2278,12 +2447,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 161 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 161: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -2293,17 +2469,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 161 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 161: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

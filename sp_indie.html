@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -1873,7 +1873,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>138</td>
   <td>edmonton indie <a href="https://everynoise.com/engenremap-edmontonindie.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Indie<br>W.Canada</td>
+  <td>Edm<br>Indie<br>W.Canada</td>
   <td>Canada<br>folk punk<br>neo-psychedelic<br>space rock<br>canadian indie<br>skate punk</td>
   <td>Scenic Route to Alaska &quot;Love Keeps&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ed3c14456957606eab7464734c0784d102e7f7e4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/edmonton-indie" title="info">info</a></td>
@@ -2772,7 +2772,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>207</td>
   <td>bury st edmunds indie <a href="https://everynoise.com/engenremap-burystedmundsindie.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Indie</td>
+  <td>Edm<br>Indie</td>
   <td>United Kingdom<br>east anglia indie<br>english indie rock<br>big beat<br>garage pop<br>garage rock</td>
   <td>KYANOS &quot;Egypt&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e8790a20fd0e9bd6f4ec69b00c323d2f1b2590e3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/bury-st-edmunds-indie" title="info">info</a></td>
@@ -4294,9 +4294,334 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["indietronica",
+	"south borneo indie",
+	"sulawesi indie",
+	"tamaulipas indie",
+	"english indie rock",
+	"kelowna bc indie",
+	"salzburg indie",
+	"russian indie rock",
+	"indonesian indie rock",
+	"reading indie",
+	"warrington indie",
+	"semarang indie",
+	"bogor indie",
+	"northern irish indie",
+	"dusseldorf indie",
+	"glasgow indie",
+	"british indie rock",
+	"german indie rock",
+	"indie veneto",
+	"graz indie",
+	"leipzig indie",
+	"manchester indie",
+	"cologne indie",
+	"indie electronica",
+	"malang indie",
+	"tempe indie",
+	"zurich indie",
+	"australian indie rock",
+	"indie surf",
+	"vegas indie",
+	"la indie",
+	"greek indie rock",
+	"milan indie",
+	"surabaya indie",
+	"indie soul",
+	"sonora indie",
+	"bandung indie",
+	"nice indie",
+	"miami indie",
+	"indie shoegaze",
+	"australian indie",
+	"slc indie",
+	"dominican indie",
+	"irish indie rock",
+	"leicester indie",
+	"indie electropop",
+	"leeds indie",
+	"luxembourgian indie",
+	"sydney indie",
+	"tulsa indie",
+	"fremantle indie",
+	"san diego indie",
+	"birmingham indie",
+	"deep indie rock",
+	"lombok indie",
+	"fort worth indie",
+	"essex indie",
+	"hull indie",
+	"bergen indie",
+	"bergamo indie",
+	"detroit indie",
+	"london indie",
+	"adelaide indie",
+	"indie dream pop",
+	"baja indie",
+	"southern china indie",
+	"phoenix indie",
+	"nantes indie",
+	"ukrainian indie",
+	"bali indie",
+	"bulgarian indie",
+	"oxford indie",
+	"brighton indie",
+	"auckland indie",
+	"portsmouth indie",
+	"tampa indie",
+	"sacramento indie",
+	"basel indie",
+	"puerto rican indie",
+	"liverpool indie",
+	"indie hidrocalido",
+	"bern indie",
+	"dutch indie rock",
+	"kyushu indie",
+	"east anglia indie",
+	"scottish indie",
+	"oc indie",
+	"belgian indie rock",
+	"delaware indie",
+	"stuttgart indie",
+	"south dakota indie",
+	"brooklyn indie",
+	"kent indie",
+	"greek indie",
+	"malmo indie",
+	"firenze indie",
+	"worcester ma indie",
+	"hawaiian indie",
+	"ottawa indie",
+	"yogyakarta indie",
+	"rome indie",
+	"swedish indie rock",
+	"indie emo",
+	"belfast indie",
+	"orlando indie",
+	"oulu indie",
+	"pontianak indie",
+	"hamilton on indie",
+	"indie canario",
+	"pittsburgh indie rock",
+	"indie garage rock",
+	"sinaloa indie",
+	"slovenian indie",
+	"stockholm indie",
+	"belgian indie",
+	"cincinnati indie",
+	"vienna indie",
+	"tijuana indie",
+	"nz indie",
+	"el paso indie",
+	"dallas indie",
+	"york indie",
+	"derby indie",
+	"umea indie",
+	"perth indie",
+	"danish indie",
+	"indie poblano",
+	"indie punk",
+	"dublin indie",
+	"halifax indie",
+	"san antonio indie",
+	"kansas indie",
+	"dc indie",
+	"quebec indie",
+	"brazilian indie",
+	"indie r&amp;b",
+	"orebro indie",
+	"edmonton indie",
+	"indie jazz",
+	"austindie",
+	"bisaya indie",
+	"little rock indie",
+	"albuquerque indie",
+	"wyoming indie",
+	"charlotte nc indie",
+	"rotterdam indie",
+	"nashville indie",
+	"newcastle indie",
+	"seattle indie",
+	"indie curitibano",
+	"indie fuzzpop",
+	"brazilian indie rock",
+	"israeli indie",
+	"atlanta indie",
+	"twin cities indie",
+	"kc indie",
+	"cleveland indie",
+	"montreal indie",
+	"toronto indie",
+	"welsh indie",
+	"chihuahua indie",
+	"new hampshire indie",
+	"aberdeen indie",
+	"rennes indie",
+	"oakland indie",
+	"gainesville indie",
+	"lund indie",
+	"indonesian indie",
+	"canadian indie",
+	"okc indie",
+	"hampton roads indie",
+	"houston indie",
+	"knoxville indie",
+	"dresden indie",
+	"baltimore indie",
+	"fort wayne indie",
+	"mississippi indie",
+	"portuguese indie",
+	"dalarna indie",
+	"kalmar indie",
+	"athens indie",
+	"lancashire indie",
+	"sheffield indie",
+	"utah indie",
+	"chattanooga indie",
+	"vancouver indie",
+	"stl indie",
+	"ontario indie",
+	"oth indie",
+	"kingston on indie",
+	"asbury park indie",
+	"denton tx indie",
+	"milwaukee indie",
+	"socal indie",
+	"west virginia indie",
+	"lafayette indie",
+	"st petersburg fl indie",
+	"baton rouge indie",
+	"denver indie",
+	"gothenburg indie",
+	"nottingham indie",
+	"columbus ohio indie",
+	"channel islands indie",
+	"cardiff indie",
+	"indie napoletano",
+	"san marcos tx indie",
+	"bury st edmunds indie",
+	"new jersey indie",
+	"guam indie",
+	"dayton indie",
+	"indie siciliano",
+	"lincoln ne indie",
+	"victoria bc indie",
+	"rhode island indie",
+	"lexington ky indie",
+	"asheville indie",
+	"indie psych-pop",
+	"boston indie",
+	"north alabama indie",
+	"memphis indie",
+	"omaha indie",
+	"indiana indie",
+	"indie catala",
+	"dutch indie",
+	"bristol indie",
+	"indie hip hop",
+	"rochester ny indie",
+	"rochester mn indie",
+	"louisville indie",
+	"indie psychedelic rock",
+	"pittsburgh indie",
+	"triangle indie",
+	"albany ny indie",
+	"south carolina indie",
+	"wellington indie",
+	"wyoming roots",
+	"southampton indie",
+	"idaho indie",
+	"rva indie",
+	"alabama indie",
+	"montana indie",
+	"ohio indie",
+	"tassie indie",
+	"cornwall indie",
+	"christian indie",
+	"grand rapids indie",
+	"bay area indie",
+	"rio grande do sul indie",
+	"chicago indie",
+	"manitoba indie",
+	"portland indie",
+	"norman ok indie",
+	"virginia indie",
+	"indie emo rock",
+	"charlottesville indie",
+	"lawrence ks indie",
+	"ok indie",
+	"springfield mo indie",
+	"connecticut indie",
+	"ann arbor indie",
+	"calgary indie",
+	"cambridgeshire indie",
+	"new brunswick indie",
+	"wisconsin indie",
+	"normal indie",
+	"kentucky indie",
+	"experimental indie",
+	"jacksonville indie",
+	"saskatchewan indie",
+	"arkansas indie",
+	"western mass indie",
+	"alaska indie",
+	"rogaland indie",
+	"indy indie",
+	"buffalo ny indie",
+	"french indie folk",
+	"santa fe indie",
+	"brno indie",
+	"melbourne indie",
+	"irish indie",
+	"pei indie",
+	"deep indie singer-songwriter",
+	"german indie folk",
+	"missouri indie",
+	"new orleans indie",
+	"washington indie",
+	"experimental indie rock",
+	"norrbotten indie",
+	"cork indie",
+	"iowa indie",
+	"olympia wa indie",
+	"indie asturiana",
+	"maine indie",
+	"minneapolis indie",
+	"lancaster pa indie",
+	"kindie rock",
+	"faroese indie",
+	"montana roots",
+	"north carolina indie",
+	"indiecoustica",
+	"michigan indie",
+	"tucson indie",
+	"spanish indie folk",
+	"stomp and holler",
+	"isle of man indie",
+	"vermont indie",
+	"indie anthem-folk",
+	"north dakota indie",
+	"eau claire indie",
+	"duluth indie",
+	"indie singer-songwriter",
+	"modern indie folk",
+	"canadian indie folk",
+	"indie folk",
+	"scottish indie folk",
+	"japanese indie folk",
+	"stomp and flutter"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -4304,12 +4629,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 317 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 317: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -4319,17 +4651,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 317 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 317: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

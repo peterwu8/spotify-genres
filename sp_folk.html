@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -3778,9 +3778,294 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["ukrainian folk pop",
+	"italian folk metal",
+	"nordic folk metal",
+	"russian folk metal",
+	"folk metal",
+	"slavic folk metal",
+	"cerkes muzikleri",
+	"turbo folk",
+	"ukrainian folk rock",
+	"circassian folk",
+	"deep folk metal",
+	"balkan folk metal",
+	"thai folk rock",
+	"vintage reggae",
+	"spanish folk metal",
+	"ukrainian folk",
+	"folk black metal",
+	"folk metal latinoamericano",
+	"polish folk metal",
+	"indian folk",
+	"thai folk pop",
+	"spanish folk rock",
+	"okinawan folk",
+	"garifuna folk",
+	"french folk pop",
+	"siberian folk",
+	"telugu folk",
+	"boeremusiek",
+	"folk-pop",
+	"russian folk rock",
+	"indie folk italiano",
+	"viking folk",
+	"nl folk",
+	"rune folk",
+	"baltic folk",
+	"balochi folk",
+	"folktronica",
+	"classic italian folk pop",
+	"norwegian folk rock",
+	"narodna muzika",
+	"lithuanian folk",
+	"neofolk",
+	"czech folk rock",
+	"nuevo folklore argentino",
+	"kolo",
+	"folk brasileiro",
+	"lilith",
+	"chinese folk",
+	"bhojpuri folk",
+	"french indie folk",
+	"malagasy folk",
+	"medieval folk",
+	"german indie folk",
+	"tibetan folk pop",
+	"swedish folk pop",
+	"australian indie folk",
+	"thai folk",
+	"macedonian folk",
+	"folk punk",
+	"folk siciliana",
+	"nz singer-songwriter",
+	"musica folk asturiana",
+	"modern folk rock",
+	"spanish indie folk",
+	"galician folk",
+	"deep neofolk",
+	"folklore boliviano",
+	"indie folk argentino",
+	"vintage french electronic",
+	"vintage cantonese pop",
+	"flemish folk",
+	"antilliaanse folklore",
+	"indie anthem-folk",
+	"nz folk",
+	"slovenian folk",
+	"swiss indie folk",
+	"canadian folk",
+	"anti-folk",
+	"cymraeg",
+	"children's folk",
+	"nuevo folklore mexicano",
+	"afrikaans folk",
+	"neo-pagan",
+	"cape verdean folk",
+	"estonian folk",
+	"indonesian folk",
+	"uyghur folk",
+	"hungarian folk",
+	"geek folk",
+	"karelian folk",
+	"psychedelic folk rock",
+	"modern psychedelic folk",
+	"rusyn folk",
+	"ainu folk",
+	"folklore paraguayo",
+	"trekkspill",
+	"ectofolk",
+	"modern indie folk",
+	"folk rock italiano",
+	"latvian folk",
+	"canadian indie folk",
+	"vintage swoon",
+	"italian folk",
+	"women's music",
+	"czech folk",
+	"indie folk",
+	"michigan folk",
+	"scottish indie folk",
+	"folk rock",
+	"breton folk",
+	"balfolk",
+	"icelandic folk",
+	"boston folk",
+	"folklore nuevo argentino",
+	"cifteli",
+	"pop folk",
+	"armenian folk",
+	"western saharan folk",
+	"polish folk",
+	"spanish folk",
+	"vintage french psychedelic",
+	"japanese folk",
+	"japanese indie folk",
+	"muzica banateana",
+	"folklore chileno",
+	"swedish indie folk",
+	"swiss folk",
+	"serbian folk",
+	"folklore peruano",
+	"vintage dutch pop",
+	"finnish folk",
+	"taiwan campus folk",
+	"traditional scottish folk",
+	"freak folk",
+	"folklore quebecois",
+	"pakistani folk",
+	"psychedelic folk",
+	"folklore panameno",
+	"malawian folk",
+	"portuguese folk",
+	"kurdish folk",
+	"vintage rockabilly",
+	"israeli folk",
+	"puerto rican folk",
+	"appenzeller folk",
+	"korean indie folk",
+	"nordic folk",
+	"basque folk",
+	"slovak folk",
+	"autoharp",
+	"alphorn",
+	"dark folk",
+	"folklore ecuatoriano",
+	"bush ballad",
+	"kosovan folk",
+	"greek folk",
+	"vintage chinese pop",
+	"folk",
+	"contemporary folk",
+	"folk cantabria",
+	"turkish folk",
+	"punjabi folk",
+	"new weird america",
+	"indonesian folk pop",
+	"folklore venezolano",
+	"folklore veracruzano",
+	"dutch folk",
+	"croatian folk",
+	"scottish folk",
+	"experimental folk",
+	"cape breton folk",
+	"starogradska",
+	"rajasthani folk",
+	"ambient folk",
+	"folklore cuyano",
+	"folklore argentino",
+	"drama",
+	"pontian folk",
+	"scottish gaelic folk",
+	"british folk",
+	"welsh folk",
+	"corsican folk",
+	"danish folk",
+	"vintage radio show",
+	"faroese folk",
+	"himalayan folk",
+	"chamber folk",
+	"vintage italian soundtrack",
+	"uilleann pipes",
+	"vintage swedish pop",
+	"albanian folk",
+	"jaw harp",
+	"yorkshire folk",
+	"irish folk",
+	"folkmusik",
+	"tuvan folk",
+	"mongolian folk",
+	"orkney and shetland folk",
+	"drone folk",
+	"folklore uruguayo",
+	"nyckelharpa",
+	"traditional british folk",
+	"free folk",
+	"cornish folk",
+	"american primitive",
+	"polyphonies corses",
+	"algerian folk",
+	"horo",
+	"jig and reel",
+	"tatar folk",
+	"bahamian folk",
+	"romanian folk",
+	"french folk",
+	"traditional english folk",
+	"vintage taiwan pop",
+	"catalan folk",
+	"fingerstyle",
+	"bandura",
+	"early american folk",
+	"northumbrian folk",
+	"modern swing",
+	"concertina",
+	"central asian folk",
+	"vintage western",
+	"string folk",
+	"bulgarian folk",
+	"arab folk",
+	"oud",
+	"vintage tollywood",
+	"bengali folk",
+	"appalachian folk",
+	"kaba gaida",
+	"mazandarani folk",
+	"vintage broadway",
+	"dechovka",
+	"vintage norwegian pop",
+	"vintage finnish jazz",
+	"hula",
+	"american folk revival",
+	"dixieland",
+	"vintage hawaiian",
+	"russian folk",
+	"norwegian folk",
+	"bothy ballad",
+	"schrammelmusik",
+	"polyphony",
+	"swing",
+	"yiddish folk",
+	"vintage italian pop",
+	"traditional folk",
+	"vintage spanish pop",
+	"traditional southern folk",
+	"hardingfele",
+	"vintage schlager",
+	"irish gaelic folk",
+	"kentucky mountain folk",
+	"cimbalova muzika",
+	"vintage jazz",
+	"folklore surero",
+	"tin pan alley",
+	"vintage swing",
+	"orquesta tipica",
+	"vintage old-time",
+	"georgian folk",
+	"moravian folk",
+	"caucasian folk",
+	"vintage tango",
+	"vintage chanson",
+	"spirituals",
+	"vaudeville",
+	"protest folk",
+	"vintage country folk",
+	"vintage hollywood",
+	"sacred harp",
+	"vintage gospel",
+	"georgian polyphony",
+	"vintage classical singing"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -3788,12 +4073,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 277 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 277: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -3803,17 +4095,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 277 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 277: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

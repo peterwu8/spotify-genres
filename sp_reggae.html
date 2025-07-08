@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -1277,9 +1277,103 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["minimal dub",
+	"dub reggae",
+	"ragga jungle",
+	"uk dub",
+	"perreo",
+	"electro dub",
+	"french dub",
+	"dub techno",
+	"reggaeton",
+	"ambient dub techno",
+	"grenada soca",
+	"psydub",
+	"dub brasileiro",
+	"reggaeton chileno",
+	"reggaeton colombiano",
+	"reggaeton mexicano",
+	"chinese reggae",
+	"uk reggae",
+	"experimental dub",
+	"reggae uruguayo",
+	"japanese dub",
+	"italian reggae",
+	"nz reggae",
+	"reggae cover",
+	"neoperreo",
+	"turkish reggae",
+	"euskal reggae",
+	"pop reggaeton",
+	"reggaeton flow",
+	"reggae tuga",
+	"reggae boliviano",
+	"reggae mexicano",
+	"swiss reggae",
+	"j-reggae",
+	"reggae en espanol",
+	"argentine reggae",
+	"polish reggae",
+	"zouk riddim",
+	"finnish reggae",
+	"reggae catala",
+	"reggae do maranhao",
+	"deep ragga",
+	"dub product",
+	"spanish reggae",
+	"reggaeton cristiano",
+	"traditional reggae",
+	"reggae rock",
+	"jawaiian",
+	"czsk reggae",
+	"trinidadian reggae",
+	"dub",
+	"dub punk",
+	"reggae gaucho",
+	"african reggae",
+	"swedish reggae",
+	"reggae peruano",
+	"reggae tico",
+	"gospel reggae",
+	"roots reggae",
+	"illbient",
+	"nederreggae",
+	"reggae",
+	"german reggae",
+	"west coast reggae",
+	"russian reggae",
+	"reggae cristao",
+	"vintage reggae",
+	"reggae maghreb",
+	"east coast reggae",
+	"samba reggae",
+	"dub poetry",
+	"dub metal",
+	"virgin islands reggae",
+	"brazilian reggae",
+	"french reggae",
+	"early reggae",
+	"australian reggae fusion",
+	"pinoy reggae",
+	"modern reggae",
+	"dublin indie",
+	"bloco",
+	"reggae fusion",
+	"nyahbinghi",
+	"indonesian reggae",
+	"waiata maori",
+	"capoeira"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -1287,12 +1381,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 86 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 86: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -1302,17 +1403,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 86 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 86: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

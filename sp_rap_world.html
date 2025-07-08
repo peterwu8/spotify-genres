@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -2015,9 +2015,159 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["raboday",
+	"charva",
+	"russian viral rap",
+	"zxc",
+	"russian emo rap",
+	"josei rap",
+	"dembow",
+	"turkce kadin rap",
+	"rap metal espanol",
+	"rap ecuatoguineano",
+	"j-rap",
+	"rap salvadoreno",
+	"rap regio",
+	"nz gangsta rap",
+	"anime rap",
+	"rap nica",
+	"tamaulipas rap",
+	"polish viral rap",
+	"japanese pop rap",
+	"rap moldovenesc",
+	"polish underground rap",
+	"chinese melodic rap",
+	"rap motywacja",
+	"k-rap",
+	"czsk emo rap",
+	"rap maromba",
+	"dutch rap pop",
+	"rap ecuatoriano",
+	"emo rap italiano",
+	"afghan rap",
+	"ritmo kombina",
+	"ottawa rap",
+	"frauenrap",
+	"rap guarulhense",
+	"rap df",
+	"smutny rap",
+	"norwegian pop rap",
+	"malay rap",
+	"rap nacional antigo",
+	"antilliaanse rap",
+	"schweizer rap",
+	"rap toscana",
+	"rap femenino mexicano",
+	"rap genovese",
+	"kasi rap",
+	"rap malien",
+	"persian sad rap",
+	"vietnamese melodic rap",
+	"rap portuense",
+	"rap burkinabe",
+	"rap uruguayo",
+	"rap gasy",
+	"rap napoletano",
+	"rap uliczny",
+	"rap lyonnais",
+	"rap alagoano",
+	"german viral rap",
+	"persian melodic rap",
+	"czech alternative rap",
+	"korean underground rap",
+	"rap francais",
+	"rap belge",
+	"bayerischer rap",
+	"rap underground colombiano",
+	"russian gangster rap",
+	"rap marseille",
+	"greek fem rap",
+	"tagalog rap",
+	"uk desi rap",
+	"bisaya rap",
+	"rap montrealais",
+	"japanese chill rap",
+	"rap chretien",
+	"rap italiano old school",
+	"rap tico",
+	"indian underground rap",
+	"sinhala rap",
+	"oldschool deutschrap",
+	"rap cristao",
+	"romanian rap",
+	"rap potiguar",
+	"rap pernambucano",
+	"rap anime",
+	"rap kreyol",
+	"maimouna",
+	"scouse rap",
+	"rap ivoire",
+	"german jazz rap",
+	"rap catarinense",
+	"japanese underground rap",
+	"north moroccan rap",
+	"rap feminino nacional",
+	"rap sergipano",
+	"rap catala",
+	"rap gabonais",
+	"rap antillais",
+	"old school rap francais",
+	"german alternative rap",
+	"rap algerien",
+	"new school turkce rap",
+	"arab alternative",
+	"latin viral rap",
+	"rap tunisien",
+	"rap liegeois",
+	"thai pop rap",
+	"venda rap",
+	"rap conscient",
+	"rap baiano",
+	"polish alternative rap",
+	"swedish pop rap",
+	"rap paraense",
+	"rap guineen",
+	"viet chill rap",
+	"rap maroc",
+	"cloud rap francais",
+	"london rap",
+	"uk melodic rap",
+	"swedish gangsta rap",
+	"rap mocambicana",
+	"rap calme",
+	"igbo rap",
+	"rap angolano",
+	"rap chileno",
+	"desi emo rap",
+	"rap feminino chileno",
+	"palestinian alternative",
+	"rap abc paulista",
+	"rap romantico",
+	"rap criolo",
+	"rap nortista",
+	"rap tuga underground",
+	"pop rap brasileiro",
+	"rap congolais",
+	"rap euskera",
+	"rap politico",
+	"musica rapa nui",
+	"rap underground espanol",
+	"rap conciencia",
+	"rap espanol",
+	"izvorna muzika",
+	"nasheed",
+	"therapy"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -2025,12 +2175,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 142 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 142: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -2040,17 +2197,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 142 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 142: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

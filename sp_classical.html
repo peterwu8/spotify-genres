@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -3355,9 +3355,249 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["orquestas de galicia",
+	"opera metal",
+	"neo classical metal",
+	"epicore",
+	"ballroom",
+	"synthetic classical",
+	"brass band",
+	"tabla",
+	"santoor",
+	"danzon",
+	"cantonese opera",
+	"neoclassical darkwave",
+	"sitar",
+	"orchestral soundtrack",
+	"classical jazz fusion",
+	"jazz orchestra",
+	"school ensemble",
+	"classify",
+	"modern cello",
+	"classical mandolin",
+	"andalusian classical",
+	"ukrainian contemporary classical",
+	"mallet",
+	"operatic pop",
+	"japanese orchestra",
+	"quartetto d'archi",
+	"hindustani classical",
+	"greek contemporary classical",
+	"japanese classical",
+	"indian classical",
+	"classical trumpet",
+	"easy listening",
+	"pops orchestra",
+	"man's orchestra",
+	"harpsichord",
+	"symfonicky orchestr",
+	"salon music",
+	"classical accordion",
+	"string quintet",
+	"classical percussion",
+	"british orchestra",
+	"new zealand classical",
+	"clarinet ensemble",
+	"experimental classical",
+	"modern chamber music",
+	"classical piano quartet",
+	"irish contemporary classical",
+	"medieval ensemble",
+	"african-american classical",
+	"pianissimo",
+	"light music",
+	"orchestra",
+	"turkish classical",
+	"classical organ",
+	"harp",
+	"trombone ensemble",
+	"modern performance",
+	"icelandic classical",
+	"austrian contemporary classical",
+	"classical oboe",
+	"string orchestra",
+	"post-minimalism",
+	"japanese contemporary classical",
+	"classical clarinet",
+	"taiwan classical performance",
+	"historically informed performance",
+	"american orchestra",
+	"nordic orchestra",
+	"italian classical guitar",
+	"brazilian classical",
+	"classical saxophone",
+	"baroque ensemble",
+	"fictitious orchestra",
+	"modern string quartet",
+	"classical bassoon",
+	"dutch contemporary classical",
+	"brass ensemble",
+	"french contemporary classical",
+	"italian baroque ensemble",
+	"american 21st century classical",
+	"swedish classical",
+	"classical flute",
+	"brazilian contemporary classical",
+	"neo-classical",
+	"minimalism",
+	"marimba",
+	"classical trombone",
+	"latin classical",
+	"wind symphony",
+	"historical keyboard",
+	"caucasian classical",
+	"french orchestra",
+	"spanish contemporary classical",
+	"classical drill",
+	"japanese classical performance",
+	"concert band",
+	"swedish contemporary classical",
+	"portuguese contemporary classical",
+	"galante era",
+	"german contemporary classical",
+	"czech contemporary classical",
+	"american modern classical",
+	"chamber orchestra",
+	"canadian classical",
+	"brass quintet",
+	"orkiestra symfoniczna",
+	"canadian contemporary classical",
+	"belgian contemporary classical",
+	"cello ensemble",
+	"euphonium",
+	"early music ensemble",
+	"radio symphony",
+	"orchestral performance",
+	"youth orchestra",
+	"chamber ensemble",
+	"chinese classical",
+	"21st century classical",
+	"american contemporary classical",
+	"italian contemporary classical",
+	"russian orchestra",
+	"korean classical performance",
+	"british classical piano",
+	"contemporary classical piano",
+	"austrian orchestra",
+	"american classical piano",
+	"quatuor a cordes",
+	"danish contemporary classical",
+	"classical guitar quartet",
+	"british contemporary classical",
+	"turkish classical performance",
+	"japanese classical piano",
+	"hungarian contemporary classical",
+	"swiss contemporary classical",
+	"polish contemporary classical",
+	"classical tuba",
+	"classical horn",
+	"romanian contemporary classical",
+	"classical guitar duo",
+	"french opera",
+	"violin",
+	"oriental classical",
+	"russian modern classical",
+	"israeli classical",
+	"classical performance",
+	"classical harp",
+	"german orchestra",
+	"classical countertenor",
+	"korean classical piano",
+	"classical baritone",
+	"italian orchestra",
+	"classical saxophone quartet",
+	"russian contemporary classical",
+	"nordic contemporary classical",
+	"portuguese classical",
+	"australian classical",
+	"italian classical piano",
+	"classical era",
+	"string quartet",
+	"hungarian classical performance",
+	"german classical piano",
+	"classical",
+	"classical tenor",
+	"chinese classical performance",
+	"karntner volksmusik",
+	"korean contemporary classical",
+	"vocal ensemble",
+	"classical mezzo-soprano",
+	"classical piano duo",
+	"contemporary classical",
+	"nordic classical piano",
+	"mexican classical",
+	"finnish contemporary classical",
+	"serialism",
+	"classical string trio",
+	"neoclassicism",
+	"australian classical piano",
+	"choral",
+	"classical cello",
+	"dutch classical piano",
+	"early modern classical",
+	"baltic classical",
+	"irish classical",
+	"british modern classical",
+	"classical guitar",
+	"canadian classical piano",
+	"historic orchestral performance",
+	"streichquartett",
+	"balkan classical piano",
+	"spanish classical piano",
+	"classical bass",
+	"viola",
+	"late romantic era",
+	"norwegian classical",
+	"finnish classical",
+	"danish classical",
+	"art song",
+	"czech classical",
+	"spanish classical",
+	"german opera",
+	"classical soprano",
+	"italian opera",
+	"israeli classical piano",
+	"historic classical performance",
+	"latin american classical piano",
+	"post-romantic era",
+	"impressionism",
+	"polish classical",
+	"opera",
+	"classical piano trio",
+	"historic string quartet",
+	"wind ensemble",
+	"classical piano",
+	"chinese classical piano",
+	"brazilian classical piano",
+	"swiss classical piano",
+	"chinese opera",
+	"austrian classical piano",
+	"opera chorus",
+	"caucasian classical piano",
+	"french classical piano",
+	"romanian classical piano",
+	"classical contralto",
+	"hungarian classical piano",
+	"ukrainian classical piano",
+	"ukrainian classical",
+	"wagnerian singing",
+	"russian classical piano",
+	"belgian classical piano",
+	"baltic classical piano",
+	"czech classical piano",
+	"vintage classical singing",
+	"polish classical piano"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -3365,12 +3605,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 232 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 232: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -3380,17 +3627,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 232 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 232: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

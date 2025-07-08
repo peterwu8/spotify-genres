@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -1474,9 +1474,118 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["hardcore breaks",
+	"jumpstyle",
+	"happy hardcore",
+	"deep happy hardcore",
+	"freeform hardcore",
+	"hardcore techno",
+	"deep hardcore",
+	"nederlandse hardstyle",
+	"gabber",
+	"dark hardcore",
+	"speedcore",
+	"classic hardstyle",
+	"hardstyle",
+	"industrial hardcore",
+	"uptempo hardcore",
+	"euphoric hardstyle",
+	"rawstyle",
+	"xtra raw",
+	"carnaval",
+	"post-screamo",
+	"gym hardstyle",
+	"australian post-hardcore",
+	"digital hardcore",
+	"post-post-hardcore",
+	"german post-hardcore",
+	"japanese melodic hardcore",
+	"chilean hardcore",
+	"indonesian post-hardcore",
+	"czech hardcore",
+	"swancore",
+	"brazilian post-hardcore",
+	"progressive post-hardcore",
+	"nintendocore",
+	"screamo",
+	"uk post-hardcore",
+	"screamocore",
+	"lion city hardcore",
+	"swedish post-hardcore",
+	"japanese post-hardcore",
+	"german hardcore",
+	"canadian post-hardcore",
+	"nz hardcore",
+	"french hardcore",
+	"quebec hardcore",
+	"modern melodic hardcore",
+	"colombian hardcore",
+	"russian hardcore",
+	"portuguese hardcore",
+	"polish hardcore",
+	"alternative hardcore",
+	"norwegian hardcore",
+	"indonesian hardcore",
+	"mexican hardcore",
+	"melodic hardcore",
+	"korean hardcore",
+	"danish hardcore",
+	"brazilian hardcore",
+	"chicago hardcore",
+	"malaysian hardcore",
+	"canadian hardcore",
+	"colorado hardcore",
+	"texas hardcore",
+	"connecticut hardcore",
+	"irish hardcore",
+	"alabama hardcore",
+	"metallic hardcore",
+	"post-hardcore",
+	"christian hardcore",
+	"slc hardcore",
+	"ukhc",
+	"blackened hardcore",
+	"turkish hardcore",
+	"beatdown",
+	"modern hardcore",
+	"australian hardcore",
+	"italian post-hardcore",
+	"hardcore hip hop",
+	"lowlands hardcore",
+	"hardcore",
+	"swedish hardcore",
+	"italian hardcore",
+	"new england hardcore",
+	"hardcore punk espanol",
+	"hardcore punk",
+	"finnish hardcore",
+	"deep hardcore punk",
+	"belgian hardcore",
+	"japanese hardcore",
+	"new jersey hardcore",
+	"dc hardcore",
+	"chaotic hardcore",
+	"argentine hardcore",
+	"umea hardcore",
+	"straight edge",
+	"florida hardcore",
+	"h8000",
+	"vegan straight edge",
+	"boston hardcore",
+	"pennsylvania hardcore",
+	"california hardcore",
+	"ohio hardcore"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -1484,12 +1593,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 101 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 101: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -1499,17 +1615,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 101 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 101: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

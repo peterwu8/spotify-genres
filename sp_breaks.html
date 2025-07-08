@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Breaks: (20 genres)</title>
+    <title>Breaks: (19 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <p>
 
-<strong>Name:</strong> Breaks: (20 genres)<br>
+<strong>Name:</strong> Breaks: (19 genres)<br>
 
 <strong>Notes:</strong><br><ul>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -295,19 +295,6 @@ document.addEventListener("DOMContentLoaded", function() {
 </tr>
 <tr>
   <td>17</td>
-  <td>drill and bass <a href="https://everynoise.com/engenremap-drillandbass.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Breaks &#x2380;</td>
-  <td>United States<br>idm<br>breakcore<br>glitch<br>intelligent dance music<br>deep idm</td>
-  <td>-Ziq &quot;Brace Yourself Jason&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/85e920fc0e7ebb7cd6b37e07eeca96ebde863c54" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
-  <td><a href="https://www.chosic.com/genre-chart/drill-and-bass" title="info">info</a></td>
-  <td><a href="https://open.spotify.com/playlist/1l92opmDGkx5lyuWCPlNmF" title="chosic">chosic</a></td>
-  <td><a href="https://open.spotify.com/playlist/5GJ4YKR60brIy8f4NECcHG" title="playlist">playlist</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/2K5B5zrFCvomKcNHm9yaot" title="intro">intro</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/0NYG0XLua9v6e0vernFqJR" title="pulse">pulse</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/1y5NYyihpHAyTBdicgRrhF" title="edge">edge</a></td>
-</tr>
-<tr>
-  <td>18</td>
   <td>flashcore <a href="https://everynoise.com/engenremap-flashcore.html" title="&#x2306;">&#x2306;</a></td>
   <td>Breaks &#x2380;</td>
   <td>Japan<br>breakcore<br>speedcore<br>idm<br>glitch<br>drill and bass</td>
@@ -320,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>--</td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>18</td>
   <td>cybergrind <a href="https://everynoise.com/engenremap-cybergrind.html" title="&#x2306;">&#x2306;</a></td>
   <td>Breaks &#x2380;</td>
   <td>United States<br>grindcore<br>mathcore<br>breakcore<br>nintendocore<br>sasscore</td>
@@ -333,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>--</td>
 </tr>
 <tr>
-  <td>20</td>
+  <td>19</td>
   <td>weirdcore <a href="https://everynoise.com/engenremap-weirdcore.html" title="&#x2306;">&#x2306;</a></td>
   <td>Breaks &#x2380;</td>
   <td>Japan<br>breakcore<br>hyperpop<br>pov: indie<br>speedcore<br>vocaloid</td>
@@ -419,9 +406,36 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["progressive breaks",
+	"psybreaks",
+	"hardcore breaks",
+	"nu skool breaks",
+	"funky breaks",
+	"breakbeat",
+	"breaks",
+	"big beat",
+	"modern jungle",
+	"mashcore",
+	"glitchbreak",
+	"breakcore",
+	"hexd",
+	"extratone",
+	"deep breakcore",
+	"chill breakcore",
+	"flashcore",
+	"cybergrind",
+	"weirdcore"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -429,12 +443,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 20 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 19: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -444,17 +465,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 20 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 19: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -2570,9 +2570,202 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["cape town indie",
+	"french indietronica",
+	"balikpapan indie",
+	"coventry indie",
+	"indie liguria",
+	"dortmund indie",
+	"scottish indie rock",
+	"japanese indie rock",
+	"monterrey indie",
+	"mexican indie",
+	"puglia indie",
+	"sevilla indie",
+	"venezuelan indie",
+	"hokkaido indie",
+	"indie campechano",
+	"uae indie",
+	"northamptonshire indie",
+	"albanian alternative",
+	"kansai indie",
+	"romanian indie",
+	"russian indie",
+	"thai indie",
+	"caracas indie",
+	"indie extremena",
+	"euskal indie",
+	"rosario indie",
+	"belarusian indie",
+	"guadalajara indie",
+	"polish indie rock",
+	"morelos indie",
+	"cdmx indie",
+	"merida indie",
+	"thai indie rock",
+	"murcia indie",
+	"indie queretano",
+	"indie valenciana",
+	"spanish indie rock",
+	"j-indie",
+	"frankfurt indie",
+	"colombian indie",
+	"granada indie",
+	"indie arequipeno",
+	"new delhi indie",
+	"bosnian indie",
+	"korean indie rock",
+	"kazakh indie",
+	"hungarian indie",
+	"indie salvadoreno",
+	"poznan indie",
+	"indie michoacano",
+	"telugu indie",
+	"uppsala indie",
+	"leon gto indie",
+	"chennai indie",
+	"brisbane indie",
+	"bahai",
+	"indie nica",
+	"indie cantabria",
+	"indie boliviano",
+	"polish indie",
+	"malaysian indie",
+	"paraguayan indie",
+	"lampung indie",
+	"kannada indie",
+	"macedonian indie",
+	"panamanian indie",
+	"sinogaze",
+	"peruvian indie",
+	"cdo indie",
+	"sardinia indie",
+	"portuguese indie rock",
+	"chinese indie rock",
+	"argentine indie rock",
+	"myanmar indie",
+	"windsor on indie",
+	"munich indie",
+	"german indie",
+	"hamburg indie",
+	"bruneian indie",
+	"edinburgh indie",
+	"indie catracho",
+	"turin indie",
+	"ecuadorian indie",
+	"serbian indie",
+	"london on indie",
+	"swiss indie",
+	"arunachal indie",
+	"deep german indie",
+	"swansea indie",
+	"bohol indie",
+	"hindi indie",
+	"northeast indian indie",
+	"indie paraense",
+	"indie platense",
+	"latvian indie",
+	"chilean indie",
+	"limerick indie",
+	"finnish indie",
+	"austrian indie",
+	"north east england indie",
+	"lithuanian indie",
+	"croatian indie",
+	"indie sudcaliforniano",
+	"indie trujillano",
+	"taiwanese indie",
+	"concepcion indie",
+	"nagaland indie",
+	"prague indie",
+	"czech indie",
+	"taiwan indie",
+	"slovak indie",
+	"newcastle nsw indie",
+	"pinoy shoegaze",
+	"guatemalan indie",
+	"argentine indie",
+	"indie tico",
+	"indian indie",
+	"galician indie",
+	"indie tucumano",
+	"bangladeshi indie",
+	"svensk indie",
+	"wuhan indie",
+	"northwest china indie",
+	"bangalore indie",
+	"pakistani indie",
+	"pinoy indie rock",
+	"brasilia indie",
+	"indie hidalguense",
+	"isle of wight indie",
+	"nepali indie",
+	"christchurch indie",
+	"manso indie",
+	"indie tabasqueno",
+	"uruguayan indie",
+	"ghent indie",
+	"tamil indie",
+	"trondheim indie",
+	"west yorkshire indie",
+	"pinoy indie",
+	"kolkata indie",
+	"dundee indie",
+	"estonian indie",
+	"hong kong indie",
+	"devon indie",
+	"oslo indie",
+	"indie nordeste argentino",
+	"veracruz indie",
+	"mumbai indie",
+	"sinhala indie",
+	"indie cordoba",
+	"malayalam indie",
+	"cape breton indie",
+	"oaxaca indie",
+	"chinese indie",
+	"singaporean indie",
+	"belo horizonte indie",
+	"k-indie",
+	"kosovan indie",
+	"norwegian indie",
+	"indie cristao",
+	"indie folk italiano",
+	"lebanese indie",
+	"aarhus indie",
+	"armenian indie",
+	"derry indie",
+	"indie game soundtrack",
+	"shanghai indie",
+	"bath indie",
+	"dunedin indie",
+	"newfoundland indie",
+	"australian indie folk",
+	"icelandic indie",
+	"galway indie",
+	"indie folk argentino",
+	"cover acustico",
+	"neo-singer-songwriter",
+	"pinoy singer-songwriter",
+	"swiss indie folk",
+	"canberra indie",
+	"acoustic opm",
+	"swedish indie folk",
+	"indie viet",
+	"korean indie folk",
+	"indie triste",
+	"pune indie"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -2580,12 +2773,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 185 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 185: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -2595,17 +2795,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 185 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 185: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

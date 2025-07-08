@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Idm: (12 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Idm: (12 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>acid idm <a href="https://everynoise.com/engenremap-acididm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm</td>
+  <td>Thailand<br>idm<br>acid house<br>breakbeat<br>nu electro<br>acid techno</td>
+  <td>Bochum Welt &quot;Southern England in Summer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a300c38160f90b40353104211f1a64bcffb5a933" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/acid-idm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4w768Nv8rJwJlWoIbbeLej" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4yc86ER1kfXDvnKVEA7gKT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/74CRyZ0F0IvRyStqitO5Fs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6fXCrcYcb6JVoPFssbmL6d" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/41CjPX926nTtQKyhhlKrnl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>future garage <a href="https://everynoise.com/engenremap-futuregarage.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm &#x2380;</td>
+  <td>United Kingdom<br>wonky<br>idm<br>uk bass<br>uk funky<br>electronica</td>
+  <td>Joy Orbison &quot;better&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bd46a2992dec0ee2c045279408e24a38bc9535be" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/future-garage" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6IiYNOUiIoX0g8v0YaFyuK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/62T9WUAB2E7Xw6PmHRSlaQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0OcrGw0UsZbEJGTIDqGKEV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/29iWj6j2KYEZDjPib8BWSh" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1fnWyYm72krsY52U73eNA5" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>drill and bass <a href="https://everynoise.com/engenremap-drillandbass.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm &#x2380;</td>
+  <td>United States<br>idm<br>breakcore<br>glitch<br>intelligent dance music<br>deep idm</td>
+  <td>-Ziq &quot;Brace Yourself Jason&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/85e920fc0e7ebb7cd6b37e07eeca96ebde863c54" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/drill-and-bass" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1l92opmDGkx5lyuWCPlNmF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5GJ4YKR60brIy8f4NECcHG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2K5B5zrFCvomKcNHm9yaot" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0NYG0XLua9v6e0vernFqJR" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1y5NYyihpHAyTBdicgRrhF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>glitch beats <a href="https://everynoise.com/engenremap-glitchbeats.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm &#x2380;</td>
+  <td>Netherlands<br>glitch<br>idm<br>space music<br>downtempo<br>sludge metal</td>
+  <td>Rykard &quot;North Cormorant Obscurity&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3b0721a7586d8aa5e6fe59fd4690067820aaf3da" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/glitch-beats" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2CicsTe6Y59vmhTRVgs9m6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6s0bhopje9j3s2JiTHtLlx" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>intelligent dance music <a href="https://everynoise.com/engenremap-intelligentdancemusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm</td>
+  <td>Germany<br>idm<br>ambient<br>electronica<br>glitch<br>abstract</td>
+  <td>Autechre &quot;Bike&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b938d7e5addec0a27260b7002b94fce4fe53f152" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/intelligent-dance-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3rJKicKCVIlGiWcQpBkhoi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3P9lEX8RzKkD3hNVvnoMc5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5TNkPCumevSVC3uhe868uG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/35g0COCo53SrYeDYB3nM3X" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6RxKGEOlpRSiytuqXqL1u2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>deep idm <a href="https://everynoise.com/engenremap-deepidm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm</td>
+  <td>United Kingdom<br>idm<br>glitch<br>intelligent dance music<br>drill and bass<br>ambient idm</td>
+  <td>Nautilis &quot;Why It Got To Be So Damn Tough&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fe78b447a81987f54ff7a3648d7e0e6557e0abcd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-idm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6HB9Y0iGyBklgS1Sy2aBwQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3vvHiLqaof4wEAUoku9n7F" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4mke79FXhD9JaeJyJolDp9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/20q2jf29p6lqGMp2L0q8e8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3oPcO8VOiPBbgiThXiZ2zl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>wonky <a href="https://everynoise.com/engenremap-wonky.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm &#x2380;</td>
+  <td>United Kingdom<br>idm<br>future garage<br>intelligent dance music<br>electronica<br>abstract beats</td>
+  <td>Daedelus &quot;Special Re: Quest&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f34a4fa0b14d8a22951877eb3b824521a9945878" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/wonky" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/47E3p3Zutxn0I3yrIGpF2I" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6GZZzXWc7QfecxM85804b7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7rtpXjTpZZzKgciZuKkGM6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/23mIZOd03vr0dr45ZRIc3U" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/03G72IB6nGjAjpIEmmlfnc" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>abstract idm <a href="https://everynoise.com/engenremap-abstractidm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm</td>
+  <td>Spain<br>idm<br>glitch<br>dark ambient<br>ambient<br>space music</td>
+  <td>Ocoeur &quot;Ascent&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ad94fc05b7207374cf029f240ef9740dcd69e77a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/abstract-idm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5h6CRdsG4r898TX4s8RAcd" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0iCuzAER8gjEjq9sdVkdx1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1cNeJBWPHEmC4rAAiS2IJ0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0MHFbLlzoQF1L86Q5aAtQn" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>japanese idm <a href="https://everynoise.com/engenremap-japaneseidm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm<br>W.Japan</td>
+  <td>Japan<br>idm<br>j-dance<br>j-ambient<br>glitch<br>japanese experimental</td>
+  <td>Aoki Takamasa &quot;Fly 2&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/136ef90eec604f0ee2e03b3a8d7417a450330a48" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-idm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4piEXwgOLex9LJHUlvMv61" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3aLQdfUYOVRFlHhwJECabA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6bETmdTNRerwnZNHVGtIZY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/48SnxOdpqDuGcrGcxMc2CL" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>ambient idm <a href="https://everynoise.com/engenremap-ambientidm.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Ambient.General<br>Idm</td>
+  <td>India<br>idm<br>ambient<br>deep idm<br>glitch<br>downtempo</td>
+  <td>Melorman &quot;Hands of Time&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/81b01e92c421a365b3e8f9c9c44155814dd4b770" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ambient-idm" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/23BGDlzXaMahz6otdqLUU7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5haig3RZ6OcU4Cz6AukvXY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/12zQ4XAvE4UcQAf67VO2m9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4PesMaql9vm7tbwIQJkgew" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4JeNP9U0yN73knesPVi20e" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>abstract <a href="https://everynoise.com/engenremap-abstract.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm &#x2380;</td>
+  <td>Japan<br>idm<br>intelligent dance music<br>ambient<br>drone<br>glitch</td>
+  <td>Squarepusher &quot;Beep Street&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f0063fa63d78324e26636a2d8e75e4469299488c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/abstract" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6SmlDWsruqpnBFWsYJ7iNS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/66hfhXEaNMA2NMncX5HatH" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6xQYjjNnvCK5dAeq0jJxRK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4NgrKfsFNJTKwbsMfNKMXN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7AVXWL1yhLeb19sGcnw2Zc" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>microtonal <a href="https://everynoise.com/engenremap-microtonal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Idm &#x2380;</td>
+  <td>United States<br>idm<br>ambient<br>drone<br>xenharmonic<br>experimental</td>
+  <td>King Gizzard &amp; The Lizard Wizard &quot;Gila Monster&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/91d666dd211411ac08d9effbe366c876310f7c0b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/microtonal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7b5mGcJjqJEXGvmOP5yyE7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/01g27BmiXVR791t1A4zCOZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7fVHJxTiWOhvAp6D649pnU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6DjBYDeCubq3DJFsgoEiBJ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["acid idm",
+	"future garage",
+	"drill and bass",
+	"glitch beats",
+	"intelligent dance music",
+	"deep idm",
+	"wonky",
+	"abstract idm",
+	"japanese idm",
+	"ambient idm",
+	"abstract",
+	"microtonal"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 12: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 12: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>

@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>006</td>
   <td>brazilian edm <a href="https://everynoise.com/engenremap-brazilianedm.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Brazil</td>
+  <td>Edm<br>W.Brazil</td>
   <td>Brazil<br>brazilian bass<br>electronic<br>brazilian house<br>tech house<br>g-house</td>
   <td>Dazzo &quot;Hanging Tree - Short Mix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e30137d137a51d956316ca24bd0740a331619474" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/brazilian-edm" title="info">info</a></td>
@@ -2836,9 +2836,222 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["brazilian tech house",
+	"brazilian techno",
+	"brazilian dnb",
+	"brazilian bass",
+	"brazilian house",
+	"brazilian edm",
+	"trance brasileiro",
+	"eletronica underground brasileira",
+	"dub brasileiro",
+	"synthwave brasileiro",
+	"musica eletronica brasileira",
+	"gotico brasileiro",
+	"brega paraense",
+	"brazilian metalcore",
+	"reggae tuga",
+	"piseiro",
+	"post-punk brasileiro",
+	"bandinhas",
+	"brazilian heavy metal",
+	"brazilian ska",
+	"lambadao",
+	"rock mineiro",
+	"hyperpop brasileiro",
+	"brazilian power metal",
+	"brazilian post-hardcore",
+	"plug brasileiro",
+	"pop rock brasileiro",
+	"tecnobrega",
+	"rock cristao fluminense",
+	"detroit trap brasileiro",
+	"reggae gaucho",
+	"afrofuturismo brasileiro",
+	"grunge brasileiro",
+	"brazilian progressive metal",
+	"pop teen brasileiro",
+	"rock paraense",
+	"rock catarinense",
+	"rock alagoano",
+	"rap maromba",
+	"funk capixaba",
+	"phonk brasileiro",
+	"rock cearense",
+	"rap guarulhense",
+	"rap df",
+	"rock alternativo brasileiro",
+	"rap nacional antigo",
+	"horror punk brasileiro",
+	"metal catarinense",
+	"nerdcore brasileiro",
+	"rock curitibano",
+	"hard rock brasileiro",
+	"reggae cristao",
+	"speed up brasileiro",
+	"punk tuga",
+	"brazilian surf rock",
+	"metal gaucho",
+	"forro",
+	"sertanejo gospel",
+	"novo rock gaucho",
+	"brazilian punk rock",
+	"brazilian emo",
+	"rock nacional brasileiro",
+	"brazilian rock",
+	"metal cristao",
+	"afrobeat brasileiro",
+	"metal pernambucano",
+	"rap alagoano",
+	"rock gospel brasileiro",
+	"arrocha",
+	"indie paraense",
+	"trap cristao",
+	"agronejo",
+	"funk paulista",
+	"musica capixaba",
+	"rock gaucho",
+	"forro de favela",
+	"brazilian metal",
+	"sertanejo pop",
+	"brazilian reggae",
+	"rock potiguar",
+	"metal paranaense",
+	"musica popular paraense",
+	"sertanejo universitario",
+	"speed plug brasileiro",
+	"brega",
+	"rock abc paulista",
+	"brazilian hardcore",
+	"brazilian stoner rock",
+	"rock pernambucano",
+	"axe",
+	"rap cearense",
+	"fogo pentecostal",
+	"rock sergipano",
+	"pop lgbtq+ brasileira",
+	"brazilian indie",
+	"metal nortista",
+	"rap paranaense",
+	"rap cristao",
+	"trap brasileiro",
+	"trap baiano",
+	"viral pop brasileiro",
+	"rap potiguar",
+	"indie curitibano",
+	"rap pernambucano",
+	"brazilian indie rock",
+	"r&amp;b brasileiro",
+	"drill brasileiro",
+	"metal baiano",
+	"sertanejo",
+	"rap catarinense",
+	"brazilian punk",
+	"metal cearense",
+	"brazilian rockabilly",
+	"rap capixaba",
+	"brazilian thrash metal",
+	"rap feminino nacional",
+	"rap sergipano",
+	"brazilian groove metal",
+	"brazilian blues",
+	"brazilian soul",
+	"chamame brasilero",
+	"grime brasileiro",
+	"brazilian lo-fi rock",
+	"shoegaze brasileiro",
+	"rap gaucho",
+	"sanfona",
+	"talentos brasileiros",
+	"metal mineiro",
+	"musica catarinense",
+	"drill tuga",
+	"boom bap brasileiro",
+	"rock baiano",
+	"brazilian death metal",
+	"rap baiano",
+	"rap paraense",
+	"forro tradicional",
+	"brazilian boogie",
+	"brazilian black metal",
+	"brazilian grindcore",
+	"vaqueiro",
+	"musica cearense",
+	"indie cristao",
+	"nova musica paulista",
+	"brazilian gospel",
+	"brass band brasileiro",
+	"rap mineiro",
+	"musica potiguar",
+	"brazilian experimental",
+	"forro manauara",
+	"brazilian hip hop",
+	"musica triste brasileira",
+	"brazilian doom metal",
+	"hip hop tuga",
+	"boom bap",
+	"pagode",
+	"pagode baiano",
+	"trap tuga",
+	"pagode novo",
+	"rap abc paulista",
+	"novos talentos brasileiros",
+	"folk brasileiro",
+	"rap baixada fluminense",
+	"neo-psicodelia brasileira",
+	"rap nortista",
+	"musica paranaense",
+	"brazilian post-rock",
+	"rap tuga underground",
+	"pop rap brasileiro",
+	"jovem guarda",
+	"roda de samba",
+	"samba-enredo",
+	"brazilian ccm",
+	"psicodelia brasileira",
+	"brazilian percussion",
+	"samba moderno",
+	"samba paulista",
+	"partido alto",
+	"lo-fi brasileiro",
+	"sertanejo tradicional",
+	"musica indigena brasileira",
+	"chamame",
+	"tropicalia",
+	"louvor",
+	"baiao",
+	"bandolim",
+	"umbanda",
+	"samba",
+	"viola caipira",
+	"samba de roda",
+	"deep brazilian pop",
+	"hinos ccb",
+	"trombone brasileiro",
+	"velha guarda",
+	"brazilian modern jazz",
+	"choro contemporaneo",
+	"brazilian jazz",
+	"candomble",
+	"violao",
+	"choro",
+	"piada",
+	"violao classico",
+	"brazilian classical",
+	"brazilian contemporary classical",
+	"wind quintet",
+	"brazilian classical piano"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -2846,12 +3059,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 205 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 205: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -2861,17 +3081,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 205 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 205: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

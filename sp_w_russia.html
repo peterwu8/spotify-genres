@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>03</td>
   <td>russian edm <a href="https://everynoise.com/engenremap-russianedm.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Russia</td>
+  <td>Edm<br>W.Russia</td>
   <td>Russia<br>future house<br>g-house<br>progressive house<br>trance<br>progressive trance</td>
   <td>Slider &amp; Magnit &quot;Morze&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b5df27da807d60a15cbc7b3ca6d47add3d4de6ea" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/russian-edm" title="info">info</a></td>
@@ -1116,9 +1116,90 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["russian techno",
+	"russian trance",
+	"russian edm",
+	"russian dnb",
+	"russian rave",
+	"russian synthpop",
+	"russian dance pop",
+	"russian witch house",
+	"russian pop",
+	"russian electronic",
+	"russian chanson",
+	"russian viral rap",
+	"russian pop punk",
+	"kavkaz",
+	"russian viral pop",
+	"sovietwave",
+	"russian dance",
+	"russian metalcore",
+	"russian power metal",
+	"russian drill",
+	"soviet synthpop",
+	"russian emo rap",
+	"russian thrash metal",
+	"russian death metal",
+	"russian trap metal",
+	"russian pixel",
+	"russian plugg",
+	"russian punk rock",
+	"russian indie rock",
+	"russian oi",
+	"russian nu metal",
+	"russian folk metal",
+	"russian trap",
+	"russian indie",
+	"russian metal",
+	"russian experimental electronic",
+	"russian emo",
+	"russian heavy metal",
+	"russian ska",
+	"russian alt pop",
+	"russian punk",
+	"russian hyperpop",
+	"russian post-punk",
+	"russian reggae",
+	"russian alternative rock",
+	"russian hardcore",
+	"russian shoegaze",
+	"russian post-rock",
+	"russian black metal",
+	"russian gangster rap",
+	"classic russian pop",
+	"russian hip hop",
+	"russian rock",
+	"russian grime",
+	"russian screamo",
+	"ukrainian ccm",
+	"russian drain",
+	"russian ccm",
+	"russian old school hip hop",
+	"classic russian rock",
+	"russian folk rock",
+	"russian underground rap",
+	"russian modern jazz",
+	"russian jazz",
+	"balalaika",
+	"russian romance",
+	"russian folk",
+	"russian orchestra",
+	"russian modern classical",
+	"russian contemporary classical",
+	"russian romanticism",
+	"russian choir",
+	"russian classical piano"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -1126,12 +1207,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 73 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 73: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -1141,17 +1229,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 73 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 73: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

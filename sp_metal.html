@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -4753,9 +4753,369 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["industrial metal",
+	"finnish metalcore",
+	"metal cover",
+	"chinese metalcore",
+	"deep metalcore",
+	"nu-metalcore",
+	"progressive metalcore",
+	"melodic power metal",
+	"italian metalcore",
+	"deep melodic death metal",
+	"symphonic power metal",
+	"russian power metal",
+	"german metalcore",
+	"finnish heavy metal",
+	"british power metal",
+	"australian metalcore",
+	"slayer",
+	"turkce trap metal",
+	"melodic groove metal",
+	"taiwan metal",
+	"lapland metal",
+	"russian thrash metal",
+	"thrash-groove metal",
+	"finnish metal",
+	"chinese metal",
+	"american metalcore",
+	"russian death metal",
+	"metalcore",
+	"italian power metal",
+	"russian trap metal",
+	"south african metal",
+	"german power metal",
+	"neo metal",
+	"estonian metal",
+	"german heavy metal",
+	"latvian metal",
+	"hungarian metal",
+	"instrumental progressive metal",
+	"brazilian heavy metal",
+	"christian power metal",
+	"melodic deathcore",
+	"neo-trad metal",
+	"djent",
+	"luxembourgian metal",
+	"rap metal",
+	"j-metal",
+	"rap metalcore",
+	"melodic metalcore",
+	"italian heavy metal",
+	"swedish heavy metal",
+	"euskal metal",
+	"nu metal",
+	"progressive power metal",
+	"indonesian thrash metal",
+	"metal balear",
+	"comic metal",
+	"uk metalcore",
+	"atlanta metal",
+	"folk metal",
+	"finnish death metal",
+	"melodic death metal",
+	"slovenian metal",
+	"scottish metal",
+	"swiss metal",
+	"gothic metal",
+	"christian metalcore",
+	"technical groove metal",
+	"symphonic death metal",
+	"american melodeath",
+	"arab metal",
+	"hard glam",
+	"indian metal",
+	"portuguese metal",
+	"quebec metal",
+	"czech metal",
+	"ukrainian metal",
+	"gothenburg metal",
+	"danish metal",
+	"instrumental death metal",
+	"cypriot metal",
+	"industrial black metal",
+	"deathcore",
+	"german death metal",
+	"oriental metal",
+	"deep melodic metalcore",
+	"austrian metal",
+	"slamming deathcore",
+	"russian heavy metal",
+	"metal galego",
+	"danish death metal",
+	"alternative metalcore",
+	"saxony metal",
+	"christian death metal",
+	"african metal",
+	"christian metal",
+	"alternative metal",
+	"blackened deathcore",
+	"canadian death metal",
+	"power thrash",
+	"charred death",
+	"slovak metal",
+	"new wave of thrash metal",
+	"sci-fi metal",
+	"iranian metal",
+	"nwothm",
+	"italian progressive metal",
+	"portuguese death metal",
+	"swiss black metal",
+	"lithuanian metal",
+	"melodic doom",
+	"bulgarian metal",
+	"funk metal",
+	"technical melodic death metal",
+	"japanese heavy metal",
+	"german thrash metal",
+	"nz metal",
+	"metal catarinense",
+	"french metal",
+	"southern metal",
+	"brutal deathcore",
+	"wisconsin metal",
+	"technical deathcore",
+	"melodic thrash",
+	"polish thrash metal",
+	"japanese death metal",
+	"alabama metal",
+	"indonesian metal",
+	"opera metal",
+	"neo classical metal",
+	"montana metal",
+	"polish metal",
+	"metal gaucho",
+	"south asian metal",
+	"bolivian metal",
+	"progressive groove metal",
+	"italian death metal",
+	"peruvian metal",
+	"progressive metal",
+	"swedish metal",
+	"belgian death metal",
+	"central american metal",
+	"malaysian metal",
+	"vancouver metal",
+	"metal cristao",
+	"australian metal",
+	"turkish death metal",
+	"denver metal",
+	"tolkien metal",
+	"hungarian black metal",
+	"christian symphonic metal",
+	"canadian metal",
+	"new wave of speed metal",
+	"technical brutal death metal",
+	"belgian metal",
+	"belfast metal",
+	"speed metal",
+	"indonesian death metal",
+	"minneapolis metal",
+	"metal pernambucano",
+	"grisly death metal",
+	"irish metal",
+	"macedonian metal",
+	"portuguese black metal",
+	"symphonic black metal",
+	"dutch metal",
+	"unblack metal",
+	"quebec death metal",
+	"french death metal",
+	"irish death metal",
+	"folk black metal",
+	"swedish death metal",
+	"native american metal",
+	"groove metal",
+	"glam metal",
+	"austin metal",
+	"polish death metal",
+	"minnesota metal",
+	"western ny metal",
+	"russian black metal",
+	"maltese metal",
+	"dub metal",
+	"christian thrash metal",
+	"metal ecuatoriano",
+	"brazilian metal",
+	"miami metal",
+	"metal paranaense",
+	"us power metal",
+	"progressive technical death metal",
+	"metal tico",
+	"metal paraguayo",
+	"metal guitar",
+	"metal",
+	"cleveland metal",
+	"indonesian black metal",
+	"latin metal",
+	"lovecraftian metal",
+	"austrian black metal",
+	"italian black metal",
+	"progressive black metal",
+	"metal noir quebecois",
+	"norwegian metal",
+	"melodic black metal",
+	"australian thrash metal",
+	"tennessee metal",
+	"slam death metal",
+	"boston metal",
+	"polish black metal",
+	"edinburgh metal",
+	"technical thrash",
+	"rabm",
+	"polish folk metal",
+	"utah metal",
+	"instrumental black metal",
+	"metal nortista",
+	"black 'n' roll",
+	"ukrainian black metal",
+	"deathrash",
+	"black speed metal",
+	"finnish black metal",
+	"metallic hardcore",
+	"metal piauiense",
+	"virginia metal",
+	"guatemalan metal",
+	"new england metal",
+	"south carolina metal",
+	"arkansas metal",
+	"nwobhm",
+	"necrogrind",
+	"progressive death metal",
+	"north carolina metal",
+	"swedish black metal",
+	"metal baiano",
+	"british black metal",
+	"west virginia metal",
+	"metal colombiano",
+	"blackgaze",
+	"chilean metal",
+	"birmingham metal",
+	"pornogrind",
+	"japanese black metal",
+	"metal cearense",
+	"pinoy metal",
+	"finnish doom metal",
+	"emotional black metal",
+	"spanish black metal",
+	"thrash metal",
+	"black thrash",
+	"italian doom metal",
+	"brazilian thrash metal",
+	"doomgaze",
+	"old school thrash",
+	"nyc metal",
+	"death 'n' roll",
+	"norwegian death metal",
+	"dutch black metal",
+	"german black metal",
+	"texas metal",
+	"seattle metal",
+	"brazilian groove metal",
+	"puerto rican metal",
+	"norwegian doom metal",
+	"supergroup",
+	"kentucky metal",
+	"atmospheric sludge",
+	"dutch death metal",
+	"atmospheric black metal",
+	"brutal death metal",
+	"blackened screamo",
+	"technical death metal",
+	"jazz metal",
+	"pagan black metal",
+	"avant-garde metal",
+	"raw black metal",
+	"death metal",
+	"mathcore",
+	"french black metal",
+	"cosmic death metal",
+	"norwegian black metal",
+	"metal mineiro",
+	"black metal",
+	"buffalo ny metal",
+	"death doom",
+	"deep symphonic black metal",
+	"voidgaze",
+	"peruvian death metal",
+	"post-black metal",
+	"australian black metal",
+	"belgian black metal",
+	"irish black metal",
+	"mexican thrash metal",
+	"post-metal",
+	"christian doom metal",
+	"dark black metal",
+	"portland metal",
+	"brazilian death metal",
+	"deathgrind",
+	"atmospheric post-metal",
+	"native american black metal",
+	"sludgecore",
+	"goregrind",
+	"british death metal",
+	"texas death metal",
+	"doom metal",
+	"singaporean metal",
+	"metal salvadoreno",
+	"atmospheric doom",
+	"mincecore",
+	"occult black metal",
+	"brazilian black metal",
+	"colombian black metal",
+	"autonomous black metal",
+	"retro metal",
+	"epic doom",
+	"new wave of osdm",
+	"italian metal",
+	"mexican death metal",
+	"appalachian black metal",
+	"chilean black metal",
+	"stoner metal",
+	"pittsburgh metal",
+	"black sludge",
+	"depressive black metal",
+	"neo-trad doom metal",
+	"florida death metal",
+	"grindcore",
+	"technical grindcore",
+	"funeral doom",
+	"american grindcore",
+	"forest black metal",
+	"blackened crust",
+	"war metal",
+	"sludge metal",
+	"experimental black metal",
+	"post-doom metal",
+	"chaotic black metal",
+	"cascadian black metal",
+	"mexican black metal",
+	"usbm",
+	"uk doom metal",
+	"new york death metal",
+	"gaian doom",
+	"grim death metal",
+	"technical black metal",
+	"drone metal",
+	"cavernous death metal",
+	"dissonant death metal",
+	"black death",
+	"louisiana metal",
+	"voidgrind",
+	"proto-metal",
+	"black noise",
+	"shanty"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -4763,12 +5123,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 352 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 352: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -4778,17 +5145,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 352 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 352: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dancehall: (26 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Dancehall: (26 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>moombahton <a href="https://everynoise.com/engenremap-moombahton.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Netherlands<br>dancehall<br>shatta<br>dutch rap pop<br>dutch hip hop<br>basshall</td>
+  <td>ETC!ETC! &quot;TROMPA&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6eeb6e15672e9763ebc0ca585288ab175286a590" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/moombahton" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/750oEZ3lnr9RwqMyTRk45G" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7iszolrnuUqc01LQaBqqII" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4GzjuBCtMmEZoyv42WdZ4k" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2lPxrBhnyJZcjcBgAtP7XI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2144Dc9dz8S3JodT7qYoFs" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>bajan soca <a href="https://everynoise.com/engenremap-bajansoca.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Barbados<br>soca<br>calypso<br>dancehall<br>barbadian pop<br>chutney</td>
+  <td>Hypasounds &quot;How She Like It&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0cc4ce548f610d25494399b959553122fff830ce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bajan-soca" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0GicapM92OdRfoWrMoPzB5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1m3bBRIdm9WbACj6hcVpKk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3SZamRWKkFZ1Wy8HXI6a9W" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/10Ad2uAPqXRBYPFMCacj26" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5iR3FKqVKMjQovwbz1uJKd" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>vincy soca <a href="https://everynoise.com/engenremap-vincysoca.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Barbados<br>soca<br>calypso<br>dancehall<br>grenada soca<br>highlife</td>
+  <td>DYMEZ &quot;Day One&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8bbf0155d0de18a1bf9e56dc19dfb085af46b682" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/vincy-soca" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2BjBX8UoZpMUd8mfeDFpeP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/656KRpxgsx2wpIX25EA4FP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3qLtGUQ8ZQhhUujxyacP6d" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5mBx59bF7JipdV6BF15a1r" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0KvJcStcAGgtz0WOALumUP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>bouyon <a href="https://everynoise.com/engenremap-bouyon.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Caribbean countries<br>shatta<br>zouk<br>kompa<br>soca<br>dancehall</td>
+  <td>Team Bw Tou Sa &quot;50/50&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/75a3b6597a74fdd9740d02e3427550032cb5d8f1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bouyon" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2fdRCa5Me7GvqquZkiU0LI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6KcFLs8Ujk5HSyOiH7iCcC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3gm5eLIPOTjJccvUS2NRQa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4KixMcgEvH607e7oawL3m7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6cEIbksO86PM9RNBdYdaP0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>basshall <a href="https://everynoise.com/engenremap-basshall.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Netherlands<br>moombahton<br>dancehall<br>dutch rap pop<br>shatta<br>dutch moombahton</td>
+  <td>Merdan D &quot;Catalina (feat. Paloma Pradal) - Merdan D &<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2f25a4f5971ffd7c5ccdef5d199d818926b4433b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/basshall" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2P74CAask1SKszOPXEpqGI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5rPMSk9umM8sDDck6ZMADh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Gk0QnGNBTKXqjm1pD2wD6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0XDElrdxWeZOBc1vHuCSWM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4cuk3XaA1NeASmJhr1nVXF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>dancehall mauricien <a href="https://everynoise.com/engenremap-dancehallmauricien.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall</td>
+  <td>Mauritius<br>shatta<br>moombahton<br>zouk<br>ragga<br>sega mauricien</td>
+  <td>Platinum Event &quot;Billionaire cartel&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6a781df80e05a1c6d5aa1f8fc79184723940c99e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dancehall-mauricien" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3eUcdk6ouGCc2WznoXjcKs" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6kZdqAAu0DeWGCtrU7Lu2V" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7t0SGA8cSztZkypydFmYxf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/79VMRBsNibOYPy9XwDtWAi" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5IXP9nmKMD9na8ZBvK93Eh" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>dancehall colombiano <a href="https://everynoise.com/engenremap-dancehallcolombiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall</td>
+  <td>Colombia<br>dancehall<br>champeta<br>shatta<br>latin afrobeats<br>latin afrobeat</td>
+  <td>Lexx Chanyer &quot;Campeona&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bae49e164d718871d28702a4e28e1197916e94ab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dancehall-colombiano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1E272cLE8SGqr2ZfWTHkq6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6FyN2aDjKcSmuy3im6mz5H" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4HjrgLG6bmb0iBy7mBrN0U" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5f9WYlDPLqTMw2QVn6khNl" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ehUdSipnEeHMqQRsUoRHi" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>dennery segment <a href="https://everynoise.com/engenremap-dennerysegment.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Angola<br>soca<br>shatta<br>dancehall<br>calypso<br>kompa</td>
+  <td>BlackBoy &quot;By Cout Tet&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/82f616dc49f94d69fb22e8236e40f470a69e8f90" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dennery-segment" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1TkQVPqiegLmYcIYJlODfq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0x1Qzxac0JYNxkRZLktFLt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1WqPoEDsO5heEiVTUw9pj2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0BydyALmvqv0B47sqZHHKv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/14RZBGtUBeVJiEx5JBIkPH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>swedish dancehall <a href="https://everynoise.com/engenremap-swedishdancehall.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall<br>W.Sweden</td>
+  <td>Sweden<br>swedish reggae<br>reggae<br>swedish hip hop<br>swedish pop<br>swedish trap pop</td>
+  <td>Kaliffa &quot;Helt seri&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/24cd5adb4a252e6b037fa034777bccb55d3b09d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-dancehall" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7KoV2wstas68fkhzsI0fiz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6gXVFkNldt9IAzv1U5YSaj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4YwseAx1X3ziGkdv0Wnn6s" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3smXIZg9aRDU4b7aBUPpWg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6zusXeQK57mFC2ROrmusW2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>soca <a href="https://everynoise.com/engenremap-soca.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Jamaica<br>dancehall<br>ragga<br>reggae<br>riddim<br>jamaican dancehall</td>
+  <td>Fay-Ann Lyons &quot;Upgrade&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5f3f5d2abbf7dfac2560eee92aefaf3461d1be3b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/soca" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3O0MjMuL6VDqtBbmysgnKz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3n6YvqGNXChaeK48hiYzRz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4trZ5EVS5IR4Nntpg87gVF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2xYA5EYsyvKSD2vGEepLnK" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3N0ZLP3LQ7FYyf7j8WaMTQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>uk dancehall <a href="https://everynoise.com/engenremap-ukdancehall.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall<br>W.United.Kingdom</td>
+  <td>United Kingdom<br>dancehall<br>afroswing<br>afrobeats<br>lovers rock<br>uk funky</td>
+  <td>Kojo Funds &quot;Check (with RAYE)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3fdbf33d61385c878c4f95f032a745b89bab1e9c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-dancehall" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2A7dBrbadzBlVuUY6LIuJi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0vcUt06PMmyZUJ9BlAu1Xp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/66rZONZbRcta1QH0k9jXsC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1CQunuSgEbNLR3PJuqwZQ4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1wa2QEaxiCriGc02zVctvx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>dancehall chileno <a href="https://everynoise.com/engenremap-dancehallchileno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall<br>W.Latino</td>
+  <td>Chile<br>dancehall<br>spanish-language reggae<br>rap chileno<br>ragga<br>latin hip hop</td>
+  <td>Escala Mercalli &quot;Dices&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/19184eedc9c6a3a388c4ba8c2276cb50fef2b443" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dancehall-chileno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6HA0okqI6rDzPg81l2Faxi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1lVBYFbzpNc3bhAeXPpY2R" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5lORN5gR0eFYQ9pEYvcTuD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/05BmDei6xt5eNKA89eCiPE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4QMEa2j6YMjY2vtIWc9LTV" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>old school dancehall <a href="https://everynoise.com/engenremap-oldschooldancehall.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall</td>
+  <td>Jamaica<br>reggae<br>lovers rock<br>roots reggae<br>ragga<br>dancehall</td>
+  <td>Echo Minott &quot;Hypnotize Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8f6aeebf10a7c6219568f89795c9c588ff848d96" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/old-school-dancehall" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7DPt5m5PxAREKQDbJaHeHg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/69jZqaBhTVQXMepSKTK2YI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Sz8RE83sDgfoVpW3H7Tfp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Vn7iBuQO2vgVEgYZQT2aH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0w7ZcqWSeWt9eEtjLay1Yn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>sega mauricien <a href="https://everynoise.com/engenremap-segamauricien.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Mauritius<br>sega<br>seggae<br>zouk<br>dancehall mauricien<br>shatta</td>
+  <td>Sylvain Kaleecharan &quot;Fam la zeness&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1614a77da11877f8c7154885927b788a48d5cbd2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/sega-mauricien" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4R6r9cF35rhgKpZNSYNuRy" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7BKzCGpmIAZeheQzxf9ufa" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5qabwe8nlMfjfbnSjCp8hK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6xOEkIQ72XAYlsp8tdyz4D" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ICzayWRayygY1waIx86VM" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>shatta <a href="https://everynoise.com/engenremap-shatta.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>France<br>dancehall<br>zouk<br>kompa<br>kizomba<br>ragga</td>
+  <td>Shotta &quot;En Ka Pren Sa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6eb65794bbd620a6495b701aa5800f4e738b4694" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/shatta" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0CVZT3hn0msoXAIFLhv5zp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ChuhvQWdtgZyoUfdOOg2e" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/16EVWOHrjEuN24vBCLw8VN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2d743bMq2FYXCuQ0MOcqwy" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3EsRPmoN8xaDGv0OAxLHaQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>kompa <a href="https://everynoise.com/engenremap-kompa.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>France<br>zouk<br>shatta<br>kizomba<br>dancehall<br>french r&b</td>
+  <td>Djakout Mizik &quot;La Familia&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ae2a9f2ceffa2994c076102596f599c6fe6d20d9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kompa" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1F6EFjsts7QD7jMcQugAcD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3PaPHA9RLxiGJogAoMqHZp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6CRyLBYkRaLsm6Y9AmywWC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4cWcvWEDWkg1VXmtKWJ69H" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/41RoDMh77agvK18qyItdV3" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>dancehall guyanaise <a href="https://everynoise.com/engenremap-dancehallguyanaise.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall</td>
+  <td>Caribbean countries<br>shatta<br>dancehall<br>zouk<br>ragga<br>zouk riddim</td>
+  <td>Lion P &quot;Neva&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/99e18cbd7f069a92345704319566ee920f83d596" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dancehall-guyanaise" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1viWtUyQsGNXOcv2jYqa73" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6J3skQbRjVeJObR2OUtQ47" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ct8XEvVRcMCTd308XVHrU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/77Bve8WqcqUGId9Jwue9mY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0R8s9qcOBFZEWuX6Wcj6Fe" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>dancehall queen <a href="https://everynoise.com/engenremap-dancehallqueen.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall</td>
+  <td>Jamaica<br>dancehall<br>soca<br>ragga<br>reggae<br>riddim</td>
+  <td>Dovey Magnum &quot;Bawl Out&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7b58d43026656c57878160f0e875bb09fd2140f7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dancehall-queen" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7M5KhdpDqRRSp8wJQqR516" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3pzSGkzUJDkkNvNBq1lrx0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1JwVz5KKyQssM5ecprXfe3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5EG4We2tV9udhUOfkdi0TO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4F1x37FElHtceU6SF2jYMQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>zimdancehall <a href="https://everynoise.com/engenremap-zimdancehall.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall</td>
+  <td>Zimbabwe<br>dancehall<br>african gospel<br>zim hip hop<br>gospel<br>afrobeats</td>
+  <td>Shinsoman &quot;Why Worry&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7c9bda630c30ae3f9dab8c9f3591acfde485e21d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/zimdancehall" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ZrHGwbo0Dtzm0Kzcz5n92" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2K3BDsbnwwsJClbZqOQztK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3TpEglsUsYM5IsM27aNEJJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5CagSlELd59f52LTLwMMz0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4MhGYYmqYhLYzyxq9Sdnki" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>baithak gana <a href="https://everynoise.com/engenremap-baithakgana.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Netherlands<br>bhajan<br>soca<br>dancehall<br>surinamese pop<br>zouk</td>
+  <td>IRFAAN &quot;Dekha Hai Teri Aankhon&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e5436cadcbd646b7a0aeeb630e64eaf5b0e13d81" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/baithak-gana" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4E2zZiwfNtQbpuIg9Mby18" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7mkbVjaHNgs9uBOfzRKGYm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5JdBcGNhnomn2XolGtiiwq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/32kIAQf4Cm3QcIumVgbYwz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2UX86ZexCTH7P5Z3Pwl2D7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>dancehall <a href="https://everynoise.com/engenremap-dancehall.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall</td>
+  <td>United Kingdom<br>soca<br>ragga<br>reggae<br>riddim<br>reggae fusion</td>
+  <td>Govana &quot;1Matik&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/638c3ebeb323434e0149984657a9af6277493253" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dancehall" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Ce5kkN9ut4qfQ4G0wqGf2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4NWfwcqBdZ3wltgu3BESG7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6N8ukzjfsOLYPuKYt2M1TV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5BGaSqYOZ3cw57BzBydc2n" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Cf3xcF9PHTgUenpEQwZJr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>trinibad <a href="https://everynoise.com/engenremap-trinibad.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Trinidad and Tobago<br>dancehall<br>soca<br>traphall<br>afrobeats<br>calypso</td>
+  <td>Icee Dan &quot;March Out&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/82073e38f5cd28e6dc9475ebb1df82b3daea6442" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/trinibad" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6c8ky6Gg9PIVNW6SqrcnAo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0tqAfBZxbPFjeWwKFpfH9F" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2gd12F7FlLStLIRHPXOATj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1g8Ep67mRAZynnjxe9IsKQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7k8da9ucu4FGS461F8mrpY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>riddim <a href="https://everynoise.com/engenremap-riddim.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Jamaica<br>dancehall<br>dubstep<br>reggae<br>ragga<br>bass music</td>
+  <td>ZJ Liquid &quot;E.G.R. (Every Girl Replaceable)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/97a3b0c4cd4301b1abb4e7e904f0b07b2f0ec0fb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/riddim" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0CzVfAaoiuxT3t3nmRIPjc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6m6Q3yt8RDMkc4krOx1s4V" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5N8M7LcUMukgwaw1vWTmZP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3vzSlSI38hx9ywTJJQabhd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4M4DmsXppqfl6PUMJNxaCo" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>jamaican dancehall <a href="https://everynoise.com/engenremap-jamaicandancehall.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall</td>
+  <td>Jamaica<br>dancehall<br>riddim<br>soca<br>reggae<br>ragga</td>
+  <td>IWaata &quot;Whisper&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fd81ba5eb5ee9cfa18835cd24a5b5c822ff6a328" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jamaican-dancehall" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6E61cnuXgOnKINYC86x7FA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3hOKZkKbbvR05LZsde28i6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7q6xAA7jBowXNSnMK0dUX9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7n5RC6H1babqz1CPMR2jld" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5u1M2tJsy2Zd6bS15Id6Uk" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>chutney <a href="https://everynoise.com/engenremap-chutney.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>India<br>soca<br>calypso<br>dancehall<br>filmi<br>classic bollywood</td>
+  <td>Rikki Jai &quot;Barman&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/58af08dabed18abac7114ee7feb7e0b6238c62f9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chutney" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0SKXkX9Rhka5F8SZG9a6Nh" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2PJuWfVaCmG9Bu3OlHFzfy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3BCwjIvcBoJPOYxloNnJZe" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0nTxia6UwOQchXL3nMhxb6" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0S67X49NI67JI77j9s4ZpW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>calypso <a href="https://everynoise.com/engenremap-calypso.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dancehall &#x2380;</td>
+  <td>Brazil<br>soca<br>dancehall<br>brega<br>tecnobrega<br>chutney</td>
+  <td>The Mighty Terror &quot;Brownskin Girl&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cf3a323e52b3713795726ed9e8e94950af7c569a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/calypso" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7wKyzGGtiBmwBjwC83zqxO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1dQS6IpttEEWQXrxyS61pl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6J7SaFr9yWKGPHCACJ4oI2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0eIO1DxUJITOe13Kv7SDKv" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5eVszoPGomO9axQJOJwkcM" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["moombahton",
+	"bajan soca",
+	"vincy soca",
+	"bouyon",
+	"basshall",
+	"dancehall mauricien",
+	"dancehall colombiano",
+	"dennery segment",
+	"swedish dancehall",
+	"soca",
+	"uk dancehall",
+	"dancehall chileno",
+	"old school dancehall",
+	"sega mauricien",
+	"shatta",
+	"kompa",
+	"dancehall guyanaise",
+	"dancehall queen",
+	"zimdancehall",
+	"baithak gana",
+	"dancehall",
+	"trinibad",
+	"riddim",
+	"jamaican dancehall",
+	"chutney",
+	"calypso"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 26: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 26: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>

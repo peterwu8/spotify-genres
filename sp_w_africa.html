@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
   <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
 </ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
-<br><br><button id="scan-button">Preview All</button><div id="scan-status"></div>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
 <br>
 </p>
 
@@ -2472,9 +2472,194 @@ function sortTable_1(n) {
   let currentAudioIndex = 0;
   let startedAudioScan = 0;
 
+
+let genre_names_array = ["amapiano",
+	"gqom",
+	"sgija",
+	"afro house",
+	"south african deep house",
+	"south african soulful deep house",
+	"barcadi",
+	"south african house",
+	"underground amapiano",
+	"afrikaans gqom",
+	"kuduro",
+	"south african techno",
+	"south african dnb",
+	"batida",
+	"zouk",
+	"kuduro antigo",
+	"afro house angolano",
+	"kizomba cabo-verdiana",
+	"south african pop dance",
+	"urban kiz",
+	"kizomba antigas",
+	"maskandi",
+	"kizomba",
+	"funana",
+	"mapouka",
+	"gospel amapiano",
+	"champeta",
+	"african electronic",
+	"south african electronic",
+	"kwaito",
+	"cape town indie",
+	"sepedi pop",
+	"hiplife",
+	"afro soul",
+	"south african pop",
+	"namibian pop",
+	"south african metal",
+	"coupe-decale",
+	"rap ecuatoguineano",
+	"azonto",
+	"musique mariage algerien",
+	"south african rock",
+	"zouglou",
+	"south african punk",
+	"african rock",
+	"african reggae",
+	"afrofuturismo brasileiro",
+	"kenyan drill",
+	"ugandan pop",
+	"latin afrobeat",
+	"funk mandelao",
+	"naija old school",
+	"african metal",
+	"punta",
+	"cruise",
+	"punta rock",
+	"kenyan pop",
+	"south african alternative",
+	"baoule",
+	"kasi rap",
+	"rap malien",
+	"burundian pop",
+	"christian afrobeat",
+	"tunisian alternative",
+	"kenyan hip hop",
+	"asakaa",
+	"afro drill",
+	"south african underground rap",
+	"ugandan gospel",
+	"tunisian pop",
+	"gengetone",
+	"zambian pop",
+	"makossa",
+	"gumbe",
+	"afrobeat brasileiro",
+	"ghanaian hip hop",
+	"sesotho pop",
+	"ghanaian pop",
+	"afrobeats",
+	"afro r&amp;b",
+	"azontobeats",
+	"semba",
+	"xhosa hip hop",
+	"kenyan r&amp;b",
+	"musica puntana",
+	"venda pop",
+	"nigerian pop",
+	"bongo flava",
+	"louange",
+	"afro-funk",
+	"zambian gospel",
+	"musica guineense",
+	"south african hip hop",
+	"sebene",
+	"alte",
+	"nigerian hip hop",
+	"ghanaian gospel",
+	"rai algerien",
+	"botswana pop",
+	"rap ivoire",
+	"sesotho hip hop",
+	"south african trap",
+	"old school highlife",
+	"frafra",
+	"rap gabonais",
+	"rap algerien",
+	"rap tunisien",
+	"ghanaian alternative",
+	"afrofuturism",
+	"venda rap",
+	"south african country",
+	"musica mocambicana",
+	"zambian hip hop",
+	"afrobeat fusion",
+	"ugandan hip hop",
+	"rap guineen",
+	"south african r&amp;b",
+	"salsa cristiana",
+	"afroswing",
+	"afropop",
+	"ndombolo",
+	"congolese gospel",
+	"afro psych",
+	"marrabenta",
+	"rap mocambicana",
+	"african gospel",
+	"kamba pop",
+	"musica ecuatoguineana",
+	"kenyan alternative",
+	"sungura",
+	"botswana hip hop",
+	"south african jazz",
+	"guinean pop",
+	"soukous",
+	"zim urban groove",
+	"african experimental",
+	"rap congolais",
+	"south african gospel",
+	"mande pop",
+	"viral afropop",
+	"folclor afrocolombiano",
+	"chimurenga",
+	"fuji",
+	"zilizopendwa",
+	"malian blues",
+	"ohangla",
+	"afrobeat",
+	"benga",
+	"classic afrobeat",
+	"highlife",
+	"comptine africaine",
+	"taarab",
+	"juju",
+	"musique centrafricaine",
+	"musica afroperuana",
+	"rumba congolaise",
+	"west african jazz",
+	"burundian traditional",
+	"ghanaian traditional",
+	"musique traditionnelle congolaise",
+	"xhosa",
+	"afro-cuban traditional",
+	"djembe",
+	"sda a cappella",
+	"south african modern jazz",
+	"classic tunisian pop",
+	"malian traditional",
+	"afro-cuban percussion",
+	"south african choral",
+	"african percussion",
+	"ugandan traditional",
+	"algerian folk",
+	"chaabi algerien",
+	"kenyan traditional",
+	"clap and tap",
+	"african-american classical",
+	"american romanticism"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
   let playTimeout; // To store the timeout ID for clearing it if needed
 
   const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
 
   function playNextAudio() {
     if (startedAudioScan <= 0) {
@@ -2482,12 +2667,19 @@ function sortTable_1(n) {
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 177 &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 177: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
 
     } else {
       console.log("Playlist ended.");
       scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
       document.getElementById("scan-status").innerHTML = ""
       currentAudioIndex = 0;
       startedAudioScan = 0;
@@ -2497,17 +2689,36 @@ function sortTable_1(n) {
   audioElements.forEach((audio, index) => {
     audio.addEventListener('ended', () => {
 
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
       playNextAudio();
     });
   });
 
   scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 177 &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 177: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
 
   }
 </script>
