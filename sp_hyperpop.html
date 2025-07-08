@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hyperpop: (24 genres)</title>
+    <title>Hyperpop: (23 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <p>
 
-<strong>Name:</strong> Hyperpop: (24 genres)<br>
+<strong>Name:</strong> Hyperpop: (23 genres)<br>
 
 <strong>Notes:</strong><br><ul>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
@@ -375,19 +375,6 @@ document.addEventListener("DOMContentLoaded", function() {
 </tr>
 <tr>
   <td>23</td>
-  <td>russian drain <a href="https://everynoise.com/engenremap-russiandrain.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Hyperpop<br>W.Russia &#x2380;</td>
-  <td>Russia<br>hyperpop<br>russian hyperpop<br>russian emo rap<br>russian hip hop<br>russian trap</td>
-  <td>Hariki &quot;xanax&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/15e4df39394c7ebd5971458f1397a39864f4a1d6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
-  <td><a href="https://www.chosic.com/genre-chart/russian-drain" title="info">info</a></td>
-  <td><a href="https://open.spotify.com/playlist/38DEj34VygGZvzGKZvh9E0" title="chosic">chosic</a></td>
-  <td><a href="https://open.spotify.com/playlist/1RGZMxRGRRqJTwP6px1d9D" title="playlist">playlist</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/6wGYmh0g3ojUPKlFBT82Fh" title="intro">intro</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/52qDHZkEmfrbKqVRvtUAM2" title="pulse">pulse</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/5I3iwA1WU6yC7l6N5oMHyo" title="edge">edge</a></td>
-</tr>
-<tr>
-  <td>24</td>
   <td>glitch <a href="https://everynoise.com/engenremap-glitch.html" title="&#x2306;">&#x2306;</a></td>
   <td>Hyperpop &#x2380;</td>
   <td>Japan<br>hyperpop<br>idm<br>intelligent dance music<br>bass music<br>drumstep</td>
@@ -496,7 +483,6 @@ let genre_names_array = ["jersey club",
 	"hyperpop italiano",
 	"furry",
 	"russian hyperpop",
-	"russian drain",
 	"glitch"];
 
 
@@ -515,7 +501,7 @@ let genre_names_array = ["jersey club",
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 24: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 23: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
         // Set a timeout to pause the audio after duration is met
@@ -557,7 +543,7 @@ let genre_names_array = ["jersey club",
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 24: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 23: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
     pauseButton.disabled = false;
