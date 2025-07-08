@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Latin.America 02: (22 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Latin.America 02: (22 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Latin.America 02 is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>cuento infantile <a href="https://everynoise.com/engenremap-cuentoinfantile.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Kids<br>W.Latin.America</td>
+  <td>Latin America<br>lullaby<br>children\'s music<br>musica para ninos<br>villancicos</td>
+  <td>Cuentos Infantiles (Popular Songs) &quot;Pinocho&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2af66e8047dc3688553326cd29f543faf3dd8dfc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cuento-infantile" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4eqLg0ilKcPWfXLUi1ylh4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1TufwPOsgXigZyIUoh1GHj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5M5fEdXfMJto71Ln38VIsq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Zk0Ix632eA72QUiU2Wrov" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>argentine jazz <a href="https://everynoise.com/engenremap-argentinejazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Latin.America</td>
+  <td>Argentina<br>latin jazz<br>candombe<br>jazz fusion<br>folklore argentino<br>tango</td>
+  <td>Hern Jacinto &quot;Here, There And Everywhere&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ceae8cd37b3d9a58ba4e4263dd9ec6c077ed755a" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/argentine-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7g43CjsHx0ObmKcnZ0SxvE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5wSUmSyg6fkQqIhuEWGcp9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4mAZUfc7ImXcRq1EpCWfpI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0vpBMOzK4ZwMHAY3XDa7z2" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2LO7ckAN9JZjyFBQwqcBa5" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>banda militar <a href="https://everynoise.com/engenremap-bandamilitar.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latin.America<br>W.Spain &#x2380;</td>
+  <td>Mexico<br>cornetas y tambores<br>pasodobles<br>folklore argentino<br>anthem</td>
+  <td>Banda Militar de Madrid &quot;El novio de la muerte - Lent<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7fb65ed7c788f876be92388c19d1a9a79e0273af" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/banda-militar" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6FJzNmWoDYTzUdC2vvTb77" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2mgpUBKjC5UMpf1sJip82u" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1kC3FBgEZtvMlo3ST4Pnra" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6N3N0CvgH7P7KIieSU9CIY" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>polca paraguaya <a href="https://everynoise.com/engenremap-polcaparaguaya.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Brazil<br>W.Latin.America &#x2380;</td>
+  <td>Argentina<br>polka<br>chamame<br>folklore paraguayo<br>latin folklore<br>traditional music</td>
+  <td>LosOrrego &quot;Es linda nuestra tierra - Version polca&qu<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5a98e5308868340596b08b264de6a9231f5263e4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polca-paraguaya" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7yQh7CPkyH2C32EuRF8EO5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0MEg5cLJNk8oIHkjrMCWCe" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/61uzPtnWO8iCdCkW1tccri" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1fZqf0mbXeBh1nmYjRdFCp" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0IsnAXiKL3pv19gEUmOELv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>bolero cubano <a href="https://everynoise.com/engenremap-bolerocubano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latin.America &#x2380;</td>
+  <td>Cuba<br>bolero<br>son cubano<br>musica tradicional cubana<br>latin jazz<br>guaracha</td>
+  <td>Orlando Vallejo &quot;Un Amigo M&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cb6491405814bea8613d698722936b7011e2e744" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bolero-cubano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/70TwOon22RXbumXHRfwKom" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3qoRkWaFtGQeEy3PS3VuFd" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3TnroCthXj8Im8dExU5w7l" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Q7YvkWUsVELojRz89OXDT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0hgYkgx77ZchvrqsQzDrkz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>broadway <a href="https://everynoise.com/engenremap-broadway.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latin.America &#x2380;</td>
+  <td>United States<br>musicals<br>show tunes<br>hollywood<br>movie tunes<br>country dawn</td>
+  <td>Christian Borle &quot;Hard to Be the Bard&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/63d19d7e59df5f8e35e75f433d4d0f58c451dfd5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/broadway" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2EZEWVoOKe0yFiEuYt3bYD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1n5lZH4Z7y6R254fFzL04j" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0afrM5mmm0ZzcK7NE42g83" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ikuMeTZDE6SSpu1vks5um" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1nswpZ30059iJa3CmB3pub" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>bolero mexicano <a href="https://everynoise.com/engenremap-boleromexicano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latin.America &#x2380;</td>
+  <td>Mexico<br>bolero<br>mariachi<br>ranchera<br>guitarra mexicana<br>trova</td>
+  <td>Los Fantasmas &quot;Pagina Blanca&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ab48c386318dd2651fe38a11e040e3f92b4fd885" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bolero-mexicano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6odiOtk46sFGOp0nA4OdSE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7skhVBoiTy8Po9UdfkJ4Gy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3gvaWVPvpD6Dg7dyi8HEit" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7CvTQz7JP6gLqTpdVxb6sH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2djMnLLd2rwgmfYrAEvkdf" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>musica de fondo <a href="https://everynoise.com/engenremap-musicadefondo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Ambient.Yoga.Therapy.Sleep.White.Noise<br>W.Brazil<br>W.Latin.America &#x2380;</td>
+  <td>Brazil<br>world meditation<br>lullaby<br>celtic<br>musica para ninos<br>sleep</td>
+  <td>Relajaci: Por Rosa &quot;Brisa del Oc&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9eceba227fde7cffdb26a8e5eb5d87e22bf610d8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-de-fondo" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Of3lZdbXHHSwqsKBCRviL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/33pnAlQ3n096s4W1XMnrNf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0GpAVVyo2OtWK97Fcxjbr7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6NDQiTqN8v0TKzTUS0UFaj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7rRrUugwppcTOi3enGrKij" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>musica sinfonica <a href="https://everynoise.com/engenremap-musicasinfonica.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Brazil<br>W.Latin.America &#x2380;</td>
+  <td>Brazil<br>orchestra<br>brazilian rock<br>mpb<br>classical<br>nova mpb</td>
+  <td>Orquestra Sinf do Estado de S Paulo &quot;Waltz Suite, Op.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8c902c254b1a7d250d36343b5365b3ec7545d714" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-sinfonica" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1jZS3SoUP5C3yxxvUOd23g" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/63FqUIxVo1KigavsVaoVnZ" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>zamba <a href="https://everynoise.com/engenremap-zamba.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latin.America &#x2380;</td>
+  <td>Argentina<br>folklore argentino<br>chamame<br>latin folklore<br>folclore salteno<br>folclor andino</td>
+  <td>Los Fronterizos &quot;Zamba Del Negro Alegre&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/287c1de042231e4d89e08a2be87342c08924540f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/zamba" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4UVbbYYrq74n5cBsWvW1wc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4BLHWGRsNFy6C64njAPdJ2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/47qoB5onjeSlbpOnCepwa4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ofLDrEqsoxDH6VY8LBvJ6" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/35w7paShlAZX6uZ28lmDnZ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>nuevo tango <a href="https://everynoise.com/engenremap-nuevotango.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latin.America &#x2380;</td>
+  <td>Argentina<br>tango<br>candombe<br>folklore argentino<br>murga<br>orchestra</td>
+  <td>Orquesta T Andariega &quot;Gira Gira&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c8a017bf4c3cb02f2f67dbefcd11cd5b70c56501" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nuevo-tango" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5IPb4AzoIGfCfVdYDG6lT8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/51ZET8D7C1TIlpbFsREleh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/75E9vLrg4DKkIcNmduBveV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2EdDkKXbUmdZzh51vHiwyK" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3qNbeKg2Ps8cPJqesm9mVV" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>bandoneon <a href="https://everynoise.com/engenremap-bandoneon.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latin.America &#x2380;</td>
+  <td>Argentina<br>tango<br>candombe<br>orchestra<br>folklore argentino<br>french jazz</td>
+  <td>Leopoldo Federico &quot;Responso&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5c54b4a11b9f8dce78b5bd08416efb179d8a8455" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bandoneon" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0h0XPqEaPImkZHkN2i4OB3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ZdEVCj3XruQaXQuq0Hfrt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6g64fmoV8KQgAvkdcMBUor" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5KGia35lIMAoyAfjWU62yd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ADLYdxhLveutlvpkfoE6i" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>tango <a href="https://everynoise.com/engenremap-tango.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latin.America &#x2380;</td>
+  <td>Argentina<br>candombe<br>folklore argentino<br>orquesta tipica<br>cha cha cha<br>ballroom</td>
+  <td>Sexteto Mayor &quot;Remolino&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/43f69ec21cc16f9b59bb1af8cf8924d1c1cae537" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tango" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2a0r8uVdWO86kFyZO1647B" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2rsR2gxPujqpU0JA6Ug6xg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2VJsvCuj7uUvp8WanucrLX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2s8VFCgKy9BP8OzbmUDt3s" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3XfYMNufN6NiREUKgtxeXt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>musica antigua <a href="https://everynoise.com/engenremap-musicaantigua.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Medieval<br>W.Latin.America<br>W.Spain &#x2380;</td>
+  <td>Spain<br>medieval<br>gregorian chant<br>choral<br>traditional music<br>early music</td>
+  <td>Jordi Savall &quot;Mozart : Requiem K. 626 - Lacrimosa&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8895875cfdb887fbe3573e3976daeca8fe099f02" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/musica-antigua" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7HGoOgIF6t2jG1bFI5bX6M" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0cBZNnEFHoynI0VCas1c4P" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5VlloE52FzxwYdxJAqnHmw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1jzJia0YSCYMZ1Nr0dxbFE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1MsRhi8psJK5zhSQmGr1zi" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>marimba <a href="https://everynoise.com/engenremap-marimba.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Latin.America &#x2380;</td>
+  <td>Latin America<br>classical percussion<br>mallet<br>japanese classical<br>brazilian contemporary classical<br>latin classical</td>
+  <td>Ludwig Albert &quot;Fantasy of Love (Improvisation Marimba<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5da5d47f26e518f00879a4e35a5b381f3028ba60" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/marimba" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3gqTFbWeURmU3l5qICkCFN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5LwgLsVuf83oZ4KM77Olxp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Mf0x6hwUpVyTU4zhS5zKL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3vOE8CE8UD5jvb68wWk3HU" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>latin classical <a href="https://everynoise.com/engenremap-latinclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Latin.America</td>
+  <td>Argentina<br>brazilian classical<br>mexican classical<br>brazilian contemporary classical<br>tango<br>classical guitar</td>
+  <td>Camargo Guarnieri &quot;Dansa brasileira&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5ab39045cf6947669f008767ede5cefdcdd5cc70" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/latin-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1HfQgWDUlAKTxq35lCfzXm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7KHzvfzU7SVFsooG7EhsQZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3MGUccAwLvNOzTmZ8Trur4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RvQOm7wo5MKGoT1yuZP0L" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/001AnKT0qjrxUe2X1fSvG2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>guitarra argentina <a href="https://everynoise.com/engenremap-guitarraargentina.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental<br>W.Latin.America</td>
+  <td>Argentina<br>tango<br>folklore argentino<br>chamame<br>candombe<br>latin folklore</td>
+  <td>Juan Fal &quot;Ya me Voy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f2bce867ecd8830d85a8de5e6f37d2ef8553e313" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/guitarra-argentina" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3tlXE7u0qRD3eg39wCqvII" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7AM6up7skBINcBMsC4hcdA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2PF3RJxabqqWX77UxhDprB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4nDjIw2mTkNe8u4a6ikNPf" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0H5MfM67lGytC7E9JBGicF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>tango cancion <a href="https://everynoise.com/engenremap-tangocancion.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Latin.America &#x2380;</td>
+  <td>Argentina<br>tango<br>candombe<br>folklore argentino<br>vintage tango<br>nuevo tango</td>
+  <td>Lidia Borda &quot;Romance de barrio&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fc9a4565da4ff3ab9306a9ac36719b3bb4974062" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tango-cancion" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1eFQuaDjlGLv3SdTb6lkKY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1SePFx01lSsAZTvUM83kEE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/13Mf6XOWrrLxQ79F8ZDhTm" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4RK2BquNZmSeDWV8OyRC24" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4bhI6JKd5FCUUGfeXExPmF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>canto a tenore <a href="https://everynoise.com/engenremap-cantoatenore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Cantonese<br>W.Italy<br>W.Latin.America &#x2380;</td>
+  <td>Italy<br>musica sarda<br>polyphony<br>free jazz<br>traditional folk<br>italian folk</td>
+  <td>Tenore de Oniferi San Gavino &quot;Tiu bobore mannu&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/29dddb4ad0fa3939bdce82a467178eb7ebab7506" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canto-a-tenore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5xHL5Dd3laqrLJEjHZVLlB" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Pg8lDo46YYTaEAdiskop8" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0FLiKI5CZpzco2oWzx893u" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6htF1C9wYMi859J4V0XqA7" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>latin american baroque <a href="https://everynoise.com/engenremap-latinamericanbaroque.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Baroque<br>W.Latin.America<br>W.Spain</td>
+  <td>Spain<br>mexican classical<br>spanish baroque<br>choral<br>baroque<br>medieval</td>
+  <td>Gaspar Fernandes &quot;Xicochi Conetzintle&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/81153539f8c984d8108f534b07ef2a9989bc7132" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/latin-american-baroque" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0g1UjGDSHuEcFIHLiGgSwp" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Y0PsfHwq4EAfoV2CGQI5t" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7KjNwIK0uBrkBeYbozbzzK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5bkR26avOzZGcV59vjaRkw" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>mexican classical <a href="https://everynoise.com/engenremap-mexicanclassical.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>W.Latin.America<br>W.Spain</td>
+  <td>Spain<br>latin classical<br>latin american baroque<br>early modern classical<br>late romantic era<br>baroque</td>
+  <td>Jos Pablo Moncayo &quot;Huapango (1941)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b41bf51e627d0ae3c5cb45aa3e9975b7cd1d57b2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mexican-classical" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4qMvIThpy1YraD5kbf4HUw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Hw8HTpwKJqXpS7zjSQ0EM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5XL4PCQ70N8pOypVyJ48I8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7564cw1e6raUwkIEgF6cW6" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>latin american classical piano <a href="https://everynoise.com/engenremap-latinamericanclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical<br>Instrumental<br>W.Latin.America</td>
+  <td>Colombia<br>classical piano<br>classical<br>musica mexicana<br>chamber music<br>tango</td>
+  <td>Martha Argerich &quot;Kinderszenen, Op. 15: 1. Von fremden<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/088b966a7f7db3567e10d1e6bdd7a2923f3ac074" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/latin-american-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/17DcArmt0awFlsgE0c8bfo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7u5l82eY5aEZ2WN4PMxJ6K" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5iHXD4a3cWLLb5y1GiMJT0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5v05UvpVP8hYxOtCM4y3kE" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["cuento infantile",
+	"argentine jazz",
+	"banda militar",
+	"polca paraguaya",
+	"bolero cubano",
+	"broadway",
+	"bolero mexicano",
+	"musica de fondo",
+	"musica sinfonica",
+	"zamba",
+	"nuevo tango",
+	"bandoneon",
+	"tango",
+	"musica antigua",
+	"marimba",
+	"latin classical",
+	"guitarra argentina",
+	"tango cancion",
+	"canto a tenore",
+	"latin american baroque",
+	"mexican classical",
+	"latin american classical piano"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 22: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 22: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>

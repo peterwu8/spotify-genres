@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Disco: (23 genres)</title>
+    <title>Disco: (24 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <p>
 
-<strong>Name:</strong> Disco: (23 genres)<br>
+<strong>Name:</strong> Disco: (24 genres)<br>
 
 <strong>Notes:</strong><br><ul>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
@@ -308,6 +308,19 @@ document.addEventListener("DOMContentLoaded", function() {
 </tr>
 <tr>
   <td>18</td>
+  <td>slaskie piosenki <a href="https://everynoise.com/engenremap-slaskiepiosenki.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Disco<br>W.Poland &#x2380;</td>
+  <td>Poland<br>disco polo<br>schlager<br>trance<br>akordeon<br>nu jazz</td>
+  <td>Nas Troje &quot;Zawsze kochaj mnie&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/661f8cdbe44570d2a3b4d0f90be5944da433631d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/slaskie-piosenki" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1pOUsmET8gI6AF3wJxPylP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5b5lszUTvnII9ZRsF8478s" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1041lEOGH66PJFg3vQ2cM0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4oD9yEJMtSdtp9HDfTu2bP" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Jn2V1jt4A56HphFPjlZKC" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
   <td>post-disco <a href="https://everynoise.com/engenremap-postdisco.html" title="&#x2306;">&#x2306;</a></td>
   <td>Disco</td>
   <td>United States<br>disco<br>funk<br>quiet storm<br>classic soul<br>soul</td>
@@ -320,7 +333,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1nAXIjhdHvSBcdcUcS9zSt" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>19</td>
+  <td>20</td>
   <td>akordeon <a href="https://everynoise.com/engenremap-akordeon.html" title="&#x2306;">&#x2306;</a></td>
   <td>Disco &#x2380;</td>
   <td>Poland<br>polka<br>disco polo<br>classic disco polo<br>slaskie piosenki<br>requiem</td>
@@ -333,7 +346,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>--</td>
 </tr>
 <tr>
-  <td>20</td>
+  <td>21</td>
   <td>deep italo disco <a href="https://everynoise.com/engenremap-deepitalodisco.html" title="&#x2306;">&#x2306;</a></td>
   <td>Disco<br>W.Italy</td>
   <td>Italy<br>italo disco<br>hi-nrg<br>italo dance<br>new italo disco<br>post-disco</td>
@@ -346,7 +359,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td><a href="https://open.spotify.com/user/particledetector/playlist/6fvDNojaAOaC2DV65fv5CA" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>21</td>
+  <td>22</td>
   <td>disco <a href="https://everynoise.com/engenremap-disco.html" title="&#x2306;">&#x2306;</a></td>
   <td>Disco</td>
   <td>United States<br>soul<br>quiet storm<br>motown<br>classic soul<br>funk</td>
@@ -359,7 +372,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1ijGSXGw6DKZit6jywZeYP" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>22</td>
+  <td>23</td>
   <td>goralski <a href="https://everynoise.com/engenremap-goralski.html" title="&#x2306;">&#x2306;</a></td>
   <td>Disco &#x2380;</td>
   <td>Poland<br>disco polo<br>folk<br>traditional music<br>classic disco polo<br>acoustic rock</td>
@@ -372,7 +385,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td><a href="https://open.spotify.com/user/particledetector/playlist/40kmp0enPYW6a9JTSnp0Ki" title="edge">edge</a></td>
 </tr>
 <tr>
-  <td>23</td>
+  <td>24</td>
   <td>koledy <a href="https://everynoise.com/engenremap-koledy.html" title="&#x2306;">&#x2306;</a></td>
   <td>Disco &#x2380;</td>
   <td>Poland<br>disco polo<br>zespol dzieciecy<br>polish blues<br>polish pop</td>
@@ -476,6 +489,7 @@ let genre_names_array = ["deep disco house",
 	"post-disco soul",
 	"minneapolis sound",
 	"deep disco",
+	"slaskie piosenki",
 	"post-disco",
 	"akordeon",
 	"deep italo disco",
@@ -499,7 +513,7 @@ let genre_names_array = ["deep disco house",
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 23: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 24: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
         // Set a timeout to pause the audio after duration is met
@@ -541,7 +555,7 @@ let genre_names_array = ["deep disco house",
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 23: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 24: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
     pauseButton.disabled = false;

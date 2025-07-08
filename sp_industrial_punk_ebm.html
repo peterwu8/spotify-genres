@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Industrial.Punk.EBM: (6 genres)</title>
+    <title>Industrial.Punk.EBM: (7 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <p>
 
-<strong>Name:</strong> Industrial.Punk.EBM: (6 genres)<br>
+<strong>Name:</strong> Industrial.Punk.EBM: (7 genres)<br>
 
 <strong>Notes:</strong><br><ul>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
@@ -163,6 +163,19 @@ document.addEventListener("DOMContentLoaded", function() {
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1SiL4Ve5e5VlRkzQAtMB2n" title="pulse">pulse</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/5kyXZz06lnv3DuFLAeYybg" title="edge">edge</a></td>
 </tr>
+<tr>
+  <td>7</td>
+  <td>neue deutsche todeskunst <a href="https://everynoise.com/engenremap-neuedeutschetodeskunst.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Industrial.Punk.EBM<br>W.Germany &#x2380;</td>
+  <td>Germany<br>darkwave<br>ebm<br>gothic rock<br>deathrock<br>industrial</td>
+  <td>Umbra et Imago &quot;Lieber Gott&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f2b199af4ba6989af14fc982ff920f7b2dcde701" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/neue-deutsche-todeskunst" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6CcwTPIpPK045MXj6fLLpF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/19g4JAc7ilM1LdOkb2zwVU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2jLYQk3c6zmh58MzDJMp3i" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6yAuDjdOypsVd5S1fpbelz" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5lpK6oIhDOBQXBYJjNVFsP" title="edge">edge</a></td>
+</tr>
 
         </table>
         <br><br>
@@ -243,7 +256,8 @@ let genre_names_array = ["swedish ebm",
 	"old school ebm",
 	"futurepop",
 	"ebm",
-	"new beat"];
+	"new beat",
+	"neue deutsche todeskunst"];
 
 
   // 5000 milliseconds = 5 seconds
@@ -261,7 +275,7 @@ let genre_names_array = ["swedish ebm",
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 6: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 7: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
         // Set a timeout to pause the audio after duration is met
@@ -303,7 +317,7 @@ let genre_names_array = ["swedish ebm",
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 6: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 7: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
     pauseButton.disabled = false;

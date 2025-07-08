@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>W.Basque: (12 genres)</title>
+    <title>W.Basque: (13 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <p>
 
-<strong>Name:</strong> W.Basque: (12 genres)<br>
+<strong>Name:</strong> W.Basque: (13 genres)<br>
 
 <strong>Notes:</strong><br><ul>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>06</td>
   <td>musica tabasquena <a href="https://everynoise.com/engenremap-musicatabasquena.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Basque<br>W.Latino</td>
+  <td>W.Basque<br>W.Latin.America &#x2380;</td>
   <td>Mexico<br>tropical music<br>cumbia<br>cumbia del sureste<br>musica indigena mexicana<br>son jarocho</td>
   <td>Karmito Jr.Y Los Supremos &quot;El Atractivo&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b73981bbcd7e6b1e11c537d6b6025ad426daaecd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/musica-tabasquena" title="info">info</a></td>
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>10</td>
   <td>euskal musica <a href="https://everynoise.com/engenremap-euskalmusica.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Basque<br>W.Latino</td>
+  <td>Rock<br>W.Basque<br>W.Latin.America &#x2380;</td>
   <td>Spain<br>euskal rock<br>euskal indie<br>euskal reggae<br>folk pop<br>villancicos</td>
   <td>Izaki Gardenak &quot;Amaieratik hasi&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/327a4b0ee83efc8a383ebed82c3eb1d5e3b6bc03" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/euskal-musica" title="info">info</a></td>
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>11</td>
   <td>chant basque <a href="https://everynoise.com/engenremap-chantbasque.html" title="&#x2306;">&#x2306;</a></td>
-  <td>W.Basque</td>
+  <td>W.Basque<br>W.Spain &#x2380;</td>
   <td>France<br>pasodobles<br>musica occitana<br>villancicos<br>zouk<br>gregorian chant</td>
   <td>Ontuak &quot;Hegoak&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6edc3b789257de55bcfd1261e204b6486456e0b8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/chant-basque" title="info">info</a></td>
@@ -242,6 +242,19 @@ document.addEventListener("DOMContentLoaded", function() {
   <td><a href="https://open.spotify.com/user/particledetector/playlist/4vwuHguixIPuDRSJH7EWCY" title="intro">intro</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/37t1lVbv5Hqh9B8h7RujR8" title="pulse">pulse</a></td>
   <td><a href="https://open.spotify.com/user/particledetector/playlist/1OpD95oSAr5uMRC0xv6hpr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>pasodobles <a href="https://everynoise.com/engenremap-pasodobles.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Basque<br>W.Spain &#x2380;</td>
+  <td>France<br>cornetas y tambores<br>chant basque<br>banda militar<br>candombe<br>mariachi</td>
+  <td>Soria 9 Sevilla &quot;Paquito Chocolatero&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a14214047ba0c034275a2122c60f4e3adeebeb52" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pasodobles" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bJgMGUl6P1XNAn10zGoV2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2zuQnlTbp8h0ZW6VPk0SOs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4e45yejim4qUuUP5kro7Tu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1MrIY4BjMikbyJZxGXrYhf" title="pulse">pulse</a></td>
+  <td>--</td>
 </tr>
 
         </table>
@@ -329,7 +342,8 @@ let genre_names_array = ["euskal reggae",
 	"trikiti",
 	"euskal musica",
 	"chant basque",
-	"basque folk"];
+	"basque folk",
+	"pasodobles"];
 
 
   // 5000 milliseconds = 5 seconds
@@ -347,7 +361,7 @@ let genre_names_array = ["euskal reggae",
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 12: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 13: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
         // Set a timeout to pause the audio after duration is met
@@ -389,7 +403,7 @@ let genre_names_array = ["euskal reggae",
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 12: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 13: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
     pauseButton.disabled = false;
