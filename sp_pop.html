@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pop: (214 genres)</title>
+    <title>Pop: (213 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <p>
 
-<strong>Name:</strong> Pop: (214 genres)<br>
+<strong>Name:</strong> Pop: (213 genres)<br>
 
 <strong>Notes:</strong><br><ul>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
@@ -2538,7 +2538,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <tr>
   <td>189</td>
   <td>pop violin <a href="https://everynoise.com/engenremap-popviolin.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Pop</td>
+  <td>Instrumental.Violin<br>Pop</td>
   <td>United States<br>bow pop<br>smooth jazz<br>classical<br>classify<br>violin</td>
   <td>Marta Z &quot;Believer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cf6101a4bc313b33115a6c8a532422d005ec6da2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/pop-violin" title="info">info</a></td>
@@ -2838,21 +2838,8 @@ document.addEventListener("DOMContentLoaded", function() {
 </tr>
 <tr>
   <td>212</td>
-  <td>barbershop <a href="https://everynoise.com/engenremap-barbershop.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Pop &#x2380;</td>
-  <td>United States<br>choral<br>doo-wop<br>a cappella<br>power pop<br>garage rock</td>
-  <td>Michigan Jake &quot;I\'m Beginning to See the Light&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/94096b2735a6ced51ac5cbbdd18b85e57fc95be2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
-  <td><a href="https://www.chosic.com/genre-chart/barbershop" title="info">info</a></td>
-  <td><a href="https://open.spotify.com/playlist/7BfuS6dWXSmg1r5RZjDvlu" title="chosic">chosic</a></td>
-  <td><a href="https://open.spotify.com/playlist/2wyhLEyF9Oju6B2MeAdIrY" title="playlist">playlist</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/71PVaUNnTYBNW1k7IpS8cx" title="intro">intro</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/0tDaziFLeFBzTQQ7OzJ5VT" title="pulse">pulse</a></td>
-  <td>--</td>
-</tr>
-<tr>
-  <td>213</td>
   <td>pops orchestra <a href="https://everynoise.com/engenremap-popsorchestra.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Classical<br>Pop</td>
+  <td>Classical.Orchestra<br>Pop</td>
   <td>United States<br>orchestra<br>classify<br>american orchestra<br>easy listening<br>celtic</td>
   <td>Boston Pops Orchestra &quot;E.T.: Flying Theme&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1cb122b43a8849399c61533b09d44334360d7cce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
   <td><a href="https://www.chosic.com/genre-chart/pops-orchestra" title="info">info</a></td>
@@ -2863,7 +2850,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <td>--</td>
 </tr>
 <tr>
-  <td>214</td>
+  <td>213</td>
   <td>blasmusik <a href="https://everynoise.com/engenremap-blasmusik.html" title="&#x2306;">&#x2306;</a></td>
   <td>Pop &#x2380;</td>
   <td>Germany<br>polka<br>blaskapelle<br>tanzlmusi<br>brass band pop<br>brass ensemble</td>
@@ -3161,7 +3148,6 @@ let genre_names_array = ["pop house",
 	"vintage swedish pop",
 	"exotica",
 	"space age pop",
-	"barbershop",
 	"pops orchestra",
 	"blasmusik"];
 
@@ -3181,7 +3167,7 @@ let genre_names_array = ["pop house",
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 214: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 213: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
         // Set a timeout to pause the audio after duration is met
@@ -3223,7 +3209,7 @@ let genre_names_array = ["pop house",
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 214: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 213: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
     pauseButton.disabled = false;

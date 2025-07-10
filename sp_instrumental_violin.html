@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instrumental.Violin: (6 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Instrumental.Violin: (6 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>1</td>
+  <td>pop violin <a href="https://everynoise.com/engenremap-popviolin.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Violin<br>Pop</td>
+  <td>United States<br>bow pop<br>smooth jazz<br>classical<br>classify<br>violin</td>
+  <td>Marta Z &quot;Believer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cf6101a4bc313b33115a6c8a532422d005ec6da2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pop-violin" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4RNKnKSiFQtNsrS6zufMvm" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2UVYwW6BSENPhn2lxiIggj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Q8No1IBbFvMAeDysWEP1p" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Dk4rZhZ08EiXR7nUXkYxb" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6yHgfneIXSQYfNyzZ2qs5J" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>jazz violin <a href="https://everynoise.com/engenremap-jazzviolin.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Violin<br>Jazz</td>
+  <td>India<br>free jazz<br>french jazz<br>jazz fusion<br>avant-garde<br>jazz</td>
+  <td>St Grappelli &quot;Les Valseuses&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b74030db0313f034b93b6cf8cece096ac6b45947" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jazz-violin" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4OEKnHGH1vnxB2S0DIs2HG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6qUVKIR00CpN0YBSKCeYFS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7IdacOU0XOyEzd7lw6Z3eV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5qSufFE0rlyxpWBVcEUf00" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>indian violin <a href="https://everynoise.com/engenremap-indianviolin.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Violin<br>W.India<br>W.Indonesia</td>
+  <td>India<br>indian classical<br>carnatic instrumental<br>carnatic<br>hindustani instrumental<br>devotional</td>
+  <td>Ganesh &amp; Kumaresh &quot;Raga Karnaranjani&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2f97ae23c6744d5840d12a8c8cf890d22fcb5063" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indian-violin" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7ffwuuevsIDT7vGMXXFw4l" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Aong678PTMX9pH7U2Bd0P" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4OSauBIOwcw9P6gYVJmNnr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0z7i33BQkvJtdoxUvuu2P9" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>baroque violin <a href="https://everynoise.com/engenremap-baroqueviolin.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Baroque<br>Instrumental.Violin</td>
+  <td>Europe<br>chamber music<br>classical<br>historically informed performance<br>violin<br>classical performance</td>
+  <td>Gli Incogniti &quot;Concerto grosso No. 1 in D Major, Op. <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/81dccc039f5f14fc46ddcc70bda2329941f6e083" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/baroque-violin" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0UC7pSwbYZvINgb3Yp8405" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/51IvzHND37F9uEN264qhe2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Y7QomKaklDGRV8mkczPY3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1G1wY7U33q6Qw9FtXvKqhO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1CpGfjOrlCASrWjPD3wNpl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>italian violin <a href="https://everynoise.com/engenremap-italianviolin.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Violin<br>W.Italy</td>
+  <td>Europe<br>chamber music<br>classical<br>violin<br>baroque violin<br>historically informed performance</td>
+  <td>Salvatore Accardo &quot;12 Concertos, Op. 3 - &quot;L\'estr<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5a43b3928cf8b4b968cae92df8338ee01f4954cd" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/italian-violin" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1l2oycbq2NeOwEQd1uJM4P" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Vf6P26sYyUqljb9e8Jy5b" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2V8sPxOStFH3oZz8wQ1bSL" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>violin <a href="https://everynoise.com/engenremap-violin.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Violin</td>
+  <td>Europe<br>classical<br>chamber music<br>classical performance<br>historically informed performance<br>minimalism</td>
+  <td>Pinchas Zukerman &quot;Adagio in E Major, K. 261&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/29722009ef611d4fb885af65acbff4a6a885ea90" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/violin" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4PevS2mzP8564r6B8MwZ01" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5j7SUgBZJ8Ap4ih5nat46U" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/31ka5CAnOWI6KNCa1p5Pdo" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6sSxTKjsSqPH6refvjZk6l" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7Gulvx1Xgf6D1T7vDMnTiy" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["pop violin",
+	"jazz violin",
+	"indian violin",
+	"baroque violin",
+	"italian violin",
+	"violin"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 6: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 6: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>

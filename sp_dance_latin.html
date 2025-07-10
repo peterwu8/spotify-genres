@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dance.latin: (8 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Dance.latin: (8 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>1</td>
+  <td>mambo chileno <a href="https://everynoise.com/engenremap-mambochileno.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance.latin<br>W.Latin.America</td>
+  <td>Chile<br>reggaeton chileno<br>chilean mambo<br>chilean trap<br>mambo<br>urbano chileno</td>
+  <td>Luxian &quot;Amor de Colegio&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d99a03523cfeb0429e1acbfdd9e1b730ea3a3914" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mambo-chileno" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5HW5wDQ5avg4e7bDb8ZMKu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1a09PfpMhc1BoCtasZBoin" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5qZs4HoSxIgfAWJBzOIfPq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0h3Gq5CEpYL7fLmypuqoKl" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ADU3z3SfuFQ3iLZUwcuv7" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>bachata <a href="https://everynoise.com/engenremap-bachata.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance.latin &#x2380;</td>
+  <td>Latin America<br>merengue<br>salsa<br>mambo<br>dominican pop<br>latin pop</td>
+  <td>Marco Puma &quot;Promesas De Amor&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d8b350d146fd8c5903eab1a61fd3515352d85cb0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bachata" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2YnJ4pPMKnfIIsMC8twuBL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5CllQE0jNYEbZWEjyhDD6J" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5jHuGBWYe7rM0IVWlA3zwT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7gNCVZ5IkLkANU7PEFI7ld" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Oh7VjZaw4etsvKXVqRAft" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>ballroom <a href="https://everynoise.com/engenremap-ballroom.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance.latin &#x2380;</td>
+  <td>Latin America<br>cha cha cha<br>tango<br>orchestra<br>latin dance<br>samba</td>
+  <td>Tony Evans and His Orchestra &quot;Spanish Gypsy Dance - P<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3581b8b91d20fa87eb5003e13a907587aaec403d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ballroom" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5VEo1MxuksAoHVez4vdo24" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/24FlJf5U7AJ1AnlUY99TZD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/28kwWorc1CLw3ej3lWUt9Z" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/71UVMu7AbsvWnYJ8tCGeSk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6EgS6usYqqzlJLxOVNZs3H" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>merengue tipico <a href="https://everynoise.com/engenremap-merenguetipico.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance.latin &#x2380;</td>
+  <td>Dominican Republic<br>merengue<br>bachata<br>mambo<br>salsa<br>tropical</td>
+  <td>El Prodigio &quot;Ta\' Buena&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2b108edeb73e65ef285946eb049a52e99d41c25e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/merengue-tipico" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6GFHRYPiQHRQ1wyX6euLrP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4UyR0hBQFwyU4LTOGgssyb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7d0VzfOvuQnMhPEiwaGrt3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/79xkhz235aQ7PdetDQQu9W" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pJ7xdJmcPG0GxwwoJKy75" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>tanzorchester <a href="https://everynoise.com/engenremap-tanzorchester.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance.latin &#x2380;</td>
+  <td>Germany<br>cha cha cha<br>tango<br>ballroom<br>swing music<br>big band</td>
+  <td>Tanz Orchester Klaus Hallen &quot;Can You Feel The Love To<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f76a722cae17c76f86d895a543e908cc3cb25db9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/tanzorchester" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6LR8n8UR7lXD0Cg5gQFtZP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5BMdrlJWc1MbHySNCNFHUU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/72nOzVmM27j9my9QrbvfHc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3dz8PdPcsKRa7T8zwjwwt1" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>danzon <a href="https://everynoise.com/engenremap-danzon.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance.latin<br>W.Latin.America</td>
+  <td>Cuba<br>cha cha cha<br>mambo<br>tropical music<br>orchestra<br>son cubano</td>
+  <td>La Danzonera Joven De M Del &quot;Chamaco Aguilar&quot; &q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2099ba0e14e8267fbff345bc9a1702537c86405c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/danzon" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4F0tjBoq1HJglx3yXUb80f" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/165RdkkDtXcCvEedWLZm5S" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3WQHFp2uQuy9oxyynA6f8j" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3nsMrb22q70bEr464yyiTF" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5VOW4RpZ822GWVmu9lI9Bd" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>mambo <a href="https://everynoise.com/engenremap-mambo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance.latin</td>
+  <td>Cuba<br>chilean trap<br>reggaeton chileno<br>urbano chileno<br>rkt<br>merengue</td>
+  <td>Orquesta Arag &quot;Qui Sempre&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ad9273bb7bfc609946745f227506705989eb61b0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/mambo" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/40wo1G99DcqeId95u53O4y" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7pBdTAU2WIt4hx9jL9LKqo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0v0LrjZ6QQ2ZpSFS8Khs9T" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7oFx9kcnJvEDVCbRLLKZek" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6jG3QjPFYLQuZioJ0qqLls" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>cha-cha-cha <a href="https://everynoise.com/engenremap-chachacha.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Dance.latin &#x2380;</td>
+  <td>Cuba<br>cha cha cha<br>son cubano<br>mambo<br>latin jazz<br>musica tradicional cubana</td>
+  <td>Celia Cruz &quot;La Vida Es Un Carnaval&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/144c19c94417fa56e32daf52f40cd23cca52f883" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/cha-cha-cha" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6IJoEq7gvB9J097exBUvrD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0TF0ssEBoKpdbIeIsSfXXX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5an7WVzTyoGMSZiItCePHa" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4MDkQf9NvRWPisSnbKow5I" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["mambo chileno",
+	"bachata",
+	"ballroom",
+	"merengue tipico",
+	"tanzorchester",
+	"danzon",
+	"mambo",
+	"cha-cha-cha"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 8: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 8: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>

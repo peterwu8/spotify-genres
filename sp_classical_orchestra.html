@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classical.Orchestra: (29 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Classical.Orchestra: (29 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>orquestas de galicia <a href="https://everynoise.com/engenremap-orquestasdegalicia.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra &#x2380;</td>
+  <td>Spain<br>orchestra<br>merengue<br>tropical music<br>bachata<br>catalan folk</td>
+  <td>Orquesta Costa Oeste &quot;Mi Ni Bonita&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e857deb9b44e19282a8524b3dd684fd482ef0a20" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/orquestas-de-galicia" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7wB3XG70rDxGVCLOuTmFJh" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ZnW0zSnQH9pqqntocgUDX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ipNpU7FhAqwu8CaW6gDvw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5E1ScLu8dOTa7GsiA8dXIh" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4VBSVbJYyydhTNHTfnyIL2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>epicore <a href="https://everynoise.com/engenremap-epicore.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra &#x2380;</td>
+  <td>Denmark<br>orchestra<br>soundtrack<br>neoclassical<br>video game music<br>orchestral soundtrack</td>
+  <td>PostHaste Music &quot;Aurora&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b3b94d4c0ebfaa0b97b119d90eab979c878a0b17" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/epicore" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2c8Buw54sfZPOYl2QDDyBf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6L5DYqEAWfLMEb6szUJpe4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/40ESY7YLbONmeeVUEoDTDq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Lbs5lNQYpa2nHfcWfRHLM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4gjDyedyNOfwesg2SuXu6q" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>orchestral soundtrack <a href="https://everynoise.com/engenremap-orchestralsoundtrack.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>Soundtrack.New.Age</td>
+  <td>Japan<br>soundtrack<br>british soundtrack<br>video game music<br>scorecore<br>epicore</td>
+  <td>John Powell &quot;Test Drive - From How To Train Your Drag<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e8ec3e571c1898f6959896f0e081d8e4e7108dc7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/orchestral-soundtrack" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4tv867FRSVlxsnaNhxucjt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4a5OYJObN9YJPpfBuP2L22" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3lRP5rEuYQEMgEpvRdGeu1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7d6Edm0nnpsJjtmv9jbNWB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3PuFkwasjqMFND0ZtWFjG2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>jazz orchestra <a href="https://everynoise.com/engenremap-jazzorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>Jazz</td>
+  <td>United States<br>big band<br>jazz<br>modern big band<br>jazz fusion<br>bebop</td>
+  <td>Gordon Goodwin\'s Big Phat Band &quot;Sing Sang Sung&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/908be4ba764330e365a39346fb04020319c2c80c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jazz-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/66Jq6QfMfBaNXUnjVy2b8k" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5eKFlGWniCD4d70sY7tXGa" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/314LE9ByFgR0eT7YJ1tFW1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0WgNWPSOT1usPboJRLmFWS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7aUtgzyK1piGwF9v5SgbL9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>japanese orchestra <a href="https://everynoise.com/engenremap-japaneseorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>W.Japan</td>
+  <td>Japan<br>orchestra<br>japanese classical<br>japanese classical performance<br>classical<br>chamber orchestra</td>
+  <td>Tokyo Symphony Orchestra<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/53c93ac09402dce322b717fda024e0defc58d9b6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7xH3GEiEieNaG7vD2SAQMV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/01Bay8ZGqdAWbrmLhilR3s" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7uo7xjtZMSXTinPZTBuDNx" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>easy listening <a href="https://everynoise.com/engenremap-easylistening.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra &#x2380;</td>
+  <td>United States<br>adult standards<br>orchestra<br>big band<br>lounge<br>exotica</td>
+  <td>Percy Faith &quot;The Song from Moulin Rouge (Alternate Ta<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f82e4e42d99db8c1808469d66b287c3f81dcc63f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/easy-listening" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5cOUpDneWoE1EJVI3OiMYz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/47RSt6JBM6AbqBxtggW1Jk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6DuNoB4ScA5gnPSx8eFvyx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7g4DR3jZL3nXP8U3jTdF1c" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6msX90qis3Xo77F7b05nYq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>pops orchestra <a href="https://everynoise.com/engenremap-popsorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>Pop</td>
+  <td>United States<br>orchestra<br>classify<br>american orchestra<br>easy listening<br>celtic</td>
+  <td>Boston Pops Orchestra &quot;E.T.: Flying Theme&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1cb122b43a8849399c61533b09d44334360d7cce" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pops-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7JTFTDL5zgAQof8DcSGA5I" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4lsam4Ai2qBD2z5c48CJc5" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1IlbMEkmHX204ylIqCtYYN" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>man\'s orchestra <a href="https://everynoise.com/engenremap-mansorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra</td>
+  <td>United States<br>big band<br>easy listening<br>swing music<br>exotica<br>orchestra</td>
+  <td>Percy Faith &amp; His Orchestra &quot;Rags to Riches&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/72ecc3e688c150592f2fa303e68b0f6741b91b23" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/man\'s-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0u6QfqKBkWjDlZAokM8kXG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6wKQSVUwtqy0SxtBEGQcDs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0t4nyrb4Hb38dkdbbtplLF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7xUFqJucMdePAxD6gMJoZk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/346Fp4C2pV9aoHvvmBn06S" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>salon music <a href="https://everynoise.com/engenremap-salonmusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra &#x2380;</td>
+  <td>Germany<br>tango<br>chamber music<br>schrammelmusik<br>ballroom<br>orchestra</td>
+  <td>I Salonisti &quot;Nearer My God to Thee&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fec63e6db05c4c337a2672ba81af19ea72894b37" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/salon-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2myCZ8d7hWkMpPXBFOvcII" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7ljrQj2akgkpUbpCd0XEoP" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>british orchestra <a href="https://everynoise.com/engenremap-britishorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>W.United.Kingdom</td>
+  <td>United Kingdom<br>classical<br>orchestra<br>chamber orchestra<br>opera<br>choral</td>
+  <td>Royal Liverpool Philharmonic Orchestra &quot;Cavalleria ru<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a9328ebab3b3a8e505c7f8c597ce3652fd84d6ac" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ipGST5S5hO8ltIJvsAh0d" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Mo9RKaNJKLiaTwmEifJmh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1v7c7xon6Wd1YNFlHFWGQU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/69pFSK1V0aWFzG4O8594lt" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6GQVK441dTzSQ5bkW46Knp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>light music <a href="https://everynoise.com/engenremap-lightmusic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra &#x2380;</td>
+  <td>United Kingdom<br>man\'s orchestra<br>easy listening<br>orchestra<br>exotica<br>british modern classical</td>
+  <td>Ernest Tomlinson &quot;Little Serenade&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f34b1ccde0d220653e21bcc960504614ee43505f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/light-music" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7xCsugEOsC8JY3HnlO2op3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/19Lk45ZXIYyC5ZGYqfTNCk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3LXsOp0n4xgmr4eYb8N5JN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6haI6b6SIPRRQWJrKlHaJD" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>orchestra <a href="https://everynoise.com/engenremap-orchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra</td>
+  <td>United States<br>classical<br>classical performance<br>opera<br>easy listening<br>late romantic era</td>
+  <td>Staatskapelle Dresden &quot;Tristan und Isolde, WWV 90: Pr<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a6c28591834f8bc48d9dfb84e07ba3e383a892d5" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0XeLts5pxxUMu1yVfszZj0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1CHbfeI1Ajoa99HnNPESDE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5SQIj4H7e8mamPYuPzTR30" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/36sWLYYTQZeCPaOffO7UMV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1zT7ilOAtzBJmRTdca1eNs" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>string orchestra <a href="https://everynoise.com/engenremap-stringorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra</td>
+  <td>Sweden<br>chamber music<br>classical<br>chamber orchestra<br>orchestra<br>classical performance</td>
+  <td>Budapest Strings &quot;Solomon, HWV 67, Act III: Sinfonia,<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eab00e0dbe8c9c0dc0eb11ca9bc885f16d27282f" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/string-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0F3nPJ43rb5cOUmW1acZwc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0ISHRIOFoODGE7tErYG7CD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7kUsE2LH3O8VGlVmM8F9AY" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>american orchestra <a href="https://everynoise.com/engenremap-americanorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra</td>
+  <td>United States<br>classical<br>orchestra<br>chamber orchestra<br>choral<br>opera</td>
+  <td>Philadelphia Orchestra &quot;Beethoven: Symphony No. 6 in <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/aefa9e8a58f4a6724df103539ad832450175ea20" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/american-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/26cE0ESNU8OiZQC8GYfogY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/27FDMsW1QJGy7TBLjvWqio" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1vmHlTOPchjjuIHZZEzaH7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5aH1dcIZmARu8T5mvxjyPE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/71HxsJ9C6obckCOrtfJFDl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>nordic orchestra <a href="https://everynoise.com/engenremap-nordicorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>W.Sweden</td>
+  <td>Finland<br>orchestra<br>classical<br>chamber music<br>opera<br>chamber orchestra</td>
+  <td>Lahti Symphony Orchestra &quot;Andante festivo for Strings<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7650aaf0ed74d38c6a05ff4d2ecd73d4f5ef1d80" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nordic-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/21XJHjjryWx73JMsWRPtY2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ScPLFNE5pNS9P990RljvH" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bPYNq5e8CuZDUwACQiP3p" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3bBdpTCVUvtA6hWYGAwb9p" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Kqpc8K8OYtIGGqef7ymLR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>fictitious orchestra <a href="https://everynoise.com/engenremap-fictitiousorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra</td>
+  <td>classical<br>classical piano<br>radio symphony<br>requiem</td>
+  <td>Alberto Lizzio &quot;Concerto No. 4 in F minor, Op. 8, RV <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ca4d3255c7b66ccd9613c075ae865254937bb0a8" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/fictitious-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/18xXs6rnIg5bZJGDWFlrP1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7vWzKkx25Ypq6GaaCVN4KK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7kkdIBzdwEibzylwnfVaBw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6W4iuLxQon0LSpsHVVRBLl" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>wind symphony <a href="https://everynoise.com/engenremap-windsymphony.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra &#x2380;</td>
+  <td>United States<br>concert band<br>orchestra<br>chamber music<br>military band<br>wind ensemble</td>
+  <td>Illinois State University Wind Symphony &quot;Incantation <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0b23b7eed9370c68b1c7b0c5ff85bb34bc9edf4a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/wind-symphony" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1xRUBWKlO9o7qSMxUSjhe5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/63wX5h9bggwGr0q0AgdLk6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2V9grMr4WHoDIbKoODaTy1" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7zsICSnWHJtFJegLwYwxB0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/755HTWTpiBE0RvbV2kILWl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>french orchestra <a href="https://everynoise.com/engenremap-frenchorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>W.France</td>
+  <td>France<br>opera<br>classical<br>orchestra<br>requiem<br>choral</td>
+  <td>Orchestre de Paris &quot;Die Walk, WWV 86B - Concert versi<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/66750ba383b8c5403f2d42ad054b540b56b7652b" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/french-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1AeVQb6u2vIvDJyH1NxI4J" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6tdOM6oZTKZc3vYXEtqNlA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6BNEj4u49IZq4Og31BSkOC" title="intro">intro</a></td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>concert band <a href="https://everynoise.com/engenremap-concertband.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra &#x2380;</td>
+  <td>United States<br>wind symphony<br>orchestra<br>military band<br>american contemporary classical<br>chamber music</td>
+  <td>Samuel R. Hazo &quot;Arabesque&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c9c6449eac5260f148e50e06a4adc2c00a237624" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/concert-band" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3oUq6gzfeF7VvQl5AvnfFy" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5z0OFjAuMufpuiuKx7kFIc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2L893bAwCgiMlhvqdhO4CH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7Bs2nwR4FzOZ1chvo3g7ek" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5usq0RzsdYxRxaB0SC6DSp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>chamber orchestra <a href="https://everynoise.com/engenremap-chamberorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra</td>
+  <td>United States<br>classical<br>chamber music<br>british orchestra<br>classical performance<br>opera</td>
+  <td>Orpheus Chamber Orchestra &quot;Serenade in B-Flat Major, <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f91e8341fac8a40b0eb851163046165ec4c05589" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chamber-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0s6pmBY488tLOck5fUMsTX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4jloEP0IHoUZUQHSDekeVG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Z7IsKosokpZmqVA3eL2b2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/30BxQoTsoJhJGGVH8NDhS3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7CRNPjzAGddmdJEn2AyL38" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>orkiestra symfoniczna <a href="https://everynoise.com/engenremap-orkiestrasymfoniczna.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra</td>
+  <td>Poland<br>classical<br>chamber music<br>orchestra<br>chamber orchestra<br>classical piano</td>
+  <td>Polish National Radio Symphony Orchestra &quot;M vlast (My<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e3d62b1ea6d6d74f3a73e90c17faec738b9d1698" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/orkiestra-symfoniczna" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6fNLoBkF53Qxgeb2bzh2Jv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1nQQau2qrarcK8gCZNIwia" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>radio symphony <a href="https://everynoise.com/engenremap-radiosymphony.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra &#x2380;</td>
+  <td>Sweden<br>orchestra<br>classical<br>opera<br>german orchestra<br>nordic orchestra</td>
+  <td>Slovak Radio Symphony Orchestra &quot;Danse macabre in G M<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/10681762ca6e95138a4ffffcc0557f272524737c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/radio-symphony" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/21HjNsnPrMJkKKh0uLNUVA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1xIrUwLiU9RkiEDACmlVip" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2SuMaoNiPt8cID4SOBzGtT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3UxCZqKqtAkR0hpYk5FldQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RwoOlMZZXm6gyayLEq818" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>orchestral performance <a href="https://everynoise.com/engenremap-orchestralperformance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra</td>
+  <td>Europe<br>classical<br>classical performance<br>orchestra<br>opera<br>requiem</td>
+  <td>Eugen Jochum &quot;Bach, JS: Mass in B Minor, BWV 232: Cru<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8ac312ba9a42cb2700b887147f2379738b5b7976" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/orchestral-performance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7J63AyqbGcijwCLqh29xY3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6JQVexIlcd8GRubSpP49t0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Nps7WRzg79YUklitG48Wi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18zVzcga2MNivZbLOtMGgc" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0iNPr1liXMQOrYN5Ux4CFG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>youth orchestra <a href="https://everynoise.com/engenremap-youthorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra</td>
+  <td>Finland<br>orchestra<br>chamber music<br>british orchestra<br>classical<br>classical piano</td>
+  <td>Sim Bol Youth Orchestra of Venezuela &quot;Danz No. 2 - Li<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3ae85d88b9f1669f0df41cf39b74de49651cf7f8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/youth-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1eDhu2E71DzNLdl5XI7zMx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4SNnzqfxrI1Uh1HpOctFTT" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>russian orchestra <a href="https://everynoise.com/engenremap-russianorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>W.Russia</td>
+  <td>Japan<br>classical<br>orchestra<br>opera<br>chamber music<br>chamber orchestra</td>
+  <td>Russian State Symphony Orchestra &quot;Jazz Suite No. 2: V<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/d258fd1d0d1f18d739db33f9953408cc758c58dd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/russian-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7vs4jVyERR6NV94Th5lH2T" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6qvDzwwyh61Er42eBjFVeK" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1v3d2XeRc5G5OchPQSyYWq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5DX2XlB7RA6DTeyzxEcG3w" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>austrian orchestra <a href="https://everynoise.com/engenremap-austrianorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>W.Austria</td>
+  <td>Poland<br>classical<br>opera<br>orchestra<br>chamber music<br>chamber orchestra</td>
+  <td>Wiener Philharmoniker &quot;Symphony No. 5 in C Minor, Op.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2c6373fadfb111b18bdf708d4003a5b92f7df823" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5mO8GMclfAlHGFlueVcjnN" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1IOnsLx8RVuGwGVvOZIXhJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5dFHDn1nLfOaqptdzqO5yH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Q2Q03W8rwDSL1Tpj5pSdo" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>german orchestra <a href="https://everynoise.com/engenremap-germanorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>W.Germany</td>
+  <td>United States<br>orchestra<br>classical<br>opera<br>radio symphony<br>requiem</td>
+  <td>Gewandhausorchester &quot;Symphony No. 9 in D Minor, Op. 1<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/77371c1d13d69b23f21cbbcdb551892974487fc9" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/german-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/278p0GlREvLl05IlRW4t34" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4T0zoIQXRtYSYnT32DCoPW" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6TWSB3ULAuuZ1Gub0tgx4Q" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5TMr2UWDcQ9RFvsN9Xqa5x" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/64QegnqE2crdrfGZLIIjfx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>italian orchestra <a href="https://everynoise.com/engenremap-italianorchestra.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra<br>W.Italy</td>
+  <td>Italy<br>opera<br>classical<br>chamber music<br>classical performance<br>orchestra</td>
+  <td>Orchestra Del Teatro Alla Scala, Milano &quot;Aida, Act II<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/992c1dc97d782efba1bcb632616f2938b3260aeb" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/italian-orchestra" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6A3cj2klmaWmZnaoz7sGvD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0fXHa2e5eKbz5s0xuAX8li" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2rsKCxBY0o6WZC6RFE3yNG" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6XE0AtMhrvqQgmql3908Fi" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>historic orchestral performance <a href="https://everynoise.com/engenremap-historicorchestralperformance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Orchestra</td>
+  <td>Russia<br>classical<br>orchestral performance<br>opera<br>orchestra<br>classical performance</td>
+  <td>Joseph Keilberth &quot;Dvo: Cello Concerto in B Minor, Op.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0ff673912034896b4db33c0038b934d4df19dc8f" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/historic-orchestral-performance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2vpsuJ8cFgfxnmzYznNj98" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3gwOJdannyNpzpyl6MyNb1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/44ncdYK6im0EFRP1X1vf0d" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4uouiMdPZilRPosub6KHjI" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["orquestas de galicia",
+	"epicore",
+	"orchestral soundtrack",
+	"jazz orchestra",
+	"japanese orchestra",
+	"easy listening",
+	"pops orchestra",
+	"man's orchestra",
+	"salon music",
+	"british orchestra",
+	"light music",
+	"orchestra",
+	"string orchestra",
+	"american orchestra",
+	"nordic orchestra",
+	"fictitious orchestra",
+	"wind symphony",
+	"french orchestra",
+	"concert band",
+	"chamber orchestra",
+	"orkiestra symfoniczna",
+	"radio symphony",
+	"orchestral performance",
+	"youth orchestra",
+	"russian orchestra",
+	"austrian orchestra",
+	"german orchestra",
+	"italian orchestra",
+	"historic orchestral performance"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 29: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 29: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>

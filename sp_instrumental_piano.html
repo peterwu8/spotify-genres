@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instrumental.Piano: (53 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Instrumental.Piano: (53 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>piano house <a href="https://everynoise.com/engenremap-pianohouse.html" title="&#x2306;">&#x2306;</a></td>
+  <td>House<br>Instrumental.Piano</td>
+  <td>United Kingdom<br>uk dance<br>deep groove house<br>acid house<br>classic house<br>chill house</td>
+  <td>N Joi &quot;Anthem&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0e6fd0671bb2e0c033f4497f68b57b47c7ff572b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-house" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4J5jQJJmLH65ldE7wTbTOE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4JTbjpQmuLtfLzIkAH52Jt" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7M6Ah3ZU5uFYaQqs7Zx8XO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rEwWT30cVLd7SVM6Ht8bZ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>piano rock <a href="https://everynoise.com/engenremap-pianorock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano<br>Rock</td>
+  <td>United States<br>emo pop<br>neon pop punk<br>singer-songwriter<br>neo mellow<br>pop punk</td>
+  <td>Jack\'s Mannequin &quot;Dark Blue - 2015 Remastered&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/12219c6fd17e96b5196e2ec083d825ee8d13b8e3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1tbECKFOOJq0OvlINewkEv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5rVVQKO7UFXkwpt7jF1Ne4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/59m3fWLfWaAvttDLSKYYC9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3sErADyGTciPxpB0kELZdC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6kc1gUJfG00u0ECZHNs9D2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>old west <a href="https://everynoise.com/engenremap-oldwest.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano &#x2380;</td>
+  <td>United States<br>ragtime<br>honky-tonk piano<br>honky tonk<br>gothic country<br>boogie-woogie</td>
+  <td>Franky  Flint &quot;The Homestead&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4594e02056fb59c5c7e01cfb7033012b3d67f4c2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/old-west" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1qnPkbrYWg1CPgQwrynUyS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5fEBnwOg3ZvXZVCG9uRXWX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5FsMPdMNS7YsOBDkRR4E6e" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/77VrPgBlHc5WtJPGD2mYVc" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>honky-tonk piano <a href="https://everynoise.com/engenremap-honkytonkpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano</td>
+  <td>United States<br>ragtime<br>honky tonk<br>old west<br>boogie-woogie<br>exotica</td>
+  <td>Crazy Otto &quot;Glad rag doll&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c15d503c668280f553fff66afa03becf8302e376" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/honky-tonk-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Q2LMw1PxNmx7R25zcKuHb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5GoMuz5RLIBWPsb8NExeYc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3OfMnH0KQz7oWClFdIvyCk" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4icFlWQtnxfatAHP62HfA8" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>prepared piano <a href="https://everynoise.com/engenremap-preparedpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano</td>
+  <td>Germany<br>avant-garde<br>free jazz<br>drone<br>minimalism<br>experimental</td>
+  <td>Grandbrothers &quot;Bloodflow&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1dc06a2c8fcbaba9933dcfa7046f83bb36af75fc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/prepared-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0pmfM4T3537PLCO59tyFmw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0KecgPjeyjAn9T2d5PNTwN" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>anime piano <a href="https://everynoise.com/engenremap-animepiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gaming<br>Instrumental.Piano<br>W.Japan</td>
+  <td>Japan<br>anime<br>japanese vgm<br>otacore<br>anime lo-fi<br>scorecore</td>
+  <td>Mugi Piano &quot;The Loneliest Girl (From &quot;Carole &am<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e0c601e3a2a15532086b58f34ec87627a02ee1c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/anime-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5uaIlZXxKmve27CHRgzzxI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0KaPnh3dANNTOnqXlegsON" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/33Ijo26TCXS5IBZP6TH16A" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6GzXZgdhPRhnWpimuTettQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6RR3vn4KVdZfAP6UkXYj7M" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>classify <a href="https://everynoise.com/engenremap-classify.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano &#x2380;</td>
+  <td>Philippines<br>cello<br>classical piano<br>christmas<br>piano cover<br>orchestra</td>
+  <td>Amanda Crow &quot;Someone Like You - Piano Version&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/76fb5a8eb8b6d6fe2a259e135df33996bf488c31" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classify" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4cBMVj0rmU2QCLJXqBUQ6J" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6E9uHw2nQR9XPP4DGrBUcl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4UJ6NUhduAho23YnBlS8Fx" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6EKcZLPXBAtSsmELQISf1s" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2LXXYVtv57IhwYaSKulcIS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>piano mpb <a href="https://everynoise.com/engenremap-pianompb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano</td>
+  <td>Brazil<br>brazilian jazz<br>bossa nova<br>brazilian modern jazz<br>latin jazz<br>mpb</td>
+  <td>Gilson Peranzzetta &quot;Com Que Roupa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/648ea5bb5522dd0e1f88927375a2aa49e86a2ab9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-mpb" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/36LehOzeIqshAIckk3B0Xj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7GnFQMK9qCeEFN0BAxFvW7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1tCcfQXH8uPIHF9COvx7qj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2v5RCWGBXOCXUnGGiRlcjw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3WpFFYjb4STDroiU98KL5S" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>piano worship <a href="https://everynoise.com/engenremap-pianoworship.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>Instrumental.Piano</td>
+  <td>United States<br>instrumental worship<br>vbs<br>pianissimo<br>lullaby<br>ragtime</td>
+  <td>Jesus Raymond &quot;I Surrender All&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6436cf6f2195eb5c492eeacefae8b1e59f49fb89" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-worship" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0f8v6eB0wl30mH0A3OczSP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5lVuY5dJVBbAYLA0L9KJix" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1zNQbW4xfulbFenux4ZiLR" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1AGnOBvs0TAzQdhwlcCsEc" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/45E8lNp7td40jDTVB8iRcD" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>piano blues <a href="https://everynoise.com/engenremap-pianoblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues.Soul<br>Instrumental.Piano</td>
+  <td>United States<br>boogie-woogie<br>blues<br>classic blues<br>boogie<br>ragtime</td>
+  <td>Big Maceo &quot;Worried Life Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/874cb01616800577a04c7dcb97b41090443991cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4KAZYOVAL8AMZYVjC97aKv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/58hb46oJEDVQJxoew4Er8q" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5SJCu20SO0hwlIGxBONR4D" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mupC5Ht58DW5oo0XHZRff" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4jGqV2taOxFWaotEAa73PN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>modern jazz piano <a href="https://everynoise.com/engenremap-modernjazzpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano<br>Jazz</td>
+  <td>United States<br>jazz<br>contemporary jazz<br>jazz piano<br>latin jazz<br>free jazz</td>
+  <td>Gerald Clayton &quot;That Roy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/91d24a6d1521d65c7d45e8ab5a84751ae5434bbd" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/modern-jazz-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Mob19GnGfcDZ8YBTnzFO8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7fxBCO4CXLWl2mYNe8Jjg0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5r0ziVtK1Lt8tSd7cqzkIC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3xjdIjmLct5g9RR0GLptLj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6o27g53Ot4ZnUNvjk5Lv7f" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>piano cover <a href="https://everynoise.com/engenremap-pianocover.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano</td>
+  <td>South Korea<br>lullaby<br>calming instrumental<br>focus<br>korean instrumental<br>classify</td>
+  <td>Mary Lou Stephens &quot;I\'m Yours&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8db90e87edbea228ba88d9c33f406e48019a654f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-cover" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1GDZrDdaEqilPZTiU5wfDn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6yGAwVDOmgKVKM4XDLNoVR" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Xxpr1if2q3u1SeBlK0uPw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0CVAmwCzTd9jhGAazpAP23" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/696UNHHZP2fHveeliPiKp1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>classical piano quartet <a href="https://everynoise.com/engenremap-classicalpianoquartet.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Argentina<br>chamber music<br>chamber ensemble<br>tango</td>
+  <td>Amara Piano Quartet &quot;Piano Quartet No. 1 in C Minor, <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f5f8f396cf359b596f40b33cbe0566df067eb541" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-piano-quartet" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/50SIcSsnLJDkVc0UKGFyFv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3o54yxPRl7qCZhZKGpp5IE" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>japanese piano <a href="https://everynoise.com/engenremap-japanesepiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano<br>W.Japan</td>
+  <td>Japan<br>japanese classical<br>j-ambient<br>neoclassical<br>japanese indie<br>neo-classical</td>
+  <td>Itoko Toma &quot;Erica&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/eee229c7d6efb7b40af432c886b827319b30ecb6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6rkN5keF1JyxjKTOjp7JEZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2pGRSENDZrRPtxsf7pSBhJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Vo6LkmwsCRi1V3lNkjyYh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5RXpYJxmffugotHwArxDHb" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Z534LxBk8XCUMiQmCdhWH" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>pianissimo <a href="https://everynoise.com/engenremap-pianissimo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano &#x2380;</td>
+  <td>China<br>brain waves<br>classical piano<br>calming instrumental<br>atmosphere<br>relaxative</td>
+  <td>Eleonore Baumann &quot;Watching the Sunset&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bddbbd65a8a088398e830e6c40739d595ef0f6c4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pianissimo" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Xyryh4C6PxRDJqvLxHtay" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3nN6qe9G9sTyORJ1KKyMaq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Z1ZF29ddcukVgYG8s51fI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1SKSNdyTq7PMomQWq4v9XX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/42tzEGJ6iavCMQnKbHlOZV" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>jazz piano <a href="https://everynoise.com/engenremap-jazzpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano<br>Jazz</td>
+  <td>United States<br>jazz<br>cool jazz<br>hard bop<br>bebop<br>contemporary post-bop</td>
+  <td>Cedar Walton &quot;Blues For Myself&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fd91e3f81c61a3f1710fa441d62036bde5d6a8b1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jazz-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0eiQ2RNqxhVIeOGZmrI3pD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5KudWqpwRKdH5CY6yQ1nwA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2GwS90TxqDAjgfGGFMzIyB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/33wywx1LLfiRH7T7tdsqaU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6J46py9Q8r9dV6skjXfT4m" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>barrelhouse piano <a href="https://everynoise.com/engenremap-barrelhousepiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>House<br>Instrumental.Piano</td>
+  <td>United States<br>blues<br>boogie-woogie<br>piano blues<br>ragtime<br>classic blues</td>
+  <td>Champion Jack Dupree &quot;Junker\'s Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bf19fa3b7998b10f960bffd2da908ecafe2090b0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/barrelhouse-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/433lQFPUk2icsRmEK6RjCW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7FdGVAxDb8iB96NFXOiVMe" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1wVsoutGCuIyh7Ff4O2ZIQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18ciexxJiRQCodT4O58nMZ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>historical keyboard <a href="https://everynoise.com/engenremap-historicalkeyboard.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano &#x2380;</td>
+  <td>Austria<br>chamber music<br>classical piano<br>classical<br>harpsichord<br>historically informed performance</td>
+  <td>Andreas Staier &quot;Variations on an Original Theme in A-<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/289b81d7c9a13d5bc6eeed30a67ef61b471e4cf2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/historical-keyboard" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6unWU1WWFpTeQyxAPW8wzl" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1DIyRhN8JzZ1Y54dAJp8HC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7hCxKd35ieo21dAInGzWag" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1DNY7xsJ8aN9UUs3n8HpET" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3ZkufyfMUFBvpwIvum8S2g" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>british classical piano <a href="https://everynoise.com/engenremap-britishclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.United.Kingdom</td>
+  <td>United Kingdom<br>classical piano<br>classical<br>chamber music<br>historic piano performance<br>choral</td>
+  <td>Paul Lewis &quot;Sonata No. 14 &quot;Moonlight&quot; in C-<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4423bbe58e0471b17db02036ac93f9e1696dc663" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2o9JmMlk7PE8AaGfwXUKgH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1B6F2FbtDNniCVjROeU0ga" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2nHgdLOws07MjsE7rmYJ5U" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6HNMbVGTJb73PV53yUHTHN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7z0a6r27PRCwctqrgzhAzq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>contemporary classical piano <a href="https://everynoise.com/engenremap-contemporaryclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Japan<br>avant-garde<br>minimalism<br>classical piano<br>neoclassical<br>experimental</td>
+  <td>Nicolas Hodges &quot;Adams: Hallelujah Junction: 1st Movem<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4d09cb0ff1f2d0982290b64883df3fb4de15b8bf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/contemporary-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7yaYp1n1jPtdz0Io8irZKF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5ouCntxKITX88EkEogQZjz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3MI3keOz4qzshf4KkYKQtf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0KG6CJMlK6nvvRmXy3qPCU" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>american classical piano <a href="https://everynoise.com/engenremap-americanclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>United States<br>classical piano<br>classical<br>chamber music<br>ragtime<br>minimalism</td>
+  <td>Joseph Banowetz &quot;6 Chants polonais, S. 480: No. 2, Fr<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1cdbfd66aa4a6e18505cc3d016191bda890b0064" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/american-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4kP2pkztj5eO1Uuiwz7n0L" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4bvyIQgxpp1YmiEUOvyFcL" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3HiLZARVAgMoIEfGtHfgFC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZfuXP5QvbSgTJ48YohSCE" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5yVqeJO15J2rzN07MNMMmt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>japanese classical piano <a href="https://everynoise.com/engenremap-japaneseclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Japan</td>
+  <td>Japan<br>classical piano<br>japanese classical<br>japanese classical performance<br>classical<br>chamber music</td>
+  <td>Mao Fujita &quot;Ave verum corpus, K.618 (Arr. for Piano b<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/75d3be6db71cef14d298e5b385d45b7491a1a79d" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2e0gq6PC00oPEFGaq4Q4D6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2xCFXS4di9R2XWQebiA5lv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1cSdW42HWxvv9S89UEjxv6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3RLKBwG3tmWdia2TyisM2k" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1cgoqBLFcErVveg0myFcDt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>new age piano <a href="https://everynoise.com/engenremap-newagepiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano<br>Soundtrack.New.Age</td>
+  <td>Japan<br>new age<br>neo-classical<br>neoclassical<br>instrumental worship<br>space music</td>
+  <td>Joe Yamada &quot;Chasing the Dream&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0784e3faf7fb6a29e3c2442411412e0bcad48558" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-age-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/39u5Ht4he0ylkhWoNajpI8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3z3YJH7rEJWuaVqggQaHnI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0J8DKA10YF7SOygeUYTxzV" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/06ErX6daanvbqhBp7LXPc7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6AUtSj2kOPTITWGMo02bkU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>korean classical piano <a href="https://everynoise.com/engenremap-koreanclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Korea</td>
+  <td>South Korea<br>classical piano<br>korean classical performance<br>classical<br>neoclassical<br>chamber music</td>
+  <td>Seong-Jin Cho &quot;Suite bergamasque, L. 75: III. Clair d<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9ed82399ca9f16b38db2d5b39d77d59dc864822c" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/46w9Q2OzIJe3v0uIjFq0y0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3Bb1Rfc7TbQOHCMm4MHgCj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2POyo3s40N7s4qUrv1WJgY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RTiUN1RXrvcvutMz6ehdt" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>italian classical piano <a href="https://everynoise.com/engenremap-italianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Italy</td>
+  <td>Italy<br>classical piano<br>classical<br>chamber music<br>neoclassical<br>minimalism</td>
+  <td>Maurizio Pollini &quot;Nocturne No. 1 In B Flat Minor, Op.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ca61a2c8a205da988ebe452c607d65eb92f25773" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/italian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5gQwWzYFunrE4ptqR1Ojx0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0TwTZK6NU4aTwNvDYGePPN" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4eQNSJHVnjMxG5fdzAitNM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1HEe5MFbfaq7Jiha6b4shS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6oDw2JwxUztbLGWiRQaUKc" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>german classical piano <a href="https://everynoise.com/engenremap-germanclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Germany</td>
+  <td>Japan<br>classical piano<br>classical<br>chamber music<br>classical performance<br>symphonic rock</td>
+  <td>Tal &amp; Groethuysen &quot;16 Waltzes, Op. 39 (Version fo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0662724ebecfb196e53ec80dfbb91333e43fbb9e" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/german-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ak9BLcz8Pm5MCf5ET2HVz" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2kmpwFIajNRGX0F4s4TnaX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pspRw7kSFiwanrQmqUQdc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4T6scPt5fFnrG4Ot1BRQug" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4eDedg9Upy6Zd77gMjLbdZ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>background piano <a href="https://everynoise.com/engenremap-backgroundpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano</td>
+  <td>Spain<br>neo-classical<br>neoclassical<br>classical piano<br>lullaby<br>classical</td>
+  <td>Domi Nova &quot;Night Clouds&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9783181e73bf5669de7bae78381a7cd9ce255184" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/background-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ONAq4bQJRIZ2GsHkNEgpO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/66O4FigZBxS4Tz80TbZ9Zc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0O3cf9WPXl2NJ5LwZZScyj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0myeeljW5iTEoxSSnaVtYU" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2bCDEuGqTJLKTTDviMt7g2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>classical piano duo <a href="https://everynoise.com/engenremap-classicalpianoduo.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Belgium<br>classical piano<br>minimalism<br>chamber music<br>classical<br>turkish classical performance</td>
+  <td>Katia &amp; Marielle Lab &quot;Experiences No. 1&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1cf416b3d3fe0eb97fad749709dafa1289854c61" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-piano-duo" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3k4TfGYoK5ZBG5EFMLBweo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0U3TK5FgP7SbKWePe8OSKP" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>nordic classical piano <a href="https://everynoise.com/engenremap-nordicclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Sweden</td>
+  <td>Sweden<br>classical piano<br>chamber music<br>classical<br>swedish ballads<br>classical performance</td>
+  <td>Einar Steen-N &quot;Lyric Pieces, Book 1, Op. 12: Arietta&<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9bdbda238da1b6ffb4b2614d874c1ef6ae312627" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/nordic-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/42zt7h5dR61rOPr2MApnkB" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0SETcL76TBGpA8SNODzRTI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5FDLWkqw67XhVUzCQ84otf" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2QYD1DiNjDY84RnPnbZM5A" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/65N10HaTjI1PPlJIW5pLgj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>australian classical piano <a href="https://everynoise.com/engenremap-australianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Australia</td>
+  <td>Australia<br>classical piano<br>classical<br>chamber music<br>australian classical<br>ukrainian classical piano</td>
+  <td>Elena Kats-Chernin &quot;Lullaby for Nick&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c2a5e2552c767f04250325c53699ffea80064592" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3KUNdN2hG0NSlDcGOqH7Ky" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5C9kvuGBcAUNipqfGNmq83" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1Eb0tIkyst9ntCRn22pNQF" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ln002EmgaSQClTZoLeORG" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>dutch classical piano <a href="https://everynoise.com/engenremap-dutchclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Netherlands</td>
+  <td>China<br>classical piano<br>minimalism<br>chamber music<br>classical<br>historical keyboard</td>
+  <td>Lucas Jussen Was mir behagt, ist nur die muntre Jagd&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e0bf794b2d3ea3bb6d7b3b4ac1978cb5ccdaaca4" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dutch-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1nfdNJybIPNBZHCZnLIOzL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3V8nD3NiWXtxPsaUhquOhC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4yKIYXI6vDH3g7uVhuM9e5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7MiWnwQp19vcrDXiOqczMd" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>canadian classical piano <a href="https://everynoise.com/engenremap-canadianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Canada</td>
+  <td>Canada<br>classical piano<br>classical<br>chamber music<br>minimalism<br>avant-garde</td>
+  <td>Glenn Gould &quot;Goldberg Variations, BWV 988: Aria&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fadbeb4f372bd288505f0d9c2d4462d83fffb510" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/164jD829bL6Li6axDe3Zta" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5U3GNko34JUJg2j4sTQpGb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3aUk5ENcILXzlN0sD2LoPl" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3sW1dooth5cGxvfANYNIT2" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>balkan classical piano <a href="https://everynoise.com/engenremap-balkanclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Balkan countries<br>classical piano<br>classical<br>chamber music<br>minimalism<br>neoclassical</td>
+  <td>Ivo Pogorelich &quot;Pictures at an Exhibition: Promenade.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1b46b0d9dfd50a702ad16105a5bc72c97892a24f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/balkan-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2hYZGWrXoQ5Wre5laLO7ua" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0mR6UfEMka4Lr5lodu6mUK" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>spanish classical piano <a href="https://everynoise.com/engenremap-spanishclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Spain</td>
+  <td>Spain<br>classical piano<br>classical<br>neoclassical<br>chamber music<br>kuduro</td>
+  <td>Javier Perianes &quot;Lyric Pieces, Book 1, Op. 12: I. Ari<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/283ed15b648b25b3ca364a7cc556d97c3094fbab" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/20BdAQNETyGLE4WSMfcKi7" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/22p4K2fHv3OEmaAQeXFs8y" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>israeli classical piano <a href="https://everynoise.com/engenremap-israeliclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Belgium<br>classical piano<br>classical<br>chamber music<br>russian classical piano<br>american classical piano</td>
+  <td>Daniel Barenboim &quot;Nocturne No. 2 in E-Flat Major, Op.<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4ab1c15237630e4731617f9f682387401300f03e" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/israeli-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5phBvWA0PKBT9wIuptSjSS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0cgmdn2oo9pnVlJwdpQaT0" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Ssa0qfXFchEOqsfLfw50w" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mkD8Glpues4vYSsdwO8uK" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>latin american classical piano <a href="https://everynoise.com/engenremap-latinamericanclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Latin.America</td>
+  <td>Colombia<br>classical piano<br>classical<br>musica mexicana<br>chamber music<br>tango</td>
+  <td>Martha Argerich &quot;Kinderszenen, Op. 15: 1. Von fremden<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/088b966a7f7db3567e10d1e6bdd7a2923f3ac074" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/latin-american-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/17DcArmt0awFlsgE0c8bfo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7u5l82eY5aEZ2WN4PMxJ6K" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5iHXD4a3cWLLb5y1GiMJT0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5v05UvpVP8hYxOtCM4y3kE" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>classical piano trio <a href="https://everynoise.com/engenremap-classicalpianotrio.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Spain<br>chamber music<br>classical<br>classical piano<br>tango<br>neoclassical</td>
+  <td>Trio Wanderer &quot;Piano Trio No. 2 in E-Flat Major, D. 9<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f734f5d1a9172dba77bc56854b48f7d739e0fe5e" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-piano-trio" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4TR7bshcZUj9aYWGwVjbhV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4hW3PF8Guu6YsdiZoAE2Oi" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ZtnqTwfLe546kXvABPuxi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5UC7ALPAcURsRtgZZ9O4EY" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>classical piano <a href="https://everynoise.com/engenremap-classicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Japan<br>classical<br>classical performance<br>chamber music<br>post-romantic era<br>impressionism</td>
+  <td>Arcadi Volodos &quot;Sechs Klavierst, Op. 118: II. Interme<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/83e86903458eda0bd082214175d2bb75ceffdc64" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4X3PtpVWm5dtTuqDXw3zgJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2d32hJkHO6816u3Iho8NMC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5eyD2m6CYtexPLJVsbPOsL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3cY5t0Z4GeS320bwzDG9CR" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7jdLZMf6irVDWcJ1TvzdhY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>chinese classical piano <a href="https://everynoise.com/engenremap-chineseclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.China</td>
+  <td>China<br>classical piano<br>chinese classical performance<br>classical<br>traditional music<br>japanese classical</td>
+  <td>Lang Lang &quot;Liebestraum No. 3 in A-Flat Major, S. 541 <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a3f2cb8e5bc8f64631d7087fc779e1d7ec3515ae" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/30ws3VjBHoK4Hjo3dzLhcV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4X5NadJ9dnHyKd2vLILC7v" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2ppqZma80J95aOXJZ78zX3" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4N707glnemKav6Vwq3SEYS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>brazilian classical piano <a href="https://everynoise.com/engenremap-brazilianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Brazil</td>
+  <td>Brazil<br>classical piano<br>classical<br>piano mpb<br>chamber music<br>brazilian jazz</td>
+  <td>Nelson Freire &quot;Nocturne No. 1 in B flat minor, Op. 9 <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f20dc20ec44690c964394096e435d4cd42b82929" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/511ccUAzh7xZk3zy6GnteL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6c2XUzTGkczJ3WZ6e3uvbL" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3yjDgXXk8FvPgrl22VQAwt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/671Z4bdeXx64mNdabfiUU7" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>swiss classical piano <a href="https://everynoise.com/engenremap-swissclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Switzerland</td>
+  <td>Iran<br>classical piano<br>chamber music<br>classical<br>avant-garde<br>historic piano performance</td>
+  <td>Francesco Piemontesi &quot;Preludes, L. 123, Book II: V. B<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cccec55972dcaf6237df6289fbfe0e5f6c215efb" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swiss-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3JA1ioHSLxoZO5Fj4cPrQI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/38R6g7ojpzP4weT7JspODa" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>austrian classical piano <a href="https://everynoise.com/engenremap-austrianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Austria</td>
+  <td>Austria<br>classical piano<br>chamber music<br>classical<br>avant-garde<br>classical performance</td>
+  <td>Alfred Brendel &quot;Fantasia in D Minor, K. 397&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/31d36178770bbf91924d0ce1215c8294c3ffd628" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/austrian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2dH8YPzHqdZ5UpZ4O6Vir4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7henJ3D2euaPqsF2zGnkiS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5vY3vbyq6XDPE9qPTUvodw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7DiOxoSKhH4g7bEJNUxNvJ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>caucasian classical piano <a href="https://everynoise.com/engenremap-caucasianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Caucasus region<br>classical piano<br>classical<br>chamber music<br>caucasian classical<br>neoclassical</td>
+  <td>Khatia Buniatishvili &quot;St, S. 560 (Trans. from Schwane<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8b83ef901a39084cfe8c3c1ccf4a4567fad3da1c" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/caucasian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0WFDz9fIyquTcmvgDMZPgx" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4KFZyroHoCu4C8Dd4dRhM4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4pAWcFequAi2kRM99hfdGU" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0MhqLX94luiXZqqYd4dfsP" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>french classical piano <a href="https://everynoise.com/engenremap-frenchclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.France</td>
+  <td>France<br>classical piano<br>classical<br>chamber music<br>minimalism<br>historic piano performance</td>
+  <td>Bertrand Chamayou &quot;Ravel: Pavane pour une infante d, <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/759005c6c03aa4ebaec877f61df7f36d011cdfb3" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/french-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/390QIHRT50E9YeMlYK5LKL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2KkLEZecIyFOblj7RdJQDI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/18PmGxyDdrlDcSDST824c5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2NQ100KiTNVDllZKfdb2fA" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/00ZvOTOZqzKhYY9pS96FOn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>romanian classical piano <a href="https://everynoise.com/engenremap-romanianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Uruguay<br>classical piano<br>classical<br>chamber music<br>israeli classical piano<br>historic piano performance</td>
+  <td>Radu Lupu &quot;4 Impromptus, Op. 90, D.899: No. 4 in A Fl<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/20671537a0f451b14d4949c41c1ac24f52eb708e" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/romanian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1YWyGnjbO2TXiO33QYl8ZC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6JO6Yci8XeTZKmiMigOgXY" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>hungarian classical piano <a href="https://everynoise.com/engenremap-hungarianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Hungary</td>
+  <td>Hungary<br>classical piano<br>classical<br>chamber music<br>hungarian classical performance<br>historic piano performance</td>
+  <td>Andr Schiff &quot;Piano Sonata No. 17 In D Minor, Op. 31, <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2406f73c8ad7d956cc40a6d05cd9018480a872ef" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/hungarian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3duxBRfkaNp8gCRPEUebej" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5rZ75TobmwrURStRuCfugO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3PaD95cdbLxhFms8yVqBiH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0KfYTnaj3Bvhac4byiYfAS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>historic piano performance <a href="https://everynoise.com/engenremap-historicpianoperformance.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Piano</td>
+  <td>Germany<br>classical piano<br>classical<br>polish classical piano<br>russian classical piano<br>ukrainian classical piano</td>
+  <td>Ignaz Friedman &quot;Flute Sonata in E-Flat Major, BWV 103<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/25254b7520f24d032a7ca38106e22a2583f38c50" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/historic-piano-performance" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2d7O3nzHEqP7nmAvwoh3wK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5MXw4i9pRhleia2mDgrnbu" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6joyx6uK9RjHeyO7rsPGAJ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5IQchKmLDlBziJ6ZO6Jl0U" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>ukrainian classical piano <a href="https://everynoise.com/engenremap-ukrainianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Ukraine<br>classical piano<br>classical<br>chamber music<br>ukrainian classical<br>historic piano performance</td>
+  <td>Valentina Lisitsa &quot;Piano Concerto No. 2 in C Minor, O<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6e1d905c72a360937bb898a4744a19cd6a1a6bff" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ukrainian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6VuL4Wabn3J6q5gzOow1e4" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ocyo0QqyIpbwsmGrgpgyG" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4teaOrpzbunkijSQsL3eLN" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1SNQiBSuGZ382ARjXn1uL4" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>russian classical piano <a href="https://everynoise.com/engenremap-russianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Russia</td>
+  <td>Austria<br>classical piano<br>classical<br>chamber music<br>historic piano performance<br>classical performance</td>
+  <td>Mikhail Pletnev &quot;Chopin: Nocturne No. 20 in C-Sharp M<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e6c85252b818afd6bb03fe316cbac3716665df82" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/russian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0sRwR51yXGo8xSlOmkGQDv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7tgHKaqrxEJdesPpK8pVY2" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3YtIOChWjS6IKsC3ixl8X0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7E5BxH4J4CWmmDS1ZmqptZ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1MbJGw2bDHPx8RftqWOkhe" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>belgian classical piano <a href="https://everynoise.com/engenremap-belgianclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Belgium</td>
+  <td>Israel<br>classical piano<br>chamber music<br>avant-garde<br>classical<br>historic piano performance</td>
+  <td>Jean-Claude Vanden Eynden &quot; Dolly , 6 pi pour piano  <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e8d282dd013a8cf3b5fa8e3377b0db566243b20e" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2VugjDsyXVP4XEdCVabYll" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4UQti246d8vnBvGLBCaJ2o" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>51</td>
+  <td>baltic classical piano <a href="https://everynoise.com/engenremap-balticclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano</td>
+  <td>Estonia<br>classical piano<br>chamber music<br>classical<br>neoclassical<br>choral</td>
+  <td>Lukas Geniusas &quot;Pr in C-Sharp Minor, Op. 3 No. 2 (Len<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/627a7b0d68f165ff55898407626b072e944b69b2" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/baltic-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5idHz0ovvcNytmLBaPbSbt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ocwYOhhO6ayIfYSHDvMfF" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>52</td>
+  <td>czech classical piano <a href="https://everynoise.com/engenremap-czechclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Czech</td>
+  <td>Czech Republic<br>classical piano<br>chamber music<br>classical<br>neoclassical<br>czech classical</td>
+  <td>Ivan Klansky &quot;On the Overgrown Path, Series I: No. 1,<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fa1e8f141454e6beae8f9fbfe441895cdf282129" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/czech-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1K4Hrw4zygQgqsorVpNVE8" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4SAT9xwBIpqrUb4s09qrwC" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>53</td>
+  <td>polish classical piano <a href="https://everynoise.com/engenremap-polishclassicalpiano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Classical.Others<br>Instrumental.Piano<br>W.Poland</td>
+  <td>Poland<br>classical piano<br>classical<br>historic piano performance<br>chamber music<br>neoclassical</td>
+  <td>Krystian Zimerman &quot;Ballade No. 1 in G Minor, Op. 23&q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bcb93bf6a61dbdeb0067f537e91880f394078a66" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-classical-piano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3o9Oe3WvFWK4kedUKvB6Eu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2YxhESpDtgBdXr2AkOouvv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1rye8EODl6PI0GxbxJGgCy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3mEP5ewpqLvjk3gduGrSN8" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["piano house",
+	"piano rock",
+	"old west",
+	"honky-tonk piano",
+	"prepared piano",
+	"anime piano",
+	"classify",
+	"piano mpb",
+	"piano worship",
+	"piano blues",
+	"modern jazz piano",
+	"piano cover",
+	"classical piano quartet",
+	"japanese piano",
+	"pianissimo",
+	"jazz piano",
+	"barrelhouse piano",
+	"historical keyboard",
+	"british classical piano",
+	"contemporary classical piano",
+	"american classical piano",
+	"japanese classical piano",
+	"new age piano",
+	"korean classical piano",
+	"italian classical piano",
+	"german classical piano",
+	"background piano",
+	"classical piano duo",
+	"nordic classical piano",
+	"australian classical piano",
+	"dutch classical piano",
+	"canadian classical piano",
+	"balkan classical piano",
+	"spanish classical piano",
+	"israeli classical piano",
+	"latin american classical piano",
+	"classical piano trio",
+	"classical piano",
+	"chinese classical piano",
+	"brazilian classical piano",
+	"swiss classical piano",
+	"austrian classical piano",
+	"caucasian classical piano",
+	"french classical piano",
+	"romanian classical piano",
+	"hungarian classical piano",
+	"historic piano performance",
+	"ukrainian classical piano",
+	"russian classical piano",
+	"belgian classical piano",
+	"baltic classical piano",
+	"czech classical piano",
+	"polish classical piano"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 53: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 53: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>

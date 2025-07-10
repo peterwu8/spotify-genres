@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Trap: (89 genres)</title>
+    <title>Trap: (88 genres)</title>
     <style>
     table {
       border-spacing: 0;
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <p>
 
-<strong>Name:</strong> Trap: (89 genres)<br>
+<strong>Name:</strong> Trap: (88 genres)<br>
 
 <strong>Notes:</strong><br><ul>
   <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
@@ -1222,19 +1222,6 @@ document.addEventListener("DOMContentLoaded", function() {
 </tr>
 <tr>
   <td>88</td>
-  <td>mambo <a href="https://everynoise.com/engenremap-mambo.html" title="&#x2306;">&#x2306;</a></td>
-  <td>Trap &#x2380;</td>
-  <td>Cuba<br>chilean trap<br>reggaeton chileno<br>urbano chileno<br>rkt<br>merengue</td>
-  <td>Orquesta Arag &quot;Qui Sempre&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ad9273bb7bfc609946745f227506705989eb61b0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
-  <td><a href="https://www.chosic.com/genre-chart/mambo" title="info">info</a></td>
-  <td><a href="https://open.spotify.com/playlist/40wo1G99DcqeId95u53O4y" title="chosic">chosic</a></td>
-  <td><a href="https://open.spotify.com/playlist/7pBdTAU2WIt4hx9jL9LKqo" title="playlist">playlist</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/0v0LrjZ6QQ2ZpSFS8Khs9T" title="intro">intro</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/7oFx9kcnJvEDVCbRLLKZek" title="pulse">pulse</a></td>
-  <td><a href="https://open.spotify.com/user/particledetector/playlist/6jG3QjPFYLQuZioJ0qqLls" title="edge">edge</a></td>
-</tr>
-<tr>
-  <td>89</td>
   <td>canzone napoletana <a href="https://everynoise.com/engenremap-canzonenapoletana.html" title="&#x2306;">&#x2306;</a></td>
   <td>Trap &#x2380;</td>
   <td>Italy<br>neomelodico<br>italian trap<br>rap napoletano<br>italian hip hop<br>neomelodici</td>
@@ -1408,7 +1395,6 @@ let genre_names_array = ["trap beats",
 	"traphall",
 	"trap tuga",
 	"trap angolano",
-	"mambo",
 	"canzone napoletana"];
 
 
@@ -1427,7 +1413,7 @@ let genre_names_array = ["trap beats",
     }
     currentAudioIndex++;
     if (currentAudioIndex < audioElements.length) {
-      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 89: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 88: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
       audioElements[currentAudioIndex].play();
 
         // Set a timeout to pause the audio after duration is met
@@ -1469,7 +1455,7 @@ let genre_names_array = ["trap beats",
 
   function startAudioScan() {
     startedAudioScan++;
-    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 89: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 88: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
     audioElements[currentAudioIndex].play();
     scanButton.disabled = true; // Disable the button after starting the scan
     pauseButton.disabled = false;
