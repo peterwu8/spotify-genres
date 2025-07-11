@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W.Arab: (22 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> W.Arab: (22 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+  <li>Arab is a top consumer of the genres in this collection.</li>
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>arab electronic <a href="https://everynoise.com/engenremap-arabelectronic.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Synth.Electronic<br>W.Arab</td>
+  <td>Arab countries<br>organic house<br>tribal house<br>afro house<br>organic electronic<br>gnawa</td>
+  <td>Recham &quot;Yasameen&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a727a6c97d4602c1205206480f6de952c3e838e0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arab-electronic" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ya6HeTEC4CPfo9p6obNEH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/19Xxt5xhpzYMi9z4grHrnb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7dIYsVH0RBZwyDwLHYysJ5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4m0QiKupCnwgRVXf3pD9pn" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4hECwFpZDOwualKePztPy5" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>arab trap <a href="https://everynoise.com/engenremap-arabtrap.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Trap<br>W.Arab</td>
+  <td>Arab countries<br>edm trap<br>traprun<br>turkish trap<br>arabic rap<br>arabic hip hop</td>
+  <td>VFM Style &quot;Arabian Drift&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/abe1ff23c275a50aa101ff266b574071782ace72" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arab-trap" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7kRosvL5HbEjNJD0Qpt0TD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5gfxq5LS8ADzgAwowpc184" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1cwJEOaqYDmZay16v40l4B" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/58eYUW9tgV3PiKxzQlDeuB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7Bt3lKtLDqoZKxUkT6Y5vP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>kurdish remix <a href="https://everynoise.com/engenremap-kurdishremix.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab &#x2380;</td>
+  <td>Turkey<br>arabesk<br>oyun havasi<br>turkce remix<br>kurdish pop<br>beats</td>
+  <td>Etd Produktion &quot;Karacada 2 - Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8b1872d028e0aadc7ff148f7315c72b9c9d568b3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kurdish-remix" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1WopvOxSKAAvz7MRav3u24" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5vLkPTGIeKJXEiesWgr7Tw" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ICBMGHQ5vtAsEGpGULhCh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1CObn2m0qNaXmmeuQbVJfI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Q4T480YwCO08ljl2SQukU" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>arab metal <a href="https://everynoise.com/engenremap-arabmetal.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Metal<br>W.Arab</td>
+  <td>Egypt<br>folk metal<br>egyptian metal<br>maghreb metal<br>oriental metal<br>black metal</td>
+  <td>Al-Namrood &quot;Atba\'a Al-Namrood&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5cb28a66b51bfc970388fee30949f20f443a93f9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arab-metal" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/61yMwMnyqoIwxn7cF1RCbi" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6GIfItyTdvjxKVVxkqfVpc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Q0m4bNObAIEy0nfsWvrcj" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2haqWLqMkhGBQixrM7QAkP" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>arabic hip hop <a href="https://everynoise.com/engenremap-arabichiphop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Hip Hop.World<br>W.Arab</td>
+  <td>Morocco<br>arabic rap<br>egyptian hip hop<br>moroccan rap<br>moroccan pop<br>egyptian pop</td>
+  <td>7liwa &quot;Hallelujah&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/36d36149c34fda11d1ebc18fc5fae6f7e06107a7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arabic-hip-hop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4JEwJ9ufxsZhFJHhxLoXLS" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7zBydkoj9qpNmelxR9goHB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5s0XEJrLoobyLCkEXwrdnp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5wFnRQ15eOg6QtIwxJD9gS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4pXFDGzsRRdTQKZyl10BeG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>arab pop <a href="https://everynoise.com/engenremap-arabpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Arab</td>
+  <td>Egypt<br>egyptian pop<br>khaleeji<br>mahraganat<br>lebanese pop<br>egyptian shaabi</td>
+  <td>Ramy Ayach &quot;  -  &quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3dc6f08b070c42fb3bc6a769fbbd324452c0cc62" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arab-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4XvZMzdu8thNYMgRNjIwtU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6qf2sOrwU08PIM4aMggZS5" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/15Yu5PVU4kPA4EaOdRODWQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Fytze4zWIEyNWrTNxaURG" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0JGkUmsfCnUutw49P2ABVN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>arab alternative <a href="https://everynoise.com/engenremap-arabalternative.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab</td>
+  <td>Arab countries<br>arabic rap<br>arabic hip hop<br>egyptian alternative<br>jordanian alternative<br>lebanese indie</td>
+  <td>El Far3i &quot;Tghayarti&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/91ca539f44aed8ef4dbfcf4fdc67f65671af88a5" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arab-alternative" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2PnJkMEMuYPBrgZR4GN71s" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7eWAz7khBGqJI3uEvG9Eac" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Et5uOCUlO4M0KM9Q9tH2O" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7JbTAEUzvppjakVir5DSpk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4OPGJo92GNhmX1roVugmgL" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>oyun havasi <a href="https://everynoise.com/engenremap-oyunhavasi.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab &#x2380;</td>
+  <td>Turkey<br>arabesk<br>turkish pop<br>karadeniz folk<br>turkish folk<br>karadeniz pop</td>
+  <td>Ko &quot;Vur Oynas&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6dbafc3b6b23015ae282b9e44a789b9bd039d01f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/oyun-havasi" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0kmtaKXoJhc4b92HPqQrwD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1MKfFarIiLoOPKO0m60CRF" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7qTCJcu9lBldGixt7LYjUq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Xa3ZRFDbea3aULzup2ROr" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3LMAfVrj837O7j2yUrrqK9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>arab groove <a href="https://everynoise.com/engenremap-arabgroove.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab</td>
+  <td>Arab countries<br>sudanese pop<br>gnawa<br>nubian traditional<br>ethiopian jazz<br>lebanese indie</td>
+  <td>Ahmed Malek &quot;Autopsie d\'un complot&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5b985bcaa6e0f02497f1830705ef5946571c6530" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arab-groove" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Gymj9ppEeDRccjrpQCSBE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ZsIEGkniMFdKLhMnIdk5X" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2JcngDvRf0UdhRIftpUig9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1EOnuXW2iuQG2XhLtftd1U" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1HDG7GjVPotWSkgEuS9Mp4" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>ulkucu sarkilar <a href="https://everynoise.com/engenremap-ulkucusarkilar.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab &#x2380;</td>
+  <td>Turkey<br>arabesk<br>oyun havasi<br>turkish folk<br>turkish hip hop<br>azeri traditional</td>
+  <td>Atilla Y &quot;G Mar&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/360bc0ab66cdc775ed7d8b26cc0e9a9d5342f91e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ulkucu-sarkilar" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/479gfdBDvnMfGmGvcdyXBJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4lLbuMCdRlia25u4RwuiXz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2bNgckbuxrPpmTVVYhHOFr" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4cDyLQ0JPjWni84x7nLYY7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2CuGg7F5fzLwbJBumQkmmJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>taarab <a href="https://everynoise.com/engenremap-taarab.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab</td>
+  <td>Tanzania<br>bongo flava<br>rumba congolaise<br>tropical music<br>singeli<br>tanzanian traditional</td>
+  <td>Jahazi Modern Taarab &quot;Penye Neema&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/66e6be046cc18aa9ad8e81622c3584137ffbbda0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/taarab" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0dAvdS5Uq2q6JbyqZh6IhK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4FAhZsNGKjPEGw68w0K9Q9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3RBXQmJcNnravoqly2RffC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0j6rEBfs38l5FMUa8T3HYH" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>arabesk <a href="https://everynoise.com/engenremap-arabesk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab</td>
+  <td>Turkey<br>turkish pop<br>anatolian rock<br>oyun havasi<br>t-pop<br>turkish hip hop</td>
+  <td>G G &quot;El De&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7af01e68dc66e93c20f76dbd1b5983e368a426a1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arabesk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2Y38P38hHpLCH2C9WjR7Q1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Pgl4JWg99RspoFbmSjq6P" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RN6HTYs5QU9enxm6rkl7a" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4z8Aigrgq3MyhT349YrQKb" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7IU04NikPpQrmosOEtd1lO" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>arab experimental <a href="https://everynoise.com/engenremap-arabexperimental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>W.Arab</td>
+  <td>Arab countries<br>experimental<br>free jazz<br>arab electronic<br>deconstructed club<br>ambient</td>
+  <td>Nadah El Shazly &quot;B - A COLORS SHOW&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fa86bd1a1dd70a6d2f0c13796762099e44af7e42" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arab-experimental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2N50gMd1aNDSXiJHuqPiRF" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/77lhjovotRh2w54Eqznx2H" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>rumeli turkuleri <a href="https://everynoise.com/engenremap-rumeliturkuleri.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab &#x2380;</td>
+  <td>Turkey<br>oyun havasi<br>arabesk<br>karadeniz folk<br>anatolian rock<br>folk pop</td>
+  <td>G &quot;Varna&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a3ef8efa2ad8b73f126c286275256e150179a46d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rumeli-turkuleri" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6SwUolJKh0s3YvjIRootoQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1woJstwVhgJ0W2JvhsvaTq" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4IrfqZ5bPfYfPQVW1wySGP" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2tlV906w07hV5EUOixjvZX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Arfl35X9O5RRK5sQkiax1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>arabic instrumental <a href="https://everynoise.com/engenremap-arabicinstrumental.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Instrumental.Others<br>W.Arab</td>
+  <td>Arab countries<br>arab folk<br>egyptian pop<br>traditional music<br>arabic jazz<br>lebanese pop</td>
+  <td>Amr Ismail &quot;Abu Ali&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/965b8a8dc867361faecb97d4683e73ed452f647b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arabic-instrumental" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Xo7kuaAw8xqUGU2gHa4HA" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1ETZJ22QZBkO3WXLEGgRpf" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0P56Pzm28jrX5mDRh7nib6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/15o8M71IFr7W4isQPV7iil" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>classic arab pop <a href="https://everynoise.com/engenremap-classicarabpop.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop.World<br>W.Arab</td>
+  <td>Arab countries<br>egyptian pop<br>khaleeji<br>arab pop<br>lebanese pop<br>khaliji</td>
+  <td>Fayza Ahmed &quot;Set El Habayib&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/434dab057783b6a4aeb585b5cc1ad7911d91cbb1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-arab-pop" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4T1Nwijjhes2AGvYZKju1x" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/45eeFNKr2ydPrFbFBIi9M1" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5U8YdcHjyZ0PJf2hmyDGRT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/71lnzMhIxu1sp4WHuaL8AY" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1TEeBqTgkCyi0ZdtMufkrx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>ilahiler <a href="https://everynoise.com/engenremap-ilahiler.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab &#x2380;</td>
+  <td>Turkey<br>sufi<br>mevlevi sufi<br>ney<br>arabesk<br>oyun havasi</td>
+  <td>Grup Dergah &quot;Allah Salli - Fukara&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/37f6d4db0975d5ba6f8fcaea2800481ea2e327ba" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/ilahiler" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6EQYuazxrsGAmumpE5rZDZ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2CokkRf7w8GTtZsWl9jV8d" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5VEyJllRMWfjSXl9BHi4K4" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07qG2N1zE435JMUgdQHsRN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/09MWbfOQTtqWz6gntLyWkD" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>arabic jazz <a href="https://everynoise.com/engenremap-arabicjazz.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Jazz<br>W.Arab</td>
+  <td>Arab countries<br>arab folk<br>oud<br>arab alternative<br>gnawa<br>palestinian pop</td>
+  <td>Le Trio Joubran &quot;Mas&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f26de524a21fdbb7fb75ad7f86f3194268bc10ea" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arabic-jazz" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0XRQgwJpZDtkS2h5DnBXPe" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4NWpBUbftWMvjRB1AsRCOI" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6kWYboYlGvUsCaCj0ZxTwy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7EenZLZeB9WKX1bNKaiWQd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6SeqmBd5BpiHVjHLjuIcQe" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>bozlak <a href="https://everynoise.com/engenremap-bozlak.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab &#x2380;</td>
+  <td>Turkey<br>arabesk<br>oyun havasi<br>turkish folk<br>karadeniz folk<br>baglama</td>
+  <td>Bahri Alta &quot;Kozan Da&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c0a19791f0d392db07293e8467cd48dd2ed51166" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bozlak" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7nvpPz7p8mJAxhIjFsdysQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/35qTca30VI81L6lzyZFLXH" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0ykVKA7ku6kNnm63FWDdrT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5t2NFm4zD8mer2v9fpvgKr" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6ISnQh74X11HOjfKpJBCfk" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>turk sanat muzigi <a href="https://everynoise.com/engenremap-turksanatmuzigi.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab &#x2380;</td>
+  <td>Turkey<br>arabesk<br>turkish pop<br>anatolian rock<br>classic turkish pop<br>oyun havasi</td>
+  <td>Serap Mutlu Akbulut &quot;Ben Seni Unutmak  Sevmedim&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/103743ad706cb4c50d202ac2c1a680d9b36eefc8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/turk-sanat-muzigi" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6GdOoDFqwh2WKmErmzY1cw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5yFAOzV56em5BaM8Vnp6GS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ao0Pdd4NrdJZhawOwbmXp" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1UM0dTsH1Tj3NzkjWgondo" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/05ZzWRlgZPurU9sprUoNJ6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>arab folk <a href="https://everynoise.com/engenremap-arabfolk.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Folk<br>W.Arab</td>
+  <td>Egypt<br>oud<br>arabic jazz<br>traditional music<br>sufi<br>gnawa</td>
+  <td>Munir Bashir &quot;Taqs en maq : Nahawand-kab&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b1bdeaa37d8ae165fb8fd2939b8e9836e97ba660" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/arab-folk" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6hTdVec4KkanKu7MqgRSVn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3ltjxxS7B8B3QAkH7KQMgY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0XqWzmVGiaPHOg7GrAR4dw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1jl4PjE9xRUyXp8cmVTcbq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Ejr4JzNhgBglpCRry2qAP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>oud <a href="https://everynoise.com/engenremap-oud.html" title="&#x2306;">&#x2306;</a></td>
+  <td>W.Arab &#x2380;</td>
+  <td>Turkey<br>arab folk<br>sufi<br>traditional music<br>arabic jazz<br>gnawa</td>
+  <td>Simon Shaheen &quot;Longa Farahfaza&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/013936ea37dd372394985a69b210fa992e566e95" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/oud" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/62hwcsxnEOxNnHCNTOc0zb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2QeOCpMQDMK4ZHfqT2pIc3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6OzeP9WfSQiIcytz2IxL6l" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5jnOTJMtG4YuVsSYlhI7bq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0PQqHvyU2KfzmhVcHdpDFs" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["arab electronic",
+	"arab trap",
+	"kurdish remix",
+	"arab metal",
+	"arabic hip hop",
+	"arab pop",
+	"arab alternative",
+	"oyun havasi",
+	"arab groove",
+	"ulkucu sarkilar",
+	"taarab",
+	"arabesk",
+	"arab experimental",
+	"rumeli turkuleri",
+	"arabic instrumental",
+	"classic arab pop",
+	"ilahiler",
+	"arabic jazz",
+	"bozlak",
+	"turk sanat muzigi",
+	"arab folk",
+	"oud"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 22: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 22: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>
