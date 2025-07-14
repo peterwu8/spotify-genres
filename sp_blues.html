@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blues: (57 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Blues: (57 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>footwork <a href="https://everynoise.com/engenremap-footwork.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues &#x2380;</td>
+  <td>United States<br>zydeco<br>blues<br>southern soul blues<br>soul blues<br>breakbeat</td>
+  <td>DJ Spinn &quot;Bounce N Break Yo Back&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fe7a790fa1dae747ce15991d189c181b920e4592" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/footwork" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/07kJK4pGqagobPhaL5Q0Ha" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2TGq3rEqYHLaHh8cFyg8vm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2se3vZpRa30Bufps5MpivT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3F86IpnrIWN43eJOX1TJnq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/79l2eUsJkxS6KtUT7fX8eJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>backing track <a href="https://everynoise.com/engenremap-backingtrack.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues &#x2380;</td>
+  <td>United States<br>blues<br>breakbeat<br>smooth jazz<br>bass music<br>jazz blues</td>
+  <td>Quist Backing Jam Tracks &quot;Slow Blues Jam Sexy Guitar <br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/daef9860f282c831b9a4635f1c1a828caa5e71c3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/backing-track" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/33mSabVqiYL2x2m0JmTfjw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0OntTiyGzKP5yAqKhvmPXB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/73gGZTrI8JgTjcVaGje9I6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/29XyNX6BDIKVUoMCpaBgH2" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>bossbeat <a href="https://everynoise.com/engenremap-bossbeat.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues &#x2380;</td>
+  <td>United States<br>rebel blues<br>gothic country<br>modern alternative rock<br>southern gothic<br>la pop</td>
+  <td>Skinny Beats &quot;This Feeling&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/9ddfa494c6e3a24a0ac2d82909432d13a13d2365" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bossbeat" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4czfE0J1z0cuuzbgmGzF55" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4fLlQp5Kscoo3483KIB0zB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3kSod55u9Z5jMeoR0sgNhM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4aBf9pDpbyWqU7VfU25fUM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4RLvUxhFFPMu6P25kcOfHW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>rebel blues <a href="https://everynoise.com/engenremap-rebelblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>gothic country<br>bossbeat<br>southern gothic<br>modern alternative rock<br>blues rock</td>
+  <td>JAXSON GAMBLE &quot;Let\'s Go&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/26568a57fcd5719eddf13424a4cac3efa6c8645c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rebel-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4hgomfwc5A0fTa7kXhYtfL" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/44fli7rZ73DG4LU9AVKl8W" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5kwMsaPvR2Px45esBIBk4h" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7v9lvIiIKXtW6mzPzIdqAT" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6IVcIIZTpSH85MCr9SOI6B" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>southern soul blues <a href="https://everynoise.com/engenremap-southernsoulblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Soul</td>
+  <td>United States<br>zydeco<br>footwork<br>blues<br>soul blues<br>southern soul</td>
+  <td>Stan Mosley &quot;Stomp&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0ce46fa37845dfff459fa1703aa0b1d8beef0253" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/southern-soul-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1iopD2LkzWgwE6OLw9XzbJ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/565XIzDbVMHSvsM6QCSUDl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4fHcPvf0MfA86YK3oj6cdO" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6vO38omBx8ZqCo5sXAne3B" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rAwzksfb1F5MoCxUpr6Ps" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>brazilian blues <a href="https://everynoise.com/engenremap-brazilianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Brazil</td>
+  <td>Brazil<br>blues<br>brazilian rock<br>blues rock<br>modern blues<br>rock caipira</td>
+  <td>Blues Et &quot;Puro Malte&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/90f1397d4bfea1611edc6f770c252aeb87078d58" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2yZ9rK2suH9A4Sjgr9Beri" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3IOfbuF67ilbd54avE0h4P" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0GwFap1i04xPwBaxo0qi2U" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5qiRwlnht2QObTnRzFbZMm" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>polish blues <a href="https://everynoise.com/engenremap-polishblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Poland</td>
+  <td>Poland<br>blues<br>classic polish pop<br>polish jazz<br>blues rock<br>big beat</td>
+  <td>Kasa Chorych &quot;Blues chorego&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c40d78cf5c2f273bf7d62eedfe46aaca47c11039" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/polish-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/24TgYVaDv2EDTFUOYNqn4H" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6GM80waFvLZoWUIAcFE9ZB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6zIepBVDfDZOrx0LJOZF7O" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ZjU9nATHTm2tX0idNhcqu" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1iXnlwRJKMQWOam96omw4h" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>power blues-rock <a href="https://everynoise.com/engenremap-powerbluesrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Rock</td>
+  <td>United States<br>blues<br>blues rock<br>modern blues<br>modern blues rock<br>electric blues</td>
+  <td>The Beat Daddys &quot;These Chains&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4c2d6e01b3db9b0d9b8456821790bbc406d4cb99" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/power-blues-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0WFjc33e4o9QbZztYygU0O" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7f2DsDC8SQ14L8YOcYLOG6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5E6shBsnoNW2rWz8eih7FL" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4buXnbcpLWkqoH79DYi4So" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1BnpchbHgOKi6vQI2B9I4m" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>indonesian blues <a href="https://everynoise.com/engenremap-indonesianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Indonesia</td>
+  <td>Indonesia<br>indonesian indie<br>indorock<br>blues<br>indonesian pop<br>indonesian pop rock</td>
+  <td>Gugun Blues Shelter &quot;When I See You Again&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ec48cbbdb24052f54d3855ae4fcf12691815a0d0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indonesian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0lwVUbORvtIfbiy7kKFEbD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6QMjif9wWV6jQqFk8WQWFv" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5KVYpbaH66UuwTxRiCTJN0" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3xAr6ohLQEEa1ZwGvfTNnc" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>spanish blues <a href="https://everynoise.com/engenremap-spanishblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Spain</td>
+  <td>Spain<br>blues<br>blues rock<br>modern blues<br>harmonica blues<br>boogie-woogie</td>
+  <td>The Limboos &quot;Big Shot&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/49c84822da33c0a48e340dadc426a05f5fb5edc0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/spanish-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7y5gt2exwjP7cJvGpzFQae" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0dRQr3bESvbQL1opUmEXlY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/11iNDWz3SdHTRZOtHYDowE" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6L5d0CRk9PHxWFeG3U5nHh" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>zydeco <a href="https://everynoise.com/engenremap-zydeco.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues &#x2380;</td>
+  <td>United States<br>blues<br>footwork<br>southern soul blues<br>soul blues<br>cajun</td>
+  <td>John Delafose &quot;Joe Pete Got Two Women&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c1aebba03480401609c3536fb28044f40168a59c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/zydeco" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/79UYmBLOgafzpzUcU9Oqyj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1BsskTfK2Sfg5mJI1o4MGr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7wd1Omc54DAQOZ4e0yminR" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Bwa4ju96NQmXOQMw3gPVN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2sF6CWRdg9nWSryFtGgn8B" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>swedish blues <a href="https://everynoise.com/engenremap-swedishblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Sweden</td>
+  <td>Sweden<br>blues rock<br>blues<br>swedish pop<br>rockabilly<br>classic swedish pop</td>
+  <td>Louise Hoffsten &quot;Fr himmelen fallen&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8ceddf383d3e5d9e7e97d2613325238f1e572dc7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swedish-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2SUPT459l601iQtEwbQz76" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2EFrUVussxCgKmqowB6BmS" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7iu7Lqr34RO4Olu5qqcm3f" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mJwEqeUcnQclpH2bTa5CR" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>blues latinoamericano <a href="https://everynoise.com/engenremap-blueslatinoamericano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Latin.America</td>
+  <td>Mexico<br>blues<br>argentine rock<br>blues mexicano<br>rock nacional<br>mexican rock</td>
+  <td>Pappo\'s Blues &quot;Ruta 66&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6a1d9363264c507beb44d5ac85a1fbb64d63a425" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/blues-latinoamericano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3MAm6G15IFUzTubBwbDKMc" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4vhXen2YUiOwfiuJQf1qcX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5nheZVaEo7yooejnsj2Mhy" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0t8yYzzriStbEMvVersqpc" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>belgian blues <a href="https://everynoise.com/engenremap-belgianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Belgium</td>
+  <td>Belgium<br>blues<br>blues rock<br>modern blues<br>rockabilly<br>acid jazz</td>
+  <td>Arno &quot;Putain putain - Remix&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4cfdcde4a1ae74e13537c987a83fec2feed6abc0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/belgian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/50pLf1RcDCIjDAdZLChmfw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/458j2uOah9F6jTXzX0xLtE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rUR2JpSbOkQByFbqCp33v" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0TD3Ydd1WIx3j7FRUdyaI7" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>modern blues rock <a href="https://everynoise.com/engenremap-modernbluesrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Rock</td>
+  <td>United States<br>blues rock<br>modern blues<br>blues<br>roots rock<br>garage rock</td>
+  <td>The Stone Foxes &quot;I\'m A King Bee&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6da5342d447bb2bbf372cf64d8f321d6e8e0c72d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/modern-blues-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1LEcgdyHsyLTOIUNy12tio" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2KmAVEfiJy17zDEZslvmSg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7yllxlh6PKWlO5cR9SlNmu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0WSoU0E9tJbuXa6DOrlcUJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6DqePfTuV1E1ZJFdvOswum" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>blues-rock guitar <a href="https://everynoise.com/engenremap-bluesrockguitar.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Instrumental.Guitar<br>Rock</td>
+  <td>Sweden<br>blues<br>blues rock<br>modern blues<br>soul blues<br>power blues-rock</td>
+  <td>Blues Delight &quot;Slightly Hung Over&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/bc5f55f322b184be51094a4accf7b34284e2aa00" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/blues-rock-guitar" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1dZAO67G4hWbdkot7HQYKt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2VkWOPUqwKkeBWMqcFx0L6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0x8Ku2JIvdVpNbP8Y0TxRq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5dH4dLPeGaYiJdmWQiDMYI" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2mqIKPWmnII8nxV01PzQqr" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>finnish blues <a href="https://everynoise.com/engenremap-finnishblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Finland</td>
+  <td>Finland<br>finnish rock<br>blues rock<br>finnish pop<br>blues<br>iskelma</td>
+  <td>Dave Lindholm &quot;Annan Kitaran Laulaa Vaan&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/870af922845fe57449a9f2867ddb7b9def892c2f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/finnish-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/41JDGsHaVLZksV7vRUFnfu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2MZlB7n6QqUMbSTne8xIxM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/49o6qQIlaLmff4a0fHnQbH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5MsVcIbWcpv5EqRMC019XJ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>punk blues <a href="https://everynoise.com/engenremap-punkblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Punk</td>
+  <td>United States<br>garage rock<br>garage pop<br>proto-punk<br>psychobilly<br>noise rock</td>
+  <td>Oblivians &quot;Call the Police&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a43504270508e516f6369f5dedee228acb8a1bf2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/punk-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Uww4o0uVZmR8zBzeZWKPM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0pUItxZh4LNpvkkM22kBTj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4rqKLveZYmJJe02jexEfbT" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0EMrp2QGddIQVkJQRYyAUV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6PCdbkzmdKAcdn80Bxzk7P" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>blues band <a href="https://everynoise.com/engenremap-bluesband.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>blues<br>blues rock<br>modern blues<br>boogie-woogie<br>rockabilly</td>
+  <td>Jim Suhler &amp; Monkey Beat &quot;Get Your Head Right&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/020d422956c836d87d8d9f12616645fd6c78b5bb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/blues-band" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0LnaJ629SjC5fSm6CcytH1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6lT1VFJWr2Lmo17Dfjsohk" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>british blues <a href="https://everynoise.com/engenremap-britishblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.United.Kingdom</td>
+  <td>United Kingdom<br>blues rock<br>blues<br>modern blues<br>british invasion<br>classic rock</td>
+  <td>Savoy Brown &quot;Hellbound Train&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7158555616ff08c18b474500d258817bde01c08b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/british-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5HPmK7NUQC0GErWWbfVZw5" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5gYoPWpfoYkFxdS7a15WBO" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3VDhtZLezgGD1ZGVRFxDtt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6wMGnUiQD1yf3G9Ft0f3rD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7tThsZHhTchl076akfI1DJ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>japanese blues <a href="https://everynoise.com/engenremap-japaneseblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Japan</td>
+  <td>Japan<br>kayokyoku<br>j-rock<br>japanese folk<br>enka<br>city pop</td>
+  <td>Yukadan<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5f8c34dc8593dd077aad651a87b97e448253334b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/65gvaHCuXA0gxSOgluu2gt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0x7Be1sfL0xp97cCQTuK9q" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0QPeKk02O1hNJbRgMfjnva" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/15g36eAQD4SaAULnFNPmNn" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>modern blues <a href="https://everynoise.com/engenremap-modernblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>blues rock<br>blues<br>electric blues<br>roots rock<br>southern rock</td>
+  <td>Ana Popovic &quot;Slow Dance&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/61c77b7511b425011035164f239e10a1f3393daa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/modern-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2J3qE9POrHZlHfdSDOpKpw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/73Jxzf17MpBz7xI7iker8R" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3oGpNamiaF9ZGgB1F57FQQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4s2gve9FDRIH3giqvwhIX0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0QvkvJZXClCRca6opaw6aT" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>dutch blues <a href="https://everynoise.com/engenremap-dutchblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Netherlands</td>
+  <td>Netherlands<br>blues<br>blues rock<br>nederpop<br>modern blues<br>dutch rock</td>
+  <td>Cuby &amp; The Blizzards &quot;Window Of My Eyes - From &q<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5b096c6ff67cd122fdca06e9a8a50869f9dcc337" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dutch-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5GEl0MX4fI5V0HXuaZoBPM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/50GKRGr7jwZY2ELJQ4F9NX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4IcW6m3J8M4mf0Tfu6i93Y" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1juWL10Z39NT3xKtcOioGS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>norwegian blues <a href="https://everynoise.com/engenremap-norwegianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Norway</td>
+  <td>Norway<br>blues<br>blues rock<br>norwegian pop<br>boogie-woogie<br>soul blues</td>
+  <td>Vidar Busk &quot;Goodnight Moon&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6f017cc6801e4e90f8c4d71d2a0bd00ff69a46f0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/norwegian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0CgAYLbXQF85ACg4N4mD07" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3qPQzzlC675NSo7v6pNeyi" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0jhTh6IkvjMg50lbftd16U" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3I0240tGMW5v1j75prLSQU" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>german blues <a href="https://everynoise.com/engenremap-germanblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Germany</td>
+  <td>United States<br>blues<br>blues rock<br>modern blues<br>boogie-woogie<br>boogie</td>
+  <td>Gregor Hilden &quot;I Wouldn\'t Tread a Dog&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/a1a30152cd2b4dd9c8907d84fd162e97c73ab6de" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/german-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3gBxw3yyFS3v9QIPc9oog0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5vHWuInWEuHAkjeWJAu3qz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3PNa35xsivWb9KpMjoPyHE" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0PLWlXGuLCGFJz3gFFJZtO" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6HBJai3T0tk9NZ0Jqjz3mI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>italian blues <a href="https://everynoise.com/engenremap-italianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Italy</td>
+  <td>Italy<br>country blues<br>blues<br>blues rock<br>soul blues<br>modern blues</td>
+  <td>Gnola Blues Band &quot;Gnola Shuffle&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e5f9678a460e85a9cf4886747ceea8e31c834b67" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/italian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1gHGTB6ZUUB4xbRw6nYENQ" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5OE7ILV3uCBLU4vRbuOm74" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/07FVCA3oYDofhdFjASvBLz" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>canadian blues <a href="https://everynoise.com/engenremap-canadianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Canada</td>
+  <td>Canada<br>blues<br>blues rock<br>modern blues<br>roots rock<br>boogie-woogie</td>
+  <td>Colin James &quot;Five Long Years&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0198805eb216d53199db6bc4c921bfcfb5f45be2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3IT0eBy8XDdwoWrMs9Qdfj" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6SYXRmFXeBduajHIzs2J4O" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4wsVE19xtxQL3BybjFf73z" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5i1wQ6Mz6RlpkzGGZY2vil" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7LwTweUCDMqxlLgVGW7eNv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>desert blues <a href="https://everynoise.com/engenremap-desertblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>Mali<br>gnawa<br>tuareg guitar<br>mande pop<br>malian blues<br>musique nigerienne</td>
+  <td>Terakaft &quot;Tahra a Issasnane&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1ead60effd79e1768fd40fedd8c955923d11fc15" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/desert-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/30wAO8BLJ41fn2jBJ9VN8P" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5tJJ32hMWvFhIPLrHRreNZ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7lPVeWWVknMRm3uiVeicCY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3moojFTM7s1jb3B1b8NsOV" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6LvXgBvIeHTjwY6n27lRUq" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>psychedelic blues-rock <a href="https://everynoise.com/engenremap-psychedelicbluesrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Psy.Goa<br>Rock</td>
+  <td>United States<br>acid rock<br>psychedelic rock<br>proto-metal<br>stoner rock<br>progressive rock</td>
+  <td>Ancient Grease &quot;Mother Grease The Cat&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ec6b3f214bf93771a79ec70ffc13e39d3e3990af" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/psychedelic-blues-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0liwK0eQn5fuomPHKVF0PM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3s9zay08uorAo3wkp17zkm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4dB6fQ7ieJ5O1EW5SEmkFY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3ceuhDga3v6OBKU8GiADGi" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6UlbutZPaIMLd4s4UvGawo" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>australian blues <a href="https://everynoise.com/engenremap-australianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Australia</td>
+  <td>Australia<br>blues<br>blues rock<br>modern blues<br>roots rock<br>country blues</td>
+  <td>Lloyd Spiegel &quot;Let Your Love Lie Down&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/47a4476d37840fa599eec44605fa330966e835f7" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5IHw6gYsVzVinzEMx5PE4a" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7kQSXw1ezgx6LowSSqyWsy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1bTdp3epVuBxov9orErZiI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/74I88AYGSsTDCXFGndlU2l" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6UmUEnHRDJZEp0wR7SmYOW" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>malian blues <a href="https://everynoise.com/engenremap-malianblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Africa</td>
+  <td>Mali<br>mande pop<br>desert blues<br>world<br>afropop<br>gnawa</td>
+  <td>Toumani Diabat &quot;Rachid Ouiguini&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/941e53604da6330e93a2a20e27a18e875d1296d4" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/malian-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4Awf7T7CpkBojFAnPcjs0s" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1I74KKNpwBvNUE5ZSKkVHe" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2IDhxvPgDRtFrWMKfVZHEw" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2KE9jmKdcNcCJLVgvNz3j0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4vmDqM1LnVsmYvMel7vPQp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>blues mexicano <a href="https://everynoise.com/engenremap-bluesmexicano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>W.Latin.America</td>
+  <td>Mexico<br>mexican rock<br>rock urbano<br>blues latinoamericano<br>trova<br>rock en espanol</td>
+  <td>Real De Catorce &quot;Azul&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/333e7211e209f9c5cef4857b25d0da80a9580676" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/blues-mexicano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7k0c5w5Yf0lWl2kIzuaJZ0" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7C8OEv2qzaLl7hhU5EIrCJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/76PZv002hAD8jFrL4q8Z2D" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5WxYBXEtRPGPR2E7CSweoS" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>garage punk blues <a href="https://everynoise.com/engenremap-garagepunkblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Punk</td>
+  <td>United States<br>garage rock<br>gothic country<br>southern gothic<br>punk blues<br>psychobilly</td>
+  <td>Bob Log III &quot;Log Bomb&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b3b54789156fcc14d282390b03a115ab1792973c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/garage-punk-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6dSb5HTQEJs45GdYB7GkVG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0MIPIfJMv7GoAf8gAIsteU" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6NNjZ46VZGBYA7RVb2iSH5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/39mkS8Pu6CwXhitikPOT4y" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2iWo9DDkjnTrLYp6JobaDp" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>34</td>
+  <td>swamp blues <a href="https://everynoise.com/engenremap-swampblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>louisiana blues<br>blues<br>classic blues<br>zydeco<br>cajun</td>
+  <td>Lonesome Sundown &quot;Dealin\' From The Bottom Of The Deck<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b46f946af49a756ae41b3befc2c31748f238f533" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swamp-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5XVmNTzmgBUpnLbVtXN0Dg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7hxOgWv1cdB6YnIpZxHG0O" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1LDk2e01OG0wPiRLFf4ngd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5V0GEB4klKsvpF1qCPYGVw" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5kyMDQGwZKS47SGbQGZjhI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>35</td>
+  <td>blues rock <a href="https://everynoise.com/engenremap-bluesrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Rock</td>
+  <td>United States<br>blues<br>classic rock<br>modern blues<br>album rock<br>electric blues</td>
+  <td>Derek &amp; The Dominos &quot;Layla&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8563d016ae70ed290ba446194adbe39f0cbf3cdb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/blues-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6yPSfpd4QM8Pm8MEamb7c2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2kISScyTs0we9kzH9MKEMb" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6zy1dkShWM1RbsieTkpvVM" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4aiT230RT1XPkwPPgQXWRK" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1NZi0yJIA9qTZiDuhxqcem" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>36</td>
+  <td>electric blues <a href="https://everynoise.com/engenremap-electricblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>blues<br>blues rock<br>modern blues<br>classic blues<br>traditional blues</td>
+  <td>Albert Collins &quot;Cold, Cold Feeling&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/91ab849d9751ec0157d1e54dce38042400178e0f" controls="controls" preload="none">
+<I>Your browser does not support the audio element.</I>
+</audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/electric-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6fKQMgV4wneYMctec4LD04" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7EFp3Wiscy9r6DhBoOxmyT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0iQyPqA8LdkAZzU9hK6Bj7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6YrLCUs0X4xy2Tvfts0Sl0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0C2KFc25FJn5nByvzX5uHd" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>37</td>
+  <td>louisiana blues <a href="https://everynoise.com/engenremap-louisianablues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>new orleans blues<br>blues<br>classic blues<br>swamp blues<br>cajun</td>
+  <td>Professor Longhair &quot;Big Chief - Remastered&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/83e6f177e43f2c759b446ac217c175403b4db5d3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/louisiana-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5rvcT6ksuKLZ4fDCSb1J84" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2fvTmmnb2UbU5TWvbMolPz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Es0saDvbKQmGmb5Nqc9JQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3BJ9jmzOuKt0UXVeqFg9Yt" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4LEs9tUP0hTDD9qA0ta88n" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>38</td>
+  <td>rhythm and blues <a href="https://everynoise.com/engenremap-rhythmandblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Boogie</td>
+  <td>United States<br>doo-wop<br>northern soul<br>rock-and-roll<br>rockabilly<br>boogie-woogie</td>
+  <td>Clyde McPhatter &quot;A Lover\'s Question&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8120af5f5f7f3c9da2d053342f101c184499545d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rhythm-and-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0OVcUcsO3UkyaaFbqqYsxI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4uSZwUcMhCdfspqtWaQGwD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1lxu6T4ZR9JNyfmIv0iqds" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3UCk5VHwUJzMwWJOPPmU0U" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2fcYgGJEHlwnLCz3XkrO1h" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>39</td>
+  <td>soul blues <a href="https://everynoise.com/engenremap-soulblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Soul</td>
+  <td>United States<br>blues<br>blues rock<br>zydeco<br>modern blues<br>footwork</td>
+  <td>John Primer &quot;Pay the Price&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/e2d93ca798309a135b8e9a687b738f26e2c936fa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/soul-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5PxOuKhE7b6wE6I0WzN3o2" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2KMDVWnnYTOUjqt8hH2xXC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3aXnpDHKEt8A5p9c1PJim6" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6jir3yW1z3gOTM0DgPEsiA" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/25bQUhKKpmZwxYJRXdgXl9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>new orleans blues <a href="https://everynoise.com/engenremap-neworleansblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>louisiana blues<br>blues<br>boogie-woogie<br>cajun<br>new orleans soul</td>
+  <td>James Booker &quot;One For The Highway&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dc1b7376bac10b4e3454d77a851a4d3a824d8d59" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/new-orleans-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0H72yjPD6tknEJGWBMumhG" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/39s493vky2Qtmh3yVP2Pv6" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2I29HeLM4MXqaqUzKiOtMh" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1A6wvHWKr5DHYFfOfJ7maf" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5iWUP0Ics6P7sMINYQII79" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>41</td>
+  <td>harmonica blues <a href="https://everynoise.com/engenremap-harmonicablues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>blues<br>modern blues<br>classic blues<br>blues rock<br>chicago blues</td>
+  <td>Mark Hummel &quot;Creeper Returns&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b6db02a6a697a7ea185220f6cc9ccb076e002791" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/harmonica-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7EdVmYMI4irmQ0bCajeyny" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7dzvfePcNOcoMPQCJR5OUX" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3wOwHl5nlZYzNA8PeAAFlt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1aqz9Ylgl4YajbfiY8CYlX" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2MOC19H9fNee1QHey4GUH2" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>42</td>
+  <td>chicago blues <a href="https://everynoise.com/engenremap-chicagoblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>blues<br>classic blues<br>modern blues<br>traditional blues<br>blues rock</td>
+  <td>Big Walter Horton &quot;Lovin\' My Baby&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dcea0a567337548eef0853a9b522fa218574fd75" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chicago-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2CWk5KbdeZkcEMOdir5LA1" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0mOE2PzIQc6LljRmTSJsGy" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/71Eh3Nvt7nmgJqEgiuILfY" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7dxoNrW8XGKVq6yHLLiI0M" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4niL0j4MwLq6TvEsVzOC7k" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>43</td>
+  <td>blues <a href="https://everynoise.com/engenremap-blues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>roots rock<br>southern rock<br>country rock<br>classic rock<br>soul</td>
+  <td>T-Bone Walker &quot;Call It Stormy Monday But Tuesday Is J<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ab0f2a6dc2daf301ed78d02c8adc7b931675088d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6Apor0aKrg0hs5Dp3nSb6Q" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7qACZGMjyo64TdUdKAegjp" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/78OF54fZ7Pw4WxRBDdro68" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Dw3neVGv5JuD1GwLcaqqg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/60wPUaqGtSLD7MBp91nIaz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>44</td>
+  <td>jump blues <a href="https://everynoise.com/engenremap-jumpblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>boogie-woogie<br>blues<br>swing music<br>rhythm and blues<br>rockabilly</td>
+  <td>Wynonie Harris &quot;Grandma Plays The Numbers&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/98c56d221860a7ddcfc662ebf8de97ff27a06bb9" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jump-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4nhP86Q5avCXXQjFbBaMze" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7t1UY9ai9TGUxcKreODyxw" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/20ndYI5ehkBglBCdDBWidI" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/63qrbMkuK4CDhPV5o8gauN" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3xexMoxrii6kGsgqQ11QBf" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>45</td>
+  <td>memphis blues <a href="https://everynoise.com/engenremap-memphisblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>blues<br>classic blues<br>country blues<br>traditional blues<br>ragtime</td>
+  <td>Sleepy John Estes &quot;Little Laura Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/dfa4feaac048e4cf4ae62ac928959ad1d785f941" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/memphis-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4PlstdFs4uTRMF4PqNcOgC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6T4DmAc9TqsUbfpaM8MZem" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Y9AtSZTFlcKglnfL6Kq3E" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6OP8yHSxcNCuAaDs2DSemp" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2q8SWWx60bn6EyAOReVp3C" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>46</td>
+  <td>texas blues <a href="https://everynoise.com/engenremap-texasblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>blues<br>blues rock<br>classic blues<br>modern blues<br>traditional blues</td>
+  <td>Jimmie Vaughan &quot;Just a Game&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/84b49a4e2156da513439748449d7fa5337f77bf8" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/texas-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3I5bniBKbQR7dG6trxfLSX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3x4eZnKeTjOEUvl21X1j67" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0QwCtvhMRc42nCC5Omn9HH" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7qol4L1NMys0702PSs1Xdq" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0SOLSMWdSWuYaFAO7D9zo0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>47</td>
+  <td>piano blues <a href="https://everynoise.com/engenremap-pianoblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Instrumental.Piano</td>
+  <td>United States<br>boogie-woogie<br>blues<br>classic blues<br>boogie<br>ragtime</td>
+  <td>Big Maceo &quot;Worried Life Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/874cb01616800577a04c7dcb97b41090443991cf" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piano-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4KAZYOVAL8AMZYVjC97aKv" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/58hb46oJEDVQJxoew4Er8q" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5SJCu20SO0hwlIGxBONR4D" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mupC5Ht58DW5oo0XHZRff" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4jGqV2taOxFWaotEAa73PN" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>48</td>
+  <td>traditional blues <a href="https://everynoise.com/engenremap-traditionalblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Traditional</td>
+  <td>United States<br>blues<br>classic blues<br>country blues<br>acoustic blues<br>electric blues</td>
+  <td>Blind Lemon Jefferson &quot;Match Box Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1ef7d8ce578d449dd20f111e5cbd1c82cb93aaaa" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/traditional-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5fZLfAgmhHiIJnJ605QAXn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4fPXonBYvsGcigbOEKFudk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0pdaA1AlKc4iYydkMgDPXi" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1BQKihLlQ1qSFyocLSwSSi" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5AkORv4rJmugG7k7AJfIfn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>49</td>
+  <td>acoustic blues <a href="https://everynoise.com/engenremap-acousticblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>blues<br>classic blues<br>traditional blues<br>country blues<br>ragtime</td>
+  <td>Bukka White &quot;Fixin\' to Die Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f928313336f114ef5733126176ce3aba88d01293" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/acoustic-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2RvS0TJwxNbl8ENOxhttKY" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1wsiIqm8FwH4FPW68LBFCr" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4vkmqlku62DEEo52we1iOg" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2BA6paWACjrJ6xPhAS2Fjj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/21kJLpS2fp20SXnFDIRMqP" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>50</td>
+  <td>jazz blues <a href="https://everynoise.com/engenremap-jazzblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Jazz</td>
+  <td>United States<br>jazz<br>blues<br>hard bop<br>vocal jazz<br>cool jazz</td>
+  <td>Joe Liggins &quot;Pink Champagne&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/15686eb95a60c52f342967c2afbcf7f06f6deee1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/jazz-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5DvhsbZ9tmxjeW73x15JOE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4ehHChcQBZTZ0kP9CkHdzc" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2w9VSDTGX0a35YqttBbTol" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5luxyGwKEzpSYHyJfuRzYC" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6VYm4iyUe8WHO9Q7SZ3TKl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>51</td>
+  <td>delta blues <a href="https://everynoise.com/engenremap-deltablues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>blues<br>classic blues<br>country blues<br>traditional blues<br>acoustic blues</td>
+  <td>Big Joe Williams &quot;Baby Please Don\'t Go&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c7e9c2b8859fc6eacda3e9346dbc6f3d07130c3f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/delta-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1rLfa7I3Arm8Kz37ZOnSSg" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7lMW2Hpzs18nh4kmGOs2rB" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1jjzVXSqFKZnxxm5HnrxUu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7Bbnd0oCJXyqGqqEngID5Y" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/53H7IKXD8R1Th4e2BmLhmg" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>52</td>
+  <td>piedmont blues <a href="https://everynoise.com/engenremap-piedmontblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Edm</td>
+  <td>United States<br>country blues<br>blues<br>classic blues<br>ragtime<br>traditional blues</td>
+  <td>Mississippi John Hurt &quot;Coffee Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ea17d69c881f6d14f78ff153a850cbc44215059b" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/piedmont-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1GZNkrOExHM9AaycgNscFa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2hBQIwJOWzLMWl10enb9uE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1DQHoZ1qed3RDimeMRTR9H" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0Cd2uF1f8r9Z7OupQicE18" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0GfoCLKG16xR26vn5J5IFy" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>53</td>
+  <td>country blues <a href="https://everynoise.com/engenremap-countryblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Country</td>
+  <td>United States<br>blues<br>classic blues<br>traditional blues<br>acoustic blues<br>modern blues</td>
+  <td>Mance Lipscomb &quot;Sugar Babe&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/515b6e0a268fa4ee926cfaae1190f4a80e6a1910" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/country-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/56ltcziWDr1jS1i4ZGFIeM" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5LpV4RS7WgWaDyKxu0W60r" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1pCZk4vLtENvQ3z9d8Ss94" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0EOZtLMmtfRkbPc5YXZu7T" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/246FUQm1FBfaWKySpvcuBS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>54</td>
+  <td>gospel blues <a href="https://everynoise.com/engenremap-gospelblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Gospel</td>
+  <td>United States<br>classic blues<br>acoustic blues<br>blues<br>traditional blues<br>country blues</td>
+  <td>Rev. Gary Davis &quot;Death Don\'t Have No Mercy&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b11f93ea04e0793079c3a5c0fa93a6ea2f076494" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gospel-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6F2s2jLZalcfMMYONJ1YJa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5DO4LMun9Ri03W5bvBQ6Av" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>55</td>
+  <td>classic female blues <a href="https://everynoise.com/engenremap-classicfemaleblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>classic blues<br>blues<br>ragtime<br>country blues<br>modern blues</td>
+  <td>Eva Taylor &quot;Baby Won\'t You Please Come Home?&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7154d93cee9eac243adb8d3d88ff691e77d5694f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/classic-female-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0D7KVBsvXHTSADzAi1oELI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/52nQxDR1zNIqABK751NZz4" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0HCT4IKoDGXwa2jY6btwhC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/47w9BYkTqHifCUiTNtvEwJ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>56</td>
+  <td>deep delta blues <a href="https://everynoise.com/engenremap-deepdeltablues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>country blues<br>blues<br>classic blues<br>jug band<br>ragtime</td>
+  <td>William Harris &quot;O what their joy and their glory must<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/61928596ef75fffa106f96d7f85b4a87949adba0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-delta-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1n6O82fCjnRLRNscBfa5Q6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6un2az3FWRdGCUdnl8DGeQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7398RtEIcDATYBgZtqKJ8R" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/19wuxzXXoaa1ztCVOD0N0D" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>57</td>
+  <td>pre-war blues <a href="https://everynoise.com/engenremap-prewarblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues</td>
+  <td>United States<br>country blues<br>blues<br>classic blues<br>ragtime<br>delta blues</td>
+  <td>Robert Johnson &quot;Cross Road Blues&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/517f33f1da6529d5ff33e7d555c779675afd6023" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pre-war-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5m0DH7kPeYQsfpcqKpbLmV" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0vFJAnZTtSZ6LoIKoH0sBl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7eNUcPFcMtwlKJsCBLfltK" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/33jEoSzXBReHva4gM2YW9I" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["footwork",
+	"backing track",
+	"bossbeat",
+	"rebel blues",
+	"southern soul blues",
+	"brazilian blues",
+	"polish blues",
+	"power blues-rock",
+	"indonesian blues",
+	"spanish blues",
+	"zydeco",
+	"swedish blues",
+	"blues latinoamericano",
+	"belgian blues",
+	"modern blues rock",
+	"blues-rock guitar",
+	"finnish blues",
+	"punk blues",
+	"blues band",
+	"british blues",
+	"japanese blues",
+	"modern blues",
+	"dutch blues",
+	"norwegian blues",
+	"german blues",
+	"italian blues",
+	"canadian blues",
+	"desert blues",
+	"psychedelic blues-rock",
+	"australian blues",
+	"malian blues",
+	"blues mexicano",
+	"garage punk blues",
+	"swamp blues",
+	"blues rock",
+	"electric blues",
+	"louisiana blues",
+	"rhythm and blues",
+	"soul blues",
+	"new orleans blues",
+	"harmonica blues",
+	"chicago blues",
+	"blues",
+	"jump blues",
+	"memphis blues",
+	"texas blues",
+	"piano blues",
+	"traditional blues",
+	"acoustic blues",
+	"jazz blues",
+	"delta blues",
+	"piedmont blues",
+	"country blues",
+	"gospel blues",
+	"classic female blues",
+	"deep delta blues",
+	"pre-war blues"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 57: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 57: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>

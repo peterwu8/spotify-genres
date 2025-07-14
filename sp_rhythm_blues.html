@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rhythm & Blues: (33 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Rhythm & Blues: (33 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>deep r&amp;b <a href="https://everynoise.com/engenremap-deeprb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>United States<br>r&b<br>chicago house<br>tribal house<br>new jack swing<br>nu jazz</td>
+  <td>Chris Lago &quot;Seasons - Radio Edit&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6edcd62507372f4c26f4cf62e6081357a2e8c28e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0omZU3ynoHRqSWT0SSYE7E" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3htJqjjCUIndBa8q3ngCUL" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7s8hmP5vh6fFqHDQV0vR4s" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6Dmqn0W6y4J1EsuDhMiKOD" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>contemporary r&amp;b <a href="https://everynoise.com/engenremap-contemporaryrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>United States<br>r&b<br>urban contemporary<br>new jack swing<br>quiet storm<br>hip pop</td>
+  <td>Total &quot;Can\'t You See&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/96a6dd3d7f26c1cc2cb74095c3a1c76852063ef2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/contemporary-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/52LjNcQGlaN5CpTR9nCveb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1rlHnACGatHAOQrZ3WjEI3" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3WRtt1aSRkt3JFN90v9rbA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1sOcs5rDgAJZ8QVBWcI3J4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/78XhkLajFzPKHopiNrp58Z" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>r&amp;b en espanol <a href="https://everynoise.com/engenremap-rbenespanol.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.En.Espanol</td>
+  <td>Latin America<br>latin r&b<br>latin indie<br>mexican indie<br>trap latino<br>reggaeton</td>
+  <td>Jesse Baez &quot;Malib&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2af7375deca4e01a75e489b1c836be677d1f673e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/r&amp;b-en-espanol" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6CyZarUTr5B1i6HhR2YzrC" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4tzYxjoGLrGjrjp1x0Sggg" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4zRJZumF22WhBW2nLtVm2J" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0NwNO3BQvbg29sYOjOFlYM" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0WQD2jhfARs7TZ8CsIHmdG" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>bulgarian r&amp;b <a href="https://everynoise.com/engenremap-bulgarianrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>Bulgaria<br>bulgarian pop<br>bulgarian rock<br>jazz rap<br>disco house<br>funky house</td>
+  <td>TromBobby &quot;LIKE ME&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/74d6d8db335a3679b45f37df7b819931ebcc06bc" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bulgarian-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3XlimWZ175bnZarJLikFTn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1VyGrIxu31o7efsCAqfubh" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7fDEgMEsslQ6CTwjAORfsB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/670XJ0Jxnc3rfcAUotHapi" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3EVbdsFnb5inKdhx2tOzMD" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>japanese r&amp;b <a href="https://everynoise.com/engenremap-japaneserb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Japan</td>
+  <td>Japan<br>j-r&b<br>j-pop<br>japanese indie<br>j-rap<br>city pop</td>
+  <td>showmore &quot;now&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4d1c02a4c248339964449b77d1a401022ff2c498" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/japanese-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0U7X7XhT9vzDIOAjxh3rqr" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7N35r1mrsCLe66LczBV7EQ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1tqZtVnByzAuzhlxnAAUkC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/33kOsR3IkOBch2dldvtura" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5p3r7qPUg22klq7I61tMuS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>r&amp;b <a href="https://everynoise.com/engenremap-rb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>United States<br>urban contemporary<br>hip pop<br>dance pop<br>rap<br>southern hip hop</td>
+  <td>Xscape &quot;Who Can I Run To&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6527596393b3ea9d71d6e58b9f08c67fe69eac9e" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/168F3ZkARqleGkNQwT4tWU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1rLnwJimWCmjp3f0mEbnkY" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1yKo39vX5xuc1ruPMSf4tu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/71pcJJH5MyytntYCC5QWB4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5G7gj6B1rEbqdpTyN18NeY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>german r&amp;b <a href="https://everynoise.com/engenremap-germanrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Germany</td>
+  <td>Germany<br>german hip hop<br>german pop<br>frauenrap<br>german trap<br>german indie</td>
+  <td>Remoe &quot;Nackt&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/cf7c953c4a03b795e58d247026623c3d99b9439f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/german-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7bvM486hcJ03qmIX8K3qIq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4rkIxhozLZKLwSH2Fog0Mw" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0RdbOV0ESY9pdRKy2D78y8" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0jrl7emHsUUlzenAxHDNhd" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/79PoEVEujGsd2KJzEk4JfI" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>australian r&amp;b <a href="https://everynoise.com/engenremap-australianrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Australia</td>
+  <td>Australia<br>aussie drill<br>australian indigenous music<br>alternative r&b<br>soul jazz<br>australian alternative pop</td>
+  <td>Milan Ring &quot;Mangos&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ad47781e5460f9df3ef8d941c786c8e89210b7e6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/australian-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4d6orp6tMd6wzTorFXIl7T" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/78wsjymwVf1xFMm5qJgrRk" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5FzabUXhMLxz5ghe6OYoZq" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2vIkcKKzcQd9OOCxNlJMOk" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7a7QjKjgzAEYYJJpwkTpMY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>scandinavian r&amp;b <a href="https://everynoise.com/engenremap-scandinavianrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>Norway<br>norwegian pop<br>danish pop<br>swedish soul<br>dansktop<br>swedish pop</td>
+  <td>Bette &quot;Fin Regn&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/fb9b4cb15d764320d7d12fdf93b26f004fbc5fa6" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/scandinavian-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5oYnkw7XGxgEz5g5ZIjLLH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6rKNApKAQaPnemPiI8dIJj" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/28upGu01ewtBIuAtdeY9qg" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3XvYMyFlwoBgVwCUC6KwWZ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4VTd5GcNdwtF1OS5gaK6zF" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>bedroom r&amp;b <a href="https://everynoise.com/engenremap-bedroomrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>United States<br>hyperpop<br>chill r&b<br>bedroom soul<br>emo rap<br>singaporean pop</td>
+  <td>starfall &quot;tied up&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8d87e94c903f33da7daf9d2dc6c7b57039cc87c1" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/bedroom-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6ByiNtFde6StP7K8ja1ZDW" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2rYV2n4K0QRuE1rcWbsWMM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0KH8KRiblba5yAFOH8aGc2" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7KyLYey6m7rZ5LioTyM5vB" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3HDMtwlm360oQBGbR9mOfR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>dark r&amp;b <a href="https://everynoise.com/engenremap-darkrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>United States<br>trap soul<br>canadian contemporary r&b<br>r&b<br>alt z<br>singer-songwriter pop</td>
+  <td>Limi &quot;The Best I Ever Had&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/23ce3dcb7b6536a2fa6be684cfa9d8306de6f70f" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dark-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7uDBrwri5JPhn1qOKFJ1gf" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/79hZVIvDOO2OMJnZQ3gzIV" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1MEqQRTJLjnb5u9NA1bOTc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4a0rIhTKShFX7d9RQlYMmu" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2EsafjvFoHitkMPO0i4hUY" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>pinoy r&amp;b <a href="https://everynoise.com/engenremap-pinoyrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>Philippines<br>opm<br>pinoy hip hop<br>p-pop<br>tagalog rap<br>harana</td>
+  <td>Because &quot;BMW&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7ba3db13a583946fd361e968fc84c1889991cb41" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pinoy-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7C0GH1AbGbQu8C7Ha8Etgn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4TUWhdsP6yM5qB4ogDgXpJ" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1TdzVjWncZNj9V8M8kX9Gd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1yum4fKMjzHo6CrpL3er4P" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7pA8IPRils7ZtrbvPmlsyS" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>pop r&amp;b <a href="https://everynoise.com/engenremap-poprb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Pop<br>Rhythm & Blues</td>
+  <td>United States<br>r&b<br>trap soul<br>slow game<br>indie r&b<br>trap</td>
+  <td>Justine Skye &quot;Collide (feat. Tyga)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/99c21682a87628dbaa7331bc47cc743e174d34eb" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/pop-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2xCGrFIasn3AkEeoJAgw13" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2BvxkVFgxGelSCrWV53I2o" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2qOp96y76X0pdKYqmMFI4d" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0mrZ7JOZhdXyastV5HoaIc" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6693QM4hCgcqcUtMAqHOdt" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>14</td>
+  <td>indonesian r&amp;b <a href="https://everynoise.com/engenremap-indonesianrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Indonesia</td>
+  <td>Indonesia<br>indonesian pop<br>indonesian indie<br>malay<br>indonesian singer-songwriter<br>indie jazz</td>
+  <td>Isyana Sarasvati &quot;Tetap Dalam Jiwa&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/1c978a6b2afc516e58febff5c4a286112d2459ab" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indonesian-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7058u9CrSgitplyuCgaAiu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/1wwNDR9UGIIpkPkbVgWS1G" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3Twz5wUl1iAlSl0bJhFuU7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2De7jBqNzznaHvu8sBknp8" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7jbaejehNMkefQ42PkSVcE" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>15</td>
+  <td>r&amp;b francais <a href="https://everynoise.com/engenremap-rbfrancais.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.France</td>
+  <td>France<br>french r&b<br>pop urbaine<br>french rap<br>french hip hop<br>zouk</td>
+  <td>KeBlack &quot;LAISSE MOI&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/620e4ead4be92e33aeda73aeaa54046830c5bc5c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/r&amp;b-francais" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0bnvAbWFmfZ52uVac5qRUo" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2UOSW9qb7oKPK0myr9I7vE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5sOY4qFxNK9QBHAyf38Uex" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/48cYPVXQs4tP89rxgLFKzD" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7MRSExnmjbUshxQGENEDH0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>16</td>
+  <td>dutch r&amp;b <a href="https://everynoise.com/engenremap-dutchrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Netherlands</td>
+  <td>Netherlands<br>dutch pop<br>indie r&b<br>neo soul<br>indie soul<br>nederpop</td>
+  <td>Full Crate &quot;A Storm on a Summers Day&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3fdc547612c0bdd2de09d9eeff207f3a21af9753" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/dutch-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6KTZdPKytZC8qx3tdNjBGs" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2KIAFjtQXFdsWTWDdanyQP" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0I52v6LjelnbZoDkOTJVqQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Jj9rAhinN7mh2FydhFt4B" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5XPD1ifELDHCk2eiWnPiS1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>17</td>
+  <td>r&amp;b italiano <a href="https://everynoise.com/engenremap-rbitaliano.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Italy</td>
+  <td>Italy<br>italian trap<br>italian indie pop<br>italian hip hop<br>italian pop<br>rome indie</td>
+  <td>IRBIS 37 &quot;Bacio&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/b3405cce6d5f7adc52e271eed33b6d836cb2bd84" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/r&amp;b-italiano" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5IVMSZ89MhHkT239yKML2D" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/08RIk2wKqMNCSzEaZCcHhi" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3097HBTBIL6ag68iqWMm5Q" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Cm4kpSCvDsJ4RPtarIkzS" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5BkhFZP2vmmKi8WFjvppU8" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>18</td>
+  <td>afro r&amp;b <a href="https://everynoise.com/engenremap-afrorb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Africa</td>
+  <td>Ghana<br>afrobeats<br>afrobeat<br>afropop<br>afro soul<br>nigerian pop</td>
+  <td>Ipeleng &quot;near you&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/ffcb04f88988a616a5210d3bf6462a7eb7c22f72" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/afro-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6voEsmYsN99P3SDY1hWjAh" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5Cu4Lk5ihrwbaack2h4bIT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7bbVxgqWbQfNyhWMt2KDKt" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7dfJVBTSOWqoloIhgW90GH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6bekod93aQUPpycNIFcr7F" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>19</td>
+  <td>deep smooth r&amp;b <a href="https://everynoise.com/engenremap-deepsmoothrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>United States<br>smooth r&b<br>neo soul-jazz</td>
+  <td>Rose Crockett &quot;Beautiful Stranger&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f505b47d4179644887bcacd19d323a6e9adaaf2d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/deep-smooth-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/68wKl4OyD4GaRFV2c2ElPt" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/7K7eQm5eNmjvR1avm2Uikd" title="playlist">playlist</a></td>
+  <td>--</td>
+  <td>--</td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>20</td>
+  <td>neo r&amp;b <a href="https://everynoise.com/engenremap-neorb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>United States<br>neo soul<br>contemporary r&b<br>indie soul<br>indie jazz<br>nu jazz</td>
+  <td>Jordan Rakei &quot;Midnight Mischief (Tom Misch Remix)&quo<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/92c76d1cbfc47d028340733cbecfe86ad984cfc2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/neo-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1Kb8b1yz75rTKZPSfw3QN6" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6PYtLNuIDCA1TZoLSaBYm7" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1zfdaitkpqixSKQrza0Nmn" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1RfbzNcXRdurbj2ytyxPK3" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2woNySPr7QFb03dlDJSHJR" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>21</td>
+  <td>korean r&amp;b <a href="https://everynoise.com/engenremap-koreanrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Korea</td>
+  <td>South Korea<br>k-rap<br>k-pop<br>k-ballad<br>korean electropop<br>korean pop</td>
+  <td>punchnello &quot;doodle (Feat. Yerin Baek) (Prod. by WOOGI<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2ec1eca78e7feedd9cfdee7531eb00f37a465546" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/korean-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3o1RqU7nmjke5Zi4Ty0dbX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2TJHOlrTUoLMHs9CTyxN9n" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0rMqy15lXOUK1WTfbBjEw5" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6njRxcyIgIIYcGcWTTDcQL" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4cmbpduWxckKSyIWP4iuD0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>22</td>
+  <td>chinese r&amp;b <a href="https://everynoise.com/engenremap-chineserb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.China</td>
+  <td>China<br>c-pop<br>mandopop<br>taiwanese pop<br>chinese hip hop<br>chinese viral pop</td>
+  <td>LINION &quot;Can\'t Find&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/2c791430839f8236cda446d4bcf6f6d0a6e04554" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chinese-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7EierWPsaqjfiUznyg76Kn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2XXreCGINlOqm8wEn7WszA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Dnr8rag22KWTgaH5blVGu" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2uUznd0HYTKusR6sl7z3PH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/74j3NZFBxflEimkqoDg1xz" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>23</td>
+  <td>kenyan r&amp;b <a href="https://everynoise.com/engenremap-kenyanrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Africa</td>
+  <td>Kenya<br>afro soul<br>afro r&b<br>gengetone<br>rumba congolaise<br>kenyan alternative</td>
+  <td>SERRO &quot;Aheri&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/00cfdf295a2542e5c6651be3e9968f33fec0dc54" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/kenyan-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/7HKEl8noQxZPPKdUx52bNb" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0VcJJ9zxatSC7tMR0l2TfM" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4yG7tHM4tSqSMBNFBH4aEc" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Ir0ihQH3PCcGyIhMFExIQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5HtgfYnazxliMDOvkXfUSj" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>24</td>
+  <td>r&amp;b argentino <a href="https://everynoise.com/engenremap-rbargentino.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Latin.America</td>
+  <td>Argentina<br>latin r&b<br>argentine indie<br>latin indie<br>latin funk<br>electronica argentina</td>
+  <td>An Espil &quot;!&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/884db32b0c118d67e72384a218e6c87406a7d43a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/r&amp;b-argentino" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2mVQ3pX0RNuxZP0pThioZK" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5jz6KkCpdRRqitBX9xa3ay" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/46hPSbONmjNhk8dXyS8lHe" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3LC28eShhjQV9klsekSj2g" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6EWRbKuLa9BAiFCGmKnHN1" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>25</td>
+  <td>indie r&amp;b <a href="https://everynoise.com/engenremap-indierb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Indie<br>Rhythm & Blues</td>
+  <td>United States<br>alternative r&b<br>neo soul<br>chill r&b<br>uk r&b<br>indie soul</td>
+  <td>Maeta &quot;Through The Night (feat. Free Nationals)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f50a21bf1b423a0b49affbe277d54600526112d3" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/indie-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2btG2qWjeYL3uv2kOP0Efw" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2xblssDewgd1AA5R7Lap6w" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3DxKQAGYpfP68E4faWIAft" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0M3lmObP0cHOixMQWfcMjg" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4sGm0CSJVKcKgePSXbIMNZ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>26</td>
+  <td>canadian contemporary r&amp;b <a href="https://everynoise.com/engenremap-canadiancontemporaryrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Canada</td>
+  <td>Canada<br>trap soul<br>indie r&b<br>canadian hip hop<br>dark r&b<br>alternative r&b</td>
+  <td>Savannah R &quot;Last One&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/0c441d7b02032c2ef15cd36d5ee1ce4ad1139e5d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/canadian-contemporary-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2eoEQiEd9FByvSrGApxbs9" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5wJb9tgSkHYu8lIXzallgA" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Jqt48wvwZFwelDEhijhDC" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3eCruz8RTZVrBPIdShyLKl" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5I3JdQUefvetIFFGoONuE6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>27</td>
+  <td>r&amp;b brasileiro <a href="https://everynoise.com/engenremap-rbbrasileiro.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Brazil</td>
+  <td>Brazil<br>brazilian hip hop<br>nova mpb<br>brazilian pop<br>brazilian trap<br>zouk</td>
+  <td>Budah &quot;Len&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/7ce2a865f02b5497751934e636bdd181a691703a" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/r&amp;b-brasileiro" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2cbL2jHP7NvSVNaOmvhisa" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6oJ7aTA1gwk4WaPTB4l5oo" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3VEOzK35ki8QNvkEEa0gtg" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1zUUD5k75OR23Wt0xxvdCQ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6mwC6KZOSFT97EGFbN7cKe" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>28</td>
+  <td>uk contemporary r&amp;b <a href="https://everynoise.com/engenremap-ukcontemporaryrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.United.Kingdom</td>
+  <td>United Kingdom<br>uk r&b<br>alternative r&b<br>neo soul<br>uk pop<br>indie soul</td>
+  <td>Jaz Karis &quot;THERAPY&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/6a52d94723c825a92f1198a294694bcf304a2b16" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/uk-contemporary-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6XxqacrEuI4oGjjbtXDinn" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5kdP7VQedYdDzhTvfovu0u" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1FTw3W00kXWL3Bm9zPUwhg" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1ctsIngLJWIbyHlmA1at79" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1yS2q1mEDc0KYkpDByfBRx" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>29</td>
+  <td>experimental r&amp;b <a href="https://everynoise.com/engenremap-experimentalrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Experimental<br>Rhythm & Blues</td>
+  <td>United States<br>alternative r&b<br>escape room<br>art pop<br>afrofuturism<br>dark r&b</td>
+  <td>serpentwithfeet &quot;Damn Gloves&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4831dd441f9d8359e96de83847fc7c96f9316032" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/experimental-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0uLoOm0ID7IRXYZxzzmePE" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6iuMCyOY42ujcbBKUT3Fku" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5HJRgjv7sX48ZmbWglwMa7" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4IeZxUhHotHjt7BCc80Cc0" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3PYed9ssuMQSmEUGW8u6Xv" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>30</td>
+  <td>gospel r&amp;b <a href="https://everynoise.com/engenremap-gospelrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Gospel<br>Rhythm & Blues</td>
+  <td>United States<br>christian<br>christian hip hop<br>gospel<br>christian pop<br>worship</td>
+  <td>Alexis Spight &quot;Imagine Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/985f1fc115d4671ab2f3f15422bfbed261b62282" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/gospel-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/5i4duh03ogv4DneDvcEqL3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6CBOBJn4M4ql1LHSdHhkbz" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2bueQiau17gyeiPtaEzPoB" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1fvPiAVVYdO11QuRMezu0n" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7GhyBpD20bNrHCQtyZ4wMl" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>31</td>
+  <td>chill r&amp;b <a href="https://everynoise.com/engenremap-chillrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Chill<br>Rhythm & Blues</td>
+  <td>United States<br>indie r&b<br>bedroom r&b<br>bedroom soul<br>uk r&b<br>chill pop</td>
+  <td>Thomas Ng &quot;One Last Dance (feat. Milky Day)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/4b9076179e98e6ef97c7346dadf0aedf332ff1c2" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/chill-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/4u36y10d5s6eVleBuM6QOP" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/60FHIWc8xWDuaUyPMlhPFm" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4ovxfXzBkrVqzBWqjJj0nv" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7r8s6Pe4A99ldrYTEXN9ia" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5Qpq3LtjytRqNaJolCxdJQ" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>32</td>
+  <td>alternative r&amp;b <a href="https://everynoise.com/engenremap-alternativerb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues</td>
+  <td>United States<br>neo soul<br>indie soul<br>r&b<br>escape room<br>uk contemporary r&b</td>
+  <td>Mereba &quot;Sandstorm (feat. JID)&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/46d659581011d901f8cd9a0870c6e3d46a39e603" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/alternative-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2qAGXG4Wl78H5eLgdhmcEO" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/0Hwb2a9DJdom4yoe5V41K9" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Z9qmvOMqi8Xt0mKBAVxAs" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1l1qXlsRmwLD9AHbXWv7o4" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2F58S0Jml30ydJ5HByXRrn" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>33</td>
+  <td>south african r&amp;b <a href="https://everynoise.com/engenremap-southafricanrb.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Rhythm & Blues<br>W.Africa</td>
+  <td>South Africa<br>afro r&b<br>afro soul<br>afropop<br>alte<br>south african trap</td>
+  <td>Joda Kgosi &quot;Lunatic&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/02d4368c7c8bacedc9f56b1f937b2a0bb9352877" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/south-african-r&amp;b" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2amLmiZ3NIx8lC2SEpGJRR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3UhutiIcXo23ICdnsxBEFE" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1hOVpqhEqF0rI86ToijdWd" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4K7HvgICXZz4t62AMIWRON" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4Y5ucK3myZgyeMYejiltpi" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["deep r&amp;b",
+	"contemporary r&amp;b",
+	"r&amp;b en espanol",
+	"bulgarian r&amp;b",
+	"japanese r&amp;b",
+	"r&amp;b",
+	"german r&amp;b",
+	"australian r&amp;b",
+	"scandinavian r&amp;b",
+	"bedroom r&amp;b",
+	"dark r&amp;b",
+	"pinoy r&amp;b",
+	"pop r&amp;b",
+	"indonesian r&amp;b",
+	"r&amp;b francais",
+	"dutch r&amp;b",
+	"r&amp;b italiano",
+	"afro r&amp;b",
+	"deep smooth r&amp;b",
+	"neo r&amp;b",
+	"korean r&amp;b",
+	"chinese r&amp;b",
+	"kenyan r&amp;b",
+	"r&amp;b argentino",
+	"indie r&amp;b",
+	"canadian contemporary r&amp;b",
+	"r&amp;b brasileiro",
+	"uk contemporary r&amp;b",
+	"experimental r&amp;b",
+	"gospel r&amp;b",
+	"chill r&amp;b",
+	"alternative r&amp;b",
+	"south african r&amp;b"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 33: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 33: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>

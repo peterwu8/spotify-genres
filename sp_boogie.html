@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boogie: (10 genres)</title>
+    <style>
+    table {
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      cursor: pointer;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+
+<script>
+function onlyPlayOneIn(container) {
+  container.addEventListener("play", function(event) {
+  audio_elements = container.getElementsByTagName("audio")
+    for(i=0; i < audio_elements.length; i++) {
+      audio_element = audio_elements[i];
+      if (audio_element !== event.target) {
+        audio_element.pause();
+      }
+    }
+  }, true);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  onlyPlayOneIn(document.body);
+});
+</script>
+
+</head>
+<body>
+
+<p>
+
+<strong>Name:</strong> Boogie: (10 genres)<br>
+
+<strong>Notes:</strong><br><ul>
+  <li>Genres at top of table are more electronic and become more acoustic as you go further down the table.</li>
+  <li>&#x2380; indicates that the genre was assigned to this collection, not by name, but by its main musical Influence.</li>
+
+</ul><strong>Spotify playlist types:</strong><br><ol>
+  <li><strong>Chosic Info</strong>: Genre definition, more previews, playlist, and links for <img src="chosic_platforms.png" alt="various platforms">.</li>
+  <li><strong>Spotify Chosic</strong>: Actively updated algorithmic introduction to the genre created by Chosic.</li>
+  <li><strong>Spotify Playlist</strong>: A playlist containing a large number of songs of the genre.</li>
+  <li><strong>Spotify Intro</strong>: An algorithmic introduction to the genre based on math and listening data from the Large Genre Collider.</li>
+  <li><strong>Spotify Pulse</strong>: The music that serious genre listeners play when they play this genre.</li>
+  <li><strong>Spotify Edge</strong>: Emerging mostly-unknown music that serious genre listeners have discovered.</li>
+</ol><strong>Go back to:</strong> <a href="index.html" title="Home Page">Home Page</a>
+<br><br><button id="scan-button">Preview All</button>  <button id="pause-button">Pause</button><div id="scan-status"></div>
+<br>
+</p>
+
+<div id="audio-list">
+
+
+        <strong>Table 1:</strong> Each genre comes with preview audio and a choice of playlists.<br>
+        <table id="myTable1">
+          <tr>
+              <th onclick="sortTable_1(0)">Id</th>
+  <th onclick="sortTable_1(1)">Genre</th>
+  <th onclick="sortTable_1(2)">Collections</th>
+  <th onclick="sortTable_1(3)">Influences</th>
+  <th onclick="sortTable_1(4)">Preview</th>
+  <th onclick="sortTable_1(5)">Chosic<Br>Info</th>
+  <th onclick="sortTable_1(6)">Spotify<Br>Chosic</th>
+  <th onclick="sortTable_1(7)">Spotify<Br>Playlist</th>
+  <th onclick="sortTable_1(8)">Spotify<Br>Intro</th>
+  <th onclick="sortTable_1(9)">Spotify<Br>Pulse</th>
+  <th onclick="sortTable_1(10)">Spotify<Br>Edge</th>
+
+          </tr>
+          <tr>
+  <td>01</td>
+  <td>boogie <a href="https://everynoise.com/engenremap-boogie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Boogie</td>
+  <td>United States<br>post-disco<br>ragtime<br>swing music<br>rockabilly<br>post-disco soul</td>
+  <td>Sharon Redd &quot;Can You Handle It&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8812bb94c1cf709da98b841d7a107fae75e6ebf0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/boogie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/6SXpRloAYCUGWZ5cFcJejX" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4vLb33ufLI6jjyGh4jpz9P" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3QjTH6AMg1hDEe68EOINEX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6PcG29IgAkWVPYCbC5ie8k" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>rhythm game <a href="https://everynoise.com/engenremap-rhythmgame.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Boogie<br>Gaming</td>
+  <td>Japan<br>speedcore<br>j-dance<br>pixel<br>otacore<br>hardcore techno</td>
+  <td>Matt$ &quot;Markov&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c6adca36516b4d1c17b00605230d27af4ec61964" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rhythm-game" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/1T6rZpwZQmilHKR6fU5umD" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2p7Kq3IMcBDLWSrFNUeNNC" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1cDf5k8bwc4cWu3gtetQGX" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/6AVjs1e5O11HYGs0EQlvxu" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2Z4ZlflKsQg08CZL1hsK5A" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>03</td>
+  <td>brazilian boogie <a href="https://everynoise.com/engenremap-brazilianboogie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Boogie<br>W.Brazil</td>
+  <td>Brazil<br>brazilian jazz<br>bossa nova<br>brazilian soul<br>samba<br>mpb</td>
+  <td>Robson Jorge &quot;Ginga&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/11612638c0dcf121e4f17e95c5f219c1bb0ff594" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/brazilian-boogie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/2ezHzW87NWR6L2uSGJaYQU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/44ddQ4g1xnn8o0SRo1hgPa" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/50jofx2qe0v8S0gG3wXxrQ" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/71Wo294YlbszX2W8ha1bHJ" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3rBj4AfNjiXz5DzXSoZvh9" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>04</td>
+  <td>swing revival <a href="https://everynoise.com/engenremap-swingrevival.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Boogie &#x2380;</td>
+  <td>United States<br>swing music<br>big band<br>boogie-woogie<br>modern swing<br>rockabilly</td>
+  <td>Steve Lucky &amp; The Rhumba Bums &quot;How Come&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/5ff1590d4d2ed8b0ac098a97f119cb9f081a4f54" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/swing-revival" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0w5oGB3EgFfNWAaPC15GUu" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/14mCFCVqSNVJDVuFdwDOjs" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7bWIBobuDSKZDKIS2tVahb" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7Gobfn2ZF0mqYpgejLycg7" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3G4y9cpiKjKwjN6gydr0J0" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>05</td>
+  <td>rhythm rock <a href="https://everynoise.com/engenremap-rhythmrock.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Boogie<br>Rock</td>
+  <td>United States<br>rockabilly<br>garage rock<br>proto-punk<br>psychobilly<br>detroit rock</td>
+  <td>The Pleasure Seekers &quot;What A Way To Die&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/66a14b18d16d42d1cf4a2d4ae90f3d51dac85d1c" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rhythm-rock" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3x3yQtU12sUW7QVq0MteY3" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3LHV3K48mTlH9VhbGgFTMn" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/49ujweUJUC22sUgIMKM6U9" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/4bOs8GHlAx6YaufWB0xda4" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>06</td>
+  <td>rhythm and boogie <a href="https://everynoise.com/engenremap-rhythmandboogie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Boogie</td>
+  <td>United States<br>rockabilly<br>psychobilly<br>doo-wop<br>honky tonk<br>classic oklahoma country</td>
+  <td>Benny Ingram &quot;Jello Sal&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/883c8d8e3565407f99abd9e3163d3195a28c4462" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rhythm-and-boogie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0tUD0WAhhLtsOdc7YQcNkR" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/2P5HTtUzsv4lDR0rOYgyUT" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/09yQq5ONCef5v41PD520fl" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/7ry0iGGuOPqTGN9bHPS9nJ" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>07</td>
+  <td>rhythm and blues <a href="https://everynoise.com/engenremap-rhythmandblues.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Blues<br>Boogie</td>
+  <td>United States<br>doo-wop<br>northern soul<br>rock-and-roll<br>rockabilly<br>boogie-woogie</td>
+  <td>Clyde McPhatter &quot;A Lover\'s Question&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/8120af5f5f7f3c9da2d053342f101c184499545d" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/rhythm-and-blues" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/0OVcUcsO3UkyaaFbqqYsxI" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/4uSZwUcMhCdfspqtWaQGwD" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/1lxu6T4ZR9JNyfmIv0iqds" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/3UCk5VHwUJzMwWJOPPmU0U" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2fcYgGJEHlwnLCz3XkrO1h" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>08</td>
+  <td>country boogie <a href="https://everynoise.com/engenremap-countryboogie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Boogie<br>Country</td>
+  <td>United States<br>rockabilly<br>honky tonk<br>western swing<br>traditional country<br>classic country</td>
+  <td>The Delmore Brothers &quot;Blues Stay Away from Me&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/3261a2e553ea4eae2e126b4fa2a905482deeef13" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/country-boogie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/170R7QcP9dzW6FTGkVnEvU" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/5au2CYTVy8KmBilpD2ofYl" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2uyHvd6G6o7BIvMinvt7fD" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5qfw0aipQsfzyvBI4wHq7U" title="pulse">pulse</a></td>
+  <td>--</td>
+</tr>
+<tr>
+  <td>09</td>
+  <td>modern swing <a href="https://everynoise.com/engenremap-modernswing.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Boogie &#x2380;</td>
+  <td>United States<br>swing music<br>swing revival<br>big band<br>ragtime<br>boogie-woogie</td>
+  <td>Brooks Prumo Orchestra &quot;Tain\'t Like That&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/c927b90bc4b4437291a3499737b6e0532d4f3733" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/modern-swing" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/58TamBsBh0j337YYnPdvKH" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/6OjkhYNqLUKiCCYJqTRo8J" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/2pMzWZ7JQsp3alK6XE7coz" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/0hv88kZ4CPK6KrkCRJY1gj" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5aeqqlYB78JeFiK0oGlsc6" title="edge">edge</a></td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>boogie-woogie <a href="https://everynoise.com/engenremap-boogiewoogie.html" title="&#x2306;">&#x2306;</a></td>
+  <td>Boogie</td>
+  <td>United States<br>rockabilly<br>blues<br>swing music<br>boogie<br>rock and roll</td>
+  <td>Albert Ammons &quot;Boogie Woogie Prayer&quot;<br><audio class="playback" type="audio/mpeg" src="https://p.scdn.co/mp3-preview/f86c5a8a492a3c7d61016a3b540746fafc7e63f0" controls="controls" preload="none"><br><I>Your browser does not support the audio element.</I><br></audio></td>
+  <td><a href="https://www.chosic.com/genre-chart/boogie-woogie" title="info">info</a></td>
+  <td><a href="https://open.spotify.com/playlist/3f5gJgrYnlyzYUgm9Wseaq" title="chosic">chosic</a></td>
+  <td><a href="https://open.spotify.com/playlist/3VvwVEZaPYQfI8ZZbOCW5h" title="playlist">playlist</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/5gTL8RRluj2vQsjVHQ7nKA" title="intro">intro</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/642fp1i1L9ZHPmxssEFoEH" title="pulse">pulse</a></td>
+  <td><a href="https://open.spotify.com/user/particledetector/playlist/56SeJkONWQlzvd5fqKpCoo" title="edge">edge</a></td>
+</tr>
+
+        </table>
+        <br><br>
+
+
+<!-- id=audio-list -->
+</div>
+
+<script>
+
+function sortTable_1(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable1");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc";
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+
+</script>
+
+
+<script>
+  const audioElements = document.querySelectorAll('#audio-list audio');
+  let currentAudioIndex = 0;
+  let startedAudioScan = 0;
+
+
+let genre_names_array = ["boogie",
+	"rhythm game",
+	"brazilian boogie",
+	"swing revival",
+	"rhythm rock",
+	"rhythm and boogie",
+	"rhythm and blues",
+	"country boogie",
+	"modern swing",
+	"boogie-woogie"];
+
+
+  // 5000 milliseconds = 5 seconds
+  let selectedPreviewDuration = 5000;
+
+  let playTimeout; // To store the timeout ID for clearing it if needed
+
+  const scanButton = document.getElementById('scan-button');
+  const pauseButton = document.getElementById('pause-button');
+  pauseButton.disabled = true;
+
+  function playNextAudio() {
+    if (startedAudioScan <= 0) {
+        return;
+    }
+    currentAudioIndex++;
+    if (currentAudioIndex < audioElements.length) {
+      document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 10: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+      audioElements[currentAudioIndex].play();
+
+        // Set a timeout to pause the audio after duration is met
+        playTimeout = setTimeout(() => {
+          audioElements[currentAudioIndex].pause();
+          playNextAudio(); // Play the next audio after pausing
+        }, selectedPreviewDuration);
+
+    } else {
+      console.log("Playlist ended.");
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+      document.getElementById("scan-status").innerHTML = ""
+      currentAudioIndex = 0;
+      startedAudioScan = 0;
+    }
+  }
+
+  audioElements.forEach((audio, index) => {
+    audio.addEventListener('ended', () => {
+
+    // If the audio ends naturally (e.g., it's shorter than 5s)
+    // we still want to move to the next one
+    clearTimeout(playTimeout); // Clear any pending timeout
+
+      playNextAudio();
+    });
+  });
+
+  scanButton.addEventListener('click', startAudioScan);
+  pauseButton.addEventListener('click', pauseAudioScan);
+
+  function pauseAudioScan() {
+    startedAudioScan = 0;
+    audioElements[currentAudioIndex].pause();
+      scanButton.disabled = false; // Re-enable the button if desired
+      pauseButton.disabled = true;
+  }
+
+  function startAudioScan() {
+    startedAudioScan++;
+    document.getElementById("scan-status").innerHTML = "&#x1F68C; Playing " + (currentAudioIndex+1) + " of 10: " + genre_names_array[currentAudioIndex] + " &#x1F68C;";
+    audioElements[currentAudioIndex].play();
+    scanButton.disabled = true; // Disable the button after starting the scan
+    pauseButton.disabled = false;
+
+  // Set a timeout to pause the first audio after duration is met
+  playTimeout = setTimeout(() => {
+    audioElements[currentAudioIndex].pause();
+    playNextAudio(); // Play the next audio after pausing
+  }, selectedPreviewDuration);
+
+  }
+</script>
+
+
+</body>
+</html>
